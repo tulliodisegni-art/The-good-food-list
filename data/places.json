@@ -6,7 +6,8 @@
   "cat": "Français",
   "name": "Elisworth",
   "address": "34 rue de Richelieu, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://www.ellsworthparis.com/french-dinner"
  },
  {
   "id": "paris-1-francais-les-artizans",
@@ -15,7 +16,8 @@
   "cat": "Français",
   "name": "Les Artizans",
   "address": "30 Rue Montorgueil, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lesartizans.fr/carte/"
  },
  {
   "id": "paris-1-francais-plume",
@@ -24,7 +26,8 @@
   "cat": "Français",
   "name": "Plume",
   "address": "43 Rue Étienne Marcel, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://laplumerivedroite.com/"
  },
  {
   "id": "paris-1-francais-pied-de-cochon",
@@ -33,7 +36,8 @@
   "cat": "Français",
   "name": "Pied de cochon",
   "address": "6 Rue Coquillière, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.pieddecochon.com/menus-carte/"
  },
  {
   "id": "paris-1-francais-inavoue",
@@ -42,7 +46,8 @@
   "cat": "Français",
   "name": "Inavoué",
   "address": "4 impasse Gomboust, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://inavoue.com/menu"
  },
  {
   "id": "paris-1-francais-maslow",
@@ -51,7 +56,8 @@
   "cat": "Français",
   "name": "Maslow",
   "address": "14 Quai de la Mégisserie, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://maslow-restaurants.com/etablissement/maslow/#menu"
  },
  {
   "id": "paris-1-francais-le-roch-restaurant",
@@ -69,7 +75,8 @@
   "cat": "Français",
   "name": "La Poule au pot",
   "address": "9 rue Vauvilliers, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.cicciolina-restaurant.com/menu"
  },
  {
   "id": "paris-1-italien-cicciolina",
@@ -78,7 +85,8 @@
   "cat": "Italien",
   "name": "Cicciolina",
   "address": "21 rue Pierre Lescot, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.cicciolina-restaurant.com/menu"
  },
  {
   "id": "paris-1-italien-liberto",
@@ -87,7 +95,8 @@
   "cat": "Italien",
   "name": "Liberto",
   "address": "23 rue Berger, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://foodaffairs.fr/wp-content/uploads/2023/01/LIBERTO-MENU-Decembre-2022-42-%C3%97-29.7-cm.pdf"
  },
  {
   "id": "paris-1-italien-presto-fresco",
@@ -96,7 +105,8 @@
   "cat": "Italien",
   "name": "Presto fresco",
   "address": "14 Rue Montmartre, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://prestofresco.fr/"
  },
  {
   "id": "paris-1-italien-tzantza",
@@ -105,7 +115,8 @@
   "cat": "Italien",
   "name": "Tzantza",
   "address": "58 rue Jean-Jacques Rousseau, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://tzantza.paris/menu/"
  },
  {
   "id": "paris-1-japonais-foujita",
@@ -114,7 +125,8 @@
   "cat": "Japonais",
   "name": "Foujita",
   "address": "41 rue Saint-Roch, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Foujita&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:11814335027303269161,ru_gwp:0%252C7,ru_lqi:CgdGb3VqaXRhSObL86PogICACFoTEAAYACIHZm91aml0YSoECAIQAJIBE2phcGFuZXNlX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUkRMVTlZYVhaM1JSQUKqAS8QASoLIgdmb3VqaXRhKAQyHhABIhqnk68Xf6MzG663PyhWJuns10FTMCX1NTSb9A,trex_id:akX5eb"
  },
  {
   "id": "paris-1-japonais-takara",
@@ -123,7 +135,8 @@
   "cat": "Japonais",
   "name": "Takara",
   "address": "14 Rue Molière, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.takara-paris.com/notre-carte-en-fran%C3%A7ais/"
  },
  {
   "id": "paris-1-japonais-enyaa",
@@ -132,7 +145,8 @@
   "cat": "Japonais",
   "name": "Enyaa",
   "address": "37 Rue de Montpensier, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://enyaa-paris.com/#pdfmenu"
  },
  {
   "id": "paris-1-japonais-japanos-ramen-bar",
@@ -141,7 +155,8 @@
   "cat": "Japonais",
   "name": "Japanos ramen bar",
   "address": "1 rue Étienne Marcel, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://japanos.fr/"
  },
  {
   "id": "paris-1-japonais-sushi-way",
@@ -150,7 +165,8 @@
   "cat": "Japonais",
   "name": "Sushi way",
   "address": "101 Porte Berger, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://sushiway.fr/la-carte/"
  },
  {
   "id": "paris-1-japonais-restaurant-zen",
@@ -159,7 +175,8 @@
   "cat": "Japonais",
   "name": "Restaurant Zen",
   "address": "8 rue de l'Échelle, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.zenrestaurantparis.fr/diner/fr/"
  },
  {
   "id": "paris-1-japonais-pink-koi",
@@ -195,7 +212,8 @@
   "cat": "Chinois",
   "name": "Bobun Châtelet",
   "address": "55 boulevard de Sébastopol, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://bobunchatelet.com/menu"
  },
  {
   "id": "paris-1-chinois-ravioli-nord-est",
@@ -204,7 +222,8 @@
   "cat": "Chinois",
   "name": "Ravioli Nord-Est",
   "address": "11 rue Civiale, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://civiale.raviolinordest.com/menu"
  },
  {
   "id": "paris-1-coreen-dongne-chicken",
@@ -213,7 +232,8 @@
   "cat": "Coréen",
   "name": "DongNe Chicken",
   "address": "51 Rue de Richelieu, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=DongNe+Chicken&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:4772441534347258269,ru_gwp:0%252C7,ru_lqi:Cg5Eb25nTmUgQ2hpY2tlbkiMsbum-bCAgAhaIBAAEAEYABgBIg5kb25nbmUgY2hpY2tlbioGCAIQABABkgERa29yZWFuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUkNjWE5RVFRoQlJSQUKqASIQATIeEAEiGn7AD5EPWVr_crTa3YSzKCKZl_HWXgPBnw-_,ru_phdesc:XwzCExK1Un8,trex_id:ij4i6c"
  },
  {
   "id": "paris-1-coreen-go-oun",
@@ -222,7 +242,8 @@
   "cat": "Coréen",
   "name": "Go Oun",
   "address": "14 rue Thérèse, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://resto-gooun.com/"
  },
  {
   "id": "paris-1-coreen-fondue-du-dragon",
@@ -231,7 +252,8 @@
   "cat": "Coréen",
   "name": "Fondue du dragon",
   "address": "5 Rue Étienne Marcel, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://fonduedragon.fr/fr/menu"
  },
  {
   "id": "paris-1-coreen-jjan",
@@ -249,7 +271,8 @@
   "cat": "Indonésien",
   "name": "Djakarta Bali",
   "address": "9 rue Vauvilliers, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Baguett%27s+Caf%C3%A9&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlO3NvVQISvI8YQXilB6TshPlmRE9-DFyPX_6exLh60pebKPnSY9oTY9Y2KtlhiNAp9q2CznCGLHEujARq6oEc32eOhkRw%3D%3D"
  },
  {
   "id": "paris-1-brunch-baguett-s-cafe",
@@ -258,7 +281,8 @@
   "cat": "Brunch",
   "name": "Baguett's Café",
   "address": "33 rue de Richelieu, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Baguett%27s+Caf%C3%A9&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlO3NvVQISvI8YQXilB6TshPlmRE9-DFyPX_6exLh60pebKPnSY9oTY9Y2KtlhiNAp9q2CznCGLHEujARq6oEc32eOhkRw%3D%3D"
  },
  {
   "id": "paris-1-brunch-immersion-vendome",
@@ -267,7 +291,8 @@
   "cat": "Brunch",
   "name": "Immersion Vendôme",
   "address": "23 Rue Danielle Casanova, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://immersionparis.fr/wp-content/uploads/2022/11/Menu-Immersion-A4-VF.pdf"
  },
  {
   "id": "paris-1-cafe-le-tiki-rose",
@@ -276,7 +301,8 @@
   "cat": "Café",
   "name": "Le Tiki Rose",
   "address": "9 rue Berger, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Le+Tiki+Rose&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOVGEYvcQ4zzW7YStxOExj-SmFqdrZ2GBKPQP6MbJ14ENyeJqg1_fc-ZZZueKDaipq4U0LlQRxikxIzsU-BBUTtAG8xHA%3D%3D"
  },
  {
   "id": "paris-1-cafe-cafe-kitsune",
@@ -285,7 +311,8 @@
   "cat": "Café",
   "name": "Café Kitsuné",
   "address": "51 Galerie de Montpensier, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.maisonkitsune.com/mk/wp-content/uploads/2021/12/ck_palaisroyal_menu_digital_no-price_a4.pdf"
  },
  {
   "id": "paris-1-cafe-le-cafe-de-l-epoque",
@@ -294,7 +321,8 @@
   "cat": "Café",
   "name": "Le Café de l'Époque",
   "address": "2 rue du Bouloi, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cafedelepoque.fr/fr/services"
  },
  {
   "id": "paris-1-cafe-le-cafe-marly",
@@ -303,7 +331,8 @@
   "cat": "Café",
   "name": "Le Café Marly",
   "address": "93 Rue de Rivoli, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cafe-marly.com/wp-content/uploads/sites/17/2023/01/MenuMarly-FR.pdf"
  },
  {
   "id": "paris-1-cafe-cafe-laperouse",
@@ -312,7 +341,8 @@
   "cat": "Café",
   "name": "Café Lapérouse",
   "address": "2 Place de la Concorde, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cafelaperouse.com/wp-content/uploads/2023/03/MENU-FOOD-CAFE-LAPEROUSE-2023-WEB_compressed.pdf"
  },
  {
   "id": "paris-1-cafe-aki",
@@ -321,7 +351,8 @@
   "cat": "Café",
   "name": "Aki",
   "address": "11 rue Sainte-Anne, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://akiparis.fr/collections/aki-cafe-commande-de-plats-chauds"
  },
  {
   "id": "paris-1-cafe-musset",
@@ -330,7 +361,8 @@
   "cat": "Café",
   "name": "Musset",
   "address": "169 rue Saint-Honoré, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lemusset.paris/categories/share/"
  },
  {
   "id": "paris-1-bar-a-cocktails-le-roof",
@@ -339,7 +371,8 @@
   "cat": "Bar à cocktails",
   "name": "Le Roof",
   "address": "43 Rue Étienne Marcel, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://madamereve.com/restaurants/roof/"
  },
  {
   "id": "paris-2-francais-strogoff",
@@ -348,7 +381,8 @@
   "cat": "Français",
   "name": "Strogoff",
   "address": "37 boulevard de Bonne Nouvelle, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Strogoff&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&trex=m_t:lcl_akp,rc_ludocids:6816115569081693863,rc_q:Strogoff,ru_gwp:0%252C7,ru_q:Strogoff,trex_id:xJ00xb&lpg=cid:CgIgAQ%3D%3D"
  },
  {
   "id": "paris-2-francais-les-carnivores",
@@ -357,7 +391,8 @@
   "cat": "Français",
   "name": "Les Carnivores",
   "address": "22 rue des Capucines, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=les+carnivores+paris&client=safari&hl=fr-fr&sxsrf=APwXEdfBTEGeu8KDjL6R7dtHEs67HzT1lg%3A1680093379277&ei=wzAkZLjREKSlkdUPv-StsAo&gs_ssp=eJzj4tVP1zc0TCssTs7NSikxYLRSNagwMU81M0szMrNMMTcxSEsytDKoMEs1TEu1MEk2NjVISjRINPMSyUktVkhOLMrLLMsvAjILEosyiwFgVBe1&oq=LES+CARNIVORES+&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYADILCC4QrwEQxwEQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgcIABCKBRBDMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DwguEIoFEMgDELADEEMYAToSCC4QigUQ1AIQyAMQsAMQQxgBOhUILhCKBRDHARCvARDIAxCwAxBDGAFKBAhBGABQzxJYzxJgsR9oAXAAeACAAfQBiAH0AZIBAzItMZgBAKABAcgBEcABAdoBBAgBGAg&sclient=mobile-gws-wiz-serp#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlNPwvDcbbv14hG4oDd0r9W6DL5Y4Ry0a9OAKpRsl04EOAGH49seoSwQe9Uh0QS0MoR4gE0rllPVHf5ugunaZoGoDlIN_A%3D%3D"
  },
  {
   "id": "paris-2-francais-one-and-one",
@@ -366,7 +401,8 @@
   "cat": "Français",
   "name": "One and one",
   "address": "7 passage des Panoramas, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.oneandonerestaurants.com/menus-carte/"
  },
  {
   "id": "paris-2-francais-brasserie-dubillot",
@@ -375,7 +411,8 @@
   "cat": "Français",
   "name": "Brasserie Dubillot",
   "address": "222 rue Saint-Denis, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://nouvellegardegroupe.com/brasserie-dubillot/menus/"
  },
  {
   "id": "paris-2-francais-itacoa",
@@ -384,7 +421,8 @@
   "cat": "Français",
   "name": "Itacoa",
   "address": "185 rue Saint-Denis, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.itacoa.paris/les-cartes/"
  },
  {
   "id": "paris-2-francais-the-hoxton",
@@ -393,7 +431,8 @@
   "cat": "Français",
   "name": "The Hoxton",
   "address": "30-32 rue du Sentier, 75002 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://thehoxton.com/paris/rivie-restaurant/"
  },
  {
   "id": "paris-2-francais-la-grappe",
@@ -402,7 +441,8 @@
   "cat": "Français",
   "name": "La Grappe",
   "address": "5 rue des Petits Carreaux, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=LA+GRAPPE&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:1319864678271718611,ru_gwp:0%252C7,ru_lqi:CglMQSBHUkFQUEVIysGpyueAgIAIWhMQABABGAAYASIJbGEgZ3JhcHBlkgERZnJlbmNoX3Jlc3RhdXJhbnSqATEQASoNIglsYSBncmFwcGUoBDIeEAEiGkPXMI0H_pH_TnqXdUFjSyxWU7H64JFN4sc5,ru_phdesc:l3mlQB9m7zo,trex_id:YJ6qde"
  },
  {
   "id": "paris-2-francais-astair",
@@ -411,7 +451,8 @@
   "cat": "Français",
   "name": "Astair",
   "address": "19 passage des Panoramas, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://static1.squarespace.com/static/61a603c709495b7cdebb7811/t/6295d020af66163455e02836/1653985313465/FR_Menu_Astair_MAI2022.pdf"
  },
  {
   "id": "paris-2-francais-circonstances",
@@ -420,7 +461,8 @@
   "cat": "Français",
   "name": "Circonstances",
   "address": "174 rue Montmartre, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.circonstances.fr/"
  },
  {
   "id": "paris-2-francais-montecito",
@@ -438,7 +480,8 @@
   "cat": "Italien",
   "name": "Pizz'aria",
   "address": "55 Rue Montmartre, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Pizz%E2%80%99aria&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlO-P02LKpQ2z2ITuNEMcAh7CUKi6cL-DAc6_3YmTRg50mK1TUjHBS72V0vmW00ofBSTcUItGgpi53OAYiN2cXr7_elxlQ%3D%3D"
  },
  {
   "id": "paris-2-italien-rivolta",
@@ -447,7 +490,8 @@
   "cat": "Italien",
   "name": "Rivolta",
   "address": "20 rue Poissonnière, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://firebasestorage.googleapis.com/v0/b/wix-pdf.appspot.com/o/c1b20cce-bbf2-428d-bb17-011e0654a15b%2Fcomp-l2kpajwb.pdf?alt=media&token=51e1bf70-a8e8-4767-b7e6-f6fedc6e9dbe"
  },
  {
   "id": "paris-2-italien-dalmata",
@@ -456,7 +500,8 @@
   "cat": "Italien",
   "name": "Dalmata",
   "address": "8 rue Tiquetonne, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.gruppodalmata.com/restaurant/dalmata/menu/food"
  },
  {
   "id": "paris-2-italien-pupetta",
@@ -465,7 +510,8 @@
   "cat": "Italien",
   "name": "Pupetta",
   "address": "124 rue Saint-Denis, 75002 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=PUPETTA&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:2793535181236436013,ru_gwp:0%252C7,ru_lqi:CgdQVVBFVFRBSP2a49izrICACFoNEAAYACIHcHVwZXR0YZIBEHBpenphX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkhhVkIxWDFKUkVBRaoBIxABMh8QASIbvLblTGp02ya4MOjqJeqfc_4pZdWxKFthMmv_,ru_phdesc:SCo3RCsJsjA,trex_id:vghCvb"
  },
  {
   "id": "paris-2-italien-bianco",
@@ -474,7 +520,8 @@
   "cat": "Italien",
   "name": "Bianco",
   "address": "60 rue Montorgueil, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.biancoparis.com/"
  },
  {
   "id": "paris-2-italien-focaccia-club",
@@ -483,7 +530,8 @@
   "cat": "Italien",
   "name": "Focaccia Club",
   "address": "43 Rue des Petits Carreaux, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://focaccia-club.fr/produits/"
  },
  {
   "id": "paris-2-italien-maker",
@@ -492,7 +540,8 @@
   "cat": "Italien",
   "name": "Maker",
   "address": "32-34 rue des Jeûneurs, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://maker.pizza/wp-content/uploads/2023/03/MAKER_MENU-A4_MAJ_2023-a-jour.pdf"
  },
  {
   "id": "paris-2-italien-gruppomimo",
@@ -501,7 +550,8 @@
   "cat": "Italien",
   "name": "Gruppomimo",
   "address": "157 rue Montmartre, 75002 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.gruppomimo.com/food"
  },
  {
   "id": "paris-2-burger-les-petites-pepites",
@@ -510,7 +560,8 @@
   "cat": "Burger",
   "name": "Les petites pépites",
   "address": "17 rue Saint-Marc, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.lespetitespepites.com/_files/ugd/2099cc_f37732d952ce4e8f96e9ee55ec38cf1a.pdf"
  },
  {
   "id": "paris-2-burger-frenchie-to-go",
@@ -519,7 +570,8 @@
   "cat": "Burger",
   "name": "Frenchie To Go",
   "address": "9 rue du Nil, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://www.frenchie-ftg.com/wp-content/uploads/2022/12/Menu-FTG.pdf"
  },
  {
   "id": "paris-2-burger-manhattn-s-burgers",
@@ -528,7 +580,8 @@
   "cat": "Burger",
   "name": "Manhattn's burgers",
   "address": "59 Rue Montorgueil, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.manhattns.com/sites/default/files/2022-12/30.11.22-Manhattn%27s%20Menu_Paris_Print_Release%20HR.pdf"
  },
  {
   "id": "paris-2-americain-cali-sisters",
@@ -537,7 +590,8 @@
   "cat": "Américain",
   "name": "Cali Sisters",
   "address": "17 rue Notre-Dame-des-Victoires, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://calisisters.thecalisisters.com/"
  },
  {
   "id": "paris-2-japonais-gyoza-bar",
@@ -546,7 +600,8 @@
   "cat": "Japonais",
   "name": "Gyoza Bar",
   "address": "56 Passage des Panoramas, 75002 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=Gyoza+Bar&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:17518904393486962216,ru_gwp:0%252C7,ru_lqi:CglHeW96YSBCYXJIn-nG1KyPgIAIWhsQABABGAAYASIJZ3lvemEgYmFyKgYIAhAAEAGSARNqYXBhbmVzZV9yZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU56WjFsUGQxWm5FQUWqASIQATIeEAEiGrY4NwGtPA7MMYso0zKOy0qfIjUnL6W882DF,trex_id:IllhNe"
  },
  {
   "id": "paris-2-japonais-zuzuttomo",
@@ -555,7 +610,8 @@
   "cat": "Japonais",
   "name": "Zuzuttomo",
   "address": "10 Rue Poissonnière, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://zuzuttomo.fr/menu/"
  },
  {
   "id": "paris-2-japonais-kimochi",
@@ -564,7 +620,8 @@
   "cat": "Japonais",
   "name": "Kimochi",
   "address": "24 galerie Montmartre, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.kimochiparis.fr/mobmenu"
  },
  {
   "id": "paris-2-japonais-devant-vous",
@@ -573,7 +630,8 @@
   "cat": "Japonais",
   "name": "Devant-Vous",
   "address": "80 Rue de Richelieu, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Devant-Vous&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoFOX-MmlLUKKaXt5ZjDFk3TLPiHfu7tTWlVXA-Alw3uhQMh1OW5-XtHTf4gEQwSGVo_gnuH8Z2jW-InwnheOqU7aCGJEiaOm9dleKZoX42AVJCLjO6FWDhIyf_QcIHFCvlAy8GP"
  },
  {
   "id": "paris-2-japonais-isshin-ramen",
@@ -582,7 +640,8 @@
   "cat": "Japonais",
   "name": "Isshin Ramen",
   "address": "168 rue Montmartre, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=iSSHIN+RAMEN&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOmqzQcJOu_HZKR8KQGrENoAoSd7GK0g-nYp1vBu16wc2UZoe4urrosMZNhPYyp5Ej9PmoTHJo8lhTtZ9_3bu8MW5ZQuKJIi9G-SLAeOtlTIENWHfnyhURawuP1NBfGP7Rs213V"
  },
  {
   "id": "paris-2-japonais-moemachi",
@@ -591,7 +650,8 @@
   "cat": "Japonais",
   "name": "Moemachi",
   "address": "166 Rue Saint-Denis, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cdn.website.dish.co/media/60/68/5187346/Menu-1.png"
  },
  {
   "id": "paris-2-chinois-supermian",
@@ -600,7 +660,8 @@
   "cat": "Chinois",
   "name": "Supermian",
   "address": "86 rue de Richelieu, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.supermian.fr/menu"
  },
  {
   "id": "paris-2-chinois-baobaoland",
@@ -609,7 +670,8 @@
   "cat": "Chinois",
   "name": "Baobaoland",
   "address": "93 Boulevard de Sébastopol, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://v2cdn1.centralappstatic.com/file/a8591e8e8f8a4a4cb6b946ba3fe3ce70.pdf"
  },
  {
   "id": "paris-2-chinois-xialongkan",
@@ -618,7 +680,8 @@
   "cat": "Chinois",
   "name": "Xialongkan",
   "address": "8 Rue Saint-Marc, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.xiaolongkan-hotpot.fr/menu"
  },
  {
   "id": "paris-2-chinois-chez-toye",
@@ -627,7 +690,8 @@
   "cat": "Chinois",
   "name": "Chez Toye",
   "address": "39 Rue Montmartre, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cheztoye.fr/fr/services"
  },
  {
   "id": "paris-2-chinois-sweetraviolis",
@@ -636,7 +700,8 @@
   "cat": "Chinois",
   "name": "Sweetraviolis",
   "address": "178 Rue de Rivoli, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://montmartre.sweetraviolis.com/menu"
  },
  {
   "id": "paris-2-chinois-mr-zhao",
@@ -645,7 +710,8 @@
   "cat": "Chinois",
   "name": "Mr Zhao",
   "address": "37 rue des Jeûneurs, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.zhaogroupe.com/menu-mr-zhao_carte/"
  },
  {
   "id": "paris-2-coreen-hang-a-ri",
@@ -654,7 +720,8 @@
   "cat": "Coréen",
   "name": "Hang-a-ri",
   "address": "7 rue de Louvois, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://resto-hangari.com/"
  },
  {
   "id": "paris-2-coreen-sam-chic",
@@ -672,7 +739,8 @@
   "cat": "Thaïlandais",
   "name": "Bomba",
   "address": "35 Boulevard de Bonne Nouvelle, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://bombaparis.com/le-menu/"
  },
  {
   "id": "paris-2-thailandais-brique-machine",
@@ -690,7 +758,8 @@
   "cat": "Libanais",
   "name": "Noura",
   "address": "29 boulevard des Italiens, 75002 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=Noura&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:8138809965768704629,ru_gwp:0%252C7,ru_lqi:CgVOb3VyYSIDiAEBSN2IsuPpgICACFoLEAAYACIFbm91cmGSARNsZWJhbmVzZV9yZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJOY0c5VE1GRkJFQUWqAS0QASoJIgVub3VyYSgEMh4QASIa8RFuYFdFdYNXygbUNABQhFj6682oDiOaNiE,trex_id:cBvg0b"
  },
  {
   "id": "paris-2-israelien-dalia",
@@ -699,7 +768,8 @@
   "cat": "Israélien",
   "name": "Dalia",
   "address": "93 Rue Montmartre, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.dalia-paris.com/menu"
  },
  {
   "id": "paris-2-argentin-asado",
@@ -708,7 +778,8 @@
   "cat": "Argentin",
   "name": "Asado",
   "address": "6 Passage des Panoramas, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.asadoparis.com/menu"
  },
  {
   "id": "paris-2-fusion-uma-nota",
@@ -717,7 +788,8 @@
   "cat": "Fusion",
   "name": "Uma nota",
   "address": "86 rue Réaumur, 75002 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://uma-nota.com/fr/menus/"
  },
  {
   "id": "paris-2-fusion-sweetea-s",
@@ -726,7 +798,8 @@
   "cat": "Fusion",
   "name": "Sweetea's",
   "address": "24 rue Poissonnière, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cdn.website.dish.co/media/93/f3/2487040/Sweeteas-MENU-POISSONNIERE-optimise.pdf"
  },
  {
   "id": "paris-2-corse-alma",
@@ -735,7 +808,8 @@
   "cat": "Corse",
   "name": "Alma",
   "address": "10 rue Mandar, 75002 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=Alma&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:2799934260740544592,ru_gwp:0%252C7,ru_lqi:CgRBbG1hSM67xK3QrYCACFoKEAAYACIEYWxtYZIBCnJlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnRjeTAzTjNOM1JSQUKqASwQASoIIgRhbG1hKAQyHhABIhp2aNxWyyjQ0xlsqdEATh_MLbmzQwDbwY30aQ,trex_id:sVBrEf"
  },
  {
   "id": "paris-2-vegan-mopa",
@@ -744,7 +818,8 @@
   "cat": "Vegan",
   "name": "Mopa",
   "address": "17 rue du Croissant, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://mopa-concept.fr/menu/"
  },
  {
   "id": "paris-2-vegan-mama-nissa",
@@ -753,7 +828,8 @@
   "cat": "Vegan",
   "name": "Mama Nissa",
   "address": "14 rue Mandar, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.mamanissa.fr/carte-et-menus/"
  },
  {
   "id": "paris-2-brunch-oubruncher",
@@ -762,7 +838,8 @@
   "cat": "Brunch",
   "name": "Oubruncher",
   "address": "13 Rue d'Uzès, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Baguett%27s+Caf%C3%A9&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlO3NvVQISvI8YQXilB6TshPlmRE9-DFyPX_6exLh60pebKPnSY9oTY9Y2KtlhiNAp9q2CznCGLHEujARq6oEc32eOhkRw%3D%3D"
  },
  {
   "id": "paris-2-brunch-cafe-jeanne-du-palace",
@@ -780,7 +857,8 @@
   "cat": "Café",
   "name": "Contrastes",
   "address": "38 rue Greneta, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://flipdish.blob.core.windows.net/pub/Menu%20CONTRASTES%20SUMMER%20VF.pdf"
  },
  {
   "id": "paris-2-cafe-etienne-marcel",
@@ -789,7 +867,8 @@
   "cat": "Café",
   "name": "Étienne Marcel",
   "address": "34 rue Étienne Marcel, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://assets.website-files.com/609cf971915f79b7c4ccf930/6419804a2e82326db5b19799_2023_03_EM_Resto.pdf"
  },
  {
   "id": "paris-3-francais-benedict",
@@ -798,7 +877,8 @@
   "cat": "Français",
   "name": "Benedict",
   "address": "19 rue Sainte-Croix-de-la-Bretonnerie, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://benedict-paris.com/"
  },
  {
   "id": "paris-3-francais-mr-t",
@@ -807,7 +887,8 @@
   "cat": "Français",
   "name": "Mr. T",
   "address": "38 Rue de Saintonge, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.mrt-restaurant.fr/"
  },
  {
   "id": "paris-3-francais-supernova",
@@ -816,7 +897,8 @@
   "cat": "Français",
   "name": "Supernova",
   "address": "12 rue Réaumur, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://s3.eu-west-1.amazonaws.com/userdocs.zenchef.com/353645/ilovepdf_merged+(6).pdf"
  },
  {
   "id": "paris-3-francais-season",
@@ -825,7 +907,8 @@
   "cat": "Français",
   "name": "Season",
   "address": "1 rue Charles-François Dupuis, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.season-paris.com/menu/"
  },
  {
   "id": "paris-3-francais-envie-le-banquet",
@@ -834,7 +917,8 @@
   "cat": "Français",
   "name": "Envie le banquet",
   "address": "148 rue du Temple, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://linktr.ee/addomme"
  },
  {
   "id": "paris-3-italien-addomme",
@@ -843,7 +927,8 @@
   "cat": "Italien",
   "name": "Addommé",
   "address": "41 Rue des Tournelles, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://linktr.ee/addomme"
  },
  {
   "id": "paris-3-italien-big-love",
@@ -852,7 +937,8 @@
   "cat": "Italien",
   "name": "Big Love",
   "address": "30 rue Debelleyme, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://menu.bigmammagroup.com/biglove/?service=all"
  },
  {
   "id": "paris-3-italien-all-antico-vinaio",
@@ -870,7 +956,8 @@
   "cat": "Japonais",
   "name": "Ogata",
   "address": "16 rue Debelleyme, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://ogata.com/paris/restaurant/"
  },
  {
   "id": "paris-3-japonais-onii-san",
@@ -888,7 +975,8 @@
   "cat": "Chinois",
   "name": "Mao Dumpling Bar",
   "address": "28 Rue de Saintonge, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.mao-corp.com/menu"
  },
  {
   "id": "paris-3-chinois-dimdimsum",
@@ -897,7 +985,8 @@
   "cat": "Chinois",
   "name": "Dimdimsum",
   "address": "20 Rue du Grenier Saint-Lazare, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://dimdimsum.fr/menu"
  },
  {
   "id": "paris-3-coreen-doma",
@@ -906,7 +995,8 @@
   "cat": "Coréen",
   "name": "Doma",
   "address": "10 rue Notre-Dame-de-Nazareth, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurant-doma.fr/fr/services"
  },
  {
   "id": "paris-3-burger-paris-new-york",
@@ -915,7 +1005,8 @@
   "cat": "Burger",
   "name": "Paris New York",
   "address": "1 rue Perrée, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.pnyburger.com/menu"
  },
  {
   "id": "paris-3-americain-808-mac-and-cheese",
@@ -924,7 +1015,8 @@
   "cat": "Américain",
   "name": "808 Mac and cheese",
   "address": "21 rue du Temple, 75004 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=808+Mac+and+cheese&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlPHP9yGDWODIjsY-aKlPPykhEjCr5x7n-b756QGHTe_-ah3maGoJICn8TE09X0KfRaFPlbrRmO3ljGFtnZBjScX6G6ouA%3D%3D"
  },
  {
   "id": "paris-3-oriental-mabrouk",
@@ -933,7 +1025,8 @@
   "cat": "Oriental",
   "name": "Mabrouk",
   "address": "64 Rue Réaumur, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://userdocs.zenchef.com/352916/MABROUK-Menu-WINTER-2022.pdf"
  },
  {
   "id": "paris-3-oriental-qasti-shawarma",
@@ -960,7 +1053,8 @@
   "cat": "Fusion",
   "name": "Goku Asian Canteen",
   "address": "27 Boulevard du Temple, 75003 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=GOKU+Asian+Canteen&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlPeUc0Cw9mS1e74XpqXDWyQaCHjr7K75nGFVViIpYVa965uaevP7laprlB2lUH-B5Zos3U-TLIDFGeng1HtUH4XLn8qjQ%3D%3D"
  },
  {
   "id": "paris-3-fusion-sweetea-s",
@@ -969,7 +1063,8 @@
   "cat": "Fusion",
   "name": "Sweetea's",
   "address": "61 rue des Gravilliers, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.sweeteas-paris.com/menu/"
  },
  {
   "id": "paris-3-fusion-inka",
@@ -987,7 +1082,8 @@
   "cat": "Brunch",
   "name": "Santa Lyna",
   "address": "96 boulevard de Sébastopol, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://thehungryfamily.com/santa-lyna/"
  },
  {
   "id": "paris-3-cafe-cafe-creme",
@@ -996,7 +1092,8 @@
   "cat": "Café",
   "name": "Café Crème",
   "address": "4 Rue Dupetit-Thouars, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cafecrememarais.paris/"
  },
  {
   "id": "paris-3-cafe-cafe-des-musees",
@@ -1005,7 +1102,8 @@
   "cat": "Café",
   "name": "Café des Musées",
   "address": "49 rue de Turenne, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.lecafedesmusees.fr/menus-carte/"
  },
  {
   "id": "paris-3-patisserie-la-maison-du-mochi",
@@ -1014,7 +1112,8 @@
   "cat": "Pâtisserie",
   "name": "La maison du mochi",
   "address": "120 Rue de Turenne, 75003 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.maisondumochi.fr/la-collection/"
  },
  {
   "id": "paris-4-francais-cheper",
@@ -1023,7 +1122,8 @@
   "cat": "Français",
   "name": "Cheper",
   "address": "53bis rue des Francs-Bourgeois, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://leperchoir.fr/menus/cheper-le-bar-a-manger"
  },
  {
   "id": "paris-4-francais-la-baguette-du-relais",
@@ -1032,7 +1132,8 @@
   "cat": "Français",
   "name": "La Baguette du Relais",
   "address": "10 rue des Archives, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=La+Baguette+du+Relais&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlPrergwxKLAhuBp21ktfOhGtAxrCgJFfbeONGvPBpjGWy_TdPq0WngztHpLby3N3qP3GIaVWbnhgzQFI-jhs2CIzQxX6g%3D%3D"
  },
  {
   "id": "paris-4-francais-bonnie",
@@ -1041,7 +1142,8 @@
   "cat": "Français",
   "name": "Bonnie",
   "address": "10 rue Agrippa d'Aubigné, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://bonnie-restaurant.com/wp-content/uploads/2023/01/BONNIE_CARTE_FOOD.pdf"
  },
  {
   "id": "paris-4-francais-fabula",
@@ -1050,7 +1152,8 @@
   "cat": "Français",
   "name": "Fabula",
   "address": "16 rue des Francs-Bourgeois, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://menu.fabula.paris/fr"
  },
  {
   "id": "paris-4-francais-le-paradis",
@@ -1059,7 +1162,8 @@
   "cat": "Français",
   "name": "Le Paradis",
   "address": "76 rue Saint-Martin, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://menuonline.fr/leparadis/carte-restaurant"
  },
  {
   "id": "paris-4-francais-jolie",
@@ -1077,7 +1181,8 @@
   "cat": "Italien",
   "name": "Pupetta Marais",
   "address": "7 rue François Miron, 75004 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://fr.restaurantguru.com/Pupetta-Marais-Paris/menu"
  },
  {
   "id": "paris-4-italien-little-babel",
@@ -1086,7 +1191,8 @@
   "cat": "Italien",
   "name": "Little Babel",
   "address": "10 rue Saint-Paul, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://littlebabel.fr/menu/"
  },
  {
   "id": "paris-4-japonais-kuma",
@@ -1095,7 +1201,8 @@
   "cat": "Japonais",
   "name": "Kuma",
   "address": "5 rue des Écouffes, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Kuma&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:2339478122218409913,ru_gwp:0%252C7,ru_lqi:CgRLdW1hSIKI5c3NrYCACFoKEAAYACIEa3VtYZIBE2phcGFuZXNlX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTlBhMjlwUlRCQlJSQUKqASwQASoIIgRrdW1hKAQyHhABIhplZJXEm1Ce73xIzQUJ39DVu-BK5e3U2r4UmA,trex_id:lWRA4"
  },
  {
   "id": "paris-4-americain-janet-by-homer",
@@ -1104,7 +1211,8 @@
   "cat": "Américain",
   "name": "Janet by Homer",
   "address": "13 rue Rambuteau, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://static1.squarespace.com/static/5ef07b4b0815bd7b284a77d2/t/6391f70558294831ed448d11/1670510342541/menuJanet.pdf"
  },
  {
   "id": "paris-4-cacher-tekes",
@@ -1122,7 +1230,8 @@
   "cat": "Tapas",
   "name": "La Mangerie",
   "address": "7 rue de Jarente, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://la-mangerie.com/galerie/"
  },
  {
   "id": "paris-4-taiwanais-baobar",
@@ -1131,7 +1240,8 @@
   "cat": "Taïwanais",
   "name": "Baobar",
   "address": "42 rue Sainte-Croix-de-la-Bretonnerie, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://static1.squarespace.com/static/5ea85377f8b4bd18db0aa5f7/t/641819aaa1179a2d759a92d9/1679301039266/BAOBAR+FOOD.jpg"
  },
  {
   "id": "paris-4-cafe-le-saint-regis",
@@ -1140,7 +1250,8 @@
   "cat": "Café",
   "name": "Le Saint-Régis",
   "address": "6 rue Jean du Bellay, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://assets.website-files.com/609eb4bf3ffc602ca621850e/63b2a0e31504f9accf115ccb_2023_01_St%20Regis_Resto_nuit.pdf"
  },
  {
   "id": "paris-4-cafe-la-favorite",
@@ -1149,7 +1260,8 @@
   "cat": "Café",
   "name": "La Favorite",
   "address": "4 Rue de Rivoli, 75004 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lafavorite.paris/"
  },
  {
   "id": "paris-5-francais-pee-bee",
@@ -1158,7 +1270,8 @@
   "cat": "Français",
   "name": "Pee & Bee",
   "address": "9 Rue Lagrange, 75005 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://pee-and-bee.com/la-carte"
  },
  {
   "id": "paris-5-francais-bibie",
@@ -1176,7 +1289,8 @@
   "cat": "Italien",
   "name": "Pepe Pizza",
   "address": "34 Rue Mouffetard, 75005 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.peppeparis.fr/menus-carte/"
  },
  {
   "id": "paris-5-italien-pepita",
@@ -1185,7 +1299,8 @@
   "cat": "Italien",
   "name": "Pepita",
   "address": "88 boulevard Saint-Germain, 75005 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.pepita-paris.fr/en/menus/"
  },
  {
   "id": "paris-5-italien-respiro",
@@ -1221,7 +1336,8 @@
   "cat": "Japonais",
   "name": "Mimi-Ramen",
   "address": "27 rue Descartes, 75005 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Mimi-Ramen&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlP8Xn2X4OWRz2zmfl227wKbecj5k7hq4iaYOaYa35dfeb44DWnTU9L-Zk1yWqsvuwhqQ3cy"
  },
  {
   "id": "paris-5-japonais-lamian-latian",
@@ -1239,7 +1355,8 @@
   "cat": "Burger",
   "name": "Shiso Burger",
   "address": "21 quai Saint-Michel, 75005 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.shisoburger.fr/notre-menu/"
  },
  {
   "id": "paris-5-burger-smash-burger",
@@ -1248,7 +1365,8 @@
   "cat": "Burger",
   "name": "Smash burger",
   "address": "48 rue Monge, 75005 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://smashsmash.com/"
  },
  {
   "id": "paris-5-thailandais-le-wok-saint-germain",
@@ -1257,7 +1375,8 @@
   "cat": "Thaïlandais",
   "name": "Le Wok Saint-Germain",
   "address": "45 rue Dauphine, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=LE+WOK+SAINT-GERMAIN&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoFOX-MmlLUKKaXt5ZjDFk3TLPiHfu7tTWlVXA-Alw3uhf9sQDo4sqMgKKFbcPtzdWl7mph4x2EbNF-g-NFo2zV1K0OSmt2B03v3EKmRIp1aR19VrMKtonLXdwvcSHoUWvhiShx_-l5NEZ8qH6oJnVW1YCozZQ%3D%3D"
  },
  {
   "id": "paris-6-francais-laperouse",
@@ -1266,7 +1385,8 @@
   "cat": "Français",
   "name": "Lapérouse",
   "address": "51 Quai des Grands Augustins, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=lap%C3%A9rouse+restaurant&client=safari&hl=fr-fr&sxsrf=APwXEdfbCd_5MuAoadSZUdZkG5XgtWdZ6A%3A1680206668137&ei=TOslZJ6DCM2nkdUPydSywA4&oq=Lap%C3%A9rouse&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYADIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQigUQsAMQQzIKCAAQigUQsAMQQzIKCAAQigUQsAMQQzIPCC4QigUQyAMQsAMQQxgBMg8ILhCKBRDIAxCwAxBDGAEyFQguEIoFEMcBEK8BEMgDELADEEMYATISCC4QigUQ1AIQyAMQsAMQQxgBMhUILhCKBRDHARCvARDIAxCwAxBDGAEyFQguEIoFEMcBEK8BEMgDELADEEMYAUoECEEYAFAAWABguAZoAXAAeACAAQCIAQCSAQCYAQDIARHAAQHaAQQIARgI&sclient=mobile-gws-wiz-serp#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:11599150970646647235,ru_gwp:0%252C7,ru_lqi:ChVsYXDDqXJvdXNlIHJlc3RhdXJhbnRIu9Xm8wFaKxAAEAEYABgBIhVsYXDDqXJvdXNlIHJlc3RhdXJhbnQqBAgCEAAqBAgDEAGSAQpyZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJITUhaTGJGSm5FQUWqASIQATIeEAEiGv8lun5ArbIVgZJZ2kkiyuPgFQNpqG7HU8SQ,ru_phdesc:S9jz5KmYwn4,trex_id:jNnwsd"
  },
  {
   "id": "paris-6-francais-le-sixieme",
@@ -1275,7 +1395,8 @@
   "cat": "Français",
   "name": "Le Sixième",
   "address": "3 rue du Sabot, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.thefork.fr/restaurant/sixieme-restaurant-r526505/menu"
  },
  {
   "id": "paris-6-francais-le-hibou",
@@ -1284,7 +1405,8 @@
   "cat": "Français",
   "name": "Le Hibou",
   "address": "16 carrefour de l'Odéon, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://assets.website-files.com/609d874da707322cdfc72a47/641b1353cf0a4af948951c9e_2023_03%20Hibou%20Resto%20NUIT%20FR.pdf"
  },
  {
   "id": "paris-6-francais-shiro",
@@ -1293,7 +1415,8 @@
   "cat": "Français",
   "name": "Shiro",
   "address": "168 Boulevard Saint-Germain, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurantshiro.fr/notre-menu/"
  },
  {
   "id": "paris-6-francais-brasserie-des-pres",
@@ -1311,7 +1434,8 @@
   "cat": "Italien",
   "name": "Agata",
   "address": "168 Boulevard Saint-Germain, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://agata-pizzeria.com/wp-content/uploads/2022/12/menu-web-2023.pdf"
  },
  {
   "id": "paris-6-italien-vita",
@@ -1320,7 +1444,8 @@
   "cat": "Italien",
   "name": "Vita",
   "address": "9 rue de l'École de Médecine, 75006 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://vita-ristorante.fr/fr/services"
  },
  {
   "id": "paris-6-italien-anima",
@@ -1329,7 +1454,8 @@
   "cat": "Italien",
   "name": "Anima",
   "address": "78 rue du Cherche-Midi, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.anima.paris/"
  },
  {
   "id": "paris-6-italien-cassaro-s",
@@ -1347,7 +1473,8 @@
   "cat": "Burger",
   "name": "Factory & co",
   "address": "109 Boulevard Saint-Germain, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.factoryandco.com/la-carte"
  },
  {
   "id": "paris-6-japonais-ippudo-paris",
@@ -1356,7 +1483,8 @@
   "cat": "Japonais",
   "name": "Ippudo Paris",
   "address": "14 rue Grégoire de Tours, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.ippudo.fr/menu/"
  },
  {
   "id": "paris-6-japonais-blueberry",
@@ -1365,7 +1493,8 @@
   "cat": "Japonais",
   "name": "Blueberry",
   "address": "6 Rue du Sabot, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.blueberrymakibar.com/notre-carte/"
  },
  {
   "id": "paris-6-japonais-o-kome",
@@ -1374,7 +1503,8 @@
   "cat": "Japonais",
   "name": "O-Komé",
   "address": "34 rue Dauphine, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://o-kome-onigiri.com/2360/carte/0"
  },
  {
   "id": "paris-6-japonais-sushi-tsukizi",
@@ -1383,7 +1513,8 @@
   "cat": "Japonais",
   "name": "Sushi Tsukizi",
   "address": "2 bis Rue des Ciseaux, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.tsukizi.fr/menus"
  },
  {
   "id": "paris-6-chinois-yoom",
@@ -1392,7 +1523,8 @@
   "cat": "Chinois",
   "name": "Yoom",
   "address": "5 rue Grégoire de Tours, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://yoom.fr/notre-carte/"
  },
  {
   "id": "paris-6-coreen-joayo",
@@ -1401,7 +1533,8 @@
   "cat": "Coréen",
   "name": "Joayo",
   "address": "54 Rue d'Assas, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://joayo-luxembourg.fr/fr/services"
  },
  {
   "id": "paris-6-coreen-kokodak",
@@ -1419,7 +1552,8 @@
   "cat": "Indien",
   "name": "Desi Road",
   "address": "14 Rue Dauphine, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://desiroadrestaurant.com/carte"
  },
  {
   "id": "paris-6-fusion-metou",
@@ -1428,7 +1562,8 @@
   "cat": "Fusion",
   "name": "Metou",
   "address": "7 rue Corneille, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://metoucuisinedasie.com/la-carte-fr/"
  },
  {
   "id": "paris-6-brunch-tipana",
@@ -1437,7 +1572,8 @@
   "cat": "Brunch",
   "name": "Tipana",
   "address": "2 rue Clément, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cdn.flowcode.com/prodassets/MENU_TIPANA_1222.pdf?ts=1671038522916687958"
  },
  {
   "id": "paris-6-cafe-patrol",
@@ -1446,7 +1582,8 @@
   "cat": "Café",
   "name": "Patrol",
   "address": "2 Place Edmond Rostand, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://patrol-paris.com/food"
  },
  {
   "id": "paris-6-cafe-yakuza-katsu-sando-coffee",
@@ -1455,7 +1592,8 @@
   "cat": "Café",
   "name": "Yakuza katsu sando & Coffee",
   "address": "3-5 rue des Quatre Vents, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.yabaisando.com/menu_23.pdf"
  },
  {
   "id": "paris-7-francais-thoumieux",
@@ -1464,7 +1602,8 @@
   "cat": "Français",
   "name": "Thoumieux",
   "address": "79 Rue Saint-Dominique, 75007 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://brasseriethoumieux.fr/wp-content/uploads/sites/24/2023/01/MenuThoumieux-FR.pdf"
  },
  {
   "id": "paris-7-francais-mersea",
@@ -1473,7 +1612,8 @@
   "cat": "Français",
   "name": "Mersea",
   "address": "53-57 Rue de Grenelle, 75007 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.merseaparis.com/wp-content/uploads/2023/02/WINTER_END_2023_BP.pdf"
  },
  {
   "id": "paris-7-italien-solum",
@@ -1482,7 +1622,8 @@
   "cat": "Italien",
   "name": "Solum",
   "address": "Pont Alexandre III, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://media-solum.s3.eu-west-3.amazonaws.com/menu_20022023_8ab9d4058e.pdf"
  },
  {
   "id": "paris-7-burger-burger-pere-fils",
@@ -1491,7 +1632,8 @@
   "cat": "Burger",
   "name": "Burger Père & Fils",
   "address": "53 Rue de Grenelle, 75007 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://perefilsparalleno.com/notre-carte/burgers/"
  },
  {
   "id": "paris-7-japonais-iode-sushi",
@@ -1500,7 +1642,8 @@
   "cat": "Japonais",
   "name": "Iodé sushi",
   "address": "125 rue Saint-Dominique, 75007 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.iodesushi.com/en/menus/"
  },
  {
   "id": "paris-7-japonais-vesper",
@@ -1509,7 +1652,8 @@
   "cat": "Japonais",
   "name": "Vesper",
   "address": "81 Avenue Bosquet, 75007 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://vesperparis.com/"
  },
  {
   "id": "paris-7-indien-new-jawad-new-balal",
@@ -1518,7 +1662,8 @@
   "cat": "Indien",
   "name": "New Jawad - New Balal",
   "address": "12 avenue Rapp, 75007 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://v2cdn0.centralappstatic.com/file/a19ee38c09e94912804e82f04779e726.pdf"
  },
  {
   "id": "paris-7-brunch-kozy",
@@ -1527,7 +1672,8 @@
   "cat": "Brunch",
   "name": "Kozy",
   "address": "79 Avenue Bosquet, 75007 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.kozy.fr/menu-kozy-kanope"
  },
  {
   "id": "paris-7-cafe-cuppa-cafe",
@@ -1536,7 +1682,8 @@
   "cat": "Café",
   "name": "Cuppa Café",
   "address": "86 rue de l'Université, 75007 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Cuppa+Cafe&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlPISya-w53FQWtYR6e8Oa7GsrxObPqLmg0dlYHNqB2IHw5IzeCUvWfDJ4cHpLNZ-MDqZgQE"
  },
  {
   "id": "paris-8-francais-beefbar",
@@ -1545,7 +1692,8 @@
   "cat": "Français",
   "name": "Beefbar",
   "address": "5 rue Marbeuf, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://beefbar.com/"
  },
  {
   "id": "paris-8-francais-mamamia",
@@ -1554,7 +1702,8 @@
   "cat": "Français",
   "name": "Mamamia",
   "address": "5 rue Vernet, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://mamamia-paris.com/restaurant-history"
  },
  {
   "id": "paris-8-francais-le-chat-blanc",
@@ -1563,7 +1712,8 @@
   "cat": "Français",
   "name": "Le Chat Blanc",
   "address": "61 Avenue Franklin Roosevelt, 75008 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://cdn.website.dish.co/media/51/10/5696317/Menu-restaurant.pdf"
  },
  {
   "id": "paris-8-francais-le-piaf",
@@ -1572,7 +1722,8 @@
   "cat": "Français",
   "name": "Le Piaf",
   "address": "38 rue Jean Mermoz, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lepiaf-restaurant.com/wp-content/uploads/2023/01/LEPIAF_PARIS_CARTE_FOOD.pdf"
  },
  {
   "id": "paris-8-francais-sphere",
@@ -1581,7 +1732,8 @@
   "cat": "Français",
   "name": "Sphère",
   "address": "18 rue La Boétie, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurantsphere.com/"
  },
  {
   "id": "paris-8-italien-noto",
@@ -1590,7 +1742,8 @@
   "cat": "Italien",
   "name": "Noto",
   "address": "252 bis Rue du Faubourg Saint-Honoré, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://noto-paris.com/wp-content/uploads/2022/10/MENU-NOTO-Emilio-Giagnoni.pdf"
  },
  {
   "id": "paris-8-italien-maitre-pierre",
@@ -1599,7 +1752,8 @@
   "cat": "Italien",
   "name": "Maître Pierre",
   "address": "7 Rue Marbeuf, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://maitrepierre.business.site/"
  },
  {
   "id": "paris-8-italien-giulia",
@@ -1608,7 +1762,8 @@
   "cat": "Italien",
   "name": "Giulia",
   "address": "20 rue Quentin Bauchart, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.giulia-restaurant.com/copie-de-menu"
  },
  {
   "id": "paris-8-japonais-yatai-ramen",
@@ -1617,7 +1772,8 @@
   "cat": "Japonais",
   "name": "Yatai ramen",
   "address": "127 rue du Faubourg Saint-Honoré, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://yatairamen.fr/menu"
  },
  {
   "id": "paris-8-japonais-l-abysse",
@@ -1626,7 +1782,8 @@
   "cat": "Japonais",
   "name": "L'Abysse",
   "address": "8 Port des Champs-Élysées, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.yannick-alleno.com/media/original/575fb5268634e/5b17d7238984b/61aaa1bfd46e9/20221005_directory-fr-1022.pdf"
  },
  {
   "id": "paris-8-japonais-shinko",
@@ -1635,7 +1792,8 @@
   "cat": "Japonais",
   "name": "Shinko",
   "address": "21 Rue Vignon, 75008 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.shinkoparis.fr/menus-carte/"
  },
  {
   "id": "paris-8-japonais-akira-back",
@@ -1644,7 +1802,8 @@
   "cat": "Japonais",
   "name": "Akira Back",
   "address": "33 Avenue George V, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.akirabackparis.com/fr/carte"
  },
  {
   "id": "paris-8-japonais-kokuban",
@@ -1653,7 +1812,8 @@
   "cat": "Japonais",
   "name": "Kokuban",
   "address": "104 Boulevard Haussmann, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.kokuban.fr/menu.html"
  },
  {
   "id": "paris-8-japonais-weito",
@@ -1662,7 +1822,8 @@
   "cat": "Japonais",
   "name": "Weito",
   "address": "54 Rue de Ponthieu, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://weitorestaurant.fr/"
  },
  {
   "id": "paris-8-japonais-doki-doki",
@@ -1671,7 +1832,8 @@
   "cat": "Japonais",
   "name": "Doki Doki",
   "address": "11 rue Marbeuf, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://dokidoki-handroll.com/wp-content/uploads/2022/08/Carte-site-internet-menu-FR-Menu-En-dejeuner-FR-Dejeuner-EN.pdf"
  },
  {
   "id": "paris-8-japonais-enni-udon",
@@ -1680,7 +1842,8 @@
   "cat": "Japonais",
   "name": "Enni Udon",
   "address": "6 rue de la Renaissance, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://enniudon.com/menu"
  },
  {
   "id": "paris-8-japonais-salvaje",
@@ -1689,7 +1852,8 @@
   "cat": "Japonais",
   "name": "Salvaje",
   "address": "51 Rue de Courcelles, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://paris.salvaje.world/fr/carte"
  },
  {
   "id": "paris-8-japonais-komatsubaki",
@@ -1716,7 +1880,8 @@
   "cat": "Thaïlandais",
   "name": "Mun",
   "address": "52 avenue des Champs-Élysées, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurant-mun.com/wp-content/uploads/2023/02/MUN_MENU_FOOD.pdf.pdf"
  },
  {
   "id": "paris-8-libanais-paillettes",
@@ -1725,7 +1890,8 @@
   "cat": "Libanais",
   "name": "Paillettes",
   "address": "20 Rue Quentin Bauchart, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.paillettes-paris.com/fr/carte-restaurant-israelien-libanais-paris"
  },
  {
   "id": "paris-8-oriental-gala",
@@ -1734,7 +1900,8 @@
   "cat": "Oriental",
   "name": "Gala",
   "address": "6 rue Arsène Houssaye, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://chezgala.com/wp-content/uploads/2023/03/Gala-Food-Digital.pdf"
  },
  {
   "id": "paris-8-cacher-le-kavod",
@@ -1752,7 +1919,8 @@
   "cat": "Indien",
   "name": "Mahatma",
   "address": "23 rue Vignon, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.mahatmaparis.com/menu"
  },
  {
   "id": "paris-8-tapas-sergent-garcia",
@@ -1761,7 +1929,8 @@
   "cat": "Tapas",
   "name": "Sergent Garcia",
   "address": "3 place de Rio de Janeiro, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://static1.squarespace.com/static/60ed946dae08675a017ecabf/t/634945212a8afb38d162bb7a/1665746214609/L%27Important++2022.pdf"
  },
  {
   "id": "paris-8-tapas-amazonia",
@@ -1770,7 +1939,8 @@
   "cat": "Tapas",
   "name": "Amazonia",
   "address": "30 rue Marbeuf, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.thefork.fr/restaurant/amazonia-r724346/menu"
  },
  {
   "id": "paris-8-grec-kalamata",
@@ -1779,7 +1949,8 @@
   "cat": "Grec",
   "name": "Kalamata",
   "address": "31 rue La Boétie, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.kalamata-restaurant.com/s-projects-side-by-side"
  },
  {
   "id": "paris-8-grec-anna",
@@ -1788,7 +1959,8 @@
   "cat": "Grec",
   "name": "Anna",
   "address": "14 Rue Marbeuf, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurant-anna.com/wp-content/uploads/2022/11/FOOD-ANNA-FR.pdf"
  },
  {
   "id": "paris-8-tibetain-lhotse",
@@ -1797,7 +1969,8 @@
   "cat": "Tibétain",
   "name": "Lhotse",
   "address": "44 rue de Londres, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.lhotse.fr/menus-carte/"
  },
  {
   "id": "paris-8-fusion-bensai-thai-japanese-fusion",
@@ -1806,7 +1979,8 @@
   "cat": "Fusion",
   "name": "Bensai Thai & Japanese Fusion",
   "address": "161 Rue du Faubourg Saint-Honoré, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.bensai.fr/fr"
  },
  {
   "id": "paris-8-brunch-prince-de-galles",
@@ -1815,7 +1989,8 @@
   "cat": "Brunch",
   "name": "Prince de Galles",
   "address": "33 Avenue George V, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.19-20paris.fr/en/our-menus"
  },
  {
   "id": "paris-8-cafe-cafe-fino",
@@ -1833,7 +2008,8 @@
   "cat": "Français",
   "name": "Lorette & Les Garçons",
   "address": "9 Rue Saint-Lazare, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.lorettelesite.fr/"
  },
  {
   "id": "paris-9-francais-le-rouge-a-levres",
@@ -1842,7 +2018,8 @@
   "cat": "Français",
   "name": "Le Rouge à Lèvres",
   "address": "6 rue Rougemont, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=LE+ROUCE+A+LEVRES&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOhHvhe53D4KmK4SMpqSPumE90y5Gr9T-deWM_AV4FxINSCVaZKGZVK0EA1RVwC1RSYvcnLdHO8ojhqPW9nSqq39qYyiA%3D%3D"
  },
  {
   "id": "paris-9-francais-mon-paris",
@@ -1851,7 +2028,8 @@
   "cat": "Français",
   "name": "Mon Paris",
   "address": "6 rue Édouard VII, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.mon-paris.fr/la-carte/"
  },
  {
   "id": "paris-9-francais-piou-piou",
@@ -1860,7 +2038,8 @@
   "cat": "Français",
   "name": "Piou Piou",
   "address": "3 rue Saint-Lazare, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lemenu.co/restaurants/paris/pioupiou"
  },
  {
   "id": "paris-9-francais-rivages",
@@ -1869,7 +2048,8 @@
   "cat": "Français",
   "name": "Rivages",
   "address": "1 Rue Scribe, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.thefork.fr/restaurant/rivages-r714531/menu?fbclid=PAZXh0bgNhZW0CMTEAAabM3GK7tAwiMsDXCT-lWRDqRfq06ZIJ4YY6kgBdLIAaqmhwGr5to9mUF80_aem_BArulpbFY57lQopIbuXmIA"
  },
  {
   "id": "paris-9-francais-le-shack",
@@ -1878,7 +2058,8 @@
   "cat": "Français",
   "name": "Le Shack",
   "address": "4 impasse Sandrié, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://leshack.fr/wp-content/uploads/2024/10/241029-MenuLS.pdf"
  },
  {
   "id": "paris-9-francais-perlouse",
@@ -1923,7 +2104,8 @@
   "cat": "Italien",
   "name": "Pepe Ronchon",
   "address": "31 Rue Saint-Lazare, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.pepe-ronchon.fr/notre-menu/"
  },
  {
   "id": "paris-9-italien-peppe",
@@ -1932,7 +2114,8 @@
   "cat": "Italien",
   "name": "Peppe",
   "address": "61 rue des Martyrs, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.peppeparis.fr/menus-carte/"
  },
  {
   "id": "paris-9-burger-cot-cot",
@@ -1941,7 +2124,8 @@
   "cat": "Burger",
   "name": "Cot cot",
   "address": "21 Rue Gérando, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.cotcotparis.com/menu"
  },
  {
   "id": "paris-9-japonais-kibo-noki",
@@ -1950,7 +2134,8 @@
   "cat": "Japonais",
   "name": "Kibo Noki",
   "address": "14 rue Vignon, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://kibonoki.bykomdab.com/"
  },
  {
   "id": "paris-9-japonais-neko-ramen",
@@ -1959,7 +2144,8 @@
   "cat": "Japonais",
   "name": "Neko Ramen",
   "address": "6 Rue de la Grange Batelière, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.nekoramen.fr/"
  },
  {
   "id": "paris-9-japonais-naruto-ramen",
@@ -1968,7 +2154,8 @@
   "cat": "Japonais",
   "name": "Naruto Ramen",
   "address": "57 Rue du Faubourg Montmartre, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.narutoramen.fr/menu-francais"
  },
  {
   "id": "paris-9-japonais-kokuban",
@@ -1977,7 +2164,8 @@
   "cat": "Japonais",
   "name": "Kokuban",
   "address": "10 rue du Faubourg Montmartre, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.kokuban.fr/menu.html"
  },
  {
   "id": "paris-9-japonais-okito",
@@ -1986,7 +2174,8 @@
   "cat": "Japonais",
   "name": "Okito",
   "address": "55 rue du Faubourg Montmartre, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://birhakeim.okito.fr/menu"
  },
  {
   "id": "paris-9-japonais-abri-soba",
@@ -1995,7 +2184,8 @@
   "cat": "Japonais",
   "name": "Abri Soba",
   "address": "10 rue Saulnier, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Abri+soba&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlMvL3paMC6a5atog1Kdbwdhe_e7q7pnsBFVOx2NrQLdSef4TW3Xu-4irdNwIf74eatyqAgk"
  },
  {
   "id": "paris-9-japonais-shinjuku",
@@ -2004,7 +2194,8 @@
   "cat": "Japonais",
   "name": "Shinjuku",
   "address": "52 Rue Condorcet, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.shinjukupigalle.com/la-carte"
  },
  {
   "id": "paris-9-japonais-face-noodles",
@@ -2031,7 +2222,8 @@
   "cat": "Chinois",
   "name": "Monsieur Mi",
   "address": "55 rue de Provence, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=MONSIEUR+MI&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlNbv8mEL7FrRJG0Gy_a0SVK7_8dVkJCOEPVAxQcE9ixLnEBEWXE5ZgjzeYceHzfTOFCrEELGKS1pirdmVnW4tq2QHfYLA%3D%3D"
  },
  {
   "id": "paris-9-chinois-ravioli-nord-est",
@@ -2040,7 +2232,8 @@
   "cat": "Chinois",
   "name": "Ravioli Nord-Est",
   "address": "17 rue du Faubourg Montmartre, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://montmartre.raviolinordest.com/menu"
  },
  {
   "id": "paris-9-chinois-yoom",
@@ -2049,7 +2242,8 @@
   "cat": "Chinois",
   "name": "Yoom",
   "address": "20 rue des Martyrs, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://yoom.fr/notre-carte/"
  },
  {
   "id": "paris-9-chinois-long-chao-shou",
@@ -2067,7 +2261,8 @@
   "cat": "Coréen",
   "name": "Budji",
   "address": "46 rue La Fayette, 75009 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.budji-food.com/notre-carte-2"
  },
  {
   "id": "paris-9-coreen-joayo-haussmann",
@@ -2076,7 +2271,8 @@
   "cat": "Coréen",
   "name": "Joayo Haussmann",
   "address": "63 Rue de Clichy, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://joayo-haussmann.fr/fr/services"
  },
  {
   "id": "paris-9-coreen-jjan",
@@ -2112,7 +2308,8 @@
   "cat": "Indien",
   "name": "The Crossing",
   "address": "35 Boulevard Haussmann, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://crossingtherestaurant.com/paris/food/"
  },
  {
   "id": "paris-9-vietnamien-phood",
@@ -2121,7 +2318,8 @@
   "cat": "Vietnamien",
   "name": "Phood",
   "address": "8 rue Cadet, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://click.and.phood.fr/home"
  },
  {
   "id": "paris-9-argentin-paris-boca",
@@ -2130,7 +2328,8 @@
   "cat": "Argentin",
   "name": "Paris-Boca",
   "address": "32 rue Pierre Fontaine, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://v2cdn0.centralappstatic.com/file/846c902485d44139ab5a2959226c18b1.pdf"
  },
  {
   "id": "paris-9-colombien-mi-ranchito-paisa",
@@ -2139,7 +2338,8 @@
   "cat": "Colombien",
   "name": "Mi Ranchito Paisa",
   "address": "35 Rue de Montholon, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=rouge+%C3%A0+l%C3%A8vres+restaurant+paris&client=safari&hl=fr-fr&sxsrf=APwXEdffdn8MyTz5SX19RvNWPiTfBuIr0g%3A1680252692521&ei=FJ8mZJ25H_akkdUP5aatyAE&gs_ssp=eJzj4tVP1zc0zDAty7bMKa80YLRSNagwMU81M0szN0u0MExOSkwxtzKoSE4xSU5JNU5MTTFPTTI0svBSLMovTU9VOLxAIefwirKi1GIFIC5JLC1KzCtRKEgsyiwGAOysHpI&oq=Rouge+%C3%A0+L%C3%A8vres+res&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYATIFCAAQgAQyEAguEIAEEBQQhwIQxwEQrwEyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46CggAEEcQ1gQQsAM6CggAEIoFELADEEM6BwgAEIoFEEM6CggAEIoFELEDEENKBAhBGABQsQdY3BNg3jBoAXAAeACAAbUBiAGZA5IBAzIuMpgBAKABAcgBEcABAQ&sclient=mobile-gws-wiz-serp#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOhHvhe53D4KmK4SMpqSPumE90y5Gr9T-deWM_AV4FxINSCVaZKGZVK0EA1RVwC1RSYvcnLdHO8ojhqPW9nSqq39qYyiA%3D%3D"
  },
  {
   "id": "paris-9-tapas-la-bouche-bleue",
@@ -2148,7 +2348,8 @@
   "cat": "Tapas",
   "name": "La Bouche Bleue",
   "address": "12 rue de Trévise, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://labouchebleue.com/menu-general/"
  },
  {
   "id": "paris-9-tapas-mamacita",
@@ -2157,7 +2358,8 @@
   "cat": "Tapas",
   "name": "Mamacita",
   "address": "14 Rue Rougemont, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://groupe-bucher.fr/menu-mamacita/"
  },
  {
   "id": "paris-9-tapas-villa-mikuna",
@@ -2166,7 +2368,8 @@
   "cat": "Tapas",
   "name": "Villa Mikuna",
   "address": "2 Rue Frochot, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://villamikuna.fr/assets/pdf/carte_villa_mikuna.pdf"
  },
  {
   "id": "paris-9-tapas-le-vert-sauvage",
@@ -2175,7 +2378,8 @@
   "cat": "Tapas",
   "name": "Le Vert Sauvage",
   "address": "6 rue Rougemont, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Le+Vert+Sauvage&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlNR8wLwK6F62mMzWnSfKl5QbLi3_fmDnQ11gfKmyMbJ3h--dlTPnJ91mFs9HFPdKkPLh1pDmVxf2wqXqUsfP9FggbQ5OQ%3D%3D"
  },
  {
   "id": "paris-9-poisson-fruits-de-mer-mersea",
@@ -2184,7 +2388,8 @@
   "cat": "Poisson & fruits de mer",
   "name": "Mersea",
   "address": "6 Rue du Faubourg Montmartre, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.merseaparis.com/wp-content/uploads/2023/02/WINTER_END_2023_BP.pdf"
  },
  {
   "id": "paris-9-poisson-fruits-de-mer-pere-fish",
@@ -2193,7 +2398,8 @@
   "cat": "Poisson & fruits de mer",
   "name": "Père & Fish",
   "address": "67 rue du Faubourg Poissonnière, 75009 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.pereetfish.com/"
  },
  {
   "id": "paris-9-brunch-kozy-kanope",
@@ -2202,7 +2408,8 @@
   "cat": "Brunch",
   "name": "Kozy Kanopé",
   "address": "46 Rue La Fayette, 75009 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.kozy.fr/menu-kozy-kanope"
  },
  {
   "id": "paris-9-cafe-braun-notes-coffee",
@@ -2211,7 +2418,8 @@
   "cat": "Café",
   "name": "Braun Notes Coffee",
   "address": "31-33 Rue de Mogador, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Braun+Notes+Coffee&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlN2GfccUoFV1WDnkQnrSrDOhxtU5xQfULkldiSmu6pAx555gkAz-yDjOZKC8NaPgjTxH2xduzL906pyKZWgam-Wr16Vxg%3D%3D"
  },
  {
   "id": "paris-9-cafe-book-nook",
@@ -2220,7 +2428,8 @@
   "cat": "Café",
   "name": "Book Nook",
   "address": "11 rue Blanche, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.bknkparis.com/menu"
  },
  {
   "id": "paris-9-cafe-cafe-de-la-paix",
@@ -2229,7 +2438,8 @@
   "cat": "Café",
   "name": "Café de la Paix",
   "address": "5 Place de l'Opéra, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.cafedelapaix.fr/assets/uploads/2023/03/Carte-Cafe-printemps-2023.pdf"
  },
  {
   "id": "paris-9-bar-a-cocktails-les-commeres",
@@ -2238,7 +2448,8 @@
   "cat": "Bar à cocktails",
   "name": "Les Commères",
   "address": "31 rue Victor Massé, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=LES+COMM%C3%88RES&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlMwhI5dRz_DvxsXy8G21QcFikkwOLR8QrcPGiSUf8-a60uF4g6h0-1K7EvS23l8-0rwAX_vbReciPxba2xsLB6FA--6rA%3D%3D"
  },
  {
   "id": "paris-9-bar-a-cocktails-moloko",
@@ -2247,7 +2458,8 @@
   "cat": "Bar à cocktails",
   "name": "Moloko",
   "address": "26 rue Pierre Fontaine, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://molokoparis.com/eat"
  },
  {
   "id": "paris-10-francais-le-candide",
@@ -2256,7 +2468,8 @@
   "cat": "Français",
   "name": "Le Candide",
   "address": "35 rue de Sambre-et-Meuse, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.candide.paris/%C3%A0-table"
  },
  {
   "id": "paris-10-francais-terminus-nord",
@@ -2265,7 +2478,8 @@
   "cat": "Français",
   "name": "Terminus Nord",
   "address": "23 rue de Dunkerque, 75010 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.terminusnord.com/menus-carte/"
  },
  {
   "id": "paris-10-francais-neni",
@@ -2274,7 +2488,8 @@
   "cat": "Français",
   "name": "Neni",
   "address": "12 boulevard de Denain, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.neniparis.fr/fr/dinner.php"
  },
  {
   "id": "paris-10-francais-c-est-dante",
@@ -2283,7 +2498,8 @@
   "cat": "Français",
   "name": "C'est Dante",
   "address": "14 Rue de Paradis, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.danterestaurant.info/menus-carte/"
  },
  {
   "id": "paris-10-francais-vertueux",
@@ -2328,7 +2544,8 @@
   "cat": "Italien",
   "name": "Mamaioa",
   "address": "63 Rue du Faubourg du Temple, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://drive.google.com/file/d/1ZOFPH8Lc8NrKoHdZbKJU2PJzEmnz0LqB/view"
  },
  {
   "id": "paris-10-italien-sonata",
@@ -2337,7 +2554,8 @@
   "cat": "Italien",
   "name": "Sonata",
   "address": "33 rue de Paradis, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account13689296/34087824_1.pdf?0.3900653535000467"
  },
  {
   "id": "paris-10-americain-baba-zulu",
@@ -2346,7 +2564,8 @@
   "cat": "Américain",
   "name": "Baba Zulu",
   "address": "23 rue Beaurepaire, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Baba+zulu&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlMGmwDorYedkKY-5YtY7A2icnkYhZz4Ztt64Q_f2Y5q6pZ1lSqMxNIl0PCX-Ss_gkMS_eFD"
  },
  {
   "id": "paris-10-burger-blossom-burgers-beers",
@@ -2355,7 +2574,8 @@
   "cat": "Burger",
   "name": "Blossom burgers & beers",
   "address": "26 rue de Chabrol, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.blossomburgers.com/menu/"
  },
  {
   "id": "paris-10-burger-o-b-u",
@@ -2364,7 +2584,8 @@
   "cat": "Burger",
   "name": "O.B.U",
   "address": "200 Rue du Faubourg Saint-Martin, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://fr.restaurantguru.com/OBU-Paris/menu"
  },
  {
   "id": "paris-10-burger-coderak",
@@ -2382,7 +2603,8 @@
   "cat": "Japonais",
   "name": "John Weng",
   "address": "20 rue du Faubourg Poissonnière, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://johnwengparis.com/notre-menu/"
  },
  {
   "id": "paris-10-japonais-noori",
@@ -2391,7 +2613,8 @@
   "cat": "Japonais",
   "name": "Noori",
   "address": "20 rue du Faubourg Saint-Martin, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://drive.google.com/file/d/1zBSMQAEkjX2rU4Jr6nkh5tNOhLvtLsln/view?usp=drivesdk"
  },
  {
   "id": "paris-10-japonais-hara-kiri-ramen",
@@ -2400,7 +2623,8 @@
   "cat": "Japonais",
   "name": "Hara-Kiri Ramen",
   "address": "82 rue du Faubourg Saint-Denis, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://www.harakiriramen.fr/plats"
  },
  {
   "id": "paris-10-japonais-espace-japon",
@@ -2409,7 +2633,8 @@
   "cat": "Japonais",
   "name": "Espace Japon",
   "address": "12 rue de Nancy, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.espacejapon.com/"
  },
  {
   "id": "paris-10-chinois-la-taverne-de-zhao",
@@ -2418,7 +2643,8 @@
   "cat": "Chinois",
   "name": "La taverne de Zhao",
   "address": "49 rue des Vinaigriers, 75010 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.zhaogroupe.com/la-taverne-de-zhao_opera/"
  },
  {
   "id": "paris-10-chinois-bolobolo",
@@ -2427,7 +2653,8 @@
   "cat": "Chinois",
   "name": "Bolobolo",
   "address": "10 Rue Saint-Augustin, 75002 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://v2cdn1.centralappstatic.com/file/e29a9446d08e4b11bfda5b0bde11e76a.pdf"
  },
  {
   "id": "paris-10-coreen-hite-family",
@@ -2436,7 +2663,8 @@
   "cat": "Coréen",
   "name": "Hite Family",
   "address": "34 Rue du Faubourg Poissonnière, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://hitefamily.com/menu"
  },
  {
   "id": "paris-10-coreen-in-seoul-paris",
@@ -2454,7 +2682,8 @@
   "cat": "Grec",
   "name": "Kali Greek Food",
   "address": "221 Rue Saint-Maur, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.kaligreekfood.fr/_files/ugd/d7c73f_e2638d2cc79d4929ab1b32b81c22e57f.pdf"
  },
  {
   "id": "paris-10-oriental-not-a-kebab",
@@ -2463,7 +2692,8 @@
   "cat": "Oriental",
   "name": "Not a Kebab",
   "address": "24 rue de la Grange aux Belles, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://luks-kebab.fr/fr/accueil/"
  },
  {
   "id": "paris-10-oriental-levantine",
@@ -2472,7 +2702,8 @@
   "cat": "Oriental",
   "name": "Levantine",
   "address": "36 rue Bichat, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.levantine.paris/frontpage/"
  },
  {
   "id": "paris-10-oriental-mister-do-san",
@@ -2499,7 +2730,8 @@
   "cat": "Indonésien",
   "name": "Djawa",
   "address": "179 quai de Valmy, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.djawa.fr/uploads/images/1677281981_flyer-brunch-menu-brunch-3.pdf"
  },
  {
   "id": "paris-10-cambodgien-le-petit-cambodge",
@@ -2508,7 +2740,8 @@
   "cat": "Cambodgien",
   "name": "Le Petit Cambodge",
   "address": "20 rue Alibert, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lepetitcambodge.fr/wp-content/themes/dist/pdf/LPC-VELLEFAUX-030622.pdf"
  },
  {
   "id": "paris-10-africain-new-soul-food",
@@ -2517,7 +2750,8 @@
   "cat": "Africain",
   "name": "New Soul Food",
   "address": "177 quai de Valmy, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=New+soul+food&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlNEeZbuUNdYWq2dYCQRWKkmzqyX2ulqeFxpDbEv0THaojtWw1EqHpnz8-TdCZ9_1h5aQW86vXwtnQ1k56iamjKz3kzcYg%3D%3D"
  },
  {
   "id": "paris-10-mexicain-nomas-tacos",
@@ -2526,7 +2760,8 @@
   "cat": "Mexicain",
   "name": "Nomás Tacos",
   "address": "44 rue du Faubourg Saint-Denis, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://drive.google.com/file/d/1DdhSGNPAGIPiayfIfJFhxnxRu2gsNGzR/view?usp=drivesdk"
  },
  {
   "id": "paris-10-fusion-siseng",
@@ -2535,7 +2770,8 @@
   "cat": "Fusion",
   "name": "Siseng",
   "address": "82 quai de Jemmapes, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://siseng.paris/menu/"
  },
  {
   "id": "paris-10-creperie-galbar",
@@ -2544,7 +2780,8 @@
   "cat": "Crêperie",
   "name": "Galbar",
   "address": "50 rue du Faubourg Poissonnière, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Galbar&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOXYw_tE2vVb19b6fNVKeC1f7WtvnZ6re6MMj0P8eeVclZkwATvhJ1W9CNwcZ5eGoRz03vN"
  },
  {
   "id": "paris-10-vegan-ora",
@@ -2553,7 +2790,8 @@
   "cat": "Vegan",
   "name": "Ora",
   "address": "12 rue Philippe de Girard, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.ora-paris.co/menus-carte/"
  },
  {
   "id": "paris-10-brunch-parenthese",
@@ -2562,7 +2800,8 @@
   "cat": "Brunch",
   "name": "Parenthèse",
   "address": "9 rue de Mazagran, 75010 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.parenthesebrunch.com/menu"
  },
  {
   "id": "paris-10-cafe-le-cafe-bistrot",
@@ -2571,7 +2810,8 @@
   "cat": "Café",
   "name": "Le Café Bistrot",
   "address": "32 Boulevard de Magenta, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Le+Caf%C3%A9+Bistrot&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&trex=m_t:lcl_akp,rc_ludocids:1235856686850751470,rc_q:Le%2520Caf%25C3%25A9%2520Bistrot,ru_gwp:0%252C7,ru_q:Le%2520Caf%25C3%25A9%2520Bistrot,trex_id:LdTkFb&lpg=cid:CgIgAQ%3D%3D"
  },
  {
   "id": "paris-10-cafe-immersion",
@@ -2580,7 +2820,8 @@
   "cat": "Café",
   "name": "Immersion",
   "address": "8 Rue Lucien Sampaix, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://immersionparis.fr"
  },
  {
   "id": "paris-10-cafe-residence-kann",
@@ -2589,7 +2830,8 @@
   "cat": "Café",
   "name": "Résidence Kann",
   "address": "28 rue des Vinaigriers, 75010 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://residencekann.wordpress.com/"
  },
  {
   "id": "paris-11-francais-maison-breguet",
@@ -2598,7 +2840,8 @@
   "cat": "Français",
   "name": "Maison Bréguet",
   "address": "8 rue Bréguet, 75011 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://menu-maison-breguet.webflow.io/"
  },
  {
   "id": "paris-11-francais-blue-rooster",
@@ -2607,7 +2850,8 @@
   "cat": "Français",
   "name": "Blue Rooster",
   "address": "44 Boulevard Voltaire, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.blueroosterparis.fr/uploads/6pq6p498/Carte_blueroosterparis.pdf"
  },
  {
   "id": "paris-11-francais-brasserie-martin",
@@ -2616,7 +2860,8 @@
   "cat": "Français",
   "name": "Brasserie Martin",
   "address": "24 rue Saint-Ambroise, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://nouvellegardegroupe.com/brasserie-martin/menus/"
  },
  {
   "id": "paris-11-francais-taem",
@@ -2625,7 +2870,8 @@
   "cat": "Français",
   "name": "Taem",
   "address": "14 Rue Popincourt, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Taem&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlObrD0D8ksoIMorbAfL68FM9DvmmNKvUEl1bkluaoMpB0VWIBe0-qQte6W9EBju4tJVqppN"
  },
  {
   "id": "paris-11-francais-city-barbecue",
@@ -2634,7 +2880,8 @@
   "cat": "Français",
   "name": "City Barbecue",
   "address": "3 rue Voltaire, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://citybarbecueparis.com/menu"
  },
  {
   "id": "paris-11-francais-mamie-bidoche",
@@ -2643,7 +2890,8 @@
   "cat": "Français",
   "name": "Mamie Bidoche",
   "address": "16 rue de Candie, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://mamiebidoche.fr/"
  },
  {
   "id": "paris-11-francais-diggity",
@@ -2652,7 +2900,8 @@
   "cat": "Français",
   "name": "Diggity",
   "address": "32 Rue Saint-Maur, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.diggityparis.com/menus-carte/"
  },
  {
   "id": "paris-11-francais-chez-francois",
@@ -2661,7 +2910,8 @@
   "cat": "Français",
   "name": "Chez François",
   "address": "3bis avenue de Bouvines, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.alloj.com/fr/restaurant-cacher/chez-francois/carte.html"
  },
  {
   "id": "paris-11-francais-l-echoppe",
@@ -2688,7 +2938,8 @@
   "cat": "Italien",
   "name": "Giorgio",
   "address": "21 rue de Charonne, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.gruppodalmata.com/assets/giorgio/food.pdf"
  },
  {
   "id": "paris-11-italien-pupetta-beaumarchais",
@@ -2697,7 +2948,8 @@
   "cat": "Italien",
   "name": "Pupetta Beaumarchais",
   "address": "90 Boulevard Beaumarchais, 75011 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=PUPETTA&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:2793535181236436013,ru_gwp:0%252C7,ru_lqi:CgdQVVBFVFRBSP2a49izrICACFoNEAAYACIHcHVwZXR0YZIBEHBpenphX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkhhVkIxWDFKUkVBRaoBIxABMh8QASIbvLblTGp02ya4MOjqJeqfc_4pZdWxKFthMmv_,ru_phdesc:SCo3RCsJsjA,trex_id:vghCvb"
  },
  {
   "id": "paris-11-italien-itaglio",
@@ -2706,7 +2958,8 @@
   "cat": "Italien",
   "name": "Itaglio",
   "address": "119 boulevard Voltaire, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.itaglio.com/wp-content/uploads/2022/06/Itaglio-menu.pdf"
  },
  {
   "id": "paris-11-italien-gruppomimo",
@@ -2715,7 +2968,8 @@
   "cat": "Italien",
   "name": "Gruppomimo",
   "address": "24 rue Keller, 75011 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.gruppomimo.com/food"
  },
  {
   "id": "paris-11-italien-origini",
@@ -2733,7 +2987,8 @@
   "cat": "Espagnol",
   "name": "Rainbao",
   "address": "7 rue du Grand Prieuré, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://rainbao.byclickeat.fr/order"
  },
  {
   "id": "paris-11-americain-brother-sister",
@@ -2742,7 +2997,8 @@
   "cat": "Américain",
   "name": "Brother Sister",
   "address": "72 Rue de la Roquette, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://brothersister.fr/menu"
  },
  {
   "id": "paris-11-burger-31-street-burgers",
@@ -2751,7 +3007,8 @@
   "cat": "Burger",
   "name": "31 Street Burgers",
   "address": "1 Villa Gaudelet, 75011 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://31streetburgers.com/la-carte/"
  },
  {
   "id": "paris-11-burger-goiko",
@@ -2760,7 +3017,8 @@
   "cat": "Burger",
   "name": "Goiko",
   "address": "99 Rue Oberkampf, 75011 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.goiko.fr/carte/"
  },
  {
   "id": "paris-11-burger-cut",
@@ -2769,7 +3027,8 @@
   "cat": "Burger",
   "name": "Cut",
   "address": "4 rue Saint-Bernard, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.cut-streetfood.com/"
  },
  {
   "id": "paris-11-burger-le-camion-qui-fume",
@@ -2778,7 +3037,8 @@
   "cat": "Burger",
   "name": "Le Camion Qui Fume",
   "address": "66 Rue Oberkampf, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lecamionquifume.com/"
  },
  {
   "id": "paris-11-burger-gomu",
@@ -2787,7 +3047,8 @@
   "cat": "Burger",
   "name": "Gomu",
   "address": "54 rue du Faubourg du Temple, 75011 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://gomuburger.com/menu/"
  },
  {
   "id": "paris-11-burger-seizemetrescarres",
@@ -2796,7 +3057,8 @@
   "cat": "Burger",
   "name": "Seizemetrescarrés",
   "address": "54 rue Basfroi, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.seizemetrescarres.fr/menus"
  },
  {
   "id": "paris-11-burger-wakam",
@@ -2805,7 +3067,8 @@
   "cat": "Burger",
   "name": "Wakam",
   "address": "22 rue Crespin du Gast, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.wakamburger.fr/order?l=fr#/restaurant/16687/collection/19783"
  },
  {
   "id": "paris-11-burger-crispy-soul",
@@ -2814,7 +3077,8 @@
   "cat": "Burger",
   "name": "Crispy Soul",
   "address": "75 rue Léon Frot, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://app.pulp.eu/shop/9e04103f-d8fd-41bf-9fe2-8dab0bd6045c?gl=1&free=true&utm_source=FEG&utm_campaign=crispysoul"
  },
  {
   "id": "paris-11-burger-break-moment",
@@ -2823,7 +3087,8 @@
   "cat": "Burger",
   "name": "Break Moment",
   "address": "174 bis boulevard Voltaire, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://menu.tillersystems.com/16486/break-moment-11-eme/menu/25260"
  },
  {
   "id": "paris-11-japonais-sushi-first",
@@ -2832,7 +3097,8 @@
   "cat": "Japonais",
   "name": "Sushi First",
   "address": "175 rue Saint-Maur, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://first94.fr/"
  },
  {
   "id": "paris-11-japonais-sushi-rainbow",
@@ -2841,7 +3107,8 @@
   "cat": "Japonais",
   "name": "Sushi Rainbow",
   "address": "18 rue Daval, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://sushirainbow.fr/menu"
  },
  {
   "id": "paris-11-japonais-superbao",
@@ -2850,7 +3117,8 @@
   "cat": "Japonais",
   "name": "Superbao",
   "address": "16 rue Daval, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.superbao.fr/"
  },
  {
   "id": "paris-11-japonais-yoruparis",
@@ -2859,7 +3127,8 @@
   "cat": "Japonais",
   "name": "Yoruparis",
   "address": "62 Rue de la Roquette, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://edesignparis.fr/yoru/"
  },
  {
   "id": "paris-11-japonais-aoba",
@@ -2877,7 +3146,8 @@
   "cat": "Chinois",
   "name": "Bao Express",
   "address": "10 rue Bréguet, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.baofamily.co/bao-express-eat-in"
  },
  {
   "id": "paris-11-chinois-hibao",
@@ -2886,7 +3156,8 @@
   "cat": "Chinois",
   "name": "Hibao",
   "address": "28 rue de Malte, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://fr.restaurantguru.com/HIBAO-RESTO-Paris/menu"
  },
  {
   "id": "paris-11-chinois-mala-boom",
@@ -2895,7 +3166,8 @@
   "cat": "Chinois",
   "name": "Mala Boom",
   "address": "42 Rue Jean-Pierre Timbaud, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://static1.squarespace.com/static/62600ddb33c86a7e2d9910f4/t/64105224c3bb6e71b7cfede6/1678791205977/Mala+Boom+Menu.pdf"
  },
  {
   "id": "paris-11-coreen-la-cantine-coreenne",
@@ -2904,7 +3176,8 @@
   "cat": "Coréen",
   "name": "La Cantine Coréenne",
   "address": "58 avenue de la République, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lacantinecoreenne.fr/menu"
  },
  {
   "id": "paris-11-oriental-chakchouka",
@@ -2913,7 +3186,8 @@
   "cat": "Oriental",
   "name": "Chakchouka",
   "address": "71 rue Jean-Pierre Timbaud, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.moommam.fr/"
  },
  {
   "id": "paris-11-oriental-bladi",
@@ -2922,7 +3196,8 @@
   "cat": "Oriental",
   "name": "Bladi",
   "address": "115 Rue Saint-Maur, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://bladi-paris.business.site/"
  },
  {
   "id": "paris-11-oriental-nour",
@@ -2931,7 +3206,8 @@
   "cat": "Oriental",
   "name": "Nour",
   "address": "38 rue Jean-Pierre Timbaud, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://nour-comptoir.com/index-phone.html"
  },
  {
   "id": "paris-11-israelien-soumsoum",
@@ -2940,7 +3216,8 @@
   "cat": "Israélien",
   "name": "Soumsoum",
   "address": "144 Boulevard Voltaire, 75011 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://soumsoum.fr/"
  },
  {
   "id": "paris-11-libanais-les-freres-hummus",
@@ -2949,7 +3226,8 @@
   "cat": "Libanais",
   "name": "Les Frères Hummus",
   "address": "175 rue Saint-Maur, 75011 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=les+fr%C3%A8res+hummus+menu&client=safari&hl=fr-fr&sxsrf=APwXEdej1XC6i1oLHPlygJg9WDCEMBaJQg%3A1680552838908&ei=hjMrZLL-NquDkdUPwKeE8AE&oq=Les+Fr%C3%A8res+Hummus&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYAjIICAAQgAQQsAMyDgguEK8BEMcBEIAEELADMgsIABCABBCwAxDLATIICAAQgAQQsAMyCggAEIAEELADEAoyCwgAEIAEELADEMsBMggIABCiBBCwAzIICAAQogQQsAMyCAgAEKIEELADMggIABCiBBCwA0oECEEYAVAAWABgjQxoAHAAeACAAUiIAUiSAQExmAEAyAEKwAEB&sclient=mobile-gws-wiz-serp#lkt=LocalPoiMenu&trex=m_t:lcl_akp,rc_ludocids:10519112107065730493,rc_q:les%2520fr%25C3%25A8res%2520hummus%2520menu,ru_gwp:0%252C7,ru_q:les%2520fr%25C3%25A8res%2520hummus%2520menu,trex_id:ukxbuf&lpg=cid:CgIgAQ%3D%3D"
  },
  {
   "id": "paris-11-thailandais-maythai",
@@ -2958,7 +3236,8 @@
   "cat": "Thaïlandais",
   "name": "Maythai",
   "address": "32 Avenue de la République, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.maythai.fr/menu"
  },
  {
   "id": "paris-11-philippin-bobi",
@@ -2967,7 +3246,8 @@
   "cat": "Philippin",
   "name": "Bobi",
   "address": "17 rue Oberkampf, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.bobiparis.com/"
  },
  {
   "id": "paris-11-fusion-savane-mousson",
@@ -2976,7 +3256,8 @@
   "cat": "Fusion",
   "name": "Savane Mousson",
   "address": "47 Boulevard Richard Lenoir, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://linktr.ee/savanemousson"
  },
  {
   "id": "paris-11-fusion-laia",
@@ -2994,7 +3275,8 @@
   "cat": "Brunch",
   "name": "KafKaf",
   "address": "7 Rue Keller, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://thehungryfamily.com/wp-content/uploads/2023/01/20221027_Kafkaf_Menu.pdf"
  },
  {
   "id": "paris-11-brunch-clint",
@@ -3003,7 +3285,8 @@
   "cat": "Brunch",
   "name": "Clint",
   "address": "174 rue de la Roquette, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://linktr.ee/clintparis?fbclid=PAAaZ6ePv2eilquKpXP2uFrzhr9IQenx0jMhYcG9NAgTJuSvfqpavU15HTPYU"
  },
  {
   "id": "paris-11-brunch-unreve",
@@ -3012,7 +3295,8 @@
   "cat": "Brunch",
   "name": "Unrêve",
   "address": "24 avenue Parmentier, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account17161036/35948524_1.pdf?0.8737910237315161"
  },
  {
   "id": "paris-11-brunch-l-atelier-saisonnier",
@@ -3030,7 +3314,8 @@
   "cat": "Café",
   "name": "Joa",
   "address": "20 boulevard des Filles du Calvaire, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cafejoa.com/"
  },
  {
   "id": "paris-11-cafe-cafe-mareva",
@@ -3039,7 +3324,8 @@
   "cat": "Café",
   "name": "Café Mareva",
   "address": "38 rue du Faubourg du Temple, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.cafemareva.com/menu"
  },
  {
   "id": "paris-11-cafe-cafe-du-temple",
@@ -3048,7 +3334,8 @@
   "cat": "Café",
   "name": "Café du Temple",
   "address": "14 rue du Faubourg du Temple, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cafedutemple.fr/"
  },
  {
   "id": "paris-11-cafe-cafe-mericourt",
@@ -3057,7 +3344,8 @@
   "cat": "Café",
   "name": "Café Méricourt",
   "address": "22 rue de la Folie-Méricourt, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.cafemericourt.com/menu"
  },
  {
   "id": "paris-11-cafe-le-charbon",
@@ -3066,7 +3354,8 @@
   "cat": "Café",
   "name": "Le Charbon",
   "address": "109 rue Oberkampf, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://static.restovisio.com/files/menus/16a1e0ab6034aeb1de1c77e153493b7161a9cef78271e.pdf"
  },
  {
   "id": "paris-11-cafe-pompom-coffice",
@@ -3075,7 +3364,8 @@
   "cat": "Café",
   "name": "Pompom Coffice",
   "address": "40 Rue Sedaine, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.thefork.fr/restaurant/cafe-pompom-r727696/menu"
  },
  {
   "id": "paris-11-cafe-on-partage",
@@ -3084,7 +3374,8 @@
   "cat": "Café",
   "name": "On Partage",
   "address": "137bis rue de Charonne, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=On+Partage&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOR0xS4-2-1nDbc0NWdnbARhbes8cSmS2zaOU9Crq-bIYkF5S6ipjRdi-3EPYIMCIF8iRptur81zvXpnhM7fobLBvTY6LAjUR46uLCzr9IicDZVJdE%3D"
  },
  {
   "id": "paris-11-bar-a-cocktails-carre-voltaire",
@@ -3093,7 +3384,8 @@
   "cat": "Bar à cocktails",
   "name": "Carré Voltaire",
   "address": "273 boulevard Voltaire, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lecarrevoltaire.tastycloud.menu/e1997324ad78c1a709f8775212ecb441b0fbdeed04b4f2714a4cd139dc62fef0/categories"
  },
  {
   "id": "paris-11-bar-a-cocktails-la-reverie",
@@ -3102,7 +3394,8 @@
   "cat": "Bar à cocktails",
   "name": "La Rêverie",
   "address": "15 rue de la Roquette, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lareverie-paris.com/plats-salades-pizzas/"
  },
  {
   "id": "paris-11-bar-a-cocktails-le-perchoir-menilmontant",
@@ -3111,7 +3404,8 @@
   "cat": "Bar à cocktails",
   "name": "Le Perchoir Ménilmontant",
   "address": "14 rue Crespin du Gast, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://leperchoir.fr/menus/le-perchoir-menilmontant-le-bar"
  },
  {
   "id": "paris-12-francais-jango",
@@ -3120,7 +3414,8 @@
   "cat": "Français",
   "name": "Jango",
   "address": "47 avenue de Saint-Mandé, 75012 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://fr.restaurantguru.com/Jango-Paris/menu"
  },
  {
   "id": "paris-12-francais-marvely",
@@ -3129,7 +3424,8 @@
   "cat": "Français",
   "name": "Marvely",
   "address": "46 rue Crozatier, 75012 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://marvely.fr/Carte_Marvely.pdf"
  },
  {
   "id": "paris-12-italien-the-godfather-paris",
@@ -3138,7 +3434,8 @@
   "cat": "Italien",
   "name": "The Godfather Paris",
   "address": "41 Allée Vivaldi, 75012 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://places.singleplatform.com/the-godfather-5/menu"
  },
  {
   "id": "paris-12-americain-mama-jackson",
@@ -3147,7 +3444,8 @@
   "cat": "Américain",
   "name": "Mama Jackson",
   "address": "12 rue Claude Tillier, 75012 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=MAMA+JACKSON&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoFZJwCiWhxX-_OVVkOy90xYHRTIFsXzCruWaO_XiJQx_2a_W54Y2ZaStduKOApCe9T8qFIzNJQSppN_dfI5ywGYG1WfseDTemtqUmB5JPKmsOhcMhKaLYaq-KKB5cl6ck4wRA4W8Wee7ARB3AjXn5fttbS_2p2PMfuTddgbFUa-vSB-fGw%3D"
  },
  {
   "id": "paris-12-burger-liberty-s-burger",
@@ -3156,7 +3454,8 @@
   "cat": "Burger",
   "name": "Liberty's Burger",
   "address": "18 rue d'Aligre, 75012 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.libertysburger.com/wp-content/uploads/2023/02/CARTE-EXTERIEURE-2023.pdf"
  },
  {
   "id": "paris-12-japonais-towa",
@@ -3183,7 +3482,8 @@
   "cat": "Chinois",
   "name": "Mr Zhao x Ground Control",
   "address": "81 rue du Charolais, 75012 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.zhaogroupe.com/menu-mr-zhao_carte/"
  },
  {
   "id": "paris-12-cacher-tikounolam",
@@ -3192,7 +3492,8 @@
   "cat": "Cacher",
   "name": "Tikounolam",
   "address": "136 avenue Daumesnil, 75012 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://tikounolam.fr/menu/"
  },
  {
   "id": "paris-12-cacher-berbeche",
@@ -3201,7 +3502,8 @@
   "cat": "Cacher",
   "name": "Berbeche",
   "address": "53 avenue du Docteur Arnold Netter, 75012 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.berbecheparis.com/collections/traiteur-cacher"
  },
  {
   "id": "paris-12-bar-a-cocktails-les-piaules-rooftop",
@@ -3210,7 +3512,8 @@
   "cat": "Bar à cocktails",
   "name": "Les Piaules rooftop",
   "address": "Place de la Nation, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.tripadvisor.fr/Restaurant_Review-g187147-d8873382-Reviews-Les_Piaules-Paris_Ile_de_France.html"
  },
  {
   "id": "paris-12-bar-a-cocktails-hostaria-urbana",
@@ -3219,7 +3522,8 @@
   "cat": "Bar à cocktails",
   "name": "Hostaria Urbana",
   "address": "9 rue Antoine Vollon, 75012 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.hostariaurbana.com/homepage/new-homepage/"
  },
  {
   "id": "paris-13-francais-l-envol",
@@ -3228,7 +3532,8 @@
   "cat": "Français",
   "name": "L'Envol",
   "address": "12 Rue Neuve Tolbiac, 75013 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.lenvolfood.com/wp-content/uploads/2019/03/carte-paris.pdf"
  },
  {
   "id": "paris-13-francais-off-paris-seine",
@@ -3237,7 +3542,8 @@
   "cat": "Français",
   "name": "Off Paris Seine",
   "address": "86 quai d'Austerlitz, 75013 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://offparisseine.com/fr/restaurant-bar.html"
  },
  {
   "id": "paris-13-italien-la-felicita",
@@ -3246,7 +3552,8 @@
   "cat": "Italien",
   "name": "La Felicità",
   "address": "5 parvis Alan Turing, 75013 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.lafelicita.fr/wp-content/uploads/2023/02/2022-12-05-MENU-SITE-FELICITA.pdf"
  },
  {
   "id": "paris-13-italien-scalini",
@@ -3255,7 +3562,8 @@
   "cat": "Italien",
   "name": "Scalini",
   "address": "17 rue Abel Gance, 75013 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://scalini.fr/menu"
  },
  {
   "id": "paris-13-burger-smatch-burger",
@@ -3264,7 +3572,8 @@
   "cat": "Burger",
   "name": "Smatch burger",
   "address": "8 rue du Père Guérin, 75013 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://smatch-burger.com/"
  },
  {
   "id": "paris-13-japonais-21-dumpling",
@@ -3282,7 +3591,8 @@
   "cat": "Chinois",
   "name": "Tao Tao",
   "address": "159 boulevard Vincent Auriol, 75013 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://chezly75013.fr/menu"
  },
  {
   "id": "paris-13-coreen-jmt",
@@ -3291,7 +3601,8 @@
   "cat": "Coréen",
   "name": "JMT",
   "address": "63 quai de la Gare, 75013 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.restaurantjmt.fr/"
  },
  {
   "id": "paris-13-coreen-yukga",
@@ -3309,7 +3620,8 @@
   "cat": "Vietnamien",
   "name": "Phô 13",
   "address": "135 avenue de Choisy, 75013 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://pho13.com/menu/menu-soupes"
  },
  {
   "id": "paris-13-vietnamien-hoi-an",
@@ -3318,7 +3630,8 @@
   "cat": "Vietnamien",
   "name": "Hoi An",
   "address": "109 avenue d'Ivry, 75013 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.eat-list.fr/paris-13-75013/restaurant-vietnamien-68/hoi-an-136523"
  },
  {
   "id": "paris-14-francais-le-dalea",
@@ -3327,7 +3640,8 @@
   "cat": "Français",
   "name": "Le Dalea",
   "address": "13-15 boulevard Edgar Quinet, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://dalea.fr/fr/services"
  },
  {
   "id": "paris-14-francais-les-fondus-de-la-raclette",
@@ -3336,7 +3650,8 @@
   "cat": "Français",
   "name": "Les Fondus de la Raclette",
   "address": "209 Boulevard Raspail, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lesfondusdelaraclette.fr/menu/"
  },
  {
   "id": "paris-14-francais-mr-beef",
@@ -3345,7 +3660,8 @@
   "cat": "Français",
   "name": "Mr Beef",
   "address": "91 rue Didot, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.mrbeef.fr/"
  },
  {
   "id": "paris-14-francais-papi-aux-fourneaux",
@@ -3354,7 +3670,8 @@
   "cat": "Français",
   "name": "Papi aux fourneaux",
   "address": "70 rue de l'Ouest, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://papyauxfourneaux.fr/"
  },
  {
   "id": "paris-14-francais-le-bouquet-alesia",
@@ -3363,7 +3680,8 @@
   "cat": "Français",
   "name": "Le Bouquet Alésia",
   "address": "75 Avenue du Général Leclerc, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.bouquet-alesia.fr/la-carte/"
  },
  {
   "id": "paris-14-francais-maison-edgard",
@@ -3372,7 +3690,8 @@
   "cat": "Français",
   "name": "Maison Edgard",
   "address": "232 boulevard Raspail, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://maison-edgar.fr/restaurant/"
  },
  {
   "id": "paris-14-italien-the-village-terrazza",
@@ -3381,7 +3700,8 @@
   "cat": "Italien",
   "name": "The Village Terrazza",
   "address": "34 rue des Plantes, 75014 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.thevillageterrazza.fr/_files/ugd/640d87_a84a2f3132174618ac7b50811c926ff9.pdf"
  },
  {
   "id": "paris-14-americain-broadway-cafe",
@@ -3390,7 +3710,8 @@
   "cat": "Américain",
   "name": "Broadway Café",
   "address": "112 boulevard du Montparnasse, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.broadway-caffe-paris.fr/"
  },
  {
   "id": "paris-14-americain-la-cabane",
@@ -3399,7 +3720,8 @@
   "cat": "Américain",
   "name": "La Cabane",
   "address": "3 place de la Porte de Vanves, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.lacabane75.fr/"
  },
  {
   "id": "paris-14-americain-mosugo",
@@ -3408,7 +3730,8 @@
   "cat": "Américain",
   "name": "Mosugo",
   "address": "22 Rue Raymond Losserand, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://mosugo.com/menus/"
  },
  {
   "id": "paris-14-japonais-sushi-pacha",
@@ -3417,7 +3740,8 @@
   "cat": "Japonais",
   "name": "Sushi Pacha",
   "address": "128 Avenue du Maine, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://sushipacha.fr/carte/"
  },
  {
   "id": "paris-14-japonais-ayako-teppanyaki",
@@ -3426,7 +3750,8 @@
   "cat": "Japonais",
   "name": "Ayako Teppanyaki",
   "address": "67 rue de l'Ouest, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.ayakoteppanyaki.fr"
  },
  {
   "id": "paris-14-thailandais-basilic-thai",
@@ -3444,7 +3769,8 @@
   "cat": "Oriental",
   "name": "Assanabel",
   "address": "6 rue d'Alésia, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.restaurant-assanabel.com/wp-content/uploads/2023/02/Menu1et2-merged.pdf"
  },
  {
   "id": "paris-14-bar-a-cocktails-skybar",
@@ -3453,7 +3779,8 @@
   "cat": "Bar à cocktails",
   "name": "SkyBar",
   "address": "14 Rue du Commandant René Mouchotte, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.skybarparis.com/media/data/menus/documents/pdf_file-3-food-1680509757.pdf"
  },
  {
   "id": "paris-15-francais-harper-s",
@@ -3462,7 +3789,8 @@
   "cat": "Français",
   "name": "Harper's",
   "address": "46 bis boulevard du Montparnasse, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.harpers-restaurant.com/menu"
  },
  {
   "id": "paris-15-francais-melt",
@@ -3471,7 +3799,8 @@
   "cat": "Français",
   "name": "Melt",
   "address": "103 rue Cambronne, 75015 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "http://www.meltparis.com/food"
  },
  {
   "id": "paris-15-francais-rouge",
@@ -3489,7 +3818,8 @@
   "cat": "Italien",
   "name": "Fratelli Castellano",
   "address": "43 rue Fondary, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.pizzeriafratellicastellanoparis.fr/"
  },
  {
   "id": "paris-15-italien-da-attilio",
@@ -3498,7 +3828,8 @@
   "cat": "Italien",
   "name": "Da Attilio",
   "address": "21 rue de Cronstadt, 75015 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=attilio%27s+pizza+menu&client=safari&hl=fr-fr&sxsrf=APwXEdfEIKQZJ4oUFKL5A0iqx_XdyFhRkw%3A1680557537368&ei=4UUrZNKaFrClkdUP2aOJYA&oq=Pizza+atilio+m&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQHhANMggIABAIEB4QDTIICAAQCBAeEA06CggAEA0QgAQQsAM6DQgAEIAEELADEAoQywE6CQgAEB4QDRCwAzoJCAAQHhCwAxAKOgcIABAeELADOg0IABAIEB4QDRCwAxAKOgsIABAIEB4QDRCwAzoHCAAQDRCABDoGCAAQHhANOggIABAWEB4QCkoECEEYAVCyCliCEmDBHWgAcAB4AIABQYgBvQGSAQEzmAEAoAEByAERwAEB&sclient=mobile-gws-wiz-serp#lkt=LocalPoiMenu&trex=m_t:lcl_akp,rc_ludocids:10705385199024410383,rc_q:attilio%2520pizza%2520menu,ru_gwp:0%252C7,ru_q:attilio%2520pizza%2520menu,trex_id:t0HrT&lpg=cid:CgIgAQ%3D%3D"
  },
  {
   "id": "paris-15-italien-guillaume-grasso",
@@ -3507,7 +3838,8 @@
   "cat": "Italien",
   "name": "Guillaume Grasso",
   "address": "45 rue de Brancion, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.guillaume-grasso.com/wp-content/uploads/2023/03/carte-pizzeria-guillaume-grasso-2023.pdf"
  },
  {
   "id": "paris-15-italien-gruppomimo",
@@ -3516,7 +3848,8 @@
   "cat": "Italien",
   "name": "Gruppomimo",
   "address": "148 rue de la Croix-Nivert, 75015 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.gruppomimo.com/food"
  },
  {
   "id": "paris-15-italien-15eme-art-pizzeria",
@@ -3543,7 +3876,8 @@
   "cat": "Burger",
   "name": "Burger Bendo",
   "address": "3 rue de l'Avre, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Burger+bendo&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlO3mwuu37aLyjRYPwDGTibAjeR-n4XHAr4wHk0IlKnDUPVr6IH7wnLTVnZEFKRtnQJCAH-Msi7RVTVfb4ekJsrg-I3N1w%3D%3D"
  },
  {
   "id": "paris-15-burger-bcbg-burger",
@@ -3552,7 +3886,8 @@
   "cat": "Burger",
   "name": "BCBG burger",
   "address": "96 boulevard de Grenelle, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.bcbg-gourmet.fr/menu/"
  },
  {
   "id": "paris-15-burger-gomu",
@@ -3561,7 +3896,8 @@
   "cat": "Burger",
   "name": "Gomu",
   "address": "13 Rue André Lefebvre, 75015 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://gomuburger.com/menu/"
  },
  {
   "id": "paris-15-burger-crispy-soul",
@@ -3570,7 +3906,8 @@
   "cat": "Burger",
   "name": "Crispy Soul",
   "address": "101 rue Brancion, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://app.pulp.eu/shop/62fee637-5f21-4373-85f7-8e66d4c2e75d?gl=1&free=true&utm_source=FEG&utm_campaign=crispysoulbrancion"
  },
  {
   "id": "paris-15-japonais-okirama",
@@ -3579,7 +3916,8 @@
   "cat": "Japonais",
   "name": "Okirama",
   "address": "48 Boulevard de Vaugirard, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.okirama.fr/carte.php"
  },
  {
   "id": "paris-15-japonais-chakaiseki-akiyoshi",
@@ -3588,7 +3926,8 @@
   "cat": "Japonais",
   "name": "Chakaiseki Akiyoshi",
   "address": "59 rue Letellier, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://chakaiseki-akiyoshi.fr/menu/"
  },
  {
   "id": "paris-15-japonais-okito",
@@ -3597,7 +3936,8 @@
   "cat": "Japonais",
   "name": "Okito",
   "address": "27 quai de Grenelle, 75015 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://birhakeim.okito.fr/reservation/new"
  },
  {
   "id": "paris-15-japonais-kumo",
@@ -3606,7 +3946,8 @@
   "cat": "Japonais",
   "name": "Kumo",
   "address": "38 Rue Balard, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.kumo-restaurant.com/menus"
  },
  {
   "id": "paris-15-japonais-kasumi",
@@ -3624,7 +3965,8 @@
   "cat": "Coréen",
   "name": "Ktown",
   "address": "162 rue de Vaugirard, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://k-town.fr/menu"
  },
  {
   "id": "paris-15-cambodgien-le-cambodge-15",
@@ -3642,7 +3984,8 @@
   "cat": "Indien",
   "name": "Rasna",
   "address": "214 Rue de la Croix-Nivert, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://rasnarestaurant.fr/fr/services"
  },
  {
   "id": "paris-15-iranien-shabestan",
@@ -3651,7 +3994,8 @@
   "cat": "Iranien",
   "name": "Shabestan",
   "address": "98 boulevard de Grenelle, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://shabestan.paris/"
  },
  {
   "id": "paris-15-vegan-polichinelles",
@@ -3660,7 +4004,8 @@
   "cat": "Vegan",
   "name": "Polichinelles",
   "address": "51-53 quai de Grenelle, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://polichinelle-restaurant.com/menu/"
  },
  {
   "id": "paris-15-bar-a-cocktails-villa-m",
@@ -3669,7 +4014,8 @@
   "cat": "Bar à cocktails",
   "name": "Villa M",
   "address": "24 Boulevard Pasteur, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://assets.website-files.com/611ac90a014c10a367bda85d/6410ae579a2c4227c3393211_140323VillaM_CarteFood_DINER_A3_web.pdf"
  },
  {
   "id": "paris-16-francais-les-jardins-du-presbourg",
@@ -3678,7 +4024,8 @@
   "cat": "Français",
   "name": "Les Jardins du Presbourg",
   "address": "3 avenue de la Grande Armée, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lesjardinsdupresbourg.com/wp-content/uploads/sites/21/2023/01/MenuJDP_FR.pdf"
  },
  {
   "id": "paris-16-francais-le-sheffer",
@@ -3687,7 +4034,8 @@
   "cat": "Français",
   "name": "Le Sheffer",
   "address": "22 rue Scheffer, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=Le+sheffer&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlM_txWGqBipr2jeSxeoWGs7BZnvlhPlpmSDfJWVywrb__YH0p5Be5tGhFzAissYU_3rN8W-H6GUEQvcKecTRhwGwYlg0g%3D%3D"
  },
  {
   "id": "paris-16-francais-brasserie-victor-hugo",
@@ -3696,7 +4044,8 @@
   "cat": "Français",
   "name": "Brasserie Victor Hugo",
   "address": "4 place Victor Hugo, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://brasserievictorhugo-paris.com/wp-content/uploads/2022/04/CARTE-BVH-26avril2022-1.pdf"
  },
  {
   "id": "paris-16-francais-les-2-stations",
@@ -3705,7 +4054,8 @@
   "cat": "Français",
   "name": "Les 2 Stations",
   "address": "131 boulevard Exelmans, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.lesdeuxstations.com/menus-carte/"
  },
  {
   "id": "paris-16-francais-andia",
@@ -3714,7 +4064,8 @@
   "cat": "Français",
   "name": "Andia",
   "address": "19 Chaussée de la Muette, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://api.hapidam.com/share/e316ea90-f28b-4b30-bb80-9aedb10fd2e5/andia-menu-fr"
  },
  {
   "id": "paris-16-francais-le-murat",
@@ -3723,7 +4074,8 @@
   "cat": "Français",
   "name": "Le Murat",
   "address": "1 boulevard Murat, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurant-lemurat.com/"
  },
  {
   "id": "paris-16-francais-brasserie-auteuil",
@@ -3732,7 +4084,8 @@
   "cat": "Français",
   "name": "Brasserie Auteuil",
   "address": "78 rue d'Auteuil, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.auteuil-brasserie.com/menus-carte/"
  },
  {
   "id": "paris-16-francais-sir-winston",
@@ -3741,7 +4094,8 @@
   "cat": "Français",
   "name": "Sir Winston",
   "address": "5 rue de Presbourg, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.sirwinston.fr/menus-carte/"
  },
  {
   "id": "paris-16-francais-les-marches",
@@ -3750,7 +4104,8 @@
   "cat": "Français",
   "name": "Les Marches",
   "address": "5 Rue de la Manutention, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://www.lesmarches-restaurant.com/en/"
  },
  {
   "id": "paris-16-francais-le-petit-victor-hugo",
@@ -3759,7 +4114,8 @@
   "cat": "Français",
   "name": "Le Petit Victor Hugo",
   "address": "143 avenue Victor Hugo, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.petitvictorhugo.fr/menus-carte/"
  },
  {
   "id": "paris-16-francais-monsieur-bleu",
@@ -3768,7 +4124,8 @@
   "cat": "Français",
   "name": "Monsieur Bleu",
   "address": "20 Avenue de New York, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://monsieurbleu-restaurant.com/wp-content/uploads/2023/01/MONSIEUR_BLEU_CARTE_FOOD.pdf"
  },
  {
   "id": "paris-16-francais-le-touring",
@@ -3777,7 +4134,8 @@
   "cat": "Français",
   "name": "Le Touring",
   "address": "61 avenue de la Grande Armée, 75017 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://lor.paris/m/le-touring-paris"
  },
  {
   "id": "paris-16-francais-margaux",
@@ -3795,7 +4153,8 @@
   "cat": "Burger",
   "name": "Sma Ma Mash",
   "address": "22 rue Lauriston, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.123cacher.fr/restaurant/sma_ma_mash/carte.htm"
  },
  {
   "id": "paris-16-italien-ozio",
@@ -3804,7 +4163,8 @@
   "cat": "Italien",
   "name": "Ozio",
   "address": "29bis rue Saint-Didier, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.ozioparis.com/wp-content/uploads/2023/03/MENU-OZIO-FR-MARS-2023.pdf"
  },
  {
   "id": "paris-16-italien-marzo",
@@ -3813,7 +4173,8 @@
   "cat": "Italien",
   "name": "Marzo",
   "address": "84 Rue Lauriston, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.marzo-paris.com/"
  },
  {
   "id": "paris-16-italien-chez-ma-poule",
@@ -3822,7 +4183,8 @@
   "cat": "Italien",
   "name": "Chez ma poule",
   "address": "7 rue Gros, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://chez-ma-poule.business.site/"
  },
  {
   "id": "paris-16-italien-le-madison",
@@ -3831,7 +4193,8 @@
   "cat": "Italien",
   "name": "Le Madison",
   "address": "10 Chaussée de la Muette, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.madisoncaffeparis.fr/_files/ugd/640d87_bd4fe577b13b4debb265bd8ab507eef0.pdf"
  },
  {
   "id": "paris-16-italien-dino",
@@ -3840,7 +4203,8 @@
   "cat": "Italien",
   "name": "Dino",
   "address": "8 Chaussée de la Muette, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://static.restovisio.com/files/menus/808c55c589797d2aa7f678f2c8324d83642be5b2eccda.pdf"
  },
  {
   "id": "paris-16-italien-rebellato",
@@ -3849,7 +4213,8 @@
   "cat": "Italien",
   "name": "Rebellato",
   "address": "136 Rue de la Pompe, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Rebellato&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoFOX-MmlLUKKaXt5ZjDFk3TLPiHfu7tTWlVXA-Alw3uhf9sQDo4sqMgKKFbcPtzdWl21A0zSKZe3WBlxVT7-5R1XBdwl5uJLc9osyMSQJwQDDMy4sSHIYhEhe6L5cFz0xqOV6Obn0IGrswR52w5W3t63s5coQ%3D%3D"
  },
  {
   "id": "paris-16-italien-sorella",
@@ -3858,7 +4223,8 @@
   "cat": "Italien",
   "name": "Sorella",
   "address": "13 avenue Bugeaud, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.restaurantsorella.paris/carte"
  },
  {
   "id": "paris-16-italien-bambini",
@@ -3867,7 +4233,8 @@
   "cat": "Italien",
   "name": "Bambini",
   "address": "13 Avenue du Président Wilson, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://bambini-restaurant.com/wp-content/uploads/2023/01/BAMBINI_PARIS_MENU_FOOD.pdf"
  },
  {
   "id": "paris-16-italien-cavalieri",
@@ -3876,7 +4243,8 @@
   "cat": "Italien",
   "name": "Cavalieri",
   "address": "71 avenue Paul Doumer, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cavalieri.paris/CAVALIERI_CARTE_WEB.pdf"
  },
  {
   "id": "paris-16-italien-ragazzi",
@@ -3894,7 +4262,8 @@
   "cat": "Japonais",
   "name": "Dream Sushi",
   "address": "32 rue Scheffer, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=Dream+sushi&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:9490155697753088168,ru_gwp:0%252C7,ru_lqi:CgtEcmVhbSBzdXNoaUir8aaZnK-AgAhaFRAAEAEYABgBIgtkcmVhbSBzdXNoaZIBE2phcGFuZXNlX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXRlVWxoU1ROM1JSQUKqASIQATIeEAEiGuhBhwAAU2nvPvKaGkpaYQb_XsEz4II7CEEp,ru_phdesc:OMsUlYhvjpw,trex_id:tgPOWc"
  },
  {
   "id": "paris-16-japonais-hanami",
@@ -3903,7 +4272,8 @@
   "cat": "Japonais",
   "name": "Hanami",
   "address": "5 Avenue Albert de Mun, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://drive.google.com/file/d/1MOUoh6yfTY6nm_Col-4Ijkr-oksGD-zQ/view?usp=drivesdk"
  },
  {
   "id": "paris-16-japonais-sushi-marche",
@@ -3912,7 +4282,8 @@
   "cat": "Japonais",
   "name": "Sushi Marché",
   "address": "20 rue Mirabeau, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "http://sushimarche.fr/en/sushi-marche/menus-et-a-la-carte.html"
  },
  {
   "id": "paris-16-japonais-unagi",
@@ -3921,7 +4292,8 @@
   "cat": "Japonais",
   "name": "Unagi",
   "address": "118 rue de Longchamp, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://s3.eu-west-1.amazonaws.com/userdocs.zenchef.com/359843/CARTE+SOIR+v2+16062023.pdf"
  },
  {
   "id": "paris-16-vietnamien-sourire-du-vietnam",
@@ -3930,7 +4302,8 @@
   "cat": "Vietnamien",
   "name": "Sourire du Vietnam",
   "address": "20 rue Scheffer, 75016 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.pho16paris.fr/menu/"
  },
  {
   "id": "paris-16-russe-maison-russe",
@@ -3939,7 +4312,8 @@
   "cat": "Russe",
   "name": "Maison Russe",
   "address": "59 Avenue Raymond Poincaré, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://maisonrusse.com/wp-content/uploads/2023/01/MAISON_RUSSE_CARTE_FOOD.pdf"
  },
  {
   "id": "paris-17-francais-konvives",
@@ -3948,7 +4322,8 @@
   "cat": "Français",
   "name": "Konvives",
   "address": "86 rue de la Jonquière, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.konvives.fr/_files/ugd/b9a46d_0e27173e014a497590a50cf23aeda223.pdf"
  },
  {
   "id": "paris-17-francais-le-buf-volant",
@@ -3957,7 +4332,8 @@
   "cat": "Français",
   "name": "Le Bœuf Volant",
   "address": "4 rue Mariotte, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://www.leboeufvolant.fr/menu.pdf"
  },
  {
   "id": "paris-17-francais-break",
@@ -3966,7 +4342,8 @@
   "cat": "Français",
   "name": "Break",
   "address": "119 Boulevard Pereire, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.break-paris.fr/menus-cartes"
  },
  {
   "id": "paris-17-francais-gaston",
@@ -3984,7 +4361,8 @@
   "cat": "Italien",
   "name": "Gustino Pizza",
   "address": "159 rue Legendre, 75017 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.gustinopizza.com/carte"
  },
  {
   "id": "paris-17-italien-nono-nino-paris",
@@ -3993,7 +4371,8 @@
   "cat": "Italien",
   "name": "Nono Nino Paris",
   "address": "10 rue Brémontier, 75017 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.nonnonino.fr/carte-des-plats-pasta-fresca-pates-fraiches-carte-de-saison/"
  },
  {
   "id": "paris-17-italien-roco",
@@ -4002,7 +4381,8 @@
   "cat": "Italien",
   "name": "Roco",
   "address": "1 rue Guillaume Tell, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.rocoparis.fr/menus-carte/"
  },
  {
   "id": "paris-17-italien-sonata",
@@ -4011,7 +4391,8 @@
   "cat": "Italien",
   "name": "Sonata",
   "address": "45 rue Brochant, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account13689296/33672279_1.pdf?0.8142425467715755"
  },
  {
   "id": "paris-17-italien-lossa",
@@ -4020,7 +4401,8 @@
   "cat": "Italien",
   "name": "Lossa",
   "address": "81 avenue de Wagram, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.alloj.com/fr/restaurant-cacher/iossa-81-paris-17eme/carte.html"
  },
  {
   "id": "paris-17-japonais-just-ramen",
@@ -4029,7 +4411,8 @@
   "cat": "Japonais",
   "name": "Just Ramen",
   "address": "45 rue Bernard Buffet, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://hoba.paris/les-menus/"
  },
  {
   "id": "paris-17-japonais-okito",
@@ -4038,7 +4421,8 @@
   "cat": "Japonais",
   "name": "Okito",
   "address": "35 Rue Bayen, 75017 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://ternes.okito.fr/fr/menu"
  },
  {
   "id": "paris-17-japonais-bloom-sushi",
@@ -4047,7 +4431,8 @@
   "cat": "Japonais",
   "name": "Bloom Sushi",
   "address": "61 rue des Dames, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://bloomsushi.fr/wp-content/uploads/2024/09/Menu-Bloom-carte-ete-2024-1.pdf"
  },
  {
   "id": "paris-17-coreen-busan-park",
@@ -4056,7 +4441,8 @@
   "cat": "Coréen",
   "name": "Busan Park",
   "address": "54 Rue Mstislav Rostropovitch, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://busanpark.fr/menu"
  },
  {
   "id": "paris-17-libanais-mezzencore",
@@ -4065,7 +4451,8 @@
   "cat": "Libanais",
   "name": "Mezzencore",
   "address": "88 rue Pierre Demours, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.mezzencore.fr/_files/ugd/0aa51d_f8166311c3cf4b86b8c9abb44aae50f6.pdf"
  },
  {
   "id": "paris-17-israelien-mapitom",
@@ -4074,7 +4461,8 @@
   "cat": "Israélien",
   "name": "Mapitom",
   "address": "87 Avenue Niel, 75017 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?q=Mapitom&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlPcJEI3t9mz-yyhzGxyCZmJpVCejtg-cDsROS5LSodE3RLDDnUwXxRVxjrKDJjgD_PG_rki"
  },
  {
   "id": "paris-17-israelien-vicky",
@@ -4083,7 +4471,8 @@
   "cat": "Israélien",
   "name": "Vicky",
   "address": "13 rue Rennequin, 75017 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.restaurantvicky.com"
  },
  {
   "id": "paris-17-oriental-sonia",
@@ -4092,7 +4481,8 @@
   "cat": "Oriental",
   "name": "Sonia",
   "address": "115 Avenue de Villiers, 75017 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://sonia-restaurant.com/app/uploads/2022/06/Carte_SONIA_-JUIN2022.pdf"
  },
  {
   "id": "paris-17-oriental-figuig",
@@ -4101,7 +4491,8 @@
   "cat": "Oriental",
   "name": "Figuig",
   "address": "13 rue Brey, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.aufiguig.fr/menu"
  },
  {
   "id": "paris-17-indien-junglii",
@@ -4110,7 +4501,8 @@
   "cat": "Indien",
   "name": "Junglii",
   "address": "78 rue de la Jonquière, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.junglii.fr/carte"
  },
  {
   "id": "paris-17-fusion-yansai",
@@ -4119,7 +4511,8 @@
   "cat": "Fusion",
   "name": "Yansai",
   "address": "47 rue des Moines, 75017 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cdn.website.dish.co/media/e7/56/5926077/CARTE-YANSAI.pdf"
  },
  {
   "id": "paris-17-fusion-tigermilk",
@@ -4164,7 +4557,8 @@
   "cat": "Français",
   "name": "Ma Biche",
   "address": "12 Rue Véron, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Ma+biche&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&trex=m_t:lcl_akp,rc_ludocids:12687724924160496386,rc_q:Ma%2520biche,ru_gwp:0%252C7,ru_q:Ma%2520biche,trex_id:UXWhH&lpg=cid:CgIgAQ%3D%3D"
  },
  {
   "id": "paris-18-francais-amone",
@@ -4173,7 +4567,8 @@
   "cat": "Français",
   "name": "Amone",
   "address": "13 rue Chappe, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurants-amone.com/"
  },
  {
   "id": "paris-18-francais-l-affame",
@@ -4182,7 +4577,8 @@
   "cat": "Français",
   "name": "L'Affamé",
   "address": "28 avenue de la Porte des Poissonniers, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://laffame-paris.fr/menu/"
  },
  {
   "id": "paris-18-francais-le-vrai-paris",
@@ -4191,7 +4587,8 @@
   "cat": "Français",
   "name": "Le Vrai Paris",
   "address": "33 rue des Abbesses, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://levraiparis-bistrot.com/"
  },
  {
   "id": "paris-18-francais-tonton-de-la-butte",
@@ -4200,7 +4597,8 @@
   "cat": "Français",
   "name": "Tonton de la Butte",
   "address": "62 rue Caulaincourt, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.tontondelabutte.fr/menus-carte/"
  },
  {
   "id": "paris-18-francais-edmond",
@@ -4218,7 +4616,8 @@
   "cat": "Italien",
   "name": "Constantia",
   "address": "94 Rue des Martyrs, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.constantiaparis.com/martyrs"
  },
  {
   "id": "paris-18-italien-bobby",
@@ -4227,7 +4626,8 @@
   "cat": "Italien",
   "name": "Bobby",
   "address": "29 rue Lambert, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lebobby.com/"
  },
  {
   "id": "paris-18-americain-the-flow",
@@ -4236,7 +4636,8 @@
   "cat": "Américain",
   "name": "The Flow",
   "address": "28 Avenue de Saint-Ouen, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://the-flow.fr/menu-100-soul-food-poulet-frit-maison-tendre-et-croustillant-the-flow/"
  },
  {
   "id": "paris-18-japonais-haha",
@@ -4245,7 +4646,8 @@
   "cat": "Japonais",
   "name": "Haha",
   "address": "6 Rue Aristide Bruant, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.haha-asianstreetfood.fr/menus-carte/"
  },
  {
   "id": "paris-18-oriental-gemuse",
@@ -4254,7 +4656,8 @@
   "cat": "Oriental",
   "name": "Gemüse",
   "address": "61 rue Ramey, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://gemuseparis.fr/nos-menus"
  },
  {
   "id": "paris-18-libanais-le-grand-phenicien",
@@ -4263,7 +4666,8 @@
   "cat": "Libanais",
   "name": "Le Grand Phénicien",
   "address": "4 rue Caulaincourt, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://www.legrandphenicien.fr/carteemporter.php"
  },
  {
   "id": "paris-18-israelien-riv-k",
@@ -4272,7 +4676,8 @@
   "cat": "Israélien",
   "name": "Riv'K",
   "address": "35 Rue Véron, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.rivkparis.fr/menu-rivk/"
  },
  {
   "id": "paris-18-vietnamien-mot-hai-ba-yo",
@@ -4281,7 +4686,8 @@
   "cat": "Vietnamien",
   "name": "Môt Hai Ba Yo",
   "address": "103 rue Damrémont, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.thefork.fr/restaurant/mot-hai-ba-yo-r717029/menu"
  },
  {
   "id": "paris-18-mexicain-aca-pigalle",
@@ -4290,7 +4696,8 @@
   "cat": "Mexicain",
   "name": "Acà Pigalle",
   "address": "48 boulevard de Clichy, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Ac%C3%A0+Pigalle&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOkODbi9HKJ5YJjQ5wL7yrfWRhJ_fvQQ1iVIo22WIXklsZD9duB29GWy1u50tOZeb_3kCZ6iaHBeJq7zPv2WJv8fVt_Bw%3D%3D"
  },
  {
   "id": "paris-18-vegan-sweet-rawmance",
@@ -4299,7 +4706,8 @@
   "cat": "Vegan",
   "name": "Sweet Rawmance",
   "address": "83 Rue Daguerre, 75014 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.sweetrawmance.com/menu"
  },
  {
   "id": "paris-18-vegan-la-cantine-de-sam",
@@ -4326,7 +4734,8 @@
   "cat": "Café",
   "name": "Ola's",
   "address": "14 Rue Marcadet, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=Ola%27s&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlNQRktnH4YhCQFvoUSGKpjFqiJ_5OxeXfqBHoSwHnVUuy3j5a6dcR3auoRDJQSjJ6Q9GfiilBbBU7uNjVsV0MtEhGjZFw%3D%3D"
  },
  {
   "id": "paris-18-cafe-b-j",
@@ -4335,7 +4744,8 @@
   "cat": "Café",
   "name": "B&J",
   "address": "17 rue Joseph Dijon, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=B%26J&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlM4WWKU7mux_eElbQaomGAs21y-_7cwqMgytez0jwzIsHeN8XjYF9mOpW5tYd675Vx5fxWo"
  },
  {
   "id": "paris-19-francais-xiii",
@@ -4344,7 +4754,8 @@
   "cat": "Français",
   "name": "Xiii",
   "address": "181 avenue Jean Jaurès, 75019 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://cafe-jean.mapauseetmoi.fr/"
  },
  {
   "id": "paris-19-francais-square",
@@ -4371,7 +4782,8 @@
   "cat": "Thaïlandais",
   "name": "Chez Sommay",
   "address": "70 rue Rébeval, 75019 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.google.fr/search?client=safari&hl=fr-fr&sxsrf=APwXEdez_W9-YrnOY2FO5klnQGyBQQZ3Ug:1680686782064&q=Chez+sommay&spell=1&sa=X&ved=2ahUKEwj5jP6UtpL-AhUBUaQEHfGCDYwQBSgAegQIBhAB&biw=390&bih=745&dpr=3#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlMJ-ruyIiiumht5h7pHRcse-4DVTtYvcbV63Vt-db6XdFIvWy7WBGrUMscHUKp1hbg77HpCBh_-O2lQYMEdr217eThLbQ%3D%3D"
  },
  {
   "id": "paris-19-libanais-l-artisan-libanais",
@@ -4380,7 +4792,8 @@
   "cat": "Libanais",
   "name": "L'Artisan Libanais",
   "address": "91 rue de Belleville, 75019 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "http://artisan-libanais.com/menu"
  },
  {
   "id": "paris-19-oriental-basis",
@@ -4389,7 +4802,8 @@
   "cat": "Oriental",
   "name": "Basis",
   "address": "79 rue de Belleville, 75019 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://basis.paris/pages/menu"
  },
  {
   "id": "paris-19-africain-a-box",
@@ -4398,7 +4812,8 @@
   "cat": "Africain",
   "name": "A'Box",
   "address": "77 avenue Jean Jaurès, 75019 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://aboxrestaurant.fr/la-carte/"
  },
  {
   "id": "paris-20-francais-coquin",
@@ -4407,7 +4822,8 @@
   "cat": "Français",
   "name": "Coquin",
   "address": "119 Rue des Amandiers, 75020 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://brasserie-coquin.fr/wp-content/uploads/2020/10/MENU-COQUIN-def.pdf"
  },
  {
   "id": "paris-20-francais-kheops",
@@ -4416,7 +4832,8 @@
   "cat": "Français",
   "name": "Kheops",
   "address": "115 boulevard Davout, 75020 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.kheopseat.fr/carte"
  },
  {
   "id": "paris-20-francais-la-parisienne",
@@ -4425,7 +4842,8 @@
   "cat": "Français",
   "name": "La Parisienne",
   "address": "51 rue de la Plaine, 75020 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.laparisiennedeparis.fr/menu2"
  },
  {
   "id": "paris-20-italien-peppe-pizzeria",
@@ -4443,7 +4861,8 @@
   "cat": "Américain",
   "name": "Juicy Pop",
   "address": "21 rue des Rigoles, 75020 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://juicypop-restaurant.eatbu.com/?lang=fr"
  },
  {
   "id": "paris-20-burger-austin-boys-burger",
@@ -4452,7 +4871,8 @@
   "cat": "Burger",
   "name": "Austin Boys Burger",
   "address": "77 rue d'Avron, 75020 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "http://jewboyburgers.com/menu/"
  },
  {
   "id": "paris-20-burger-avec-amour-burger",
@@ -4461,7 +4881,8 @@
   "cat": "Burger",
   "name": "Avec Amour Burger",
   "address": "78 rue de Belleville, 75019 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://avec-amour-burger.com"
  },
  {
   "id": "paris-20-burger-small-cantine",
@@ -4470,7 +4891,8 @@
   "cat": "Burger",
   "name": "Small Cantine",
   "address": "6 rue de la Martinique, 75018 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.thefork.fr/restaurant/small-cantine-r715574/menu"
  },
  {
   "id": "paris-20-japonais-boken",
@@ -4488,7 +4910,8 @@
   "cat": "Thaïlandais",
   "name": "Yummy Thaï",
   "address": "42 rue de Ménilmontant, 75020 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=yummy+tha%C3%AF&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlMo1671QamN8m-GUYL_ldKKTFumdeBL0f6BnY0oyb0p7IbezjxK0biPiEZ1mhqVVcxjU2Is_gz7U9jRFg_U_zT0-PZOTg%3D%3D"
  },
  {
   "id": "paris-20-thailandais-sushi-thai",
@@ -4497,7 +4920,8 @@
   "cat": "Thaïlandais",
   "name": "Sushi Thaï",
   "address": "78 Boulevard Davout, 75020 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=sushi+thai+restaurant&client=safari&hl=fr-fr&sxsrf=APwXEdeSKTRSFBAWFcq69wScHrLRPlWaYA%3A1680687479319&ei=d0EtZJCIE-mokdUPqbePwAM&oq=SUSHI+THA%C3%8F+re&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYADIJCAAQFhAeEMkDMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46CggAEEcQ1gQQsAM6BQgAEIAEOg0ILhCKBRDHARCvARBDSgQIQRgAUMAJWNobYPgiaAFwAHgAgAHDAYgBuQOSAQMwLjOYAQCgAQHIAQjAAQE&sclient=mobile-gws-wiz-serp#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:4575617116317557392,ru_gwp:0%252C7,ru_lqi:ChVzdXNoaSB0aGFpIHJlc3RhdXJhbnRI3NiM3L2zgIAIWiMQABABEAIYABgBGAIiFXN1c2hpIHRoYWkgcmVzdGF1cmFudJIBEGFzaWFuX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTmxiMDVQVDFkUkVBRaoBIxABMh8QASIb4dbjmnT4X7M29EK6J0qLk94QBZrFn3oWgN1J,ru_phdesc:KWCaYX7F24U,trex_id:Yzxzfc"
  },
  {
   "id": "precieuses-0-activite-fury-room",
@@ -4983,7 +5407,8 @@
   "cat": "Soirée",
   "name": "Mamacita",
   "address": "14 rue Rougemont, 75009 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://groupe-bucher.fr/menu-mamacita/"
  },
  {
   "id": "precieuses-0-soiree-le-mirage",
@@ -5370,7 +5795,8 @@
   "cat": "Resto",
   "name": "Fondue du dragon",
   "address": "5 rue Étienne Marcel, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://fonduedragon.fr/fr/menu"
  },
  {
   "id": "precieuses-0-resto-dominicos",
@@ -5397,7 +5823,8 @@
   "cat": "Resto",
   "name": "Andia",
   "address": "19 Chaussée de la Muette, 75016 Paris",
-  "mark": "👌🏼"
+  "mark": "👌🏼",
+  "menu": "https://api.hapidam.com/share/e316ea90-f28b-4b30-bb80-9aedb10fd2e5/andia-menu-fr"
  },
  {
   "id": "precieuses-0-resto-la-maison-rose",
@@ -5415,7 +5842,8 @@
   "cat": "Resto",
   "name": "Beefbar",
   "address": "5 rue Marbeuf, 75008 Paris",
-  "mark": "✔️"
+  "mark": "✔️",
+  "menu": "https://beefbar.com/"
  },
  {
   "id": "precieuses-0-resto-shinko",
@@ -5424,7 +5852,8 @@
   "cat": "Resto",
   "name": "Shinko",
   "address": "21 rue Vignon, 75008 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://www.shinkoparis.fr/menus-carte/"
  },
  {
   "id": "precieuses-0-resto-sinner-paris",
@@ -5442,7 +5871,8 @@
   "cat": "Resto",
   "name": "Lapérouse",
   "address": "51 quai des Grands Augustins, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.google.fr/search?q=lap%C3%A9rouse+restaurant&client=safari&hl=fr-fr&sxsrf=APwXEdfbCd_5MuAoadSZUdZkG5XgtWdZ6A%3A1680206668137&ei=TOslZJ6DCM2nkdUPydSywA4&oq=Lap%C3%A9rouse&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYADIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQigUQsAMQQzIKCAAQigUQsAMQQzIKCAAQigUQsAMQQzIPCC4QigUQyAMQsAMQQxgBMg8ILhCKBRDIAxCwAxBDGAEyFQguEIoFEMcBEK8BEMgDELADEEMYATISCC4QigUQ1AIQyAMQsAMQQxgBMhUILhCKBRDHARCvARDIAxCwAxBDGAEyFQguEIoFEMcBEK8BEMgDELADEEMYAUoECEEYAFAAWABguAZoAXAAeACAAQCIAQCSAQCYAQDIARHAAQHaAQQIARgI&sclient=mobile-gws-wiz-serp#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:11599150970646647235,ru_gwp:0%252C7,ru_lqi:ChVsYXDDqXJvdXNlIHJlc3RhdXJhbnRIu9Xm8wFaKxAAEAEYABgBIhVsYXDDqXJvdXNlIHJlc3RhdXJhbnQqBAgCEAAqBAgDEAGSAQpyZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJITUhaTGJGSm5FQUWqASIQATIeEAEiGv8lun5ArbIVgZJZ2kkiyuPgFQNpqG7HU8SQ,ru_phdesc:S9jz5KmYwn4,trex_id:jNnwsd"
  },
  {
   "id": "precieuses-0-resto-ephemera-group",
@@ -5460,7 +5890,8 @@
   "cat": "Resto",
   "name": "La Rêverie",
   "address": "15 rue de la Roquette, 75011 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://lareverie-paris.com/plats-salades-pizzas/"
  },
  {
   "id": "precieuses-0-resto-inavoue",
@@ -5469,7 +5900,8 @@
   "cat": "Resto",
   "name": "Inavoué",
   "address": "4 impasse Gomboust, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://inavoue.com/menu"
  },
  {
   "id": "precieuses-0-resto-le-buf-sur-le-toit",
@@ -5505,7 +5937,8 @@
   "cat": "Resto",
   "name": "Le Murat",
   "address": "1 boulevard Murat, 75016 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurant-lemurat.com/"
  },
  {
   "id": "precieuses-0-resto-mumbay",
@@ -5541,7 +5974,8 @@
   "cat": "Resto",
   "name": "Akira Back",
   "address": "33 avenue George V, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://www.akirabackparis.com/fr/carte"
  },
  {
   "id": "precieuses-0-resto-mistinguett",
@@ -5586,7 +6020,8 @@
   "cat": "Resto",
   "name": "Vesper",
   "address": "81 avenue Bosquet, 75007 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "menu": "https://vesperparis.com/"
  },
  {
   "id": "precieuses-0-resto-la-scene-theleme",
@@ -5604,7 +6039,8 @@
   "cat": "Resto",
   "name": "Chakaiseki Akiyoshi",
   "address": "59 rue Letellier, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://chakaiseki-akiyoshi.fr/menu/"
  },
  {
   "id": "precieuses-0-resto-dragon-cyril-lignac",
@@ -5649,7 +6085,8 @@
   "cat": "Resto",
   "name": "Sphère",
   "address": "18 rue La Boétie, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurantsphere.com/"
  },
  {
   "id": "precieuses-0-resto-dans-le-noir",
@@ -5667,7 +6104,8 @@
   "cat": "Resto",
   "name": "Shiro",
   "address": "168 boulevard Saint-Germain, 75006 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://restaurantshiro.fr/notre-menu/"
  },
  {
   "id": "precieuses-0-resto-rh-paris",
@@ -5847,7 +6285,8 @@
   "cat": "Resto festif",
   "name": "Salvaje",
   "address": "51 rue de Courcelles, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://paris.salvaje.world/fr/carte"
  },
  {
   "id": "precieuses-0-resto-festif-mamamia",
@@ -5856,7 +6295,8 @@
   "cat": "Resto festif",
   "name": "Mamamia",
   "address": "5 rue Vernet, 75008 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://mamamia-paris.com/restaurant-history"
  },
  {
   "id": "precieuses-0-resto-festif-hollywood-savoy",
@@ -6063,7 +6503,8 @@
   "cat": "Rooftop",
   "name": "Villa M",
   "address": "24 boulevard Pasteur, 75015 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://assets.website-files.com/611ac90a014c10a367bda85d/6410ae579a2c4227c3393211_140323VillaM_CarteFood_DINER_A3_web.pdf"
  },
  {
   "id": "precieuses-0-rooftop-bonnie",
@@ -6072,7 +6513,8 @@
   "cat": "Rooftop",
   "name": "Bonnie",
   "address": "",
-  "mark": ""
+  "mark": "",
+  "menu": "https://bonnie-restaurant.com/wp-content/uploads/2023/01/BONNIE_CARTE_FOOD.pdf"
  },
  {
   "id": "precieuses-0-rooftop-le-roof",
@@ -6081,7 +6523,8 @@
   "cat": "Rooftop",
   "name": "Le Roof",
   "address": "43 rue Étienne Marcel, 75001 Paris",
-  "mark": ""
+  "mark": "",
+  "menu": "https://madamereve.com/restaurants/roof/"
  },
  {
   "id": "precieuses-0-rooftop-terraza-mikuna",
