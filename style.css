@@ -312,3 +312,36 @@ main { max-width: 760px; margin: 0 auto; padding-bottom: calc(var(--tabs-h) + en
   .brand h1 { font-size: 34px; }
   .top-inner { grid-template-columns: 1fr minmax(260px, 340px); align-items: end; }
 }
+
+/* Ordinateur : menu latéral, liste en deux colonnes, fiche centrée. */
+@media (min-width: 1000px) {
+  :root { --tabs-h: 0px; --side: 96px; }
+  body { padding-left: var(--side); }
+  body::before { left: var(--side); }
+  .top-inner, main { max-width: 1120px; }
+  .tabs {
+    top: 0; right: auto; width: var(--side); grid-template-columns: 1fr; grid-auto-rows: 76px; align-content: start;
+    padding: 20px 0 0; border-top: 0; border-right: 1px solid var(--line);
+  }
+  .tabs a { height: 76px; font-size: 12px; }
+  .tabs a:hover { color: var(--ink); }
+  .rows { display: grid; grid-template-columns: 1fr 1fr; }
+  .row { border-top: 1px solid var(--line); }
+  .row:nth-child(-n+2) { border-top: 0; }
+  .row:nth-child(even) { border-left: 1px solid var(--line); }
+  .row:hover { background: var(--surface-2); }
+  .arr-jump { grid-template-columns: repeat(20, 1fr); }
+  .chips { flex-wrap: wrap; overflow: visible; margin: 0; padding-left: 0; }
+  #map, .map-ui { left: var(--side); }
+  .map-ui { left: calc(var(--side) + 16px); }
+  #mapCat { max-width: 260px; }
+  .sheet {
+    top: 50%; bottom: auto; left: calc(50% + var(--side) / 2); right: auto; width: min(620px, calc(100vw - var(--side) - 48px));
+    transform: translate(-50%, -50%); border-radius: 20px; max-height: 86vh; padding-bottom: 22px; animation: none;
+  }
+  .hero { height: 220px; }
+  .grab { display: none; }
+  .card { padding: 22px; }
+  #view-ajouter { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; align-items: start; }
+  #view-ajouter > p { grid-column: 1 / -1; }
+}
