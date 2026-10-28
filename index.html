@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Good Food List</title>
+<meta name="description" content="Mes adresses à Paris, classées par arrondissement et par type.">
+<meta name="theme-color" content="#f4f5f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11141c" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Good Food">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <span class="brand-kicker" id="viewKicker">Paris intra-muros</span>
+      <h1 id="viewTitle">The Good Food List</h1>
+    </div>
+    <label class="search" id="searchWrap">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input id="search" type="search" placeholder="Nom, rue, type…" autocomplete="off" enterkeyhint="search">
+    </label>
+  </div>
+</header>
+
+<main>
+  <section class="view" id="view-paris" data-view="paris">
+    <div class="toolbar">
+      <div class="seg" role="tablist" aria-label="Classer">
+        <button id="groupArr" class="on" data-group="arr">Arrondissement</button>
+        <button id="groupCat" data-group="cat">Type</button>
+      </div>
+      <button class="pill-toggle" id="favParis" aria-pressed="false">Mes ✅ 🤌</button>
+    </div>
+    <div class="chips" id="chipsParis"></div>
+    <div class="arr-jump" id="arrJump"></div>
+    <div class="list" id="listParis"></div>
+  </section>
+
+  <section class="view" id="view-carte" data-view="carte" hidden>
+    <div id="map"></div>
+    <div class="map-ui">
+      <div class="seg seg-float" id="mapLists">
+        <button class="on" data-list="paris">Paris</button>
+        <button data-list="precieuses">Précieuses</button>
+        <button data-list="all">Tout</button>
+      </div>
+      <select id="mapCat" aria-label="Type de lieu"></select>
+    </div>
+    <button class="locate" id="locate" aria-label="Me localiser">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg>
+    </button>
+    <div class="geo-status" id="geoStatus" hidden></div>
+  </section>
+
+  <section class="view" id="view-precieuses" data-view="precieuses" hidden>
+    <p class="intro">Les adresses d'exception : tables chic, rooftops, soirées, bars d'hôtel, salons de thé et activités.</p>
+    <div class="toolbar">
+      <button class="pill-toggle" id="favPrec" aria-pressed="false">Mes ✅ ✔️ 👌🏼</button>
+    </div>
+    <div class="chips" id="chipsPrec"></div>
+    <div class="list" id="listPrec"></div>
+  </section>
+
+  <section class="view" id="view-villes" data-view="villes" hidden>
+    <div class="empty">
+      <div class="empty-plaque"><span>Ailleurs</span></div>
+      <h2>Les autres villes arrivent</h2>
+      <p>Envoie tes notes des autres villes à Claude dans ton projet. Chaque ville aura sa propre liste, sa carte et ses types.</p>
+    </div>
+    <div class="list" id="listVilles"></div>
+  </section>
+
+  <section class="view" id="view-ajouter" data-view="ajouter" hidden>
+    <div class="card">
+      <h2>Depuis un lien</h2>
+      <p class="muted">Instagram, TikTok, Facebook, site web… Colle le lien : il est gardé dans « À compléter ». Envoie aussi le lien à Claude dans ton projet, il remplit la fiche (nom, adresse, type, menu, photo) et l'ajoute à la liste.</p>
+      <form id="linkForm" class="stack">
+        <label for="linkUrl">Lien</label>
+        <input id="linkUrl" type="url" inputmode="url" placeholder="https://www.instagram.com/…" required>
+        <button class="btn primary" type="submit">Garder ce lien</button>
+      </form>
+      <div class="list compact" id="listPending"></div>
+    </div>
+
+    <div class="card">
+      <h2 id="formTitle">Ajouter à la main</h2>
+      <form id="placeForm" class="stack">
+        <input type="hidden" id="fId">
+        <label for="fName">Nom</label>
+        <input id="fName" required placeholder="Ex. Pupetta">
+        <label for="fAddress">Adresse</label>
+        <input id="fAddress" placeholder="Ex. 124 rue Saint-Denis, 75002 Paris">
+        <div class="row2">
+          <div>
+            <label for="fList">Liste</label>
+            <select id="fList">
+              <option value="paris">Paris</option>
+              <option value="precieuses">Précieuses</option>
+              <option value="villes">Autre ville</option>
+            </select>
+          </div>
+          <div>
+            <label for="fArr">Arrondissement</label>
+            <select id="fArr"></select>
+          </div>
+        </div>
+        <label for="fCat">Type</label>
+        <input id="fCat" list="catOptions" placeholder="Ex. Italien, Rooftop, Brunch…">
+        <datalist id="catOptions"></datalist>
+        <label for="fCity" id="fCityLabel" hidden>Ville</label>
+        <input id="fCity" placeholder="Ex. Lyon" hidden>
+        <label for="fMenu">Lien du menu</label>
+        <input id="fMenu" type="url" inputmode="url" placeholder="https://…">
+        <label for="fSource">Lien Instagram / vidéo</label>
+        <input id="fSource" type="url" inputmode="url" placeholder="https://…">
+        <label for="fPhoto">Lien d'une photo</label>
+        <input id="fPhoto" type="url" inputmode="url" placeholder="https://…">
+        <label for="fSummary">Petit résumé</label>
+        <textarea id="fSummary" rows="3" placeholder="Ce qu'il faut y goûter, l'ambiance…"></textarea>
+        <div class="row-actions">
+          <button class="btn primary" type="submit" id="fSubmit">Ajouter</button>
+          <button class="btn ghost" type="button" id="fCancel" hidden>Annuler</button>
+        </div>
+      </form>
+    </div>
+    <p class="muted small center">Ce que tu ajoutes ici est gardé sur ce téléphone.</p>
+  </section>
+</main>
+
+<nav class="tabs" aria-label="Sections">
+  <a href="#paris" data-tab="paris" class="on">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>Paris</span>
+  </a>
+  <a href="#carte" data-tab="carte">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Carte</span>
+  </a>
+  <a href="#precieuses" data-tab="precieuses">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9v12"/></svg><span>Précieuses</span>
+  </a>
+  <a href="#villes" data-tab="villes">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg><span>Villes</span>
+  </a>
+  <a href="#ajouter" data-tab="ajouter">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg><span>Ajouter</span>
+  </a>
+</nav>
+
+<div class="sheet-backdrop" id="backdrop" hidden></div>
+<article class="sheet" id="sheet" hidden aria-modal="true" role="dialog" aria-labelledby="sheetName"></article>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
