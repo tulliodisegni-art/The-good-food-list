@@ -41,9 +41,10 @@ function catKey(cat) {
 const catVar = (cat) => `var(--c-${catKey(cat)})`;
 
 // ---------- Données ----------
+const TESTED = new Set(["✅", "✔️", "✔"]);
 const S = {
   base: [], places: [], view: "paris", group: store.get("group", "arr"),
-  cat: { paris: null, precieuses: null }, fav: { paris: false, precieuses: false }, q: "",
+  cat: { paris: null, precieuses: null }, fav: { paris: "", precieuses: "" }, q: "",
   mapList: "paris", mapCat: "", geo: store.get("geo", {}),
 };
 
@@ -52,6 +53,9 @@ function rebuild() {
   const edits = store.get("edits", {});
   S.places = [...S.base, ...custom].map((p) => ({ ...p, ...(edits[p.id] || {}) }));
   for (const p of S.places) {
+    // Dans les notes, ✅ et ✔️ veulent dire « déjà testé ».
+    if (p.tested === undefined) p.tested = TESTED.has(p.mark);
+    if (TESTED.has(p.mark)) p.mark = "";
     const g = p.address && S.geo[p.address];
     if (!p.lat && g) { p.lat = g[0]; p.lng = g[1]; }
   }
@@ -71,7 +75,8 @@ function filtered(list) {
   return S.places.filter((p) => {
     if (p.list !== list) return false;
     if (S.cat[list] && p.cat !== S.cat[list]) return false;
-    if (S.fav[list] && !p.mark) return false;
+    if (S.fav[list] === "done" && !p.tested) return false;
+    if (S.fav[list] === "todo" && p.tested) return false;
     if (q && !norm(`${p.name} ${p.address} ${p.cat} ${p.city || ""} ${p.arr ? arrLabel(p.arr) : ""}`).includes(q)) return false;
     return true;
   });
@@ -80,7 +85,7 @@ function filtered(list) {
 function rowHtml(p, meta) {
   return `<button class="row" data-id="${esc(p.id)}">
     <span class="row-name">${esc(p.name)}</span>
-    <span class="row-side">${p.mark ? `<span class="mark">${esc(p.mark)}</span>` : ""}<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span>
+    <span class="row-side">${p.mark ? `<span class="mark">${esc(p.mark)}</span>` : ""}${p.tested ? `<span class="tested-pill">Testé</span>` : ""}<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span>
     <span class="row-meta">${meta}</span>
   </button>`;
 }
@@ -207,6 +212,10 @@ function openSheet(id) {
         <div class="sheet-sub"><span class="tag" style="--tc:${catVar(p.cat)}">${esc(p.cat || "Sans type")}</span>
           ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}${p.mark ? `<span class="mark">${esc(p.mark)}</span>` : ""}</div>
       </div>
+      <button class="tested-btn ${p.tested ? "on" : ""}" data-tested aria-pressed="${p.tested}">
+        <span class="tick" aria-hidden="true">✓</span><span>${p.tested ? "Déjà testé" : "Marquer comme testé"}</span>
+        ${p.tested ? `<small>Toucher pour annuler</small>` : ""}
+      </button>
       ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : ""}
       ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
       ${p.address ? `<div class="addr"><span>${esc(p.address)}</span><button data-copy>Copier</button></div>` : `<p class="note">Adresse pas encore renseignée. Les boutons cherchent le lieu par son nom.</p>`}
@@ -216,8 +225,8 @@ function openSheet(id) {
         <a class="btn" href="${esc(L.apple)}" target="_blank" rel="noopener">Plans</a>
         <a class="btn" href="${esc(L.insta)}" target="_blank" rel="noopener">${p.source ? "Publication d'origine" : "Instagram"}</a>
       </div>
-      <div class="marks"><span class="lbl">Ma marque</span>
-        ${["", "✅", "🤌", "👌🏼", "✔️"].map((m) => `<button data-mark="${m}" class="${(p.mark || "") === m ? "on" : ""}">${m || "Aucune"}</button>`).join("")}
+      <div class="marks"><span class="lbl">Coup de cœur</span>
+        ${["", "🤌", "👌🏼"].map((m) => `<button data-mark="${m}" class="${(p.mark || "") === m ? "on" : ""}">${m || "Aucune"}</button>`).join("")}
       </div>
       ${custom ? `<div class="row-actions"><button class="btn" data-edit>Modifier</button><button class="btn danger" data-remove>Supprimer</button></div>` : ""}
     </div>`;
@@ -232,6 +241,12 @@ $("#sheet").addEventListener("click", async (e) => {
   if (t.hasAttribute("data-close")) return closeSheet();
   if (t.hasAttribute("data-copy")) {
     try { await navigator.clipboard.writeText(current.address); toast("Adresse copiée"); } catch { toast("Copie impossible, garde le doigt appuyé sur l'adresse"); }
+    return;
+  }
+  if (t.hasAttribute("data-tested")) {
+    const now = !current.tested;
+    setEdit(current.id, { tested: now }); renderAll(); openSheet(current.id);
+    toast(now ? "Marqué comme testé" : "Retiré des restos testés");
     return;
   }
   if (t.dataset.mark !== undefined) { setEdit(current.id, { mark: t.dataset.mark }); renderAll(); openSheet(current.id); return; }
@@ -291,9 +306,13 @@ document.addEventListener("click", (e) => {
   const g = e.target.closest("[data-group]");
   if (g) { S.group = g.dataset.group; store.set("group", S.group); renderParis(); }
 });
+const FAV_STEPS = [["", "Tous les lieux"], ["done", "✅ Déjà testés"], ["todo", "Pas encore testés"]];
 for (const [btn, list] of [["#favParis", "paris"], ["#favPrec", "precieuses"]]) {
   $(btn).addEventListener("click", (e) => {
-    S.fav[list] = !S.fav[list]; e.currentTarget.setAttribute("aria-pressed", S.fav[list]);
+    const i = (FAV_STEPS.findIndex(([k]) => k === S.fav[list]) + 1) % FAV_STEPS.length;
+    S.fav[list] = FAV_STEPS[i][0];
+    e.currentTarget.textContent = FAV_STEPS[i][1];
+    e.currentTarget.setAttribute("aria-pressed", i > 0);
     list === "paris" ? renderParis() : renderPrec();
   });
 }
@@ -308,10 +327,20 @@ function initMap() {
   if (!window.L) { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; return; }
   map = L.map("map", { zoomControl: false, attributionControl: true }).setView([48.8606, 2.3425], 13);
   const dark = matchMedia("(prefers-color-scheme: dark)").matches;
-  L.tileLayer(`https://{s}.basemaps.cartocdn.com/rastertiles/${dark ? "dark_all" : "voyager"}/{z}/{x}/{y}{r}.png`, {
+  const carto = L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "rastertiles/voyager"}/{z}/{x}/{y}{r}.png`, {
     maxZoom: 19, subdomains: "abcd",
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
   }).addTo(map);
+  // Si le fond de carte ne charge pas, on bascule sur celui d'OpenStreetMap.
+  let tileErrors = 0;
+  carto.on("tileerror", () => {
+    if (++tileErrors !== 4) return;
+    map.removeLayer(carto);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+  });
+  setTimeout(() => map.invalidateSize(), 300);
   cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 42, disableClusteringAtZoom: 16 });
   map.addLayer(cluster);
   map.on("popupopen", (e) => {
@@ -331,9 +360,9 @@ function fillMapCats() {
 }
 
 function markerFor(p) {
-  const icon = L.divIcon({ className: "", html: `<div class="pin ${p.mark ? "star" : ""}" style="--pc:${catVar(p.cat)}"></div>`, iconSize: [20, 20], iconAnchor: [10, 10], popupAnchor: [0, -10] });
+  const icon = L.divIcon({ className: "", html: `<div class="pin ${p.tested ? "done" : ""} ${p.mark ? "star" : ""}" style="--pc:${catVar(p.cat)}"></div>`, iconSize: [20, 20], iconAnchor: [10, 10], popupAnchor: [0, -10] });
   const m = L.marker([p.lat, p.lng], { icon, title: p.name });
-  m.bindPopup(`<div class="pop-name">${esc(p.name)}</div><div class="pop-meta">${esc(p.cat)}${p.arr ? " · " + arrLabel(p.arr) : ""} ${esc(p.mark || "")}</div><button class="pop-btn" data-open="${esc(p.id)}">Voir la fiche</button>`);
+  m.bindPopup(`<div class="pop-name">${esc(p.name)}</div><div class="pop-meta">${esc(p.cat)}${p.arr ? " · " + arrLabel(p.arr) : ""} ${p.tested ? "· ✅ testé" : ""} ${esc(p.mark || "")}</div><button class="pop-btn" data-open="${esc(p.id)}">Voir la fiche</button>`);
   return m;
 }
 
@@ -481,7 +510,7 @@ $("#placeForm").addEventListener("submit", (e) => {
   if (list === "paris" && !p.arr) { toast("Choisis l'arrondissement"); return; }
   const custom = store.get("custom", []).filter((x) => x.id !== id);
   const prev = store.get("custom", []).find((x) => x.id === id);
-  if (prev && prev.list !== "pending") { p.mark = prev.mark || ""; p.createdAt = prev.createdAt; }
+  if (prev && prev.list !== "pending") { p.mark = prev.mark || ""; p.tested = !!prev.tested; p.createdAt = prev.createdAt; }
   custom.unshift(p);
   store.set("custom", custom);
   rebuild(); renderAll(); resetForm();

@@ -11,6 +11,7 @@
   --plaque-rim: #9fb3d9;
   --gold: #b9821c;
   --danger: #b3261e;
+  --ok: #1f8a4c;
   --shadow: 0 10px 30px rgba(20, 24, 36, .14);
   --c-fr: #1d3b78; --c-it: #2c7a4b; --c-jp: #c23b3b; --c-asia: #d0782a;
   --c-burger: #8a5a2b; --c-orient: #7a4fa3; --c-cafe: #2f8790; --c-bar: #b8336a;
@@ -24,14 +25,14 @@
   :root:not([data-theme="light"]) {
     --bg: #11141c; --surface: #1a1e29; --surface-2: #232838; --ink: #eceef3; --muted: #9aa1b2;
     --line: #2b3142; --plaque: #2f57a8; --plaque-ink: #ffffff; --plaque-rim: #6f8cc8; --gold: #e0a93b;
-    --danger: #f2817a; --shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    --danger: #f2817a; --ok: #4cc27f; --shadow: 0 10px 30px rgba(0, 0, 0, .5);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #11141c; --surface: #1a1e29; --surface-2: #232838; --ink: #eceef3; --muted: #9aa1b2;
   --line: #2b3142; --plaque: #2f57a8; --plaque-ink: #ffffff; --plaque-rim: #6f8cc8; --gold: #e0a93b;
-  --danger: #f2817a; --shadow: 0 10px 30px rgba(0, 0, 0, .5);
+  --danger: #f2817a; --ok: #4cc27f; --shadow: 0 10px 30px rgba(0, 0, 0, .5);
   color-scheme: dark;
 }
 
@@ -192,7 +193,7 @@ main { max-width: 760px; margin: 0 auto; padding-bottom: calc(var(--tabs-h) + en
   width: 16px; height: 16px; border-radius: 50%; background: var(--pc, var(--c-other));
   border: 2.5px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.4);
 }
-.pin.star { width: 20px; height: 20px; outline: 2px solid var(--gold); }
+.pin.star { width: 20px; height: 20px; }
 .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large { background: rgba(29, 59, 120, .25); }
 .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div {
   background: #1d3b78; color: #fff; font: 700 12px/30px var(--body);
@@ -345,3 +346,22 @@ main { max-width: 760px; margin: 0 auto; padding-bottom: calc(var(--tabs-h) + en
   #view-ajouter { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; align-items: start; }
   #view-ajouter > p { grid-column: 1 / -1; }
 }
+
+/* Déjà testé */
+.tested-pill {
+  font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 6px; white-space: nowrap;
+  background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok);
+}
+.tested-btn {
+  display: flex; align-items: center; gap: 10px; width: 100%; border-radius: 14px; padding: 13px 16px; cursor: pointer;
+  border: 1.5px dashed var(--line); background: transparent; font-weight: 700; font-size: 15px; text-align: left;
+}
+.tested-btn .tick {
+  width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; flex: none;
+  border: 2px solid var(--muted); color: transparent; font-size: 15px;
+}
+.tested-btn small { margin-left: auto; font-weight: 500; font-size: 12px; opacity: .8; }
+.tested-btn.on { border: 1.5px solid var(--ok); background: color-mix(in srgb, var(--ok) 12%, transparent); color: var(--ok); }
+.tested-btn.on .tick { background: var(--ok); border-color: var(--ok); color: #fff; }
+.pin.done { box-shadow: 0 0 0 2.5px var(--ok), 0 1px 4px rgba(0,0,0,.4); }
+.pin.star { outline: 2px solid var(--gold); }
