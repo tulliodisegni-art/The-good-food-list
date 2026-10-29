@@ -37,7 +37,9 @@
   "price": 2,
   "priceSrc": "estim",
   "photo": "https://www.lesartizans.fr/cdn/shop/files/Afficher_les_photos_recentes.png?v=1773759910&width=750",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "lesartizans"
  },
  {
   "id": "paris-1-francais-plume",
@@ -137,7 +139,9 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/maison-28-r268975",
   "website": "https://leroch-hotel.com",
-  "enriched": 5
+  "enriched": 5,
+  "igSearched": 1,
+  "instagram": "lerochhotel"
  },
  {
   "id": "paris-1-francais-la-poule-au-pot",
@@ -155,7 +159,9 @@
   "phone": "01 42 36 32 96",
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "lapouleaupotparis"
  },
  {
   "id": "paris-1-italien-cicciolina",
@@ -173,7 +179,9 @@
   "phone": "01 40 26 26 26",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "cicciolinaparis"
  },
  {
   "id": "paris-1-italien-liberto",
@@ -189,7 +197,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "liberto_parisi"
  },
  {
   "id": "paris-1-italien-presto-fresco",
@@ -226,7 +236,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "tzantza.paris"
  },
  {
   "id": "paris-1-japonais-foujita",
@@ -245,7 +257,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "website": "https://foujita.onataste.fr",
-  "photo": "https://foujita.onataste.fr/media/foujita.webp"
+  "photo": "https://foujita.onataste.fr/media/foujita.webp",
+  "igSearched": 1,
+  "instagram": "_foujita"
  },
  {
   "id": "paris-1-japonais-takara",
@@ -265,7 +279,9 @@
   "phone": "01 42 96 08 38",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "takara_paris"
  },
  {
   "id": "paris-1-japonais-enyaa",
@@ -285,7 +301,9 @@
   "booking": "https://bookings.zenchef.com/results?rid=386488",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "restaurant_enyaa"
  },
  {
   "id": "paris-1-japonais-japanos-ramen-bar",
@@ -326,7 +344,9 @@
   "priceSrc": "estim",
   "halal": true,
   "photo": "http://sushiway.fr/wp-content/uploads/2021/09/Capture-de%CC%81cran-2020-03-05-a%CC%80-15.26.42.png",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "sushiwayofficiel"
  },
  {
   "id": "paris-1-japonais-restaurant-zen",
@@ -361,7 +381,8 @@
   "lng": 2.343591,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-1-japonais-yamato-grill",
@@ -380,7 +401,9 @@
   "enriched": 5,
   "photo": "https://public-storage-s3.s3.gra.io.cloud.ovh.net/eEmXS7vzQtTIV3HZdOqiAxrSapOtd0sLRSWpfXKKfVqaTLFx7IQFuAyR1rVgdqswKtu3vw.png",
   "phone": "01 42 36 27 73",
-  "booking": "https://lor.paris/r/yamato-grill-paris"
+  "booking": "https://lor.paris/r/yamato-grill-paris",
+  "igSearched": 1,
+  "instagram": "yamato.grill"
  },
  {
   "id": "paris-1-japonais-nodaiwa",
@@ -417,7 +440,9 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "bobun_chatelet"
  },
  {
   "id": "paris-1-chinois-ravioli-nord-est",
@@ -435,7 +460,9 @@
   "phone": "01 75 50 88 03",
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "raviolinordest"
  },
  {
   "id": "paris-1-coreen-dongne-chicken",
@@ -451,7 +478,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "dongne_chicken"
  },
  {
   "id": "paris-1-coreen-go-oun",
@@ -470,7 +499,9 @@
   "price": 2,
   "priceSrc": "estim",
   "photo": "http://resto-gooun.com/data/file/entree/thumb-1510446316_hKrIk2Oc_21c7e41a787d80e7718ebf5cda85357ddaf2a738_600x430.png",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "resto_gooun"
  },
  {
   "id": "paris-1-coreen-fondue-du-dragon",
@@ -487,7 +518,8 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-1-coreen-jjan",
@@ -523,7 +555,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/djakarta-bali-r15057",
-  "website": "https://djakarta-bali.com"
+  "website": "https://djakarta-bali.com",
+  "igSearched": 1,
+  "instagram": "djakartabali"
  },
  {
   "id": "paris-1-brunch-baguett-s-cafe",
@@ -558,7 +592,8 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-1-cafe-le-tiki-rose",
@@ -574,7 +609,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "tikiroseparis"
  },
  {
   "id": "paris-1-cafe-cafe-kitsune",
@@ -592,7 +629,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "website": "https://cafe.restaurants-de-france.fr",
-  "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg"
+  "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
+  "igSearched": 1,
+  "instagram": "cafekitsune"
  },
  {
   "id": "paris-1-cafe-le-cafe-de-l-epoque",
@@ -612,7 +651,8 @@
   "price": 1,
   "priceSrc": "estim",
   "photo": "https://uniiti.com/images/shops/slides/e7f2820ca2c8ed1ad376461bf94b2e15f0383a83.jpeg",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-1-cafe-le-cafe-marly",
@@ -693,7 +733,9 @@
   "price": 1,
   "priceSrc": "estim",
   "photo": "https://lemusset.paris/wp-content/uploads/2017/05/AWA_6863.jpg",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "lemussetparis"
  },
  {
   "id": "paris-1-bar-a-cocktails-le-roof",
@@ -729,7 +771,9 @@
   "enriched": 5,
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "strogoff_paris"
  },
  {
   "id": "paris-2-francais-les-carnivores",
@@ -745,7 +789,8 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-2-francais-one-and-one",
@@ -765,7 +810,9 @@
   "booking": "https://bookings.zenchef.com/results?rid=352907",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "oneandone.paris"
  },
  {
   "id": "paris-2-francais-brasserie-dubillot",
@@ -803,7 +850,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "itacoa_paris"
  },
  {
   "id": "paris-2-francais-the-hoxton",
@@ -843,7 +892,9 @@
   "website": "https://lagrappeparis.com",
   "photo": "https://lagrappeparis.com/tenants/la-grappe/uploads/upload-uabRTm3RDa.jpg",
   "phone": "01 40 13 00 17",
-  "booking": "https://www.opentable.fr/booking/restref/availability?rid=364110&restref=364110&lang=fr-FR"
+  "booking": "https://www.opentable.fr/booking/restref/availability?rid=364110&restref=364110&lang=fr-FR",
+  "igSearched": 1,
+  "instagram": "la__grappe"
  },
  {
   "id": "paris-2-francais-astair",
@@ -884,7 +935,9 @@
   "price": 2,
   "priceSrc": "estim",
   "photo": "https://www.circonstances.fr/images/intro15w.jpg",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "circonstances.paris"
  },
  {
   "id": "paris-2-francais-montecito",
@@ -920,7 +973,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "pizz.aria"
  },
  {
   "id": "paris-2-italien-rivolta",
@@ -936,7 +991,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "rivoltaparis"
  },
  {
   "id": "paris-2-italien-dalmata",
@@ -971,7 +1028,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "_pupetta"
  },
  {
   "id": "paris-2-italien-bianco",
@@ -990,7 +1049,9 @@
   "phone": "01 40 39 00 00",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "bianco.paris"
  },
  {
   "id": "paris-2-italien-focaccia-club",
@@ -1086,7 +1147,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "frenchietogo"
  },
  {
   "id": "paris-2-burger-manhattn-s-burgers",
@@ -1140,7 +1203,8 @@
   "phone": "09 74 64 10 13",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-2-japonais-zuzuttomo",
@@ -1157,7 +1221,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "zuzuttomo"
  },
  {
   "id": "paris-2-japonais-kimochi",
@@ -1174,7 +1240,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "kimochiparis"
  },
  {
   "id": "paris-2-japonais-devant-vous",
@@ -1194,7 +1262,9 @@
   "booking": "https://www.thefork.fr/restaurant/devant-vous-r16868",
   "website": "https://devant-vous.onataste.fr",
   "halal": true,
-  "photo": "https://devant-vous.onataste.fr/media/devant-vous.webp"
+  "photo": "https://devant-vous.onataste.fr/media/devant-vous.webp",
+  "igSearched": 1,
+  "instagram": "devantvous"
  },
  {
   "id": "paris-2-japonais-isshin-ramen",
@@ -1211,7 +1281,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "website": "https://www.isshinramen.com"
+  "website": "https://www.isshinramen.com",
+  "igSearched": 1,
+  "instagram": "isshin_ramen_officiel"
  },
  {
   "id": "paris-2-japonais-moemachi",
@@ -1251,7 +1323,9 @@
   "price": 1,
   "priceSrc": "estim",
   "photo": "https://static.wixstatic.com/media/61de06_8a0fe049a8de49009f86d86593078e33~mv2.jpg/v1/fill/w_77,h_115,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/61de06_8a0fe049a8de49009f86d86593078e33~mv2.jpg",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "supermian.paris"
  },
  {
   "id": "paris-2-chinois-baobaoland",
@@ -1267,7 +1341,8 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-2-chinois-xialongkan",
@@ -1404,7 +1479,9 @@
   "price": 1,
   "priceSrc": "estim",
   "photo": "https://l.cdn-fileserver.com/bping.php?cc=US&lper=100&wshp=0&vgd_cdv=O3746&vgd_wlstp=0&lf=6&requrl=https%3A%2F%2Fbombaparis.com&ssld=%7B%22QQNN%22%3A%22Pb%22%2C%22QQN75%22%3A%22Gm5O7mz%22%2C%22QQ8E%22%3A%22%22%2C%22QQQN%22%3A%22%2FK%22%2C%22QQl8E%22%3A%22%22%7D&vgd_tsce=L1397&vgd_oreqf=one&vgd_oresf=one&cid=8CUI1F766&hvsid=00001793278022392003461032962242&sc=VA&wsip=170762342&vgd_l2type=dmola&vgd_setup=c21&prid=8PR11258V&vi=1793278022962609753&vgd_asn=8075&vgd_rpth=%2Fola&gdpr=0&mspa=1&r=1793278022393&vgd_cage=28&crid=228450093&ugd=0&vgd_len=559&vgd_end=1",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "bomba__paris"
  },
  {
   "id": "paris-2-thailandais-brique-machine",
@@ -1420,7 +1497,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/brique-machine-brique-house-r846661"
+  "booking": "https://www.thefork.fr/restaurant/brique-machine-brique-house-r846661",
+  "igSearched": 1,
+  "instagram": "briquemachine"
  },
  {
   "id": "paris-2-libanais-noura",
@@ -1498,7 +1577,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "umanotaparis"
  },
  {
   "id": "paris-2-fusion-sweetea-s",
@@ -1515,7 +1596,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "website": "https://www.sweeteas-paris.com"
+  "website": "https://www.sweeteas-paris.com",
+  "igSearched": 1,
+  "instagram": "sweeteasparis"
  },
  {
   "id": "paris-2-corse-alma",
@@ -1553,7 +1636,8 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-2-vegan-mama-nissa",
@@ -1571,7 +1655,9 @@
   "phone": "01 42 36 52 15",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "mama_nissa_paris"
  },
  {
   "id": "paris-2-brunch-oubruncher",
@@ -1604,7 +1690,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/cafe-jeanne-park-hyatt-paris-vendome-r706347"
+  "booking": "https://www.thefork.fr/restaurant/cafe-jeanne-park-hyatt-paris-vendome-r706347",
+  "igSearched": 1
  },
  {
   "id": "paris-2-cafe-contrastes",
@@ -1642,7 +1729,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "website": "https://www.marcel.fr",
-  "photo": "https://www.marcel.fr/images/minibluff_220x112.png"
+  "photo": "https://www.marcel.fr/images/minibluff_220x112.png",
+  "igSearched": 1,
+  "instagram": "etiennemarceldenim"
  },
  {
   "id": "paris-3-francais-benedict",
@@ -1678,7 +1767,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "mrtrestaurant"
  },
  {
   "id": "paris-3-francais-supernova",
@@ -1694,7 +1785,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "supernovaparis_"
  },
  {
   "id": "paris-3-francais-season",
@@ -1751,7 +1844,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "pizzeria_addomme"
  },
  {
   "id": "paris-3-italien-big-love",
@@ -1768,7 +1863,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/biglove-r845332"
+  "booking": "https://www.thefork.fr/restaurant/biglove-r845332",
+  "igSearched": 1,
+  "instagram": "bigloveparis"
  },
  {
   "id": "paris-3-italien-all-antico-vinaio",
@@ -1864,7 +1961,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/dim-dim-sum-r744462"
+  "booking": "https://www.thefork.fr/restaurant/dim-dim-sum-r744462",
+  "igSearched": 1,
+  "instagram": "dimdimsum.paris"
  },
  {
   "id": "paris-3-coreen-doma",
@@ -1921,7 +2020,9 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "808.macandcheese"
  },
  {
   "id": "paris-3-oriental-mabrouk",
@@ -1940,7 +2041,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "website": "https://mabrouk.foxorders.com",
-  "photo": "https://mabrouk.foxorders.com/assets/img/ico/ico-phone.png"
+  "photo": "https://mabrouk.foxorders.com/assets/img/ico/ico-phone.png",
+  "igSearched": 1,
+  "instagram": "mabrouk.restaurant"
  },
  {
   "id": "paris-3-oriental-qasti-shawarma",
@@ -1996,7 +2099,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/goku-asian-canteen-r276671"
+  "booking": "https://www.thefork.fr/restaurant/goku-asian-canteen-r276671",
+  "igSearched": 1,
+  "instagram": "gokuasiancanteen"
  },
  {
   "id": "paris-3-fusion-sweetea-s",
@@ -2072,7 +2177,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/cafe-creme-r855173"
+  "booking": "https://www.thefork.fr/restaurant/cafe-creme-r855173",
+  "igSearched": 1,
+  "instagram": "cafe_creme_paris"
  },
  {
   "id": "paris-3-cafe-cafe-des-musees",
@@ -2187,7 +2294,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "fabula.paris"
  },
  {
   "id": "paris-4-francais-le-paradis",
@@ -2206,7 +2315,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "cafe_leparadis"
  },
  {
   "id": "paris-4-francais-jolie",
@@ -2242,7 +2353,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "website": "https://pupetta-marais.wheree.com"
+  "website": "https://pupetta-marais.wheree.com",
+  "igSearched": 1
  },
  {
   "id": "paris-4-italien-little-babel",
@@ -2259,7 +2371,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "littlebabel_"
  },
  {
   "id": "paris-4-japonais-kuma",
@@ -2294,7 +2408,9 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "janet_byhomer"
  },
  {
   "id": "paris-4-cacher-tekes",
@@ -2333,7 +2449,9 @@
   "phone": "01 42 77 49 35",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "lamangerie"
  },
  {
   "id": "paris-4-taiwanais-baobar",
@@ -2353,7 +2471,8 @@
   "website": "https://baobar-restaurant-chinois.localoria.com",
   "halal": true,
   "photo": "https://cdn.localoria.com/16415-llphoto-1.jpg",
-  "phone": "01 89 33 37 61"
+  "phone": "01 89 33 37 61",
+  "igSearched": 1
  },
  {
   "id": "paris-4-cafe-le-saint-regis",
@@ -2372,7 +2491,9 @@
   "price": 2,
   "priceSrc": "estim",
   "photo": "http://cafesaintregisparis.com/images/menu/11.png",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "le_saint_regis_paris"
  },
  {
   "id": "paris-4-cafe-la-favorite",
@@ -2491,7 +2612,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/respiro-r539635"
+  "booking": "https://www.thefork.fr/restaurant/respiro-r539635",
+  "igSearched": 1,
+  "instagram": "respiro_paris"
  },
  {
   "id": "paris-5-italien-arrivederci",
@@ -2510,7 +2633,9 @@
   "booking": "https://www.thefork.fr/restaurant/arrivederci-pizzeria-r323083",
   "website": "https://www.arrivedercipizzeria.com",
   "enriched": 5,
-  "photo": "https://cdn.prod.website-files.com/694b83c75a67389fbbf33829/6a9acb6238d86cb504f07958_arrivederci-pizza-burrata-pesto-basilic-paris.avif"
+  "photo": "https://cdn.prod.website-files.com/694b83c75a67389fbbf33829/6a9acb6238d86cb504f07958_arrivederci-pizza-burrata-pesto-basilic-paris.avif",
+  "igSearched": 1,
+  "instagram": "arrivedercipizzeriaparis"
  },
  {
   "id": "paris-5-corse-u-mulinu",
@@ -2546,7 +2671,9 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "mimiramen75"
  },
  {
   "id": "paris-5-japonais-lamian-latian",
@@ -2560,7 +2687,9 @@
   "lng": 2.348948,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "lamianlatianparis"
  },
  {
   "id": "paris-5-burger-shiso-burger",
@@ -2596,7 +2725,9 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "smash_burger_paris"
  },
  {
   "id": "paris-5-thailandais-le-wok-saint-germain",
@@ -2615,7 +2746,8 @@
   "price": 1,
   "priceSrc": "estim",
   "photo": "https://lewoksaintgermain.com/wp-content/uploads/2020/11/FOND-POPUP-EMPORTE.png",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-6-francais-laperouse",
@@ -2634,7 +2766,9 @@
   "price": 4,
   "priceSrc": "estim",
   "photo": "https://www.laperouse.com/wp-content/uploads/2025/07/Laperouse-Devanture-480x320.webp",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "laperouse_paris"
  },
  {
   "id": "paris-6-francais-le-sixieme",
@@ -2750,7 +2884,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/vita-ristorante-r682359"
+  "booking": "https://www.thefork.fr/restaurant/vita-ristorante-r682359",
+  "igSearched": 1,
+  "instagram": "vitainparis"
  },
  {
   "id": "paris-6-italien-anima",
@@ -2808,7 +2944,9 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "factory.paris"
  },
  {
   "id": "paris-6-japonais-ippudo-paris",
@@ -2908,7 +3046,9 @@
   "priceSrc": "estim",
   "photo": "https://yoom.fr/cdn/shop/files/Group_6287e0bb-2dbe-471d-8906-e8c8155e60a0.png?crop=center&height=51&v=1724791428&width=213",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/yoom-saint-germain-r21631"
+  "booking": "https://www.thefork.fr/restaurant/yoom-saint-germain-r21631",
+  "igSearched": 1,
+  "instagram": "yoom_dimsum"
  },
  {
   "id": "paris-6-coreen-joayo",
@@ -2946,7 +3086,9 @@
   "website": "https://kokodak.onataste.fr",
   "enriched": 5,
   "photo": "https://kokodak.onataste.fr/media/kokodak.webp",
-  "phone": "01 71 60 18 48"
+  "phone": "01 71 60 18 48",
+  "igSearched": 1,
+  "instagram": "kokodak_paris"
  },
  {
   "id": "paris-6-indien-desi-road",
@@ -2982,7 +3124,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "metou_officiel"
  },
  {
   "id": "paris-6-brunch-tipana",
@@ -2998,7 +3142,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "tipana_patisserienomade"
  },
  {
   "id": "paris-6-cafe-patrol",
@@ -3033,7 +3179,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/yakuza-sando-r742909"
+  "booking": "https://www.thefork.fr/restaurant/yakuza-sando-r742909",
+  "igSearched": 1,
+  "instagram": "yakuza.paris"
  },
  {
   "id": "paris-7-francais-thoumieux",
@@ -3109,7 +3257,8 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "paris-7-japonais-iode-sushi",
@@ -3169,7 +3318,9 @@
   "website": "https://www.newjawad.fr",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "new.jawad"
  },
  {
   "id": "paris-7-brunch-kozy",
@@ -3187,7 +3338,9 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "kozyparis"
  },
  {
   "id": "paris-7-cafe-cuppa-cafe",
@@ -3205,7 +3358,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "website": "https://cafe.restaurants-de-france.fr",
-  "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg"
+  "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
+  "igSearched": 1,
+  "instagram": "cuppacafe.officiel"
  },
  {
   "id": "paris-8-francais-beefbar",
@@ -3344,7 +3499,9 @@
   "enriched": 5,
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "restaurant_maitre_pierre"
  },
  {
   "id": "paris-8-italien-giulia",
@@ -3402,7 +3559,9 @@
   "enriched": 5,
   "price": 4,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "labysse_paris"
  },
  {
   "id": "paris-8-japonais-shinko",
@@ -3419,7 +3578,9 @@
   "enriched": 5,
   "price": 4,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "shinko.paris"
  },
  {
   "id": "paris-8-japonais-akira-back",
@@ -3457,7 +3618,9 @@
   "phone": "07 82 35 74 17",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "kokubanparis"
  },
  {
   "id": "paris-8-japonais-weito",
@@ -3533,7 +3696,9 @@
   "enriched": 5,
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "salvajeparis"
  },
  {
   "id": "paris-8-japonais-komatsubaki",
@@ -3612,7 +3777,9 @@
   "phone": "01 49 29 50 50",
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "paillettesparis"
  },
  {
   "id": "paris-8-oriental-gala",
@@ -3628,7 +3795,9 @@
   "enriched": 5,
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "gala__paris"
  },
  {
   "id": "paris-8-cacher-le-kavod",
@@ -3668,7 +3837,9 @@
   "price": 2,
   "priceSrc": "estim",
   "photo": "https://static.wixstatic.com/media/6f9408_3473a35bdb32491283f3bbf8b76bd5d2~mv2.png",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "mahatma_paris"
  },
  {
   "id": "paris-8-tapas-sergent-garcia",
@@ -3705,7 +3876,13 @@
   "enriched": 5,
   "phone": "06 76 27 01 07",
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/amazonia-r724346",
+  "website": "https://amazonia-paris.fr",
+  "halal": true,
+  "photo": "https://amazonia-paris.fr/wp-content/uploads/slider/cache/6f42391110b7ca2556d43eaa008240d2/slide_1-2-1_11zon.webp",
+  "instagram": "amazonia_restaurant"
  },
  {
   "id": "paris-8-grec-kalamata",
@@ -3725,7 +3902,8 @@
   "instagram": "kalamata.paris",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://static.wixstatic.com/media/e991cf_4c1a86d0b2ba4afd863b3f1e2deaecb5~mv2.png"
+  "photo": "https://static.wixstatic.com/media/e991cf_4c1a86d0b2ba4afd863b3f1e2deaecb5~mv2.png",
+  "searched": 1
  },
  {
   "id": "paris-8-grec-anna",
@@ -3740,7 +3918,10 @@
   "menu": "https://restaurant-anna.com/wp-content/uploads/2022/11/FOOD-ANNA-FR.pdf",
   "enriched": 5,
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://restaurant-anna.com",
+  "photo": "https://restaurant-anna.com/wp-content/uploads/2025/03/ANNA.png"
  },
  {
   "id": "paris-8-tibetain-lhotse",
@@ -3760,7 +3941,8 @@
   "booking": "https://s3-eu-west-1.amazonaws.com/userdocs.zenchef.com/Carte+2019+VIN+V4.pdf",
   "instagram": "lhotse_paris",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-8-fusion-bensai-thai-japanese-fusion",
@@ -3780,7 +3962,8 @@
   "instagram": "bensai_paris",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://www.bensai.fr/wp-content/uploads/2024/12/bensaiv3-480x373.png"
+  "photo": "https://www.bensai.fr/wp-content/uploads/2024/12/bensaiv3-480x373.png",
+  "searched": 1
  },
  {
   "id": "paris-8-brunch-prince-de-galles",
@@ -3800,7 +3983,8 @@
   "booking": "https://www.sevenrooms.com/reservations/bar1920",
   "instagram": "19.20.paris",
   "price": 4,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-8-cafe-cafe-fino",
@@ -3813,7 +3997,12 @@
   "lat": 48.873411,
   "lng": 2.321535,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "cafefinofrance",
+  "website": "https://cafefino.fr",
+  "enriched": 5,
+  "phone": "04 93 79 58 17"
  },
  {
   "id": "paris-9-francais-lorette-les-garcons",
@@ -3832,7 +4021,8 @@
   "phone": "01 42 06 94 98",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://static.wixstatic.com/media/bb9a8d_08e024b665974b6b9f4f5b046b486615~mv2.png"
+  "photo": "https://static.wixstatic.com/media/bb9a8d_08e024b665974b6b9f4f5b046b486615~mv2.png",
+  "searched": 1
  },
  {
   "id": "paris-9-francais-le-rouge-a-levres",
@@ -3848,7 +4038,12 @@
   "enriched": 5,
   "phone": "07 44 99 14 31",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/le-rouge-a-levres-r845275",
+  "website": "https://lerougealevres.fr",
+  "photo": "https://lerougealevres.fr/images/vert-sauvage.webp",
+  "instagram": "lerouge_a_levres"
  },
  {
   "id": "paris-9-francais-mon-paris",
@@ -3868,7 +4063,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=385705",
   "instagram": "monparisresto",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-francais-piou-piou",
@@ -3888,7 +4084,8 @@
   "instagram": "pioupioufriedchicken",
   "price": 2,
   "priceSrc": "estim",
-  "halal": true
+  "halal": true,
+  "searched": 1
  },
  {
   "id": "paris-9-francais-rivages",
@@ -3903,7 +4100,13 @@
   "menu": "https://www.thefork.fr/restaurant/rivages-r714531/menu?fbclid=PAZXh0bgNhZW0CMTEAAabM3GK7tAwiMsDXCT-lWRDqRfq06ZIJ4YY6kgBdLIAaqmhwGr5to9mUF80_aem_BArulpbFY57lQopIbuXmIA",
   "enriched": 5,
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/rivages-r714531",
+  "website": "https://www.restaurantrivages.com",
+  "photo": "https://www.restaurantrivages.com/wp-content/uploads/sites/49/2026/03/SOFITEL-SCRIBE-NOVEMBRE-2025-453.jpg",
+  "phone": "01 44 71 24 02",
+  "instagram": "rivages_restaurant"
  },
  {
   "id": "paris-9-francais-le-shack",
@@ -3918,7 +4121,13 @@
   "menu": "https://leshack.fr/wp-content/uploads/2024/10/241029-MenuLS.pdf",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://leshack.fr",
+  "photo": "https://leshack.fr/wp-content/uploads/2023/07/lock-out-98723_1280.png?ver=1699379754",
+  "phone": "01 83 75 95 40",
+  "instagram": "leshackparis",
+  "booking": "https://leshack.fr/restaurant-bar-paris-opera-2/"
  },
  {
   "id": "paris-9-francais-perlouse",
@@ -3931,7 +4140,14 @@
   "lat": 48.883099,
   "lng": 2.330868,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://www.perlousepigalle.com",
+  "enriched": 5,
+  "photo": "https://www.perlousepigalle.com/wp-content/uploads/2023/03/3-300x273.png",
+  "phone": "07 83 15 75 56",
+  "instagram": "perlousepigalle",
+  "booking": "https://bookings.zenchef.com/results?rid=350010"
  },
  {
   "id": "paris-9-francais-le-roi-du-pot-au-feu",
@@ -3945,7 +4161,8 @@
   "lng": 2.3266,
   "phone": "01 47 42 37 10",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-francais-bien-eleve",
@@ -3956,7 +4173,14 @@
   "address": "",
   "mark": "",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/bien-eleve-r269655",
+  "website": "http://www.bieneleve.fr",
+  "enriched": 5,
+  "photo": "http://www.bieneleve.fr/presentation.jpg",
+  "phone": "01 45 81 44 35",
+  "instagram": "bieneleve_paris"
  },
  {
   "id": "paris-9-francais-petit-bon",
@@ -3967,7 +4191,8 @@
   "address": "",
   "mark": "",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-italien-pepe-ronchon",
@@ -3985,7 +4210,9 @@
   "phone": "01 73 75 54 89",
   "instagram": "peperonchon",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/pepe-ronchon-r660093"
  },
  {
   "id": "paris-9-italien-peppe",
@@ -4004,7 +4231,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=353899&pid=1001",
   "instagram": "peppe.family",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-burger-cot-cot",
@@ -4021,7 +4249,8 @@
   "enriched": 5,
   "phone": "01 42 40 72 62",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-japonais-kibo-noki",
@@ -4037,7 +4266,9 @@
   "website": "https://kibonoki.bykomdab.com",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/kibo-no-ki-r607869"
  },
  {
   "id": "paris-9-japonais-neko-ramen",
@@ -4055,7 +4286,8 @@
   "phone": "06 13 60 29 23",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://www.nekoramen.fr/wp-content/uploads/2020/05/nekocover-600x338.jpg"
+  "photo": "https://www.nekoramen.fr/wp-content/uploads/2020/05/nekocover-600x338.jpg",
+  "searched": 1
  },
  {
   "id": "paris-9-japonais-naruto-ramen",
@@ -4076,7 +4308,8 @@
   "price": 1,
   "priceSrc": "estim",
   "halal": true,
-  "photo": "https://cdn.prod.website-files.com/6716c60b52eebb357f7ac0fb/6716c60b52eebb357f7ac1e5_5.png"
+  "photo": "https://cdn.prod.website-files.com/6716c60b52eebb357f7ac0fb/6716c60b52eebb357f7ac1e5_5.png",
+  "searched": 1
  },
  {
   "id": "paris-9-japonais-kokuban",
@@ -4092,7 +4325,8 @@
   "website": "https://www.kokuban.fr",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-japonais-okito",
@@ -4111,7 +4345,8 @@
   "phone": "01 40 16 09 23",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://birhakeim.okito.fr/assets/img/hero-poster.jpg"
+  "photo": "https://birhakeim.okito.fr/assets/img/hero-poster.jpg",
+  "searched": 1
  },
  {
   "id": "paris-9-japonais-abri-soba",
@@ -4127,7 +4362,10 @@
   "enriched": 5,
   "instagram": "abri_soba",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://abri-soba.onataste.fr",
+  "photo": "https://abri-soba.onataste.fr/media/abri-soba.webp"
  },
  {
   "id": "paris-9-japonais-shinjuku",
@@ -4147,7 +4385,8 @@
   "instagram": "shinjuku.pigalle",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://www.shinjukupigalle.com/wp-content/uploads/2025/06/SHN4603-480x477.jpg"
+  "photo": "https://www.shinjukupigalle.com/wp-content/uploads/2025/06/SHN4603-480x477.jpg",
+  "searched": 1
  },
  {
   "id": "paris-9-japonais-face-noodles",
@@ -4160,7 +4399,13 @@
   "lat": 48.875926,
   "lng": 2.340944,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/face-noodles-hand-made-r812510",
+  "website": "https://face-noodles-hand-made.onataste.fr",
+  "enriched": 5,
+  "photo": "https://face-noodles-hand-made.onataste.fr/media/face-noodles-hand-made.webp",
+  "phone": "01 40 34 11 97"
  },
  {
   "id": "paris-9-japonais-kome-kome",
@@ -4173,7 +4418,14 @@
   "lat": 48.872729,
   "lng": 2.328189,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://komekome.fr",
+  "enriched": 5,
+  "halal": true,
+  "photo": "https://framerusercontent.com/images/7pd1d7UPLdvJe70ubF5FNnQIQ.png",
+  "phone": "01 42 94 12 31",
+  "instagram": "komekome.paris"
  },
  {
   "id": "paris-9-chinois-monsieur-mi",
@@ -4188,7 +4440,8 @@
   "menu": "https://www.google.fr/search?q=MONSIEUR+MI&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlNbv8mEL7FrRJG0Gy_a0SVK7_8dVkJCOEPVAxQcE9ixLnEBEWXE5ZgjzeYceHzfTOFCrEELGKS1pirdmVnW4tq2QHfYLA%3D%3D",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-chinois-ravioli-nord-est",
@@ -4204,7 +4457,8 @@
   "website": "https://montmartre.raviolinordest.com",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-chinois-yoom",
@@ -4221,7 +4475,9 @@
   "enriched": 5,
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://yoom.fr/cdn/shop/files/Group_6287e0bb-2dbe-471d-8906-e8c8155e60a0.png?crop=center&height=51&v=1724791428&width=213"
+  "photo": "https://yoom.fr/cdn/shop/files/Group_6287e0bb-2dbe-471d-8906-e8c8155e60a0.png?crop=center&height=51&v=1724791428&width=213",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/yoom-martyrs-r39497"
  },
  {
   "id": "paris-9-chinois-long-chao-shou",
@@ -4234,7 +4490,12 @@
   "lat": 48.874296,
   "lng": 2.335061,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://long-chao-shou-zong-dian-ravioli-du-sichuan.onataste.fr",
+  "enriched": 5,
+  "photo": "https://long-chao-shou-zong-dian-ravioli-du-sichuan.onataste.fr/media/long-chao-shou-zong-dian-ravioli-du-sichuan.webp",
+  "phone": "01 40 35 75 06"
  },
  {
   "id": "paris-9-coreen-budji",
@@ -4253,7 +4514,8 @@
   "enriched": 5,
   "instagram": "budjiparis",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-coreen-joayo-haussmann",
@@ -4269,7 +4531,8 @@
   "website": "https://joayo-haussmann.fr",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-coreen-jjan",
@@ -4282,7 +4545,12 @@
   "lat": 48.875777,
   "lng": 2.327621,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://www.jjanparis.fr",
+  "enriched": 5,
+  "photo": "https://static.wixstatic.com/media/aa84fc_8f61f9b67b4947c38932b4a31f95db8d~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/aa84fc_8f61f9b67b4947c38932b4a31f95db8d~mv2.jpg",
+  "instagram": "jjan_paris"
  },
  {
   "id": "paris-9-cubain-manigua",
@@ -4295,7 +4563,14 @@
   "lat": 48.877442,
   "lng": 2.341187,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/manigua-r827050",
+  "website": "https://manigua.paris",
+  "enriched": 5,
+  "photo": "https://manigua.paris/wp-content/uploads/2025/03/menu_manigua_01.jpg",
+  "phone": "01 40 35 02 91",
+  "instagram": "manigua.official"
  },
  {
   "id": "paris-9-libanais-liza",
@@ -4308,7 +4583,13 @@
   "lat": 48.872032,
   "lng": 2.343056,
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/liza-r341",
+  "website": "https://www.restaurant-liza.com",
+  "enriched": 5,
+  "photo": "https://www.restaurant-liza.com/wp-content/uploads/2022/06/Group-40.png",
+  "instagram": "lizaparis"
  },
  {
   "id": "paris-9-indien-the-crossing",
@@ -4329,7 +4610,8 @@
   "booking": "https://www.sevenrooms.com/explore/thecrossingindianbistronice/reservations/create/search/",
   "price": 2,
   "priceSrc": "estim",
-  "halal": true
+  "halal": true,
+  "searched": 1
  },
  {
   "id": "paris-9-vietnamien-phood",
@@ -4345,7 +4627,8 @@
   "website": "https://click.and.phood.fr",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-argentin-paris-boca",
@@ -4360,7 +4643,9 @@
   "menu": "https://v2cdn0.centralappstatic.com/file/846c902485d44139ab5a2959226c18b1.pdf",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "paris_boca_cantina"
  },
  {
   "id": "paris-9-colombien-mi-ranchito-paisa",
@@ -4380,7 +4665,8 @@
   "instagram": "miranchitopaisaparis",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://asset.uniiti.com/images/shops/slides/8ab88e2064088026e00a06db2f9af15e3be53c78.jpeg"
+  "photo": "https://asset.uniiti.com/images/shops/slides/8ab88e2064088026e00a06db2f9af15e3be53c78.jpeg",
+  "searched": 1
  },
  {
   "id": "paris-9-tapas-la-bouche-bleue",
@@ -4396,7 +4682,8 @@
   "website": "https://labouchebleue.com",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-tapas-mamacita",
@@ -4415,7 +4702,9 @@
   "instagram": "rivercafeparis",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://groupe-bucher.fr/wp-content/uploads/qr-river-cafe-menu-online-150x150.jpg"
+  "photo": "https://groupe-bucher.fr/wp-content/uploads/qr-river-cafe-menu-online-150x150.jpg",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/mamacita-taqueria-r697631"
  },
  {
   "id": "paris-9-tapas-villa-mikuna",
@@ -4430,7 +4719,8 @@
   "menu": "https://villamikuna.fr/assets/pdf/carte_villa_mikuna.pdf",
   "enriched": 5,
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-tapas-le-vert-sauvage",
@@ -4445,7 +4735,10 @@
   "menu": "https://www.google.fr/search?q=Le+Vert+Sauvage&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlNR8wLwK6F62mMzWnSfKl5QbLi3_fmDnQ11gfKmyMbJ3h--dlTPnJ91mFs9HFPdKkPLh1pDmVxf2wqXqUsfP9FggbQ5OQ%3D%3D",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/le-vert-sauvage-r845272",
+  "website": "https://le-vert-sauvage.wheree.com"
  },
  {
   "id": "paris-9-poisson-fruits-de-mer-mersea",
@@ -4460,7 +4753,12 @@
   "menu": "https://www.merseaparis.com/wp-content/uploads/2023/02/WINTER_END_2023_BP.pdf",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://www.merseaparis.com",
+  "photo": "https://www.merseaparis.com/wp-content/uploads/2020/06/clients2-1.png",
+  "instagram": "merseaparis",
+  "booking": "https://www.merseaparis.com/reservation/"
  },
  {
   "id": "paris-9-poisson-fruits-de-mer-pere-fish",
@@ -4479,7 +4777,8 @@
   "phone": "09 50 62 83 73",
   "instagram": "pereetfishgang",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-brunch-kozy-kanope",
@@ -4497,7 +4796,8 @@
   "enriched": 5,
   "phone": "01 73 77 82 66",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-9-cafe-braun-notes-coffee",
@@ -4512,7 +4812,9 @@
   "menu": "https://www.google.fr/search?q=Braun+Notes+Coffee&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlN2GfccUoFV1WDnkQnrSrDOhxtU5xQfULkldiSmu6pAx555gkAz-yDjOZKC8NaPgjTxH2xduzL906pyKZWgam-Wr16Vxg%3D%3D",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "braunnotescoffee"
  },
  {
   "id": "paris-9-cafe-book-nook",
@@ -4530,7 +4832,8 @@
   "instagram": "bknk_paris",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://static.wixstatic.com/media/41f901_8b1e06573fa7423fb41fbd091a2a37ca~mv2.png"
+  "photo": "https://static.wixstatic.com/media/41f901_8b1e06573fa7423fb41fbd091a2a37ca~mv2.png",
+  "searched": 1
  },
  {
   "id": "paris-9-cafe-cafe-de-la-paix",
@@ -4550,7 +4853,8 @@
   "instagram": "cafedelapaixparis",
   "price": 3,
   "priceSrc": "estim",
-  "photo": "https://www.cafedelapaix.fr/assets/uploads/2021/06/cafe-de-la-paix-jerome-galland-2-960x640.jpg"
+  "photo": "https://www.cafedelapaix.fr/assets/uploads/2021/06/cafe-de-la-paix-jerome-galland-2-960x640.jpg",
+  "searched": 1
  },
  {
   "id": "paris-9-bar-a-cocktails-les-commeres",
@@ -4565,7 +4869,12 @@
   "menu": "https://www.google.fr/search?q=LES+COMM%C3%88RES&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlMwhI5dRz_DvxsXy8G21QcFikkwOLR8QrcPGiSUf8-a60uF4g6h0-1K7EvS23l8-0rwAX_vbReciPxba2xsLB6FA--6rA%3D%3D",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://www.lescommeres-paris.com",
+  "photo": "http://static1.squarespace.com/static/5bdb0ef4da02bce239f431f8/t/698705ef54428f79937a28ad/1770456560010/Design+sans+titre.png?format=1500w",
+  "phone": "09 87 32 78 14",
+  "instagram": "les_commeres_paris"
  },
  {
   "id": "paris-9-bar-a-cocktails-moloko",
@@ -4583,7 +4892,8 @@
   "booking": "https://molokoparis.com/las-vegas-alberghi/",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://molokoparis.com/wp-content/uploads/2026/09/menage-a-domicile-150x150.webp"
+  "photo": "https://molokoparis.com/wp-content/uploads/2026/09/menage-a-domicile-150x150.webp",
+  "searched": 1
  },
  {
   "id": "paris-10-francais-le-candide",
@@ -4599,7 +4909,8 @@
   "website": "https://www.candide.paris",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-francais-terminus-nord",
@@ -4619,7 +4930,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=82241&lang=fr&withCloseButton=1",
   "instagram": "terminusnordbrasserie",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-francais-neni",
@@ -4635,7 +4947,8 @@
   "website": "https://www.neniparis.fr",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-francais-c-est-dante",
@@ -4655,7 +4968,8 @@
   "booking": "https://nl.zenchef.com/optin-form.php?rpid=rpid_PF3YV5SV&lang=fr",
   "instagram": "_danterestaurant_",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-francais-vertueux",
@@ -4674,7 +4988,8 @@
   "booking": "https://restaurantvertueux.com/reservation",
   "instagram": "vertueux.restaurant.paris",
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-francais-joseph-et-raymond",
@@ -4687,7 +5002,8 @@
   "lat": 48.874601,
   "lng": 2.354508,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-francais-casimir",
@@ -4705,7 +5021,8 @@
   "photo": "https://static.wixstatic.com/media/72aa7e_5b57c8b0bf3d45718cecf0b3b468173f%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/72aa7e_5b57c8b0bf3d45718cecf0b3b468173f%7Emv2.jpg",
   "booking": "https://bookings.zenchef.com/results?rid=364645",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-francais-gaston-et-marlo",
@@ -4718,7 +5035,14 @@
   "lat": 48.869329,
   "lng": 2.355324,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://gastonetmarlo.fr",
+  "enriched": 5,
+  "photo": "https://gastonetmarlo.fr/wp-content/uploads/2026/03/Saucisse-truffade_img-480x480.webp",
+  "phone": "09 88 42 97 76",
+  "instagram": "gastonetmarlo",
+  "booking": "https://gastonetmarlo.fr/reservation/"
  },
  {
   "id": "paris-10-italien-mamaioa",
@@ -4733,7 +5057,13 @@
   "menu": "https://drive.google.com/file/d/1ZOFPH8Lc8NrKoHdZbKJU2PJzEmnz0LqB/view",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/mamaioa-r592037",
+  "website": "https://mamaioa.fr",
+  "photo": "https://uniiti.com/images/shops/slides/3a7e29c72cc189b9beb33a17827274170050d1be.jpeg",
+  "phone": "09 67 50 41 52",
+  "instagram": "mamaioa.paris"
  },
  {
   "id": "paris-10-italien-sonata",
@@ -4749,7 +5079,13 @@
   "enriched": 5,
   "phone": "01 48 01 65 34",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://www.sonata-pizzeria.com",
+  "halal": true,
+  "photo": "https://www.sonata-pizzeria.com/opengraph-image.jpg?opengraph-image.0b7b7hvw8rfyx.jpg",
+  "instagram": "sonatafamily",
+  "booking": "https://bookings.zenchef.com/results?rid=360750"
  },
  {
   "id": "paris-10-americain-baba-zulu",
@@ -4768,7 +5104,8 @@
   "photo": "https://weloob.com/assets/media/easy-heart-shaped-pancakes-for-valentines-day.jpg",
   "instagram": "baba_zulu_paris",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-burger-blossom-burgers-beers",
@@ -4785,7 +5122,8 @@
   "website": "https://www.blossomburgers.com",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-burger-o-b-u",
@@ -4800,7 +5138,12 @@
   "menu": "https://fr.restaurantguru.com/OBU-Paris/menu",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://obu-organisation-des-burgers-unis.menujoys.com",
+  "photo": "https://static.menujoys.com/11585-mejoyphoto-1.jpg",
+  "phone": "01 40 37 85 87",
+  "instagram": "menujoys"
  },
  {
   "id": "paris-10-burger-coderak",
@@ -4813,7 +5156,8 @@
   "lat": 48.873439,
   "lng": 2.352309,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-japonais-john-weng",
@@ -4830,7 +5174,8 @@
   "website": "https://johnwengparis.com",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-japonais-noori",
@@ -4849,7 +5194,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=380950",
   "instagram": "noori.family",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-japonais-hara-kiri-ramen",
@@ -4868,7 +5214,8 @@
   "instagram": "harakiri.ramen",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://www.harakiriramen.fr/static/pointer-a4649974c08cddd273420bd184c069b8.png"
+  "photo": "https://www.harakiriramen.fr/static/pointer-a4649974c08cddd273420bd184c069b8.png",
+  "searched": 1
  },
  {
   "id": "paris-10-japonais-espace-japon",
@@ -4887,7 +5234,8 @@
   "instagram": "espacejapon",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://www.espacejapon.com/wp-content/uploads/2026/10/Cours-intensifs-de-japonais-20h-automne-2026-scaled.jpg"
+  "photo": "https://www.espacejapon.com/wp-content/uploads/2026/10/Cours-intensifs-de-japonais-20h-automne-2026-scaled.jpg",
+  "searched": 1
  },
  {
   "id": "paris-10-chinois-la-taverne-de-zhao",
@@ -4907,7 +5255,8 @@
   "price": 1,
   "priceSrc": "estim",
   "halal": true,
-  "photo": "https://www.zhaogroupe.com/wp-content/uploads/2019/05/NEWS-1024x376.jpg"
+  "photo": "https://www.zhaogroupe.com/wp-content/uploads/2019/05/NEWS-1024x376.jpg",
+  "searched": 1
  },
  {
   "id": "paris-10-chinois-bolobolo",
@@ -4922,7 +5271,13 @@
   "menu": "https://v2cdn1.centralappstatic.com/file/e29a9446d08e4b11bfda5b0bde11e76a.pdf",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://boloboloparis.com",
+  "photo": "https://v2cdn1.centralappstatic.com/image/resize/1280x768_cover_55ae57d1d78c4af8967d40151db4b855.jpeg?w=1200",
+  "phone": "01 40 20 96 27",
+  "instagram": "bolobolo.paris",
+  "booking": "https://boloboloparis.com/fr/reservations"
  },
  {
   "id": "paris-10-coreen-hite-family",
@@ -4941,7 +5296,8 @@
   "enriched": 5,
   "instagram": "hite.family",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-coreen-in-seoul-paris",
@@ -4954,7 +5310,10 @@
   "lat": 48.877275,
   "lng": 2.350587,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "in_seoul_paris",
+  "booking": "https://www.thefork.fr/restaurant/in-seoul-r708717"
  },
  {
   "id": "paris-10-grec-kali-greek-food",
@@ -4969,7 +5328,13 @@
   "menu": "https://www.kaligreekfood.fr/_files/ugd/d7c73f_e2638d2cc79d4929ab1b32b81c22e57f.pdf",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://www.kaligreekfood.fr",
+  "photo": "https://static.wixstatic.com/media/d7c73f_53803ba4e10d4363b91bd85da68048a5~mv2.jpg/v1/fill/w_1599,h_1186,al_c/d7c73f_53803ba4e10d4363b91bd85da68048a5~mv2.jpg",
+  "phone": "01 73 70 31 86",
+  "instagram": "kali.greekfood",
+  "booking": "https://www.google.com/maps/reserve/v/dine/c/tMn4F7R3ofw?source=pa&opi=89978449&hl=fr-FR&gei=JhJxauzuKbeokdUP3-eI2As&sourceurl=https://www.google.com/search?q%3Dkali%2Bgreek%2Bfood%2Breserver%26oq%3Dkali%2Bgreek%2Bfood%2Breserver%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOdIBCDcyOTRqMGo3qAIAsAIA%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8"
  },
  {
   "id": "paris-10-oriental-not-a-kebab",
@@ -4987,7 +5352,8 @@
   "enriched": 5,
   "instagram": "luks.kebab",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-oriental-levantine",
@@ -5007,7 +5373,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=361687&pid=1001&_ga=2.140660274.1487363594.1697444631-453159634.1697444631",
   "instagram": "levantineparis",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-oriental-mister-do-san",
@@ -5020,7 +5387,12 @@
   "lat": 48.87516,
   "lng": 2.351424,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://mister-do-san.site.bykomdab.com",
+  "enriched": 5,
+  "photo": "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2FH0igQ4fOwhlXTk7gYHmE%2Fimages%2FheaderImage%2FheaderImage.jpeg?generation=1707671942831561&alt=media",
+  "phone": "01 47 70 84 30"
  },
  {
   "id": "paris-10-cacher-vendredi-soir",
@@ -5035,7 +5407,13 @@
   "phone": "01 42 82 70 19",
   "price": 2,
   "priceSrc": "estim",
-  "kasher": true
+  "kasher": true,
+  "searched": 1,
+  "website": "https://www.vendredi-soir.paris",
+  "enriched": 5,
+  "photo": "https://ugc.zenchef.com/3/6/1/6/1/6/1/5/2/2/1/2/4/1714374566_329/46791dd0b0bb43d4753aa30b1321812f.website.jpg",
+  "instagram": "vendredisoirparis",
+  "booking": "https://nl.zenchef.com/optin-form.php?rpid=rpid_G521G4Z2&lang=fr"
  },
  {
   "id": "paris-10-indonesien-djawa",
@@ -5050,7 +5428,8 @@
   "menu": "https://www.djawa.fr/uploads/images/1677281981_flyer-brunch-menu-brunch-3.pdf",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-cambodgien-le-petit-cambodge",
@@ -5068,7 +5447,8 @@
   "website": "http://www.LePetitCambodge.fr",
   "photo": "https://lepetitcambodge.fr/wp-content/themes/dist/img/facebook.png",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-africain-new-soul-food",
@@ -5088,7 +5468,8 @@
   "booking": "https://www.newsoulfood.fr/reservations",
   "instagram": "newsoulfood",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-mexicain-nomas-tacos",
@@ -5103,7 +5484,11 @@
   "menu": "https://drive.google.com/file/d/1DdhSGNPAGIPiayfIfJFhxnxRu2gsNGzR/view?usp=drivesdk",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "http://nomas-tacos.com",
+  "photo": "http://nomas-tacos.com/assets/img/img_nomas_2.jpg",
+  "instagram": "nomas.taqueria"
  },
  {
   "id": "paris-10-fusion-siseng",
@@ -5122,7 +5507,8 @@
   "instagram": "siseng",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://siseng.paris/wp-content/uploads/2020/11/Capture-de%CC%81cran-2020-04-25-a%CC%80-22.29.44-700x469.png"
+  "photo": "https://siseng.paris/wp-content/uploads/2020/11/Capture-de%CC%81cran-2020-04-25-a%CC%80-22.29.44-700x469.png",
+  "searched": 1
  },
  {
   "id": "paris-10-creperie-galbar",
@@ -5137,7 +5523,8 @@
   "menu": "https://www.google.fr/search?q=Galbar&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOXYw_tE2vVb19b6fNVKeC1f7WtvnZ6re6MMj0P8eeVclZkwATvhJ1W9CNwcZ5eGoRz03vN",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-vegan-ora",
@@ -5153,7 +5540,8 @@
   "website": "https://www.ora-paris.co",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-brunch-parenthese",
@@ -5173,7 +5561,8 @@
   "booking": "https://www.opentable.fr/restref/client/?restref=393372&lang=fr-FR&ot_source=Restaurant%20website&corrid=4da42d53-a3da-42d2-a914-5e643d8c02cb",
   "instagram": "parenthesebrunch",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-10-cafe-le-cafe-bistrot",
@@ -5188,7 +5577,12 @@
   "menu": "https://www.google.fr/search?q=Le+Caf%C3%A9+Bistrot&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&trex=m_t:lcl_akp,rc_ludocids:1235856686850751470,rc_q:Le%2520Caf%25C3%25A9%2520Bistrot,ru_gwp:0%252C7,ru_q:Le%2520Caf%25C3%25A9%2520Bistrot,trex_id:LdTkFb&lpg=cid:CgIgAQ%3D%3D",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "cafe.le.bistro",
+  "website": "https://bistro.restaurants-de-france.fr",
+  "photo": "https://bistro.restaurants-de-france.fr/assets/images/banner.jpg",
+  "phone": "09 72 73 28 76"
  },
  {
   "id": "paris-10-cafe-immersion",
@@ -5208,7 +5602,8 @@
   "instagram": "immersionparis_",
   "price": 1,
   "priceSrc": "estim",
-  "halal": true
+  "halal": true,
+  "searched": 1
  },
  {
   "id": "paris-10-cafe-residence-kann",
@@ -5225,7 +5620,9 @@
   "website": "https://residencekann.wordpress.com",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "residence_kann"
  },
  {
   "id": "paris-11-francais-maison-breguet",
@@ -5242,7 +5639,8 @@
   "enriched": 5,
   "price": 3,
   "priceSrc": "estim",
-  "photo": "https://cdn.prod.website-files.com/60bf2a98e92e7fbb2dd7f787/64ad1438ce467a0753aea5e8_HD-MaisonBreguet-PetitD%C3%A9jeuner-2023-001.jpg"
+  "photo": "https://cdn.prod.website-files.com/60bf2a98e92e7fbb2dd7f787/64ad1438ce467a0753aea5e8_HD-MaisonBreguet-PetitD%C3%A9jeuner-2023-001.jpg",
+  "searched": 1
  },
  {
   "id": "paris-11-francais-blue-rooster",
@@ -5257,7 +5655,8 @@
   "menu": "https://www.blueroosterparis.fr/uploads/6pq6p498/Carte_blueroosterparis.pdf",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-francais-brasserie-martin",
@@ -5276,7 +5675,8 @@
   "phone": "01 48 05 34 36",
   "instagram": "lanouvellegarde",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-francais-taem",
@@ -5291,7 +5691,8 @@
   "menu": "https://www.google.fr/search?q=Taem&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlObrD0D8ksoIMorbAfL68FM9DvmmNKvUEl1bkluaoMpB0VWIBe0-qQte6W9EBju4tJVqppN",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-francais-city-barbecue",
@@ -5307,7 +5708,8 @@
   "website": "https://citybarbecueparis.com",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-francais-mamie-bidoche",
@@ -5323,7 +5725,8 @@
   "website": "https://mamiebidoche.fr",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-francais-diggity",
@@ -5342,7 +5745,8 @@
   "enriched": 5,
   "booking": "https://www.zenchef.fr/creation-site-internet-restaurant?utm_campaign=Referral%20Restaurant%20Websites&utm_source=www.diggityparis.com&utm_medium=footerlink&utm_term=%2F",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-francais-chez-francois",
@@ -5361,7 +5765,8 @@
   "instagram": "alloj_officiel",
   "price": 2,
   "priceSrc": "estim",
-  "kasher": true
+  "kasher": true,
+  "searched": 1
  },
  {
   "id": "paris-11-francais-l-echoppe",
@@ -5379,7 +5784,8 @@
   "booking": "https://echoppedeparis.fr/reservation.html",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://echoppedeparis.fr/fb.png"
+  "photo": "https://echoppedeparis.fr/fb.png",
+  "searched": 1
  },
  {
   "id": "paris-11-francais-dadou",
@@ -5396,7 +5802,8 @@
   "enriched": 5,
   "photo": "https://www.dadourestaurant.com/assets/img/dishes-table-1280.webp",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-italien-giorgio",
@@ -5411,7 +5818,11 @@
   "menu": "https://www.gruppodalmata.com/assets/giorgio/food.pdf",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://giorgio.site.bykomdab.com",
+  "photo": "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2FafwF1rKcNMIypAhnxcKK%2Fimages%2FheaderImage%2FheaderImage.jpeg?generation=1731065788555429&alt=media",
+  "phone": "06 44 64 34 86"
  },
  {
   "id": "paris-11-italien-pupetta-beaumarchais",
@@ -5426,7 +5837,8 @@
   "menu": "https://www.google.fr/search?q=PUPETTA&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:2793535181236436013,ru_gwp:0%252C7,ru_lqi:CgdQVVBFVFRBSP2a49izrICACFoNEAAYACIHcHVwZXR0YZIBEHBpenphX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkhhVkIxWDFKUkVBRaoBIxABMh8QASIbvLblTGp02ya4MOjqJeqfc_4pZdWxKFthMmv_,ru_phdesc:SCo3RCsJsjA,trex_id:vghCvb",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-italien-itaglio",
@@ -5441,7 +5853,8 @@
   "menu": "https://www.itaglio.com/wp-content/uploads/2022/06/Itaglio-menu.pdf",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-italien-gruppomimo",
@@ -5461,7 +5874,8 @@
   "instagram": "gruppomimo",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://cdn.prod.website-files.com/64e75b64860b4e3dc128e525/65119b5dd646650a12c99c62_pola-souvenir-1.webp"
+  "photo": "https://cdn.prod.website-files.com/64e75b64860b4e3dc128e525/65119b5dd646650a12c99c62_pola-souvenir-1.webp",
+  "searched": 1
  },
  {
   "id": "paris-11-italien-origini",
@@ -5474,7 +5888,14 @@
   "lat": 48.854008,
   "lng": 2.38207,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/restaurant-origini-r817343",
+  "website": "https://originiresto.com",
+  "enriched": 5,
+  "photo": "https://originiresto.com/wp-content/uploads/2025/04/Tagliatelle-al-pesto-trapanese-2-ristorante-italiano-restaurant-france-paris-italian-food-manger-italien.webp#787",
+  "phone": "07 67 38 10 33",
+  "instagram": "originiresto"
  },
  {
   "id": "paris-11-espagnol-rainbao",
@@ -5491,7 +5912,8 @@
   "website": "https://rainbao.byclickeat.fr",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-americain-brother-sister",
@@ -5510,7 +5932,8 @@
   "phone": "06 16 08 28 88",
   "instagram": "brothersister_paris",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-burger-31-street-burgers",
@@ -5526,7 +5949,8 @@
   "website": "https://31streetburgers.com",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-burger-goiko",
@@ -5545,7 +5969,8 @@
   "booking": "https://www.goiko.com/es/reservas/",
   "instagram": "goiko",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-burger-cut",
@@ -5564,7 +5989,8 @@
   "instagram": "cutstreetfood",
   "price": 1,
   "priceSrc": "estim",
-  "halal": true
+  "halal": true,
+  "searched": 1
  },
  {
   "id": "paris-11-burger-le-camion-qui-fume",
@@ -5583,7 +6009,8 @@
   "instagram": "lecamionquifume",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://i0.wp.com/lecamionquifume.com/wp-content/uploads/camion-Signature-3.png?resize=480%2C211&ssl=1"
+  "photo": "https://i0.wp.com/lecamionquifume.com/wp-content/uploads/camion-Signature-3.png?resize=480%2C211&ssl=1",
+  "searched": 1
  },
  {
   "id": "paris-11-burger-gomu",
@@ -5599,7 +6026,8 @@
   "website": "https://gomuburger.com",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-burger-seizemetrescarres",
@@ -5615,7 +6043,8 @@
   "website": "https://www.seizemetrescarres.fr",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-burger-wakam",
@@ -5631,7 +6060,8 @@
   "website": "https://www.wakamburger.fr",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-burger-crispy-soul",
@@ -5647,7 +6077,8 @@
   "website": "https://app.pulp.eu",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-burger-break-moment",
@@ -5662,7 +6093,9 @@
   "menu": "https://menu.tillersystems.com/16486/break-moment-11-eme/menu/25260",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://break-moment.wheree.com"
  },
  {
   "id": "paris-11-japonais-sushi-first",
@@ -5678,7 +6111,9 @@
   "website": "http://first94.fr",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "sushi_first_paris"
  },
  {
   "id": "paris-11-japonais-sushi-rainbow",
@@ -5697,7 +6132,8 @@
   "booking": "https://newreservation.joinoko.com/choice-people/cb6680f4ddb68e368d855b19",
   "phone": "01 43 55 26 97",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-japonais-superbao",
@@ -5715,7 +6151,9 @@
   "enriched": 5,
   "instagram": "superbaoparis",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/superbao-bastille-r853585"
  },
  {
   "id": "paris-11-japonais-yoruparis",
@@ -5732,7 +6170,8 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "photo": "http://edesignparis.fr/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBranding.d29b3478.png&w=128&q=75"
+  "photo": "http://edesignparis.fr/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBranding.d29b3478.png&w=128&q=75",
+  "searched": 1
  },
  {
   "id": "paris-11-japonais-aoba",
@@ -5745,7 +6184,8 @@
   "lat": 48.854571,
   "lng": 2.371247,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-chinois-bao-express",
@@ -5764,7 +6204,8 @@
   "instagram": "bao.family",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://images.squarespace-cdn.com/content/v1/5b4f5ffdf2e6b138b10acbc3/5858e6ba-77ef-4828-a8f0-539ccd1b5ad5/Gros+Bao+TEST.jpg?format=2500w"
+  "photo": "https://images.squarespace-cdn.com/content/v1/5b4f5ffdf2e6b138b10acbc3/5858e6ba-77ef-4828-a8f0-539ccd1b5ad5/Gros+Bao+TEST.jpg?format=2500w",
+  "searched": 1
  },
  {
   "id": "paris-11-chinois-hibao",
@@ -5779,7 +6220,8 @@
   "menu": "https://fr.restaurantguru.com/HIBAO-RESTO-Paris/menu",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-chinois-mala-boom",
@@ -5799,7 +6241,8 @@
   "instagram": "malaboom.paris",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://images.squarespace-cdn.com/content/v1/62600ddb33c86a7e2d9910f4/ab436056-853e-4812-9198-5f81072e2c67/IMG_4016.jpg?format=2500w"
+  "photo": "https://images.squarespace-cdn.com/content/v1/62600ddb33c86a7e2d9910f4/ab436056-853e-4812-9198-5f81072e2c67/IMG_4016.jpg?format=2500w",
+  "searched": 1
  },
  {
   "id": "paris-11-coreen-la-cantine-coreenne",
@@ -5816,7 +6259,8 @@
   "enriched": 5,
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://ams3.digitaloceanspaces.com/tmi-images/la_cantine_coreenne__247/gallery/R7N6Wf8ZYszKRAn2h.jpeg"
+  "photo": "https://ams3.digitaloceanspaces.com/tmi-images/la_cantine_coreenne__247/gallery/R7N6Wf8ZYszKRAn2h.jpeg",
+  "searched": 1
  },
  {
   "id": "paris-11-oriental-chakchouka",
@@ -5836,7 +6280,8 @@
   "instagram": "moommamparis",
   "price": 1,
   "priceSrc": "estim",
-  "halal": true
+  "halal": true,
+  "searched": 1
  },
  {
   "id": "paris-11-oriental-bladi",
@@ -5852,7 +6297,8 @@
   "website": "https://bladi-paris.business.site",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-oriental-nour",
@@ -5872,7 +6318,8 @@
   "price": 2,
   "priceSrc": "estim",
   "kasher": true,
-  "halal": true
+  "halal": true,
+  "searched": 1
  },
  {
   "id": "paris-11-israelien-soumsoum",
@@ -5888,7 +6335,8 @@
   "website": "https://soumsoum.fr",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-libanais-les-freres-hummus",
@@ -5903,7 +6351,9 @@
   "menu": "https://www.google.fr/search?q=les+fr%C3%A8res+hummus+menu&client=safari&hl=fr-fr&sxsrf=APwXEdej1XC6i1oLHPlygJg9WDCEMBaJQg%3A1680552838908&ei=hjMrZLL-NquDkdUPwKeE8AE&oq=Les+Fr%C3%A8res+Hummus&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAEYAjIICAAQgAQQsAMyDgguEK8BEMcBEIAEELADMgsIABCABBCwAxDLATIICAAQgAQQsAMyCggAEIAEELADEAoyCwgAEIAEELADEMsBMggIABCiBBCwAzIICAAQogQQsAMyCAgAEKIEELADMggIABCiBBCwA0oECEEYAVAAWABgjQxoAHAAeACAAUiIAUiSAQExmAEAyAEKwAEB&sclient=mobile-gws-wiz-serp#lkt=LocalPoiMenu&trex=m_t:lcl_akp,rc_ludocids:10519112107065730493,rc_q:les%2520fr%25C3%25A8res%2520hummus%2520menu,ru_gwp:0%252C7,ru_q:les%2520fr%25C3%25A8res%2520hummus%2520menu,trex_id:ukxbuf&lpg=cid:CgIgAQ%3D%3D",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "lesfrereshummus"
  },
  {
   "id": "paris-11-thailandais-maythai",
@@ -5923,7 +6373,8 @@
   "instagram": "maythai_paris",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://maythai.fr/wp-content/uploads/2025/12/Maythai-1-300x300.jpg"
+  "photo": "https://maythai.fr/wp-content/uploads/2025/12/Maythai-1-300x300.jpg",
+  "searched": 1
  },
  {
   "id": "paris-11-philippin-bobi",
@@ -5943,7 +6394,8 @@
   "instagram": "bobiparis",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://www.bobiparis.com/wp-content/uploads/2019/10/Fichier-1.png"
+  "photo": "https://www.bobiparis.com/wp-content/uploads/2019/10/Fichier-1.png",
+  "searched": 1
  },
  {
   "id": "paris-11-fusion-savane-mousson",
@@ -5963,7 +6415,8 @@
   "instagram": "savane.mousson",
   "price": 2,
   "priceSrc": "estim",
-  "photo": "https://cdn.prod.website-files.com/67f4fc09ecc405626e114dd0/682b082788448dbcc468c4c9_bento-sm.webp"
+  "photo": "https://cdn.prod.website-files.com/67f4fc09ecc405626e114dd0/682b082788448dbcc468c4c9_bento-sm.webp",
+  "searched": 1
  },
  {
   "id": "paris-11-fusion-laia",
@@ -5976,7 +6429,8 @@
   "lat": 48.852667,
   "lng": 2.38841,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-brunch-kafkaf",
@@ -5994,7 +6448,8 @@
   "photo": "https://thehungryfamily.com/storage/2024/01/Design-sans-titre-3.png",
   "instagram": "thehungryfamily.fr",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-brunch-clint",
@@ -6009,7 +6464,8 @@
   "menu": "https://linktr.ee/clintparis?fbclid=PAAaZ6ePv2eilquKpXP2uFrzhr9IQenx0jMhYcG9NAgTJuSvfqpavU15HTPYU",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-brunch-unreve",
@@ -6024,7 +6480,12 @@
   "menu": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account17161036/35948524_1.pdf?0.8737910237315161",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://aunreve.fr",
+  "photo": "https://aunreve.fr/themes/leo_olars/assets/img/modules/appagebuilder/images/fe0ee117505daaffeb5dc4ef13440a5.jpg",
+  "phone": "01 48 05 94 36",
+  "booking": "https://www.opentable.fr/booking/restref/availability?lang=fr-FR&correlationId=8bb15496-fb70-4f2a-8336-4225d0ce8e9c&restRef=405672&otSource=Restaurant%20website"
  },
  {
   "id": "paris-11-brunch-l-atelier-saisonnier",
@@ -6038,7 +6499,13 @@
   "lng": 2.374468,
   "phone": "09 52 33 16 04",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/l-atelier-saisonnier-paris-11-r837415",
+  "website": "https://lateliersaisonnier.com",
+  "enriched": 5,
+  "photo": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2025_LL.png",
+  "instagram": "lateliersaisonnier"
  },
  {
   "id": "paris-11-cafe-joa",
@@ -6054,7 +6521,9 @@
   "website": "https://cafejoa.com",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "cafejoaparis"
  },
  {
   "id": "paris-11-cafe-cafe-mareva",
@@ -6074,7 +6543,8 @@
   "instagram": "cafemareva",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://static.wixstatic.com/media/c470d3_859b93da9f6c4bcd9c8d5392ce8ea08e~mv2.png"
+  "photo": "https://static.wixstatic.com/media/c470d3_859b93da9f6c4bcd9c8d5392ce8ea08e~mv2.png",
+  "searched": 1
  },
  {
   "id": "paris-11-cafe-cafe-du-temple",
@@ -6094,7 +6564,8 @@
   "instagram": "cafedutemple",
   "price": 1,
   "priceSrc": "estim",
-  "photo": "https://cafedutemple.fr/images/img1_temple.jpg"
+  "photo": "https://cafedutemple.fr/images/img1_temple.jpg",
+  "searched": 1
  },
  {
   "id": "paris-11-cafe-cafe-mericourt",
@@ -6110,7 +6581,8 @@
   "website": "https://www.cafemericourt.com",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-cafe-le-charbon",
@@ -6128,7 +6600,8 @@
   "website": "https://www.lecafecharbon.fr/",
   "photo": "http://www.lecafecharbon.fr/themes/cafe-charbon/img/bg-restaurant.jpg",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-cafe-pompom-coffice",
@@ -6143,7 +6616,8 @@
   "menu": "https://www.thefork.fr/restaurant/cafe-pompom-r727696/menu",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-cafe-on-partage",
@@ -6159,7 +6633,8 @@
   "enriched": 5,
   "instagram": "onpartage",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-bar-a-cocktails-carre-voltaire",
@@ -6175,7 +6650,9 @@
   "website": "https://lecarrevoltaire.tastycloud.menu",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "instagram": "lecarrevoltaire"
  },
  {
   "id": "paris-11-bar-a-cocktails-la-reverie",
@@ -6193,7 +6670,8 @@
   "enriched": 5,
   "instagram": "lareverie_paris",
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-11-bar-a-cocktails-le-perchoir-menilmontant",
@@ -6213,7 +6691,8 @@
   "booking": "https://widget.privateaser.com/v/f10b76a4-63684",
   "instagram": "leperchoir",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-12-francais-jango",
@@ -6228,7 +6707,8 @@
   "menu": "https://fr.restaurantguru.com/Jango-Paris/menu",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-12-francais-marvely",
@@ -6243,7 +6723,11 @@
   "menu": "https://marvely.fr/Carte_Marvely.pdf",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "website": "https://marvely.fr",
+  "photo": "https://marvely.fr/wp-content/uploads/2024/01/Digital-Marketing-Agency-Home.jpg",
+  "instagram": "marvely_officiel"
  },
  {
   "id": "paris-12-italien-the-godfather-paris",
@@ -6260,7 +6744,8 @@
   "enriched": 5,
   "phone": "01 43 47 50 54",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-12-americain-mama-jackson",
@@ -6277,7 +6762,9 @@
   "phone": "06 16 72 78 64",
   "website": "https://www.facebook.com/mamajacksonsoulfood/",
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/mama-jackson-soul-food-paris-r813254"
  },
  {
   "id": "paris-12-burger-liberty-s-burger",
@@ -6292,7 +6779,8 @@
   "menu": "https://www.libertysburger.com/wp-content/uploads/2023/02/CARTE-EXTERIEURE-2023.pdf",
   "enriched": 5,
   "price": 1,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-12-japonais-towa",
@@ -6305,7 +6793,14 @@
   "lat": 48.849659,
   "lng": 2.379239,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/towa-r397351",
+  "website": "https://towarestaurantparis.fr",
+  "enriched": 5,
+  "photo": "https://v2cdn0.centralappstatic.com/image/resize/4705x3537_cover_123a7aabb3c44579aab13e13b8eaf8d7.webp?w=1200",
+  "phone": "01 53 17 02 44",
+  "instagram": "towa_restaurant"
  },
  {
   "id": "paris-12-japonais-jinchan-shokudo",
@@ -6321,7 +6816,8 @@
   "website": "https://www.jinchanclickandcollect.fr/",
   "enriched": 5,
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "searched": 1
  },
  {
   "id": "paris-12-chinois-mr-zhao-x-ground-control",
@@ -6340,7 +6836,8 @@
   "price": 1,
   "priceSrc": "estim",
   "halal": true,
-  "photo": "https://www.zhaogroupe.com/wp-content/uploads/2019/05/NEWS-1024x376.jpg"
+  "photo": "https://www.zhaogroupe.com/wp-content/uploads/2019/05/NEWS-1024x376.jpg",
+  "searched": 1
  },
  {
   "id": "paris-12-cacher-tikounolam",
@@ -6360,7 +6857,8 @@
   "price": 2,
   "priceSrc": "estim",
   "kasher": true,
-  "photo": "https://tikounolam.fr/wp-content/uploads/2019/08/Fichier-1humble-1024x989.png"
+  "photo": "https://tikounolam.fr/wp-content/uploads/2019/08/Fichier-1humble-1024x989.png",
+  "searched": 1
  },
  {
   "id": "paris-12-cacher-berbeche",
@@ -6380,7 +6878,8 @@
   "price": 2,
   "priceSrc": "estim",
   "kasher": true,
-  "photo": "https://cdn.shopify.com/s/files/1/0366/5595/6107/files/Gallerie-image-1-Boucherie-Cacher-Berbeche.jpg?v=1603034388"
+  "photo": "https://cdn.shopify.com/s/files/1/0366/5595/6107/files/Gallerie-image-1-Boucherie-Cacher-Berbeche.jpg?v=1603034388",
+  "searched": 1
  },
  {
   "id": "paris-12-bar-a-cocktails-les-piaules-rooftop",
