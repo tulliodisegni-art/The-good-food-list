@@ -141,6 +141,11 @@ function renderHome() {
     ${section("Les Précieuses du jour", "Adresses d'exception pas encore testées", carousel([...discover, ...discoverMore]))}
 
     ${recent.length ? section("Ajoutés récemment", "", carousel(recent, placeSub)) : ""}
+    ${AVIS.list.length ? section("Les avis des amis", "Ce que les autres ont pensé de tes adresses", `<div class="rows">${AVIS.list.slice(0, 6).map((a) => {
+      const p = S.places.find((x) => x.id === a.place_id);
+      return p ? `<div class="row"><button class="row-main" data-open-place="${esc(p.id)}">${thumbHtml(p)}<span class="rtext"><span class="row-name">${esc(p.name)} <span class="row-rating">${a.rating ? STAR + a.rating : ""}</span></span>
+        <span class="row-meta">${esc(a.author)}${a.comment ? ` : « ${esc(a.comment.slice(0, 80))}${a.comment.length > 80 ? "…" : ""} »` : ""}</span></span></button></div>` : "";
+    }).join("")}</div>`) : ""}
 
     ${section("Ailleurs", "", `<div class="city-cards">${CITIES.map((c) => {
       const n = all.filter((p) => p.city === c.name).length;
@@ -419,3 +424,70 @@ async function publishPlace(id, attempt = 0) {
     if (current?.id === id) openSheet(id, true);
   } catch (e) { toast(e.message || "Publication impossible, réessaie depuis la fiche"); }
 }
+
+// ---------- Avis des amis ----------
+// Stockés dans une petite base Supabase (table « avis ») : tout le monde peut en écrire et les lire.
+const AVIS = { url: "", key: "", list: [], loaded: false };
+const avisHead = () => ({ apikey: AVIS.key, ...(AVIS.key.startsWith("sb_") ? {} : { authorization: `Bearer ${AVIS.key}` }) });
+async function loadAvis() {
+  try {
+    const cfg = await (await fetch("data/config.json", { cache: "no-cache" })).json();
+    Object.assign(AVIS, cfg.avis || {});
+    if (!AVIS.url || !AVIS.key) return;
+    const r = await fetch(`${AVIS.url}/rest/v1/avis?select=*&order=created_at.desc&limit=2000`, { headers: avisHead() });
+    if (!r.ok) throw new Error(r.status);
+    AVIS.list = await r.json(); AVIS.loaded = true;
+    store.set("avisCache", AVIS.list);
+  } catch { AVIS.list = store.get("avisCache", []); AVIS.loaded = !!AVIS.list.length; }
+  renderAll();
+  if (current && !$("#sheet").hidden) openSheet(current.id, true);
+}
+const avisFor = (id) => AVIS.list.filter((a) => a.place_id === id);
+const ago = (d) => {
+  const j = Math.floor((Date.now() - new Date(d)) / 864e5);
+  return j < 1 ? "aujourd'hui" : j < 2 ? "hier" : j < 30 ? `il y a ${j} jours` : new Date(d).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" });
+};
+function avisBlock(p) {
+  if (!AVIS.url) return "";
+  const list = avisFor(p.id);
+  const avg = list.filter((a) => a.rating).reduce((s, a, _, l) => s + a.rating / l.length, 0);
+  return `<section class="block avis">
+    <div class="block-head"><h3>Avis des amis</h3>${list.length ? `<span class="rating-label"><span class="avis-stars">★</span> ${avg.toFixed(1).replace(".", ",")} · ${list.length} avis</span>` : ""}</div>
+    ${list.length ? `<ul class="avis-list">${list.map((a) => `<li><div class="avis-top"><b>${esc(a.author)}</b>
+      <span class="avis-stars">${"★".repeat(a.rating || 0)}<i>${"★".repeat(5 - (a.rating || 0))}</i></span><span class="muted small">${ago(a.created_at)}</span></div>
+      ${a.comment ? `<p>${esc(a.comment)}</p>` : ""}</li>`).join("")}</ul>` : `<p class="muted small">Personne n'a encore donné son avis. Sois le premier !</p>`}
+    <button class="btn wide" data-avis-open>Donner mon avis</button>
+    <form class="edit-info avis-form" id="avisForm" hidden>
+      <label for="avisName">Ton prénom</label><input id="avisName" maxlength="40" value="${esc(store.get("name", ""))}" placeholder="Ex. Léa" required>
+      <label>Ta note</label><div class="stars small-stars">${[1, 2, 3, 4, 5].map((n) => `<button type="button" class="star" data-frate="${n}" aria-label="${n} sur 5">${STAR}</button>`).join("")}</div>
+      <label for="avisText">Ton avis</label><textarea id="avisText" rows="3" maxlength="1000" placeholder="Ce que tu as aimé ou pas, les plats à prendre…"></textarea>
+      <div class="row-actions"><button class="btn primary" type="submit">Envoyer</button><button class="btn ghost" type="button" data-avis-cancel>Annuler</button></div>
+    </form>
+  </section>`;
+}
+let avisRate = 0;
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("button");
+  if (!t) return;
+  if (t.hasAttribute("data-avis-open")) { avisRate = 0; $("#avisForm").hidden = false; t.hidden = true; ($("#avisName").value ? $("#avisText") : $("#avisName")).focus(); }
+  if (t.hasAttribute("data-avis-cancel")) { $("#avisForm").hidden = true; $("[data-avis-open]").hidden = false; }
+  if (t.dataset.frate) { avisRate = +t.dataset.frate; $("#avisForm").querySelectorAll(".star").forEach((s, i) => s.classList.toggle("on", i < avisRate)); }
+});
+document.addEventListener("submit", async (e) => {
+  if (e.target.id !== "avisForm" || !current) return;
+  e.preventDefault();
+  const author = $("#avisName").value.trim(), comment = $("#avisText").value.trim();
+  if (!author) { toast("Indique ton prénom"); return; }
+  if (!avisRate && !comment) { toast("Mets une note ou un petit mot"); return; }
+  store.set("name", author);
+  const row = { place_id: current.id, place_name: current.name, author, rating: avisRate || null, comment };
+  try {
+    const r = await fetch(`${AVIS.url}/rest/v1/avis`, { method: "POST", headers: { ...avisHead(), "content-type": "application/json", prefer: "return=representation" }, body: JSON.stringify(row) });
+    if (!r.ok) throw new Error(r.status);
+    const [saved] = await r.json();
+    AVIS.list.unshift(saved || { ...row, created_at: new Date().toISOString() });
+    store.set("avisCache", AVIS.list);
+    openSheet(current.id, true); toast("Merci pour ton avis !");
+  } catch { toast("Avis non envoyé, vérifie ta connexion"); }
+});
+loadAvis();

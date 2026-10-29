@@ -88,6 +88,7 @@ def main():
                     p.pop(key, None)
                 else:
                     p[key] = val
+    places = [p for p in places if not p.get("removed")]
     out.write_text(json.dumps(places, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(places)} lieux -> {out}", file=sys.stderr)
 

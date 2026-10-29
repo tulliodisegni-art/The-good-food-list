@@ -68,6 +68,8 @@ function rebuild() {
     store.set("custom", custom); store.set("edits", edits);
   }
   S.places = [...S.base, ...custom].map((p) => ({ ...p, ...(edits[p.id] || {}) }));
+  S.removed = S.places.filter((p) => p.removed);
+  S.places = S.places.filter((p) => !p.removed);
   for (const p of S.places) {
     // Dans les notes, ✅ et ✔️ veulent dire « déjà testé ».
     if (p.tested === undefined) p.tested = TESTED.has(p.mark);
@@ -171,7 +173,7 @@ function renderParis() {
       return `<section class="group" id="arr-${arr}">
         <div class="group-head"><span class="plaque"><span class="p-kick">Arrondt</span><span class="p-num">${arrHtml(arr)}</span></span>
           <div><h2>${arr === 1 ? "Premier" : arrLabel(arr) + " arrondissement"}</h2><span class="count">${list.length} adresse${list.length > 1 ? "s" : ""}</span></div></div>
-        ${[...byCat.entries()].map(([cat, ps]) => `<div class="subhead"><span class="dot" style="background:${catVar(cat)}"></span>${esc(cat)}</div>
+        ${[...byCat.entries()].map(([cat, ps]) => `<div class="subhead" style="--sc:${catVar(cat)}"><span class="dot" style="background:${catVar(cat)}"></span>${esc(cat)} <span class="sub-n">${ps.length}</span></div>
           <div class="rows">${ps.map((p) => rowHtml(p, esc(street(p.address)) || "Adresse à compléter")).join("")}</div>`).join("")}
       </section>`;
     }).join("");
@@ -255,7 +257,7 @@ function renderVilles() {
     return;
   }
   const groups = groupBy(items, (p) => p.cat || "Autres");
-  el.innerHTML = [...groups.entries()].map(([cat, ps]) => `<section class="group"><div class="subhead"><span class="dot" style="background:${catVar(cat)}"></span>${esc(cat)} <span class="sub-n">${ps.length}</span></div>
+  el.innerHTML = [...groups.entries()].map(([cat, ps]) => `<section class="group"><div class="subhead" style="--sc:${catVar(cat)}"><span class="dot" style="background:${catVar(cat)}"></span>${esc(cat)} <span class="sub-n">${ps.length}</span></div>
     <div class="rows">${ps.map((p) => rowHtml(p, esc(p.address || "Adresse à compléter"))).join("")}</div></section>`).join("");
 }
 
@@ -378,6 +380,8 @@ function openSheet(id, keepScroll) {
         <span class="saved" id="savedHint" hidden>Enregistré</span>
       </section>
 
+      ${typeof avisBlock === "function" ? avisBlock(p) : ""}
+
       ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : ""}
       ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
 
@@ -422,7 +426,8 @@ function openSheet(id, keepScroll) {
       ${custom && p.list !== "pending" && store.get("ghToken", "") ? (p.published
         ? `<p class="note">Publiée pour tous, elle apparaît chez chacun dans quelques minutes.</p>`
         : `<button class="btn primary wide" data-publish>Publier pour tous</button>`) : ""}
-      ${custom ? `<div class="row-actions"><button class="btn" data-edit>Modifier</button><button class="btn danger" data-remove>Supprimer</button></div>` : ""}
+      <div class="row-actions remove-row">${custom ? `<button class="btn" data-edit>Modifier</button>` : ""}
+        <button class="btn danger" data-remove>${store.get("ghToken", "") ? "Supprimer de la liste" : custom ? "Supprimer" : "Masquer sur ce téléphone"}</button></div>
     </div>`;
   sheet.hidden = false; $("#backdrop").hidden = false;
   sheet.scrollTop = keepScroll ? prevScroll : 0;
@@ -579,9 +584,14 @@ $("#sheet").addEventListener("click", async (e) => {
   if (t.hasAttribute("data-edit")) { const id = current.id; closeSheet(); editPlace(id); return; }
   if (t.hasAttribute("data-remove")) {
     if (t.dataset.confirm) {
-      store.set("custom", store.get("custom", []).filter((c) => c.id !== current.id));
-      rebuild(); closeSheet(); renderAll(); toast("Adresse supprimée");
-    } else { t.dataset.confirm = "1"; t.textContent = "Confirmer la suppression"; }
+      const id = current.id, name = current.name;
+      const mine = store.get("custom", []).find((c) => c.id === id);
+      // Supprimée pour tous avec la clé de publication ; sinon seulement sur ce téléphone.
+      if (mine && !mine.published) store.set("custom", store.get("custom", []).filter((c) => c.id !== id));
+      else setEdit(id, { removed: true });
+      if (store.get("ghToken", "") && (!mine || mine.published)) publishFix(id, { removed: true });
+      rebuild(); closeSheet(); renderAll(); toast(`${name} supprimé`);
+    } else { t.dataset.confirm = "1"; t.textContent = "Touche encore pour confirmer"; }
   }
 });
 $("#backdrop").addEventListener("click", closeSheet);

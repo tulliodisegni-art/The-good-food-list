@@ -782,3 +782,22 @@ button { -webkit-tap-highlight-color: transparent; }
 .class-form > div[data-for] { display: grid; gap: 6px; }
 .class-form > div[hidden] { display: none; }
 .class-form input, .class-form select { width: 100%; border: 1px solid var(--line); background: var(--bg); border-radius: 10px; padding: 10px 12px; font-size: 16px; }
+/* Avis des amis */
+.avis-list { list-style: none; margin: 0 0 10px; padding: 0; display: grid; gap: 10px; }
+.avis-list li { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+.avis-list p { margin: 6px 0 0; line-height: 1.45; }
+.avis-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.avis-stars { color: var(--gold); letter-spacing: 1px; }
+.avis-stars i { font-style: normal; color: var(--line); }
+.small-stars .star svg { width: 28px; height: 28px; }
+.remove-row { margin-top: 18px; }
+/* Types plus visibles (Français, Italien…) et parties mieux séparées */
+.subhead {
+  font-size: 17px; letter-spacing: 0; text-transform: none; font-weight: 800; color: var(--ink);
+  margin: 26px 0 10px; gap: 10px;
+}
+.subhead .dot { width: 12px; height: 12px; box-shadow: 0 0 0 4px color-mix(in srgb, currentColor 6%, transparent); }
+.subhead .sub-n { margin-left: auto; font-size: 12.5px; font-weight: 700; color: var(--muted); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; }
+.group + .group { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--line); }
+.group-head h2 { font-size: 26px; }
+.subhead[style*="--sc"] { color: color-mix(in srgb, var(--sc) 78%, var(--ink)); }
