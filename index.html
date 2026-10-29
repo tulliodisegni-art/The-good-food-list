@@ -55,7 +55,8 @@
         <button id="groupCat" data-group="cat">Type</button>
         <button id="groupNear" data-group="near">Près de moi</button>
       </div>
-      <button class="pill-toggle" id="favParis" aria-pressed="false">Tous les lieux</button>
+      <div class="pills"><button class="pill-toggle" id="priceParis" aria-pressed="false">Tous les budgets</button>
+      <button class="pill-toggle" id="favParis" aria-pressed="false">Tous les lieux</button></div>
     </div>
     <div class="arr-strip" id="arrStrip" aria-label="Arrondissements"></div>
     <div class="chips" id="chipsParis"></div>
@@ -81,7 +82,8 @@
   <section class="view" id="view-precieuses" data-view="precieuses" hidden>
     <p class="intro">Les adresses d'exception : tables chic, rooftops, soirées, bars d'hôtel, salons de thé et activités.</p>
     <div class="toolbar toolbar-end">
-      <button class="pill-toggle" id="favPrec" aria-pressed="false">Tous les lieux</button>
+      <div class="pills"><button class="pill-toggle" id="pricePrec" aria-pressed="false">Tous les budgets</button>
+      <button class="pill-toggle" id="favPrec" aria-pressed="false">Tous les lieux</button></div>
     </div>
     <div class="universes" id="univPrec"></div>
     <div class="list" id="listPrec"></div>
@@ -150,6 +152,8 @@
         <label for="fCat">Type</label>
         <input id="fCat" list="catOptions" placeholder="Ex. Italien, Rooftop, Brunch…">
         <datalist id="catOptions"></datalist>
+        <label for="fPrice">Budget par personne</label>
+        <select id="fPrice"><option value="">Je ne sais pas</option><option value="1">€ · moins de 20 €</option><option value="2">€€ · 20 à 40 €</option><option value="3">€€€ · 40 à 80 €</option><option value="4">€€€€ · plus de 80 €</option></select>
         <label for="fCity" id="fCityLabel" hidden>Ville</label>
         <input id="fCity" list="cityOptions" placeholder="Ex. New York" hidden>
         <datalist id="cityOptions"><option value="New York"><option value="Tel-Aviv"></datalist>

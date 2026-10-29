@@ -767,3 +767,9 @@ button { -webkit-tap-highlight-color: transparent; }
 .btn.wide { width: 100%; justify-content: center; margin: 4px 0 10px; }
 .gh-key { display: flex; gap: 8px; margin-top: 8px; }
 .gh-key input { flex: 1; min-width: 0; }
+/* Budget */
+.pills { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.row-price { color: var(--ink); font-weight: 600; letter-spacing: .02em; }
+.price-tag { font-weight: 700; letter-spacing: .04em; color: var(--ink); }
+.price-tag i { font-style: normal; opacity: .22; }
+.edit-info select { width: 100%; border: 1px solid var(--line); background: var(--bg); border-radius: 10px; padding: 10px 12px; font-size: 16px; }

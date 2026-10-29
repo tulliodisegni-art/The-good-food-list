@@ -47,7 +47,12 @@ const S = {
   cat: { paris: null, precieuses: null }, fav: { paris: "", precieuses: "" }, q: "",
   arr: null, city: "New York", univ: store.get("univ", "table"), mapList: "paris", mapCat: "", geo: store.get("geo", {}),
   me: null, // position du téléphone, quand elle a été demandée
+  price: { paris: 0, precieuses: 0 },
 };
+// Budget par personne, de € à €€€€.
+const PRICES = ["Tous les budgets", "€ Petit prix", "€€ Prix moyen", "€€€ Chic", "€€€€ Grande occasion"];
+const PRICE_HINT = ["", "moins de 20 € par personne", "20 à 40 € par personne", "40 à 80 € par personne", "plus de 80 € par personne"];
+const euros = (n) => (n ? "€".repeat(n) : "");
 
 function rebuild() {
   // Une adresse publiée pour tous arrive dans la liste commune : sa copie locale s'efface.
@@ -90,6 +95,7 @@ function filtered(list) {
     if (S.fav[list] === "done" && !p.tested) return false;
     if (S.fav[list] === "todo" && p.tested) return false;
     if (S.fav[list] === "want" && !p.want) return false;
+    if (S.price[list] && p.price !== S.price[list]) return false;
     if (q && !norm(`${p.name} ${p.address} ${p.cat} ${p.city || ""} ${p.arr ? arrLabel(p.arr) : ""}`).includes(q)) return false;
     return true;
   });
@@ -110,7 +116,7 @@ function rowHtml(p, meta) {
   return `<div class="row ${p.tested ? "is-done" : ""}">
     <button class="row-main" data-id="${esc(p.id)}">${thumbHtml(p)}
       <span class="rtext"><span class="row-name">${esc(p.name)}${p.want ? `<span class="row-want" title="Envie d'y aller">${HEART}</span>` : ""}${p.rating ? ` <span class="row-rating">${STAR}${p.rating}</span>` : ""}</span>
-      <span class="row-meta">${meta}${d ? ` <span class="row-dist">· ${d}</span>` : ""}</span></span>
+      <span class="row-meta">${meta}${p.price ? ` <span class="row-price">· ${euros(p.price)}</span>` : ""}${d ? ` <span class="row-dist">· ${d}</span>` : ""}</span></span>
     </button>${checkBtn(p)}
   </div>`;
 }
@@ -334,6 +340,7 @@ function openSheet(id, keepScroll) {
         <h2 id="sheetName">${esc(p.name)}</h2>
         <div class="sheet-sub"><span class="tag" style="--tc:${catVar(p.cat)}">${esc(p.cat || "Sans type")}</span>
           ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}
+          ${p.price ? `<span class="price-tag" title="${PRICE_HINT[p.price]}${p.priceSrc === "estim" ? " (estimation)" : ""}">${euros(p.price)}<i>${"€".repeat(4 - p.price)}</i></span>` : ""}
           ${p.gRating ? `<span class="g-rating">${STAR}${esc(p.gRating)} Google</span>` : ""}</div>
         ${S.me && p.lat ? `<div class="dist-line">${icon("walk")}<span>À ${fmtDist(distM(S.me, p))} de toi · ${walkMin(distM(S.me, p))} min à pied</span></div>` : ""}
       </div>
@@ -389,6 +396,7 @@ function openSheet(id, keepScroll) {
         ${p.source && p.source !== L.insta ? infoRow("insta", "Publication", "Voir la publication", p.source) : ""}
         ${infoRow("web", "Site web", p.website ? p.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") : "", p.website)}
         <form class="edit-info" id="editInfo" hidden>
+          <label for="e-price">Budget</label><select id="e-price" name="price">${PRICES.map((l, i) => `<option value="${i}" ${(p.price || 0) === i ? "selected" : ""}>${i ? `${l} (${PRICE_HINT[i]})` : "Je ne sais pas"}</option>`).join("")}</select>
           ${editField("phone", "Téléphone", "tel", p.phone, "01 23 45 67 89")}
           ${editField("booking", "Lien de réservation", "url", p.booking, "https://www.thefork.fr/…")}
           ${editField("menu", "Lien du menu", "url", p.menu, "https://…")}
@@ -481,7 +489,8 @@ $("#sheet").addEventListener("submit", (e) => {
   if (e.target.id !== "editInfo" || !current) return;
   e.preventDefault();
   // On ne garde que ce qui a changé, pour ne pas masquer les infos ajoutées plus tard.
-  const patch = Object.fromEntries([...new FormData(e.target)].map(([k, v]) => [k, String(v).trim()]).filter(([k, v]) => v !== (current[k] || "")));
+  const patch = Object.fromEntries([...new FormData(e.target)].map(([k, v]) => [k, k === "price" ? +v : String(v).trim()]).filter(([k, v]) => v !== (current[k] || (k === "price" ? 0 : ""))));
+  if ("price" in patch) patch.priceSrc = "moi";
   setEdit(current.id, patch); renderAll(); openSheet(current.id, true); toast("Fiche mise à jour");
 });
 
@@ -609,6 +618,15 @@ document.addEventListener("click", (e) => {
   if (g) { S.group = g.dataset.group; store.set("group", S.group); renderParis(); }
 });
 const FAV_STEPS = [["", "Tous les lieux"], ["done", "Déjà testés"], ["todo", "Pas encore testés"], ["want", "Mes envies"]];
+for (const [btn, list] of [["#priceParis", "paris"], ["#pricePrec", "precieuses"]]) {
+  $(btn).addEventListener("click", (e) => setPrice(list, (S.price[list] + 1) % PRICES.length));
+}
+function setPrice(list, n) {
+  S.price[list] = n;
+  const b = $(list === "paris" ? "#priceParis" : "#pricePrec");
+  b.textContent = PRICES[n]; b.setAttribute("aria-pressed", n > 0);
+  list === "paris" ? renderParis() : renderPrec();
+}
 for (const [btn, list] of [["#favParis", "paris"], ["#favPrec", "precieuses"]]) {
   $(btn).addEventListener("click", (e) => {
     const i = (FAV_STEPS.findIndex(([k]) => k === S.fav[list]) + 1) % FAV_STEPS.length;
@@ -857,7 +875,7 @@ Choix de la liste :
 Types déjà utilisés (réutilise-en un si ça colle) : ${cats}.
 
 Réponds uniquement avec un objet JSON, sans texte autour :
-{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|villes", "arr": 0, "city": "", "cat": "", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "instagram": "compte Instagram du lieu, sans @", "booking": "lien direct de réservation (TheFork, Zenchef, page Réserver du site…) si trouvé", "doubt": "ce qui reste incertain, sinon vide"}
+{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|villes", "arr": 0, "city": "", "cat": "", "price": "budget par personne : 1 = moins de 20 €, 2 = 20 à 40 €, 3 = 40 à 80 €, 4 = plus de 80 €", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "instagram": "compte Instagram du lieu, sans @", "booking": "lien direct de réservation (TheFork, Zenchef, page Réserver du site…) si trouvé", "doubt": "ce qui reste incertain, sinon vide"}
 "arr" est le numéro d'arrondissement (1 à 20) pour Paris, sinon 0.`;
 }
 
@@ -910,6 +928,7 @@ function fillFromAi(r, link) {
   $("#fMenu").value = /^https?:/.test(r.menu || "") ? r.menu : /^https?:/.test(r.website || "") ? r.website : "";
   $("#fSource").value = link || ""; $("#fSummary").value = r.summary || "";
   const url = (u) => (/^https?:/.test(u || "") ? u : "");
+  if (r.price >= 1 && r.price <= 4) $("#fPrice").value = String(r.price);
   aiExtra = { phone: r.phone || "", website: url(r.website), booking: url(r.booking), instagram: igHandle({ instagram: r.instagram }) };
   $("#formTitle").textContent = "Vérifie la fiche";
   $("#fCancel").hidden = false;
@@ -959,7 +978,7 @@ function editPlace(id) {
   $("#fId").value = p.id; $("#fName").value = p.name || ""; $("#fAddress").value = p.address || "";
   $("#fList").value = p.list; $("#fArr").value = p.arr || ""; $("#fCat").value = p.cat || "";
   $("#fCity").value = p.city || ""; $("#fMenu").value = p.menu || ""; $("#fSource").value = p.source || "";
-  $("#fPhoto").value = p.photo || ""; $("#fSummary").value = p.summary || "";
+  $("#fPhoto").value = p.photo || ""; $("#fSummary").value = p.summary || ""; $("#fPrice").value = p.price || "";
   $("#fCity").hidden = p.list !== "villes"; $("#fCityLabel").hidden = p.list !== "villes";
   $("#formTitle").textContent = "Modifier l'adresse"; $("#fSubmit").textContent = "Enregistrer"; $("#fCancel").hidden = false;
   setTimeout(() => $("#placeForm").scrollIntoView({ behavior: "smooth" }), 50);
@@ -977,6 +996,7 @@ $("#placeForm").addEventListener("submit", (e) => {
     cat: $("#fCat").value.trim() || "Restaurant", city: list === "villes" ? $("#fCity").value.trim() : undefined,
     menu: $("#fMenu").value.trim(), source: $("#fSource").value.trim(), photo: $("#fPhoto").value.trim(),
     summary: $("#fSummary").value.trim(), mark: "", createdAt: Date.now(),
+    price: +$("#fPrice").value || undefined,
   };
   if (list === "paris" && !p.arr) { toast("Choisis l'arrondissement"); return; }
   if (aiExtra) { if (aiExtra.phone) p.phone = aiExtra.phone; if (aiExtra.website) p.website = aiExtra.website; if (aiExtra.booking) p.booking = aiExtra.booking; if (aiExtra.instagram) p.instagram = aiExtra.instagram; }

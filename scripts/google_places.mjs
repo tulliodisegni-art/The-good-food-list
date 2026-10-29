@@ -10,7 +10,7 @@ const places = JSON.parse(await readFile(FILE, "utf8"));
 const FIELDS = [
   "places.id", "places.displayName", "places.formattedAddress", "places.location", "places.nationalPhoneNumber",
   "places.regularOpeningHours.weekdayDescriptions", "places.rating", "places.userRatingCount",
-  "places.websiteUri", "places.googleMapsUri", "places.photos",
+  "places.websiteUri", "places.googleMapsUri", "places.photos", "places.priceLevel",
 ].join(",");
 
 async function search(p) {
@@ -48,6 +48,9 @@ for (const p of places) {
     if (g.rating) p.gRating = g.rating.toFixed(1).replace(".", ",");
     if (g.websiteUri && !p.website) p.website = g.websiteUri;
     if (g.googleMapsUri) p.gmaps = g.googleMapsUri;
+    // Le niveau de prix Google remplace l'estimation, pas un budget choisi à la main.
+    const lvl = { PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 }[g.priceLevel];
+    if (lvl && p.priceSrc !== "moi") { p.price = lvl; p.priceSrc = "google"; }
     if (!p.address && g.formattedAddress) p.address = g.formattedAddress;
     if (!p.lat && g.location) { p.lat = g.location.latitude; p.lng = g.location.longitude; }
     // La photo Google passe devant celle du site, sauf si une photo a été choisie à la main.

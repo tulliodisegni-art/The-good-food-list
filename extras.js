@@ -51,7 +51,7 @@ function cardHtml(p, sub) {
     ${thumbHtml(p, "pc-img")}
     ${p.tested ? `<span class="pc-badge" aria-label="Déjà testé">${CHECK_SVG}</span>` : p.want ? `<span class="pc-badge want">${HEART}</span>` : ""}
     <span class="pc-name">${esc(p.name)}</span>
-    <span class="pc-sub">${esc(sub ?? p.cat ?? "")}${d ? ` · ${d}` : ""}</span>
+    <span class="pc-sub">${esc(sub ?? p.cat ?? "")}${p.price ? ` · ${euros(p.price)}` : ""}${d ? ` · ${d}` : ""}</span>
   </button>`;
 }
 const carousel = (items, sub) => `<div class="carousel">${items.map((p) => cardHtml(p, sub ? sub(p) : undefined)).join("")}</div>`;
@@ -94,6 +94,8 @@ function renderHome() {
   const cats = [...groupBy(paris, (p) => p.cat).entries()].sort((a, b) => b[1].length - a[1].length).slice(0, 10).map(([c]) => c);
   const moods = [
     ...cats.map((c) => `<button class="mood" data-mood="${esc(c)}" style="--mc:${catVar(c)}">${esc(c)}</button>`),
+    `<button class="mood" data-price-go="1" style="--mc:var(--c-cafe)">Petit budget</button>`,
+    `<button class="mood" data-price-go="4" style="--mc:var(--c-fun)">Grande occasion</button>`,
     `<button class="mood" data-univ-go="verre" style="--mc:var(--c-bar)">Un rooftop</button>`,
     `<button class="mood" data-univ-go="sortir" style="--mc:var(--c-orient)">Sortir ce soir</button>`,
     `<button class="mood" data-univ-go="activites" style="--mc:var(--c-fun)">Une activité</button>`,
@@ -297,6 +299,13 @@ document.addEventListener("click", (e) => {
   }
   const mood = t.closest("[data-mood]");
   if (mood) { S.cat.paris = mood.dataset.mood; S.arr = null; location.hash = "paris"; renderParis(); return; }
+  const pr = t.closest("[data-price-go]");
+  if (pr) {
+    // Petit budget : la liste de Paris ; grande occasion : les Précieuses.
+    const n = +pr.dataset.priceGo, list = n >= 4 ? "precieuses" : "paris";
+    if (list === "paris") { S.cat.paris = null; S.arr = null; }
+    location.hash = list; setPrice(list, n); return;
+  }
   const univ = t.closest("[data-univ-go]");
   if (univ) { S.univ = univ.dataset.univGo; store.set("univ", S.univ); location.hash = "precieuses"; renderPrec(); return; }
   const arr = t.closest("[data-arr-go]");
