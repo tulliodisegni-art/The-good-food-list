@@ -8555,7 +8555,9 @@
   "cat": "Rooftop",
   "name": "Terraza Mikuna",
   "address": "1 rue des Archives, 75004 Paris",
-  "mark": "✅"
+  "mark": "✅",
+  "lat": 48.857161,
+  "lng": 2.353898
  },
  {
   "id": "precieuses-0-rooftop-perruche",
