@@ -39,9 +39,12 @@ function ogImage(html, base) {
 }
 
 function phone(html) {
+  const text = html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ");
   const cands = [
     ...[...html.matchAll(/href=["']tel:([^"']+)["']/gi)].map((m) => m[1]),
     ...[...html.matchAll(/"telephone"\s*:\s*"([^"]+)"/gi)].map((m) => m[1]),
+    // Numéro écrit dans la page (01 42 60 59 66, +33 1 42…).
+    ...[...text.matchAll(/(?:\+33\s?\(?0?\)?\s?|\b0)[1-9](?:[\s.\u00a0-]?\d{2}){4}\b/g)].map((m) => m[0]),
   ];
   for (const raw of cands) {
     let d = decodeURIComponent(raw).replace(/[^\d+]/g, "");
@@ -72,8 +75,19 @@ function booking(html, base) {
   return zc ? `https://bookings.zenchef.com/results?rid=${zc[1]}` : byText;
 }
 
-// Version 2 : ajoute la recherche du lien de réservation sur les sites déjà lus.
-const V = 2;
+// Pages internes qui donnent souvent le numéro ou le lien de réservation.
+function subpage(html, base) {
+  for (const m of html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>([\s\S]{0,120}?)<\/a>/gi)) {
+    let u;
+    try { u = new URL(decode(m[1]), base); } catch { continue; }
+    if (u.origin !== new URL(base).origin) continue;
+    if (/contact|infos?|acc[eè]s|reserv|r%C3%A9serv|booking|nous-trouver|find-us|location/i.test(u.pathname + " " + m[2].replace(/<[^>]+>/g, ""))) return u.href;
+  }
+  return null;
+}
+
+// Version 3 : numéros écrits en clair et page Contact / Réserver en plus de l'accueil.
+const V = 3;
 const todo = places.filter((p) => (+p.enriched || 0) < V && (p.menu || p.website));
 const bySite = new Map();
 for (const p of todo) {
@@ -89,6 +103,8 @@ async function worker() {
   while (sites.length) {
     const site = sites.shift();
     const page = await get(site + "/");
+    const sub = page && subpage(page.html, page.url);
+    const page2 = sub && sub !== page.url ? await get(sub) : null;
     for (const p of bySite.get(site)) {
       p.enriched = V;
       if (!p.website) p.website = site;
@@ -96,9 +112,9 @@ async function worker() {
       const img = !p.photo && ogImage(page.html, page.url);
       if (img) { p.photo = img; photos++; }
       // Un même site peut servir plusieurs adresses : le numéro n'est gardé que s'il n'y en a qu'une.
-      const tel = !p.phone && bySite.get(site).length === 1 && phone(page.html);
+      const tel = !p.phone && bySite.get(site).length === 1 && (phone(page.html) || (page2 && phone(page2.html)));
       if (tel) { p.phone = tel; phones++; }
-      const book = !p.booking && booking(page.html, page.url);
+      const book = !p.booking && (booking(page.html, page.url) || (page2 && booking(page2.html, page2.url)));
       if (book) { p.booking = book; books++; }
     }
     done++;

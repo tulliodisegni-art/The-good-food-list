@@ -30,6 +30,9 @@ jobs:
           node-version: 20
       - name: Placer les adresses sur la carte
         run: node scripts/geocode.mjs
+      - name: Téléphones et sites depuis OpenStreetMap
+        continue-on-error: true
+        run: node scripts/osm.mjs
       - name: Photos et téléphones depuis les sites des restos
         run: node scripts/enrich.mjs
       - name: Compléter avec Google Places

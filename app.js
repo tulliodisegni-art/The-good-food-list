@@ -270,11 +270,11 @@ function openSheet(id, keepScroll) {
     : `<span class="plaque"><span class="p-kick">${p.list === "precieuses" ? "Précieuses" : esc(p.city || "Ville")}</span><span class="p-num" style="font-size:17px">${esc(p.cat || "")}</span></span>`;
   const r = p.rating || 0;
   sheet.innerHTML = `
+    <div class="sheet-top"><span class="grab"></span>
+      <button class="close" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
     <div class="hero ${p.photo ? "photo" : ""}" style="--hc:${catVar(p.cat)}">
-      <span class="grab"></span>
       ${p.photo ? `<img src="${esc(p.photo)}" alt="" referrerpolicy="no-referrer" onerror="this.remove();this.parentNode.classList.remove('photo')">` : `<span class="mono" aria-hidden="true">${esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase())}</span>`}
       ${plaque}
-      <button class="close" data-close aria-label="Fermer">×</button>
     </div>
     <div class="sheet-body">
       <div>
@@ -352,7 +352,43 @@ function infoRow(ic, label, value, href) {
 function editField(key, label, type, value, ph) {
   return `<label for="e-${key}">${label}</label><input id="e-${key}" name="${key}" type="${type}" value="${esc(value || "")}" placeholder="${esc(ph)}" ${type === "url" ? 'inputmode="url"' : ""}>`;
 }
-function closeSheet() { $("#sheet").hidden = true; $("#backdrop").hidden = true; current = null; }
+function closeSheet() {
+  const sheet = $("#sheet");
+  sheet.hidden = true; sheet.style.transform = ""; sheet.style.transition = "";
+  $("#backdrop").hidden = true; $("#backdrop").style.opacity = ""; current = null;
+}
+
+// Glisser la fiche vers le bas pour la fermer (quand elle est déjà en haut de son contenu).
+(() => {
+  const sheet = $("#sheet"), back = $("#backdrop");
+  let y0 = null, dy = 0, t0 = 0;
+  const mobile = () => !matchMedia("(min-width: 1000px)").matches;
+  sheet.addEventListener("scroll", () => sheet.classList.toggle("scrolled", sheet.scrollTop > 20), { passive: true });
+  sheet.addEventListener("touchstart", (e) => {
+    if (!mobile() || sheet.scrollTop > 0 || e.target.closest("textarea, input, select")) { y0 = null; return; }
+    y0 = e.touches[0].clientY; dy = 0; t0 = Date.now(); sheet.style.transition = "none";
+  }, { passive: true });
+  sheet.addEventListener("touchmove", (e) => {
+    if (y0 === null) return;
+    dy = e.touches[0].clientY - y0;
+    if (dy <= 0 || sheet.scrollTop > 0) { dy = 0; sheet.style.transform = ""; return; }
+    e.preventDefault();
+    sheet.style.transform = `translateY(${dy}px)`;
+    back.style.opacity = String(Math.max(0.2, 1 - dy / 400));
+  }, { passive: false });
+  sheet.addEventListener("touchend", () => {
+    if (y0 === null) return;
+    y0 = null;
+    const fast = dy > 40 && Date.now() - t0 < 250;
+    sheet.style.transition = "transform .2s ease-out";
+    if (dy > 120 || fast) {
+      sheet.style.transform = "translateY(100%)";
+      setTimeout(closeSheet, 190);
+    } else {
+      sheet.style.transform = ""; back.style.opacity = "";
+    }
+  });
+})();
 
 let commentTimer;
 $("#sheet").addEventListener("input", (e) => {
