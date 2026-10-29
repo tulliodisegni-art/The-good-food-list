@@ -764,3 +764,6 @@ button { -webkit-tap-highlight-color: transparent; }
   .pc-img { width: 180px; height: 130px; }
   .carousel { margin: 0; padding-left: 0; padding-right: 0; flex-wrap: wrap; overflow: visible; }
 }
+.btn.wide { width: 100%; justify-content: center; margin: 4px 0 10px; }
+.gh-key { display: flex; gap: 8px; margin-top: 8px; }
+.gh-key input { flex: 1; min-width: 0; }

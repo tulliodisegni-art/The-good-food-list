@@ -50,8 +50,18 @@ const S = {
 };
 
 function rebuild() {
-  const custom = store.get("custom", []);
+  // Une adresse publiée pour tous arrive dans la liste commune : sa copie locale s'efface.
+  const ids = new Set(S.base.map((p) => p.id));
+  let custom = store.get("custom", []);
   const edits = store.get("edits", {});
+  if (custom.some((p) => ids.has(p.id))) {
+    for (const p of custom.filter((c) => ids.has(c.id))) {
+      const mine = Object.fromEntries(["tested", "rating", "comment", "want"].filter((k) => p[k] !== undefined).map((k) => [k, p[k]]));
+      edits[p.id] = { ...mine, ...(edits[p.id] || {}) };
+    }
+    custom = custom.filter((p) => !ids.has(p.id));
+    store.set("custom", custom); store.set("edits", edits);
+  }
   S.places = [...S.base, ...custom].map((p) => ({ ...p, ...(edits[p.id] || {}) }));
   for (const p of S.places) {
     // Dans les notes, ✅ et ✔️ veulent dire « déjà testé ».
@@ -394,6 +404,9 @@ function openSheet(id, keepScroll) {
       ${nearbyHtml(p)}
 
       ${p.mark ? `<p class="note">Marque de ta note d'origine : ${esc(p.mark)}</p>` : ""}
+      ${custom && p.list !== "pending" && store.get("ghToken", "") ? (p.published
+        ? `<p class="note">Publiée pour tous, elle apparaît chez chacun dans quelques minutes.</p>`
+        : `<button class="btn primary wide" data-publish>Publier pour tous</button>`) : ""}
       ${custom ? `<div class="row-actions"><button class="btn" data-edit>Modifier</button><button class="btn danger" data-remove>Supprimer</button></div>` : ""}
     </div>`;
   sheet.hidden = false; $("#backdrop").hidden = false;
@@ -506,6 +519,7 @@ $("#sheet").addEventListener("click", async (e) => {
     $("#sheet .check.big")?.classList.add("pop");
     return;
   }
+  if (t.hasAttribute("data-publish")) { publishPlace(current.id); return; }
   if (t.hasAttribute("data-edit")) { const id = current.id; closeSheet(); editPlace(id); return; }
   if (t.hasAttribute("data-remove")) {
     if (t.dataset.confirm) {
@@ -974,6 +988,7 @@ $("#placeForm").addEventListener("submit", (e) => {
   rebuild(); renderAll(); resetForm();
   if (map) geocodeMissing();
   toast(prev && prev.list !== "pending" ? "Adresse modifiée" : `${p.name} ajouté`);
+  if (store.get("ghToken", "")) setTimeout(() => publishPlace(id), 1200);
   location.hash = list; show(list);
   setTimeout(() => openSheet(id), 60);
 });

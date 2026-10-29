@@ -28,6 +28,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Assembler les listes (notes + adresses publiées depuis l'appli)
+        run: python3 scripts/build_data.py
       - name: Placer les adresses sur la carte
         run: node scripts/geocode.mjs
       - name: Téléphones et sites depuis OpenStreetMap
@@ -45,7 +47,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "Infos des restos mises à jour automatiquement" data/places.json
-            git push
+            git pull --rebase -q origin main && git push
           fi
       - name: Mois en cours
         id: month

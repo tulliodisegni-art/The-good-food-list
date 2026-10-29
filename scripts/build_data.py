@@ -64,6 +64,10 @@ def main():
     if out.exists():
         old = {p["id"]: p for p in json.loads(out.read_text(encoding="utf-8"))}
     places = parse(DATA / "paris.txt", "paris") + parse(DATA / "precieuses.txt", "precieuses")
+    # Adresses publiées depuis l'appli (bouton « Publier pour tous »).
+    shared = DATA / "ajouts.json"
+    if shared.exists():
+        places += [{**p, "shared": True} for p in json.loads(shared.read_text(encoding="utf-8"))]
     seen = set()
     for p in places:
         while p["id"] in seen:
@@ -71,10 +75,9 @@ def main():
         seen.add(p["id"])
         prev = old.get(p["id"], {})
         # Garde les infos enrichies à la main ou par le géocodage.
-        for key in ("lat", "lng", "menu", "photo", "summary", "source", "note", "website", "phone",
-                    "hours", "booking", "instagram", "gRating", "gid", "gChecked", "gmaps", "enriched"):
-            if prev.get(key):
-                p[key] = prev[key]
+        for key, val in prev.items():
+            if val and not p.get(key):
+                p[key] = val
     out.write_text(json.dumps(places, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(places)} lieux -> {out}", file=sys.stderr)
 

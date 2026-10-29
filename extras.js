@@ -247,6 +247,14 @@ function openSettings() {
         <label class="btn" for="restoreFile">Restaurer</label><input id="restoreFile" type="file" accept="application/json,.json" hidden></div>
     </section>
 
+    <section class="block"><h3>Liste partagée</h3>
+      <p class="muted small">Envoie le lien de l'appli à qui tu veux : chacun voit toutes les adresses et garde ses propres coches et notes. Avec ta clé de publication, ce que tu ajoutes arrive aussi chez eux quelques minutes plus tard.</p>
+      <p class="muted small">Clé de publication ${store.get("ghToken", "") ? "<b>enregistrée sur ce téléphone</b>" : "pas encore ajoutée"}.</p>
+      <div class="gh-key"><input id="ghToken" type="password" autocomplete="off" placeholder="github_pat_…"><button class="btn" data-gh-save>Enregistrer</button></div>
+      <div class="row-actions"><button class="btn primary" data-share-app>Partager l'appli</button>
+        ${store.get("ghToken", "") ? `<button class="btn ghost" data-gh-forget>Oublier la clé</button>` : ""}</div>
+    </section>
+
     <section class="block"><h3>Lecture des captures par l'IA</h3>
       <p class="muted small">Clé ${store.get("aiKey", "") ? "enregistrée" : "pas encore ajoutée"}. Elle se règle dans l'onglet Ajouter.</p>
       <a class="btn" href="#ajouter" data-close-panel>Ouvrir Ajouter</a>
@@ -300,6 +308,13 @@ document.addEventListener("click", (e) => {
   const th = t.closest("[data-theme-set]");
   if (th) { store.set("theme", th.dataset.themeSet); applyTheme(th.dataset.themeSet); openSettings(); return; }
   if (t.closest("[data-backup]")) { backup(); return; }
+  if (t.closest("[data-gh-save]")) {
+    const k = $("#ghToken").value.trim();
+    if (!/^(github_pat_|ghp_)\w{20,}$/.test(k)) { toast("Cette clé ne ressemble pas à une clé GitHub"); return; }
+    checkToken(k); return;
+  }
+  if (t.closest("[data-gh-forget]")) { store.set("ghToken", ""); toast("Clé oubliée sur ce téléphone"); openSettings(); return; }
+  if (t.closest("[data-share-app]")) { shareApp(); return; }
   const pl = t.closest("[data-pick-list]");
   if (pl) { PICK.list = pl.dataset.pickList; store.set("pick", PICK); openPicker(); return; }
   const pt = t.closest("[data-pick-t]");
@@ -314,3 +329,57 @@ document.addEventListener("change", (e) => {
   if (e.target.id === "pickCat") { PICK.cat = e.target.value; store.set("pick", PICK); drawPick(false); }
   if (e.target.id === "restoreFile" && e.target.files[0]) restore(e.target.files[0]);
 });
+
+// ---------- Liste partagée ----------
+// Les adresses publiées vont dans data/ajouts.json du dépôt GitHub ; la mise en ligne
+// les fusionne à la liste commune, que tout le monde reçoit au prochain chargement.
+const REPO = "tulliodisegni-art/The-good-food-list";
+const AJOUTS = `https://api.github.com/repos/${REPO}/contents/data/ajouts.json`;
+const ghHead = (k) => ({ authorization: `Bearer ${k}`, accept: "application/vnd.github+json" });
+const b64 = (txt) => { let s = ""; for (const b of new TextEncoder().encode(txt)) s += String.fromCharCode(b); return btoa(s); };
+const unb64 = (data) => new TextDecoder().decode(Uint8Array.from(atob(data.replace(/\s/g, "")), (c) => c.charCodeAt(0)));
+
+async function checkToken(k) {
+  try {
+    const r = await fetch(AJOUTS, { headers: ghHead(k) });
+    if (r.status === 401) throw new Error("Clé refusée par GitHub");
+    if (!r.ok && r.status !== 404) throw new Error(`GitHub répond ${r.status}`);
+    store.set("ghToken", k); toast("Clé enregistrée : tes ajouts seront publiés pour tous"); openSettings();
+  } catch (e) { toast(e.message || "GitHub injoignable"); }
+}
+
+async function shareApp() {
+  const url = location.href.split("#")[0];
+  const text = "Ma liste de bonnes adresses : ouvre le lien, puis Partager › Sur l'écran d'accueil.";
+  try { if (navigator.share) { await navigator.share({ title: "The Good Food List", text, url }); return; } } catch { return; }
+  try { await navigator.clipboard.writeText(url); toast("Lien copié"); } catch { prompt("Lien de l'appli", url); }
+}
+
+// Seules les infos de l'adresse partent : coches, notes, envies et commentaires restent sur ce téléphone.
+const PERSONAL = ["tested", "rating", "comment", "want", "published", "createdAt", "mark"];
+async function publishPlace(id, attempt = 0) {
+  const k = store.get("ghToken", "");
+  const local = store.get("custom", []).find((p) => p.id === id);
+  if (!k || !local || local.list === "pending") return;
+  const place = Object.fromEntries(Object.entries(local).filter(([key, v]) => !PERSONAL.includes(key) && v !== "" && v != null));
+  place.addedAt = new Date().toISOString().slice(0, 10);
+  try {
+    const r = await fetch(`${AJOUTS}?ref=main&t=${Date.now()}`, { headers: ghHead(k), cache: "no-store" });
+    if (r.status === 401) throw new Error("Clé de publication refusée : remets-en une dans Réglages");
+    if (!r.ok && r.status !== 404) throw new Error(`GitHub répond ${r.status}`);
+    const cur = r.ok ? await r.json() : null;
+    const list = cur ? JSON.parse(unb64(cur.content)) : [];
+    const i = list.findIndex((p) => p.id === id);
+    if (i >= 0) list[i] = place; else list.push(place);
+    const put = await fetch(AJOUTS, {
+      method: "PUT", headers: { ...ghHead(k), "content-type": "application/json" },
+      body: JSON.stringify({ message: `Ajout partagé : ${place.name}`, content: b64(JSON.stringify(list, null, 1) + "\n"), branch: "main", ...(cur ? { sha: cur.sha } : {}) }),
+    });
+    // Deux publications en même temps : on relit et on réessaie.
+    if ((put.status === 409 || put.status === 422) && attempt < 2) return publishPlace(id, attempt + 1);
+    if (!put.ok) throw new Error(`Publication refusée (${put.status})`);
+    setEdit(id, { published: true });
+    toast(`${place.name} publié pour tous`);
+    if (current?.id === id) openSheet(id, true);
+  } catch (e) { toast(e.message || "Publication impossible, réessaie depuis la fiche"); }
+}
