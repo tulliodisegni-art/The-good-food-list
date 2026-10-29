@@ -45,7 +45,7 @@ const TESTED = new Set(["✅", "✔️", "✔"]);
 const S = {
   base: [], places: [], view: "paris", group: store.get("group", "arr"),
   cat: { paris: null, precieuses: null }, fav: { paris: "", precieuses: "" }, q: "",
-  arr: null, univ: store.get("univ", "table"), mapList: "paris", mapCat: "", geo: store.get("geo", {}),
+  arr: null, city: "New York", univ: store.get("univ", "table"), mapList: "paris", mapCat: "", geo: store.get("geo", {}),
 };
 
 function rebuild() {
@@ -186,13 +186,31 @@ function renderPrec() {
   }).join("");
 }
 
+// Autres villes : un onglet par ville, New York et Tel-Aviv pour commencer.
+const CITIES = [
+  { name: "New York", sub: "États-Unis", color: "var(--c-jp)" },
+  { name: "Tel-Aviv", sub: "Israël", color: "var(--c-cafe)" },
+];
 function renderVilles() {
-  const items = filtered("villes");
+  const all = S.places.filter((p) => p.list === "villes");
+  const names = [...CITIES.map((c) => c.name), ...new Set(all.map((p) => p.city).filter((c) => c && !CITIES.some((x) => x.name === c)))];
+  if (!names.includes(S.city)) S.city = names[0];
+  $("#cityTabs").innerHTML = names.map((n) => {
+    const c = CITIES.find((x) => x.name === n) || { sub: "Ville", color: "var(--c-other)" };
+    const count = all.filter((p) => p.city === n).length;
+    return `<button class="univ ${n === S.city ? "on" : ""}" data-city="${esc(n)}" aria-pressed="${n === S.city}" style="--uc:${c.color}">
+      <span class="u-name">${esc(n)}</span><span class="u-sub">${esc(c.sub)}</span><span class="u-n">${count}</span></button>`;
+  }).join("");
+  const items = filtered("villes").filter((p) => p.city === S.city);
   const el = $("#listVilles");
-  if (!items.length) { el.innerHTML = ""; return; }
-  const groups = groupBy(items, (p) => p.city || "Autre ville");
-  el.innerHTML = [...groups.entries()].map(([city, ps]) => `<section class="group"><div class="group-head"><span class="plaque"><span class="p-kick">Ville</span><span class="p-num">${esc(city.slice(0, 3))}</span></span><h2>${esc(city)}</h2></div>
-    <div class="rows">${ps.map((p) => rowHtml(p, `${esc(p.cat || "")}${p.address ? " · " + esc(p.address) : ""}`)).join("")}</div></section>`).join("");
+  if (!items.length) {
+    el.innerHTML = `<div class="empty"><div class="empty-plaque"><span>${esc(S.city)}</span></div><h2>Pas encore d'adresses</h2>
+      <p>Envoie à Claude tes liens Instagram de ${esc(S.city)} : chaque fiche sera remplie et rangée ici. Tu peux aussi en ajouter une à la main dans l'onglet Ajouter.</p></div>`;
+    return;
+  }
+  const groups = groupBy(items, (p) => p.cat || "Autres");
+  el.innerHTML = [...groups.entries()].map(([cat, ps]) => `<section class="group"><div class="subhead"><span class="dot" style="background:${catVar(cat)}"></span>${esc(cat)} <span class="sub-n">${ps.length}</span></div>
+    <div class="rows">${ps.map((p) => rowHtml(p, esc(p.address || "Adresse à compléter"))).join("")}</div></section>`).join("");
 }
 
 function renderPending() {
@@ -347,6 +365,8 @@ document.addEventListener("click", (e) => {
   if (chk) return toggleTested(chk.dataset.check, chk);
   const row = e.target.closest(".row-main[data-id]");
   if (row) return openSheet(row.dataset.id);
+  const city = e.target.closest(".univ[data-city]");
+  if (city) { S.city = city.dataset.city; renderVilles(); return; }
   const univ = e.target.closest(".univ[data-univ]");
   if (univ) { S.univ = univ.dataset.univ; store.set("univ", S.univ); renderPrec(); return; }
   const mini = e.target.closest(".mini[data-arr]");

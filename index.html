@@ -76,11 +76,7 @@
   </section>
 
   <section class="view" id="view-villes" data-view="villes" hidden>
-    <div class="empty">
-      <div class="empty-plaque"><span>Ailleurs</span></div>
-      <h2>Les autres villes arrivent</h2>
-      <p>Envoie tes notes des autres villes à Claude dans ton projet. Chaque ville aura sa propre liste, sa carte et ses types.</p>
-    </div>
+    <div class="universes" id="cityTabs"></div>
     <div class="list" id="listVilles"></div>
   </section>
 
@@ -122,7 +118,8 @@
         <input id="fCat" list="catOptions" placeholder="Ex. Italien, Rooftop, Brunch…">
         <datalist id="catOptions"></datalist>
         <label for="fCity" id="fCityLabel" hidden>Ville</label>
-        <input id="fCity" placeholder="Ex. Lyon" hidden>
+        <input id="fCity" list="cityOptions" placeholder="Ex. New York" hidden>
+        <datalist id="cityOptions"><option value="New York"><option value="Tel-Aviv"></datalist>
         <label for="fMenu">Lien du menu</label>
         <input id="fMenu" type="url" inputmode="url" placeholder="https://…">
         <label for="fSource">Lien Instagram / vidéo</label>
