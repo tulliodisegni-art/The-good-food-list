@@ -28,6 +28,7 @@ const dist = (a, b) => Math.hypot((a.lat - b.lat) * 111320, (a.lng - b.lng) * 11
 const osm = elements.map((e) => ({
   n: norm(e.tags.name), lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon,
   phone: e.tags.phone || e.tags["contact:phone"], website: e.tags.website || e.tags["contact:website"],
+  instagram: (e.tags["contact:instagram"] || "").replace(/^https?:\/\/(www\.)?instagram\.com\//, "").replace(/^@/, "").split(/[/?]/)[0],
 })).filter((o) => o.n && o.lat);
 
 function frPhone(raw) {
@@ -39,7 +40,7 @@ function frPhone(raw) {
 
 let phones = 0, sites = 0;
 for (const p of places) {
-  if (!p.lat || (p.phone && p.website)) continue;
+  if (!p.lat || (p.phone && p.website && p.instagram)) continue;
   const n = norm(p.name);
   if (n.length < 3) continue;
   const match = osm
@@ -48,6 +49,7 @@ for (const p of places) {
   if (!match) continue;
   const tel = !p.phone && frPhone(match.phone);
   if (tel) { p.phone = tel; phones++; }
+  if (!p.instagram && /^[A-Za-z0-9._]{2,30}$/.test(match.instagram)) p.instagram = match.instagram;
   if (!p.website && /^https?:\/\//.test(match.website || "")) { p.website = match.website; sites++; p.enriched = 0; }
 }
 await writeFile(FILE, JSON.stringify(places, null, 1));

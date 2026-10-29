@@ -86,8 +86,16 @@ function subpage(html, base) {
   return null;
 }
 
-// Version 3 : numéros écrits en clair et page Contact / Réserver en plus de l'accueil.
-const V = 3;
+// Compte Instagram du resto, d'après les liens de son site.
+function instagram(html) {
+  for (const m of html.matchAll(/instagram\.com\/([A-Za-z0-9._]{2,30})\/?(?:["'?#])/g)) {
+    if (!/^(p|reel|reels|explore|stories|accounts|tv|share|direct|about|legal|developer)$/i.test(m[1])) return m[1];
+  }
+  return null;
+}
+
+// Version 4 : compte Instagram en plus. (3 : numéros écrits en clair, page Contact / Réserver.)
+const V = 4;
 const todo = places.filter((p) => (+p.enriched || 0) < V && (p.menu || p.website));
 const bySite = new Map();
 for (const p of todo) {
@@ -114,6 +122,8 @@ async function worker() {
       // Un même site peut servir plusieurs adresses : le numéro n'est gardé que s'il n'y en a qu'une.
       const tel = !p.phone && bySite.get(site).length === 1 && (phone(page.html) || (page2 && phone(page2.html)));
       if (tel) { p.phone = tel; phones++; }
+      const ig = !p.instagram && (instagram(page.html) || (page2 && instagram(page2.html)));
+      if (ig) p.instagram = ig;
       const book = !p.booking && (booking(page.html, page.url) || (page2 && booking(page2.html, page2.url)));
       if (book) { p.booking = book; books++; }
     }
