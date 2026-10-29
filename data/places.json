@@ -426,7 +426,8 @@
   "lat": 48.865288,
   "lng": 2.33657,
   "menu": "https://www.google.fr/search?q=Baguett%27s+Caf%C3%A9&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlO3NvVQISvI8YQXilB6TshPlmRE9-DFyPX_6exLh60pebKPnSY9oTY9Y2KtlhiNAp9q2CznCGLHEujARq6oEc32eOhkRw%3D%3D",
-  "enriched": 4
+  "enriched": 4,
+  "instagram": "baguettscafe"
  },
  {
   "id": "paris-1-brunch-immersion-vendome",
@@ -886,7 +887,8 @@
   "lng": 2.341734,
   "menu": "https://calisisters.thecalisisters.com/",
   "website": "https://calisisters.thecalisisters.com",
-  "enriched": 4
+  "enriched": 4,
+  "instagram": "thecalisisters"
  },
  {
   "id": "paris-2-japonais-gyoza-bar",
@@ -1577,7 +1579,8 @@
   "menu": "https://www.sweeteas-paris.com/menu/",
   "website": "https://www.sweeteas-paris.com",
   "enriched": 4,
-  "phone": "01 48 87 81 79"
+  "phone": "01 48 87 81 79",
+  "instagram": "sweeteasparis"
  },
  {
   "id": "paris-3-fusion-inka",
@@ -1683,7 +1686,8 @@
   "lng": 2.354532,
   "menu": "https://www.google.fr/search?q=La+Baguette+du+Relais&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlPrergwxKLAhuBp21ktfOhGtAxrCgJFfbeONGvPBpjGWy_TdPq0WngztHpLby3N3qP3GIaVWbnhgzQFI-jhs2CIzQxX6g%3D%3D",
   "enriched": 4,
-  "website": "https://www.labaguette.relaisdevenise.fr/"
+  "website": "https://www.labaguette.relaisdevenise.fr/",
+  "instagram": "labaguettedurelais"
  },
  {
   "id": "paris-4-francais-bonnie",
@@ -1780,7 +1784,8 @@
   "lat": 48.856541,
   "lng": 2.358313,
   "menu": "https://www.google.fr/search?q=Kuma&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#lkt=LocalPoiMenu&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:2339478122218409913,ru_gwp:0%252C7,ru_lqi:CgRLdW1hSIKI5c3NrYCACFoKEAAYACIEa3VtYZIBE2phcGFuZXNlX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTlBhMjlwUlRCQlJSQUKqASwQASoIIgRrdW1hKAQyHhABIhplZJXEm1Ce73xIzQUJ39DVu-BK5e3U2r4UmA,trex_id:lWRA4",
-  "enriched": 4
+  "enriched": 4,
+  "instagram": "kumaparis"
  },
  {
   "id": "paris-4-americain-janet-by-homer",
@@ -2242,7 +2247,8 @@
   "menu": "https://o-kome-onigiri.com/2360/carte/0",
   "photo": "https://images.eatself.com/2360/Shops_2360_Bellot%20O-kom%C3%A9%20banni%C3%A8re%203.jpg",
   "website": "https://o-kome-onigiri.com",
-  "enriched": 4
+  "enriched": 4,
+  "instagram": "okomeonigiriparis6"
  },
  {
   "id": "paris-6-japonais-sushi-tsukizi",
@@ -2290,7 +2296,8 @@
   "website": "https://joayo-luxembourg.fr",
   "phone": "01 43 20 98 23",
   "enriched": 4,
-  "booking": "https://joayo-luxembourg.fr/fr/booking"
+  "booking": "https://joayo-luxembourg.fr/fr/booking",
+  "instagram": "explore"
  },
  {
   "id": "paris-6-coreen-kokodak",
@@ -2879,7 +2886,8 @@
   "enriched": 4,
   "phone": "01 43 59 03 42",
   "website": "https://www.sergent-garcia.com",
-  "booking": "https://bookings.zenchef.com/results?rid=360973&pid=1001"
+  "booking": "https://bookings.zenchef.com/results?rid=360973&pid=1001",
+  "instagram": "sergentgarciaparis"
  },
  {
   "id": "paris-8-tapas-amazonia",
@@ -3134,7 +3142,8 @@
   "menu": "https://www.pepe-ronchon.fr/notre-menu/",
   "website": "https://www.pepe-ronchon.fr",
   "enriched": 4,
-  "phone": "01 73 75 54 89"
+  "phone": "01 73 75 54 89",
+  "instagram": "peperonchon"
  },
  {
   "id": "paris-9-italien-peppe",
@@ -3255,7 +3264,8 @@
   "lat": 48.874985,
   "lng": 2.344456,
   "menu": "https://www.google.fr/search?q=Abri+soba&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlMvL3paMC6a5atog1Kdbwdhe_e7q7pnsBFVOx2NrQLdSef4TW3Xu-4irdNwIf74eatyqAgk",
-  "enriched": 4
+  "enriched": 4,
+  "instagram": "abri_soba"
  },
  {
   "id": "paris-9-japonais-shinjuku",
@@ -3809,7 +3819,8 @@
   "enriched": 4,
   "phone": "09 87 54 80 30",
   "website": "https://www.weloob.com/baba-zulu-soul-food-paris-fr",
-  "photo": "https://weloob.com/assets/media/easy-heart-shaped-pancakes-for-valentines-day.jpg"
+  "photo": "https://weloob.com/assets/media/easy-heart-shaped-pancakes-for-valentines-day.jpg",
+  "instagram": "baba_zulu_paris"
  },
  {
   "id": "paris-10-burger-blossom-burgers-beers",
@@ -5010,7 +5021,8 @@
   "lat": 48.855228,
   "lng": 2.387412,
   "menu": "https://www.google.fr/search?q=On+Partage&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlOR0xS4-2-1nDbc0NWdnbARhbes8cSmS2zaOU9Crq-bIYkF5S6ipjRdi-3EPYIMCIF8iRptur81zvXpnhM7fobLBvTY6LAjUR46uLCzr9IicDZVJdE%3D",
-  "enriched": 4
+  "enriched": 4,
+  "instagram": "onpartage"
  },
  {
   "id": "paris-11-bar-a-cocktails-carre-voltaire",
@@ -5672,7 +5684,8 @@
   "menu": "https://www.pizzeriafratellicastellanoparis.fr/",
   "website": "https://www.pizzeriafratellicastellanoparis.fr",
   "enriched": 4,
-  "phone": "01 45 77 61 93"
+  "phone": "01 45 77 61 93",
+  "instagram": "fratellicastellano"
  },
  {
   "id": "paris-15-italien-da-attilio",
@@ -6801,7 +6814,8 @@
   "lng": 2.341655,
   "menu": "https://restaurants-amone.com/",
   "website": "https://restaurants-amone.com",
-  "enriched": 4
+  "enriched": 4,
+  "instagram": "amone_cordonbleu"
  },
  {
   "id": "paris-18-francais-l-affame",
