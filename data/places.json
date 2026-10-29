@@ -9556,7 +9556,8 @@
   "website": "http://www.fontainedemars.com/",
   "enriched": 5,
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "instagram": "lafontainedemars"
  },
  {
   "id": "precieuses-0-resto-l-escargot-montorgueil",
@@ -10472,7 +10473,6 @@
   "instagram": "angelina_paris",
   "price": 2,
   "priceSrc": "estim",
-  "kasher": false,
   "photo": "https://cdn.prod.website-files.com/6393398914410c453e1df00f/6acd0449b1bdfa251763cc63_angelina_packshot_26-compressed.webp"
  },
  {
