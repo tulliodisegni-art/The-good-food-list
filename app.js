@@ -719,7 +719,7 @@ function initMap() {
   document.documentElement.style.setProperty("--map-top", `${Math.round(top)}px`);
   if (map) { setTimeout(() => map.invalidateSize(), 50); return; }
   if (!window.L) { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; return; }
-  map = L.map("map", { zoomControl: false, attributionControl: true }).setView([48.8606, 2.3425], 13);
+  map = L.map("map", { zoomControl: false, attributionControl: true, preferCanvas: true }).setView([48.8606, 2.3425], 13);
   // Fond de carte clair et lisible, même en mode sombre. S'il ne charge pas
   // (réseau, bloqueur de contenu), on passe à OpenStreetMap, puis à Esri.
   const BASEMAPS = [
@@ -733,22 +733,24 @@ function initMap() {
     base = i; loaded = false;
     const [url, opts] = BASEMAPS[i];
     let errors = 0;
-    layer = L.tileLayer(url, { maxZoom: 19, ...opts }).addTo(map);
+    layer = L.tileLayer(url, { maxZoom: 19, keepBuffer: 4, ...opts }).addTo(map);
     layer.on("tileload", () => { loaded = true; });
-    layer.on("tileerror", () => { if (!loaded && ++errors === 3 && base + 1 < BASEMAPS.length) useBase(base + 1); });
-    setTimeout(() => { if (!loaded && base === i && base + 1 < BASEMAPS.length) useBase(base + 1); }, 5000);
+    layer.on("tileerror", () => { if (!loaded && ++errors === 3) next(); });
+    setTimeout(() => { if (!loaded && base === i) next(); }, 4000);
   };
-  useBase(0);
-  // Plan de Paris hébergé avec l'appli (même adresse que l'appli) : il s'affiche
-  // même quand les serveurs de cartes extérieurs sont bloqués sur le téléphone.
-  fetch("tiles/paris.pmtiles", { method: "HEAD" }).then((r) => {
-    if (!r.ok || !window.protomapsL) return;
+  // Plan de Paris hébergé avec l'appli : plus lent à dessiner, il ne sert que si
+  // aucun serveur de cartes ne répond (réseau ou bloqueur de contenu).
+  const next = () => {
+    if (base + 1 < BASEMAPS.length) { useBase(base + 1); return; }
+    if (!window.protomapsL || map._plan) return;
+    map._plan = true;
     map.createPane("plan").style.zIndex = 250;
     protomapsL.leafletLayer({ url: "tiles/paris.pmtiles", flavor: "light", lang: "fr", maxDataZoom: 15, pane: "plan",
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · <a href="https://protomaps.com">Protomaps</a>' }).addTo(map);
-  }).catch(() => {});
+  };
+  useBase(0);
   setTimeout(() => map.invalidateSize(), 300);
-  cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 42, disableClusteringAtZoom: 16 });
+  cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 42, disableClusteringAtZoom: 16, chunkedLoading: true, removeOutsideVisibleBounds: true });
   map.addLayer(cluster);
   map.on("popupopen", (e) => {
     const b = e.popup.getElement().querySelector("[data-open]");
@@ -1102,7 +1104,11 @@ async function boot() {
   const setHead = () => document.documentElement.style.setProperty("--head-h", `${Math.round($(".top").offsetHeight)}px`);
   setHead(); addEventListener("resize", setHead);
 }
-boot();
+boot().then(() => {
+  // La carte se prépare en arrière-plan : l'onglet Carte s'ouvre ensuite tout de suite.
+  const warm = () => { if (!map) initMap(); };
+  if ("requestIdleCallback" in window) requestIdleCallback(warm, { timeout: 2500 }); else setTimeout(warm, 1500);
+});
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
