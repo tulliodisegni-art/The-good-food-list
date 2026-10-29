@@ -2062,7 +2062,8 @@
   "photo": "https://static.wixstatic.com/media/d44a12_91f87df2a8cc42b5928ab4fc21c542d8%7Emv2.png/v1/fit/w_2500,h_1330,al_c/d44a12_91f87df2a8cc42b5928ab4fc21c542d8%7Emv2.png",
   "instagram": "tekes_paris",
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "kasher": true
  },
  {
   "id": "paris-4-tapas-la-mangerie",
@@ -3242,7 +3243,8 @@
   "lat": 48.871181,
   "lng": 2.311874,
   "price": 3,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "kasher": true
  },
  {
   "id": "paris-8-indien-mahatma",
@@ -4604,7 +4606,8 @@
   "lng": 2.359182,
   "phone": "01 42 82 70 19",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "kasher": true
  },
  {
   "id": "paris-10-indonesien-djawa",
@@ -5906,7 +5909,8 @@
   "booking": "https://tikounolam.fr/reserver/",
   "instagram": "tikounolam",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "kasher": true
  },
  {
   "id": "paris-12-cacher-berbeche",
@@ -5924,7 +5928,8 @@
   "enriched": 4,
   "instagram": "chezvictorberbeche",
   "price": 2,
-  "priceSrc": "estim"
+  "priceSrc": "estim",
+  "kasher": true
  },
  {
   "id": "paris-12-bar-a-cocktails-les-piaules-rooftop",

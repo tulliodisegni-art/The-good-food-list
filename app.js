@@ -48,6 +48,7 @@ const S = {
   arr: null, city: "New York", univ: store.get("univ", "table"), mapList: "paris", mapCat: "", geo: store.get("geo", {}),
   me: null, // position du téléphone, quand elle a été demandée
   price: { paris: 0, precieuses: 0 },
+  diet: { paris: "", precieuses: "" }, // "kasher" ou "halal"
 };
 // Budget par personne, de € à €€€€.
 const PRICES = ["Tous les budgets", "€ Petit prix", "€€ Prix moyen", "€€€ Chic", "€€€€ Grande occasion"];
@@ -98,6 +99,7 @@ function filtered(list) {
     if (S.fav[list] === "todo" && p.tested) return false;
     if (S.fav[list] === "want" && !p.want) return false;
     if (S.price[list] && p.price !== S.price[list]) return false;
+    if (S.diet[list] && !p[S.diet[list]]) return false;
     if (q && !norm(`${p.name} ${p.address} ${p.cat} ${p.city || ""} ${p.arr ? arrLabel(p.arr) : ""}`).includes(q)) return false;
     return true;
   });
@@ -118,7 +120,7 @@ function rowHtml(p, meta) {
   return `<div class="row ${p.tested ? "is-done" : ""}">
     <button class="row-main" data-id="${esc(p.id)}">${thumbHtml(p)}
       <span class="rtext"><span class="row-name">${esc(p.name)}${p.want ? `<span class="row-want" title="Envie d'y aller">${HEART}</span>` : ""}${p.rating ? ` <span class="row-rating">${STAR}${p.rating}</span>` : ""}</span>
-      <span class="row-meta">${meta}${p.price ? ` <span class="row-price">· ${euros(p.price)}</span>` : ""}${d ? ` <span class="row-dist">· ${d}</span>` : ""}</span></span>
+      <span class="row-meta">${p.kasher ? `<span class="diet-tag">Kasher</span>` : ""}${p.halal ? `<span class="diet-tag">Halal</span>` : ""}${meta}${p.price ? ` <span class="row-price">· ${euros(p.price)}</span>` : ""}${d ? ` <span class="row-dist">· ${d}</span>` : ""}</span></span>
     </button>${checkBtn(p)}
   </div>`;
 }
@@ -338,7 +340,7 @@ function openSheet(id, keepScroll) {
       <button class="top-btn share-btn" data-share aria-label="Partager">${icon("share")}</button>
       <button class="close" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
     <div class="hero ${p.photo ? "photo" : ""}" style="--hc:${catVar(p.cat)}">
-      ${p.photo ? `<img src="${esc(p.photo)}" alt="" referrerpolicy="no-referrer" onerror="this.remove();this.parentNode.classList.remove('photo')">` : `<span class="mono" aria-hidden="true">${esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase())}</span>`}
+      ${p.photo ? `<img src="${esc(p.photo)}" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.classList.remove('photo');this.remove()">` : `<span class="mono" aria-hidden="true">${esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase())}</span>`}
       ${plaque}
     </div>
     <div class="sheet-body">
@@ -349,6 +351,7 @@ function openSheet(id, keepScroll) {
           ${p.price ? `<span class="price-tag" title="${PRICE_HINT[p.price]}${p.priceSrc === "estim" ? " (estimation)" : ""}">${euros(p.price)}<i>${"€".repeat(4 - p.price)}</i></span>` : ""}
           ${p.gRating ? `<span class="g-rating">${STAR}${esc(p.gRating)} Google</span>` : ""}</div>
         <div class="class-line">${p.list === "precieuses" || p.prec ? `<span class="prec-badge">${icon("gem")}Précieuse</span>` : ""}
+          ${p.kasher ? `<span class="prec-badge diet">Kasher</span>` : ""}${p.halal ? `<span class="prec-badge diet">Halal</span>` : ""}
           <button class="link-btn" data-classify>${icon("pencil")}Changer le classement</button></div>
         ${classifyForm(p)}
         ${S.me && p.lat ? `<div class="dist-line">${icon("walk")}<span>À ${fmtDist(distM(S.me, p))} de toi · ${walkMin(distM(S.me, p))} min à pied</span></div>` : ""}
@@ -460,6 +463,8 @@ function classifyForm(p) {
     <datalist id="c-cats">${(p.list === "precieuses" ? PREC_CATS.map(([c]) => c) : cats).map((c) => `<option value="${esc(c)}">`).join("")}</datalist>
     <div data-for="paris" ${p.list !== "paris" ? "hidden" : ""}><label for="c-prec">Aussi dans les Précieuses</label>
       <select id="c-prec" name="prec">${opt("", "Non", p.prec || "")}${PREC_CATS.map(([c, l]) => opt(c, l, p.prec || "")).join("")}</select></div>
+    <div class="diet-checks"><label><input type="checkbox" name="kasher" ${p.kasher ? "checked" : ""}> Kasher</label>
+      <label><input type="checkbox" name="halal" ${p.halal ? "checked" : ""}> Halal</label></div>
     <div class="row-actions"><button class="btn primary" type="submit">Enregistrer</button><button class="btn ghost" type="button" data-cancelclass>Annuler</button></div>
   </form>`;
 }
@@ -526,10 +531,13 @@ $("#sheet").addEventListener("submit", (e) => {
     e.preventDefault();
     const f = e.target, list = f.list.value;
     const patch = { list, cat: f.cat.value.trim() || current.cat, arr: list === "paris" ? +f.arr.value || null : null,
-      city: list === "villes" ? f.city.value.trim() : "", prec: list === "paris" ? f.prec.value : "" };
+      city: list === "villes" ? f.city.value.trim() : "", prec: list === "paris" ? f.prec.value : "",
+      kasher: f.kasher.checked, halal: f.halal.checked };
     if (list === "paris" && !patch.arr) { toast("Choisis l'arrondissement"); return; }
     if (list === "villes" && !patch.city) { toast("Indique la ville"); return; }
     for (const k of Object.keys(patch)) if ((patch[k] || "") === (current[k] || "")) delete patch[k];
+    if (patch.kasher === false && !current.kasher) delete patch.kasher;
+    if (patch.halal === false && !current.halal) delete patch.halal;
     if (!Object.keys(patch).length) { f.hidden = true; return; }
     setEdit(current.id, patch); renderAll(); openSheet(current.id, true); toast("Classement mis à jour");
     shareFix(current.id, patch);
@@ -677,6 +685,15 @@ document.addEventListener("click", (e) => {
 const FAV_STEPS = [["", "Tous les lieux"], ["done", "Déjà testés"], ["todo", "Pas encore testés"], ["want", "Mes envies"]];
 for (const [btn, list] of [["#priceParis", "paris"], ["#pricePrec", "precieuses"]]) {
   $(btn).addEventListener("click", (e) => setPrice(list, (S.price[list] + 1) % PRICES.length));
+}
+for (const [btn, list, d] of [["#kasherParis", "paris", "kasher"], ["#halalParis", "paris", "halal"], ["#kasherPrec", "precieuses", "kasher"], ["#halalPrec", "precieuses", "halal"]]) {
+  $(btn).addEventListener("click", () => setDiet(list, S.diet[list] === d ? "" : d));
+}
+function setDiet(list, d) {
+  S.diet[list] = d;
+  const sfx = list === "paris" ? "Paris" : "Prec";
+  for (const k of ["kasher", "halal"]) $(`#${k}${sfx}`).setAttribute("aria-pressed", d === k);
+  list === "paris" ? renderParis() : renderPrec();
 }
 function setPrice(list, n) {
   S.price[list] = n;

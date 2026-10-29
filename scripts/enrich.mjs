@@ -38,6 +38,32 @@ function ogImage(html, base) {
   } catch { return null; }
 }
 
+// Sans og:image : image déclarée en JSON-LD, sinon la première grande photo de la page.
+function anyImage(html, base) {
+  const bad = /logo|favicon|icon|sprite|placeholder|avatar|badge|flag|arrow|loader|pixel|\.svg|\.gif|data:/i;
+  const cands = [
+    ...[...html.matchAll(/"image"\s*:\s*(?:\[\s*)?"([^"]+)"/gi)].map((m) => m[1]),
+    ...[...html.matchAll(/<link[^>]+rel=["']image_src["'][^>]+href=["']([^"']+)/gi)].map((m) => m[1]),
+    ...[...html.matchAll(/<img[^>]+>/gi)].map((m) => {
+      const tag = m[0];
+      const set = tag.match(/(?:data-)?srcset=["']([^"']+)["']/i);
+      if (set) { const parts = set[1].split(",").map((x) => x.trim().split(/\s+/)[0]); return parts[parts.length - 1]; }
+      return (tag.match(/(?:data-src|data-lazy-src|src)=["']([^"']+)["']/i) || [])[1];
+    }),
+    ...[...html.matchAll(/background-image:\s*url\(["']?([^"')]+)/gi)].map((m) => m[1]),
+  ];
+  for (const c of cands) {
+    if (!c || bad.test(c) || !/\.(jpe?g|webp|png)(\?|$)|images?\/|uploads|cdn|media/i.test(c)) continue;
+    try { return new URL(decode(c), base).href; } catch {}
+  }
+  return null;
+}
+
+// Mention kasher ou halal sur le site.
+const textOf = (html) => html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ");
+const KASHER = /\b(cacher|casher|kasher|kosher|beth[ -]?din|beth-din|bet din|glatt)\b/i;
+const HALAL = /\bhalal\b/i;
+
 function phone(html) {
   const text = html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ");
   const cands = [
@@ -94,8 +120,9 @@ function instagram(html) {
   return null;
 }
 
-// Version 4 : compte Instagram en plus. (3 : numéros écrits en clair, page Contact / Réserver.)
-const V = 4;
+// Version 5 : photo de secours (JSON-LD, première grande image) et mention kasher / halal.
+// (4 : compte Instagram ; 3 : numéros écrits en clair, page Contact / Réserver.)
+const V = 5;
 const todo = places.filter((p) => (+p.enriched || 0) < V && (p.menu || p.website));
 const bySite = new Map();
 for (const p of todo) {
@@ -117,7 +144,10 @@ async function worker() {
       p.enriched = V;
       if (!p.website) p.website = site;
       if (!page) continue;
-      const img = !p.photo && ogImage(page.html, page.url);
+      const img = !p.photo && (ogImage(page.html, page.url) || anyImage(page.html, page.url) || (page2 && anyImage(page2.html, page2.url)));
+      const txt = textOf(page.html + (page2 ? page2.html : ""));
+      if (p.kasher === undefined && KASHER.test(txt)) p.kasher = true;
+      if (p.halal === undefined && HALAL.test(txt)) p.halal = true;
       if (img) { p.photo = img; photos++; }
       // Un même site peut servir plusieurs adresses : le numéro n'est gardé que s'il n'y en a qu'une.
       const tel = !p.phone && bySite.get(site).length === 1 && (phone(page.html) || (page2 && phone(page2.html)));

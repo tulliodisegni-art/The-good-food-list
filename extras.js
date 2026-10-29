@@ -95,6 +95,8 @@ function renderHome() {
   const moods = [
     ...cats.map((c) => `<button class="mood" data-mood="${esc(c)}" style="--mc:${catVar(c)}">${esc(c)}</button>`),
     `<button class="mood" data-price-go="1" style="--mc:var(--c-cafe)">Petit budget</button>`,
+    `<button class="mood" data-diet-go="kasher" style="--mc:var(--c-jp)">Kasher</button>`,
+    `<button class="mood" data-diet-go="halal" style="--mc:var(--c-it)">Halal</button>`,
     `<button class="mood" data-price-go="4" style="--mc:var(--c-fun)">Grande occasion</button>`,
     `<button class="mood" data-univ-go="verre" style="--mc:var(--c-bar)">Un rooftop</button>`,
     `<button class="mood" data-univ-go="sortir" style="--mc:var(--c-orient)">Sortir ce soir</button>`,
@@ -304,6 +306,8 @@ document.addEventListener("click", (e) => {
   }
   const mood = t.closest("[data-mood]");
   if (mood) { S.cat.paris = mood.dataset.mood; S.arr = null; location.hash = "paris"; renderParis(); return; }
+  const dg = t.closest("[data-diet-go]");
+  if (dg) { S.cat.paris = null; S.arr = null; location.hash = "paris"; setDiet("paris", dg.dataset.dietGo); return; }
   const pr = t.closest("[data-price-go]");
   if (pr) {
     // Petit budget : la liste de Paris ; grande occasion : les Précieuses.
