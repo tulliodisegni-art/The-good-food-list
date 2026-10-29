@@ -45,7 +45,7 @@ const TESTED = new Set(["✅", "✔️", "✔"]);
 const S = {
   base: [], places: [], view: "paris", group: store.get("group", "arr"),
   cat: { paris: null, precieuses: null }, fav: { paris: "", precieuses: "" }, q: "",
-  mapList: "paris", mapCat: "", geo: store.get("geo", {}),
+  arr: null, univ: store.get("univ", "table"), mapList: "paris", mapCat: "", geo: store.get("geo", {}),
 };
 
 function rebuild() {
@@ -75,6 +75,7 @@ function filtered(list) {
   return S.places.filter((p) => {
     if (p.list !== list) return false;
     if (S.cat[list] && p.cat !== S.cat[list]) return false;
+    if (list === "paris" && S.arr && p.arr !== S.arr) return false;
     if (S.fav[list] === "done" && !p.tested) return false;
     if (S.fav[list] === "todo" && p.tested) return false;
     if (q && !norm(`${p.name} ${p.address} ${p.cat} ${p.city || ""} ${p.arr ? arrLabel(p.arr) : ""}`).includes(q)) return false;
@@ -82,12 +83,17 @@ function filtered(list) {
   });
 }
 
+const CHECK_SVG = '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M10.5 16.5l4 4 7.5-8.5"/></svg>';
+function checkBtn(p) {
+  return `<button class="check ${p.tested ? "on" : ""}" data-check="${esc(p.id)}" aria-pressed="${!!p.tested}" aria-label="${p.tested ? "Déjà testé" : "Marquer comme testé"}">${CHECK_SVG}</button>`;
+}
 function rowHtml(p, meta) {
-  return `<button class="row" data-id="${esc(p.id)}">
-    <span class="row-name">${esc(p.name)}</span>
-    <span class="row-side">${p.mark ? `<span class="mark">${esc(p.mark)}</span>` : ""}${p.tested ? `<span class="tested-pill">Testé</span>` : ""}<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span>
-    <span class="row-meta">${meta}</span>
-  </button>`;
+  return `<div class="row ${p.tested ? "is-done" : ""}">
+    <button class="row-main" data-id="${esc(p.id)}">
+      <span class="row-name">${esc(p.name)}${p.mark ? ` <span class="mark">${esc(p.mark)}</span>` : ""}</span>
+      <span class="row-meta">${meta}</span>
+    </button>${checkBtn(p)}
+  </div>`;
 }
 
 function groupBy(items, keyFn) {
@@ -110,15 +116,12 @@ function renderParis() {
   const el = $("#listParis");
   $("#groupArr").classList.toggle("on", S.group === "arr");
   $("#groupCat").classList.toggle("on", S.group === "cat");
-  const jump = $("#arrJump");
-  jump.hidden = S.group !== "arr";
-  if (!items.length) { el.innerHTML = `<p class="none">Aucune adresse ne correspond.</p>`; jump.innerHTML = ""; return; }
+  renderArrStrip();
+  if (!items.length) { el.innerHTML = `<p class="none">Aucune adresse ne correspond.</p>`; return; }
 
   if (S.group === "arr") {
     const groups = groupBy(items, (p) => p.arr);
     const keys = [...groups.keys()].sort((a, b) => a - b);
-    jump.innerHTML = Array.from({ length: 20 }, (_, i) => i + 1)
-      .map((n) => `<button data-jump="arr-${n}" ${groups.has(n) ? "" : "disabled"}>${n}</button>`).join("");
     el.innerHTML = keys.map((arr) => {
       const list = groups.get(arr);
       const byCat = groupBy(list, (p) => p.cat);
@@ -140,17 +143,45 @@ function renderParis() {
   }
 }
 
-const PREC_ORDER = ["Resto", "Resto festif", "Rooftop", "Boire un verre", "Soirée", "Salon de thé", "Brunch", "Café", "Stand-up", "Activité", "À tester"];
+function renderArrStrip() {
+  const all = S.places.filter((p) => p.list === "paris");
+  const counts = groupBy(all, (p) => p.arr);
+  const cell = (n, kick, num, count) => `<button class="mini ${S.arr === n ? "on" : ""}" data-arr="${n ?? ""}" aria-pressed="${S.arr === n}">
+      <span class="mini-plaque"><span class="mk">${kick}</span><span class="mn">${num}</span></span><span class="mc">${count}</span></button>`;
+  $("#arrStrip").innerHTML = cell(null, "Tout", "Paris", all.length) +
+    Array.from({ length: 20 }, (_, i) => i + 1).map((n) => cell(n, "Arr.", arrHtml(n), counts.get(n)?.length || 0)).join("");
+  const on = $("#arrStrip .mini.on");
+  if (on) on.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+}
+
+// Les Précieuses sont rangées en quatre univers, puis par catégorie.
+const UNIVERSES = [
+  { id: "table", name: "À table", sub: "Restaurants et brunchs", color: "var(--c-fr)", cats: ["Resto", "Resto festif", "Brunch"],
+    labels: { "Resto": "Restaurants", "Resto festif": "Restaurants festifs", "Brunch": "Brunchs" } },
+  { id: "verre", name: "Un verre", sub: "Rooftops, bars, cafés", color: "var(--c-bar)", cats: ["Rooftop", "Boire un verre", "Salon de thé", "Café"],
+    labels: { "Rooftop": "Rooftops", "Boire un verre": "Bars", "Salon de thé": "Salons de thé", "Café": "Cafés" } },
+  { id: "sortir", name: "Sortir", sub: "Soirées et stand-up", color: "var(--c-orient)", cats: ["Soirée", "Stand-up"],
+    labels: { "Soirée": "Soirées", "Stand-up": "Stand-up et one man show" } },
+  { id: "activites", name: "Activités", sub: "Ateliers, jeux, sorties", color: "var(--c-fun)", cats: ["Activité", "À tester"],
+    labels: { "Activité": "Activités et ateliers", "À tester": "À tester" } },
+];
+const universeOf = (cat) => UNIVERSES.find((u) => u.cats.includes(cat)) || UNIVERSES[0];
+
 function renderPrec() {
-  renderChips("precieuses", $("#chipsPrec"));
-  const items = filtered("precieuses");
+  const all = S.places.filter((p) => p.list === "precieuses");
+  const cur = UNIVERSES.find((u) => u.id === S.univ) || UNIVERSES[0];
+  $("#univPrec").innerHTML = UNIVERSES.map((u) => {
+    const n = all.filter((p) => universeOf(p.cat) === u).length;
+    return `<button class="univ ${u === cur ? "on" : ""}" data-univ="${u.id}" aria-pressed="${u === cur}" style="--uc:${u.color}">
+      <span class="u-name">${u.name}</span><span class="u-sub">${u.sub}</span><span class="u-n">${n}</span></button>`;
+  }).join("");
+  const items = filtered("precieuses").filter((p) => universeOf(p.cat) === cur);
   const el = $("#listPrec");
   if (!items.length) { el.innerHTML = `<p class="none">Aucune adresse ne correspond.</p>`; return; }
   const groups = groupBy(items, (p) => p.cat);
-  const keys = [...groups.keys()].sort((a, b) => (PREC_ORDER.indexOf(a) + 99) % 99 - (PREC_ORDER.indexOf(b) + 99) % 99);
-  el.innerHTML = keys.map((cat) => {
+  el.innerHTML = cur.cats.filter((c) => groups.has(c)).map((cat) => {
     const ps = groups.get(cat);
-    return `<section class="group"><div class="group-head"><span class="tag" style="--tc:${catVar(cat)}">${ps.length}</span><h2>${esc(cat)}</h2></div>
+    return `<section class="group"><div class="subhead"><span class="dot" style="background:${cur.color}"></span>${esc(cur.labels[cat] || cat)} <span class="sub-n">${ps.length}</span></div>
       <div class="rows">${ps.map((p) => rowHtml(p, esc(p.address ? street(p.address).replace(/, 750(\d\d) Paris/, " · $1e") : p.note || "Adresse à retrouver"))).join("")}</div></section>`;
   }).join("");
 }
@@ -167,7 +198,7 @@ function renderVilles() {
 function renderPending() {
   const pend = store.get("custom", []).filter((p) => p.list === "pending");
   $("#listPending").innerHTML = pend.length ? `<div class="subhead">À compléter (${pend.length})</div><div class="rows">${pend.map((p) => `
-    <div class="row" style="cursor:default"><span class="row-name" style="font-weight:600;font-size:13.5px">${esc(p.source)}</span>
+    <div class="row pend"><span class="row-name" style="font-weight:600;font-size:13.5px">${esc(p.source)}</span>
       <span class="row-side"><button class="btn" data-fill="${esc(p.id)}" style="padding:6px 10px">Remplir</button><button class="btn danger" data-del="${esc(p.id)}" style="padding:6px 10px" aria-label="Supprimer">✕</button></span>
       <span class="row-meta">Gardé le ${new Date(p.createdAt).toLocaleDateString("fr-FR")}</span></div>`).join("")}</div>` : "";
 }
@@ -213,8 +244,9 @@ function openSheet(id) {
           ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}${p.mark ? `<span class="mark">${esc(p.mark)}</span>` : ""}</div>
       </div>
       <button class="tested-btn ${p.tested ? "on" : ""}" data-tested aria-pressed="${p.tested}">
-        <span class="tick" aria-hidden="true">✓</span><span>${p.tested ? "Déjà testé" : "Marquer comme testé"}</span>
-        ${p.tested ? `<small>Toucher pour annuler</small>` : ""}
+        <span class="check big ${p.tested ? "on" : ""}">${CHECK_SVG}</span>
+        <span class="tb-text"><strong>${p.tested ? "Déjà testé" : "Pas encore testé"}</strong>
+        <small>${p.tested ? "Touche pour annuler" : "Touche quand tu y es allé"}</small></span>
       </button>
       ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : ""}
       ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
@@ -244,9 +276,10 @@ $("#sheet").addEventListener("click", async (e) => {
     return;
   }
   if (t.hasAttribute("data-tested")) {
-    const now = !current.tested;
-    setEdit(current.id, { tested: now }); renderAll(); openSheet(current.id);
-    toast(now ? "Marqué comme testé" : "Retiré des restos testés");
+    const id = current.id;
+    toggleTested(id, null);
+    renderAll(); openSheet(id);
+    $("#sheet .check.big")?.classList.add("pop");
     return;
   }
   if (t.dataset.mark !== undefined) { setEdit(current.id, { mark: t.dataset.mark }); renderAll(); openSheet(current.id); return; }
@@ -260,6 +293,24 @@ $("#sheet").addEventListener("click", async (e) => {
 });
 $("#backdrop").addEventListener("click", closeSheet);
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSheet(); });
+
+// Coche « déjà testé » : animée sur place, puis la liste se met à jour.
+function toggleTested(id, btn) {
+  const p = S.places.find((x) => x.id === id);
+  if (!p) return;
+  const now = !p.tested;
+  setEdit(id, { tested: now });
+  for (const b of $$(`.check[data-check="${CSS.escape(id)}"]`)) {
+    b.classList.toggle("on", now); b.setAttribute("aria-pressed", now);
+    b.closest(".row")?.classList.toggle("is-done", now);
+  }
+  if (btn) { btn.classList.remove("pop"); void btn.offsetWidth; btn.classList.add("pop"); }
+  try { navigator.vibrate?.(12); } catch { /* pas de vibration */ }
+  toast(now ? `${p.name} : testé` : `${p.name} : pas encore testé`);
+  if (S.fav.paris || S.fav.precieuses) setTimeout(renderAll, 450);
+  else if (map) refreshMarkers();
+}
+const headerBottom = () => $(".top").getBoundingClientRect().bottom;
 
 let toastTimer;
 function toast(msg) {
@@ -292,8 +343,21 @@ window.addEventListener("hashchange", () => show(location.hash.slice(1)));
 $("#search").addEventListener("input", (e) => { S.q = e.target.value; renderParis(); renderPrec(); renderVilles(); });
 
 document.addEventListener("click", (e) => {
-  const row = e.target.closest(".row[data-id]");
+  const chk = e.target.closest(".check[data-check]");
+  if (chk) return toggleTested(chk.dataset.check, chk);
+  const row = e.target.closest(".row-main[data-id]");
   if (row) return openSheet(row.dataset.id);
+  const univ = e.target.closest(".univ[data-univ]");
+  if (univ) { S.univ = univ.dataset.univ; store.set("univ", S.univ); renderPrec(); return; }
+  const mini = e.target.closest(".mini[data-arr]");
+  if (mini) {
+    const n = +mini.dataset.arr || null;
+    S.arr = S.arr === n ? null : n;
+    renderParis();
+    const top = $("#listParis").getBoundingClientRect().top + scrollY - headerBottom() - 70;
+    if (scrollY > top) window.scrollTo({ top, behavior: "smooth" });
+    return;
+  }
   const chip = e.target.closest(".chip");
   if (chip) {
     const list = chip.parentNode.id === "chipsParis" ? "paris" : "precieuses";
@@ -301,12 +365,10 @@ document.addEventListener("click", (e) => {
     list === "paris" ? renderParis() : renderPrec();
     return;
   }
-  const jump = e.target.closest("[data-jump]");
-  if (jump) return document.getElementById(jump.dataset.jump)?.scrollIntoView({ behavior: "smooth", block: "start" });
   const g = e.target.closest("[data-group]");
   if (g) { S.group = g.dataset.group; store.set("group", S.group); renderParis(); }
 });
-const FAV_STEPS = [["", "Tous les lieux"], ["done", "✅ Déjà testés"], ["todo", "Pas encore testés"]];
+const FAV_STEPS = [["", "Tous les lieux"], ["done", "Déjà testés"], ["todo", "Pas encore testés"]];
 for (const [btn, list] of [["#favParis", "paris"], ["#favPrec", "precieuses"]]) {
   $(btn).addEventListener("click", (e) => {
     const i = (FAV_STEPS.findIndex(([k]) => k === S.fav[list]) + 1) % FAV_STEPS.length;
@@ -362,7 +424,7 @@ function fillMapCats() {
 function markerFor(p) {
   const icon = L.divIcon({ className: "", html: `<div class="pin ${p.tested ? "done" : ""} ${p.mark ? "star" : ""}" style="--pc:${catVar(p.cat)}"></div>`, iconSize: [20, 20], iconAnchor: [10, 10], popupAnchor: [0, -10] });
   const m = L.marker([p.lat, p.lng], { icon, title: p.name });
-  m.bindPopup(`<div class="pop-name">${esc(p.name)}</div><div class="pop-meta">${esc(p.cat)}${p.arr ? " · " + arrLabel(p.arr) : ""} ${p.tested ? "· ✅ testé" : ""} ${esc(p.mark || "")}</div><button class="pop-btn" data-open="${esc(p.id)}">Voir la fiche</button>`);
+  m.bindPopup(`<div class="pop-name">${esc(p.name)}</div><div class="pop-meta">${esc(p.cat)}${p.arr ? " · " + arrLabel(p.arr) : ""} ${p.tested ? "· testé" : ""} ${esc(p.mark || "")}</div><button class="pop-btn" data-open="${esc(p.id)}">Voir la fiche</button>`);
   return m;
 }
 
@@ -532,6 +594,8 @@ async function boot() {
   rebuild();
   renderAll();
   show(location.hash.slice(1) || "paris");
+  const setHead = () => document.documentElement.style.setProperty("--head-h", `${Math.round($(".top").offsetHeight)}px`);
+  setHead(); addEventListener("resize", setHead);
 }
 boot();
 
