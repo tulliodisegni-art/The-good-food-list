@@ -5,7 +5,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const FILE = new URL("../data/places.json", import.meta.url);
 const places = JSON.parse(await readFile(FILE, "utf8"));
-const MAX = +process.env.SEARCH_MAX || 150;
+const MAX = +process.env.SEARCH_MAX || 220; // nombre de recherches par passage
 const V = 1;
 
 const norm = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase()
@@ -49,9 +49,24 @@ const close = (a, name) => { const x = norm(a), n = norm(name); return n.length 
 
 let sites = 0, igs = 0, forks = 0, asked = 0, blank = 0;
 for (const p of places) {
-  if ((p.searched || 0) >= V || p.removed) continue;
-  if (p.website && p.instagram && p.booking) { p.searched = V; continue; }
-  if (asked++ >= MAX) break;
+  if (p.removed) continue;
+  if (asked >= MAX) break;
+  // Deuxième recherche, rien que pour le compte Instagram.
+  if ((p.searched || 0) >= V || (p.website && p.instagram && p.booking)) {
+    if (!p.instagram && !p.igSearched) {
+      asked++;
+      const ig = await results(`${p.name} ${p.list === "villes" ? p.city || "" : "Paris"} instagram`);
+      if (ig.length) {
+        p.igSearched = 1;
+        const h = ig.map(handleOf).find((x) => x && close(x, p.name));
+        if (h) { p.instagram = h; igs++; }
+      }
+      await sleep(1800 + Math.random() * 1200);
+    }
+    p.searched = V;
+    continue;
+  }
+  asked++;
   const city = p.list === "villes" ? p.city || "" : "Paris";
   const links = await results(`${p.name} ${p.address ? p.address.replace(/,?\s*750\d\d Paris/, "") : ""} ${city} ${p.cat && !/^(Resto|Activité)$/.test(p.cat) ? p.cat : ""}`.replace(/\s+/g, " "));
   if (!links.length) { blank++; if (blank > 8 && blank === asked) { console.log("Moteurs de recherche indisponibles, arrêt."); break; } await sleep(2500); continue; }
@@ -71,5 +86,5 @@ for (const p of places) {
   await sleep(1800 + Math.random() * 1200);
 }
 await writeFile(FILE, JSON.stringify(places, null, 1));
-const left = places.filter((p) => (p.searched || 0) < V && !(p.website && p.instagram && p.booking)).length;
+const left = places.filter((p) => !p.removed && (((p.searched || 0) < V && !(p.website && p.instagram && p.booking)) || (!p.instagram && !p.igSearched))).length;
 console.log(`Recherche web : ${asked} lieux, ${sites} sites, ${igs} comptes Instagram, ${forks} pages TheFork (${left} restants)`);

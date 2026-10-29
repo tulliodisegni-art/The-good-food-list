@@ -93,6 +93,9 @@ function booking(html, base) {
     let u;
     try { u = new URL(decode(href), base); } catch { continue; }
     if (!/^https?:$/.test(u.protocol)) continue;
+    // Bons cadeaux, privatisation, boutique : ce n'est pas la réservation d'une table.
+    if (/privati|voucher|gift|cadeau|shop\.|boutique|event|traiteur|click|collect|order|commande/i.test(u.href)) continue;
+    if (/zenchef/.test(u.hostname) && /rid=(\d+)/.test(u.search)) return `https://bookings.zenchef.com/results?rid=${u.search.match(/rid=(\d+)/)[1]}`;
     if (BOOKING.test(u.hostname + u.pathname)) return u.href;
     const text = inner.replace(/<[^>]+>/g, " ");
     if (!byText && /r[ée]serv|book a table|booking/i.test(text + " " + u.pathname)) byText = u.href;

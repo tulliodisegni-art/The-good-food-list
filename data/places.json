@@ -762,7 +762,7 @@
   "website": "https://www.oneandonerestaurants.com",
   "phone": "06 20 03 57 65",
   "enriched": 5,
-  "booking": "https://bookings.zenchef.com/privatisation?rid=352907&lang=fr&pid=1001&fullscreen&withCloseButton=1",
+  "booking": "https://bookings.zenchef.com/results?rid=352907",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1
@@ -1440,8 +1440,7 @@
   "searched": 1,
   "website": "https://www.noura.com",
   "photo": "https://www.noura.com/wp-content/uploads/2022/06/Noura_brasserie.jpg",
-  "instagram": "noura_france",
-  "booking": "https://www.noura.com/adresses/"
+  "instagram": "noura_france"
  },
  {
   "id": "paris-2-israelien-dalia",
@@ -2090,7 +2089,7 @@
   "website": "https://www.lecafedesmusees.fr",
   "phone": "01 42 72 96 17",
   "enriched": 5,
-  "booking": "https://bookings.zenchef.com/privatisation?rid=348911&lang=fr&pid=1001&fullscreen&withCloseButton=1",
+  "booking": "https://bookings.zenchef.com/results?rid=348911",
   "instagram": "cafe_des_musees",
   "price": 1,
   "priceSrc": "estim",
@@ -2668,7 +2667,6 @@
   "enriched": 5,
   "phone": "01 43 54 96 91",
   "website": "https://www.lehibou-paris.com/",
-  "booking": "https://shop.zenchef.com/detail?active-collection=vouchers&collections=vouchers&shop-id=sh_2937447e-2989-4b42-b611-9d590951d93f&language=fr&primary-color=000000&product-id=28902",
   "instagram": "le_hibou_paris",
   "price": 2,
   "priceSrc": "estim",
@@ -2792,8 +2790,7 @@
   "enriched": 5,
   "photo": "https://cdn.prod.website-files.com/684bda19d86fe8072439f663/69ba7c89e9c995193e6cb4f4_thumbnail_cassaros.webp",
   "phone": "01 43 26 02 93",
-  "instagram": "cassarosparis",
-  "booking": "https://www.cassaros.fr/privatisation"
+  "instagram": "cassarosparis"
  },
  {
   "id": "paris-6-burger-factory-co",
@@ -4706,7 +4703,7 @@
   "website": "https://www.casimir.paris/",
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/72aa7e_5b57c8b0bf3d45718cecf0b3b468173f%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/72aa7e_5b57c8b0bf3d45718cecf0b3b468173f%7Emv2.jpg",
-  "booking": "https://bookings.zenchef.com/shop?rid=364645",
+  "booking": "https://bookings.zenchef.com/results?rid=364645",
   "price": 2,
   "priceSrc": "estim"
  },
@@ -5941,7 +5938,7 @@
   "menu": "https://www.bobiparis.com/",
   "website": "https://www.bobiparis.com",
   "enriched": 5,
-  "booking": "https://bookings.zenchef.com/shop?rid=356597",
+  "booking": "https://bookings.zenchef.com/results?rid=356597",
   "phone": "01 47 00 81 60",
   "instagram": "bobiparis",
   "price": 1,
@@ -6194,7 +6191,6 @@
   "photo": "https://lareverie-paris.com/wp-content/uploads/2021/09/la-reverie-bar-restaurant-test.jpg",
   "website": "https://lareverie-paris.com",
   "enriched": 5,
-  "booking": "https://lareverie-paris.com/bar-restaurant-privatisation/",
   "instagram": "lareverie_paris",
   "price": 3,
   "priceSrc": "estim"
@@ -10200,7 +10196,6 @@
   "photo": "https://lareverie-paris.com/wp-content/uploads/2021/09/la-reverie-bar-restaurant-test.jpg",
   "website": "https://lareverie-paris.com",
   "enriched": 5,
-  "booking": "https://lareverie-paris.com/bar-restaurant-privatisation/",
   "instagram": "lareverie_paris",
   "price": 3,
   "priceSrc": "estim"
