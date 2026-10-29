@@ -408,20 +408,25 @@ function initMap() {
   if (map) { setTimeout(() => map.invalidateSize(), 50); return; }
   if (!window.L) { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; return; }
   map = L.map("map", { zoomControl: false, attributionControl: true }).setView([48.8606, 2.3425], 13);
-  const dark = matchMedia("(prefers-color-scheme: dark)").matches;
-  const carto = L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "rastertiles/voyager"}/{z}/{x}/{y}{r}.png`, {
-    maxZoom: 19, subdomains: "abcd",
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  }).addTo(map);
-  // Si le fond de carte ne charge pas, on bascule sur celui d'OpenStreetMap.
-  let tileErrors = 0;
-  carto.on("tileerror", () => {
-    if (++tileErrors !== 4) return;
-    map.removeLayer(carto);
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    }).addTo(map);
-  });
+  // Fond de carte clair et lisible, même en mode sombre. S'il ne charge pas
+  // (réseau, bloqueur de contenu), on passe à OpenStreetMap, puis à Esri.
+  const BASEMAPS = [
+    ["https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", { subdomains: "abcd", attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>' }],
+    ["https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }],
+    ["https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", { attribution: "Tiles &copy; Esri" }],
+  ];
+  let base = 0, layer = null, loaded = false;
+  const useBase = (i) => {
+    if (layer) map.removeLayer(layer);
+    base = i; loaded = false;
+    const [url, opts] = BASEMAPS[i];
+    let errors = 0;
+    layer = L.tileLayer(url, { maxZoom: 19, ...opts }).addTo(map);
+    layer.on("tileload", () => { loaded = true; });
+    layer.on("tileerror", () => { if (!loaded && ++errors === 3 && base + 1 < BASEMAPS.length) useBase(base + 1); });
+    setTimeout(() => { if (!loaded && base === i && base + 1 < BASEMAPS.length) useBase(base + 1); }, 5000);
+  };
+  useBase(0);
   setTimeout(() => map.invalidateSize(), 300);
   cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 42, disableClusteringAtZoom: 16 });
   map.addLayer(cluster);
