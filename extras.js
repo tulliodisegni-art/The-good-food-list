@@ -365,6 +365,33 @@ async function shareApp() {
 }
 
 // Seules les infos de l'adresse partent : coches, notes, envies et commentaires restent sur ce téléphone.
+// Une correction faite par le propriétaire (classement, infos) part aussi pour tous.
+const MODIFS = `https://api.github.com/repos/${REPO}/contents/data/modifs.json`;
+function shareFix(id, patch) {
+  if (!store.get("ghToken", "")) return;
+  if (store.get("custom", []).some((p) => p.id === id)) { publishPlace(id); return; }
+  const fix = Object.fromEntries(Object.entries(patch).filter(([k]) => !PERSONAL.includes(k)));
+  if (Object.keys(fix).length) publishFix(id, fix);
+}
+async function publishFix(id, fix, attempt = 0) {
+  const k = store.get("ghToken", "");
+  try {
+    const r = await fetch(`${MODIFS}?ref=main&t=${Date.now()}`, { headers: ghHead(k), cache: "no-store" });
+    if (r.status === 401) throw new Error("Clé de publication refusée : remets-en une dans Réglages");
+    if (!r.ok && r.status !== 404) throw new Error(`GitHub répond ${r.status}`);
+    const cur = r.ok ? await r.json() : null;
+    const all = cur ? JSON.parse(unb64(cur.content)) : {};
+    all[id] = { ...(all[id] || {}), ...fix };
+    const put = await fetch(MODIFS, {
+      method: "PUT", headers: { ...ghHead(k), "content-type": "application/json" },
+      body: JSON.stringify({ message: `Correction partagée : ${S.places.find((p) => p.id === id)?.name || id}`, content: b64(JSON.stringify(all, null, 1) + "\n"), branch: "main", ...(cur ? { sha: cur.sha } : {}) }),
+    });
+    if ((put.status === 409 || put.status === 422) && attempt < 2) return publishFix(id, fix, attempt + 1);
+    if (!put.ok) throw new Error(`Publication refusée (${put.status})`);
+    toast("Modification publiée pour tous");
+  } catch (e) { toast(e.message || "Modification gardée sur ce téléphone seulement"); }
+}
+
 const PERSONAL = ["tested", "rating", "comment", "want", "published", "createdAt", "mark"];
 async function publishPlace(id, attempt = 0) {
   const k = store.get("ghToken", "");

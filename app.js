@@ -89,7 +89,7 @@ function setEdit(id, patch) {
 function filtered(list) {
   const q = norm(S.q).trim();
   return S.places.filter((p) => {
-    if (p.list !== list) return false;
+    if (p.list !== list && !(list === "precieuses" && p.prec)) return false;
     if (S.cat[list] && p.cat !== S.cat[list]) return false;
     if (list === "paris" && S.arr && p.arr !== S.arr) return false;
     if (S.fav[list] === "done" && !p.tested) return false;
@@ -208,20 +208,23 @@ const UNIVERSES = [
   { id: "activites", name: "Activités", sub: "Ateliers, jeux, sorties", color: "var(--c-fun)", cats: ["Activité", "À tester"],
     labels: { "Activité": "Activités et ateliers", "À tester": "À tester" } },
 ];
+// Une adresse de Paris peut aussi être rangée dans les Précieuses (champ prec).
+const precCat = (p) => (p.list === "precieuses" ? p.cat : p.prec);
+const PREC_CATS = UNIVERSES.flatMap((u) => u.cats.map((c) => [c, `${u.name} · ${u.labels[c] || c}`]));
 const universeOf = (cat) => UNIVERSES.find((u) => u.cats.includes(cat)) || UNIVERSES[0];
 
 function renderPrec() {
-  const all = S.places.filter((p) => p.list === "precieuses");
+  const all = S.places.filter((p) => p.list === "precieuses" || p.prec);
   const cur = UNIVERSES.find((u) => u.id === S.univ) || UNIVERSES[0];
   $("#univPrec").innerHTML = UNIVERSES.map((u) => {
-    const n = all.filter((p) => universeOf(p.cat) === u).length;
+    const n = all.filter((p) => universeOf(precCat(p)) === u).length;
     return `<button class="univ ${u === cur ? "on" : ""}" data-univ="${u.id}" aria-pressed="${u === cur}" style="--uc:${u.color}">
       <span class="u-name">${u.name}</span><span class="u-sub">${u.sub}</span><span class="u-n">${n}</span></button>`;
   }).join("");
-  const items = filtered("precieuses").filter((p) => universeOf(p.cat) === cur);
+  const items = filtered("precieuses").filter((p) => universeOf(precCat(p)) === cur);
   const el = $("#listPrec");
   if (!items.length) { el.innerHTML = `<p class="none">Aucune adresse ne correspond.</p>`; return; }
-  const groups = groupBy(items, (p) => p.cat);
+  const groups = groupBy(items, precCat);
   el.innerHTML = cur.cats.filter((c) => groups.has(c)).map((cat) => {
     const ps = groups.get(cat);
     return `<section class="group"><div class="subhead"><span class="dot" style="background:${cur.color}"></span>${esc(cur.labels[cat] || cat)} <span class="sub-n">${ps.length}</span></div>
@@ -272,6 +275,7 @@ function renderAll() {
 
 // ---------- Fiche ----------
 const ICONS = {
+  gem: '<path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/>',
   phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
   book: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 15h3"/>',
   menu: '<path d="M7 3v8a2 2 0 0 0 4 0V3M9 11v10M17 3c-2 2-2 6 0 8v10"/>',
@@ -342,6 +346,9 @@ function openSheet(id, keepScroll) {
           ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}
           ${p.price ? `<span class="price-tag" title="${PRICE_HINT[p.price]}${p.priceSrc === "estim" ? " (estimation)" : ""}">${euros(p.price)}<i>${"€".repeat(4 - p.price)}</i></span>` : ""}
           ${p.gRating ? `<span class="g-rating">${STAR}${esc(p.gRating)} Google</span>` : ""}</div>
+        <div class="class-line">${p.list === "precieuses" || p.prec ? `<span class="prec-badge">${icon("gem")}Précieuse</span>` : ""}
+          <button class="link-btn" data-classify>${icon("pencil")}Changer le classement</button></div>
+        ${classifyForm(p)}
         ${S.me && p.lat ? `<div class="dist-line">${icon("walk")}<span>À ${fmtDist(distM(S.me, p))} de toi · ${walkMin(distM(S.me, p))} min à pied</span></div>` : ""}
       </div>
 
@@ -434,6 +441,30 @@ function infoRow(ic, label, value, href) {
   const v = value ? (href ? `<a href="${esc(href)}" ${href.startsWith("tel:") ? "" : 'target="_blank" rel="noopener"'}>${esc(value)}</a>` : `<span>${esc(value)}</span>`) : `<span class="empty-val">À compléter</span>`;
   return `<div class="info-row">${icon(ic)}<span class="info-label">${label}</span>${v}</div>`;
 }
+function classifyForm(p) {
+  const cats = [...new Set(S.places.filter((x) => x.list !== "precieuses").map((x) => x.cat).filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr"));
+  const opt = (v, l, cur) => `<option value="${esc(v)}" ${v === cur ? "selected" : ""}>${esc(l)}</option>`;
+  return `<form class="edit-info class-form" id="classForm" hidden>
+    <label for="c-list">Liste</label>
+    <select id="c-list" name="list">${opt("paris", "Paris", p.list)}${opt("precieuses", "Précieuses seulement", p.list)}${opt("villes", "Autre ville", p.list)}</select>
+    <div data-for="paris" ${p.list !== "paris" ? "hidden" : ""}><label for="c-arr">Arrondissement</label>
+      <select id="c-arr" name="arr">${opt("", "Choisir", "")}${Array.from({ length: 20 }, (_, i) => opt(String(i + 1), `${arrLabel(i + 1)} arrondissement`, String(p.arr || ""))).join("")}</select></div>
+    <div data-for="villes" ${p.list !== "villes" ? "hidden" : ""}><label for="c-city">Ville</label><input id="c-city" name="city" value="${esc(p.city || "")}" placeholder="Ex. New York"></div>
+    <label for="c-cat">Type</label>
+    <input id="c-cat" name="cat" value="${esc(p.cat || "")}" list="c-cats" placeholder="Ex. Italien, Japonais…">
+    <datalist id="c-cats">${(p.list === "precieuses" ? PREC_CATS.map(([c]) => c) : cats).map((c) => `<option value="${esc(c)}">`).join("")}</datalist>
+    <div data-for="paris" ${p.list !== "paris" ? "hidden" : ""}><label for="c-prec">Aussi dans les Précieuses</label>
+      <select id="c-prec" name="prec">${opt("", "Non", p.prec || "")}${PREC_CATS.map(([c, l]) => opt(c, l, p.prec || "")).join("")}</select></div>
+    <div class="row-actions"><button class="btn primary" type="submit">Enregistrer</button><button class="btn ghost" type="button" data-cancelclass>Annuler</button></div>
+  </form>`;
+}
+// Montre seulement les champs utiles à la liste choisie.
+document.addEventListener("change", (e) => {
+  if (e.target.id !== "c-list") return;
+  const f = $("#classForm"), list = e.target.value;
+  f.querySelectorAll("[data-for]").forEach((d) => (d.hidden = d.dataset.for !== list));
+  $("#c-cats").innerHTML = (list === "precieuses" ? PREC_CATS.map(([c]) => c) : [...new Set(S.places.filter((x) => x.list === list).map((x) => x.cat))]).map((c) => `<option value="${esc(c)}">`).join("");
+});
 function editField(key, label, type, value, ph) {
   return `<label for="e-${key}">${label}</label><input id="e-${key}" name="${key}" type="${type}" value="${esc(value || "")}" placeholder="${esc(ph)}" ${type === "url" ? 'inputmode="url"' : ""}>`;
 }
@@ -486,12 +517,26 @@ $("#sheet").addEventListener("input", (e) => {
   }, 400);
 });
 $("#sheet").addEventListener("submit", (e) => {
+  if (e.target.id === "classForm" && current) {
+    e.preventDefault();
+    const f = e.target, list = f.list.value;
+    const patch = { list, cat: f.cat.value.trim() || current.cat, arr: list === "paris" ? +f.arr.value || null : null,
+      city: list === "villes" ? f.city.value.trim() : "", prec: list === "paris" ? f.prec.value : "" };
+    if (list === "paris" && !patch.arr) { toast("Choisis l'arrondissement"); return; }
+    if (list === "villes" && !patch.city) { toast("Indique la ville"); return; }
+    for (const k of Object.keys(patch)) if ((patch[k] || "") === (current[k] || "")) delete patch[k];
+    if (!Object.keys(patch).length) { f.hidden = true; return; }
+    setEdit(current.id, patch); renderAll(); openSheet(current.id, true); toast("Classement mis à jour");
+    shareFix(current.id, patch);
+    return;
+  }
   if (e.target.id !== "editInfo" || !current) return;
   e.preventDefault();
   // On ne garde que ce qui a changé, pour ne pas masquer les infos ajoutées plus tard.
   const patch = Object.fromEntries([...new FormData(e.target)].map(([k, v]) => [k, k === "price" ? +v : String(v).trim()]).filter(([k, v]) => v !== (current[k] || (k === "price" ? 0 : ""))));
   if ("price" in patch) patch.priceSrc = "moi";
   setEdit(current.id, patch); renderAll(); openSheet(current.id, true); toast("Fiche mise à jour");
+  shareFix(current.id, patch);
 });
 
 $("#sheet").addEventListener("click", async (e) => {
@@ -521,6 +566,8 @@ $("#sheet").addEventListener("click", async (e) => {
   }
   if (t.hasAttribute("data-editinfo")) { const f = $("#editInfo"); f.hidden = !f.hidden; if (!f.hidden) f.querySelector("input").focus(); return; }
   if (t.hasAttribute("data-canceledit")) { $("#editInfo").hidden = true; return; }
+  if (t.hasAttribute("data-classify")) { const f = $("#classForm"); f.hidden = !f.hidden; return; }
+  if (t.hasAttribute("data-cancelclass")) { $("#classForm").hidden = true; return; }
   if (t.hasAttribute("data-tested")) {
     const id = current.id;
     toggleTested(id, null);

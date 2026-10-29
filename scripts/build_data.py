@@ -78,6 +78,16 @@ def main():
         for key, val in prev.items():
             if val and not p.get(key):
                 p[key] = val
+    # Corrections publiées depuis l'appli (classement, infos) : elles priment sur les notes.
+    fixes = DATA / "modifs.json"
+    if fixes.exists():
+        mods = json.loads(fixes.read_text(encoding="utf-8"))
+        for p in places:
+            for key, val in mods.get(p["id"], {}).items():
+                if val in ("", None, 0) and key in ("prec", "city", "arr", "price"):
+                    p.pop(key, None)
+                else:
+                    p[key] = val
     out.write_text(json.dumps(places, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(places)} lieux -> {out}", file=sys.stderr)
 

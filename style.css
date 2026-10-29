@@ -773,3 +773,12 @@ button { -webkit-tap-highlight-color: transparent; }
 .price-tag { font-weight: 700; letter-spacing: .04em; color: var(--ink); }
 .price-tag i { font-style: normal; opacity: .22; }
 .edit-info select { width: 100%; border: 1px solid var(--line); background: var(--bg); border-radius: 10px; padding: 10px 12px; font-size: 16px; }
+/* Classement */
+.class-line { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+.class-line .link-btn { padding-left: 0; }
+.prec-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 700; color: var(--plaque); background: color-mix(in srgb, var(--plaque) 10%, transparent); border-radius: 999px; padding: 4px 10px; }
+.prec-badge .ico { width: 14px; height: 14px; }
+.class-form { margin: 10px 0 4px; padding: 14px; border: 1px solid var(--line); border-radius: 14px; }
+.class-form > div[data-for] { display: grid; gap: 6px; }
+.class-form > div[hidden] { display: none; }
+.class-form input, .class-form select { width: 100%; border: 1px solid var(--line); background: var(--bg); border-radius: 10px; padding: 10px 12px; font-size: 16px; }
