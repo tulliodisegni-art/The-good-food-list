@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Le plan accepte-t-il la lecture par morceaux ?
-        run: curl -sS -o /dev/null -D - -H "Range: bytes=0-126" https://tulliodisegni-art.github.io/The-good-food-list/tiles/paris.pmtiles
+        run: |
+          curl -sS -o /dev/null -D - -H "Range: bytes=0-126" https://tulliodisegni-art.github.io/The-good-food-list/tiles/paris.pmtiles
       - name: Capture de l'onglet Carte en ligne
         run: |
           mkdir verif && cd verif
