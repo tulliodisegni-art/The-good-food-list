@@ -61,7 +61,8 @@ function anyImage(html, base) {
 
 // Mention kasher ou halal sur le site.
 const textOf = (html) => html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ");
-const KASHER = /\b(cacher|casher|kasher|kosher|beth[ -]?din|beth-din|bet din|glatt)\b/i;
+// « cacher » seul est aussi le verbe : il ne compte que dans « restaurant cacher », « cacher sous… ».
+const KASHER = /\b(casher|kasher|kosher|beth[ -]?din|bet din|glatt)\b|\b(?:restaurant|cuisine|viande|traiteur|resto)s?\s+cacher\b|\bcacher\s+(?:sous|beth|glatt|certifi)/i;
 const HALAL = /\bhalal\b/i;
 
 function phone(html) {
