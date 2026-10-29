@@ -46,6 +46,7 @@ const S = {
   base: [], places: [], view: "paris", group: store.get("group", "arr"),
   cat: { paris: null, precieuses: null }, fav: { paris: "", precieuses: "" }, q: "",
   arr: null, city: "New York", univ: store.get("univ", "table"), mapList: "paris", mapCat: "", geo: store.get("geo", {}),
+  me: null, // position du téléphone, quand elle a été demandée
 };
 
 function rebuild() {
@@ -78,6 +79,7 @@ function filtered(list) {
     if (list === "paris" && S.arr && p.arr !== S.arr) return false;
     if (S.fav[list] === "done" && !p.tested) return false;
     if (S.fav[list] === "todo" && p.tested) return false;
+    if (S.fav[list] === "want" && !p.want) return false;
     if (q && !norm(`${p.name} ${p.address} ${p.cat} ${p.city || ""} ${p.arr ? arrLabel(p.arr) : ""}`).includes(q)) return false;
     return true;
   });
@@ -87,14 +89,31 @@ const CHECK_SVG = '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" c
 function checkBtn(p) {
   return `<button class="check ${p.tested ? "on" : ""}" data-check="${esc(p.id)}" aria-pressed="${!!p.tested}" aria-label="${p.tested ? "Déjà testé" : "Marquer comme testé"}">${CHECK_SVG}</button>`;
 }
+// Vignette : photo du lieu, sinon son initiale sur la couleur de son type.
+function thumbHtml(p, cls = "rthumb") {
+  const ini = esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase());
+  return `<span class="${cls}" style="--hc:${catVar(p.cat)}"><span>${ini}</span>${p.photo ? `<img src="${esc(p.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>`;
+}
+const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.2-9.4C1.7 7.8 3.9 4.5 7.3 4.5c2 0 3.6 1.1 4.7 2.7 1.1-1.6 2.7-2.7 4.7-2.7 3.4 0 5.6 3.3 4.5 6.6-1.7 4.8-9.2 9.4-9.2 9.4z"/></svg>';
 function rowHtml(p, meta) {
+  const d = distLabel(p);
   return `<div class="row ${p.tested ? "is-done" : ""}">
-    <button class="row-main" data-id="${esc(p.id)}">
-      <span class="row-name">${esc(p.name)}${p.rating ? ` <span class="row-rating">${STAR}${p.rating}</span>` : ""}</span>
-      <span class="row-meta">${meta}</span>
+    <button class="row-main" data-id="${esc(p.id)}">${thumbHtml(p)}
+      <span class="rtext"><span class="row-name">${esc(p.name)}${p.want ? `<span class="row-want" title="Envie d'y aller">${HEART}</span>` : ""}${p.rating ? ` <span class="row-rating">${STAR}${p.rating}</span>` : ""}</span>
+      <span class="row-meta">${meta}${d ? ` <span class="row-dist">· ${d}</span>` : ""}</span></span>
     </button>${checkBtn(p)}
   </div>`;
 }
+
+// ---------- Distances ----------
+function distM(a, b) {
+  if (!a || !b || !a.lat || !b.lat) return null;
+  const k = Math.PI / 180, x = (b.lng - a.lng) * k * Math.cos(((a.lat + b.lat) / 2) * k), y = (b.lat - a.lat) * k;
+  return Math.round(Math.hypot(x, y) * 6371000);
+}
+const fmtDist = (m) => (m == null ? "" : m < 950 ? `${Math.max(50, Math.round(m / 50) * 50)} m` : `${(m / 1000).toFixed(m < 9500 ? 1 : 0).replace(".", ",")} km`);
+const walkMin = (m) => Math.max(1, Math.round((m * 1.3) / 80)); // 80 m/min, rues pas en ligne droite
+const distLabel = (p) => (S.me && p.lat ? fmtDist(distM(S.me, p)) : "");
 
 function groupBy(items, keyFn) {
   const m = new Map();
@@ -116,9 +135,17 @@ function renderParis() {
   const el = $("#listParis");
   $("#groupArr").classList.toggle("on", S.group === "arr");
   $("#groupCat").classList.toggle("on", S.group === "cat");
+  $("#groupNear").classList.toggle("on", S.group === "near");
   renderArrStrip();
   if (!items.length) { el.innerHTML = `<p class="none">Aucune adresse ne correspond.</p>`; return; }
 
+  if (S.group === "near") {
+    if (!S.me) { el.innerHTML = `<p class="none">Recherche de ta position…</p>`; locateMe().then(renderParis, () => { S.group = "arr"; renderParis(); }); return; }
+    const near = items.filter((p) => p.lat).sort((a, b) => distM(S.me, a) - distM(S.me, b)).slice(0, 80);
+    el.innerHTML = `<section class="group"><div class="subhead">Les plus proches de toi</div>
+      <div class="rows">${near.map((p) => rowHtml(p, `${p.arr ? arrLabel(p.arr) + " · " : ""}${esc(p.cat)}`)).join("")}</div></section>`;
+    return;
+  }
   if (S.group === "arr") {
     const groups = groupBy(items, (p) => p.arr);
     const keys = [...groups.keys()].sort((a, b) => a - b);
@@ -223,6 +250,7 @@ function renderPending() {
 
 function renderAll() {
   renderParis(); renderPrec(); renderVilles(); renderPending(); fillCatOptions();
+  if (window.renderHome) renderHome();
   if (map) refreshMarkers();
 }
 
@@ -235,6 +263,9 @@ const ICONS = {
   insta: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   pencil: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13 7 4 4"/>',
+  share: '<path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>',
+  walk: '<circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.2-6.5L15 17v4M8 11l2.5-3.5 3 .5 2 3 2.5 1M12.2 14.5 11 9"/>',
+  pin: '<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
 };
 const icon = (k) => `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">${ICONS[k]}</svg>`;
 const STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>';
@@ -248,12 +279,16 @@ function linkFor(p) {
   const place = p.address || `${p.name}, ${p.city || "Paris"}`;
   const q = (extra) => `https://www.google.com/search?q=${enc(`${p.name} ${p.address || p.city || "Paris"} ${extra}`)}`;
   // Fiche Google Maps du lieu : elle a les boutons Appeler et Réserver une table.
-  const mapsPage = p.gmaps || `https://www.google.com/maps/search/?api=1&query=${enc(`${p.name}, ${place}`)}${p.gid ? `&query_mapsPageid=${enc(p.gid)}` : ""}`;
+  const mapsPage = p.gmaps || `https://www.google.com/maps/search/?api=1&query=${enc(`${p.name}, ${place}`)}${p.gid ? `&query_place_id=${enc(p.gid)}` : ""}`;
   return {
     menu: p.menu || q("menu"),
     apple: `https://maps.apple.com/?daddr=${enc(place)}&dirflg=d`,
     gmaps: `https://www.google.com/maps/dir/?api=1&destination=${enc(`${p.name}, ${place}`)}`,
     waze: `https://waze.com/ul?${p.lat ? `ll=${p.lat},${p.lng}&` : `q=${enc(place)}&`}navigate=yes`,
+    citymapper: p.lat ? `https://citymapper.com/directions?endcoord=${p.lat},${p.lng}&endname=${enc(p.name)}&endaddress=${enc(place)}`
+      : `https://citymapper.com/directions?endaddress=${enc(place)}&endname=${enc(p.name)}`,
+    uber: p.lat ? `https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[latitude]=${p.lat}&dropoff[longitude]=${p.lng}&dropoff[nickname]=${enc(p.name)}&dropoff[formatted_address]=${enc(place)}`
+      : `https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=${enc(place)}`,
     // Compte Instagram du resto (ouvre l'appli Instagram sur iPhone), sinon la publication gardée, sinon une recherche dans Instagram.
     insta: igHandle(p) ? `https://www.instagram.com/${igHandle(p)}/`
       : /instagram\.com/.test(p.source || "") ? p.source
@@ -278,6 +313,7 @@ function openSheet(id, keepScroll) {
   const r = p.rating || 0;
   sheet.innerHTML = `
     <div class="sheet-top"><span class="grab"></span>
+      <button class="top-btn share-btn" data-share aria-label="Partager">${icon("share")}</button>
       <button class="close" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
     <div class="hero ${p.photo ? "photo" : ""}" style="--hc:${catVar(p.cat)}">
       ${p.photo ? `<img src="${esc(p.photo)}" alt="" referrerpolicy="no-referrer" onerror="this.remove();this.parentNode.classList.remove('photo')">` : `<span class="mono" aria-hidden="true">${esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase())}</span>`}
@@ -289,6 +325,7 @@ function openSheet(id, keepScroll) {
         <div class="sheet-sub"><span class="tag" style="--tc:${catVar(p.cat)}">${esc(p.cat || "Sans type")}</span>
           ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}
           ${p.gRating ? `<span class="g-rating">${STAR}${esc(p.gRating)} Google</span>` : ""}</div>
+        ${S.me && p.lat ? `<div class="dist-line">${icon("walk")}<span>À ${fmtDist(distM(S.me, p))} de toi · ${walkMin(distM(S.me, p))} min à pied</span></div>` : ""}
       </div>
 
       <div class="quick">
@@ -298,11 +335,14 @@ function openSheet(id, keepScroll) {
         <a class="q" href="${esc(L.insta)}" target="_blank" rel="noopener">${icon("insta")}<span>Instagram</span></a>
       </div>
 
-      <button class="tested-btn ${p.tested ? "on" : ""}" data-tested aria-pressed="${p.tested}">
-        <span class="check big ${p.tested ? "on" : ""}">${CHECK_SVG}</span>
-        <span class="tb-text"><strong>${p.tested ? "Déjà testé" : "Pas encore testé"}</strong>
-        <small>${p.tested ? "Touche pour annuler" : "Touche quand tu y es allé"}</small></span>
-      </button>
+      <div class="status-row">
+        <button class="tested-btn ${p.tested ? "on" : ""}" data-tested aria-pressed="${p.tested}">
+          <span class="check big ${p.tested ? "on" : ""}">${CHECK_SVG}</span>
+          <span class="tb-text"><strong>${p.tested ? "Déjà testé" : "Pas encore testé"}</strong>
+          <small>${p.tested ? "Touche pour annuler" : "Touche quand tu y es allé"}</small></span>
+        </button>
+        <button class="want-btn ${p.want ? "on" : ""}" data-want aria-pressed="${!!p.want}">${HEART}<span>${p.want ? "Envie !" : "Envie"}</span></button>
+      </div>
 
       <section class="block">
         <div class="block-head"><h3>Mon avis</h3><span class="rating-label">${r ? RATING_LABELS[r] : "Pas encore noté"}</span></div>
@@ -324,6 +364,8 @@ function openSheet(id, keepScroll) {
           <a class="nav-app apple" href="${esc(L.apple)}" target="_blank" rel="noopener"><span class="app-dot"></span>Plans</a>
           <a class="nav-app google" href="${esc(L.gmaps)}" target="_blank" rel="noopener"><span class="app-dot"></span>Google Maps</a>
           <a class="nav-app waze" href="${esc(L.waze)}" target="_blank" rel="noopener"><span class="app-dot"></span>Waze</a>
+          <a class="nav-app citymapper" href="${esc(L.citymapper)}" target="_blank" rel="noopener"><span class="app-dot"></span>Citymapper</a>
+          <a class="nav-app uber" href="${esc(L.uber)}" target="_blank" rel="noopener"><span class="app-dot"></span>Uber</a>
         </div>
       </section>
 
@@ -349,11 +391,23 @@ function openSheet(id, keepScroll) {
         </form>
       </section>
 
+      ${nearbyHtml(p)}
+
       ${p.mark ? `<p class="note">Marque de ta note d'origine : ${esc(p.mark)}</p>` : ""}
       ${custom ? `<div class="row-actions"><button class="btn" data-edit>Modifier</button><button class="btn danger" data-remove>Supprimer</button></div>` : ""}
     </div>`;
   sheet.hidden = false; $("#backdrop").hidden = false;
   sheet.scrollTop = keepScroll ? prevScroll : 0;
+}
+// Les adresses les plus proches de ce lieu, toutes listes confondues.
+function nearbyHtml(p) {
+  if (!p.lat) return "";
+  const near = S.places.filter((o) => o.id !== p.id && o.lat && o.list !== "pending")
+    .map((o) => [o, distM(p, o)]).filter(([, d]) => d < 1500).sort((a, b) => a[1] - b[1]).slice(0, 5);
+  if (!near.length) return "";
+  return `<section class="block"><h3>Juste à côté</h3><div class="near-list">${near.map(([o, d]) => `
+    <button class="near" data-goto="${esc(o.id)}">${thumbHtml(o)}<span class="rtext"><span class="row-name">${esc(o.name)}</span>
+      <span class="row-meta">${esc(o.cat || "")} · ${fmtDist(d)}${o.tested ? " · testé" : ""}</span></span></button>`).join("")}</div></section>`;
 }
 function infoRow(ic, label, value, href) {
   const v = value ? (href ? `<a href="${esc(href)}" ${href.startsWith("tel:") ? "" : 'target="_blank" rel="noopener"'}>${esc(value)}</a>` : `<span>${esc(value)}</span>`) : `<span class="empty-val">À compléter</span>`;
@@ -420,8 +474,18 @@ $("#sheet").addEventListener("submit", (e) => {
 
 $("#sheet").addEventListener("click", async (e) => {
   const t = e.target.closest("button");
-  if (!t || !current) return;
+  if (!t) return;
   if (t.hasAttribute("data-close")) return closeSheet();
+  if (t.dataset.goto) { openSheet(t.dataset.goto); return; }
+  if (!current) return;
+  if (t.hasAttribute("data-want")) {
+    const id = current.id, now = !current.want;
+    setEdit(id, { want: now }); renderAll(); openSheet(id, true);
+    $("#sheet .want-btn")?.classList.add("pop");
+    toast(now ? "Ajouté à tes envies" : "Retiré de tes envies");
+    return;
+  }
+  if (t.hasAttribute("data-share")) return sharePlace(current);
   if (t.hasAttribute("data-copy")) {
     try { await navigator.clipboard.writeText(current.address); toast("Adresse copiée"); } catch { toast("Copie impossible, garde le doigt appuyé sur l'adresse"); }
     return;
@@ -479,18 +543,19 @@ function toast(msg) {
 
 // ---------- Navigation ----------
 const VIEWS = {
-  paris: ["Paris intra-muros", "The Good Food List"],
+  accueil: ["Bonjour", "The Good Food List"],
+  paris: ["Paris intra-muros", "Paris"],
   carte: ["Toutes les adresses", "La carte"],
   precieuses: ["Liste d'exception", "Les Précieuses"],
   villes: ["Hors de Paris", "Autres villes"],
   ajouter: ["Nouvelle adresse", "Ajouter"],
 };
 function show(view) {
-  if (!VIEWS[view]) view = "paris";
+  if (!VIEWS[view]) view = "accueil";
   S.view = view;
   for (const v of $$(".view")) v.hidden = v.dataset.view !== view;
   for (const a of $$(".tabs a")) a.classList.toggle("on", a.dataset.tab === view);
-  $("#viewKicker").textContent = VIEWS[view][0];
+  $("#viewKicker").textContent = view === "accueil" ? greeting() : VIEWS[view][0];
   $("#viewTitle").textContent = VIEWS[view][1];
   $("#searchWrap").hidden = view === "carte" || view === "ajouter";
   closeSheet();
@@ -499,7 +564,7 @@ function show(view) {
 }
 window.addEventListener("hashchange", () => show(location.hash.slice(1)));
 
-$("#search").addEventListener("input", (e) => { S.q = e.target.value; renderParis(); renderPrec(); renderVilles(); });
+$("#search").addEventListener("input", (e) => { S.q = e.target.value; renderParis(); renderPrec(); renderVilles(); if (window.renderHome) renderHome(); });
 
 document.addEventListener("click", (e) => {
   const chk = e.target.closest(".check[data-check]");
@@ -529,7 +594,7 @@ document.addEventListener("click", (e) => {
   const g = e.target.closest("[data-group]");
   if (g) { S.group = g.dataset.group; store.set("group", S.group); renderParis(); }
 });
-const FAV_STEPS = [["", "Tous les lieux"], ["done", "Déjà testés"], ["todo", "Pas encore testés"]];
+const FAV_STEPS = [["", "Tous les lieux"], ["done", "Déjà testés"], ["todo", "Pas encore testés"], ["want", "Mes envies"]];
 for (const [btn, list] of [["#favParis", "paris"], ["#favPrec", "precieuses"]]) {
   $(btn).addEventListener("click", (e) => {
     const i = (FAV_STEPS.findIndex(([k]) => k === S.fav[list]) + 1) % FAV_STEPS.length;
@@ -924,7 +989,7 @@ async function boot() {
   if (S.base.length) store.set("baseCache", S.base);
   rebuild();
   renderAll();
-  show(location.hash.slice(1) || "paris");
+  show(location.hash.slice(1) || "accueil");
   const setHead = () => document.documentElement.style.setProperty("--head-h", `${Math.round($(".top").offsetHeight)}px`);
   setHead(); addEventListener("resize", setHead);
 }

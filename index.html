@@ -25,23 +25,35 @@
 <body>
 <header class="top">
   <div class="top-inner">
-    <div class="brand">
-      <span class="brand-kicker" id="viewKicker">Paris intra-muros</span>
-      <h1 id="viewTitle">The Good Food List</h1>
+    <div class="brand-row">
+      <div class="brand">
+        <span class="brand-kicker" id="viewKicker">Bonjour</span>
+        <h1 id="viewTitle">The Good Food List</h1>
+      </div>
+      <div class="top-actions">
+        <a class="icon-btn add" href="#ajouter" aria-label="Ajouter une adresse"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
+        <button class="icon-btn" id="openSettings" aria-label="Réglages"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+      </div>
     </div>
     <label class="search" id="searchWrap">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-      <input id="search" type="search" placeholder="Nom, rue, type…" autocomplete="off" enterkeyhint="search">
+      <input id="search" type="search" placeholder="Un resto, une rue, une envie…" autocomplete="off" enterkeyhint="search">
     </label>
   </div>
 </header>
 
 <main>
-  <section class="view" id="view-paris" data-view="paris">
+  <section class="view" id="view-accueil" data-view="accueil">
+    <div id="homeResults" hidden></div>
+    <div id="home"></div>
+  </section>
+
+  <section class="view" id="view-paris" data-view="paris" hidden>
     <div class="toolbar">
       <div class="seg" role="tablist" aria-label="Classer">
         <button id="groupArr" class="on" data-group="arr">Arrondissement</button>
         <button id="groupCat" data-group="cat">Type</button>
+        <button id="groupNear" data-group="near">Près de moi</button>
       </div>
       <button class="pill-toggle" id="favParis" aria-pressed="false">Tous les lieux</button>
     </div>
@@ -160,7 +172,10 @@
 </main>
 
 <nav class="tabs" aria-label="Sections">
-  <a href="#paris" data-tab="paris" class="on">
+  <a href="#accueil" data-tab="accueil" class="on">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Accueil</span>
+  </a>
+  <a href="#paris" data-tab="paris">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>Paris</span>
   </a>
   <a href="#carte" data-tab="carte">
@@ -172,9 +187,6 @@
   <a href="#villes" data-tab="villes">
     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg><span>Villes</span>
   </a>
-  <a href="#ajouter" data-tab="ajouter">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg><span>Ajouter</span>
-  </a>
 </nav>
 
 <div class="sheet-backdrop" id="backdrop" hidden></div>
@@ -185,5 +197,6 @@
 <script src="vendor/markercluster/leaflet.markercluster.js"></script>
 <script src="vendor/protomaps/protomaps-leaflet.js"></script>
 <script src="app.js"></script>
+<script src="extras.js"></script>
 </body>
 </html>
