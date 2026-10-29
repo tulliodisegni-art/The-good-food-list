@@ -313,10 +313,11 @@ function linkFor(p) {
       : `https://citymapper.com/directions?endaddress=${enc(place)}&endname=${enc(p.name)}`,
     uber: p.lat ? `https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[latitude]=${p.lat}&dropoff[longitude]=${p.lng}&dropoff[nickname]=${enc(p.name)}&dropoff[formatted_address]=${enc(place)}`
       : `https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=${enc(place)}`,
-    // Compte Instagram du resto (ouvre l'appli Instagram sur iPhone), sinon la publication gardée, sinon une recherche dans Instagram.
+    // Compte Instagram du resto (ouvre l'appli Instagram sur iPhone), sinon la publication gardée,
+    // sinon une recherche Google limitée à Instagram : le compte du lieu sort en premier.
     insta: igHandle(p) ? `https://www.instagram.com/${igHandle(p)}/`
       : /instagram\.com/.test(p.source || "") ? p.source
-      : `https://www.instagram.com/explore/search/keyword/?q=${enc(p.name)}`,
+      : `https://www.google.com/search?q=${enc(`site:instagram.com ${p.name} ${p.city || "Paris"}`)}`,
     book: p.booking || mapsPage,
     call: p.phone ? `tel:${p.phone.replace(/[^\d+]/g, "")}` : mapsPage,
   };

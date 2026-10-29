@@ -35,6 +35,10 @@ jobs:
       - name: Téléphones et sites depuis OpenStreetMap
         continue-on-error: true
         run: node scripts/osm.mjs
+      - name: Sites, comptes Instagram et pages TheFork par recherche web
+        continue-on-error: true
+        timeout-minutes: 20
+        run: node scripts/search.mjs
       - name: Photos et téléphones depuis les sites des restos
         run: node scripts/enrich.mjs
       - name: Compléter avec Google Places
