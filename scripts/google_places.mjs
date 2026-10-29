@@ -32,9 +32,12 @@ async function photoUri(name) {
   return r.ok ? (await r.json()).photoUri : null;
 }
 
-let n = 0, failed = 0;
+// Un lot par passage (chaque jour) pour rester dans le quota gratuit mensuel de Google.
+const MAX = +process.env.GOOGLE_PLACES_MAX || 120;
+let n = 0, failed = 0, asked = 0;
 for (const p of places) {
   if (p.gid || p.gChecked) continue;
+  if (asked++ >= MAX) break;
   try {
     const g = await search(p);
     p.gChecked = true;
@@ -57,4 +60,5 @@ for (const p of places) {
   }
 }
 await writeFile(FILE, JSON.stringify(places, null, 1));
-console.log(`${n} fiches complétées avec Google Places`);
+const left = places.filter((p) => !p.gid && !p.gChecked).length;
+console.log(`${n} fiches complétées avec Google Places, ${left} restantes pour les prochains jours`);

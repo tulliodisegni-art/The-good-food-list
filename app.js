@@ -243,14 +243,16 @@ const RATING_LABELS = ["", "Décevant", "Moyen", "Bien", "Très bon", "Exception
 function linkFor(p) {
   const place = p.address || `${p.name}, ${p.city || "Paris"}`;
   const q = (extra) => `https://www.google.com/search?q=${enc(`${p.name} ${p.address || p.city || "Paris"} ${extra}`)}`;
+  // Fiche Google Maps du lieu : elle a les boutons Appeler et Réserver une table.
+  const mapsPage = p.gmaps || `https://www.google.com/maps/search/?api=1&query=${enc(`${p.name}, ${place}`)}${p.gid ? `&query_mapsPageid=${enc(p.gid)}` : ""}`;
   return {
     menu: p.menu || q("menu"),
     apple: `https://maps.apple.com/?daddr=${enc(place)}&dirflg=d`,
     gmaps: `https://www.google.com/maps/dir/?api=1&destination=${enc(`${p.name}, ${place}`)}`,
     waze: `https://waze.com/ul?${p.lat ? `ll=${p.lat},${p.lng}&` : `q=${enc(place)}&`}navigate=yes`,
     insta: p.source || q("instagram"),
-    book: p.booking || q("réserver une table"),
-    call: p.phone ? `tel:${p.phone.replace(/[^\d+]/g, "")}` : q("téléphone"),
+    book: p.booking || mapsPage,
+    call: p.phone ? `tel:${p.phone.replace(/[^\d+]/g, "")}` : mapsPage,
   };
 }
 
@@ -283,7 +285,7 @@ function openSheet(id, keepScroll) {
       </div>
 
       <div class="quick">
-        <a class="q" href="${esc(L.call)}" ${p.phone ? "" : 'target="_blank" rel="noopener"'}>${icon("phone")}<span>${p.phone ? "Appeler" : "Numéro"}</span></a>
+        <a class="q" href="${esc(L.call)}" ${p.phone ? "" : 'target="_blank" rel="noopener"'}>${icon("phone")}<span>Appeler</span></a>
         <a class="q" href="${esc(L.book)}" target="_blank" rel="noopener">${icon("book")}<span>Réserver</span></a>
         <a class="q" href="${esc(L.menu)}" target="_blank" rel="noopener">${icon("menu")}<span>Menu</span></a>
         <a class="q" href="${esc(L.insta)}" target="_blank" rel="noopener">${icon("insta")}<span>${p.source ? "Publication" : "Instagram"}</span></a>
@@ -520,6 +522,14 @@ function initMap() {
     setTimeout(() => { if (!loaded && base === i && base + 1 < BASEMAPS.length) useBase(base + 1); }, 5000);
   };
   useBase(0);
+  // Plan de Paris hébergé avec l'appli (même adresse que l'appli) : il s'affiche
+  // même quand les serveurs de cartes extérieurs sont bloqués sur le téléphone.
+  fetch("tiles/paris.pmtiles", { method: "HEAD" }).then((r) => {
+    if (!r.ok || !window.protomapsL) return;
+    map.createPane("plan").style.zIndex = 250;
+    protomapsL.leafletLayer({ url: "tiles/paris.pmtiles", flavor: "light", lang: "fr", maxDataZoom: 15, pane: "plan",
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · <a href="https://protomaps.com">Protomaps</a>' }).addTo(map);
+  }).catch(() => {});
   setTimeout(() => map.invalidateSize(), 300);
   cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 42, disableClusteringAtZoom: 16 });
   map.addLayer(cluster);
@@ -722,7 +732,7 @@ Choix de la liste :
 Types déjà utilisés (réutilise-en un si ça colle) : ${cats}.
 
 Réponds uniquement avec un objet JSON, sans texte autour :
-{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|villes", "arr": 0, "city": "", "cat": "", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "doubt": "ce qui reste incertain, sinon vide"}
+{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|villes", "arr": 0, "city": "", "cat": "", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "booking": "lien direct de réservation (TheFork, Zenchef, page Réserver du site…) si trouvé", "doubt": "ce qui reste incertain, sinon vide"}
 "arr" est le numéro d'arrondissement (1 à 20) pour Paris, sinon 0.`;
 }
 
@@ -774,7 +784,8 @@ function fillFromAi(r, link) {
   $("#fCity").hidden = list !== "villes"; $("#fCityLabel").hidden = list !== "villes";
   $("#fMenu").value = /^https?:/.test(r.menu || "") ? r.menu : /^https?:/.test(r.website || "") ? r.website : "";
   $("#fSource").value = link || ""; $("#fSummary").value = r.summary || "";
-  aiExtra = { phone: r.phone || "", website: /^https?:/.test(r.website || "") ? r.website : "" };
+  const url = (u) => (/^https?:/.test(u || "") ? u : "");
+  aiExtra = { phone: r.phone || "", website: url(r.website), booking: url(r.booking) };
   $("#formTitle").textContent = "Vérifie la fiche";
   $("#fCancel").hidden = false;
 }
@@ -843,7 +854,7 @@ $("#placeForm").addEventListener("submit", (e) => {
     summary: $("#fSummary").value.trim(), mark: "", createdAt: Date.now(),
   };
   if (list === "paris" && !p.arr) { toast("Choisis l'arrondissement"); return; }
-  if (aiExtra) { if (aiExtra.phone) p.phone = aiExtra.phone; if (aiExtra.website) p.website = aiExtra.website; }
+  if (aiExtra) { if (aiExtra.phone) p.phone = aiExtra.phone; if (aiExtra.website) p.website = aiExtra.website; if (aiExtra.booking) p.booking = aiExtra.booking; }
   const custom = store.get("custom", []).filter((x) => x.id !== id);
   const prev = store.get("custom", []).find((x) => x.id === id);
   if (prev && prev.list !== "pending") { p.mark = prev.mark || ""; p.tested = !!prev.tested; p.createdAt = prev.createdAt; }

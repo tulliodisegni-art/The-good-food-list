@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Chaque matin : un nouveau lot de fiches complétées (photos, téléphones…).
+    - cron: "17 5 * * *"
 
 permissions:
   contents: write
@@ -41,6 +44,31 @@ jobs:
             git commit -m "Infos des restos mises à jour automatiquement" data/places.json
             git push
           fi
+      - name: Mois en cours
+        id: month
+        run: echo "m=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v4
+        with:
+          path: tiles/paris.pmtiles
+          key: paris-pmtiles-v1-${{ steps.month.outputs.m }}
+      - name: Fond de carte de Paris (hébergé avec l'appli)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p tiles
+          if [ ! -s tiles/paris.pmtiles ]; then
+            gh release download -R protomaps/go-pmtiles -p '*Linux_x86_64.tar.gz' -O pmtiles.tgz
+            tar xzf pmtiles.tgz pmtiles
+            for i in $(seq 0 10); do
+              D=$(date -u -d "-$i day" +%Y%m%d)
+              if curl -sfI "https://build.protomaps.com/$D.pmtiles" > /dev/null; then break; fi
+            done
+            echo "Carte du $D"
+            ./pmtiles extract "https://build.protomaps.com/$D.pmtiles" tiles/paris.pmtiles --bbox=2.15,48.76,2.55,48.95 --maxzoom=15
+            rm -f pmtiles pmtiles.tgz
+          fi
+          ls -la tiles
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

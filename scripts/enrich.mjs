@@ -1,5 +1,5 @@
 // Complète les fiches depuis le site de chaque resto : photo (og:image),
-// téléphone et adresse du site. Ne remplace jamais une info déjà présente.
+// téléphone et lien de réservation. Ne remplace jamais une info déjà présente.
 import { readFile, writeFile } from "node:fs/promises";
 
 const FILE = new URL("../data/places.json", import.meta.url);
@@ -53,23 +53,44 @@ function phone(html) {
   return null;
 }
 
-const todo = places.filter((p) => !p.enriched && (p.menu || p.website));
+// Plateformes de réservation reconnues dans les liens du site.
+const BOOKING = /thefork\.|lafourchette|zenchef|sevenrooms|resy\.com|opentable|guestonline|formitable|tablebooker|resengo|covermanager|bookenda|privateaser|tock\.com|booking\.(?:zenchef|mozrest)|mozrest|resa\.|libib|ezeeresto|eatapp\.co/i;
+
+function booking(html, base) {
+  const links = [...html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>([\s\S]{0,200}?)<\/a>/gi)];
+  let byText = null;
+  for (const [, href, inner] of links) {
+    let u;
+    try { u = new URL(decode(href), base); } catch { continue; }
+    if (!/^https?:$/.test(u.protocol)) continue;
+    if (BOOKING.test(u.hostname + u.pathname)) return u.href;
+    const text = inner.replace(/<[^>]+>/g, " ");
+    if (!byText && /r[ée]serv|book a table|booking/i.test(text + " " + u.pathname)) byText = u.href;
+  }
+  // Widget Zenchef intégré à la page, sans lien visible.
+  const zc = html.match(/zenchef[\s\S]{0,400}?(?:rid=|data-restaurant=["'])(\d{3,})/i);
+  return zc ? `https://bookings.zenchef.com/results?rid=${zc[1]}` : byText;
+}
+
+// Version 2 : ajoute la recherche du lien de réservation sur les sites déjà lus.
+const V = 2;
+const todo = places.filter((p) => (+p.enriched || 0) < V && (p.menu || p.website));
 const bySite = new Map();
 for (const p of todo) {
   const site = siteOf(p.website || p.menu);
-  if (!site) { p.enriched = true; continue; }
+  if (!site) { p.enriched = V; continue; }
   if (!bySite.has(site)) bySite.set(site, []);
   bySite.get(site).push(p);
 }
 
-let photos = 0, phones = 0, done = 0;
+let photos = 0, phones = 0, books = 0, done = 0;
 const sites = [...bySite.keys()];
 async function worker() {
   while (sites.length) {
     const site = sites.shift();
     const page = await get(site + "/");
     for (const p of bySite.get(site)) {
-      p.enriched = true;
+      p.enriched = V;
       if (!p.website) p.website = site;
       if (!page) continue;
       const img = !p.photo && ogImage(page.html, page.url);
@@ -77,10 +98,12 @@ async function worker() {
       // Un même site peut servir plusieurs adresses : le numéro n'est gardé que s'il n'y en a qu'une.
       const tel = !p.phone && bySite.get(site).length === 1 && phone(page.html);
       if (tel) { p.phone = tel; phones++; }
+      const book = !p.booking && booking(page.html, page.url);
+      if (book) { p.booking = book; books++; }
     }
     done++;
   }
 }
 await Promise.all(Array.from({ length: 8 }, worker));
 await writeFile(FILE, JSON.stringify(places, null, 1));
-console.log(`${done} sites lus : ${photos} photos, ${phones} téléphones ajoutés`);
+console.log(`${done} sites lus : ${photos} photos, ${phones} téléphones, ${books} liens de réservation ajoutés`);
