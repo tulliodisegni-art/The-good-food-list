@@ -82,13 +82,34 @@
 
   <section class="view" id="view-ajouter" data-view="ajouter" hidden>
     <div class="card">
-      <h2>Depuis un lien</h2>
-      <p class="muted">Instagram, TikTok, Facebook, site web… Colle le lien : il est gardé dans « À compléter ». Envoie aussi le lien à Claude dans ton projet, il remplit la fiche (nom, adresse, type, menu, photo) et l'ajoute à la liste.</p>
-      <form id="linkForm" class="stack">
-        <label for="linkUrl">Lien</label>
-        <input id="linkUrl" type="url" inputmode="url" placeholder="https://www.instagram.com/…" required>
-        <button class="btn primary" type="submit">Garder ce lien</button>
+      <h2>Depuis un réseau social</h2>
+      <p class="muted">Dépose une ou plusieurs captures d'écran (post, reel, story, menu…), ajoute le lien si tu l'as. L'IA lit tout et remplit la fiche ci-dessous, tu n'as plus qu'à vérifier.</p>
+      <form id="aiForm" class="stack">
+        <label class="drop" id="aiDrop" for="aiFiles">
+          <input id="aiFiles" type="file" accept="image/*" multiple hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="3"/><circle cx="9" cy="11" r="2"/><path d="m21 17-5-5-9 8"/></svg>
+          <b>Déposer des captures</b>
+          <span>ou toucher pour choisir dans tes photos</span>
+        </label>
+        <div class="thumbs" id="aiThumbs"></div>
+        <label for="linkUrl">Lien de la publication</label>
+        <input id="linkUrl" type="url" inputmode="url" placeholder="https://www.instagram.com/…">
+        <label for="aiText">Texte de la légende <small>(facultatif)</small></label>
+        <textarea id="aiText" rows="2" placeholder="Colle la description du post si tu veux"></textarea>
+        <div class="row-actions">
+          <button class="btn primary" type="submit" id="aiGo">Lire avec l'IA</button>
+          <button class="btn ghost" type="button" id="keepLink">Garder juste le lien</button>
+        </div>
+        <p class="ai-status" id="aiStatus" hidden></p>
       </form>
+      <details class="ai-key" id="aiKeyBox">
+        <summary>Clé de l'IA <span id="aiKeyState"></span></summary>
+        <p class="muted small">L'appli utilise Claude (Anthropic) pour lire les images. Crée une clé sur <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a> (Settings → API Keys), puis colle-la ici. Elle reste uniquement sur ce téléphone. Compter environ 2 à 5 centimes par lecture.</p>
+        <div class="key-row">
+          <input id="aiKey" type="password" autocomplete="off" placeholder="sk-ant-…">
+          <button class="btn" type="button" id="aiKeySave">Enregistrer</button>
+        </div>
+      </details>
       <div class="list compact" id="listPending"></div>
     </div>
 

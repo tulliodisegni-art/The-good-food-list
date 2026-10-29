@@ -635,29 +635,184 @@ $("#fList").addEventListener("change", (e) => {
   $("#fCity").hidden = !v; $("#fCityLabel").hidden = !v;
 });
 
-$("#linkForm").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const url = $("#linkUrl").value.trim();
-  if (!url) return;
+function keepLink(url) {
   const custom = store.get("custom", []);
   custom.unshift({ id: uid(), list: "pending", name: "Lien à compléter", source: url, createdAt: Date.now() });
   store.set("custom", custom);
-  $("#linkUrl").value = "";
   rebuild(); renderPending();
-  toast("Lien gardé. Envoie-le aussi à Claude pour remplir la fiche.");
+}
+$("#keepLink").addEventListener("click", () => {
+  const url = $("#linkUrl").value.trim();
+  if (!url) { toast("Colle d'abord un lien"); return; }
+  keepLink(url); $("#linkUrl").value = "";
+  toast("Lien gardé dans « À compléter »");
+});
+
+// ---------- Lecture par l'IA (Claude) ----------
+// La clé reste dans le stockage du téléphone : elle n'est jamais dans le code publié.
+const AI_MODEL = "claude-opus-5-5";
+let aiImages = [], aiExtra = null;
+function aiKeyState() {
+  const has = !!store.get("aiKey", "");
+  $("#aiKeyState").textContent = has ? "· enregistrée" : "· à ajouter";
+  $("#aiKeyState").className = has ? "ok" : "warn";
+  if (!has) $("#aiKeyBox").open = true;
+}
+aiKeyState();
+$("#aiKeySave").addEventListener("click", () => {
+  const k = $("#aiKey").value.trim();
+  if (k && !/^sk-ant-/.test(k)) { toast("La clé commence par sk-ant-"); return; }
+  store.set("aiKey", k); $("#aiKey").value = "";
+  aiKeyState(); $("#aiKeyBox").open = !k;
+  toast(k ? "Clé enregistrée sur ce téléphone" : "Clé supprimée");
+});
+
+// Réduit chaque capture (1568 px max) pour un envoi rapide et moins cher.
+function shrink(file) {
+  return new Promise((resolve, reject) => {
+    const img = new Image(), url = URL.createObjectURL(file);
+    img.onload = () => {
+      const k = Math.min(1, 1568 / Math.max(img.width, img.height));
+      const c = document.createElement("canvas");
+      c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+      c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      resolve(c.toDataURL("image/jpeg", 0.85));
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error("image illisible")); };
+    img.src = url;
+  });
+}
+async function addImages(files) {
+  for (const f of [...files].filter((f) => f.type.startsWith("image/")).slice(0, 6 - aiImages.length)) {
+    try { aiImages.push(await shrink(f)); } catch { toast("Une image n'a pas pu être lue"); }
+  }
+  renderThumbs();
+}
+function renderThumbs() {
+  $("#aiThumbs").innerHTML = aiImages.map((src, i) => `<span class="thumb"><img src="${src}" alt=""><button type="button" data-rm="${i}" aria-label="Retirer">✕</button></span>`).join("");
+  $("#aiDrop").classList.toggle("has", aiImages.length > 0);
+}
+$("#aiFiles").addEventListener("change", (e) => { addImages(e.target.files); e.target.value = ""; });
+$("#aiThumbs").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-rm]");
+  if (b) { aiImages.splice(+b.dataset.rm, 1); renderThumbs(); }
+});
+const drop = $("#aiDrop");
+["dragenter", "dragover"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach((ev) => drop.addEventListener(ev, () => drop.classList.remove("over")));
+drop.addEventListener("drop", (e) => { e.preventDefault(); addImages(e.dataTransfer.files); });
+document.addEventListener("paste", (e) => {
+  if (S.view !== "ajouter") return;
+  const files = [...(e.clipboardData?.files || [])];
+  if (files.length) addImages(files);
+});
+
+function aiPrompt(link, text) {
+  const cats = [...new Set(S.places.map((p) => p.cat).filter(Boolean))].sort().join(", ");
+  return `Tu aides à remplir une fiche dans « The Good Food List », un carnet personnel d'adresses (restos, bars, sorties).
+Les images sont des captures d'écran d'une publication (Instagram, TikTok, Facebook, site…).${link ? `\nLien de la publication : ${link}` : ""}${text ? `\nTexte de la légende :\n${text}` : ""}
+
+Identifie le lieu présenté. Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.
+
+Choix de la liste :
+- "paris" : restaurant ou adresse à manger dans Paris intra-muros (75001 à 75020).
+- "precieuses" : lieu chic ou d'exception, rooftop, bar, soirée, salon de thé, activité, à Paris ou en Île-de-France.
+- "villes" : tout lieu hors région parisienne (ex. New York, Tel-Aviv).
+Types déjà utilisés (réutilise-en un si ça colle) : ${cats}.
+
+Réponds uniquement avec un objet JSON, sans texte autour :
+{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|villes", "arr": 0, "city": "", "cat": "", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "doubt": "ce qui reste incertain, sinon vide"}
+"arr" est le numéro d'arrondissement (1 à 20) pour Paris, sinon 0.`;
+}
+
+function aiError(e) {
+  const st = e?.status;
+  if (st === 401) return "Clé refusée : vérifie la clé de l'IA";
+  if (st === 400 && /credit/i.test(e.message)) return "Plus de crédit sur le compte Anthropic";
+  if (st === 429) return "Trop de demandes, réessaie dans une minute";
+  if (st >= 500) return "Le service de l'IA est indisponible, réessaie";
+  if (!navigator.onLine) return "Pas de connexion";
+  return "La lecture a échoué : " + (e?.message || "erreur inconnue");
+}
+
+async function aiRead(link, text) {
+  const { default: Anthropic } = await import("./vendor/anthropic/anthropic.mjs");
+  const client = new Anthropic({ apiKey: store.get("aiKey", ""), dangerouslyAllowBrowser: true });
+  const content = [
+    ...aiImages.map((d) => ({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: d.split(",")[1] } })),
+    { type: "text", text: aiPrompt(link, text) },
+  ];
+  const messages = [{ role: "user", content }];
+  let res;
+  // La recherche web peut demander plusieurs tours (pause_turn) : on relance jusqu'à la réponse finale.
+  for (let i = 0; i < 4; i++) {
+    res = await client.beta.messages.create({
+      model: AI_MODEL, max_tokens: 16000,
+      betas: ["server-side-fallback-2026-07-01"], fallbacks: "default",
+      output_config: { effort: "medium" },
+      tools: [{ type: "web_search_20260209", name: "web_search", max_uses: 4 }],
+      messages,
+    });
+    if (res.stop_reason !== "pause_turn") break;
+    messages.push({ role: "assistant", content: res.content });
+  }
+  if (res.stop_reason === "refusal") throw new Error("l'IA n'a pas pu lire ces images");
+  const out = res.content.filter((b) => b.type === "text").map((b) => b.text).join("");
+  const json = out.slice(out.indexOf("{"), out.lastIndexOf("}") + 1);
+  try { return JSON.parse(json); } catch { throw new Error("réponse incomplète, réessaie"); }
+}
+
+function fillFromAi(r, link) {
+  resetForm();
+  const list = ["paris", "precieuses", "villes"].includes(r.list) ? r.list : "paris";
+  $("#fName").value = r.name || ""; $("#fAddress").value = r.address || "";
+  $("#fList").value = list;
+  const zip = String(r.address || "").match(/750(\d\d)/);
+  $("#fArr").value = r.arr >= 1 && r.arr <= 20 ? String(r.arr) : zip ? String(+zip[1]) : "";
+  $("#fCat").value = r.cat || ""; $("#fCity").value = list === "villes" ? r.city || "" : "";
+  $("#fCity").hidden = list !== "villes"; $("#fCityLabel").hidden = list !== "villes";
+  $("#fMenu").value = /^https?:/.test(r.menu || "") ? r.menu : /^https?:/.test(r.website || "") ? r.website : "";
+  $("#fSource").value = link || ""; $("#fSummary").value = r.summary || "";
+  aiExtra = { phone: r.phone || "", website: /^https?:/.test(r.website || "") ? r.website : "" };
+  $("#formTitle").textContent = "Vérifie la fiche";
+  $("#fCancel").hidden = false;
+}
+
+$("#aiForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const link = $("#linkUrl").value.trim(), text = $("#aiText").value.trim();
+  const status = $("#aiStatus"), go = $("#aiGo");
+  if (!aiImages.length && !text) { toast(link ? "Ajoute une capture, ou garde juste le lien" : "Ajoute au moins une capture"); return; }
+  if (!store.get("aiKey", "")) { $("#aiKeyBox").open = true; $("#aiKey").focus(); toast("Ajoute d'abord la clé de l'IA"); return; }
+  go.disabled = true; go.classList.add("busy");
+  status.hidden = false; status.className = "ai-status"; status.textContent = "Lecture des captures et recherche de l'adresse…";
+  try {
+    const r = await aiRead(link, text);
+    if (!r.name) throw new Error("aucun lieu reconnu sur ces images");
+    fillFromAi(r, link);
+    status.className = "ai-status ok";
+    status.textContent = r.doubt ? `Fiche remplie. À vérifier : ${r.doubt}` : "Fiche remplie, vérifie et touche Ajouter.";
+    aiImages = []; renderThumbs(); $("#linkUrl").value = ""; $("#aiText").value = "";
+    setTimeout(() => $("#placeForm").scrollIntoView({ behavior: "smooth" }), 80);
+  } catch (err) {
+    status.className = "ai-status err"; status.textContent = aiError(err);
+  } finally {
+    go.disabled = false; go.classList.remove("busy");
+  }
 });
 $("#listPending").addEventListener("click", (e) => {
   const del = e.target.closest("[data-del]"), fill = e.target.closest("[data-fill]");
   if (del) { store.set("custom", store.get("custom", []).filter((p) => p.id !== del.dataset.del)); rebuild(); renderPending(); }
   if (fill) {
     const p = store.get("custom", []).find((x) => x.id === fill.dataset.fill);
-    resetForm(); $("#fSource").value = p.source; $("#fId").value = p.id; $("#fName").focus();
+    resetForm(); $("#fSource").value = p.source; $("#linkUrl").value = p.source; $("#fId").value = p.id; $("#fName").focus();
     $("#placeForm").scrollIntoView({ behavior: "smooth" });
   }
 });
 
 function resetForm() {
-  $("#placeForm").reset(); $("#fId").value = "";
+  $("#placeForm").reset(); $("#fId").value = ""; aiExtra = null;
   $("#formTitle").textContent = "Ajouter à la main"; $("#fSubmit").textContent = "Ajouter"; $("#fCancel").hidden = true;
   $("#fCity").hidden = true; $("#fCityLabel").hidden = true;
 }
@@ -688,6 +843,7 @@ $("#placeForm").addEventListener("submit", (e) => {
     summary: $("#fSummary").value.trim(), mark: "", createdAt: Date.now(),
   };
   if (list === "paris" && !p.arr) { toast("Choisis l'arrondissement"); return; }
+  if (aiExtra) { if (aiExtra.phone) p.phone = aiExtra.phone; if (aiExtra.website) p.website = aiExtra.website; }
   const custom = store.get("custom", []).filter((x) => x.id !== id);
   const prev = store.get("custom", []).find((x) => x.id === id);
   if (prev && prev.list !== "pending") { p.mark = prev.mark || ""; p.tested = !!prev.tested; p.createdAt = prev.createdAt; }

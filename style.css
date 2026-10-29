@@ -541,3 +541,30 @@ button { -webkit-tap-highlight-color: transparent; }
 .edit-info label { font-size: 12px; font-weight: 700; color: var(--muted); margin-top: 4px; }
 .edit-info input { width: 100%; border: 1px solid var(--line); background: var(--bg); border-radius: 10px; padding: 10px 12px; font-size: 16px; }
 .sheet-body { gap: 16px; }
+
+/* v4 : lecture des captures par l'IA */
+.drop { display: grid; justify-items: center; gap: 4px; padding: 22px 14px; margin-top: 4px !important; border: 1.5px dashed color-mix(in srgb, var(--plaque) 45%, var(--line)); border-radius: 14px; background: color-mix(in srgb, var(--plaque) 5%, var(--surface)); color: var(--ink) !important; text-align: center; cursor: pointer; letter-spacing: 0 !important; transition: background .15s, border-color .15s, transform .1s; }
+.drop:active { transform: scale(.99); }
+.drop.over { background: color-mix(in srgb, var(--plaque) 14%, var(--surface)); border-color: var(--plaque); }
+.drop svg { width: 30px; height: 30px; fill: none; stroke: var(--plaque); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.drop b { font-size: 15px; }
+.drop span { font-size: 12.5px; font-weight: 500; color: var(--muted); }
+.drop.has { padding: 12px; }
+.drop.has span { display: none; }
+.thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
+.thumbs:empty { display: none; }
+.thumb { position: relative; width: 72px; height: 96px; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.thumb button { position: absolute; top: 4px; right: 4px; width: 22px; height: 22px; border-radius: 50%; border: 0; background: rgba(0,0,0,.6); color: #fff; font-size: 11px; cursor: pointer; }
+.ai-status { margin: 4px 0 0; padding: 10px 12px; border-radius: 10px; font-size: 13.5px; background: color-mix(in srgb, var(--plaque) 8%, var(--surface)); }
+.ai-status.ok { background: color-mix(in srgb, var(--ok) 12%, var(--surface)); }
+.ai-status.err { background: color-mix(in srgb, var(--danger) 10%, var(--surface)); color: var(--danger); }
+.btn.busy { opacity: .7; pointer-events: none; }
+.btn.busy::after { content: ""; display: inline-block; width: 12px; height: 12px; margin-left: 8px; vertical-align: -1px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: spin .7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.ai-key { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+.ai-key summary { cursor: pointer; font-weight: 700; font-size: 13.5px; }
+.ai-key summary .ok { color: var(--ok); font-weight: 600; }
+.ai-key summary .warn { color: var(--danger); font-weight: 600; }
+.key-row { display: flex; gap: 8px; }
+.key-row input { flex: 1; min-width: 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-2); color: var(--ink); font: inherit; }
