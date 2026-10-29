@@ -90,7 +90,7 @@ function checkBtn(p) {
 function rowHtml(p, meta) {
   return `<div class="row ${p.tested ? "is-done" : ""}">
     <button class="row-main" data-id="${esc(p.id)}">
-      <span class="row-name">${esc(p.name)}${p.mark ? ` <span class="mark">${esc(p.mark)}</span>` : ""}</span>
+      <span class="row-name">${esc(p.name)}${p.rating ? ` <span class="row-rating">${STAR}${p.rating}</span>` : ""}</span>
       <span class="row-meta">${meta}</span>
     </button>${checkBtn(p)}
   </div>`;
@@ -227,31 +227,50 @@ function renderAll() {
 }
 
 // ---------- Fiche ----------
+const ICONS = {
+  phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
+  book: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 15h3"/>',
+  menu: '<path d="M7 3v8a2 2 0 0 0 4 0V3M9 11v10M17 3c-2 2-2 6 0 8v10"/>',
+  web: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+  insta: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  pencil: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13 7 4 4"/>',
+};
+const icon = (k) => `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">${ICONS[k]}</svg>`;
+const STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>';
+const RATING_LABELS = ["", "Décevant", "Moyen", "Bien", "Très bon", "Exceptionnel"];
+
 function linkFor(p) {
-  const where = `${p.name}, ${p.address || p.city || "Paris"}`;
+  const place = p.address || `${p.name}, ${p.city || "Paris"}`;
+  const q = (extra) => `https://www.google.com/search?q=${enc(`${p.name} ${p.address || p.city || "Paris"} ${extra}`)}`;
   return {
-    menu: p.menu || `https://www.google.com/search?q=${enc(`${p.name} ${p.address || p.city || "Paris"} menu`)}`,
-    gmaps: `https://www.google.com/maps/search/?api=1&query=${enc(where)}`,
-    apple: `https://maps.apple.com/?q=${enc(p.name)}${p.address ? `&address=${enc(p.address)}` : "&near=Paris"}`,
-    insta: p.source || `https://www.google.com/search?q=${enc(`${p.name} ${p.city || "Paris"} instagram`)}`,
+    menu: p.menu || q("menu"),
+    apple: `https://maps.apple.com/?daddr=${enc(place)}&dirflg=d`,
+    gmaps: `https://www.google.com/maps/dir/?api=1&destination=${enc(`${p.name}, ${place}`)}`,
+    waze: `https://waze.com/ul?${p.lat ? `ll=${p.lat},${p.lng}&` : `q=${enc(place)}&`}navigate=yes`,
+    insta: p.source || q("instagram"),
+    book: p.booking || q("réserver une table"),
+    call: p.phone ? `tel:${p.phone.replace(/[^\d+]/g, "")}` : q("téléphone"),
   };
 }
 
 let current = null;
-function openSheet(id) {
+function openSheet(id, keepScroll) {
   const p = S.places.find((x) => x.id === id);
   if (!p) return;
   current = p;
   const L = linkFor(p);
   const custom = store.get("custom", []).some((c) => c.id === id);
+  const sheet = $("#sheet");
+  const prevScroll = sheet.scrollTop;
   const plaque = p.list === "paris" && p.arr
     ? `<span class="plaque"><span class="p-kick">Arrondt</span><span class="p-num">${arrHtml(p.arr)}</span></span>`
     : `<span class="plaque"><span class="p-kick">${p.list === "precieuses" ? "Précieuses" : esc(p.city || "Ville")}</span><span class="p-num" style="font-size:17px">${esc(p.cat || "")}</span></span>`;
-  const sheet = $("#sheet");
+  const r = p.rating || 0;
   sheet.innerHTML = `
     <div class="hero ${p.photo ? "photo" : ""}" style="--hc:${catVar(p.cat)}">
       <span class="grab"></span>
-      ${p.photo ? `<img src="${esc(p.photo)}" alt="" onerror="this.remove();this.parentNode.classList.remove('photo')">` : `<span class="mono" aria-hidden="true">${esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase())}</span>`}
+      ${p.photo ? `<img src="${esc(p.photo)}" alt="" referrerpolicy="no-referrer" onerror="this.remove();this.parentNode.classList.remove('photo')">` : `<span class="mono" aria-hidden="true">${esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase())}</span>`}
       ${plaque}
       <button class="close" data-close aria-label="Fermer">×</button>
     </div>
@@ -259,31 +278,97 @@ function openSheet(id) {
       <div>
         <h2 id="sheetName">${esc(p.name)}</h2>
         <div class="sheet-sub"><span class="tag" style="--tc:${catVar(p.cat)}">${esc(p.cat || "Sans type")}</span>
-          ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}${p.mark ? `<span class="mark">${esc(p.mark)}</span>` : ""}</div>
+          ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}
+          ${p.gRating ? `<span class="g-rating">${STAR}${esc(p.gRating)} Google</span>` : ""}</div>
       </div>
+
+      <div class="quick">
+        <a class="q" href="${esc(L.call)}" ${p.phone ? "" : 'target="_blank" rel="noopener"'}>${icon("phone")}<span>${p.phone ? "Appeler" : "Numéro"}</span></a>
+        <a class="q" href="${esc(L.book)}" target="_blank" rel="noopener">${icon("book")}<span>Réserver</span></a>
+        <a class="q" href="${esc(L.menu)}" target="_blank" rel="noopener">${icon("menu")}<span>Menu</span></a>
+        <a class="q" href="${esc(L.insta)}" target="_blank" rel="noopener">${icon("insta")}<span>${p.source ? "Publication" : "Instagram"}</span></a>
+      </div>
+
       <button class="tested-btn ${p.tested ? "on" : ""}" data-tested aria-pressed="${p.tested}">
         <span class="check big ${p.tested ? "on" : ""}">${CHECK_SVG}</span>
         <span class="tb-text"><strong>${p.tested ? "Déjà testé" : "Pas encore testé"}</strong>
         <small>${p.tested ? "Touche pour annuler" : "Touche quand tu y es allé"}</small></span>
       </button>
+
+      <section class="block">
+        <div class="block-head"><h3>Mon avis</h3><span class="rating-label">${r ? RATING_LABELS[r] : "Pas encore noté"}</span></div>
+        <div class="stars" role="radiogroup" aria-label="Ma note">
+          ${[1, 2, 3, 4, 5].map((n) => `<button class="star ${n <= r ? "on" : ""}" data-rate="${n}" role="radio" aria-checked="${n === r}" aria-label="${n} sur 5, ${RATING_LABELS[n]}">${STAR}</button>`).join("")}
+        </div>
+        <label class="sr" for="comment">Mon commentaire</label>
+        <textarea id="comment" rows="3" placeholder="Mon commentaire : plats à reprendre, ambiance, avec qui y aller…">${esc(p.comment || "")}</textarea>
+        <span class="saved" id="savedHint" hidden>Enregistré</span>
+      </section>
+
       ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : ""}
       ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
-      ${p.address ? `<div class="addr"><span>${esc(p.address)}</span><button data-copy>Copier</button></div>` : `<p class="note">Adresse pas encore renseignée. Les boutons cherchent le lieu par son nom.</p>`}
-      <div class="actions">
-        <a class="btn primary" href="${esc(L.menu)}" target="_blank" rel="noopener">${p.menu ? "Voir le menu" : "Chercher le menu"}</a>
-        <a class="btn" href="${esc(L.gmaps)}" target="_blank" rel="noopener">Google Maps</a>
-        <a class="btn" href="${esc(L.apple)}" target="_blank" rel="noopener">Plans</a>
-        <a class="btn" href="${esc(L.insta)}" target="_blank" rel="noopener">${p.source ? "Publication d'origine" : "Instagram"}</a>
-      </div>
-      <div class="marks"><span class="lbl">Coup de cœur</span>
-        ${["", "🤌", "👌🏼"].map((m) => `<button data-mark="${m}" class="${(p.mark || "") === m ? "on" : ""}">${m || "Aucune"}</button>`).join("")}
-      </div>
+
+      <section class="block">
+        <h3>Y aller</h3>
+        ${p.address ? `<div class="addr"><span>${esc(p.address)}</span><button data-copy>Copier</button></div>` : `<p class="note">Adresse pas encore renseignée : les itinéraires cherchent le lieu par son nom.</p>`}
+        <div class="nav-apps">
+          <a class="nav-app apple" href="${esc(L.apple)}" target="_blank" rel="noopener"><span class="app-dot"></span>Plans</a>
+          <a class="nav-app google" href="${esc(L.gmaps)}" target="_blank" rel="noopener"><span class="app-dot"></span>Google Maps</a>
+          <a class="nav-app waze" href="${esc(L.waze)}" target="_blank" rel="noopener"><span class="app-dot"></span>Waze</a>
+        </div>
+      </section>
+
+      <section class="block infos">
+        <div class="block-head"><h3>Infos</h3><button class="link-btn" data-editinfo>${icon("pencil")}Compléter</button></div>
+        ${infoRow("phone", "Téléphone", p.phone, p.phone ? L.call : "")}
+        ${infoRow("clock", "Horaires", p.hours, "")}
+        ${infoRow("book", "Réservation", p.booking ? "Lien de réservation" : "", p.booking)}
+        ${infoRow("menu", "Menu", p.menu ? "Voir le menu" : "", p.menu)}
+        ${infoRow("web", "Site web", p.website ? p.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") : "", p.website)}
+        <form class="edit-info" id="editInfo" hidden>
+          ${editField("phone", "Téléphone", "tel", p.phone, "01 23 45 67 89")}
+          ${editField("booking", "Lien de réservation", "url", p.booking, "https://www.thefork.fr/…")}
+          ${editField("menu", "Lien du menu", "url", p.menu, "https://…")}
+          ${editField("website", "Site web", "url", p.website, "https://…")}
+          ${editField("hours", "Horaires", "text", p.hours, "Mar–Sam 12h–14h30, 19h–23h")}
+          ${editField("photo", "Lien d'une photo", "url", p.photo, "https://…/photo.jpg")}
+          ${editField("source", "Lien Instagram", "url", p.source, "https://www.instagram.com/…")}
+          <div class="row-actions"><button class="btn primary" type="submit">Enregistrer</button><button class="btn ghost" type="button" data-canceledit>Annuler</button></div>
+        </form>
+      </section>
+
+      ${p.mark ? `<p class="note">Marque de ta note d'origine : ${esc(p.mark)}</p>` : ""}
       ${custom ? `<div class="row-actions"><button class="btn" data-edit>Modifier</button><button class="btn danger" data-remove>Supprimer</button></div>` : ""}
     </div>`;
   sheet.hidden = false; $("#backdrop").hidden = false;
-  sheet.scrollTop = 0;
+  sheet.scrollTop = keepScroll ? prevScroll : 0;
+}
+function infoRow(ic, label, value, href) {
+  const v = value ? (href ? `<a href="${esc(href)}" ${href.startsWith("tel:") ? "" : 'target="_blank" rel="noopener"'}>${esc(value)}</a>` : `<span>${esc(value)}</span>`) : `<span class="empty-val">À compléter</span>`;
+  return `<div class="info-row">${icon(ic)}<span class="info-label">${label}</span>${v}</div>`;
+}
+function editField(key, label, type, value, ph) {
+  return `<label for="e-${key}">${label}</label><input id="e-${key}" name="${key}" type="${type}" value="${esc(value || "")}" placeholder="${esc(ph)}" ${type === "url" ? 'inputmode="url"' : ""}>`;
 }
 function closeSheet() { $("#sheet").hidden = true; $("#backdrop").hidden = true; current = null; }
+
+let commentTimer;
+$("#sheet").addEventListener("input", (e) => {
+  if (e.target.id !== "comment" || !current) return;
+  const id = current.id, text = e.target.value;
+  clearTimeout(commentTimer);
+  commentTimer = setTimeout(() => {
+    setEdit(id, { comment: text }); current = S.places.find((x) => x.id === id);
+    const h = $("#savedHint"); if (h) { h.hidden = false; setTimeout(() => (h.hidden = true), 1500); }
+  }, 400);
+});
+$("#sheet").addEventListener("submit", (e) => {
+  if (e.target.id !== "editInfo" || !current) return;
+  e.preventDefault();
+  // On ne garde que ce qui a changé, pour ne pas masquer les infos ajoutées plus tard.
+  const patch = Object.fromEntries([...new FormData(e.target)].map(([k, v]) => [k, String(v).trim()]).filter(([k, v]) => v !== (current[k] || "")));
+  setEdit(current.id, patch); renderAll(); openSheet(current.id, true); toast("Fiche mise à jour");
+});
 
 $("#sheet").addEventListener("click", async (e) => {
   const t = e.target.closest("button");
@@ -293,14 +378,22 @@ $("#sheet").addEventListener("click", async (e) => {
     try { await navigator.clipboard.writeText(current.address); toast("Adresse copiée"); } catch { toast("Copie impossible, garde le doigt appuyé sur l'adresse"); }
     return;
   }
+  if (t.dataset.rate) {
+    const n = +t.dataset.rate;
+    const next = current.rating === n ? 0 : n;
+    setEdit(current.id, { rating: next }); renderAll(); openSheet(current.id, true);
+    $$("#sheet .star.on").forEach((st, i) => { st.style.animationDelay = `${i * 40}ms`; st.classList.add("pop"); });
+    return;
+  }
+  if (t.hasAttribute("data-editinfo")) { const f = $("#editInfo"); f.hidden = !f.hidden; if (!f.hidden) f.querySelector("input").focus(); return; }
+  if (t.hasAttribute("data-canceledit")) { $("#editInfo").hidden = true; return; }
   if (t.hasAttribute("data-tested")) {
     const id = current.id;
     toggleTested(id, null);
-    renderAll(); openSheet(id);
+    renderAll(); openSheet(id, true);
     $("#sheet .check.big")?.classList.add("pop");
     return;
   }
-  if (t.dataset.mark !== undefined) { setEdit(current.id, { mark: t.dataset.mark }); renderAll(); openSheet(current.id); return; }
   if (t.hasAttribute("data-edit")) { const id = current.id; closeSheet(); editPlace(id); return; }
   if (t.hasAttribute("data-remove")) {
     if (t.dataset.confirm) {

@@ -1,0 +1,86 @@
+// Complète les fiches depuis le site de chaque resto : photo (og:image),
+// téléphone et adresse du site. Ne remplace jamais une info déjà présente.
+import { readFile, writeFile } from "node:fs/promises";
+
+const FILE = new URL("../data/places.json", import.meta.url);
+const places = JSON.parse(await readFile(FILE, "utf8"));
+
+// Hébergeurs de fichiers ou plateformes : leur page d'accueil n'est pas celle du resto.
+const NOT_A_SITE = /google\.|thefork|drive\.|linktr\.ee|amazonaws|squarespace-cdn|static1\.squarespace|website-files|dish\.co|instagram|facebook|ubereats|deliveroo|restaurantguru|tripadvisor|canva|calameo|issuu|wixstatic|flipsnack|menu\.|\.pdf$/i;
+
+function siteOf(url) {
+  try {
+    const u = new URL(url);
+    if (NOT_A_SITE.test(u.hostname) || /\.pdf($|\?)/i.test(u.pathname)) return null;
+    return u.origin;
+  } catch { return null; }
+}
+
+async function get(url) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 9000);
+  try {
+    const r = await fetch(url, { signal: ctrl.signal, redirect: "follow", headers: { "user-agent": "Mozilla/5.0 (GoodFoodList)", "accept-language": "fr-FR,fr" } });
+    if (!r.ok || !/html/.test(r.headers.get("content-type") || "")) return null;
+    return { html: (await r.text()).slice(0, 600000), url: r.url };
+  } catch { return null; } finally { clearTimeout(t); }
+}
+
+const decode = (s) => s.replace(/&amp;/g, "&").replace(/&#0?39;/g, "'").replace(/&quot;/g, '"');
+
+function ogImage(html, base) {
+  const m = html.match(/<meta[^>]+(?:property|name)=["'](?:og:image(?::secure_url)?|twitter:image)["'][^>]*>/i);
+  const c = m && m[0].match(/content=["']([^"']+)["']/i);
+  if (!c) return null;
+  try {
+    const u = new URL(decode(c[1]), base).href;
+    return /logo|favicon|placeholder/i.test(u) ? null : u;
+  } catch { return null; }
+}
+
+function phone(html) {
+  const cands = [
+    ...[...html.matchAll(/href=["']tel:([^"']+)["']/gi)].map((m) => m[1]),
+    ...[...html.matchAll(/"telephone"\s*:\s*"([^"]+)"/gi)].map((m) => m[1]),
+  ];
+  for (const raw of cands) {
+    let d = decodeURIComponent(raw).replace(/[^\d+]/g, "");
+    if (d.startsWith("0033")) d = "+33" + d.slice(4);
+    if (d.startsWith("+330")) d = "+33" + d.slice(4);
+    if (/^0[1-9]\d{8}$/.test(d)) return d.replace(/(\d{2})(?=\d)/g, "$1 ").trim();
+    if (/^\+33[1-9]\d{8}$/.test(d)) return "0" + d.slice(3).replace(/(\d)(\d{2})(\d{2})(\d{2})(\d{2})/, "$1 $2 $3 $4 $5");
+  }
+  return null;
+}
+
+const todo = places.filter((p) => !p.enriched && (p.menu || p.website));
+const bySite = new Map();
+for (const p of todo) {
+  const site = siteOf(p.website || p.menu);
+  if (!site) { p.enriched = true; continue; }
+  if (!bySite.has(site)) bySite.set(site, []);
+  bySite.get(site).push(p);
+}
+
+let photos = 0, phones = 0, done = 0;
+const sites = [...bySite.keys()];
+async function worker() {
+  while (sites.length) {
+    const site = sites.shift();
+    const page = await get(site + "/");
+    for (const p of bySite.get(site)) {
+      p.enriched = true;
+      if (!p.website) p.website = site;
+      if (!page) continue;
+      const img = !p.photo && ogImage(page.html, page.url);
+      if (img) { p.photo = img; photos++; }
+      // Un même site peut servir plusieurs adresses : le numéro n'est gardé que s'il n'y en a qu'une.
+      const tel = !p.phone && bySite.get(site).length === 1 && phone(page.html);
+      if (tel) { p.phone = tel; phones++; }
+    }
+    done++;
+  }
+}
+await Promise.all(Array.from({ length: 8 }, worker));
+await writeFile(FILE, JSON.stringify(places, null, 1));
+console.log(`${done} sites lus : ${photos} photos, ${phones} téléphones ajoutés`);

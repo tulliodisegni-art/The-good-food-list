@@ -71,7 +71,8 @@ def main():
         seen.add(p["id"])
         prev = old.get(p["id"], {})
         # Garde les infos enrichies à la main ou par le géocodage.
-        for key in ("lat", "lng", "menu", "photo", "summary", "source", "note"):
+        for key in ("lat", "lng", "menu", "photo", "summary", "source", "note", "website", "phone",
+                    "hours", "booking", "gRating", "gid", "gChecked", "gmaps", "enriched"):
             if prev.get(key):
                 p[key] = prev[key]
     out.write_text(json.dumps(places, ensure_ascii=False, indent=1), encoding="utf-8")
