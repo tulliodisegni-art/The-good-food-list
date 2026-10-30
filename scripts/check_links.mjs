@@ -4,7 +4,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const FILE = new URL("../data/places.json", import.meta.url);
 const places = JSON.parse(await readFile(FILE, "utf8"));
-const V = 2;
+const V = 2; // version de la vérification
 
 const norm = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase()
   .replace(/\b(le|la|les|l|the|chez|restaurant|resto|paris|cafe|bar)\b/g, " ").replace(/[^a-z0-9]+/g, "");
@@ -76,9 +76,18 @@ async function check(p) {
     delete p.booking; dropped++; return;
   }
   // TheFork, SevenRooms, OpenTable : le nom du lieu doit apparaître dans l'adresse ou la page.
-  const platform = /thefork|lafourchette|sevenrooms|opentable|resy|guestonline|covermanager|formitable|dish\.co/.test(u.hostname);
+  // Seules les pages TheFork trouvées par recherche web peuvent être celles d'un autre resto :
+  // les modules de réservation lus sur le site du lieu (OpenTable, SevenRooms…) sont gardés.
+  const platform = /thefork\.(fr|com)$/.test(u.hostname.replace(/^www\./, "")) && /^\/restaurant\//.test(u.pathname);
   const page = await get(u.href);
-  if (!page || page.status >= 400 && page.status !== 403 && page.status !== 429) { delete p.booking; dropped++; console.log(`retiré (cassé ${page?.status}) ${p.name} : ${was}`); return; }
+  // Pas de réponse (site lent, robot bloqué) : on garde le lien et on réessaiera.
+  if (!page) { kept++; return; }
+  if (page.status === 404 || page.status === 410) { delete p.booking; dropped++; console.log(`retiré (cassé ${page.status}) ${p.name} : ${was}`); return; }
+  if (page.status >= 400) { kept++; return; }
+  // Un lien vers un établissement d'une autre ville.
+  if (p.list !== "villes" && /dubai|london|londres|new-?york|miami|marrakech|ibiza|mykonos|riyadh|doha|monaco|saint-tropez|courchevel|luxembourg|geneve|bruxelles/i.test(u.href)) {
+    delete p.booking; dropped++; console.log(`retiré (autre ville) ${p.name} : ${was}`); return;
+  }
   if (platform) {
     const title = (page.html.match(/<title>([^<]*)/i) || [])[1] || "";
     if (/module\.lafourchette/.test(u.hostname) || matches(u.pathname + " " + title, p.name)) { p.bookingOk = V; kept++; return; }

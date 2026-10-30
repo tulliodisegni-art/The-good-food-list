@@ -674,7 +674,9 @@
   "priceSrc": "estim",
   "photo": "https://uniiti.com/images/shops/slides/e7f2820ca2c8ed1ad376461bf94b2e15f0383a83.jpeg",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "booking": "https://cafedelepoque.fr/fr/booking",
+  "bookingOk": 2
  },
  {
   "id": "paris-1-cafe-le-cafe-marly",
@@ -780,7 +782,9 @@
   "instagram": "hotelmadamereve",
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://www.sevenrooms.com/explore/restaurantmr/reservations/create/search/",
+  "bookingOk": 2
  },
  {
   "id": "paris-2-francais-strogoff",
@@ -922,7 +926,9 @@
   "photo": "https://lagrappeparis.com/tenants/la-grappe/uploads/upload-uabRTm3RDa.jpg",
   "phone": "01 40 13 00 17",
   "igSearched": 1,
-  "instagram": "la__grappe"
+  "instagram": "la__grappe",
+  "booking": "https://www.opentable.fr/booking/restref/availability?rid=364110&restref=364110&lang=fr-FR",
+  "bookingOk": 2
  },
  {
   "id": "paris-2-francais-astair",
@@ -986,7 +992,9 @@
   "enriched": 5,
   "photo": "https://montecitoparis.com/wp-content/themes/barefoottheme/img/book.png",
   "phone": "01 80 40 76 40",
-  "instagram": "montecitorestaurantparis"
+  "instagram": "montecitorestaurantparis",
+  "booking": "https://www.opentable.fr/restref/client/?restref=330084&lang=fr-FR",
+  "bookingOk": 2
  },
  {
   "id": "paris-2-italien-pizz-aria",
@@ -1425,7 +1433,9 @@
   "price": 1,
   "priceSrc": "estim",
   "photo": "https://asset.uniiti.com/images/shops/slides/13168ccd520cde8cc7a2833c82f495da0157c503.png",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://cheztoye.fr/fr/booking",
+  "bookingOk": 2
  },
  {
   "id": "paris-2-chinois-sweetraviolis",
@@ -1744,7 +1754,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "booking": "https://www.thefork.fr/restaurant/cafe-jeanne-park-hyatt-paris-vendome-r706347",
+  "bookingOk": 2
  },
  {
   "id": "paris-2-cafe-contrastes",
@@ -2048,7 +2060,9 @@
   "price": 2,
   "priceSrc": "estim",
   "photo": "https://uniiti.com/images/shops/slides/536c57cd996f636fc5036bd17b844712fe1cbde8.jpeg",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://restaurant-doma.fr/fr/booking",
+  "bookingOk": 2
  },
  {
   "id": "paris-3-burger-paris-new-york",
@@ -3134,7 +3148,9 @@
   "instagram": "tsukiziparis",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://www.opentable.fr/booking/restref/availability?restRef=435936&lang=fr-FR",
+  "bookingOk": 2
  },
  {
   "id": "paris-6-chinois-yoom",
@@ -3291,7 +3307,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "yakuza.paris"
+  "instagram": "yakuza.paris",
+  "booking": "https://www.thefork.fr/restaurant/yakuza-sando-r742909",
+  "bookingOk": 2
  },
  {
   "id": "paris-7-francais-thoumieux",
@@ -3412,7 +3430,9 @@
   "instagram": "fitzgroupevents",
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://www.sevenrooms.com/explore/fitzgroup/reservations/create/search?venues=camondo%2Chollywoodsavoy%2Clafontainegaillon%2Cfitzgerald%2Cabstinence",
+  "bookingOk": 2
  },
  {
   "id": "paris-7-indien-new-jawad-new-balal",
@@ -4122,7 +4142,9 @@
   "instagram": "19.20.paris",
   "price": 4,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://www.sevenrooms.com/reservations/bar1920",
+  "bookingOk": 2
  },
  {
   "id": "paris-8-cafe-cafe-fino",
@@ -4470,7 +4492,9 @@
   "priceSrc": "estim",
   "halal": true,
   "photo": "https://cdn.prod.website-files.com/6716c60b52eebb357f7ac0fb/6716c60b52eebb357f7ac1e5_5.png",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://reservation.dish.co/widget/hydra-0d3c17b0-de64-11eb-9d88-1ff946f3a17d",
+  "bookingOk": 2
  },
  {
   "id": "paris-9-japonais-kokuban",
@@ -4859,7 +4883,9 @@
   "price": 1,
   "priceSrc": "estim",
   "photo": "https://asset.uniiti.com/images/shops/slides/8ab88e2064088026e00a06db2f9af15e3be53c78.jpeg",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://miranchitopaisa.com/fr/booking",
+  "bookingOk": 2
  },
  {
   "id": "paris-9-tapas-la-bouche-bleue",
@@ -5060,7 +5086,9 @@
   "price": 3,
   "priceSrc": "estim",
   "photo": "https://www.cafedelapaix.fr/assets/uploads/2021/06/cafe-de-la-paix-jerome-galland-2-960x640.jpg",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://widget.thefork.com/fr/e85c5b5e-4c70-4f97-ae20-8b6e7f3efaf6?step=date",
+  "bookingOk": 2
  },
  {
   "id": "paris-9-bar-a-cocktails-les-commeres",
@@ -5825,7 +5853,9 @@
   "instagram": "parenthesebrunch",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://www.opentable.fr/restref/client/?restref=393372&lang=fr-FR",
+  "bookingOk": 2
  },
  {
   "id": "paris-10-cafe-le-cafe-bistrot",
@@ -6838,7 +6868,9 @@
   "photo": "https://aunreve.fr/themes/leo_olars/assets/img/modules/appagebuilder/images/fe0ee117505daaffeb5dc4ef13440a5.jpg",
   "phone": "01 48 05 94 36",
   "igSearched": 1,
-  "instagram": "aunreve"
+  "instagram": "aunreve",
+  "booking": "https://www.opentable.fr/booking/restref/availability?lang=fr-FR&restRef=405672",
+  "bookingOk": 2
  },
  {
   "id": "paris-11-brunch-l-atelier-saisonnier",
@@ -7539,7 +7571,9 @@
   "photo": "https://uniiti.com/images/shops/slides/342c9e361fade7cb62ad23278294371e7b2fa586.jpeg",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "le_dalea"
+  "instagram": "le_dalea",
+  "booking": "https://dalea.fr/fr/booking",
+  "bookingOk": 2
  },
  {
   "id": "paris-14-francais-les-fondus-de-la-raclette",
@@ -7599,7 +7633,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "booking": "https://www.thefork.fr/restaurant/papy-aux-fourneaux-i-la-table-d-hotes-i-montparnasse-r383779",
+  "bookingOk": 2
  },
  {
   "id": "paris-14-francais-le-bouquet-alesia",
@@ -8242,7 +8278,9 @@
   "price": 2,
   "priceSrc": "estim",
   "photo": "https://uniiti.com/images/shops/slides/1396952b382b25a75417d50a687bdfdf3c762ade.jpeg",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://rasnarestaurant.fr/fr/booking",
+  "bookingOk": 2
  },
  {
   "id": "paris-15-iranien-shabestan",
@@ -9436,7 +9474,8 @@
   "enriched": 5,
   "photo": "https://www.maison-sauvage.fr/wp-content/uploads/2023/07/ILLUSTRATION-WEB-MS-BUCI.png",
   "bookingScan": 1,
-  "bookingOk": 0
+  "bookingOk": 2,
+  "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR"
  },
  {
   "id": "paris-18-francais-ma-biche",
@@ -11456,7 +11495,9 @@
   "enriched": 5,
   "photo": "https://uniiti.com/images/shops/slides/6e974ab1b84308a3000374b8aabe6ce3f5f93814.jpeg",
   "phone": "01 71 97 59 85",
-  "instagram": "darkoum_cantine_marocaine"
+  "instagram": "darkoum_cantine_marocaine",
+  "booking": "https://darkoum-cantine-marocaine.fr/fr/booking",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-resto-kodawari-tsukiji",
@@ -11486,7 +11527,8 @@
   "enriched": 5,
   "photo": "https://www.maison-sauvage.fr/wp-content/uploads/2023/07/ILLUSTRATION-WEB-MS-BUCI.png",
   "bookingScan": 1,
-  "bookingOk": 0
+  "bookingOk": 2,
+  "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR"
  },
  {
   "id": "precieuses-0-resto-la-table-de-colette",
@@ -12002,7 +12044,9 @@
   "enriched": 5,
   "halal": true,
   "photo": "https://cdn.prod.website-files.com/68be93b78f1fe40bdb880c62/68e52a36218558b23f735508_OG%20IMAGE%20-%20Media%20Presse.jpg",
-  "instagram": "ephemeragroup"
+  "instagram": "ephemeragroup",
+  "booking": "https://www.sevenrooms.com/explore/jungle-palace/reservations/create/search",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-resto-la-reverie",
@@ -12278,7 +12322,9 @@
   "instagram": "fitzgroupevents",
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://www.sevenrooms.com/explore/fitzgroup/reservations/create/search?venues=camondo%2Chollywoodsavoy%2Clafontainegaillon%2Cfitzgerald%2Cabstinence",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-resto-la-scene-theleme",
@@ -12699,7 +12745,9 @@
   "enriched": 5,
   "photo": "https://www.lempiredu8eme.com/quality_auto/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png",
   "phone": "01 43 59 21 47",
-  "instagram": "lempiredu8eme.paris"
+  "instagram": "lempiredu8eme.paris",
+  "booking": "https://www.opentable.fr/booking/restref/availability?lang=fr-FR&restRef=279756",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-resto-festif-manko-paris",
@@ -13085,7 +13133,9 @@
   "website": "https://girafe-restaurant.com",
   "enriched": 5,
   "photo": "https://girafe-restaurant.com/app/app-uploads/2025/07/Tables-Girafe-250610-003.jpg",
-  "instagram": "girafe_paris"
+  "instagram": "girafe_paris",
+  "booking": "https://www.sevenrooms.com/experiences/girafeparis",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-rooftop-madame-reve",
@@ -13104,7 +13154,9 @@
   "enriched": 5,
   "photo": "https://madamereve.com/wp-content/uploads/2021/10/Balise_og_madame-reve.jpg",
   "phone": "01 80 40 77 70",
-  "instagram": "hotelmadamereve"
+  "instagram": "hotelmadamereve",
+  "booking": "https://www.sevenrooms.com/explore/restaurantmr/reservations/create/search/",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-rooftop-chez-mila",
@@ -13238,7 +13290,9 @@
   "instagram": "hotelmadamereve",
   "price": 3,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "booking": "https://www.sevenrooms.com/explore/restaurantmr/reservations/create/search/",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-rooftop-terraza-mikuna",
@@ -13382,7 +13436,9 @@
   "website": "https://entracte-opera.fr",
   "enriched": 5,
   "photo": "https://uniiti.com/images/shops/slides/4ff4de5917b24cddd1ba4796408f84a7b347884b.jpeg",
-  "phone": "01 47 42 26 25"
+  "phone": "01 47 42 26 25",
+  "booking": "https://entracte-opera.fr/fr/booking",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-boire-un-verre-yago-pigalle",
