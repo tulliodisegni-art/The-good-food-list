@@ -809,3 +809,10 @@ button { -webkit-tap-highlight-color: transparent; }
 .diet-checks label { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: var(--ink); }
 .diet-checks input { width: 20px; height: 20px; accent-color: var(--c-it); }
 .pills { justify-content: flex-start; }
+/* Bouton dont le lien manque : on peut l'ajouter */
+.q.missing { border: 1.5px dashed var(--line); background: transparent; color: var(--muted); cursor: pointer; font: inherit; font-size: 12px; font-weight: 700; }
+.q.missing i { font-style: normal; font-size: 10.5px; font-weight: 700; color: var(--plaque); margin-top: -4px; }
+button.q { border: 0; cursor: pointer; font: inherit; font-size: 12px; font-weight: 700; }
+.need-form { display: grid; gap: 10px; margin: 14px 0; }
+.need-form input { width: 100%; border: 1px solid var(--line); background: var(--bg); border-radius: 12px; padding: 13px 14px; font-size: 16px; }
+.need-find { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }

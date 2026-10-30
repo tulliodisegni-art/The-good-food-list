@@ -76,7 +76,8 @@ for (const p of places) {
     if (h) { p.instagram = h; igs++; }
   }
   if (!p.booking) {
-    const fork = links.find((u) => /thefork\.(fr|com)\/restaurant\//.test(u));
+    // La page TheFork doit être celle de ce lieu (son nom dans l'adresse).
+    const fork = links.find((u) => /thefork\.(fr|com)\/restaurant\//.test(u) && close(u.split("/restaurant/")[1].replace(/-r\d+.*$/, ""), p.name));
     if (fork) { p.booking = fork.split("?")[0]; forks++; }
   }
   if (!p.website) {

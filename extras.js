@@ -495,3 +495,60 @@ document.addEventListener("submit", async (e) => {
   } catch { toast("Avis non envoyé, vérifie ta connexion"); }
 });
 loadAvis();
+
+// ---------- Liens manquants : les ajouter soi-même ----------
+// Instagram : on ouvre le profil directement dans l'appli, sinon sur le site.
+function openInstagram(h) {
+  const web = `https://www.instagram.com/${h}/`;
+  if (!/iPhone|iPad|Android/i.test(navigator.userAgent)) { window.open(web, "_blank", "noopener"); return; }
+  let left = false;
+  const onHide = () => { left = true; };
+  document.addEventListener("visibilitychange", onHide, { once: true });
+  location.href = `instagram://user?username=${h}`;
+  setTimeout(() => { document.removeEventListener("visibilitychange", onHide); if (!left && document.visibilityState === "visible") window.open(web, "_blank", "noopener"); }, 1400);
+}
+const NEED = {
+  phone: { title: "Numéro de téléphone", ph: "01 23 45 67 89", type: "tel", help: "Le numéro est souvent sur la fiche Google Maps du lieu.",
+    find: (p) => [["Fiche Google Maps", linkFor(p).call], ["Chercher sur Google", `https://www.google.com/search?q=${enc(`${p.name} ${p.city || "Paris"} téléphone`)}`]] },
+  booking: { title: "Lien de réservation", ph: "https://…", type: "url", help: "Ouvre la page où on réserve une table (TheFork, Zenchef, site du resto…), copie son adresse et colle-la ici.",
+    find: (p) => [["Chercher sur TheFork", `https://www.google.com/search?q=${enc(`site:thefork.fr ${p.name} ${p.city || "Paris"}`)}`],
+      ["Chercher sur Google", `https://www.google.com/search?q=${enc(`${p.name} ${p.city || "Paris"} réserver une table`)}`], ["Fiche Google Maps", linkFor(p).call]] },
+  instagram: { title: "Compte Instagram", ph: "@nomducompte ou lien du profil", type: "text", help: "Dans Instagram, ouvre le profil du resto, touche ••• puis Copier l'URL du profil, et colle-la ici.",
+    find: (p) => [["Chercher le compte", `https://www.google.com/search?q=${enc(`site:instagram.com ${p.name} ${p.city || "Paris"}`)}`]] },
+};
+let needFor = null;
+function openNeed(kind, id) {
+  const p = S.places.find((x) => x.id === id), n = NEED[kind];
+  if (!p) return;
+  needFor = { kind, id };
+  openPanel(`<h2 class="panel-title">${n.title}</h2><p class="panel-sub">${esc(p.name)} n'en a pas encore. ${n.help}</p>
+    <form class="need-form" id="needForm"><input id="needVal" type="${n.type}" placeholder="${esc(n.ph)}" autocomplete="off" required>
+      <div class="row-actions"><button class="btn primary" type="submit">Enregistrer</button><button class="btn ghost" type="button" data-need-back>Retour à la fiche</button></div></form>
+    <div class="need-find">${n.find(p).map(([l, u]) => `<a class="btn" href="${esc(u)}" target="_blank" rel="noopener">${l}</a>`).join("")}</div>
+    ${store.get("ghToken", "") ? `<p class="muted small">Avec ta clé de publication, le lien sera aussi ajouté pour tout le monde.</p>` : ""}`, "need");
+  setTimeout(() => $("#needVal")?.focus(), 250);
+}
+function cleanNeed(kind, v) {
+  v = v.trim();
+  if (kind === "instagram") { const h = igHandle({ instagram: v }); return h || null; }
+  if (kind === "phone") { const d = v.replace(/[^\d+]/g, ""); return d.length >= 8 ? v : null; }
+  if (kind === "booking") { const m = v.match(/https?:\/\/\S+/); return m ? m[0] : null; }
+  return v;
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-need],[data-ig],[data-need-back]");
+  if (!b) return;
+  if (b.dataset.ig) { openInstagram(b.dataset.ig); return; }
+  if (b.hasAttribute("data-need-back")) { const id = needFor?.id; needFor = null; if (id) openSheet(id); return; }
+  if (b.dataset.need && current) openNeed(b.dataset.need, current.id);
+});
+document.addEventListener("submit", (e) => {
+  if (e.target.id !== "needForm" || !needFor) return;
+  e.preventDefault();
+  const { kind, id } = needFor;
+  const v = cleanNeed(kind, $("#needVal").value);
+  if (!v) { toast(kind === "booking" ? "Colle un lien qui commence par https://" : kind === "instagram" ? "Compte Instagram non reconnu" : "Numéro non reconnu"); return; }
+  const patch = { [kind]: v };
+  setEdit(id, patch); renderAll(); needFor = null; openSheet(id); toast("Ajouté à la fiche");
+  shareFix(id, patch);
+});
