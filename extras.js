@@ -552,3 +552,128 @@ document.addEventListener("submit", (e) => {
   setEdit(id, patch); renderAll(); needFor = null; openSheet(id); toast("Ajouté à la fiche");
   shareFix(id, patch);
 });
+
+// ---------- Ma position et itinéraire sur la carte ----------
+let meMarker = null;
+function showMe() {
+  if (!map || !S.me) return;
+  const ll = [S.me.lat, S.me.lng];
+  if (!meMarker) {
+    meMarker = L.marker(ll, { interactive: false, zIndexOffset: 1000,
+      icon: L.divIcon({ className: "", html: '<div class="me-dot"><span></span></div>', iconSize: [22, 22], iconAnchor: [11, 11] }) }).addTo(map);
+  } else meMarker.setLatLng(ll);
+}
+// Itinéraires calculés par OSRM sur les données OpenStreetMap (gratuit, sans clé).
+const ROUTERS = {
+  car: ["https://routing.openstreetmap.de/routed-car/route/v1/driving/", "https://router.project-osrm.org/route/v1/driving/"],
+  foot: ["https://routing.openstreetmap.de/routed-foot/route/v1/foot/"],
+  bike: ["https://routing.openstreetmap.de/routed-bike/route/v1/bike/"],
+};
+const MODES = [
+  ["car", "Voiture", "🚗"], ["transit", "Transports", "🚇"], ["foot", "À pied", "🚶"], ["bike", "Vélo", "🚲"],
+];
+async function osrm(mode, a, b) {
+  for (const base of ROUTERS[mode]) {
+    try {
+      const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), 9000);
+      const r = await fetch(`${base}${a.lng},${a.lat};${b.lng},${b.lat}?overview=full&geometries=geojson`, { signal: ctrl.signal });
+      clearTimeout(t);
+      const j = r.ok ? await r.json() : null;
+      const route = j?.routes?.[0];
+      if (route) return { min: route.duration / 60, km: route.distance / 1000, geo: route.geometry };
+    } catch {}
+  }
+  return null;
+}
+const fmtMin = (m) => (m < 60 ? `${Math.max(1, Math.round(m))} min` : `${Math.floor(m / 60)} h ${String(Math.round(m % 60)).padStart(2, "0")}`);
+const RT = { id: null, mode: "car", res: {}, line: null };
+function goLinks(p, mode) {
+  const dest = `${p.lat},${p.lng}`, name = enc(`${p.name}, ${p.address || "Paris"}`);
+  const g = (tm) => `https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=${tm}`;
+  const apple = (f) => `https://maps.apple.com/?daddr=${dest}&q=${name}&dirflg=${f}`;
+  const L2 = linkFor(p);
+  return {
+    car: [["Waze", L2.waze, "waze"], ["Plans", apple("d"), "apple"], ["Google Maps", g("driving"), "google"]],
+    transit: [["Citymapper", L2.citymapper, "citymapper"], ["Plans", apple("r"), "apple"], ["Google Maps", g("transit"), "google"]],
+    foot: [["Plans", apple("w"), "apple"], ["Google Maps", g("walking"), "google"], ["Citymapper", L2.citymapper, "citymapper"]],
+    bike: [["Google Maps", g("bicycling"), "google"], ["Citymapper", L2.citymapper, "citymapper"]],
+  }[mode];
+}
+function drawRoute() {
+  const p = S.places.find((x) => x.id === RT.id);
+  if (!p || !map) return;
+  if (RT.line) { map.removeLayer(RT.line); RT.line = null; }
+  map.invalidateSize();
+  const r = RT.res[RT.mode];
+  const pad = { paddingTopLeft: [30, 110], paddingBottomRight: [30, ($("#routeCard").offsetHeight || 220) + 30] };
+  if (r && r.geo) {
+    RT.line = L.layerGroup([
+      L.geoJSON(r.geo, { style: { color: "#fff", weight: 9, opacity: 0.9 } }),
+      L.geoJSON(r.geo, { style: { color: RT.mode === "car" ? "#1d3b78" : RT.mode === "bike" ? "#2c7a4b" : "#2f6fed", weight: 5, opacity: 1, dashArray: RT.mode === "foot" ? "2 9" : null, lineCap: "round" } }),
+    ]).addTo(map);
+    map.fitBounds(L.geoJSON(r.geo).getBounds(), pad);
+  } else if (S.me) {
+    // Transports : pas de tracé disponible, on relie simplement les deux points.
+    RT.line = L.polyline([[S.me.lat, S.me.lng], [p.lat, p.lng]], { color: "#2f6fed", weight: 4, dashArray: "6 10", opacity: 0.8 }).addTo(map);
+    map.fitBounds(RT.line.getBounds(), pad);
+  }
+}
+function renderRouteCard() {
+  const p = S.places.find((x) => x.id === RT.id);
+  const card = $("#routeCard");
+  if (!p) { card.hidden = true; return; }
+  const r = RT.res[RT.mode];
+  const time = (m) => {
+    const x = RT.res[m];
+    if (x === undefined) return '<i class="rt-wait"></i>';
+    if (!x) return "—";
+    return `${x.est ? "≈ " : ""}${fmtMin(x.min)}`;
+  };
+  card.innerHTML = `<div class="rt-head"><div><b>${esc(p.name)}</b><span>${r ? `${r.km.toFixed(1).replace(".", ",")} km${r.est ? " · estimation, horaires exacts dans Citymapper" : ""}` : "Calcul du trajet…"}</span></div>
+      <button class="rt-close" data-route-close aria-label="Fermer l'itinéraire"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="rt-modes">${MODES.map(([k, l, e]) => `<button class="${k === RT.mode ? "on" : ""}" data-route-mode="${k}"><span>${e}</span><b>${time(k)}</b><small>${l}</small></button>`).join("")}</div>
+    <div class="rt-go"><span>Y aller avec</span>${goLinks(p, RT.mode).map(([l, u, c]) => `<a class="nav-app ${c}" href="${esc(u)}" target="_blank" rel="noopener"><span class="app-dot"></span>${l}</a>`).join("")}</div>`;
+  card.hidden = false;
+}
+async function showRoute(id) {
+  const p = S.places.find((x) => x.id === id);
+  if (!p || !p.lat) { toast("Ce lieu n'est pas encore placé sur la carte"); return; }
+  // On attend que l'onglet Carte soit affiché : une carte cachée n'a pas de taille.
+  if (location.hash !== "#carte") { location.hash = "carte"; await new Promise((r) => setTimeout(r, 150)); }
+  if (!map) initMap();
+  map.invalidateSize();
+  RT.id = id; RT.res = {};
+  renderRouteCard();
+  try { await locateMe(true); } catch { RT.id = null; $("#routeCard").hidden = true; return; }
+  if (RT.id !== id) return;
+  showMe();
+  const a = S.me;
+  renderRouteCard();
+  await Promise.all(["car", "foot", "bike"].map(async (m) => {
+    RT.res[m] = await osrm(m, a, p);
+    // OSRM ne connaît pas la circulation : en ville, on ajoute 30 % au temps en voiture.
+    if (m === "car" && RT.res.car) RT.res.car.min *= 1.3;
+    // Transports en commun : estimation à partir du trajet à pied (marche + attente + métro).
+    if (m === "foot" && RT.res.foot) {
+      const km = RT.res.foot.km;
+      RT.res.transit = km < 1.2 ? { ...RT.res.foot, est: true } : { min: 8 + km * 3.2, km, geo: null, est: true };
+    }
+    if (RT.id !== id) return;
+    renderRouteCard();
+    if (m === RT.mode || (RT.mode === "transit" && m === "foot")) drawRoute();
+  }));
+  if (RT.res.transit === undefined) RT.res.transit = null;
+  renderRouteCard();
+}
+function closeRoute() {
+  RT.id = null; $("#routeCard").hidden = true;
+  if (RT.line && map) { map.removeLayer(RT.line); RT.line = null; }
+}
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("[data-route-mode],[data-route-close],[data-route-sheet]");
+  if (!t) return;
+  if (t.hasAttribute("data-route-sheet")) { const id = current?.id; closeSheet(); if (id) setTimeout(() => showRoute(id), 80); return; }
+  if (t.hasAttribute("data-route-close")) { closeRoute(); return; }
+  RT.mode = t.dataset.routeMode; renderRouteCard(); drawRoute();
+});
+addEventListener("hashchange", () => { if (location.hash !== "#carte" && RT.id) closeRoute(); });

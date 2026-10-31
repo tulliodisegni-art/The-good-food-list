@@ -396,6 +396,7 @@ function openSheet(id, keepScroll) {
       <section class="block">
         <h3>Y aller</h3>
         ${p.address ? `<div class="addr"><span>${esc(p.address)}</span><button data-copy>Copier</button></div>` : `<p class="note">Adresse pas encore renseignée : les itinéraires cherchent le lieu par son nom.</p>`}
+        ${p.lat ? `<button class="btn primary wide route-btn" data-route-sheet>${icon("walk")}Voir l'itinéraire et le temps de trajet</button>` : ""}
         <div class="nav-apps">
           <a class="nav-app apple" href="${esc(L.apple)}" target="_blank" rel="noopener"><span class="app-dot"></span>Plans</a>
           <a class="nav-app google" href="${esc(L.gmaps)}" target="_blank" rel="noopener"><span class="app-dot"></span>Google Maps</a>
@@ -758,7 +759,10 @@ function initMap() {
   map.on("popupopen", (e) => {
     const b = e.popup.getElement().querySelector("[data-open]");
     if (b) b.onclick = () => openSheet(b.dataset.open);
+    const r = e.popup.getElement().querySelector("[data-route]");
+    if (r) r.onclick = () => { map.closePopup(); showRoute(r.dataset.route); };
   });
+  if (typeof showMe === "function") showMe();
   fillMapCats();
   refreshMarkers();
   geocodeMissing();
@@ -774,7 +778,7 @@ function fillMapCats() {
 function markerFor(p) {
   const icon = L.divIcon({ className: "", html: `<div class="pin ${p.tested ? "done" : ""} ${p.mark ? "star" : ""}" style="--pc:${catVar(p.cat)}"></div>`, iconSize: [20, 20], iconAnchor: [10, 10], popupAnchor: [0, -10] });
   const m = L.marker([p.lat, p.lng], { icon, title: p.name });
-  m.bindPopup(`<div class="pop-name">${esc(p.name)}</div><div class="pop-meta">${esc(p.cat)}${p.arr ? " · " + arrLabel(p.arr) : ""} ${p.tested ? "· testé" : ""} ${esc(p.mark || "")}</div><button class="pop-btn" data-open="${esc(p.id)}">Voir la fiche</button>`);
+  m.bindPopup(`<div class="pop-name">${esc(p.name)}</div><div class="pop-meta">${esc(p.cat)}${p.arr ? " · " + arrLabel(p.arr) : ""} ${p.tested ? "· testé" : ""} ${esc(p.mark || "")}</div><div class="pop-actions"><button class="pop-btn" data-open="${esc(p.id)}">Voir la fiche</button><button class="pop-btn alt" data-route="${esc(p.id)}">Itinéraire</button></div>`);
   return m;
 }
 
@@ -802,8 +806,9 @@ $("#locate").addEventListener("click", () => {
   if (!map || !navigator.geolocation) return toast("Localisation indisponible");
   navigator.geolocation.getCurrentPosition((pos) => {
     const ll = [pos.coords.latitude, pos.coords.longitude];
+    S.me = { lat: ll[0], lng: ll[1], t: Date.now() }; store.set("me", S.me);
     map.setView(ll, 16);
-    L.circleMarker(ll, { radius: 8, color: "#fff", weight: 3, fillColor: "#2f6fed", fillOpacity: 1 }).addTo(map);
+    showMe();
   }, () => toast("Autorise la localisation pour te situer"), { enableHighAccuracy: true, timeout: 10000 });
 });
 

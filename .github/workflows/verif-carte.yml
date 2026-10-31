@@ -29,6 +29,15 @@ jobs:
             await pg.goto("https://tulliodisegni-art.github.io/The-good-food-list/#carte", { waitUntil: "networkidle" });
             await pg.waitForTimeout(6000);
             await pg.screenshot({ path: "carte.png" });
+            // Itinéraire réel depuis Notre-Dame vers le premier lieu de la liste.
+            const ctx2 = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, geolocation: { latitude: 48.853, longitude: 2.3499 }, permissions: ["geolocation"] });
+            const pg2 = await ctx2.newPage();
+            pg2.on("console", (m) => console.log("console2:", m.text()));
+            await pg2.goto("https://tulliodisegni-art.github.io/The-good-food-list/#paris", { waitUntil: "networkidle" });
+            await pg2.evaluate(() => showRoute(S.places.find((p) => p.lat && p.list === "paris").id));
+            await pg2.waitForTimeout(9000);
+            console.log("trajets:", await pg2.evaluate(() => JSON.stringify(Object.fromEntries(Object.entries(RT.res).map(([k, v]) => [k, v && Math.round(v.min)])))));
+            await pg2.screenshot({ path: "route.png" });
             await b.close();
           })();
           EOF
@@ -36,6 +45,6 @@ jobs:
       - name: Garder la capture sur la branche verif
         run: |
           cd verif
-          git init -q -b verif && git add carte.png
+          git init -q -b verif && git add carte.png route.png
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "Capture de la carte"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" verif
