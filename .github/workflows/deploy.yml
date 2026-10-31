@@ -55,7 +55,8 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "Infos des restos mises à jour automatiquement" data/places.json
-            git pull --rebase -q origin main && git push
+            # Si une autre mise à jour est arrivée entre-temps, on garde les infos trouvées ici sans bloquer la mise en ligne.
+            (git pull --rebase -q -X theirs origin main && git push) || { git rebase --abort 2>/dev/null; echo "Infos non enregistrées dans le dépôt, retentées au prochain passage"; }
           fi
       - name: Mois en cours
         id: month
