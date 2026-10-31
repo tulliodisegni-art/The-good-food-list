@@ -14115,7 +14115,6 @@
   "website": "https://cafe.restaurants-de-france.fr",
   "enriched": 5,
   "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
-  "phone": "06 52 59 62 53",
   "bookingScan": 1
  },
  {
@@ -14133,10 +14132,10 @@
   "lat": 48.881849,
   "lng": 2.316009,
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/arnaud-nicolas-r313657",
   "website": "https://www.arnaudnicolas.paris",
   "enriched": 5,
-  "photo": "https://www.arnaudnicolas.paris/site/screenshot/?size_preset=fb&v=1784564856"
+  "photo": "https://www.arnaudnicolas.paris/site/screenshot/?size_preset=fb&v=1784564856",
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-best-bread-boba",
@@ -14192,7 +14191,7 @@
   "website": "https://www.lecochonaloreille.com/",
   "enriched": 5,
   "searched": 1,
-  "photo": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72u7-UKkWWJRbKrB7jfFC8xjdx59RPO44E93wQYT1oXGN8UIw_BCZFnAd-GkgxzfvO2yM3ImvrBaFsTed_hBpHYDhUXLz3WSUkPDDwgP_XWJJr9PFU6ryW6Tc2GEnU0v5jmVOhgn6es48F_td4SeE_aoxm8v9TI8HKKbn0gvFPjGANmJ179ePd3ZdyHp8UFvkY928lEwlP3dpM1vinhhDNEpaQwD_USSrramFfzWyoA=w1280",
+  "photo": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72sJ6bEJQdBPOq4sly-ajorGXeewmBjivbA4pX6GisbgL1AtM14Q2K2d6OHhLrl6XYsMr99oJaRttFtNe7YK0NBLX9SOP4XBWQmqjHbW3ItSIANHOmbfr68z02QVwo3aBLZ4icQGicjdX0dFsqvzHmCLORPzrXntI3tgog-5jsdaaLklPNcdQd_TNK2fnFOl1By9hrBGgzyvwfkxo0IMNchI2-PIu3xdvzNyIHp8VEM=w1280",
   "booking": "https://www.lecochonaloreille.com/accueil/reservation",
   "bookingOk": 2
  },
@@ -14429,7 +14428,13 @@
   "priceSrc": "estim",
   "lat": 48.842062,
   "lng": 2.348154,
-  "searched": 1
+  "searched": 1,
+  "website": "https://www.lepetitbalperdu.com",
+  "enriched": 5,
+  "photo": "https://www.lepetitbalperdu.com/Themes/v1/img/instagram-lepetitbalperdu-bistrot.png",
+  "phone": "01 47 07 72 47",
+  "instagram": "lepetitbalperduparis",
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-wax",
@@ -14581,7 +14586,11 @@
   "instagram": "lapatatedouce_radio",
   "lat": 48.866081,
   "lng": 2.357175,
-  "searched": 1
+  "searched": 1,
+  "website": "https://www.lapatatedouceradio.com",
+  "enriched": 5,
+  "photo": "https://cdn.prod.website-files.com/5e57c92306e4fe1dcb7344ef/5e883dd6a6b2c1025b9fbb60_Visu%20radio%201%20photo.jpeg",
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-le-discobar",
@@ -14703,9 +14712,8 @@
   "website": "https://www.sissi-republique.fr/",
   "enriched": 5,
   "searched": 1,
-  "photo": "https://cdn.prod.website-files.com/66b1b7453d6074384f47bb05%2F694ab783765e13922faf2855_Brunch%20Sisi%20Vide%CC%81o_poster.0000000.jpg",
-  "booking": "https://bookings.zenchef.com/results?rid=373820&lang=fr",
-  "bookingOk": 2
+  "booking": "https://www.thefork.fr/restaurant/sissi-republique-r841542",
+  "photo": "https://cdn.prod.website-files.com/66b1b7453d6074384f47bb05%2F694ab783765e13922faf2855_Brunch%20Sisi%20Vide%CC%81o_poster.0000000.jpg"
  },
  {
   "id": "ig-paris-berkeley-garden",
@@ -14913,7 +14921,12 @@
   "instagram": "bar_chopemoi",
   "lat": 48.865042,
   "lng": 2.365893,
-  "searched": 1
+  "searched": 1,
+  "website": "https://chope-moi.fr",
+  "enriched": 5,
+  "photo": "https://chope-moi.fr/images/Design-sans-titre-48.png",
+  "phone": "06 51 12 84 97",
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-le-153",
@@ -15030,9 +15043,9 @@
   "website": "https://www.lesoixantedouze.com",
   "enriched": 5,
   "searched": 1,
+  "instagram": "lesoixantedouze",
   "booking": "https://www.thefork.fr/restaurant/le-soixante-douze-r730615",
-  "photo": "https://www.lesoixantedouze.com/_frame/tw-share-facebook@2x.png",
-  "instagram": "lesoixantedouze"
+  "photo": "https://www.lesoixantedouze.com/_frame/tw-share-facebook@2x.png"
  },
  {
   "id": "ig-paris-petit-bain",
@@ -15559,7 +15572,12 @@
   "instagram": "princesscrepe.fr",
   "lat": 48.856424,
   "lng": 2.358226,
-  "searched": 1
+  "searched": 1,
+  "website": "https://princess-crepe.onataste.fr",
+  "enriched": 5,
+  "photo": "https://princess-crepe.onataste.fr/media/princess-crepe.webp",
+  "phone": "07 66 87 43 10",
+  "bookingScan": 1
  },
  {
   "id": "ig-autour-de-paris-sushi-ken",
@@ -15670,7 +15688,11 @@
   "priceSrc": "estim",
   "lat": 48.858487,
   "lng": 2.342956,
-  "searched": 1
+  "searched": 1,
+  "website": "https://cafe.restaurants-de-france.fr",
+  "enriched": 5,
+  "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-jun",
@@ -15881,7 +15903,12 @@
   "lat": 48.873355,
   "lng": 2.316018,
   "phone": "01 40 54 94 70",
-  "searched": 1
+  "searched": 1,
+  "website": "https://machiyabento.com",
+  "enriched": 5,
+  "halal": true,
+  "photo": "https://www.machiyabento.fr/img/photos/vitrine.jpg",
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-misu",
@@ -16081,10 +16108,9 @@
   "website": "https://www.fitz-group.fr/fitzgerald-paris",
   "enriched": 5,
   "searched": 1,
+  "booking": "https://www.thefork.fr/restaurant/fitzgerald-r211931",
   "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72b79c91a29549a886c_og-fitz-group-evenements.jpg",
-  "instagram": "fitzgroupevents",
-  "booking": "https://www.sevenrooms.com/explore/fitzgroup/reservations/create/search?venues=camondo%2Chollywoodsavoy%2Clafontainegaillon%2Cfitzgerald%2Cabstinence",
-  "bookingOk": 2
+  "instagram": "fitzgroupevents"
  },
  {
   "id": "ig-paris-bisou",
@@ -16653,7 +16679,6 @@
   "searched": 1,
   "website": "https://www.zincbar.com",
   "enriched": 5,
-  "photo": "https://www.zincbar.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png",
   "bookingScan": 1
  },
  {
@@ -16671,10 +16696,10 @@
   "lat": 40.744277,
   "lng": -73.983959,
   "searched": 1,
-  "instagram": "tavern29",
   "website": "https://www.tavern29.com",
   "enriched": 5,
   "photo": "https://cdn.prod.website-files.com/647118f30fd875785bc69628/6478e92f93cc6b71effc0da7_au8i9757.jpg",
+  "instagram": "tavern29nyc",
   "bookingScan": 1
  },
  {
@@ -16948,8 +16973,8 @@
   "price": 2,
   "priceSrc": "estim",
   "city": "New York",
-  "lat": 40.718042,
-  "lng": -74.001964,
+  "lat": 40.718013,
+  "lng": -74.001988,
   "searched": 1,
   "website": "https://www.auchevaldiner.com",
   "enriched": 5,
@@ -17029,8 +17054,8 @@
   "priceSrc": "estim",
   "city": "New York",
   "instagram": "kaitenzushi_nomad",
-  "lat": 40.745879,
-  "lng": -73.986869,
+  "lat": 40.745805,
+  "lng": -73.986723,
   "searched": 1,
   "website": "https://www.kaitenzushiusa.com",
   "enriched": 5,
@@ -17190,8 +17215,8 @@
   "priceSrc": "estim",
   "city": "New York",
   "instagram": "cantinarooftop",
-  "lat": 40.764788,
-  "lng": -73.995705,
+  "lat": 40.765065,
+  "lng": -73.996,
   "searched": 1,
   "website": "https://cantinarooftop.com",
   "enriched": 5,
@@ -17394,8 +17419,8 @@
   "priceSrc": "estim",
   "city": "New York",
   "instagram": "shalomjapan",
-  "lat": 40.709177,
-  "lng": -73.955761,
+  "lat": 40.709204,
+  "lng": -73.955836,
   "searched": 1,
   "website": "https://shalomjapannyc.com",
   "enriched": 5,
@@ -17684,7 +17709,7 @@
   "searched": 1,
   "website": "https://sentirnyc.com",
   "enriched": 5,
-  "photo": "https://sentirnyc.com/wp-content/uploads/2024/02/3R7A6030-HDR-1-1024x683.jpg"
+  "bookingScan": 1
  },
  {
   "id": "ig-new-york-bhi-thursdays",
@@ -17725,10 +17750,7 @@
   "kasher": true,
   "lat": 40.758178,
   "lng": -73.982984,
-  "searched": 1,
-  "website": "https://bonito-47.wheree.com",
-  "enriched": 5,
-  "bookingScan": 1
+  "searched": 1
  },
  {
   "id": "ig-new-york-caffe-aronne",
@@ -17744,8 +17766,8 @@
   "city": "New York",
   "instagram": "caffearonne",
   "kasher": true,
-  "lat": 40.799912,
-  "lng": -73.940692,
+  "lat": 40.769317,
+  "lng": -73.96302,
   "searched": 1,
   "website": "https://www.caffearonne.com",
   "enriched": 5,
@@ -17766,8 +17788,8 @@
   "city": "New York",
   "instagram": "popupbagels",
   "kasher": true,
-  "lat": 40.779961,
-  "lng": -73.977165,
+  "lat": 40.779977,
+  "lng": -73.977196,
   "searched": 1,
   "website": "https://www.popupbagels.com",
   "enriched": 5,
@@ -17885,8 +17907,8 @@
   "city": "New York",
   "instagram": "rosiespizzanyc",
   "kasher": true,
-  "lat": 40.752806,
-  "lng": -73.987538,
+  "lat": 40.752648,
+  "lng": -73.987579,
   "searched": 1
  },
  {
@@ -18073,11 +18095,7 @@
   "kasher": true,
   "lat": 32.068,
   "lng": 34.767079,
-  "searched": 1,
-  "website": "https://ola-ola.co.il",
-  "enriched": 5,
-  "photo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/render/image/public/base44-prod/public/6969f6d53d3cfeb620b3206a/10c30a525_WhatsAppImage2026-01-20at162015.jpeg?width=1200&height=630&resize=contain",
-  "bookingScan": 1
+  "searched": 1
  },
  {
   "id": "ig-tel-aviv-darya",
@@ -18291,7 +18309,6 @@
   "searched": 1,
   "website": "https://seoulhouse.co.il",
   "enriched": 5,
-  "photo": "https://seoulhouse.co.il/wp-content/uploads/2022/08/hold-food-600x400.jpeg",
   "bookingScan": 1
  },
  {
@@ -18345,8 +18362,8 @@
   "city": "Jérusalem",
   "instagram": "blackiron.bar",
   "kasher": true,
-  "lat": 31.783818,
-  "lng": 35.213023,
+  "lat": 31.783423,
+  "lng": 35.214891,
   "searched": 1
  },
  {
@@ -18379,8 +18396,8 @@
   "city": "Jérusalem",
   "instagram": "zuta_cocktailbar",
   "kasher": true,
-  "lat": 31.776654,
-  "lng": 35.222343,
+  "lat": 31.771762,
+  "lng": 35.222975,
   "searched": 1,
   "website": "https://zuta.wheree.com",
   "enriched": 5,
