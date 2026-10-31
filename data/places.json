@@ -3209,8 +3209,7 @@
   "priceSrc": "estim",
   "photo": "https://uniiti.com/images/shops/slides/51ed9ce7f3219fdb64fd3653bbfdf4be9c78e8c7.jpeg",
   "searched": 1,
-  "bookingScan": 1,
-  "bookingOk": 0
+  "bookingScan": 1
  },
  {
   "id": "paris-6-coreen-kokodak",
@@ -3536,8 +3535,7 @@
   "priceSrc": "estim",
   "photo": "https://paris.beefbar.com/wp-content/uploads/sites/8/2020/07/giraudi.beef-bar.2019.10-42.low-resolution.jpg",
   "searched": 1,
-  "bookingScan": 1,
-  "bookingOk": 0
+  "bookingScan": 1
  },
  {
   "id": "paris-8-francais-mamamia",
@@ -6847,7 +6845,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "laia_restaurant"
+  "instagram": "laia_restaurant",
+  "phone": "09 75 65 27 21"
  },
  {
   "id": "paris-11-brunch-kafkaf",
@@ -9634,8 +9633,7 @@
   "photo": "http://levraiparis-bistrot.com/wp-content/uploads/2025/11/Plan-de-travail-1-1.png",
   "searched": 1,
   "bookingScan": 1,
-  "booking": "https://module.lafourchette.com/fr_FR/module/397295",
-  "bookingOk": 0
+  "booking": "https://module.lafourchette.com/fr_FR/module/397295"
  },
  {
   "id": "paris-18-francais-tonton-de-la-butte",
@@ -11058,8 +11056,7 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1,
-  "bookingOk": 0
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-soiree-le-marta",
@@ -12120,8 +12117,7 @@
   "priceSrc": "estim",
   "photo": "https://paris.beefbar.com/wp-content/uploads/sites/8/2020/07/giraudi.beef-bar.2019.10-42.low-resolution.jpg",
   "searched": 1,
-  "bookingScan": 1,
-  "bookingOk": 0
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-resto-shinko",
@@ -13315,8 +13311,7 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1,
-  "bookingOk": 0
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-rooftop-le-toit-de-la-girafe",
@@ -13995,7 +13990,8 @@
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "precieuses-0-brunch-404-brunch-oriental",
@@ -14014,7 +14010,8 @@
   "enriched": 5,
   "photo": "https://www.brunch.fr/wp-content/themes/brunch-fr/img/brunch.png",
   "booking": "https://www.brunch.fr/pourquoi-reserver-en-ligne/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "igSearched": 1
  },
  {
   "id": "precieuses-0-brunch-le-royal-monceau",
@@ -14028,7 +14025,9 @@
   "lng": 2.300291,
   "price": 4,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "leroyalmonceau"
  },
  {
   "id": "precieuses-0-brunch-bande-de-cheffes",
