@@ -17023,5 +17023,17 @@
   "city": "Jérusalem",
   "instagram": "mimonis1",
   "kasher": true
+ },
+ {
+  "id": "ig-paris-canoe-crecy-la-chapelle",
+  "list": "precieuses",
+  "name": "Balade en canoë à Crécy-la-Chapelle",
+  "cat": "Activité",
+  "address": "Crécy-la-Chapelle, 77580",
+  "arr": null,
+  "summary": "Balade en canoë sur le Grand Morin, à moins d'1 h de Paris, idéale sous le soleil.",
+  "source": "https://www.instagram.com/reel/DZo0BzRsg_T/",
+  "price": 2,
+  "priceSrc": "estim"
  }
 ]
