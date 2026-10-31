@@ -240,6 +240,8 @@ function renderPrec() {
 const CITIES = [
   { name: "New York", sub: "États-Unis", color: "var(--c-jp)" },
   { name: "Tel-Aviv", sub: "Israël", color: "var(--c-cafe)" },
+  { name: "Jérusalem", sub: "Israël", color: "var(--c-it)" },
+  { name: "Autour de Paris", sub: "Île-de-France", color: "var(--c-fr)" },
 ];
 function renderVilles() {
   const all = S.places.filter((p) => p.list === "villes");

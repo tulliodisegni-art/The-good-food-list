@@ -64,6 +64,10 @@ def main():
     if out.exists():
         old = {p["id"]: p for p in json.loads(out.read_text(encoding="utf-8"))}
     places = parse(DATA / "paris.txt", "paris") + parse(DATA / "precieuses.txt", "precieuses")
+    # Adresses relevées dans les enregistrements Instagram (Paris, New York, Tel-Aviv, Jérusalem).
+    insta = DATA / "instagram.json"
+    if insta.exists():
+        places += json.loads(insta.read_text(encoding="utf-8"))
     # Adresses publiées depuis l'appli (bouton « Publier pour tous »).
     shared = DATA / "ajouts.json"
     if shared.exists():

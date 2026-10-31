@@ -2,5 +2,20 @@
  "precieuses-0-resto-schwartz-s-deli": {
   "list": "paris",
   "arr": 16
+ },
+ "precieuses-0-resto-racines": {
+  "address": "8 passage des Panoramas, 75002 Paris"
+ },
+ "precieuses-0-resto-coya": {
+  "address": "83-85 rue du Bac, 75007 Paris"
+ },
+ "precieuses-0-resto-mistinguett": {
+  "address": "16 rue de Clichy, 75009 Paris"
+ },
+ "precieuses-0-boire-un-verre-grouvie": {
+  "address": "6 cour du Commerce-Saint-André, 75006 Paris"
+ },
+ "precieuses-0-resto-festif-manko-paris": {
+  "address": "15 avenue Montaigne, 75008 Paris"
  }
 }

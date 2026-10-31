@@ -9,6 +9,23 @@ const sources = [
   (q) => `https://api-adresse.data.gouv.fr/search/?q=${encodeURIComponent(q)}&limit=1`,
 ];
 const cache = new Map();
+// Hors de France : OpenStreetMap (Nominatim), une requête par seconde.
+const abroad = (p) => p.list === "villes" && p.city && p.city !== "Autour de Paris";
+async function geocodeWorld(address, city) {
+  const key = `w:${address}`;
+  if (cache.has(key)) return cache.get(key);
+  const q = address.toLowerCase().includes(city.toLowerCase().slice(0, 5)) ? address : `${address}, ${city}`;
+  let res = null;
+  try {
+    const r = await fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(q)}`,
+      { headers: { "user-agent": "TheGoodFoodList/1.0 (github.com/tulliodisegni-art/The-good-food-list)" } });
+    const f = r.ok ? (await r.json())[0] : null;
+    if (f) res = [+f.lat, +f.lon];
+  } catch { /* réessayé au prochain passage */ }
+  cache.set(key, res);
+  await new Promise((r) => setTimeout(r, 1100));
+  return res;
+}
 
 async function geocode(address) {
   if (cache.has(address)) return cache.get(address);
@@ -28,7 +45,9 @@ async function geocode(address) {
 let found = 0, missing = [];
 for (const p of places) {
   if (p.lat || !p.address) continue;
-  const c = await geocode(p.address);
+  // Une adresse sans numéro ni rue (juste un quartier ou une ville) placerait le pin au hasard.
+  if (abroad(p) && !/\d/.test(p.address)) continue;
+  const c = abroad(p) ? await geocodeWorld(p.address, p.city) : await geocode(p.address);
   if (c) { [p.lat, p.lng] = c.map((x) => Math.round(x * 1e6) / 1e6); found++; } else missing.push(`${p.name} (${p.address})`);
   await new Promise((r) => setTimeout(r, 40));
 }
