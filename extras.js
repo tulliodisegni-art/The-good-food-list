@@ -367,7 +367,7 @@ async function checkToken(k) {
 }
 
 async function shareApp() {
-  const url = location.href.split("#")[0];
+  const url = location.origin + location.pathname;
   const text = "Ma liste de bonnes adresses : ouvre le lien, puis Partager › Sur l'écran d'accueil.";
   try { if (navigator.share) { await navigator.share({ title: "The Good Food List", text, url }); return; } } catch { return; }
   try { await navigator.clipboard.writeText(url); toast("Lien copié"); } catch { prompt("Lien de l'appli", url); }
