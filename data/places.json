@@ -16396,8 +16396,7 @@
   "phone": "01 44 95 15 01",
   "instagram": "letaillevent",
   "bookingScan": 1,
-  "booking": "https://widget.thefork.com/4dda0933-a2a2-412e-81a3-6b6d642cdc3a",
-  "bookingOk": 0
+  "booking": "https://widget.thefork.com/4dda0933-a2a2-412e-81a3-6b6d642cdc3a"
  },
  {
   "id": "ig-paris-chez-fred",
@@ -18498,6 +18497,7 @@
   "priceSrc": "estim",
   "lat": 48.857789,
   "lng": 2.922245,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  }
 ]
