@@ -14317,7 +14317,9 @@
   "enriched": 5,
   "photo": "https://latropicaleglacier.com/wp-content/uploads/2025/04/1000031118-scaled.jpg",
   "phone": "01 42 16 87 27",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "la_tropicale_glacier"
  },
  {
   "id": "ig-paris-ristorante-national",
@@ -14332,7 +14334,9 @@
   "priceSrc": "estim",
   "lat": 48.865737,
   "lng": 2.353243,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "ristorantenational"
  },
  {
   "id": "ig-paris-le-cornichon",
@@ -14370,7 +14374,9 @@
   "lat": 48.871669,
   "lng": 2.353563,
   "phone": "01 47 70 30 89",
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "chezjeannette"
  },
  {
   "id": "ig-paris-l-emil-chateau-voltaire",
@@ -14671,7 +14677,9 @@
   "enriched": 5,
   "photo": "https://motsuya.onataste.fr/media/motsuya.webp",
   "phone": "07 83 39 69 56",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "motsuya.paris"
  },
  {
   "id": "ig-paris-woo-jung",
@@ -14692,7 +14700,9 @@
   "photo": "https://static.wixstatic.com/media/bf8ad9_d8a75a3f3c914ea1b2a464d215b0ab9e~mv2.jpg",
   "phone": "01 45 20 72 82",
   "booking": "https://www.woojungparis.com/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "igSearched": 1,
+  "instagram": "woojung.paris"
  },
  {
   "id": "ig-paris-sissi",
@@ -14816,7 +14826,8 @@
   "website": "https://www.privateaser.com/lieu/11777-miamor",
   "enriched": 5,
   "searched": 1,
-  "photo": "https://www.privateaser.com/static/fr/img/thumbnail-privateaser.jpg"
+  "photo": "https://www.privateaser.com/static/fr/img/thumbnail-privateaser.jpg",
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-bar-demory",
@@ -14986,7 +14997,10 @@
   "enriched": 5,
   "photo": "https://ugc.zenchef.com/3/5/2/9/8/0/1/5/1/8/1/4/2/1716570585_345/0d69bfd860e1bf2a3d1b12eda102c924.website.jpg",
   "phone": "01 42 67 05 11",
-  "instagram": "chezfranck_restaurant"
+  "instagram": "chezfranck_restaurant",
+  "bookingScan": 1,
+  "booking": "https://bookings.zenchef.com/results?rid=352980&lang=fr",
+  "bookingOk": 2
  },
  {
   "id": "ig-paris-doron",
@@ -15104,7 +15118,8 @@
   "website": "https://www.pavillondescanaux.com/",
   "enriched": 5,
   "searched": 1,
-  "photo": "https://www.pavillondescanaux.com/wp-content/uploads/elementor/thumbs/PAVILLON_DES_CANAUX_DETAIL_VERRIERE_11-scaled-rc6qezwnqesr7y73qbcg3a8ll414zzvv97pdwutylk.jpg"
+  "photo": "https://www.pavillondescanaux.com/wp-content/uploads/elementor/thumbs/PAVILLON_DES_CANAUX_DETAIL_VERRIERE_11-scaled-rc6qezwnqesr7y73qbcg3a8ll414zzvv97pdwutylk.jpg",
+  "bookingScan": 1
  },
  {
   "id": "ig-autour-de-paris-polpo",
@@ -15125,7 +15140,10 @@
   "website": "https://www.polpo-brasserie.fr",
   "enriched": 5,
   "photo": "https://ugc.zenchef.com/uploaded-files/347355/albums/creating/9Eth6GYqoxdzjZ298gptVEurUrNjmsZ8R1MvqWiX.website.jpg",
-  "phone": "01 41 34 32 86"
+  "phone": "01 41 34 32 86",
+  "bookingScan": 1,
+  "booking": "https://bookings.zenchef.com/results?rid=347355&lang=fr",
+  "bookingOk": 2
  },
  {
   "id": "ig-paris-la-nouvelle-seine",
@@ -15497,7 +15515,8 @@
   "halal": true,
   "lat": 48.871533,
   "lng": 2.338447,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-paris-a-xin",
@@ -15593,7 +15612,9 @@
   "city": "Autour de Paris",
   "lat": 48.82954,
   "lng": 2.283359,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "sushi.ken"
  },
  {
   "id": "ig-paris-chez-meilan",
@@ -15613,7 +15634,9 @@
   "website": "https://chez-meilan.fr",
   "enriched": 5,
   "photo": "https://chez-meilan.fr/images/chez-meilan-fonds-d-ecran.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "meilanparis"
  },
  {
   "id": "ig-paris-home-donuts",
@@ -15692,7 +15715,9 @@
   "website": "https://cafe.restaurants-de-france.fr",
   "enriched": 5,
   "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "maxime.frederic"
  },
  {
   "id": "ig-paris-jun",
@@ -15804,7 +15829,8 @@
   "enriched": 5,
   "photo": "https://www.auxenfantsgates.fr/images/template-content/ENFANTSGATES_4.jpg",
   "booking": "https://www.auxenfantsgates.fr/reservation-sans-numero",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "igSearched": 1
  },
  {
   "id": "ig-paris-lilane",
@@ -15823,7 +15849,9 @@
   "website": "http://lilane.com/",
   "enriched": 5,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "lilane_restaurant"
  },
  {
   "id": "ig-paris-seb-on",
@@ -16021,7 +16049,9 @@
   "priceSrc": "estim",
   "lat": 48.864028,
   "lng": 2.334202,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "rehab_paris"
  },
  {
   "id": "ig-paris-le-syndicat",
@@ -16057,7 +16087,9 @@
   "priceSrc": "estim",
   "lat": 48.851663,
   "lng": 2.273895,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "__carvan__"
  },
  {
   "id": "ig-paris-silencio-des-pres",
@@ -16075,7 +16107,8 @@
   "website": "http://www.silenciodespres.com",
   "enriched": 5,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-paris-grand-duc",
@@ -16090,7 +16123,9 @@
   "priceSrc": "estim",
   "lat": 48.864385,
   "lng": 2.363532,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "legrandduc_officiel"
  },
  {
   "id": "ig-paris-fitzgerald",
@@ -16151,7 +16186,10 @@
   "enriched": 5,
   "searched": 1,
   "photo": "https://cdn.prod.website-files.com/6936926fa597b535c56251a0/6a3b8dddea44f0b6c3245427_experimental-group-prescription-cocktail-club-thumbnail-vertical.webp",
-  "instagram": "experimentalgroup"
+  "instagram": "experimentalgroup",
+  "bookingScan": 1,
+  "booking": "https://www.experimentalgroup.com/paris/experimental-marais?namastay=true",
+  "bookingOk": 2
  },
  {
   "id": "ig-paris-danico",
@@ -16192,7 +16230,9 @@
   "enriched": 5,
   "searched": 1,
   "photo": "https://www.candelariaparis.com/wp-content/uploads/2019/10/candelariaparis.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "candelariaparis"
  },
  {
   "id": "ig-paris-moonshiner",
@@ -16233,7 +16273,9 @@
   "enriched": 5,
   "photo": "https://cdn.prod.website-files.com/66daade3585c0d5f40bc4f5c/671ae801565942c32c6be86d_newsletter-GYA.webp",
   "booking": "https://bookings.zenchef.com/results?rid=356720&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "igSearched": 1,
+  "instagram": "allenoparis"
  },
  {
   "id": "ig-paris-le-boudoir",
@@ -16252,7 +16294,9 @@
   "website": "https://boudoirparis.fr",
   "enriched": 5,
   "phone": "07 45 53 66 85",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "leboudoir_paris"
  },
  {
   "id": "ig-paris-l-espadon-ritz",
@@ -16270,7 +16314,9 @@
   "website": "https://fr.ritzparis.com/",
   "enriched": 5,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "espadonritzparis"
  },
  {
   "id": "ig-paris-la-dame-de-pic",
@@ -16285,7 +16331,8 @@
   "priceSrc": "estim",
   "lat": 48.861448,
   "lng": 2.341259,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-paris-lasserre",
@@ -16347,7 +16394,10 @@
   "enriched": 5,
   "photo": "https://www.letaillevent.com/wp-content/uploads/2023/03/Diapason-Taillevent-768x624.png",
   "phone": "01 44 95 15 01",
-  "instagram": "letaillevent"
+  "instagram": "letaillevent",
+  "bookingScan": 1,
+  "booking": "https://widget.thefork.com/4dda0933-a2a2-412e-81a3-6b6d642cdc3a",
+  "bookingOk": 0
  },
  {
   "id": "ig-paris-chez-fred",
@@ -16453,7 +16503,9 @@
   "photo": "https://cdn.prod.website-files.com/6a990ad2279b8e2b3ad1e7a3/6a990ecb57818904694b4528_open-graph.png",
   "phone": "01 87 75 25 25",
   "booking": "https://eu.sevenrooms.com/explore/lucascarton/reservations/create/search/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "igSearched": 1,
+  "instagram": "lucascartonparis"
  },
  {
   "id": "ig-new-york-moishe-s-bakery",
@@ -16470,7 +16522,8 @@
   "kasher": true,
   "lat": 40.715059,
   "lng": -73.981531,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-new-york-barney-greengrass",
@@ -16861,7 +16914,8 @@
   "city": "New York",
   "lat": 40.742051,
   "lng": -74.004897,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-new-york-lexington-candy-shop",
@@ -16940,7 +16994,9 @@
   "city": "New York",
   "lat": 40.718903,
   "lng": -73.949465,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "meilaiwahcoffeeshop"
  },
  {
   "id": "ig-new-york-prince-street-pizza",
@@ -16959,7 +17015,9 @@
   "searched": 1,
   "website": "https://princestreetpizzamenu.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "princestreetpizza"
  },
  {
   "id": "ig-new-york-au-cheval",
@@ -17100,7 +17158,9 @@
   "website": "http://www.deluxe-green-bo.com",
   "enriched": 5,
   "photo": "http://www.deluxe-green-bo.com/media/4420/1.jpg?width=320&height=320",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "deluxegreenbo"
  },
  {
   "id": "ig-new-york-shanghai-21",
@@ -17141,7 +17201,9 @@
   "website": "https://www.joesginger.com",
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/15097e_c753ea5250c941888ad0988c6f42f448~mv2.jpg/v1/fill/w_2500,h_1406,al_c/15097e_c753ea5250c941888ad0988c6f42f448~mv2.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "joesgingernyc"
  },
  {
   "id": "ig-new-york-mott-street-eatery",
@@ -17157,7 +17219,8 @@
   "city": "New York",
   "lat": 40.717144,
   "lng": -73.997272,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-new-york-mimi-cheng-s",
@@ -17524,7 +17587,8 @@
   "city": "New York",
   "lat": 40.760252,
   "lng": -73.833539,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-new-york-wall-street-grill",
@@ -18433,6 +18497,7 @@
   "price": 2,
   "priceSrc": "estim",
   "lat": 48.857789,
-  "lng": 2.922245
+  "lng": 2.922245,
+  "searched": 1
  }
 ]
