@@ -17,7 +17,8 @@ self.addEventListener("fetch", (e) => {
   const isLib = /unpkg\.com|fonts\.(googleapis|gstatic)\.com/.test(url.host);
   if (!sameOrigin && !isLib) return;
   e.respondWith(
-    fetch(e.request).then((res) => {
+    // « no-cache » : on redemande toujours au serveur si le fichier a changé (sinon le téléphone garde l'ancienne version 10 min).
+    fetch(sameOrigin ? new Request(e.request, { cache: "no-cache" }) : e.request).then((res) => {
       if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); }
       return res;
     }).catch(() => caches.match(e.request, { ignoreSearch: true }))
