@@ -4,18 +4,373 @@
   "arr": 16
  },
  "precieuses-0-resto-racines": {
-  "address": "8 passage des Panoramas, 75002 Paris"
+  "address": "8 passage des Panoramas, 75002 Paris",
+  "cuisine": "Italien"
  },
  "precieuses-0-resto-coya": {
-  "address": "83-85 rue du Bac, 75007 Paris"
+  "address": "83-85 rue du Bac, 75007 Paris",
+  "cuisine": "Péruvien"
  },
  "precieuses-0-resto-mistinguett": {
-  "address": "16 rue de Clichy, 75009 Paris"
+  "address": "16 rue de Clichy, 75009 Paris",
+  "cuisine": "Français"
  },
  "precieuses-0-boire-un-verre-grouvie": {
   "address": "6 cour du Commerce-Saint-André, 75006 Paris"
  },
  "precieuses-0-resto-festif-manko-paris": {
-  "address": "15 avenue Montaigne, 75008 Paris"
+  "address": "15 avenue Montaigne, 75008 Paris",
+  "cuisine": "Péruvien"
+ },
+ "precieuses-0-resto-l-as-du-fallafel": {
+  "cuisine": "Israélien"
+ },
+ "precieuses-0-resto-teppanyaki": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-big-mamma-chaine": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-resto-daroco": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-resto-shabour": {
+  "cuisine": "Israélien"
+ },
+ "precieuses-0-resto-alcazar": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-shana-shabour": {
+  "cuisine": "Israélien"
+ },
+ "precieuses-0-resto-le-perchoir": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-le-ciel-de-paris": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-tout-le-monde-en-parle": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-le-relais-de-venise": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-bouillon-chartier": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-miss-ko": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-restaurant-marocain": {
+  "cuisine": "Oriental"
+ },
+ "precieuses-0-resto-kodawari-tsukiji": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-maison-sauvage": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-la-table-de-colette": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-hakata-choten": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-kodawari-ramen": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-le-comptoir-paris": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-verre-chez-moi": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-naritake-ramen": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-miznon": {
+  "cuisine": "Israélien"
+ },
+ "precieuses-0-resto-spoon": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-fouquet-s": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-au-pied-de-cochon": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-le-train-bleu": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-la-fontaine-de-mars": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-l-escargot-montorgueil": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-le-procope": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-brasserie-lipp": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-le-petit-bouillon-pharamond": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-brasserie-floderer": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-la-coupole": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-fondue-du-dragon": {
+  "cuisine": "Chinois"
+ },
+ "precieuses-0-resto-dominicos": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-peppe-pizzeria-napoletana": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-resto-andia": {
+  "cuisine": "Latino"
+ },
+ "precieuses-0-resto-la-maison-rose": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-beefbar": {
+  "cuisine": "Viande & grill"
+ },
+ "precieuses-0-resto-shinko": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-sinner-paris": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-laperouse": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-ephemera-group": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-la-reverie": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-inavoue": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-le-buf-sur-le-toit": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-bumbu": {
+  "cuisine": "Indonésien"
+ },
+ "precieuses-0-resto-marlotti": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-resto-le-murat": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-mumbay": {
+  "cuisine": "Indien"
+ },
+ "precieuses-0-resto-le-relais-plaza": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-the-peninsula": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-akira-back": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-pedzouille-lagrange": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-moommam": {
+  "cuisine": "Thaïlandais"
+ },
+ "precieuses-0-resto-maxim-s": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-vesper": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-la-scene-theleme": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-chakaiseki-akiyoshi": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-dragon-cyril-lignac": {
+  "cuisine": "Chinois"
+ },
+ "precieuses-0-resto-terra": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-marie-akaneya": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-sphere": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-dans-le-noir": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-shiro": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-rh-paris": {
+  "cuisine": "Américain"
+ },
+ "precieuses-0-resto-onyx": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-mun-paris": {
+  "cuisine": "Coréen"
+ },
+ "precieuses-0-resto-dame": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-prunier": {
+  "cuisine": "Poisson & fruits de mer"
+ },
+ "precieuses-0-resto-ao-izakaya": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-siena": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-resto-aquakyoto": {
+  "cuisine": "Japonais"
+ },
+ "precieuses-0-resto-lava": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-hotel-le-collectionneur": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-cepe-et-figue": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-cache": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-festif-victoria": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-festif-le-verde": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-resto-festif-l-empire-du-8e": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-festif-noto-paris": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-resto-festif-les-bains": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-festif-gallopin": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-resto-festif-salvaje": {
+  "cuisine": "Fusion"
+ },
+ "precieuses-0-resto-festif-mamamia": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-resto-festif-hollywood-savoy": {
+  "cuisine": "Français"
+ },
+ "precieuses-0-brunch-violetta-alfredo": {
+  "cuisine": "Italien"
+ },
+ "precieuses-0-brunch-404-brunch-oriental": {
+  "cuisine": "Oriental"
+ },
+ "precieuses-0-brunch-le-royal-monceau": {
+  "cuisine": "Brunch"
+ },
+ "precieuses-0-brunch-bande-de-cheffes": {
+  "cuisine": "Brunch"
+ },
+ "precieuses-0-brunch-ferrandi": {
+  "cuisine": "Brunch"
+ },
+ "ig-paris-ristorante-national": {
+  "cuisine": "Italien"
+ },
+ "ig-paris-le-cornichon": {
+  "cuisine": "Français"
+ },
+ "ig-paris-chez-jeannette": {
+  "cuisine": "Français"
+ },
+ "ig-paris-l-emil-chateau-voltaire": {
+  "cuisine": "Français"
+ },
+ "ig-paris-chalet-des-iles": {
+  "cuisine": "Français"
+ },
+ "ig-paris-la-nouvelle-seine": {
+  "cuisine": "Français"
+ },
+ "ig-paris-francette": {
+  "cuisine": "Français"
+ },
+ "ig-paris-la-cour-jardin-plaza-athenee": {
+  "cuisine": "Français"
+ },
+ "ig-paris-riviera-paris": {
+  "cuisine": "Poisson & fruits de mer"
+ },
+ "ig-paris-nonos": {
+  "cuisine": "Français"
+ },
+ "ig-paris-bistrot-podium": {
+  "cuisine": "Français"
+ },
+ "ig-paris-aux-enfants-gates": {
+  "cuisine": "Français"
+ },
+ "ig-paris-lilane": {
+  "cuisine": "Français"
+ },
+ "ig-paris-alleno-paris": {
+  "cuisine": "Français"
+ },
+ "ig-paris-le-boudoir": {
+  "cuisine": "Français"
+ },
+ "ig-paris-l-espadon-ritz": {
+  "cuisine": "Français"
+ },
+ "ig-paris-la-dame-de-pic": {
+  "cuisine": "Français"
+ },
+ "ig-paris-lasserre": {
+  "cuisine": "Français"
+ },
+ "ig-paris-le-clarence": {
+  "cuisine": "Français"
+ },
+ "ig-paris-le-taillevent": {
+  "cuisine": "Français"
+ },
+ "ig-paris-chez-fred": {
+  "cuisine": "Français"
+ },
+ "ig-paris-l-ambroisie": {
+  "cuisine": "Français"
+ },
+ "ig-paris-kei": {
+  "cuisine": "Français"
+ },
+ "ig-paris-plenitude-cheval-blanc": {
+  "cuisine": "Français"
+ },
+ "ig-paris-lucas-carton": {
+  "cuisine": "Français"
  }
 }

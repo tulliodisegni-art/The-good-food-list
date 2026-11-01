@@ -215,6 +215,10 @@ function sign(z){const num=/^\d+$/.test(z);
 /* ordre des cuisines = ordre de ta note (Français, Italien, …) */
 let CORD=null;function cord(c){if(!CORD){CORD={};S.places.forEach(p=>{if(p.cat&&!(p.cat in CORD))CORD[p.cat]=Object.keys(CORD).length})}return c in CORD?CORD[c]:999}
 function zkeysOf(P){const Z=zones(P);const ks=S.city==="paris"?[...Array.from({length:20},(_,i)=>String(i+1)).filter(k=>Z[k]),...(Z["Autour de Paris"]?["Autour de Paris"]:[])]:Object.keys(Z).sort((a,b)=>Z[b]-Z[a]);return{Z,ks}}
+const OUT={"Resto festif":"Restos festifs","Soirée":"Soirées","Rooftop":"Rooftops","Boire un verre":"Bars","Stand-up":"Stand-up","Activité":"Activités","Salon de thé":"Salons de thé","Café":"Cafés","À tester":"À tester"};
+const cuisOf=p=>S.prec&&p.list==="precieuses"?(p.cuisine||null):p.cat;
+const outOf=p=>{const c=p.list==="precieuses"?p.cat:p.prec;return c&&OUT[c]?c:null};
+const grpOf=p=>cuisOf(p)||OUT[outOf(p)]||"Autres";
 const pool=()=>S.places.filter(p=>cityOf(p)===S.city&&(S.prec?isPrec(p):p.list!=="precieuses"));
 const photoOf=(arr,seed=0)=>{const w=arr.filter(p=>p.photo&&!/logo|icon|favicon|placeholder|\.svg|\d{3,4}x\d{3,4}/i.test(p.photo));return w.length?w[seed%w.length].photo:""};
 const bg=u=>u?`style="background-image:url('${esc(u)}')"`:"";
@@ -234,7 +238,8 @@ function zones(P){const m={};P.forEach(p=>{const z=zoneOf(p);if(z)m[z]=(m[z]||0)
 function renderHome(){const P=pool(),c=CITIES.find(x=>x.id===S.city);
  const env=ENVIES.map((e,i)=>({e,i,items:P.filter(e.f)})).filter(x=>x.items.length);
  const {Z,ks:zkeys}=zkeysOf(P);
- const cats=Object.entries(P.reduce((a,p)=>(p.cat&&(a[p.cat]=(a[p.cat]||0)+1),a),{})).sort((a,b)=>cord(a[0])-cord(b[0]));
+ const cats=Object.entries(P.reduce((a,p)=>{const c=cuisOf(p);if(c)a[c]=(a[c]||0)+1;return a},{})).sort((a,b)=>cord(a[0])-cord(b[0]));
+ const outs=Object.keys(OUT).map(n=>[n,P.filter(p=>outOf(p)===n).length]).filter(x=>x[1]);
  const k=P.filter(p=>p.kasher).length,h=P.filter(p=>p.halal).length;
  const precImg=photoOf(S.places.filter(p=>cityOf(p)===S.city&&isPrec(p)),3)||"../images/cities/nuit.jpg";
  $("#main").innerHTML=`<div style="height:34px"></div>
@@ -244,16 +249,18 @@ function renderHome(){const P=pool(),c=CITIES.find(x=>x.id===S.city);
   <div class="wish"><textarea id="wish" rows="2" placeholder="Décris ce dont tu as envie… ex. un resto chaleureux, cuisine réconfortante et gourmande"></textarea><button data-wish>Trouver</button></div>
   <div class="ex">${["Chaleureux, réconfortant et gourmand","Léger et frais, pas cher","Romantique avec une belle vue","Festif entre amis, ça bouge","Sushi de qualité","Sucré pour le goûter"].map(x=>`<button data-ex="${esc(x)}">${esc(x)}</button>`).join("")}</div></section>
  <section class="sec"><div class="sec-h"><h2>Par cuisine</h2><button class="all" data-allcats>Tout voir ›</button></div>
-  <div class="rail">${cats.slice(0,10).map(([n,v],i)=>`<button class="tile cuis" data-cat="${esc(n)}" ${bg(photoOf(P.filter(p=>p.cat===n),i))}><div class="t"><h3>${esc(n)}</h3><p>${v} adresses</p></div></button>`).join("")}</div></section>
- ${k||h?`<section class="sec"><div class="sec-h"><h2>Régimes</h2></div><div class="diet">${k?`<button data-diet="kasher"><span class="seal" style="background:#1d3b78">K</span><span><b>Kasher</b><small>${k} adresses</small></span></button>`:""}${h?`<button data-diet="halal"><span class="seal" style="background:#2c7a4b">H</span><span><b>Halal</b><small>${h} adresses</small></span></button>`:""}</div></section>`:""}
+  <div class="rail">${cats.slice(0,10).map(([n,v],i)=>`<button class="tile cuis" data-cat="${esc(n)}" ${bg(photoOf(P.filter(p=>cuisOf(p)===n),i))}><div class="t"><h3>${esc(n)}</h3><p>${v} adresse${v>1?"s":""}</p></div></button>`).join("")}</div></section>
+ ${S.prec&&outs.length?`<section class="sec"><div class="sec-h"><h2>Sorties & activités</h2></div>
+  <div class="rail">${outs.map(([n,v],i)=>`<button class="tile cuis" data-out="${esc(n)}" ${bg(photoOf(P.filter(p=>outOf(p)===n),i+3))}><div class="t"><h3>${esc(OUT[n])}</h3><p>${v} adresse${v>1?"s":""}</p></div></button>`).join("")}</div></section>`:""}
+ ${k||h?`<section class="sec"><div class="sec-h"><h2>Régimes</h2></div><div class="diet">${k?`<button data-diet="kasher"><span class="seal" style="background:#1d3b78">K</span><span><b>Kasher</b><small>${k} adresse${k>1?"s":""}</small></span></button>`:""}${h?`<button data-diet="halal"><span class="seal" style="background:#2c7a4b">H</span><span><b>Halal</b><small>${h} adresse${h>1?"s":""}</small></span></button>`:""}</div></section>`:""}
 
 
  <p class="proto">Maquette · ton appli actuelle n'est pas modifiée</p>`;}
-function grouped(items){const g={};items.forEach(p=>(g[p.cat||"Autres"]=g[p.cat||"Autres"]||[]).push(p));
+function grouped(items){const g={};items.forEach(p=>{const k=grpOf(p);(g[k]=g[k]||[]).push(p)});
  return Object.entries(g).sort((a,b)=>cord(a[0])-cord(b[0])).map(([cat,arr],i)=>`<div class="subhead" style="--sc:${PAL[i%PAL.length]}"><h3>${esc(cat)}</h3><i></i><span>${arr.length}</span></div><div class="cards">${arr.map(card).join("")}</div>`).join("")}
 function renderList(){const P=pool(),L=S.list;let items=P,title="",body="";
- if(L.allcats){const cats=Object.entries(P.reduce((a,p)=>(p.cat&&(a[p.cat]=(a[p.cat]||0)+1),a),{})).sort((a,b)=>cord(a[0])-cord(b[0]));
-  $("#main").innerHTML=`<div class="list-h"><button class="back" data-back>‹</button><h2>Toutes les cuisines</h2></div><div class="grid2">${cats.map(([n,v],i)=>`<button class="tile" data-cat="${esc(n)}" ${bg(photoOf(P.filter(p=>p.cat===n),i))}><div class="t"><h3>${esc(n)}</h3><p>${v}</p></div></button>`).join("")}</div>`;return}
+ if(L.allcats){const cats=Object.entries(P.reduce((a,p)=>{const c=cuisOf(p);if(c)a[c]=(a[c]||0)+1;return a},{})).sort((a,b)=>cord(a[0])-cord(b[0]));
+  $("#main").innerHTML=`<div class="list-h"><button class="back" data-back>‹</button><h2>Toutes les cuisines</h2></div><div class="grid2">${cats.map(([n,v],i)=>`<button class="tile" data-cat="${esc(n)}" ${bg(photoOf(P.filter(p=>cuisOf(p)===n),i))}><div class="t"><h3>${esc(n)}</h3><p>${v}</p></div></button>`).join("")}</div>`;return}
  if(L.zone){const {Z,ks}=zkeysOf(P);items=P.filter(p=>zoneOf(p)===L.zone);
   $("#main").innerHTML=`<div style="height:30px"></div><div class="zbar"><div class="list-h" style="margin:0 0 8px"><button class="back" data-back>‹</button><h2>${/^\d+$/.test(L.zone)?`Paris ${arrH(+L.zone)}`:esc(L.zone)}</h2><span style="margin-left:auto;color:var(--muted);font-weight:700;font-size:12px">${items.length} adresses</span></div>
   <div class="zrail" id="zbar">${ks.map(z=>`<button class="zp ${z===L.zone?"on":""}" data-zone="${esc(z)}">${sign(z)}</button>`).join("")}</div></div><div id="zbody">${grouped(items)}</div>`;
@@ -262,7 +269,8 @@ function renderList(){const P=pool(),L=S.list;let items=P,title="",body="";
   $("#main").innerHTML=`<div style="height:30px"></div><div class="list-h"><button class="back" data-back>‹</button><h2>Ton envie</h2></div><p style="margin:0 0 4px;color:var(--muted)">« ${esc(L.wish)} »</p>${labels.length?`<div class="tags" style="margin-bottom:12px">${labels.map(l=>`<span class="tag">${esc(l)}</span>`).join("")}</div>`:""}<div class="cards">${res.slice(0,40).map(x=>card(x.p,x.why)).join("")||'<p style="color:var(--muted)">Rien trouvé, essaie avec d\'autres mots.</p>'}</div><p class="proto">Dans la vraie appli, Claude comprendra n'importe quelle phrase</p>`;return}
  if(L.envie!=null){items=P.filter(ENVIES[L.envie].f);title=ENVIES[L.envie].t;body=grouped(items)}
  if(L.diet){items=P.filter(p=>p[L.diet]);title=L.diet==="kasher"?"Kasher":"Halal";body=grouped(items)}
- if(L.cat){items=P.filter(p=>p.cat===L.cat);title=esc(L.cat);body=`<div class="cards" style="margin-top:14px">${items.map(card).join("")}</div>`}
+ if(L.out){items=P.filter(p=>outOf(p)===L.out);title=esc(OUT[L.out]);body=`<div class="cards" style="margin-top:14px">${items.map(card).join("")}</div>`}
+ if(L.cat){items=P.filter(p=>cuisOf(p)===L.cat);title=esc(L.cat);body=`<div class="cards" style="margin-top:14px">${items.map(card).join("")}</div>`}
  if(L.q!=null){const q=L.q.toLowerCase();items=P.filter(p=>`${p.name} ${p.cat} ${p.address}`.toLowerCase().includes(q));title=L.q?`« ${esc(L.q)} »`:"Toutes les adresses";body=grouped(items)}
  $("#main").innerHTML=`<div style="height:30px"></div><div class="list-h"><button class="back" data-back>‹</button><h2>${title}</h2></div>${body||'<p style="color:var(--muted)">Rien ici pour l\'instant.</p>'}`}
 function renderNav(){const it=[["home","Accueil",'<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>'],["prec","Précieuses",'<path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M9 3l3 6 3-6M12 9v12"/>'],["map","Carte",'<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>'],["love","Mes envies",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>']];
@@ -279,6 +287,7 @@ document.addEventListener("click",e=>{const t=e.target;let b;
  if(t.closest("[data-wish]")){const v=$("#wish").value.trim();if(v)open({wish:v});return}
  if(b=t.closest("[data-ex]"))return open({wish:b.dataset.ex});
  if(t.closest("[data-allcats]"))return open({allcats:1});
+ {const o=t.closest("[data-out]");if(o)return open({out:o.dataset.out})}
  if(t.closest("[data-toggle-prec]")){S.prec=!S.prec;S.view="home";render();scrollTo({top:0,behavior:"smooth"});return}
  if(b=t.closest("[data-name]")){S.name=+b.dataset.name;render();return}
  if(t.closest("[data-back]")){S.view="home";render();return}

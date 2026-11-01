@@ -11361,7 +11361,8 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "lasdufallafel"
+  "instagram": "lasdufallafel",
+  "cuisine": "Israélien"
  },
  {
   "id": "precieuses-0-resto-coya",
@@ -11381,7 +11382,8 @@
   "booking": "https://www.sevenrooms.com/explore/COYACity/reservations/create/search/?venues=COYACity%2Ccoyamayfair",
   "bookingOk": 2,
   "lat": 48.854274,
-  "lng": 2.324031
+  "lng": 2.324031,
+  "cuisine": "Péruvien"
  },
  {
   "id": "precieuses-0-resto-teppanyaki",
@@ -11402,7 +11404,8 @@
   "instagram": "ayako_teppanyaki",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=363447&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-big-mamma-chaine",
@@ -11415,7 +11418,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-daroco",
@@ -11436,7 +11440,8 @@
   "priceSrc": "estim",
   "photo": "https://daroco.com/wp-content/themes/daroco-danico/assets/photos/brunch-maritozzo.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-shabour",
@@ -11456,7 +11461,8 @@
   "booking": "https://www.restaurantshabour.com/choix",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "shabour.paris"
+  "instagram": "shabour.paris",
+  "cuisine": "Israélien"
  },
  {
   "id": "precieuses-0-resto-alcazar",
@@ -11477,7 +11483,8 @@
   "priceSrc": "estim",
   "photo": "https://www.alcazar.fr/_ipx/f_webp&q_10&fit_cover&blur_10&s_10x10/cdn/8d62a7d3c9a4fb004aaa150a9bef4cd5ad3c0f7bf32bc97c06031ee432e61b81/image/optimized-gettyimages-847608192.webp",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-shana-shabour",
@@ -11491,7 +11498,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "shabour.paris"
+  "instagram": "shabour.paris",
+  "cuisine": "Israélien"
  },
  {
   "id": "precieuses-0-resto-le-perchoir",
@@ -11509,7 +11517,8 @@
   "photo": "https://leperchoir.fr/wp-content/uploads/2020/07/LePerchoir_site_photo-etablissement_le-perchoir-menilmontant_3-scaled.jpg",
   "phone": "01 76 35 11 80",
   "instagram": "leperchoir",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-le-ciel-de-paris",
@@ -11529,7 +11538,8 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "cieldeparis"
+  "instagram": "cieldeparis",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-tout-le-monde-en-parle",
@@ -11544,7 +11554,8 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/tout-le-monde-en-parle-r753758",
   "bookingOk": 2,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-le-relais-de-venise",
@@ -11564,7 +11575,8 @@
   "priceSrc": "estim",
   "photo": "https://relaisdevenise.com/media/images/home/picture-1.jpg",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-bouillon-chartier",
@@ -11584,7 +11596,8 @@
   "priceSrc": "estim",
   "photo": "https://www.bouillon-chartier.com/chartier_medias/2023/11/bouillon-chartier-home-grandsboulevards.jpg",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-miss-ko",
@@ -11603,7 +11616,8 @@
   "phone": "01 53 67 84 60",
   "instagram": "misskorestaurant",
   "booking": "https://www.miss-ko.com/reservation",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-restaurant-marocain",
@@ -11622,7 +11636,8 @@
   "phone": "01 71 97 59 85",
   "instagram": "darkoum_cantine_marocaine",
   "booking": "https://darkoum-cantine-marocaine.fr/fr/booking",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Oriental"
  },
  {
   "id": "precieuses-0-resto-kodawari-tsukiji",
@@ -11635,7 +11650,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-maison-sauvage",
@@ -11654,7 +11670,8 @@
   "photo": "https://www.maison-sauvage.fr/wp-content/uploads/2023/07/ILLUSTRATION-WEB-MS-BUCI.png",
   "bookingScan": 1,
   "bookingOk": 2,
-  "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR"
+  "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-la-table-de-colette",
@@ -11674,7 +11691,8 @@
   "photo": "https://v2cdn1.centralappstatic.com/image/resize/1104x828_cover_45d3bb5169644fdb8457c32943e9fd13.webp?w=1200",
   "phone": "01 46 33 18 59",
   "instagram": "latabledecoletteparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-hakata-choten",
@@ -11691,7 +11709,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "hakata_choten_paris"
+  "instagram": "hakata_choten_paris",
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-kodawari-ramen",
@@ -11711,7 +11730,8 @@
   "priceSrc": "estim",
   "photo": "https://www.kodawari-ramen.com/wp-content/uploads/2019/06/kodawari-yokocho-homepage.jpg",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-le-comptoir-paris",
@@ -11731,7 +11751,8 @@
   "instagram": "lecomptoirparis",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=354846&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-verre-chez-moi",
@@ -11744,7 +11765,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-naritake-ramen",
@@ -11758,7 +11780,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "naritake.ramen"
+  "instagram": "naritake.ramen",
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-miznon",
@@ -11778,7 +11801,8 @@
   "photo": "https://static.wixstatic.com/media/31973e_1ca1d16ca17a4566a67e675074b1585b%7Emv2.png/v1/fit/w_2500,h_1330,al_c/31973e_1ca1d16ca17a4566a67e675074b1585b%7Emv2.png",
   "phone": "07 64 12 96 06",
   "instagram": "miznonparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Israélien"
  },
  {
   "id": "precieuses-0-resto-spoon",
@@ -11797,7 +11821,8 @@
   "phone": "01 83 92 20 30",
   "instagram": "spoon_restaurant_paris",
   "booking": "https://module.lafourchette.com/fr_FR/module/408919-f7de7",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-fouquet-s",
@@ -11813,7 +11838,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "fouquets.paris"
+  "instagram": "fouquets.paris",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-au-pied-de-cochon",
@@ -11834,7 +11860,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-le-train-bleu",
@@ -11855,7 +11882,8 @@
   "priceSrc": "estim",
   "photo": "https://www.le-train-bleu.com/media/cache/jadro_resize/rc/g9U1nG4u1741249987/jadroRoot/medias/5aafbd3bc117c/le-train-bleu-014_2800x2100.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-la-fontaine-de-mars",
@@ -11874,7 +11902,8 @@
   "priceSrc": "estim",
   "instagram": "lafontainedemars",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-l-escargot-montorgueil",
@@ -11895,7 +11924,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-le-procope",
@@ -11916,7 +11946,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-brasserie-lipp",
@@ -11937,7 +11968,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-le-petit-bouillon-pharamond",
@@ -11959,7 +11991,8 @@
   "searched": 1,
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "lepetitbouillonpharamond"
+  "instagram": "lepetitbouillonpharamond",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-brasserie-floderer",
@@ -11980,7 +12013,8 @@
   "priceSrc": "estim",
   "photo": "https://images.squarespace-cdn.com/content/v1/5a8d5efde9bfdf59a2d4adc9/1784815850340-JR0K78QKRFDPYW551XIE/FLODERER+PARIS+JUIN+26-10.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-la-coupole",
@@ -12001,7 +12035,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-fondue-du-dragon",
@@ -12020,7 +12055,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingScan": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Chinois"
  },
  {
   "id": "precieuses-0-resto-dominicos",
@@ -12034,7 +12070,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "dominico____"
+  "instagram": "dominico____",
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-peppe-pizzeria-napoletana",
@@ -12055,7 +12092,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-andia",
@@ -12077,7 +12115,8 @@
   "booking": "https://www.thefork.fr/restaurant/andia-r478059",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "andia_paris"
+  "instagram": "andia_paris",
+  "cuisine": "Latino"
  },
  {
   "id": "precieuses-0-resto-la-maison-rose",
@@ -12099,7 +12138,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=353037&lang=fr",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "lamaisonroseofficial"
+  "instagram": "lamaisonroseofficial",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-beefbar",
@@ -12119,7 +12159,8 @@
   "priceSrc": "estim",
   "photo": "https://paris.beefbar.com/wp-content/uploads/sites/8/2020/07/giraudi.beef-bar.2019.10-42.low-resolution.jpg",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Viande & grill"
  },
  {
   "id": "precieuses-0-resto-shinko",
@@ -12139,7 +12180,8 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "shinko.paris"
+  "instagram": "shinko.paris",
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-sinner-paris",
@@ -12157,7 +12199,8 @@
   "photo": "https://sinner.parishotelsfr.com/data/Photos/OriginalPhoto/18176/1817687/1817687882/paris-experimental-marais-photo-1.JPEG",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "sinner_paris"
+  "instagram": "sinner_paris",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-laperouse",
@@ -12179,7 +12222,8 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "laperouse_paris"
+  "instagram": "laperouse_paris",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-ephemera-group",
@@ -12198,7 +12242,8 @@
   "photo": "https://cdn.prod.website-files.com/68be93b78f1fe40bdb880c62/68e52a36218558b23f735508_OG%20IMAGE%20-%20Media%20Presse.jpg",
   "instagram": "ephemeragroup",
   "booking": "https://www.sevenrooms.com/explore/jungle-palace/reservations/create/search",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-la-reverie",
@@ -12218,7 +12263,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-inavoue",
@@ -12240,7 +12286,8 @@
   "kasher": true,
   "photo": "https://inavoue.com/wp-content/uploads/2024/03/signature-inavoue.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-le-buf-sur-le-toit",
@@ -12258,7 +12305,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingScan": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-bumbu",
@@ -12277,7 +12325,8 @@
   "enriched": 5,
   "photo": "https://ugc.zenchef.com/3/5/4/8/4/7/1/5/1/1/1/8/0/1727700496_107/142c3d60778599bec50191bdc4688494.website.jpg",
   "phone": "01 71 86 79 39",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Indonésien"
  },
  {
   "id": "precieuses-0-resto-marlotti",
@@ -12297,7 +12346,8 @@
   "phone": "01 48 22 91 64",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=356825&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-le-murat",
@@ -12319,7 +12369,8 @@
   "photo": "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2025/12/DSC06072-2-2.jpg",
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/le-murat-r4578",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-mumbay",
@@ -12333,7 +12384,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "Mumbay"
+  "instagram": "Mumbay",
+  "cuisine": "Indien"
  },
  {
   "id": "precieuses-0-resto-le-relais-plaza",
@@ -12349,7 +12401,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "lerelaisplaza"
+  "instagram": "lerelaisplaza",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-the-peninsula",
@@ -12368,7 +12421,8 @@
   "enriched": 5,
   "photo": "https://www.peninsula.com/-/media/misc/pen8/2022-06/misc_202206/exterior-2_1920.jpg",
   "instagram": "peninsulahotels",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-akira-back",
@@ -12389,7 +12443,8 @@
   "price": 4,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-mistinguett",
@@ -12410,7 +12465,8 @@
   "instagram": "mistinguettparis",
   "lat": 48.878381,
   "lng": 2.330067,
-  "phone": "01 48 74 85 41"
+  "phone": "01 48 74 85 41",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-pedzouille-lagrange",
@@ -12427,7 +12483,8 @@
   "enriched": 5,
   "photo": "https://www.pedzouille.fr/quality_auto/9a2fc6_d6fc3584aa1f4062b2bf22dba7487e56~mv2.png",
   "instagram": "pedzouilleparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-moommam",
@@ -12447,7 +12504,8 @@
   "halal": true,
   "photo": "https://moommam.fr/app/uploads/2021/06/01.jpg",
   "phone": "01 53 38 58 73",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Thaïlandais"
  },
  {
   "id": "precieuses-0-resto-maxim-s",
@@ -12468,7 +12526,8 @@
   "photo": "https://i0.wp.com/restaurant-maxims.com/app/app-uploads/2026/08/digital-bd-tables-laurent-230911-030.jpg?fit=1067%2C1600&#038;ssl=1",
   "instagram": "Maximsrestaurant_paris",
   "booking": "https://www.sevenrooms.com/experiences/maximsparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-vesper",
@@ -12490,7 +12549,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "booking": "https://www.sevenrooms.com/explore/fitzgroup/reservations/create/search?venues=camondo%2Chollywoodsavoy%2Clafontainegaillon%2Cfitzgerald%2Cabstinence",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-la-scene-theleme",
@@ -12509,7 +12569,8 @@
   "photo": "https://www.lascenetheleme.fr/wp-content/uploads/2022/06/download.png",
   "phone": "01 77 37 60 99",
   "instagram": "lascenetheleme",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-chakaiseki-akiyoshi",
@@ -12530,7 +12591,8 @@
   "price": 4,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-dragon-cyril-lignac",
@@ -12549,7 +12611,8 @@
   "phone": "01 43 25 87 67",
   "instagram": "cyrillignac",
   "booking": "https://module.lafourchette.com/fr_FR/module/393755",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Chinois"
  },
  {
   "id": "precieuses-0-resto-terra",
@@ -12569,7 +12632,8 @@
   "phone": "01 45 30 02 58",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=349855&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-racines",
@@ -12590,7 +12654,8 @@
   "instagram": "racinesparis",
   "lat": 48.871247,
   "lng": 2.341781,
-  "phone": "01 40 13 06 41"
+  "phone": "01 40 13 06 41",
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-marie-akaneya",
@@ -12604,7 +12669,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "marieakaneya"
+  "instagram": "marieakaneya",
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-sphere",
@@ -12625,7 +12691,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-dans-le-noir",
@@ -12638,7 +12705,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-shiro",
@@ -12660,7 +12728,8 @@
   "photo": "https://restaurantshiro.fr/app/uploads/2021/06/home-01-700x467.jpg",
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/shiro-r694643",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-rh-paris",
@@ -12673,7 +12742,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Américain"
  },
  {
   "id": "precieuses-0-resto-onyx",
@@ -12691,7 +12761,8 @@
   "enriched": 5,
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "onyx.restaurant.paris"
+  "instagram": "onyx.restaurant.paris",
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-mun-paris",
@@ -12712,7 +12783,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Coréen"
  },
  {
   "id": "precieuses-0-resto-dame",
@@ -12731,7 +12803,8 @@
   "photo": "https://dame-resto.fr/img/accueil_16x9.avif",
   "phone": "09 87 46 72 89",
   "instagram": "dame_resto",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-prunier",
@@ -12752,7 +12825,8 @@
   "phone": "01 47 42 98 91",
   "instagram": "pruniercaviar",
   "booking": "https://eu.sevenrooms.com/explore/prunier/reservations/create/search/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Poisson & fruits de mer"
  },
  {
   "id": "precieuses-0-resto-ao-izakaya",
@@ -12766,7 +12840,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "aoizakaya"
+  "instagram": "aoizakaya",
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-siena",
@@ -12785,7 +12860,8 @@
   "photo": "https://siena-restaurants.com/wp-content/uploads/2023/05/vert.png",
   "phone": "01 88 83 00 88",
   "booking": "https://refence.fr/projets/creation-de-site-vitrine-pour-restaurant/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-aquakyoto",
@@ -12804,7 +12880,8 @@
   "photo": "https://aquakyoto.fr/wp-content/uploads/sites/4/2025/02/cropped-kyoto_paris_insta_profile.jpg",
   "phone": "01 86 22 35 85",
   "instagram": "aquakyotoparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Japonais"
  },
  {
   "id": "precieuses-0-resto-lava",
@@ -12822,7 +12899,8 @@
   "website": "https://www.lava-paris.com",
   "enriched": 5,
   "photo": "https://framerusercontent.com/assets/9fIiat79DqYK69FcdqrRtnNjY68.png",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-hotel-le-collectionneur",
@@ -12837,7 +12915,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-cepe-et-figue",
@@ -12855,7 +12934,8 @@
   "phone": "01 43 26 00 24",
   "instagram": "cepeetfigue",
   "booking": "https://www.cepeetfigue.fr/reservation/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-cache",
@@ -12874,7 +12954,8 @@
   "phone": "01 88 40 89 93",
   "instagram": "cache_paris",
   "booking": "https://bookings.zenchef.com/results?rid=353214&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-festif-victoria",
@@ -12892,7 +12973,8 @@
   "photo": "http://victoria-paris.com/wp-content/uploads/2026/02/instagram-victoria.webp",
   "phone": "01 44 17 97 72",
   "instagram": "victoriaparisrestaurant",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-festif-le-verde",
@@ -12911,7 +12993,8 @@
   "photo": "https://verde-paris.fr/wp-content/uploads/2026/10/mediterranean-restaurant-nyc.jpg",
   "phone": "06 75 34 90 19",
   "instagram": "verde.paris",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-festif-l-empire-du-8e",
@@ -12930,7 +13013,8 @@
   "phone": "01 43 59 21 47",
   "instagram": "lempiredu8eme.paris",
   "booking": "https://www.opentable.fr/booking/restref/availability?lang=fr-FR&restRef=279756",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-festif-manko-paris",
@@ -12951,7 +13035,8 @@
   "booking": "https://eu.sevenrooms.com/explore/mankoparis/reservations/create/search?gclid=Cj0KCQiA1czLBhDhARIsAIEc7ugb65HCvuPhTwSVMfpXbVnkgDM8vdwUqw5K8Ocs0zaiSSTjh8NsQDwaAq03EALw_wcB&venues=mankoparis%2Cleboeufsurletoit%2Cnotoparisrestaurantpleyel%2Cvictoriaparis%2Ccafelaperouseconcorde%2Cforestrestaurant%2Candia%2Ccreaturesjuliensebbag%2Cdeepfishbyandia%2Cruralbymarcverat&y=",
   "bookingOk": 2,
   "lat": 48.865672,
-  "lng": 2.303279
+  "lng": 2.303279,
+  "cuisine": "Péruvien"
  },
  {
   "id": "precieuses-0-resto-festif-noto-paris",
@@ -12971,7 +13056,8 @@
   "photo": "https://noto-paris.com/wp-content/uploads/2022/04/Tables-Noto-Paris-Restaurant-2-1024x533.png",
   "phone": "01 86 95 96 60",
   "instagram": "notoparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-festif-les-bains",
@@ -12992,7 +13078,8 @@
   "phone": "01 42 77 07 07",
   "instagram": "lesbainsparis",
   "booking": "https://bookings.zenchef.com/results?rid=356965&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-festif-gallopin",
@@ -13013,7 +13100,8 @@
   "priceSrc": "estim",
   "photo": "https://gallopin.com/wp-content/uploads/sites/5/2023/06/DSC08219-2.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-resto-festif-salvaje",
@@ -13034,7 +13122,8 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "salvajeparis"
+  "instagram": "salvajeparis",
+  "cuisine": "Fusion"
  },
  {
   "id": "precieuses-0-resto-festif-mamamia",
@@ -13055,7 +13144,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-resto-festif-hollywood-savoy",
@@ -13071,7 +13161,8 @@
   "booking": "https://www.thefork.fr/restaurant/hollywood-savoy-r820851",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "hollywood_savoy"
+  "instagram": "hollywood_savoy",
+  "cuisine": "Français"
  },
  {
   "id": "precieuses-0-salon-de-the-coco-palais-garnier",
@@ -14003,7 +14094,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Italien"
  },
  {
   "id": "precieuses-0-brunch-404-brunch-oriental",
@@ -14023,7 +14115,8 @@
   "photo": "https://www.brunch.fr/wp-content/themes/brunch-fr/img/brunch.png",
   "booking": "https://www.brunch.fr/pourquoi-reserver-en-ligne/",
   "bookingOk": 2,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Oriental"
  },
  {
   "id": "precieuses-0-brunch-le-royal-monceau",
@@ -14039,7 +14132,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "leroyalmonceau"
+  "instagram": "leroyalmonceau",
+  "cuisine": "Brunch"
  },
  {
   "id": "precieuses-0-brunch-bande-de-cheffes",
@@ -14056,7 +14150,8 @@
   "enriched": 5,
   "photo": "https://bandedecheffes.org/wp-content/plugins/revslider/public/assets/assets/dummy.png",
   "instagram": "bandedecheffes",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Brunch"
  },
  {
   "id": "precieuses-0-brunch-ferrandi",
@@ -14074,7 +14169,8 @@
   "photo": "https://www.ferrandi-paris.com/sites/default/files/2026-09/design-sans-titre-2026-09-25t142558.989.png",
   "instagram": "ferrandiparis",
   "booking": "https://bookings.zenchef.com/results?rid=361807",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Brunch"
  },
  {
   "id": "ig-paris-slak",
@@ -14336,7 +14432,8 @@
   "lng": 2.353243,
   "searched": 1,
   "igSearched": 1,
-  "instagram": "ristorantenational"
+  "instagram": "ristorantenational",
+  "cuisine": "Italien"
  },
  {
   "id": "ig-paris-le-cornichon",
@@ -14358,7 +14455,8 @@
   "phone": "01 43 20 40 19",
   "instagram": "resto.lecornichon",
   "booking": "https://bookings.zenchef.com/results?rid=362196",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-chez-jeannette",
@@ -14376,7 +14474,8 @@
   "phone": "01 47 70 30 89",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "chezjeannette"
+  "instagram": "chezjeannette",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-l-emil-chateau-voltaire",
@@ -14398,7 +14497,8 @@
   "phone": "01 53 45 91 00",
   "instagram": "hotelchateauvoltaire",
   "booking": "https://bookings.zenchef.com/results?rid=356873&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-la-fontaine-gaillon",
@@ -15098,7 +15198,8 @@
   "enriched": 5,
   "photo": "https://chalet-des-iles.com/wp-content/uploads/2024/02/CDI_Acces_CDI_M_9.svg",
   "booking": "https://bookings.zenchef.com/results?rid=351686&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-le-pavillon-des-canaux",
@@ -15165,7 +15266,8 @@
   "searched": 1,
   "photo": "https://lanouvelleseine.com/wp-content/uploads/2023/05/nouvelle-seine-og.jpg",
   "booking": "https://bookings.zenchef.com/results?rid=361840&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-la-demesure",
@@ -15241,7 +15343,8 @@
   "lng": 2.29115,
   "phone": "06 68 94 26 82",
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/francette-r711098"
+  "booking": "https://www.thefork.fr/restaurant/francette-r711098",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-chalet-des-iles-daumesnil",
@@ -15300,7 +15403,8 @@
   "instagram": "plaza_athenee",
   "lat": 48.866225,
   "lng": 2.304357,
-  "searched": 1
+  "searched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-riviera-paris",
@@ -15316,7 +15420,8 @@
   "instagram": "restaurant_rivieraparis",
   "lat": 48.873351,
   "lng": 2.307241,
-  "searched": 1
+  "searched": 1,
+  "cuisine": "Poisson & fruits de mer"
  },
  {
   "id": "ig-paris-nonos",
@@ -15332,7 +15437,8 @@
   "instagram": "nonosetcomestibles.pp",
   "lat": 48.867901,
   "lng": 2.321341,
-  "searched": 1
+  "searched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-wukong-temple",
@@ -15770,7 +15876,8 @@
   "website": "https://www.bistrot-podium.fr",
   "enriched": 5,
   "photo": "https://www.bistrot-podium.fr/wp-content/uploads/2024/11/hero-bg-Podium-Paris15-BISTROTS-pas-parisiens-copie-3-2048x1152.webp",
-  "phone": "04 12 44 00 08"
+  "phone": "04 12 44 00 08",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-maku",
@@ -15830,7 +15937,8 @@
   "photo": "https://www.auxenfantsgates.fr/images/template-content/ENFANTSGATES_4.jpg",
   "booking": "https://www.auxenfantsgates.fr/reservation-sans-numero",
   "bookingOk": 2,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-lilane",
@@ -15851,7 +15959,8 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "lilane_restaurant"
+  "instagram": "lilane_restaurant",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-seb-on",
@@ -16275,7 +16384,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=356720&lang=fr",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "allenoparis"
+  "instagram": "allenoparis",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-le-boudoir",
@@ -16296,7 +16406,8 @@
   "phone": "07 45 53 66 85",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "leboudoir_paris"
+  "instagram": "leboudoir_paris",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-l-espadon-ritz",
@@ -16316,7 +16427,8 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "espadonritzparis"
+  "instagram": "espadonritzparis",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-la-dame-de-pic",
@@ -16332,7 +16444,8 @@
   "lat": 48.861448,
   "lng": 2.341259,
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-lasserre",
@@ -16353,7 +16466,8 @@
   "website": "https://www.restaurant-lasserre.com",
   "enriched": 5,
   "photo": "https://www.restaurant-lasserre.com/uploads/media/lasserre-gallery/07/17-123f86e2c1e7342aca6b21a49ff0d5b6_f2313.jpg?v=1-0",
-  "instagram": "lasserrerestaurant"
+  "instagram": "lasserrerestaurant",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-le-clarence",
@@ -16374,7 +16488,8 @@
   "website": "https://www.le-clarence.paris",
   "enriched": 5,
   "photo": "https://www.le-clarence.paris/wp-content/uploads/2022/07/clarence-hero-1-min-rs-scaled.jpg",
-  "instagram": "leclarenceparis"
+  "instagram": "leclarenceparis",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-le-taillevent",
@@ -16396,7 +16511,8 @@
   "phone": "01 44 95 15 01",
   "instagram": "letaillevent",
   "bookingScan": 1,
-  "booking": "https://widget.thefork.com/4dda0933-a2a2-412e-81a3-6b6d642cdc3a"
+  "booking": "https://widget.thefork.com/4dda0933-a2a2-412e-81a3-6b6d642cdc3a",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-chez-fred",
@@ -16418,7 +16534,8 @@
   "phone": "01 45 74 20 48",
   "instagram": "chezfred1945",
   "booking": "https://bookings.zenchef.com/results?rid=354546&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-l-ambroisie",
@@ -16440,7 +16557,8 @@
   "phone": "01 42 78 51 45",
   "instagram": "ambroisieparis",
   "booking": "https://bookings.zenchef.com/results?rid=354788&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-kei",
@@ -16461,7 +16579,8 @@
   "enriched": 5,
   "photo": "https://cdn.shopify.com/s/files/1/0780/0799/2615/files/map_trad.png?v=1690476742",
   "phone": "01 42 33 14 74",
-  "instagram": "restaurantkei"
+  "instagram": "restaurantkei",
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-plenitude-cheval-blanc",
@@ -16481,7 +16600,8 @@
   "enriched": 5,
   "photo": "https://images.prismic.io/lvmh-chevalblanc/aGUCC3fc4bHWi86A_Light-ChevalBlancParis_Fa%C3%A7ade_OliverFly.jpg?auto=format%2Ccompress&rect=0%2C234%2C5614%2C7018&w=3840&fit=max&q=0.9",
   "instagram": "chevalblancofficial",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "cuisine": "Français"
  },
  {
   "id": "ig-paris-lucas-carton",
@@ -16504,7 +16624,8 @@
   "booking": "https://eu.sevenrooms.com/explore/lucascarton/reservations/create/search/",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "lucascartonparis"
+  "instagram": "lucascartonparis",
+  "cuisine": "Français"
  },
  {
   "id": "ig-new-york-moishe-s-bakery",
