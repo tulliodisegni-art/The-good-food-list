@@ -81,6 +81,7 @@ function rebuild() {
     const g = p.address && S.geo[p.address];
     if (!p.lat && g) { p.lat = g[0]; p.lng = g[1]; }
   }
+  if (window.Social) { window.Social.decorate(S.places); window.Social.publish(); }
 }
 
 function setEdit(id, patch) {
@@ -96,6 +97,7 @@ function filtered(list) {
   const q = norm(S.q).trim();
   return S.places.filter((p) => {
     if (p.list !== list && !(list === "precieuses" && p.prec)) return false;
+    if (window.Social && !window.Social.match(p)) return false;
     if (S.cat[list] && p.cat !== S.cat[list]) return false;
     if (list === "paris" && S.arr && p.arr !== S.arr) return false;
     if (S.fav[list] === "done" && !p.tested) return false;
@@ -277,6 +279,7 @@ function renderPending() {
 }
 
 function renderAll() {
+  if (window.Social) window.Social.renderBars();
   renderParis(); renderPrec(); renderVilles(); renderPending(); fillCatOptions();
   if (window.renderHome) renderHome();
   if (map) refreshMarkers();
@@ -356,6 +359,7 @@ function openSheet(id, keepScroll) {
           ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}
           ${p.price ? `<span class="price-tag" title="${PRICE_HINT[p.price]}${p.priceSrc === "estim" ? " (estimation)" : ""}">${euros(p.price)}<i>${"€".repeat(4 - p.price)}</i></span>` : ""}
           ${p.gRating ? `<span class="g-rating">${STAR}${esc(p.gRating)} Google</span>` : ""}</div>
+        ${window.Social ? window.Social.sheetHtml(p) : ""}
         <div class="class-line">${p.list === "precieuses" || p.prec ? `<span class="prec-badge">${icon("gem")}Précieuse</span>` : ""}
           ${p.kasher ? `<span class="prec-badge diet">Kasher</span>` : ""}${p.halal ? `<span class="prec-badge diet">Halal</span>` : ""}
           <button class="link-btn" data-classify>${icon("pencil")}Changer le classement</button></div>
@@ -798,6 +802,7 @@ function refreshMarkers() {
     if (!p.lat || p.list === "pending") continue;
     if (S.mapList !== "all" && p.list !== S.mapList) continue;
     if (S.mapCat && p.cat !== S.mapCat) continue;
+    if (window.Social && !window.Social.match(p)) continue;
     const m = markerFor(p); markers.set(p.id, m); ms.push(m);
   }
   cluster.addLayers(ms);

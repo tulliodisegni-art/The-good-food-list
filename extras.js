@@ -253,6 +253,7 @@ function openSettings() {
     ${window.Account && window.Account.user ? `<section class="block"><h3>Mon compte</h3>
       <p class="muted small">Connecté : <b>${esc(window.Account.user.email)}</b>. Tes adresses ajoutées, coches et notes sont sauvegardées et se retrouvent sur tes autres appareils.</p>
       <div class="row-actions"><button class="btn" data-signout>Se déconnecter</button></div></section>` : ""}
+    ${window.Social ? window.Social.settingsHtml() : ""}
     <section class="block"><h3>Sauvegarde</h3>
       <p class="muted small">Tes coches, notes, commentaires, envies et adresses ajoutées sont gardés sur ce téléphone. Exporte-les de temps en temps, ou pour les passer sur un autre appareil.</p>
       <div class="row-actions"><button class="btn primary" data-backup>Exporter mes notes</button>
