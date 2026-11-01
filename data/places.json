@@ -14943,7 +14943,11 @@
   "instagram": "bar_demory",
   "lat": 48.861677,
   "lng": 2.350873,
-  "searched": 1
+  "searched": 1,
+  "phone": "09 81 12 53 06",
+  "website": "https://demoryparis.com/",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-ivy",
