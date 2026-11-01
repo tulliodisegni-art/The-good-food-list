@@ -372,5 +372,37 @@
  },
  "ig-paris-lucas-carton": {
   "cuisine": "Français"
+ },
+ "paris-4-cacher-tekes": {
+  "cat": "Israélien",
+  "kasher": true
+ },
+ "paris-8-cacher-le-kavod": {
+  "cat": "Français",
+  "kasher": true
+ },
+ "paris-10-cacher-vendredi-soir": {
+  "cat": "Israélien",
+  "kasher": true
+ },
+ "paris-12-cacher-tikounolam": {
+  "cat": "Israélien",
+  "kasher": true
+ },
+ "paris-12-cacher-berbeche": {
+  "cat": "Oriental",
+  "kasher": true
+ },
+ "ig-paris-chez-franck": {
+  "cat": "Oriental",
+  "kasher": true
+ },
+ "ig-paris-la-kave-du-fromager": {
+  "cat": "Français",
+  "kasher": true
+ },
+ "ig-autour-de-paris-le-bazar": {
+  "cat": "Français",
+  "kasher": true
  }
 }
