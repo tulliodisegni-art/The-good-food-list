@@ -223,6 +223,20 @@ main { max-width: 760px; margin: 0 auto; padding-bottom: calc(var(--tabs-h) + en
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tabs a.on { color: #9db7ef; } }
 :root[data-theme="dark"] .tabs a.on { color: #9db7ef; }
 
+/* Téléphone : barre flottante en pilule, centrée, quatre onglets égaux. */
+@media (max-width: 999px) {
+  :root { --tabs-h: 78px; }
+  .tabs {
+    left: 50%; right: auto; transform: translateX(-50%);
+    bottom: max(12px, calc(env(safe-area-inset-bottom, 0px) - 8px));
+    width: min(420px, calc(100vw - 32px)); grid-template-columns: repeat(4, 1fr);
+    padding: 0 6px; border: 1px solid var(--line); border-radius: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .28), 0 2px 8px rgba(0, 0, 0, .12);
+  }
+  .tabs a { height: 62px; }
+  #map { bottom: 0; }
+}
+
 /* Fiche */
 .sheet-backdrop { position: fixed; inset: 0; background: rgba(8, 10, 16, .45); z-index: 40; }
 .sheet {
