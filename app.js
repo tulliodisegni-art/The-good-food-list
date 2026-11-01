@@ -951,7 +951,7 @@ function aiPrompt(link, text) {
   return `Tu aides à remplir une fiche dans « The Good Food List », un carnet personnel d'adresses (restos, bars, sorties).
 Les images sont des captures d'écran d'une publication (Instagram, TikTok, Facebook, site…).${link ? `\nLien de la publication : ${link}` : ""}${text ? `\nTexte de la légende :\n${text}` : ""}
 
-Identifie le lieu présenté.${link && !text ? " S'il n'y a que le lien, ouvre-le avec web_fetch ; s'il est illisible (Instagram, TikTok), cherche le compte et la publication sur le web." : ""} Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.
+Identifie le lieu présenté.${link && !text ? " S'il n'y a que le lien, ouvre-le ; s'il est illisible (Instagram, TikTok), cherche le compte et la publication sur le web." : ""} Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.
 
 Choix de la liste :
 - "paris" : restaurant ou adresse à manger dans Paris intra-muros (75001 à 75020).

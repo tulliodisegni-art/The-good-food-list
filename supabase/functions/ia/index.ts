@@ -1,5 +1,5 @@
 // Good Food : fonction « ia » (Supabase Edge Function).
-// Elle garde la clé Anthropic côté serveur (secret ANTHROPIC_API_KEY) : l'appli n'a plus besoin de clé.
+// Elle garde la clé de l'IA côté serveur (secret GEMINI_API_KEY, gratuit, ou ANTHROPIC_API_KEY) : l'appli n'a plus besoin de clé.
 // Sert à lire un lien ou une capture pour remplir une fiche, et à comprendre une « envie ».
 const cors = {
   "access-control-allow-origin": "*",
@@ -8,6 +8,29 @@ const cors = {
 };
 const json = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { ...cors, "content-type": "application/json" } });
+
+async function gemini(key: string, prompt: string, images: string[], web: boolean) {
+  const parts = [
+    ...images.map((d) => ({ inline_data: { mime_type: "image/jpeg", data: String(d).replace(/^data:[^,]+,/, "") } })),
+    { text: prompt },
+  ];
+  let last = "";
+  for (const model of ["gemini-flash-latest", "gemini-2.5-flash"]) {
+    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+      method: "POST",
+      headers: { "x-goog-api-key": key, "content-type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ role: "user", parts }],
+        ...(web ? { tools: [{ google_search: {} }, { url_context: {} }] } : {}),
+      }),
+    });
+    const res = await r.json();
+    if (r.ok) return (res.candidates?.[0]?.content?.parts || []).map((p: any) => p.text || "").join("");
+    last = res?.error?.message || `erreur ${r.status}`;
+    if (r.status !== 404 && r.status !== 400) break;
+  }
+  throw new Error(last);
+}
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: cors });
@@ -25,6 +48,9 @@ Deno.serve(async (req) => {
       })),
       { type: "text", text: prompt },
     ];
+    // Clé Google Gemini (gratuite) si elle est là, sinon clé Anthropic.
+    const gkey = Deno.env.get("GEMINI_API_KEY");
+    if (gkey) return json({ text: await gemini(gkey, prompt, images, web) });
     const messages: unknown[] = [{ role: "user", content }];
     let res: any;
     // La recherche web peut demander plusieurs tours (pause_turn).
