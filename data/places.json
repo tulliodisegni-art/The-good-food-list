@@ -16814,7 +16814,8 @@
   "website": "https://www.manhattarestaurant.com",
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/1cf2b7830837af2c4dafd105dc16b240/media/images/2218497721HighResBlue.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=DBCCB9&pad=100",
-  "booking": "https://www.opentable.com/r/manhatta-new-york"
+  "booking": "https://www.opentable.com/r/manhatta-new-york",
+  "bookingOk": 2
  },
  {
   "id": "ig-new-york-twenty-three-grand",
@@ -17404,7 +17405,8 @@
   "website": "https://www.donangie.com",
   "enriched": 5,
   "photo": "https://images.getbento.com/GiUwZKATSEeII7KhlCqP_DonAngie01.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=EDEDF1&pad=100",
-  "booking": "https://www.opentable.com/r/don-angie-reservations-new-york?restref=994474&lang=en-US&ot_source=Restaurant%20website"
+  "booking": "https://www.opentable.com/r/san-sabino-new-york",
+  "bookingOk": 2
  },
  {
   "id": "ig-new-york-the-mulberry-bar",
@@ -17531,7 +17533,8 @@
   "enriched": 5,
   "photo": "https://elsierooftop.com/wp-content/uploads/2026/08/BB3A9330.webp",
   "instagram": "elsierooftopny",
-  "booking": "https://www.opentable.com/r/elsie-rooftop-new-york"
+  "booking": "https://www.opentable.com/r/elsie-rooftop-new-york",
+  "bookingOk": 2
  },
  {
   "id": "ig-new-york-ophelia",
@@ -17552,7 +17555,8 @@
   "website": "https://www.opheliany.com",
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/0dc3afa185c13d245b6a95eba90422e9/media/images/198337588ophelia_white.png",
-  "booking": "https://www.opentable.com/booking/restref/availability?rid=995113"
+  "booking": "https://www.opentable.com/r/casa-felix-new-york",
+  "bookingOk": 2
  },
  {
   "id": "ig-new-york-candle-cafe",
