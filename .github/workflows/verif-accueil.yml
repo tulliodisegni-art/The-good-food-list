@@ -1,0 +1,39 @@
+name: Vérifier l'accueil en ligne
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  verif:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Capture sur iPhone (Safari)
+        run: |
+          mkdir verif && cd verif
+          npm init -y > /dev/null
+          npm install playwright@1.48.2 > /dev/null
+          npx playwright install --with-deps webkit > /dev/null
+          cat > shot.js <<'EOF'
+          const { webkit, devices } = require("playwright");
+          (async () => {
+            const b = await webkit.launch();
+            const ctx = await b.newContext({ ...devices["iPhone 13"] });
+            const pg = await ctx.newPage();
+            pg.on("console", (m) => console.log("console:", m.type(), m.text()));
+            pg.on("pageerror", (e) => console.log("ERREUR:", e.message));
+            await pg.goto("https://tulliodisegni-art.github.io/The-good-food-list/", { waitUntil: "networkidle" });
+            await pg.waitForTimeout(4000);
+            console.log("body:", await pg.evaluate(() => document.body.className), "home:", await pg.evaluate(() => document.querySelector("#home")?.className));
+            await pg.screenshot({ path: "accueil.png" });
+            await pg.goto("https://tulliodisegni-art.github.io/The-good-food-list/#precieuses", { waitUntil: "networkidle" });
+            await pg.waitForTimeout(2000);
+            await pg.screenshot({ path: "precieuses.png" });
+            await b.close();
+          })();
+          EOF
+          node shot.js
+      - name: Garder les captures
+        run: |
+          cd verif
+          git init -q -b verif-accueil && git add accueil.png precieuses.png
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "Capture de l'accueil"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" verif-accueil
