@@ -1,0 +1,12 @@
+name: Vérifier la fonction ia
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Appeler la fonction ia
+        run: |
+          URL=$(jq -r .avis.url data/config.json); KEY=$(jq -r .avis.key data/config.json)
+          curl -sS -m 90 -X POST "$URL/functions/v1/ia" -H "apikey: $KEY" -H "content-type: application/json" \
+            -d '{"prompt":"Réponds juste en JSON {\"name\":\"\",\"address\":\"\"} pour le restaurant Big Mamma East Mamma à Paris.","web":true}' -w "\nHTTP %{http_code}\n"
