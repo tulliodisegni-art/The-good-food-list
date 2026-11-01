@@ -11,7 +11,20 @@
 body.dark{--bg:#121318;--ink:#eeeae2;--muted:#9a9aa3;--card:#1b1d24;--line:#2a2d36;--chip:#23262f;--shadow:0 6px 20px rgba(0,0,0,.35)}
 body.city-ny{--accent:#c23b3b}body.city-tlv{--accent:#0f7c8a}body.city-jer{--accent:#a86a1f}
 body.dark.city-paris{--accent:#7f9fe0}body.dark.city-ny{--accent:#ff7a6b}body.dark.city-tlv{--accent:#46c1cf}body.dark.city-jer{--accent:#e3a956}
-body.prec{--bg:#0d0c0a;--ink:#f3eadb;--muted:#a99e8b;--card:#18160f;--line:#2e2a20;--chip:#221e16;--accent:#c9a24b}
+body.prec{--bg:#000;--ink:#f6ecd2;--muted:#b49a5e;--card:#0a0906;--line:#5a4718;--chip:#1a150a;--accent:#e2b84c;--shadow:0 0 0 1px rgba(226,184,76,.18),0 10px 30px rgba(0,0,0,.6)}
+body.prec h1,body.prec h2,body.prec .subhead h3,body.prec .pcard b,body.prec .tile h3{background:linear-gradient(180deg,#fff3c4 0,#e9c25a 45%,#b8862b 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+body.prec .hero::after{background:linear-gradient(180deg,rgba(0,0,0,.55) 0,rgba(0,0,0,.25) 40%,rgba(0,0,0,.4) 65%,#000 100%)}
+body.prec .brand small{color:#e9c25a;letter-spacing:.3em}
+body.prec .pcard,body.prec .wish,body.prec .diet button{border-color:#6b5420}
+body.prec .ph{box-shadow:0 0 0 1px #b8862b}
+body.prec .tile{box-shadow:0 0 0 1px #b8862b}
+body.prec .search{background:#0a0906;border:1px solid #6b5420}
+body.prec nav{background:rgba(0,0,0,.92);border-color:#6b5420}
+body.prec nav button.on{color:#e9c25a}
+body.prec .wish button,body.prec .ibtn.add{background:linear-gradient(180deg,#f3d27a,#b8862b);color:#000}
+body.prec .city.on{background:linear-gradient(180deg,#f3d27a,#b8862b);color:#000;border-color:#e9c25a}
+body.prec .tag{background:#1a150a;color:#e9c25a;border:1px solid #5a4718}
+nav button.gem{color:#b8862b}
 *{box-sizing:border-box}html,body{margin:0}
 body{background:var(--bg);color:var(--ink);font:15px/1.45 Manrope,system-ui,sans-serif;transition:background .4s,color .4s;padding-bottom:92px;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:Gloock,Georgia,serif;font-weight:400;margin:0}
@@ -73,6 +86,12 @@ body.prec .sign{background:linear-gradient(180deg,#1d1a13,#0f0d09);color:#e8cf8a
 .zbar{position:sticky;top:0;z-index:8;background:var(--bg);margin:0 -16px;padding:10px 16px 0;border-bottom:1px solid var(--line)}
 .zbar .zrail{margin:0 -16px;padding:4px 16px 12px}
 .zbar .sign{min-width:74px;height:50px}.zbar .sign .n{font-size:20px}.zbar .sign.txt .n{font-size:13px}.zbar .zp small{display:none}
+.wish{display:flex;gap:8px;align-items:flex-end;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px 10px 10px 14px;box-shadow:var(--shadow)}
+.wish textarea{flex:1;border:0;background:none;outline:0;resize:none;font:inherit;color:var(--ink);min-height:44px}
+.wish button{border:0;background:var(--accent);color:#fff;border-radius:12px;padding:10px 14px;font-weight:800}
+.ex{display:flex;gap:8px;overflow-x:auto;margin:10px -16px 0;padding:0 16px 4px;scrollbar-width:none}.ex::-webkit-scrollbar{display:none}
+.ex button{flex:none;border:1px solid var(--line);background:var(--chip);border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:700}
+.why{font-size:11.5px;color:var(--accent);font-weight:700;margin-top:3px}
 .diet{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .diet button{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:14px;text-align:left;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow)}
 .seal{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:Gloock,serif;font-size:19px;color:#fff;flex:none}
@@ -140,6 +159,42 @@ const ENVIES=[
  {t:"Envie d'Asie",s:"Japon, Corée, Chine…",f:p=>/Japonais|Coréen|Chinois|Thaï|Vietnam|Asiat|Taïwan/.test(p.cat||"")},
  {t:"Dolce vita",s:"Pâtes, pizzas, burrata",f:p=>/Italien/.test(p.cat||"")}];
 const CREDIT={paris:"Photo Terragio67, CC BY-SA 4.0",ny:"Photo King of Hearts, CC BY-SA 4.0",tlv:"Photo Shaulinb, CC BY-SA 3.0",jer:"Photo Radosław Botev, CC BY 3.0",nuit:"Photo Pierre Blaché, CC0"};
+const NORM=t=>String(t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const CONCEPTS=[
+ {w:/chaleur|cosy|cocoon|convivial|reconfort|gourmand|genereu|copieu|comfort|familial|maison/,label:"chaleureux & gourmand",cat:/Français|Italien|Oriental|Burger|Coréen|Africain|Street|Libanais|Grec|Argentin|Polonais|Russe/,txt:/chaleur|famil|genereu|gourmand|reconfort|bistrot|maison|institution|copieu|cantine/},
+ {w:/leger|healthy|sain|frais|fraich|equilibr|veg/,label:"léger & frais",cat:/Japonais|Vegan|Poisson|Israélien|Brunch|Grec|Vietnam|Libanais/,txt:/frais|leger|vege|vegan|poisson|salade/},
+ {w:/romanti|date|amoureu|intime|intimiste|en couple|tete a tete/,label:"romantique",price:3,txt:/date|romanti|intim|cadre|chic|amoureu|cache/},
+ {w:/chic|classe|gastro|etoile|exception|luxe|haut de gamme|occasion/,label:"chic",price:4,prec:1},
+ {w:/pas cher|petit prix|budget|econom|bon marche|abordable/,label:"petit prix",maxPrice:1},
+ {w:/festi|fete|danse|ambiance|soiree|amis|ca bouge|bouge/,label:"festif",cat:/Soirée|festif|Bar|Tapas|Rooftop/,txt:/festi|dj|fete|ambiance/},
+ {w:/terrasse|dehors|soleil|rooftop|vue|exterieur|jardin|peniche|eau/,label:"terrasse & vue",cat:/Rooftop/,txt:/terrasse|rooftop|vue|peniche|jardin|seine|bord de l.eau|ile/},
+ {w:/rapide|sur le pouce|vite|emporter|street|sandwich/,label:"sur le pouce",cat:/Street|Burger|Sandwich|Deli/},
+ {w:/sucre|dessert|patiss|gateau|glace|cookie|gouter|donut/,label:"sucré",cat:/Pâtisserie|Glacier|Café|Salon de thé/,txt:/cookie|patiss|glace|dessert|donut|chou/},
+ {w:/brunch|petit.dej|matin/,label:"brunch",cat:/Brunch|Café/},
+ {w:/epice|spicy|piment|releve/,label:"épicé",cat:/Coréen|Thaï|Indien|Chinois|Mexicain|Sichuan/,txt:/epic|spicy|piment|mala/},
+ {w:/sushi|japon|ramen|udon|onigiri/,label:"japonais",cat:/Japonais/},{w:/pizza|pate|italie|burrata/,label:"italien",cat:/Italien/},
+ {w:/burger/,label:"burger",cat:/Burger/},{w:/coree|coreen|bibimbap/,label:"coréen",cat:/Coréen/},{w:/chin|ravioli|dumpling/,label:"chinois",cat:/Chinois/},
+ {w:/couscous|tajine|maroc|oriental/,label:"oriental",cat:/Oriental/},{w:/liban|houmous|hummus|falafel/,label:"libanais",cat:/Libanais|Israélien|Oriental/},
+ {w:/mexi|taco/,label:"mexicain",cat:/Mexicain/},{w:/indien|curry/,label:"indien",cat:/Indien/},{w:/thai/,label:"thaï",cat:/Thaï/},
+ {w:/francais|bistro|brasserie/,label:"français",cat:/Français/},{w:/viande|steak|grill|boeuf/,label:"viande",cat:/Steakhouse|Argentin/,txt:/viande|steak|boeuf|grill/},
+ {w:/poisson|fruits de mer|huitre/,label:"mer",cat:/Poisson/,txt:/poisson|mer|huitre/},{w:/cocktail|verre|bar\b/,label:"un verre",cat:/Bar|Boire un verre/},
+ {w:/kasher|casher|cacher/,label:"kasher",flag:"kasher"},{w:/halal/,label:"halal",flag:"halal"}];
+function wishSearch(q,P){const n=NORM(q);const hit=CONCEPTS.filter(c=>c.w.test(n));
+ const arr=(n.match(/\b(\d{1,2})\s*(e|eme|er)\b/)||[])[1];
+ const res=P.map(p=>{let sc=0;const why=[];const txt=NORM(`${p.summary||""} ${p.name} ${p.note||""}`);
+  for(const c of hit){let ok=false;
+   if(c.flag){if(p[c.flag])ok=true;else{sc-=99}}
+   if(c.cat&&c.cat.test(p.cat||""))ok=true;
+   if(c.txt&&c.txt.test(txt)){ok=true;sc+=1}
+   if(c.price&&p.price>=c.price)ok=true;
+   if(c.prec&&isPrec(p))ok=true;
+   if(c.maxPrice){if(p.price&&p.price<=c.maxPrice)ok=true;else sc-=2}
+   if(ok){sc+=3;why.push(c.label)}}
+  if(arr&&String(p.arr)!==arr)sc-=99;
+  if(!hit.length&&txt.includes(n))sc+=3;
+  if(p.photo)sc+=.3;if(p.mark)sc+=.5;
+  return{p,sc,why}}).filter(x=>x.sc>=3).sort((a,b)=>b.sc-a.sc);
+ return{res,labels:hit.map(c=>c.label)}}
 const PAL=["#1d3b78","#2c7a4b","#c23b3b","#d0782a","#7a4ea3","#0f7c8a","#a86a1f","#b03a6f"];
 const S={city:"paris",prec:false,dark:matchMedia("(prefers-color-scheme: dark)").matches,view:"home",list:null,name:0,places:[]};
 const $=s=>document.querySelector(s);
@@ -164,13 +219,13 @@ function renderHero(){const c=CITIES.find(x=>x.id===S.city);
  const img=S.prec?"../images/cities/nuit.jpg":`../images/cities/${S.city}.jpg`;
  const h=$("#hero");h.style.backgroundImage=`url('${img}')`;
  const n=id=>S.places.filter(p=>cityOf(p)===id&&p.list!=="precieuses").length;
- h.innerHTML=`<div class="top"><div class="brand"><small>${S.prec?"La Collection":esc(c.kick)}</small><h1>${esc(NAMES[S.name].n)}</h1></div>
+ h.innerHTML=`<div class="top"><div class="brand"><small>${S.prec?"Les Précieuses":esc(c.kick)}</small><h1>${esc(NAMES[S.name].n)}</h1></div>
  <div class="acts"><button class="ibtn" data-dark aria-label="Mode sombre"><svg viewBox="0 0 24 24">${S.dark?'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/>':'<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>'}</svg></button>
  <button class="ibtn" aria-label="Partager"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
  <button class="ibtn add" aria-label="Ajouter"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div></div>
  <div class="cities">${CITIES.map(x=>`<button class="city ${x.id===S.city?"on":""}" data-city="${x.id}">${esc(x.name)}<b>${n(x.id)}</b></button>`).join("")}</div>
  <span class="credit">${esc(CREDIT[S.prec?"nuit":S.city])}</span><label class="search" style="position:absolute;left:0;right:0;bottom:-6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="Un resto, une envie, un quartier…"></label>`;}
-function card(p){return `<div class="pcard"><div class="ph" ${bg(p.photo)}>${p.photo?"":esc((p.name||"?")[0])}</div><div style="min-width:0"><b>${esc(p.name)}</b><small>${esc(p.cat||"")}${p.address?" · "+esc(p.address.replace(/,?\s*750\d\d Paris$/,"")):""}</small><div class="tags">${p.price?`<span class="tag">${"€".repeat(p.price)}</span>`:""}${p.kasher?'<span class="tag k">Kasher</span>':""}${p.halal?'<span class="tag h">Halal</span>':""}</div></div></div>`}
+function card(p,why){return `<div class="pcard"><div class="ph" ${bg(p.photo)}>${p.photo?"":esc((p.name||"?")[0])}</div><div style="min-width:0"><b>${esc(p.name)}</b><small>${esc(p.cat||"")}${p.address?" · "+esc(p.address.replace(/,?\s*750\d\d Paris$/,"")):""}</small><div class="tags">${p.price?`<span class="tag">${"€".repeat(p.price)}</span>`:""}${p.kasher?'<span class="tag k">Kasher</span>':""}${p.halal?'<span class="tag h">Halal</span>':""}</div>${why&&why.length?`<div class="why">✓ ${esc(why.join(" · "))}</div>`:""}</div></div>`}
 function zones(P){const m={};P.forEach(p=>{const z=zoneOf(p);if(z)m[z]=(m[z]||0)+1});return m}
 function renderHome(){const P=pool(),c=CITIES.find(x=>x.id===S.city);
  const env=ENVIES.map((e,i)=>({e,i,items:P.filter(e.f)})).filter(x=>x.items.length);
@@ -181,12 +236,13 @@ function renderHome(){const P=pool(),c=CITIES.find(x=>x.id===S.city);
  $("#main").innerHTML=`<div style="height:34px"></div>
  <section class="sec"><div class="sec-h"><h2>${esc(c.zoneTitle)}</h2><span>${P.length} adresses</span></div>
   <div class="zrail">${zkeys.map(z=>`<button class="zp" data-zone="${esc(z)}">${sign(z)}<small>${Z[z]} adresse${Z[z]>1?"s":""}</small></button>`).join("")}</div></section>
- <section class="sec"><div class="sec-h"><h2>Une envie de…</h2></div>
-  <div class="rail">${env.map(({e,i,items})=>`<button class="tile envie" data-envie="${i}" ${bg(photoOf(items,i))}><div class="t"><h3>${e.t}</h3><p>${e.s} · ${items.length}</p></div></button>`).join("")}</div></section>
+ <section class="sec"><div class="sec-h"><h2>Une envie ?</h2></div>
+  <div class="wish"><textarea id="wish" rows="2" placeholder="Décris ce dont tu as envie… ex. un resto chaleureux, cuisine réconfortante et gourmande"></textarea><button data-wish>Trouver</button></div>
+  <div class="ex">${["Chaleureux, réconfortant et gourmand","Léger et frais, pas cher","Romantique avec une belle vue","Festif entre amis, ça bouge","Sushi de qualité","Sucré pour le goûter"].map(x=>`<button data-ex="${esc(x)}">${esc(x)}</button>`).join("")}</div></section>
  <section class="sec"><div class="sec-h"><h2>Par cuisine</h2><button class="all" data-allcats>Tout voir ›</button></div>
   <div class="rail">${cats.slice(0,10).map(([n,v],i)=>`<button class="tile cuis" data-cat="${esc(n)}" ${bg(photoOf(P.filter(p=>p.cat===n),i))}><div class="t"><h3>${esc(n)}</h3><p>${v} adresses</p></div></button>`).join("")}</div></section>
  ${k||h?`<section class="sec"><div class="sec-h"><h2>Régimes</h2></div><div class="diet">${k?`<button data-diet="kasher"><span class="seal" style="background:#1d3b78">K</span><span><b>Kasher</b><small>${k} adresses</small></span></button>`:""}${h?`<button data-diet="halal"><span class="seal" style="background:#2c7a4b">H</span><span><b>Halal</b><small>${h} adresses</small></span></button>`:""}</div></section>`:""}
- <section class="sec"><button class="collection" data-toggle-prec ${bg(precImg)}><div class="t"><small>${S.prec?"Tu es dans":"Haut de gamme"}</small><h3>La Collection</h3><p>${S.prec?"Touche pour revenir aux adresses du quotidien.":"Grandes tables, rooftops, bars d'exception. L'appli passe en noir et or."}</p><span class="go">${S.prec?"Quitter":"Entrer"}</span></div></button></section>
+
  <section class="sec"><div class="sec-h"><h2>Choisis le nom</h2><span>touche pour l'essayer</span></div>
   <div class="names">${NAMES.map((x,i)=>`<button class="name ${i===S.name?"on":""}" data-name="${i}"><h3>${esc(x.n)}</h3><p>${esc(x.d)}</p></button>`).join("")}</div></section>
  <p class="proto">Maquette · ton appli actuelle n'est pas modifiée</p>`;}
@@ -199,13 +255,15 @@ function renderList(){const P=pool(),L=S.list;let items=P,title="",body="";
   $("#main").innerHTML=`<div style="height:30px"></div><div class="zbar"><div class="list-h" style="margin:0 0 8px"><button class="back" data-back>‹</button><h2>${/^\d+$/.test(L.zone)?`Paris ${arrH(+L.zone)}`:esc(L.zone)}</h2><span style="margin-left:auto;color:var(--muted);font-weight:700;font-size:12px">${items.length} adresses</span></div>
   <div class="zrail" id="zbar">${ks.map(z=>`<button class="zp ${z===L.zone?"on":""}" data-zone="${esc(z)}">${sign(z)}</button>`).join("")}</div></div><div id="zbody">${grouped(items)}</div>`;
   const on=document.querySelector("#zbar .zp.on");if(on)on.scrollIntoView({inline:"center",block:"nearest"});return}
+ if(L.wish!=null){const {res,labels}=wishSearch(L.wish,P);
+  $("#main").innerHTML=`<div style="height:30px"></div><div class="list-h"><button class="back" data-back>‹</button><h2>Ton envie</h2></div><p style="margin:0 0 4px;color:var(--muted)">« ${esc(L.wish)} »</p>${labels.length?`<div class="tags" style="margin-bottom:12px">${labels.map(l=>`<span class="tag">${esc(l)}</span>`).join("")}</div>`:""}<div class="cards">${res.slice(0,40).map(x=>card(x.p,x.why)).join("")||'<p style="color:var(--muted)">Rien trouvé, essaie avec d\'autres mots.</p>'}</div><p class="proto">Dans la vraie appli, Claude comprendra n'importe quelle phrase</p>`;return}
  if(L.envie!=null){items=P.filter(ENVIES[L.envie].f);title=ENVIES[L.envie].t;body=grouped(items)}
  if(L.diet){items=P.filter(p=>p[L.diet]);title=L.diet==="kasher"?"Kasher":"Halal";body=grouped(items)}
  if(L.cat){items=P.filter(p=>p.cat===L.cat);title=esc(L.cat);body=`<div class="cards" style="margin-top:14px">${items.map(card).join("")}</div>`}
  if(L.q!=null){const q=L.q.toLowerCase();items=P.filter(p=>`${p.name} ${p.cat} ${p.address}`.toLowerCase().includes(q));title=L.q?`« ${esc(L.q)} »`:"Toutes les adresses";body=grouped(items)}
  $("#main").innerHTML=`<div style="height:30px"></div><div class="list-h"><button class="back" data-back>‹</button><h2>${title}</h2></div>${body||'<p style="color:var(--muted)">Rien ici pour l\'instant.</p>'}`}
-function renderNav(){const it=[["home","Accueil",'<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>'],["explore","Explorer",'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'],["map","Carte",'<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>'],["love","Mes envies",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>']];
- $("#nav").innerHTML=it.map(([id,l,ic])=>`<button class="${(id==="home"&&S.view!=="list")||(id==="explore"&&S.view==="list")?"on":""}" data-view="${id}"><svg viewBox="0 0 24 24">${ic}</svg>${l}</button>`).join("")}
+function renderNav(){const it=[["home","Accueil",'<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>'],["explore","Explorer",'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'],["prec","Précieuses",'<path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M9 3l3 6 3-6M12 9v12"/>'],["map","Carte",'<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>'],["love","Mes envies",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>']];
+ $("#nav").innerHTML=it.map(([id,l,ic])=>`<button class="${id==="prec"?"gem ":""}${(id==="prec"&&S.prec)||(id==="home"&&!S.prec&&S.view!=="list")||(id==="explore"&&!S.prec&&S.view==="list")?"on":""}" data-view="${id}"><svg viewBox="0 0 24 24">${ic}</svg>${l}</button>`).join("")}
 function render(){renderHero();S.view==="list"?renderList():renderHome();renderNav()}
 const open=l=>{const inZone=S.view==="list"&&S.list&&S.list.zone&&l.zone;S.list=l;S.view="list";render();scrollTo({top:inZone?Math.min(scrollY,330):330,behavior:inZone?"auto":"smooth"})};
 document.addEventListener("click",e=>{const t=e.target;let b;
@@ -215,11 +273,13 @@ document.addEventListener("click",e=>{const t=e.target;let b;
  if(b=t.closest("[data-envie]"))return open({envie:+b.dataset.envie});
  if(b=t.closest("[data-diet]"))return open({diet:b.dataset.diet});
  if(b=t.closest("[data-cat]"))return open({cat:b.dataset.cat});
+ if(t.closest("[data-wish]")){const v=$("#wish").value.trim();if(v)open({wish:v});return}
+ if(b=t.closest("[data-ex]"))return open({wish:b.dataset.ex});
  if(t.closest("[data-allcats]"))return open({allcats:1});
  if(t.closest("[data-toggle-prec]")){S.prec=!S.prec;S.view="home";render();scrollTo({top:0,behavior:"smooth"});return}
  if(b=t.closest("[data-name]")){S.name=+b.dataset.name;render();return}
  if(t.closest("[data-back]")){S.view="home";render();return}
- if(b=t.closest("[data-view]")){const v=b.dataset.view;if(v==="home"){S.view="home";render()}else if(v==="explore")open({q:""});else alert("Dans la maquette, seuls Accueil et Explorer sont cliquables.");}});
+ if(b=t.closest("[data-view]")){const v=b.dataset.view;if(v==="prec"){S.prec=true;S.view="home";render();scrollTo({top:0});return}if(v==="home"){S.prec=false;S.view="home";render();scrollTo({top:0})}else if(v==="explore")open({q:""});else alert("Dans la maquette, seuls Accueil et Explorer sont cliquables.");}});
 let tx=null,ty=0;document.addEventListener("touchstart",e=>{if(e.target.closest(".zrail,.rail")){tx=null;return}tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
 document.addEventListener("touchend",e=>{if(tx==null||!(S.view==="list"&&S.list&&S.list.zone))return;const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;tx=null;if(Math.abs(dx)<70||Math.abs(dy)>Math.abs(dx)*.6)return;
  const {ks}=zkeysOf(pool());const i=ks.indexOf(S.list.zone)+(dx<0?1:-1);if(ks[i])open({zone:ks[i]})},{passive:true});
