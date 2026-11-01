@@ -256,17 +256,18 @@ function openSettings() {
         <label class="btn" for="restoreFile">Restaurer</label><input id="restoreFile" type="file" accept="application/json,.json" hidden></div>
     </section>
 
-    <section class="block"><h3>Liste partagée</h3>
-      <p class="muted small">Envoie le lien de l'appli à qui tu veux : chacun voit toutes les adresses et garde ses propres coches et notes. Ce que tu ajoutes arrive chez eux tout de suite, sans aucune clé.</p>
+    ${isOwner() ? `<section class="block"><h3>Liste partagée</h3>
+      <p class="muted small">Envoie le lien de l'appli à qui tu veux : chacun voit toutes les adresses et garde ses propres coches et notes. Ce que tu ajoutes arrive chez eux tout de suite. Toi seul peux partager l'appli.</p>
       <div class="row-actions"><button class="btn primary" data-share-app>Partager l'appli</button>
         ${store.get("ghToken", "") ? `<button class="btn ghost" data-gh-forget>Oublier la clé</button>` : ""}</div>
-    </section>
+    </section>` : ""}
 
     <section class="block"><h3>Lecture des captures par l'IA</h3>
       <p class="muted small">Clé ${store.get("aiKey", "") ? "enregistrée" : "pas encore ajoutée"}. Elle se règle dans l'onglet Ajouter.</p>
       <a class="btn" href="#ajouter" data-close-panel>Ouvrir Ajouter</a>
     </section>
 
+    ${isOwner() ? "" : `<button class="btn ghost small" data-owner-code style="opacity:.6;border:0">Propriétaire ?</button>`}
     <p class="muted small credits">Cartes © OpenStreetMap, Protomaps, CARTO. Infos complétées depuis les sites des restaurants, OpenStreetMap et Google.</p>`, "settings");
 }
 
@@ -331,6 +332,7 @@ document.addEventListener("click", (e) => {
   }
   if (t.closest("[data-gh-forget]")) { store.set("ghToken", ""); toast("Clé oubliée sur ce téléphone"); openSettings(); return; }
   if (t.closest("[data-share-app]")) { shareApp(); return; }
+  if (t.closest("[data-owner-code]")) { const c = prompt("Code propriétaire"); if (c) ownerCode(c).then((ok) => { toast(ok ? "Mode propriétaire activé" : "Code incorrect"); if (ok) openSettings(); }); return; }
   const pl = t.closest("[data-pick-list]");
   if (pl) { PICK.list = pl.dataset.pickList; store.set("pick", PICK); openPicker(); return; }
   const pt = t.closest("[data-pick-t]");
@@ -366,7 +368,17 @@ async function checkToken(k) {
   } catch (e) { toast(e.message || "GitHub injoignable"); }
 }
 
+/* Partage de l'appli réservé au propriétaire : reconnu par sa clé GitHub de publication, ou par le code propriétaire. */
+const OWNER_H = "63fda2eab9893320e9e13b672e032351a66650386c54f3f430a19d37165aaffd";
+function isOwner() { return !!store.get("ghToken", "") || store.get("owner", false) === true; }
+async function ownerCode(code) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("owner:" + String(code || "").trim()));
+  const h = Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
+  if (h !== OWNER_H) return false; store.set("owner", true); return true;
+}
+{ const q = new URLSearchParams(location.search).get("proprio"); if (q) ownerCode(q).finally(() => { try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {} }); }
 async function shareApp() {
+  if (!isOwner()) return;
   const url = location.origin + location.pathname;
   const text = "Ma liste de bonnes adresses : ouvre le lien, puis Partager › Sur l'écran d'accueil.";
   try { if (navigator.share) { await navigator.share({ title: "The Good Food List", text, url }); return; } } catch { return; }
