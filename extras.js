@@ -332,6 +332,7 @@ document.addEventListener("click", (e) => {
   }
   if (t.closest("[data-gh-forget]")) { store.set("ghToken", ""); toast("Clé oubliée sur ce téléphone"); openSettings(); return; }
   if (t.closest("[data-share-app]")) { shareApp(); return; }
+  if (t.closest("[data-owner-code]") && window.Gate) { window.Gate.ownerLogin().then((ok) => { if (ok) { toast("Mode propriétaire activé"); openSettings(); } }); return; }
   if (t.closest("[data-owner-code]")) { const c = prompt("Code propriétaire"); if (c) ownerCode(c).then((ok) => { toast(ok ? "Mode propriétaire activé" : "Code incorrect"); if (ok) openSettings(); }); return; }
   const pl = t.closest("[data-pick-list]");
   if (pl) { PICK.list = pl.dataset.pickList; store.set("pick", PICK); openPicker(); return; }
@@ -370,7 +371,7 @@ async function checkToken(k) {
 
 /* Partage de l'appli réservé au propriétaire : reconnu par sa clé GitHub de publication, ou par le code propriétaire. */
 const OWNER_H = "63fda2eab9893320e9e13b672e032351a66650386c54f3f430a19d37165aaffd";
-function isOwner() { return !!store.get("ghToken", "") || store.get("owner", false) === true; }
+function isOwner() { return !!store.get("ghToken", "") || store.get("owner", false) === true || !!(window.Gate && window.Gate.isOwner()); }
 async function ownerCode(code) {
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("owner:" + String(code || "").trim()));
   const h = Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
@@ -379,6 +380,7 @@ async function ownerCode(code) {
 { const q = new URLSearchParams(location.search).get("proprio"); if (q) ownerCode(q).finally(() => { try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {} }); }
 async function shareApp() {
   if (!isOwner()) return;
+  if (window.Gate) { window.Gate.invite(); return; } // une invitation à usage unique par personne
   const url = location.origin + location.pathname;
   const text = "Ma liste de bonnes adresses : ouvre le lien, puis Partager › Sur l'écran d'accueil.";
   try { if (navigator.share) { await navigator.share({ title: "The Good Food List", text, url }); return; } } catch { return; }
