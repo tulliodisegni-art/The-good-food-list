@@ -7,6 +7,7 @@ Format des notes :
 Les coordonnées déjà trouvées dans places.json sont conservées.
 """
 import json
+import urllib.request
 import re
 import sys
 import unicodedata
@@ -72,6 +73,8 @@ def main():
     shared = DATA / "ajouts.json"
     if shared.exists():
         places += [{**p, "shared": True} for p in json.loads(shared.read_text(encoding="utf-8"))]
+    # Adresses publiées depuis l'appli sans clé (base Supabase, table « ajouts »).
+    places += [{**p, "shared": True} for p in supabase_ajouts() if p.get("id") not in {x["id"] for x in places}]
     seen = set()
     for p in places:
         while p["id"] in seen:
@@ -96,6 +99,24 @@ def main():
     out.write_text(json.dumps(places, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(places)} lieux -> {out}", file=sys.stderr)
 
+
+def supabase_ajouts():
+    try:
+        cfg = json.loads((DATA / "config.json").read_text(encoding="utf-8")).get("avis", {})
+        if not cfg.get("url"):
+            return []
+        req = urllib.request.Request(f"{cfg['url']}/rest/v1/ajouts?select=place&order=created_at.asc&limit=5000", headers={"apikey": cfg["key"]})
+        rows = json.load(urllib.request.urlopen(req, timeout=20))
+        out = {}
+        for r in rows:
+            p = r.get("place") or {}
+            if p.get("id") and p.get("name"):
+                out[p["id"]] = p  # la dernière version publiée l'emporte
+        print(f"{len(out)} ajouts depuis Supabase", file=sys.stderr)
+        return list(out.values())
+    except Exception as e:
+        print(f"Supabase injoignable : {e}", file=sys.stderr)
+        return []
 
 if __name__ == "__main__":
     main()

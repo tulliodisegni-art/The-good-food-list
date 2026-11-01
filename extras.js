@@ -257,9 +257,7 @@ function openSettings() {
     </section>
 
     <section class="block"><h3>Liste partagée</h3>
-      <p class="muted small">Envoie le lien de l'appli à qui tu veux : chacun voit toutes les adresses et garde ses propres coches et notes. Avec ta clé de publication, ce que tu ajoutes arrive aussi chez eux quelques minutes plus tard.</p>
-      <p class="muted small">Clé de publication ${store.get("ghToken", "") ? "<b>enregistrée sur ce téléphone</b>" : "pas encore ajoutée"}.</p>
-      <div class="gh-key"><input id="ghToken" type="password" autocomplete="off" placeholder="github_pat_…"><button class="btn" data-gh-save>Enregistrer</button></div>
+      <p class="muted small">Envoie le lien de l'appli à qui tu veux : chacun voit toutes les adresses et garde ses propres coches et notes. Ce que tu ajoutes arrive chez eux tout de suite, sans aucune clé.</p>
       <div class="row-actions"><button class="btn primary" data-share-app>Partager l'appli</button>
         ${store.get("ghToken", "") ? `<button class="btn ghost" data-gh-forget>Oublier la clé</button>` : ""}</div>
     </section>
@@ -349,6 +347,8 @@ document.addEventListener("change", (e) => {
 });
 
 // ---------- Liste partagée ----------
+const SB = () => (typeof AVIS !== "undefined" ? AVIS : {});
+const sbHead = () => ({ apikey: SB().key, ...(SB().key && !SB().key.startsWith("sb_") ? { authorization: `Bearer ${SB().key}` } : {}) });
 // Les adresses publiées vont dans data/ajouts.json du dépôt GitHub ; la mise en ligne
 // les fusionne à la liste commune, que tout le monde reçoit au prochain chargement.
 const REPO = "tulliodisegni-art/The-good-food-list";
@@ -402,12 +402,26 @@ async function publishFix(id, fix, attempt = 0) {
 }
 
 const PERSONAL = ["tested", "rating", "comment", "want", "published", "createdAt", "mark"];
+// Publier ne demande plus de clé : l'adresse part dans la base Supabase (table « ajouts »),
+// tout le monde la voit au prochain chargement, et la mise en ligne l'enrichit (carte, photo…).
+const canPublish = () => !!(SB().url || store.get("ghToken", ""));
 async function publishPlace(id, attempt = 0) {
   const k = store.get("ghToken", "");
   const local = store.get("custom", []).find((p) => p.id === id);
-  if (!k || !local || local.list === "pending") return;
+  if (!local || local.list === "pending") return;
   const place = Object.fromEntries(Object.entries(local).filter(([key, v]) => !PERSONAL.includes(key) && v !== "" && v != null));
   place.addedAt = new Date().toISOString().slice(0, 10);
+  if (SB().url) {
+    try {
+      const r = await fetch(`${SB().url}/rest/v1/ajouts`, { method: "POST", headers: { ...sbHead(), "content-type": "application/json" }, body: JSON.stringify({ place, author: store.get("name", "") || null }) });
+      if (!r.ok) throw new Error(r.status);
+      setEdit(id, { published: true });
+      toast(`${place.name} publié pour tous`);
+      if (current?.id === id) openSheet(id, true);
+    } catch { toast("Publication impossible, vérifie ta connexion et réessaie depuis la fiche"); }
+    return;
+  }
+  if (!k) return;
   try {
     const r = await fetch(`${AJOUTS}?ref=main&t=${Date.now()}`, { headers: ghHead(k), cache: "no-store" });
     if (r.status === 401) throw new Error("Clé de publication refusée : remets-en une dans Réglages");
@@ -525,7 +539,7 @@ function openNeed(kind, id) {
     <form class="need-form" id="needForm"><input id="needVal" type="${n.type}" placeholder="${esc(n.ph)}" autocomplete="off" required>
       <div class="row-actions"><button class="btn primary" type="submit">Enregistrer</button><button class="btn ghost" type="button" data-need-back>Retour à la fiche</button></div></form>
     <div class="need-find">${n.find(p).map(([l, u]) => `<a class="btn" href="${esc(u)}" target="_blank" rel="noopener">${l}</a>`).join("")}</div>
-    ${store.get("ghToken", "") ? `<p class="muted small">Avec ta clé de publication, le lien sera aussi ajouté pour tout le monde.</p>` : ""}`, "need");
+    `, "need");
   setTimeout(() => $("#needVal")?.focus(), 250);
 }
 function cleanNeed(kind, v) {
@@ -677,3 +691,25 @@ document.addEventListener("click", (e) => {
   RT.mode = t.dataset.routeMode; renderRouteCard(); drawRoute();
 });
 addEventListener("hashchange", () => { if (location.hash !== "#carte" && RT.id) closeRoute(); });
+
+// ---------- Adresses publiées depuis l'appli (base Supabase) ----------
+// Elles s'ajoutent tout de suite à la liste commune, avant même la prochaine mise en ligne.
+async function loadShared() {
+  try {
+    if (!AVIS.url) Object.assign(AVIS, (await (await fetch("data/config.json", { cache: "no-cache" })).json()).avis || {});
+    if (!AVIS.url) return;
+    const ctl = new AbortController(); setTimeout(() => ctl.abort(), 4000);
+    const r = await fetch(`${AVIS.url}/rest/v1/ajouts?select=place,created_at&order=created_at.asc&limit=5000`, { headers: sbHead(), signal: ctl.signal });
+    if (!r.ok) throw new Error(r.status);
+    const rows = (await r.json()).map((x) => x.place).filter((p) => p && p.id && p.name);
+    store.set("sharedCache", rows);
+    mergeShared(rows);
+  } catch { mergeShared(store.get("sharedCache", [])); }
+}
+function mergeShared(rows) {
+  const have = new Map(S.base.map((p) => [p.id, p]));
+  for (const p of rows) {
+    // La version enrichie par la mise en ligne garde la priorité.
+    if (!have.has(p.id)) { const q = { ...p, shared: true }; S.base.push(q); have.set(p.id, q); }
+  }
+}

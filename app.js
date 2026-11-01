@@ -434,7 +434,7 @@ function openSheet(id, keepScroll) {
       ${nearbyHtml(p)}
 
       ${p.mark ? `<p class="note">Marque de ta note d'origine : ${esc(p.mark)}</p>` : ""}
-      ${custom && p.list !== "pending" && store.get("ghToken", "") ? (p.published
+      ${custom && p.list !== "pending" && canPublish() ? (p.published
         ? `<p class="note">Publiée pour tous, elle apparaît chez chacun dans quelques minutes.</p>`
         : `<button class="btn primary wide" data-publish>Publier pour tous</button>`) : ""}
       <div class="row-actions remove-row">${custom ? `<button class="btn" data-edit>Modifier</button>` : ""}
@@ -1094,7 +1094,7 @@ $("#placeForm").addEventListener("submit", (e) => {
   rebuild(); renderAll(); resetForm();
   if (map) geocodeMissing();
   toast(prev && prev.list !== "pending" ? "Adresse modifiée" : `${p.name} ajouté`);
-  if (store.get("ghToken", "")) setTimeout(() => publishPlace(id), 1200);
+  if (canPublish()) setTimeout(() => publishPlace(id), 1200);
   location.hash = list; show(list);
   setTimeout(() => openSheet(id), 60);
 });
@@ -1108,6 +1108,7 @@ async function boot() {
     S.base = store.get("baseCache", []);
   }
   if (S.base.length) store.set("baseCache", S.base);
+  await loadShared();
   rebuild();
   renderAll();
   show(location.hash.slice(1) || "accueil");
