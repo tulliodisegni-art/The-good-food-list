@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The Good Food List</title>
+<title>Good Food</title>
 <meta name="description" content="Mes adresses à Paris, classées par arrondissement et par type.">
 <meta name="theme-color" content="#f4f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#11141c" media="(prefers-color-scheme: dark)">
@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="vendor/markercluster/MarkerCluster.css">
 <link rel="stylesheet" href="vendor/markercluster/MarkerCluster.Default.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
 <header class="top">
@@ -186,17 +187,14 @@
   <a href="#accueil" data-tab="accueil" class="on">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Accueil</span>
   </a>
-  <a href="#paris" data-tab="paris">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>Paris</span>
+  <a href="#precieuses" data-tab="precieuses" class="gem">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9v12"/></svg><span>Précieuses</span>
   </a>
   <a href="#carte" data-tab="carte">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Carte</span>
   </a>
-  <a href="#precieuses" data-tab="precieuses">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9v12"/></svg><span>Précieuses</span>
-  </a>
-  <a href="#villes" data-tab="villes">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg><span>Villes</span>
+  <a href="#envies" data-tab="envies">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></svg><span>Mes envies</span>
   </a>
 </nav>
 
@@ -209,5 +207,6 @@
 <script src="vendor/protomaps/protomaps-leaflet.js"></script>
 <script src="app.js"></script>
 <script src="extras.js"></script>
+<script src="home.js"></script>
 </body>
 </html>

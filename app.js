@@ -647,7 +647,9 @@ const VIEWS = {
   ajouter: ["Nouvelle adresse", "Ajouter"],
 };
 function show(view) {
-  if (!VIEWS[view]) view = "accueil";
+  // Nouvel accueil : Précieuses et Mes envies s'ouvrent dans l'accueil.
+  const gf = typeof gfRoute === "function" && gfRoute(view);
+  if (gf || !VIEWS[view]) view = "accueil";
   S.view = view;
   for (const v of $$(".view")) v.hidden = v.dataset.view !== view;
   for (const a of $$(".tabs a")) a.classList.toggle("on", a.dataset.tab === view);
@@ -656,6 +658,7 @@ function show(view) {
   $("#searchWrap").hidden = view === "carte" || view === "ajouter";
   closeSheet();
   if (view === "carte") initMap();
+  if (typeof gfBody === "function") { if (view === "accueil") renderHome(); else gfBody(); }
   window.scrollTo(0, 0);
 }
 window.addEventListener("hashchange", () => show(location.hash.slice(1)));
