@@ -213,7 +213,8 @@ function gfOpen(l, keep) {
 function gfRoute(view) {
   if (view === "precieuses") { GF.prec = true; GF.list = null; return true; }
   if (view === "envies") { GF.prec = false; GF.list = { want: 1 }; return true; }
-  if (view === "accueil" || !view) { GF.prec = false; GF.list = null; return true; }
+  // Les anciens écrans Paris et Villes mènent aussi à l'accueil (une ville à la fois).
+  if (view === "accueil" || view === "paris" || view === "villes" || !view) { GF.prec = false; GF.list = null; return true; }
   return false;
 }
 

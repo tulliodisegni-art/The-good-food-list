@@ -1137,7 +1137,10 @@ async function boot() {
   await loadShared();
   rebuild();
   renderAll();
-  show(location.hash.slice(1) || "accueil");
+  // L'appli s'ouvre toujours sur l'accueil, sauf lien direct vers la carte ou l'ajout.
+  const h0 = location.hash.slice(1);
+  if (!["carte", "ajouter", "precieuses", "envies"].includes(h0)) history.replaceState(null, "", location.pathname + location.search);
+  show(["carte", "ajouter", "precieuses", "envies"].includes(h0) ? h0 : "accueil");
   const setHead = () => document.documentElement.style.setProperty("--head-h", `${Math.round($(".top").offsetHeight)}px`);
   setHead(); addEventListener("resize", setHead);
 }
