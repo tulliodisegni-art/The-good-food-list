@@ -1,0 +1,27 @@
+{
+ "paris": {
+  "artist": "Terragio67",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Le_Vrai_-_Montmartre,_Paris_-_GT_01_-_2024_08.jpg"
+ },
+ "ny": {
+  "artist": "King of Hearts",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Governors_Island_August_2017_panorama.jpg"
+ },
+ "tlv": {
+  "artist": "Shaulinb",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Tel_Aviv,_Boardwalk_-_panoramio.jpg"
+ },
+ "jer": {
+  "artist": "Radosław Botev",
+  "license": "CC BY 3.0 pl",
+  "source": "https://commons.wikimedia.org/wiki/File:Habad_street_Jerusalem_old_city_Jewish_quarter_(1).jpg"
+ },
+ "nuit": {
+  "artist": "Pierre Blaché from Paris, France",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Restaurants,_Place_du_Tertre,_Paris_30_September_2019.jpg"
+ }
+}
