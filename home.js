@@ -158,7 +158,7 @@ function gfListBody() {
   }
   if (L.zone) {
     const { ks } = gfZkeys(P), items = P.filter((p) => gfZone(p) === L.zone);
-    return `<div class="zbar"><div class="list-h" style="margin:0 0 8px"><button class="back" data-gf-back aria-label="Retour">‹</button><h2>${/^\d+$/.test(L.zone) ? `Paris ${gfArr(+L.zone)}` : esc(L.zone)}</h2><span style="margin-left:auto;color:var(--muted);font-weight:700;font-size:12px">${gfCount(items.length)}</span></div>
+    return `<div class="zbar${GF.grow ? " grow" : ""}" id="gfZone"><div class="list-h" style="margin:0 0 8px"><button class="back" data-gf-back aria-label="Retour">‹</button><h2>${/^\d+$/.test(L.zone) ? `Paris ${gfArr(+L.zone)}` : esc(L.zone)}</h2><span style="margin-left:auto;color:var(--muted);font-weight:700;font-size:12px">${gfCount(items.length)}</span></div>
       <div class="zrail" id="gfZbar">${ks.map((z) => `<button class="zp ${z === L.zone ? "on" : ""}" data-gf-zone="${esc(z)}">${gfSign(z)}</button>`).join("")}</div></div>${gfGrouped(items)}`;
   }
   if (L.wish != null) {
@@ -187,8 +187,7 @@ renderHome = function () {
   const res = $("#homeResults"); if (res) res.hidden = true;
   home.hidden = false;
   home.className = "gf";
-  home.innerHTML = GF.list && GF.list.zone ? `<div class="gf-main">${gfListBody()}</div>`
-    : gfHero() + `<div class="gf-main">${GF.list ? gfListBody() : gfHomeBody()}</div>`;
+  home.innerHTML = gfHero() + `<div class="gf-main">${GF.list?.zone ? '<div style="height:34px"></div>' : ""}${GF.list ? gfListBody() : gfHomeBody()}</div>`;
   if (GF.list && GF.list.zone) { const on = $("#gfZbar .zp.on"); if (on) on.scrollIntoView({ inline: "center", block: "nearest" }); }
   gfBody();
 };
@@ -203,6 +202,16 @@ function gfBody() {
     const t = a.dataset.tab;
     a.classList.toggle("on", on ? (t === "precieuses" ? GF.prec : t === "envies" ? !!GF.list?.want : t === "accueil" && !GF.prec && !GF.list?.want) : t === S.view);
   }
+}
+// Toucher une plaque : la page glisse vers le haut, les plaques rétrécissent et restent en haut, les restos apparaissent dessous.
+function gfOpenZone(z) {
+  const from = window.scrollY, first = !GF.list?.zone;
+  GF.list = { zone: z }; GF.grow = first; renderHome(); GF.grow = false;
+  const bar = $("#gfZone"); if (!bar) return;
+  const top = bar.getBoundingClientRect().top + window.scrollY;
+  if (!first) { window.scrollTo({ top }); return; }
+  window.scrollTo({ top: from });
+  requestAnimationFrame(() => requestAnimationFrame(() => { bar.classList.remove("grow"); window.scrollTo({ top, behavior: "smooth" }); }));
 }
 function gfOpen(l, keep) {
   GF.list = l; renderHome();
@@ -225,14 +234,18 @@ document.addEventListener("click", (e) => {
   if ((b = t.closest("[data-gf-id]"))) { openSheet(b.dataset.gfId); return; }
   if ((b = t.closest("[data-gf-city]"))) { GF.city = b.dataset.gfCity; store.set("gfCity", GF.city); gfOpen(null); return; }
   if (t.closest("[data-gf-dark]")) { const th = gfDark() ? "light" : "dark"; store.set("theme", th); applyTheme(th); renderHome(); return; }
-  if ((b = t.closest("[data-gf-zone]"))) { const inZone = !!GF.list?.zone; gfOpen({ zone: b.dataset.gfZone }, inZone); if (!inZone) window.scrollTo({ top: 0 }); return; }
+  if ((b = t.closest("[data-gf-zone]"))) { gfOpenZone(b.dataset.gfZone); return; }
   if ((b = t.closest("[data-gf-cat]"))) { gfOpen({ cat: b.dataset.gfCat }); return; }
   if ((b = t.closest("[data-gf-out]"))) { gfOpen({ out: b.dataset.gfOut }); return; }
   if ((b = t.closest("[data-gf-diet]"))) { gfOpen({ diet: b.dataset.gfDiet }); return; }
   if (t.closest("[data-gf-allcats]")) { gfOpen({ allcats: 1 }); return; }
   if (t.closest("[data-gf-wish]")) { const v = $("#gfWish").value.trim(); if (v) gfOpen({ wish: v }); return; }
   if ((b = t.closest("[data-gf-ex]"))) { gfOpen({ wish: b.dataset.gfEx }); return; }
-  if (t.closest("[data-gf-back]")) { const w = GF.list?.want; GF.list = null; if (w) location.hash = "accueil"; renderHome(); window.scrollTo({ top: 0 }); }
+  if (t.closest("[data-gf-back]")) {
+    const w = GF.list?.want, z = GF.list?.zone; GF.list = null; if (w) location.hash = "accueil"; renderHome();
+    // Retour d'un arrondissement : on revient en douceur sur les plaques.
+    const rail = z && $(".gf .zrail"); window.scrollTo({ top: rail ? Math.max(0, rail.getBoundingClientRect().top + window.scrollY - 120) : 0, behavior: z ? "smooth" : "auto" });
+  }
 });
 document.addEventListener("keydown", (e) => { if (e.target.id === "gfQ" && e.key === "Enter") { e.target.blur(); gfOpen({ q: e.target.value.trim() }); } });
 
@@ -247,5 +260,5 @@ document.addEventListener("touchend", (e) => {
   const dx = e.changedTouches[0].clientX - gfTx, dy = e.changedTouches[0].clientY - gfTy; gfTx = null;
   if (Math.abs(dx) < 70 || Math.abs(dy) > Math.abs(dx) * 0.6) return;
   const { ks } = gfZkeys(gfPool()); const z = ks[ks.indexOf(GF.list.zone) + (dx < 0 ? 1 : -1)];
-  if (z) { gfOpen({ zone: z }, true); window.scrollTo({ top: 0 }); }
+  if (z) gfOpenZone(z);
 }, { passive: true });
