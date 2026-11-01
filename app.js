@@ -10,8 +10,11 @@ const store = {
   },
   set(key, value) {
     try { localStorage.setItem("gfl." + key, JSON.stringify(value)); } catch { /* stockage indisponible */ }
+    if (window.Account && GSYNC.includes(key)) window.Account.push("ls/" + key, value);
   },
 };
+// Ce qui suit le compte (sauvegardé en ligne, retrouvé sur un autre téléphone) : adresses ajoutées, notes et coches, préférences.
+const GSYNC = ["custom", "edits", "name", "group", "univ", "gfCity", "pick"];
 
 // ---------- Outils ----------
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));

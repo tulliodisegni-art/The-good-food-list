@@ -250,6 +250,9 @@ function openSettings() {
       <button class="btn" data-home="locate">${S.me ? "Mettre à jour ma position" : "Activer ma position"}</button>
     </section>
 
+    ${window.Account && window.Account.user ? `<section class="block"><h3>Mon compte</h3>
+      <p class="muted small">Connecté : <b>${esc(window.Account.user.email)}</b>. Tes adresses ajoutées, coches et notes sont sauvegardées et se retrouvent sur tes autres appareils.</p>
+      <div class="row-actions"><button class="btn" data-signout>Se déconnecter</button></div></section>` : ""}
     <section class="block"><h3>Sauvegarde</h3>
       <p class="muted small">Tes coches, notes, commentaires, envies et adresses ajoutées sont gardés sur ce téléphone. Exporte-les de temps en temps, ou pour les passer sur un autre appareil.</p>
       <div class="row-actions"><button class="btn primary" data-backup>Exporter mes notes</button>
@@ -332,6 +335,7 @@ document.addEventListener("click", (e) => {
   }
   if (t.closest("[data-gh-forget]")) { store.set("ghToken", ""); toast("Clé oubliée sur ce téléphone"); openSettings(); return; }
   if (t.closest("[data-share-app]")) { shareApp(); return; }
+  if (t.closest("[data-signout]")) { if (confirm("Te déconnecter ? Tes notes restent sauvegardées sur ton compte.")) window.Account.signOut(async () => { for (const k of GSYNC) localStorage.removeItem("gfl." + k); for (const k of Object.keys(localStorage)) if (k.startsWith("acct.goodfood")) localStorage.removeItem(k); }); return; }
   if (t.closest("[data-owner-code]") && window.Gate) { window.Gate.ownerLogin().then((ok) => { if (ok) { toast("Mode propriétaire activé"); openSettings(); } }); return; }
   if (t.closest("[data-owner-code]")) { const c = prompt("Code propriétaire"); if (c) ownerCode(c).then((ok) => { toast(ok ? "Mode propriétaire activé" : "Code incorrect"); if (ok) openSettings(); }); return; }
   const pl = t.closest("[data-pick-list]");
@@ -727,3 +731,20 @@ function mergeShared(rows) {
     if (!have.has(p.id)) { const q = { ...p, shared: true }; S.base.push(q); have.set(p.id, q); }
   }
 }
+
+// ---------- Compte : récupère ce qui a été fait sur un autre appareil ----------
+let gfSyncing = null;
+function gfSync() {
+  const Acc = window.Account; if (!Acc || gfSyncing) return gfSyncing;
+  gfSyncing = (async () => {
+    await Acc.ready; await Acc.flush();
+    const remote = await Acc.pullAll(), rmap = new Map(remote.map((r) => [r.key, r.data])), pend = new Set(Acc.pending());
+    if (Acc.isFirstSync()) { for (const k of GSYNC) { const v = localStorage.getItem("gfl." + k); if (v != null && !rmap.has("ls/" + k)) try { Acc.push("ls/" + k, JSON.parse(v)); } catch (e) {} } await Acc.flush(); }
+    let changed = false;
+    for (const [k, v] of rmap) { const n = k.slice(3); if (!k.startsWith("ls/") || !GSYNC.includes(n) || pend.has(k)) continue; const nv = JSON.stringify(v); if (localStorage.getItem("gfl." + n) !== nv) { localStorage.setItem("gfl." + n, nv); changed = true; } }
+    Acc.markSynced();
+    if (changed) location.reload();
+  })().catch(() => {}).finally(() => { gfSyncing = null; });
+  return gfSyncing;
+}
+if (window.Account) { gfSync(); document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") gfSync(); }); }

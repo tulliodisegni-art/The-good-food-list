@@ -1,6 +1,6 @@
 // Garde l'appli disponible hors connexion. Les données sont rafraîchies dès que le réseau répond.
-const CACHE = "gfl-v32";
-const SHELL = ["./", "index.html", "style.css", "app.js", "extras.js", "gate.js", "home.js", "home.css", "images/cities/paris.jpg", "images/cities/nuit.jpg", "manifest.webmanifest", "data/places.json", "icons/icon-192.png", "icons/favicon.svg", "vendor/leaflet/leaflet.js", "vendor/leaflet/leaflet.css", "vendor/markercluster/leaflet.markercluster.js", "vendor/markercluster/MarkerCluster.css", "vendor/markercluster/MarkerCluster.Default.css", "vendor/anthropic/anthropic.mjs", "vendor/protomaps/protomaps-leaflet.js"];
+const CACHE = "gfl-v33";
+const SHELL = ["./", "index.html", "style.css", "app.js", "extras.js", "gate.js", "account.js", "vendor/supabase.js", "home.js", "home.css", "images/cities/paris.jpg", "images/cities/nuit.jpg", "manifest.webmanifest", "data/places.json", "icons/icon-192.png", "icons/favicon.svg", "vendor/leaflet/leaflet.js", "vendor/leaflet/leaflet.css", "vendor/markercluster/leaflet.markercluster.js", "vendor/markercluster/MarkerCluster.css", "vendor/markercluster/MarkerCluster.Default.css", "vendor/anthropic/anthropic.mjs", "vendor/protomaps/protomaps-leaflet.js"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
