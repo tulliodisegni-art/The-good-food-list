@@ -223,7 +223,7 @@ function renderHero(){const c=CITIES.find(x=>x.id===S.city);
  const img=S.prec?"../images/cities/nuit.jpg":`../images/cities/${S.city}.jpg`;
  const h=$("#hero");h.style.backgroundImage=`url('${img}')`;
  const n=id=>S.places.filter(p=>cityOf(p)===id&&p.list!=="precieuses").length;
- h.innerHTML=`<div class="top"><div class="brand"><small>${S.prec?"Les Précieuses":esc(c.kick)}</small><h1>${esc(NAMES[S.name].n)}</h1></div>
+ h.innerHTML=`<div class="top"><div class="brand"><small>${S.prec?"Les Précieuses":esc(c.kick)}</small><h1>Good Food</h1></div>
  <div class="acts"><button class="ibtn" data-dark aria-label="Mode sombre"><svg viewBox="0 0 24 24">${S.dark?'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/>':'<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>'}</svg></button>
  <button class="ibtn" aria-label="Partager"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
  <button class="ibtn add" aria-label="Ajouter"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div></div>
@@ -247,8 +247,7 @@ function renderHome(){const P=pool(),c=CITIES.find(x=>x.id===S.city);
   <div class="rail">${cats.slice(0,10).map(([n,v],i)=>`<button class="tile cuis" data-cat="${esc(n)}" ${bg(photoOf(P.filter(p=>p.cat===n),i))}><div class="t"><h3>${esc(n)}</h3><p>${v} adresses</p></div></button>`).join("")}</div></section>
  ${k||h?`<section class="sec"><div class="sec-h"><h2>Régimes</h2></div><div class="diet">${k?`<button data-diet="kasher"><span class="seal" style="background:#1d3b78">K</span><span><b>Kasher</b><small>${k} adresses</small></span></button>`:""}${h?`<button data-diet="halal"><span class="seal" style="background:#2c7a4b">H</span><span><b>Halal</b><small>${h} adresses</small></span></button>`:""}</div></section>`:""}
 
- <section class="sec"><div class="sec-h"><h2>Choisis le nom</h2><span>touche pour l'essayer</span></div>
-  <div class="names">${NAMES.map((x,i)=>`<button class="name ${i===S.name?"on":""}" data-name="${i}"><h3>${esc(x.n)}</h3><p>${esc(x.d)}</p></button>`).join("")}</div></section>
+
  <p class="proto">Maquette · ton appli actuelle n'est pas modifiée</p>`;}
 function grouped(items){const g={};items.forEach(p=>(g[p.cat||"Autres"]=g[p.cat||"Autres"]||[]).push(p));
  return Object.entries(g).sort((a,b)=>cord(a[0])-cord(b[0])).map(([cat,arr],i)=>`<div class="subhead" style="--sc:${PAL[i%PAL.length]}"><h3>${esc(cat)}</h3><i></i><span>${arr.length}</span></div><div class="cards">${arr.map(card).join("")}</div>`).join("")}
@@ -266,8 +265,8 @@ function renderList(){const P=pool(),L=S.list;let items=P,title="",body="";
  if(L.cat){items=P.filter(p=>p.cat===L.cat);title=esc(L.cat);body=`<div class="cards" style="margin-top:14px">${items.map(card).join("")}</div>`}
  if(L.q!=null){const q=L.q.toLowerCase();items=P.filter(p=>`${p.name} ${p.cat} ${p.address}`.toLowerCase().includes(q));title=L.q?`« ${esc(L.q)} »`:"Toutes les adresses";body=grouped(items)}
  $("#main").innerHTML=`<div style="height:30px"></div><div class="list-h"><button class="back" data-back>‹</button><h2>${title}</h2></div>${body||'<p style="color:var(--muted)">Rien ici pour l\'instant.</p>'}`}
-function renderNav(){const it=[["home","Accueil",'<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>'],["explore","Explorer",'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'],["prec","Précieuses",'<path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M9 3l3 6 3-6M12 9v12"/>'],["map","Carte",'<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>'],["love","Mes envies",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>']];
- $("#nav").innerHTML=it.map(([id,l,ic])=>`<button class="${id==="prec"?"gem ":""}${(id==="prec"&&S.prec)||(id==="home"&&!S.prec&&S.view!=="list")||(id==="explore"&&!S.prec&&S.view==="list")?"on":""}" data-view="${id}"><svg viewBox="0 0 24 24">${ic}</svg>${l}</button>`).join("")}
+function renderNav(){const it=[["home","Accueil",'<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>'],["prec","Précieuses",'<path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M9 3l3 6 3-6M12 9v12"/>'],["map","Carte",'<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>'],["love","Mes envies",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>']];
+ $("#nav").innerHTML=it.map(([id,l,ic])=>`<button class="${id==="prec"?"gem ":""}${(id==="prec"&&S.prec)||(id==="home"&&!S.prec&&S.view!=="list")?"on":""}" data-view="${id}"><svg viewBox="0 0 24 24">${ic}</svg>${l}</button>`).join("")}
 function render(){renderHero();S.view==="list"?renderList():renderHome();renderNav()}
 const open=l=>{const inZone=S.view==="list"&&S.list&&S.list.zone&&l.zone;S.list=l;S.view="list";render();scrollTo({top:inZone?Math.min(scrollY,330):330,behavior:inZone?"auto":"smooth"})};
 document.addEventListener("click",e=>{const t=e.target;let b;
@@ -283,7 +282,7 @@ document.addEventListener("click",e=>{const t=e.target;let b;
  if(t.closest("[data-toggle-prec]")){S.prec=!S.prec;S.view="home";render();scrollTo({top:0,behavior:"smooth"});return}
  if(b=t.closest("[data-name]")){S.name=+b.dataset.name;render();return}
  if(t.closest("[data-back]")){S.view="home";render();return}
- if(b=t.closest("[data-view]")){const v=b.dataset.view;if(v==="prec"){S.prec=true;S.view="home";render();scrollTo({top:0});return}if(v==="home"){S.prec=false;S.view="home";render();scrollTo({top:0})}else if(v==="explore")open({q:""});else alert("Dans la maquette, seuls Accueil et Explorer sont cliquables.");}});
+ if(b=t.closest("[data-view]")){const v=b.dataset.view;if(v==="prec"){S.prec=true;S.view="home";render();scrollTo({top:0});return}if(v==="home"){S.prec=false;S.view="home";render();scrollTo({top:0})}else if(v==="explore")open({q:""});else alert("Dans la maquette, seuls Accueil et Précieuses sont cliquables.");}});
 let tx=null,ty=0;document.addEventListener("touchstart",e=>{if(e.target.closest(".zrail,.rail")){tx=null;return}tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
 document.addEventListener("touchend",e=>{if(tx==null||!(S.view==="list"&&S.list&&S.list.zone))return;const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;tx=null;if(Math.abs(dx)<70||Math.abs(dy)>Math.abs(dx)*.6)return;
  const {ks}=zkeysOf(pool());const i=ks.indexOf(S.list.zone)+(dx<0?1:-1);if(ks[i])open({zone:ks[i]})},{passive:true});
