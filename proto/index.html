@@ -212,6 +212,8 @@ function zoneOf(p){const a=p.address||"";
 function sign(z){const num=/^\d+$/.test(z);
  const kick=S.city==="paris"?(num?"Arrt":"Île-de-France"):S.city==="ny"?"NYC":S.city==="tlv"?"Tel-Aviv":"Jérusalem";
  return `<span class="sign ${num?"":"txt"}"><span class="k">${kick}</span><span class="n">${num?arrH(+z):esc(z)}</span></span>`}
+/* ordre des cuisines = ordre de ta note (Français, Italien, …) */
+let CORD=null;function cord(c){if(!CORD){CORD={};S.places.forEach(p=>{if(p.cat&&!(p.cat in CORD))CORD[p.cat]=Object.keys(CORD).length})}return c in CORD?CORD[c]:999}
 function zkeysOf(P){const Z=zones(P);const ks=S.city==="paris"?[...Array.from({length:20},(_,i)=>String(i+1)).filter(k=>Z[k]),...(Z["Autour de Paris"]?["Autour de Paris"]:[])]:Object.keys(Z).sort((a,b)=>Z[b]-Z[a]);return{Z,ks}}
 const pool=()=>S.places.filter(p=>cityOf(p)===S.city&&(S.prec?isPrec(p):p.list!=="precieuses"));
 const photoOf=(arr,seed=0)=>{const w=arr.filter(p=>p.photo&&!/logo|icon|favicon|placeholder|\.svg|\d{3,4}x\d{3,4}/i.test(p.photo));return w.length?w[seed%w.length].photo:""};
@@ -232,7 +234,7 @@ function zones(P){const m={};P.forEach(p=>{const z=zoneOf(p);if(z)m[z]=(m[z]||0)
 function renderHome(){const P=pool(),c=CITIES.find(x=>x.id===S.city);
  const env=ENVIES.map((e,i)=>({e,i,items:P.filter(e.f)})).filter(x=>x.items.length);
  const {Z,ks:zkeys}=zkeysOf(P);
- const cats=Object.entries(P.reduce((a,p)=>(p.cat&&(a[p.cat]=(a[p.cat]||0)+1),a),{})).sort((a,b)=>b[1]-a[1]);
+ const cats=Object.entries(P.reduce((a,p)=>(p.cat&&(a[p.cat]=(a[p.cat]||0)+1),a),{})).sort((a,b)=>cord(a[0])-cord(b[0]));
  const k=P.filter(p=>p.kasher).length,h=P.filter(p=>p.halal).length;
  const precImg=photoOf(S.places.filter(p=>cityOf(p)===S.city&&isPrec(p)),3)||"../images/cities/nuit.jpg";
  $("#main").innerHTML=`<div style="height:34px"></div>
@@ -249,9 +251,9 @@ function renderHome(){const P=pool(),c=CITIES.find(x=>x.id===S.city);
   <div class="names">${NAMES.map((x,i)=>`<button class="name ${i===S.name?"on":""}" data-name="${i}"><h3>${esc(x.n)}</h3><p>${esc(x.d)}</p></button>`).join("")}</div></section>
  <p class="proto">Maquette · ton appli actuelle n'est pas modifiée</p>`;}
 function grouped(items){const g={};items.forEach(p=>(g[p.cat||"Autres"]=g[p.cat||"Autres"]||[]).push(p));
- return Object.entries(g).sort((a,b)=>b[1].length-a[1].length).map(([cat,arr],i)=>`<div class="subhead" style="--sc:${PAL[i%PAL.length]}"><h3>${esc(cat)}</h3><i></i><span>${arr.length}</span></div><div class="cards">${arr.map(card).join("")}</div>`).join("")}
+ return Object.entries(g).sort((a,b)=>cord(a[0])-cord(b[0])).map(([cat,arr],i)=>`<div class="subhead" style="--sc:${PAL[i%PAL.length]}"><h3>${esc(cat)}</h3><i></i><span>${arr.length}</span></div><div class="cards">${arr.map(card).join("")}</div>`).join("")}
 function renderList(){const P=pool(),L=S.list;let items=P,title="",body="";
- if(L.allcats){const cats=Object.entries(P.reduce((a,p)=>(p.cat&&(a[p.cat]=(a[p.cat]||0)+1),a),{})).sort((a,b)=>b[1]-a[1]);
+ if(L.allcats){const cats=Object.entries(P.reduce((a,p)=>(p.cat&&(a[p.cat]=(a[p.cat]||0)+1),a),{})).sort((a,b)=>cord(a[0])-cord(b[0]));
   $("#main").innerHTML=`<div class="list-h"><button class="back" data-back>‹</button><h2>Toutes les cuisines</h2></div><div class="grid2">${cats.map(([n,v],i)=>`<button class="tile" data-cat="${esc(n)}" ${bg(photoOf(P.filter(p=>p.cat===n),i))}><div class="t"><h3>${esc(n)}</h3><p>${v}</p></div></button>`).join("")}</div>`;return}
  if(L.zone){const {Z,ks}=zkeysOf(P);items=P.filter(p=>zoneOf(p)===L.zone);
   $("#main").innerHTML=`<div style="height:30px"></div><div class="zbar"><div class="list-h" style="margin:0 0 8px"><button class="back" data-back>‹</button><h2>${/^\d+$/.test(L.zone)?`Paris ${arrH(+L.zone)}`:esc(L.zone)}</h2><span style="margin-left:auto;color:var(--muted);font-weight:700;font-size:12px">${items.length} adresses</span></div>
