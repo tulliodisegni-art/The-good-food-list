@@ -1,5 +1,5 @@
 // Garde l'appli disponible hors connexion. Les données sont rafraîchies dès que le réseau répond.
-const CACHE = "gfl-v25";
+const CACHE = "gfl-v26";
 const SHELL = ["./", "index.html", "style.css", "app.js", "extras.js", "manifest.webmanifest", "data/places.json", "icons/icon-192.png", "icons/favicon.svg", "vendor/leaflet/leaflet.js", "vendor/leaflet/leaflet.css", "vendor/markercluster/leaflet.markercluster.js", "vendor/markercluster/MarkerCluster.css", "vendor/markercluster/MarkerCluster.Default.css", "vendor/anthropic/anthropic.mjs", "vendor/protomaps/protomaps-leaflet.js"];
 
 self.addEventListener("install", (e) => {

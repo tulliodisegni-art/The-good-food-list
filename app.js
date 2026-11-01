@@ -893,9 +893,8 @@ const AI_MODEL = "claude-opus-5-5";
 let aiImages = [], aiExtra = null;
 function aiKeyState() {
   const has = !!store.get("aiKey", "");
-  $("#aiKeyState").textContent = has ? "· enregistrée" : "· à ajouter";
-  $("#aiKeyState").className = has ? "ok" : "warn";
-  if (!has) $("#aiKeyBox").open = true;
+  $("#aiKeyState").textContent = has ? "· enregistrée" : "· facultative";
+  $("#aiKeyState").className = has ? "ok" : "";
 }
 aiKeyState();
 $("#aiKeySave").addEventListener("click", () => {
@@ -952,7 +951,7 @@ function aiPrompt(link, text) {
   return `Tu aides à remplir une fiche dans « The Good Food List », un carnet personnel d'adresses (restos, bars, sorties).
 Les images sont des captures d'écran d'une publication (Instagram, TikTok, Facebook, site…).${link ? `\nLien de la publication : ${link}` : ""}${text ? `\nTexte de la légende :\n${text}` : ""}
 
-Identifie le lieu présenté. Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.
+Identifie le lieu présenté.${link && !text ? " S'il n'y a que le lien, ouvre-le avec web_fetch ; s'il est illisible (Instagram, TikTok), cherche le compte et la publication sur le web." : ""} Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.
 
 Choix de la liste :
 - "paris" : restaurant ou adresse à manger dans Paris intra-muros (75001 à 75020).
@@ -961,7 +960,8 @@ Choix de la liste :
 Types déjà utilisés (réutilise-en un si ça colle) : ${cats}.
 
 Réponds uniquement avec un objet JSON, sans texte autour :
-{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|villes", "arr": 0, "city": "", "cat": "", "price": "budget par personne : 1 = moins de 20 €, 2 = 20 à 40 €, 3 = 40 à 80 €, 4 = plus de 80 €", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "instagram": "compte Instagram du lieu, sans @", "booking": "lien direct de réservation (TheFork, Zenchef, page Réserver du site…) si trouvé", "doubt": "ce qui reste incertain, sinon vide"}
+{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|villes", "arr": 0, "city": "", "cat": "", "price": "budget par personne : 1 = moins de 20 €, 2 = 20 à 40 €, 3 = 40 à 80 €, 4 = plus de 80 €", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "instagram": "compte Instagram du lieu, sans @", "booking": "lien direct de réservation (TheFork, Zenchef, page Réserver du site…) si trouvé", "doubt": "ce qui reste incertain, sinon vide", "branches": [{"address": "", "arr": 0}]}
+"branches" : vérifie si c'est une chaîne. S'il y a plusieurs adresses dans la même ville, liste-les TOUTES (adresse complète, arrondissement pour Paris), y compris celle de "address". Sinon laisse [].
 "arr" est le numéro d'arrondissement (1 à 20) pour Paris, sinon 0.`;
 }
 
@@ -975,7 +975,20 @@ function aiError(e) {
   return "La lecture a échoué : " + (e?.message || "erreur inconnue");
 }
 
+// Sans clé sur le téléphone, la lecture passe par la fonction « ia » de Supabase, qui garde la clé côté serveur.
+const aiServer = () => !store.get("aiKey", "") && typeof AVIS !== "undefined" && AVIS.url;
+async function aiAsk(prompt, images = [], web = true) {
+  const r = await fetch(`${AVIS.url}/functions/v1/ia`, { method: "POST", headers: { ...sbHead(), "content-type": "application/json" }, body: JSON.stringify({ prompt, images, web }) });
+  const out = await r.json().catch(() => ({}));
+  if (!r.ok) { const e = new Error(out.error || `erreur ${r.status}`); e.status = out.status || r.status; throw e; }
+  return out.text || "";
+}
 async function aiRead(link, text) {
+  if (aiServer()) {
+    const out = await aiAsk(aiPrompt(link, text), aiImages);
+    const json = out.slice(out.indexOf("{"), out.lastIndexOf("}") + 1);
+    try { return JSON.parse(json); } catch { throw new Error("réponse incomplète, réessaie"); }
+  }
   const { default: Anthropic } = await import("./vendor/anthropic/anthropic.mjs");
   const client = new Anthropic({ apiKey: store.get("aiKey", ""), dangerouslyAllowBrowser: true });
   const content = [
@@ -1015,8 +1028,10 @@ function fillFromAi(r, link) {
   $("#fSource").value = link || ""; $("#fSummary").value = r.summary || "";
   const url = (u) => (/^https?:/.test(u || "") ? u : "");
   if (r.price >= 1 && r.price <= 4) $("#fPrice").value = String(r.price);
-  aiExtra = { phone: r.phone || "", website: url(r.website), booking: url(r.booking), instagram: igHandle({ instagram: r.instagram }) };
-  $("#formTitle").textContent = "Vérifie la fiche";
+  aiExtra = { phone: r.phone || "", website: url(r.website), booking: url(r.booking), instagram: igHandle({ instagram: r.instagram }),
+    branches: Array.isArray(r.branches) ? r.branches.filter((b) => b && b.address) : [] };
+  if (aiExtra.branches.length > 1) $("#formTitle").textContent = `Vérifie la fiche · chaîne de ${aiExtra.branches.length} adresses`;
+  if (!(aiExtra.branches.length > 1)) $("#formTitle").textContent = "Vérifie la fiche";
   $("#fCancel").hidden = false;
 }
 
@@ -1024,8 +1039,8 @@ $("#aiForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   const link = $("#linkUrl").value.trim(), text = $("#aiText").value.trim();
   const status = $("#aiStatus"), go = $("#aiGo");
-  if (!aiImages.length && !text) { toast(link ? "Ajoute une capture, ou garde juste le lien" : "Ajoute au moins une capture"); return; }
-  if (!store.get("aiKey", "")) { $("#aiKeyBox").open = true; $("#aiKey").focus(); toast("Ajoute d'abord la clé de l'IA"); return; }
+  if (!aiImages.length && !text && !(link && aiServer())) { toast(link ? "Ajoute une capture, ou garde juste le lien" : "Colle un lien ou ajoute une capture"); return; }
+  if (!store.get("aiKey", "") && !aiServer()) { $("#aiKeyBox").open = true; $("#aiKey").focus(); toast("Ajoute d'abord la clé de l'IA"); return; }
   go.disabled = true; go.classList.add("busy");
   status.hidden = false; status.className = "ai-status"; status.textContent = "Lecture des captures et recherche de l'adresse…";
   try {
@@ -1090,11 +1105,19 @@ $("#placeForm").addEventListener("submit", (e) => {
   const prev = store.get("custom", []).find((x) => x.id === id);
   if (prev && prev.list !== "pending") { p.mark = prev.mark || ""; p.tested = !!prev.tested; p.createdAt = prev.createdAt; }
   custom.unshift(p);
+  // Chaîne : une fiche par adresse, chacune dans son arrondissement.
+  const norm = (x) => String(x || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  const extra = (aiExtra?.branches || []).filter((b) => norm(b.address) !== norm(p.address)).map((b, i) => {
+    const zip = String(b.address).match(/750(\d\d)/);
+    const a2 = b.arr >= 1 && b.arr <= 20 ? +b.arr : zip ? +zip[1] : null;
+    return { ...p, id: `${id}-${i + 2}`, address: b.address, arr: list === "villes" ? null : a2 };
+  }).filter((b) => list !== "paris" || b.arr);
+  custom.unshift(...extra);
   store.set("custom", custom);
   rebuild(); renderAll(); resetForm();
   if (map) geocodeMissing();
-  toast(prev && prev.list !== "pending" ? "Adresse modifiée" : `${p.name} ajouté`);
-  if (canPublish()) setTimeout(() => publishPlace(id), 1200);
+  toast(prev && prev.list !== "pending" ? "Adresse modifiée" : extra.length ? `${p.name} ajouté avec ses ${extra.length + 1} adresses` : `${p.name} ajouté`);
+  if (canPublish()) setTimeout(() => { publishPlace(id); extra.forEach((b, i) => setTimeout(() => publishPlace(b.id), 400 * (i + 1))); }, 1200);
   location.hash = list; show(list);
   setTimeout(() => openSheet(id), 60);
 });
