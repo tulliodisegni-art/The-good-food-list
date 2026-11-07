@@ -1148,7 +1148,17 @@ async function boot() {
   // L'appli s'ouvre toujours sur l'accueil, sauf lien direct vers la carte ou l'ajout.
   const h0 = location.hash.slice(1);
   if (!["carte", "ajouter", "precieuses", "envies"].includes(h0)) history.replaceState(null, "", location.pathname + location.search);
-  show(["carte", "ajouter", "precieuses", "envies"].includes(h0) ? h0 : "accueil");
+  // Partagé depuis Instagram (menu Partager ou raccourci iPhone) : ?lien=…&texte=… → lecture par l'IA.
+  const qs = new URLSearchParams(location.search);
+  const shared = [qs.get("lien"), qs.get("texte"), qs.get("titre")].filter(Boolean).join(" ").trim();
+  if (shared) {
+    history.replaceState(null, "", location.pathname);
+    const url = (shared.match(/https?:\/\/\S+/) || [""])[0];
+    const rest = shared.replace(url, "").trim();
+    location.hash = "ajouter"; show("ajouter");
+    $("#linkUrl").value = url; $("#aiText").value = rest;
+    if (url || rest) setTimeout(() => $("#aiForm").requestSubmit(), 300);
+  } else show(["carte", "ajouter", "precieuses", "envies"].includes(h0) ? h0 : "accueil");
   const setHead = () => document.documentElement.style.setProperty("--head-h", `${Math.round($(".top").offsetHeight)}px`);
   setHead(); addEventListener("resize", setHead);
 }
