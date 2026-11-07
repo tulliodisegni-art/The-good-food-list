@@ -15,19 +15,23 @@ async function gemini(key: string, prompt: string, images: string[], web: boolea
     { text: prompt },
   ];
   let last = "";
-  for (const model of ["gemini-flash-latest", "gemini-2.5-flash"]) {
-    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-      method: "POST",
-      headers: { "x-goog-api-key": key, "content-type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ role: "user", parts }],
-        ...(web ? { tools: [{ google_search: {} }, { url_context: {} }] } : {}),
-      }),
-    });
-    const res = await r.json();
-    if (r.ok) return (res.candidates?.[0]?.content?.parts || []).map((p: any) => p.text || "").join("");
-    last = res?.error?.message || `erreur ${r.status}`;
-    if (r.status !== 404 && r.status !== 400) break;
+  // Plusieurs modèles gratuits, avec puis sans recherche web : on prend le premier qui répond (quota, modèle retiré…).
+  for (const tools of web ? [true, false] : [false]) {
+    for (const model of ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-latest", "gemini-flash-lite-latest"]) {
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+        method: "POST",
+        headers: { "x-goog-api-key": key, "content-type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ role: "user", parts }],
+          ...(tools ? { tools: [{ google_search: {} }, { url_context: {} }] } : {}),
+        }),
+      });
+      const res = await r.json();
+      if (r.ok) return (res.candidates?.[0]?.content?.parts || []).map((p: any) => p.text || "").join("");
+      last += `${tools ? "web" : "simple"} ${model} : ${res?.error?.message || `erreur ${r.status}`}`;
+      last += " | ";
+      if (r.status === 401 || r.status === 403) throw new Error(last);
+    }
   }
   throw new Error(last);
 }
