@@ -18628,5 +18628,26 @@
   "lng": 2.922245,
   "searched": 1,
   "igSearched": 1
+ },
+ {
+  "id": "u-mw75r0j6bbnp",
+  "arr": 2,
+  "cat": "Chinois",
+  "list": "paris",
+  "menu": "https://bolobolo.fr/",
+  "name": "Bolo Bolo",
+  "price": 1,
+  "source": "https://www.instagram.com/reel/DfcsBWXoEjN/?mdxt=MW9qd29zbjVkdnIyZg==",
+  "addedAt": "2026-11-08",
+  "address": "10 Rue Saint-Augustin, 75002 Paris",
+  "summary": "Un cha chaan teng typique de Hong Kong réputé pour ses fameux bolo bao (brioches ananas croustillantes garnies de beurre, porc laqué ou poulet) et son milk tea traditionnel.",
+  "website": "https://bolobolo.fr/",
+  "instagram": "bolobolo.paris",
+  "shared": true,
+  "lat": 48.868931,
+  "lng": 2.337141,
+  "searched": 1,
+  "enriched": 5,
+  "bookingScan": 1
  }
 ]
