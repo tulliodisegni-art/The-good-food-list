@@ -6864,7 +6864,8 @@
   "searched": 1,
   "bookingScan": 1,
   "aiFill": 1,
-  "summary": "Une grande brasserie populaire et festive signée Nouvelle Garde, avec une belle verrière et des plats faits maison ultra sourcés. Ne manquez pas leurs saucisses-purée légendaires et leurs desserts généreux."
+  "summary": "Une grande brasserie populaire et festive signée Nouvelle Garde, avec une belle verrière et des plats faits maison ultra sourcés. Ne manquez pas leurs saucisses-purée légendaires et leurs desserts généreux.",
+  "resa": "inconnu"
  },
  {
   "id": "paris-11-francais-taem",
@@ -20133,7 +20134,8 @@
   "website": "https://www.newyorkkyuramen.com",
   "enriched": 5,
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "sans"
  },
  {
   "id": "ig-new-york-abba-bar-grill",
@@ -20202,7 +20204,8 @@
   "enriched": 5,
   "photo": "https://themulberrybar.com/images/og-image.jpg",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-duzan",
@@ -20223,7 +20226,8 @@
   "photo": "https://www.duzannyc.com/static/50bf37ab712950399436c961af428928/869a6/E883EAA9-4ED9-4A5D-8AF9-C5D8C6DAEE19.jpg",
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 718-777-1845"
+  "phone": "+1 718-777-1845",
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-gilligan-s",
@@ -20295,7 +20299,8 @@
   "photo": "https://sushitokyo.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 718-336-7245"
+  "phone": "+1 718-336-7245",
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-elsie-rooftop",
@@ -20362,7 +20367,8 @@
   "lat": 40.741905,
   "lng": -73.981209,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-kura-revolving-sushi",
@@ -20380,7 +20386,8 @@
   "lng": -73.833539,
   "searched": 1,
   "igSearched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-wall-street-grill",
@@ -20473,7 +20480,8 @@
   "lat": 40.792014,
   "lng": -73.97211,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "sans"
  },
  {
   "id": "ig-new-york-maison-valero",
@@ -20495,7 +20503,8 @@
   "website": "https://maison-valero.wheree.com",
   "enriched": 5,
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-sip-and-sizzle",
@@ -20514,7 +20523,8 @@
   "lat": 40.775026,
   "lng": -73.94817,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-tsumo",
@@ -20557,7 +20567,8 @@
   "enriched": 5,
   "photo": "https://static.spotapps.co/web/okiboru--com/custom/quotes_new.png",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "sans"
  },
  {
   "id": "ig-new-york-sentir",
@@ -20625,7 +20636,8 @@
   "lat": 40.758178,
   "lng": -73.982984,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-caffe-aronne",
@@ -20649,7 +20661,8 @@
   "photo": "http://static1.squarespace.com/static/669a949ce4973c667985d593/t/6abdebd94c0b323022361bf2/1721578694989/Indoor+Bar+Cart.jpg?format=1500w",
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 917-475-1044"
+  "phone": "+1 917-475-1044",
+  "resa": "sans"
  },
  {
   "id": "ig-new-york-pop-up-bagels",
@@ -20672,7 +20685,8 @@
   "enriched": 5,
   "photo": "https://www.popupbagels.com/_next/static/media/location_pin.3b7caf1f.png",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-burgers-bar",
@@ -20692,7 +20706,8 @@
   "lng": -73.962875,
   "searched": 1,
   "aiFill": 1,
-  "phone": "+1 718-998-3800"
+  "phone": "+1 718-998-3800",
+  "resa": "sans"
  },
  {
   "id": "ig-new-york-sauteed",
@@ -20715,7 +20730,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 718-998-5050"
+  "phone": "+1 718-998-5050",
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-ricotta-coffee",
@@ -20734,7 +20750,8 @@
   "lat": 40.662466,
   "lng": -73.939825,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-jersey-shore-sushi-co",
@@ -20753,7 +20770,8 @@
   "lat": 40.610967,
   "lng": -73.962262,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-pitabar",
@@ -20776,7 +20794,8 @@
   "enriched": 5,
   "photo": "https://img1.wsimg.com/isteam/ip/4fe63c56-32d8-474e-a121-a043c5c5af5c/IMG_6662.jpeg",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-rosie-s-pizza",
@@ -20795,7 +20814,8 @@
   "lat": 40.752648,
   "lng": -73.987579,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-zoares-kosher-grill",
@@ -20814,7 +20834,8 @@
   "lat": 40.596331,
   "lng": -73.961419,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-le-marais",
@@ -20862,7 +20883,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 212-330-8888"
+  "phone": "+1 212-330-8888",
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-katzir",
@@ -20884,7 +20906,8 @@
   "photo": "https://katzirtlv.com/wp-content/uploads/2025/09/section1-image-1-flip.png",
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+972 3-520-5555"
+  "phone": "+972 3-520-5555",
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-imersion",
@@ -20903,7 +20926,8 @@
   "lat": 32.05366,
   "lng": 34.757001,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-le-rendez-vous",
@@ -20942,7 +20966,8 @@
   "city": "Tel-Aviv",
   "instagram": "asi_ve_adnan",
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-garger-hazahav",
@@ -20958,7 +20983,8 @@
   "city": "Tel-Aviv",
   "instagram": "garger_hazahav",
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "sans"
  },
  {
   "id": "ig-tel-aviv-abu-hassan",
@@ -20976,7 +21002,8 @@
   "lat": 32.049723,
   "lng": 34.750463,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "sans"
  },
  {
   "id": "ig-tel-aviv-ola-ola",
@@ -20995,7 +21022,8 @@
   "lat": 32.068,
   "lng": 34.767079,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-darya",
@@ -21016,7 +21044,8 @@
   "enriched": 5,
   "photo": "https://www.daryatlv.com/_files/ugd/...jpg",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-florentina",
@@ -21037,7 +21066,8 @@
   "enriched": 5,
   "photo": "https://florentina.co.il/wp-content/uploads/2024/07/%D7%9C%D7%95%D7%92%D7%95-%D7%91%D7%90%D7%A0%D7%A8-%D7%A8%D7%90%D7%A9%D7%99-%D7%9C%D7%91%D7%9F-e1722358724808-2048x689.png",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-dvora",
@@ -21060,7 +21090,8 @@
   "enriched": 5,
   "photo": "https://cdn.prod.website-files.com/677e8bf889e562b830d6f0cf/67d295cff7f80ac3fced7fe0_workwithus.avif",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-otoro",
@@ -21077,7 +21108,8 @@
   "instagram": "otoro_handrollbar",
   "kasher": true,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-malka",
@@ -21101,7 +21133,8 @@
   "photo": "https://malkarest.com/wp-content/uploads/2024/04/About-photo.webp",
   "phone": "05 42 47 19 01",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-pankina",
@@ -21120,7 +21153,8 @@
   "lat": 32.082504,
   "lng": 34.769964,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-cartola",
@@ -21136,7 +21170,8 @@
   "city": "Tel-Aviv",
   "instagram": "cartola_il",
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-qumran",
@@ -21158,7 +21193,8 @@
   "photo": "https://i0.wp.com/qumrantlv.com/wp-content/uploads/2023/09/&#1493;&#1463;&#1497;&#1463;&#1468;&#1506;&#1463;&#1513;&#1474;-&#1500;&#1464;&#1492;&#1462;&#1501;-&#1502;&#1460;&#1513;&#1456;&#1473;&#1514;&#1462;&#1468;&#1492;-&#1493;&#1463;&#1497;&#1465;&#1468;&#1488;&#1499;&#1456;&#1500;&#1493;&#1468;-&#1493;&#1463;&#1497;&#1460;&#1468;&#1513;&#1456;&#1473;&#1514;&#1468;&#1493;&#1468;.png?w=3780&ssl=1",
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+972 3-696-6966"
+  "phone": "+972 3-696-6966",
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-poupee",
@@ -21176,7 +21212,8 @@
   "kasher": true,
   "searched": 1,
   "aiFill": 1,
-  "phone": "+972 3-560-5999"
+  "phone": "+972 3-560-5999",
+  "resa": "inconnu"
  },
  {
   "id": "ig-tel-aviv-salon-yevani",
@@ -21200,7 +21237,8 @@
   "photo": "https://static.wixstatic.com/media/ac0b37_1896cd7cd8784e85aad93bf574b54a48~mv2.png",
   "phone": "05 27 34 84 62",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-jerusalem-seoul-house",
@@ -21223,7 +21261,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+972 2-628-6053"
+  "phone": "+972 2-628-6053",
+  "resa": "inconnu"
  },
  {
   "id": "ig-jerusalem-anthony-s-pizza",
@@ -21245,7 +21284,8 @@
   "photo": "https://anthonys.co.il/wp-content/uploads/2021/06/stamp_1_1-100x100.png",
   "phone": "07 79 96 62 29",
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-jerusalem-andalucia",
@@ -21262,7 +21302,8 @@
   "instagram": "andalucia_cocktail_restaurant",
   "kasher": true,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-jerusalem-black-iron",
@@ -21281,7 +21322,8 @@
   "lat": 31.783423,
   "lng": 35.214891,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-jerusalem-la-piedra",
@@ -21298,7 +21340,8 @@
   "instagram": "pizzeria_piedra",
   "kasher": true,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-jerusalem-zuta",
@@ -21320,7 +21363,8 @@
   "website": "https://zuta.wheree.com",
   "enriched": 5,
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-jerusalem-mimonis",
@@ -21339,7 +21383,8 @@
   "lat": 31.78491,
   "lng": 35.210482,
   "searched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-paris-canoe-crecy-la-chapelle",
@@ -21356,7 +21401,8 @@
   "lng": 2.922245,
   "searched": 1,
   "igSearched": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "resa": "inconnu"
  },
  {
   "id": "u-mw75y5krckxf",
