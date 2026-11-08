@@ -15581,7 +15581,8 @@
   "lng": 2.357469,
   "enriched": 5,
   "photo": "https://leperchoir.fr/wp-content/uploads/2020/07/LePerchoir_site_photo-etablissement_le-perchoir-menilmontant_3-scaled.jpg",
-  "phone": "01 76 35 11 80"
+  "phone": "01 76 35 11 80",
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-mandarin-oriental",
@@ -17767,7 +17768,8 @@
   "photo": "https://chez-meilan.fr/images/chez-meilan-fonds-d-ecran.png",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "meilanparis"
+  "instagram": "meilanparis",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-home-donuts",
@@ -17784,7 +17786,8 @@
   "halal": true,
   "lat": 48.841086,
   "lng": 2.303639,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-888-night-market",
@@ -17827,7 +17830,8 @@
   "website": "https://holy-cookie-paris.deliverectdirect.com",
   "enriched": 5,
   "photo": "https://deliverect.imgix.net/static/a188ff26-aafa-4133-b584-dc9937a8606c/assets/image-1783421058.png?w=800&fit=crop&auto=compress,format&cs=srgb",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-le-cafe-maxime-frederic-chez-louis-vuitton",
@@ -17848,7 +17852,8 @@
   "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "maxime.frederic"
+  "instagram": "maxime.frederic",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-jun",
@@ -17864,7 +17869,9 @@
   "instagram": "jun_saintgermain",
   "lat": 48.851578,
   "lng": 2.338407,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "01 43 26 84 36"
  },
  {
   "id": "ig-paris-tanori",
@@ -17880,7 +17887,9 @@
   "instagram": "tanori.paris",
   "lat": 48.864841,
   "lng": 2.356983,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "09 81 29 41 85"
  },
  {
   "id": "ig-paris-bistrot-podium",
@@ -17941,7 +17950,8 @@
   "halal": true,
   "lat": 48.829225,
   "lng": 2.382581,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-aux-enfants-gates",
@@ -17963,7 +17973,10 @@
   "booking": "https://www.auxenfantsgates.fr/reservation-sans-numero",
   "bookingOk": 2,
   "igSearched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 43 27 76 20",
+  "instagram": "auxenfantsgates"
  },
  {
   "id": "ig-paris-lilane",
@@ -17985,7 +17998,8 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "lilane_restaurant",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-seb-on",
@@ -18006,7 +18020,8 @@
   "enriched": 5,
   "photo": "https://www.sebonrestaurant.com/quality_auto/11062b_a84995cc8b024f4ea398f5744a56bc27~mv2.png",
   "instagram": "sebon_restaurant",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-flocon",
@@ -18048,7 +18063,8 @@
   "searched": 1,
   "photo": "https://elnopalparis.com/wp-content/uploads/2025/10/taco.png",
   "instagram": "elnopalparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-machiya",
@@ -18070,7 +18086,8 @@
   "enriched": 5,
   "halal": true,
   "photo": "https://www.machiyabento.fr/img/photos/vitrine.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-misu",
@@ -18090,7 +18107,9 @@
   "website": "https://www.misu-paris.com",
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/d1a65c_20b51ea17c964ee9af02e744651515cf%7Emv2.png/v1/fit/w_2500,h_1330,al_c/d1a65c_20b51ea17c964ee9af02e744651515cf%7Emv2.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 73 14 59"
  },
  {
   "id": "ig-paris-yami-yami",
@@ -18107,7 +18126,9 @@
   "halal": true,
   "lat": 48.864585,
   "lng": 2.356435,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "01 42 77 88 88"
  },
  {
   "id": "ig-paris-pasta-suta",
@@ -18128,7 +18149,9 @@
   "enriched": 5,
   "photo": "https://pastasuta.fr/wp-content/uploads/2022/05/Pastasuta-Paris-Tortellini.jpg",
   "phone": "06 59 05 68 80",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "booking": "https://www.thefork.fr"
  },
  {
   "id": "ig-paris-odoumak",
@@ -18146,7 +18169,9 @@
   "lat": 48.877005,
   "lng": 2.347833,
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/odoumak-r731426"
+  "booking": "https://www.thefork.fr/restaurant/odoumak-r731426",
+  "aiFill": 1,
+  "phone": "09 88 55 58 88"
  },
  {
   "id": "ig-paris-claudine",
@@ -18168,7 +18193,8 @@
   "searched": 1,
   "halal": true,
   "photo": "https://www.claudine-slowdwich.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout-crop.ca18524d.jpg&w=1080&q=75",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-rehab",
@@ -18185,7 +18211,8 @@
   "lng": 2.334202,
   "searched": 1,
   "igSearched": 1,
-  "instagram": "rehab_paris"
+  "instagram": "rehab_paris",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-le-syndicat",
@@ -18206,7 +18233,8 @@
   "searched": 1,
   "photo": "https://freight.cargo.site/t/original/i/01a448d7869785cf905e58aa3674ede7bf2dd4f8e5f0a21d47692097bc8589e9/Cut-Architectures_LeSyndicat06david-Foessel.jpg",
   "booking": "https://bookings.zenchef.com/results?rid=347818&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-carvan",
@@ -18223,7 +18251,8 @@
   "lng": 2.273895,
   "searched": 1,
   "igSearched": 1,
-  "instagram": "__carvan__"
+  "instagram": "__carvan__",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-silencio-des-pres",
@@ -18242,7 +18271,10 @@
   "enriched": 5,
   "searched": 1,
   "bookingScan": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 45 48 31 69",
+  "instagram": "silenciodespres"
  },
  {
   "id": "ig-paris-grand-duc",
@@ -18259,7 +18291,8 @@
   "lng": 2.363532,
   "searched": 1,
   "igSearched": 1,
-  "instagram": "legrandduc_officiel"
+  "instagram": "legrandduc_officiel",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-fitzgerald",
@@ -18279,7 +18312,9 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/fitzgerald-r211931",
   "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72b79c91a29549a886c_og-fitz-group-evenements.jpg",
-  "instagram": "fitzgroupevents"
+  "instagram": "fitzgroupevents",
+  "aiFill": 1,
+  "phone": "01 45 51 38 38"
  },
  {
   "id": "ig-paris-bisou",
@@ -18300,7 +18335,8 @@
   "photo": "https://static.wixstatic.com/media/2e8e55_4228f21b5af34859a4c395a833eb4429~mv2.jpg/v1/fill/w_2500,h_3125,al_c/2e8e55_4228f21b5af34859a4c395a833eb4429~mv2.jpg",
   "phone": "06 20 25 50 85",
   "instagram": "bar_bisou",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-prescription-cocktail-club",
@@ -18366,7 +18402,9 @@
   "photo": "https://www.candelariaparis.com/wp-content/uploads/2019/10/candelariaparis.png",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "candelariaparis"
+  "instagram": "candelariaparis",
+  "aiFill": 1,
+  "phone": "01 42 74 41 28"
  },
  {
   "id": "ig-paris-moonshiner",
@@ -18387,7 +18425,8 @@
   "photo": "https://moonshinerbar.fr/wp-content/uploads/2021/09/Image-fond-Moonshiner-site-1024x684.png",
   "phone": "09 50 73 12 99",
   "instagram": "moonshiner_cocktail_bar",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-alleno-paris",
@@ -18410,7 +18449,9 @@
   "bookingOk": 2,
   "igSearched": 1,
   "instagram": "allenoparis",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 53 05 70 00"
  },
  {
   "id": "ig-paris-le-boudoir",
@@ -18432,7 +18473,8 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "leboudoir_paris",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-l-espadon-ritz",
@@ -18453,7 +18495,9 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "espadonritzparis",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 43 16 33 74"
  },
  {
   "id": "ig-paris-la-dame-de-pic",
@@ -18470,7 +18514,15 @@
   "lng": 2.341259,
   "searched": 1,
   "igSearched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 42 60 40 40",
+  "instagram": "restaurantlatrinity",
+  "website": "https://www.anne-sophie-pic.com",
+  "enriched": 5,
+  "photo": "https://cdn.prod.website-files.com/6916f4b152577355a6e928e6/6994e43d174a1e4d329587d0_EQUIPE-PIC-VALENCE-JOYEUX-NOEL.webp",
+  "booking": "https://bookings.zenchef.com/results?rid=354067&lang=fr",
+  "bookingOk": 2
  },
  {
   "id": "ig-paris-lasserre",
@@ -18626,7 +18678,9 @@
   "photo": "https://images.prismic.io/lvmh-chevalblanc/aGUCC3fc4bHWi86A_Light-ChevalBlancParis_Fa%C3%A7ade_OliverFly.jpg?auto=format%2Ccompress&rect=0%2C234%2C5614%2C7018&w=3840&fit=max&q=0.9",
   "instagram": "chevalblancofficial",
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 40 28 00 00"
  },
  {
   "id": "ig-paris-lucas-carton",
@@ -18668,7 +18722,9 @@
   "lat": 40.715059,
   "lng": -73.981531,
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "212-505-8555"
  },
  {
   "id": "ig-new-york-barney-greengrass",
@@ -18689,7 +18745,9 @@
   "website": "https://www.barneygreengrass.com",
   "enriched": 5,
   "photo": "https://www.barneygreengrass.com/cdn/shop/files/BG_white_Tagline_cream.png?v=1727142349",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-724-4707"
  },
  {
   "id": "ig-new-york-zabar-s",
@@ -18712,7 +18770,9 @@
   "kasher": true,
   "photo": "https://www.zabars.com/on/demandware.static/Sites-Zabars-Site/-/default/dwc626bff2/images/%20Zabars@3x.png",
   "booking": "https://www.zabars.com/preserves-and-butters/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-787-2000"
  },
  {
   "id": "ig-new-york-kossar-s",
@@ -18734,7 +18794,9 @@
   "website": "https://kossars.com",
   "enriched": 5,
   "photo": "https://static.spotapps.co/website_images/ab_websites/40161_website_v1/about_us.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 888-465-6772"
  },
  {
   "id": "ig-new-york-the-pickle-guys",
@@ -18756,7 +18818,9 @@
   "website": "https://pickleguys.com",
   "enriched": 5,
   "photo": "https://pickleguys.com/cdn/shop/files/products-pickles-new-label-noBG_1.png?v=1727836584&width=2100",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-656-9739"
  },
  {
   "id": "ig-new-york-kikoo-sushi",
@@ -18775,7 +18839,8 @@
   "enriched": 5,
   "photo": "https://kikoosushi.com/images/og-kikoo-east-village.jpg",
   "instagram": "kikoosushi",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-akimori",
@@ -18797,7 +18862,8 @@
   "website": "https://www.akimorinyc.com",
   "enriched": 5,
   "booking": "https://www.akimorinyc.com/reserve",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-tempura",
@@ -18818,7 +18884,8 @@
   "searched": 1,
   "website": "https://tempura-nyc.wheree.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-7th-street-burger",
@@ -18839,7 +18906,8 @@
   "website": "https://7thstreetburger.com",
   "enriched": 5,
   "photo": "https://7thstreetburger.com/media/pages/home/623be9a590-1781218184/burg-1600x-q80.webp",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-bis",
@@ -18857,7 +18925,9 @@
   "kasher": true,
   "lat": 40.776642,
   "lng": -73.957484,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "+1 212-722-2220"
  },
  {
   "id": "ig-new-york-zinc-bar",
@@ -18877,7 +18947,9 @@
   "searched": 1,
   "website": "https://www.zincbar.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-477-9462"
  },
  {
   "id": "ig-new-york-tavern-29",
@@ -18898,7 +18970,9 @@
   "enriched": 5,
   "photo": "https://cdn.prod.website-files.com/647118f30fd875785bc69628/6478e92f93cc6b71effc0da7_au8i9757.jpg",
   "instagram": "tavern29nyc",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-685-4229"
  },
  {
   "id": "ig-new-york-bangia",
@@ -18920,7 +18994,9 @@
   "enriched": 5,
   "photo": "http://static1.squarespace.com/static/61bbaddda30e70071e877125/t/6a3d89974c804c1f71fd9dce/1782417815861/Screen+Shot+2026-05-23+at+5.38.07+PM.png?format=1500w",
   "booking": "https://client.minitable.net/c_reservation?sid=sea7ff9ab5aab7d88639352a68b760804",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-683-1132"
  },
  {
   "id": "ig-new-york-sveta",
@@ -18941,7 +19017,9 @@
   "photo": "https://static.spotapps.co/website_images/ab_websites/93755_website_v2/social.jpg",
   "bookingScan": 1,
   "booking": "https://sveta-nyc.com/party",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-620-0920"
  },
  {
   "id": "ig-new-york-manhatta",
@@ -18961,7 +19039,9 @@
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/1cf2b7830837af2c4dafd105dc16b240/media/images/2218497721HighResBlue.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=DBCCB9&pad=100",
   "booking": "https://www.opentable.com/r/manhatta-new-york",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-230-5788"
  },
  {
   "id": "ig-new-york-twenty-three-grand",
@@ -18982,7 +19062,9 @@
   "booking": "https://www.thefork.fr/restaurant/twenty-three-grand-r828464",
   "website": "https://www.twentythreegrand.com",
   "enriched": 5,
-  "photo": "https://www.twentythreegrand.com/wp-content/uploads/2021/04/veranda-meta-share-1024x538.jpg"
+  "photo": "https://www.twentythreegrand.com/wp-content/uploads/2021/04/veranda-meta-share-1024x538.jpg",
+  "aiFill": 1,
+  "phone": "+1 212-966-2323"
  },
  {
   "id": "ig-new-york-perrine",
@@ -19002,7 +19084,10 @@
   "searched": 1,
   "website": "https://www.perrinenyc.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-940-8195",
+  "booking": "https://www.perrinenyc.com/reservations"
  },
  {
   "id": "ig-new-york-izakaya-nana",
@@ -19023,7 +19108,9 @@
   "photo": "https://static.wixstatic.com/media/ac2bd4_01c96312043341eaa7b30590469be00f~mv2.png",
   "bookingScan": 1,
   "booking": "https://www.izakayanana.com/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 718-359-5888"
  },
  {
   "id": "ig-new-york-lafayette",
@@ -19044,7 +19131,9 @@
   "website": "https://www.lafayetteny.com",
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/229072ec86f44588c6e94cd077743323/media/images/61148Lafayette_Scrolling.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=FFFFFF&pad=100",
-  "instagram": "lafayette380"
+  "instagram": "lafayette380",
+  "aiFill": 1,
+  "phone": "+1 212-533-3000"
  },
  {
   "id": "ig-new-york-los-tacos-no-1",
@@ -19061,7 +19150,14 @@
   "lat": 40.742051,
   "lng": -74.004897,
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "+1 212-255-6043",
+  "instagram": "lostacos1",
+  "website": "https://www.lostacos1.com",
+  "enriched": 5,
+  "photo": "https://images.getbento.com/accounts/510cbf777fe58cdd68961f978be1dd35/media/images/48986los-tacos-mobile-sign.jpg",
+  "bookingScan": 1
  },
  {
   "id": "ig-new-york-lexington-candy-shop",
@@ -19082,7 +19178,9 @@
   "enriched": 5,
   "photo": "https://images.squarespace-cdn.com/content/v1/5c51b3aa297114a2b1e322c0/1549291313980-3QNIQHF6DMWEQ651MU93/blob",
   "instagram": "lexingtoncandyshop",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-288-0057"
  },
  {
   "id": "ig-new-york-levain-bakery",
@@ -19103,7 +19201,9 @@
   "enriched": 5,
   "photo": "https://levainbakery.com/cdn/shop/files/Cookie_1_000096.png?v=1785963655&width=60",
   "instagram": "levainbakery",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 917-464-3769"
  },
  {
   "id": "ig-new-york-ess-a-bagel",
@@ -19124,7 +19224,9 @@
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/23cbf1a6f3f0681ca2a75625561be7a9/media/images/37957Lines_above_-EST._1976_4.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=EDEDF1&pad=100",
   "instagram": "essabagel",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-533-1592"
  },
  {
   "id": "ig-new-york-mei-lai-wah",
@@ -19142,7 +19244,9 @@
   "lng": -73.949465,
   "searched": 1,
   "igSearched": 1,
-  "instagram": "meilaiwahcoffeeshop"
+  "instagram": "meilaiwahcoffeeshop",
+  "aiFill": 1,
+  "phone": "+1 212-226-6894"
  },
  {
   "id": "ig-new-york-prince-street-pizza",
@@ -19163,7 +19267,9 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "princestreetpizza"
+  "instagram": "princestreetpizza",
+  "aiFill": 1,
+  "phone": "+1 212-966-4100"
  },
  {
   "id": "ig-new-york-au-cheval",
@@ -19184,7 +19290,11 @@
   "enriched": 5,
   "photo": "http://static1.squarespace.com/static/66e88482bbf8191c95a0db67/t/670ee5f0fe7c597f9f760e41/1729029616495/AuCheval_SocialShar.png?format=1500w",
   "instagram": "AuChevalDiner",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-256-0020",
+  "booking": "https://resy.com/cities/new-york-ny/venues/au-cheval",
+  "bookingOk": 2
  },
  {
   "id": "ig-new-york-katz-s-delicatessen",
@@ -19206,7 +19316,9 @@
   "photo": "https://katzsdelicatessen.com/media/catalog/category/Katzs_TasteofNY_1-min.jpeg",
   "instagram": "katzsdeli",
   "booking": "https://katzsdelicatessen.com/group-reservations",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-254-2246"
  },
  {
   "id": "ig-new-york-the-dickens",
@@ -19225,7 +19337,9 @@
   "website": "https://www.thedickensnyc.com",
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/13fa62fd4cdb01589dbe669961df265f/media/nf1sJmIdRYCcD0OLYhfQ_TheDickens--6.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.84&fp-y=0.61",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 646-964-5192"
  },
  {
   "id": "ig-new-york-ortomare",
@@ -19243,7 +19357,8 @@
   "searched": 1,
   "website": "https://ortomare-ristorante-pizzeria.wheree.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-kaiten-zushi",
@@ -19265,7 +19380,9 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/266c16_456befefaa4a40a2aafa9ed067487540~mv2.png",
   "booking": "https://resy.com/?extlink=ps-US-Resy-Brand-Conversion-Evergreen&gclsrc=aw.ds&gad_source=1&gad_campaignid=11097352452&gbraid=0AAAAADRRHWPnT1xcV-60vuLDtLfFvL5qO&gclid=CjwKCAjwlaTGBhANEiwAoRgXBYcL2_FpvR1hU2R_H6-lV_dWnl7XZQ43Hg9aEwmWJj3xafqlTooWGRoCDQIQAvD_BwE&date=2025-09-16&seats=2",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-689-8999"
  },
  {
   "id": "ig-new-york-lost-in-paradise",
@@ -19284,7 +19401,10 @@
   "website": "https://www.lostinparadiserooftop.com",
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/76b6b09b073ff7acaeeffc630bdeb2c4/media/images/229094B956ADE-B53A-4FA6-A9E9-F091FC37EFC1.jpeg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 718-433-1499",
+  "booking": "https://www.opentable.com/r/lost-in-paradise-rooftop-long-island-city"
  },
  {
   "id": "ig-new-york-deluxe-green-bo",
@@ -19306,7 +19426,9 @@
   "photo": "http://www.deluxe-green-bo.com/media/4420/1.jpg?width=320&height=320",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "deluxegreenbo"
+  "instagram": "deluxegreenbo",
+  "aiFill": 1,
+  "phone": "+1 212-625-2359"
  },
  {
   "id": "ig-new-york-shanghai-21",
@@ -19327,7 +19449,9 @@
   "enriched": 5,
   "photo": "https://shanghai21nyc.com/wp-content/uploads/2025/10/shanghai-21-2048x1364.jpg",
   "instagram": "shanghai21mottst",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-766-0366"
  },
  {
   "id": "ig-new-york-joe-s-ginger",
@@ -19349,7 +19473,9 @@
   "photo": "https://static.wixstatic.com/media/15097e_c753ea5250c941888ad0988c6f42f448~mv2.jpg/v1/fill/w_2500,h_1406,al_c/15097e_c753ea5250c941888ad0988c6f42f448~mv2.jpg",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "joesgingernyc"
+  "instagram": "joesgingernyc",
+  "aiFill": 1,
+  "phone": "+1 212-233-5588"
  },
  {
   "id": "ig-new-york-mott-street-eatery",
@@ -19366,7 +19492,8 @@
   "lat": 40.717144,
   "lng": -73.997272,
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-mimi-cheng-s",
@@ -19387,7 +19514,9 @@
   "enriched": 5,
   "photo": "https://mimichengs.com/cdn/shop/t/21/assets/social.jpg?v=3354",
   "instagram": "mimichengs",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-343-1135"
  },
  {
   "id": "ig-new-york-spicy-moon",
@@ -19409,7 +19538,9 @@
   "enriched": 5,
   "photo": "https://images.squarespace-cdn.com/content/v1/6179a921e2f0103b2a8c61d9/f162b50b-3b64-4161-b25a-18ac191ad608/spicy2.jpeg?format=2500w",
   "booking": "https://resy.com/cities/ny/spicy-moon-at-bowery",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-228-5788"
  },
  {
   "id": "ig-new-york-cantina-rooftop",
@@ -19431,7 +19562,9 @@
   "enriched": 5,
   "photo": "https://cantinarooftop.com/img/venue-4.jpg",
   "booking": "https://cantinarooftop.com/reserve",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-957-1700"
  },
  {
   "id": "ig-new-york-fellini-coffee",
@@ -19453,7 +19586,9 @@
   "photo": "http://static1.squarespace.com/static/658f031a321af07a2eaee982/t/658f2585f2737d629d349f44/1703880069628/Mesa+de+trabajo+1%402x-100.jpg?format=1500w",
   "instagram": "fellinicoffee",
   "booking": "https://resy.com/cities/new-york-ny/venues/fellini-restaurant?date=2025-02-03&seats=2",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 646-692-9653"
  },
  {
   "id": "ig-new-york-la-barca-cantina",
@@ -19470,7 +19605,13 @@
   "instagram": "labarcacantina",
   "lat": 40.761779,
   "lng": -74.002701,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "+1 212-630-8831",
+  "website": "https://www.labarcacantina.com",
+  "enriched": 5,
+  "photo": "https://images.ctfassets.net/kpmk8wktzj4t/5LrKjPVCkjTb7rj6f1xkkk/153d50f3b4d1c097ff2fdf17430e4d59/CL_Hop_Hero.jpg",
+  "bookingScan": 1
  },
  {
   "id": "ig-new-york-phayul",
@@ -19489,7 +19630,9 @@
   "website": "https://phayul.localoria.com",
   "enriched": 5,
   "photo": "https://cdn.localoria.com/107230-llphoto-1.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 718-424-3433"
  },
  {
   "id": "ig-new-york-kyuramen",
@@ -19507,7 +19650,8 @@
   "searched": 1,
   "website": "https://www.newyorkkyuramen.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-abba-bar-grill",
@@ -19530,7 +19674,8 @@
   "photo": "https://static.wixstatic.com/media/02d705_1666a704c7134dbfa6c7c80a9a352862~mv2.png",
   "bookingScan": 1,
   "booking": "https://www.abbabar.com/reservations",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-don-angie",
@@ -19552,7 +19697,8 @@
   "enriched": 5,
   "photo": "https://images.getbento.com/GiUwZKATSEeII7KhlCqP_DonAngie01.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=EDEDF1&pad=100",
   "booking": "https://www.opentable.com/r/san-sabino-new-york",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-the-mulberry-bar",
@@ -19573,7 +19719,8 @@
   "website": "https://www.themulberrybar.com",
   "enriched": 5,
   "photo": "https://themulberrybar.com/images/og-image.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-duzan",
@@ -19592,7 +19739,9 @@
   "website": "https://www.duzannyc.com",
   "enriched": 5,
   "photo": "https://www.duzannyc.com/static/50bf37ab712950399436c961af428928/869a6/E883EAA9-4ED9-4A5D-8AF9-C5D8C6DAEE19.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 718-777-1845"
  },
  {
   "id": "ig-new-york-gilligan-s",
@@ -19614,7 +19763,9 @@
   "enriched": 5,
   "photo": "https://djmzubtjl6upi.cloudfront.net/wp-content/uploads/sites/10/2025/06/Website-Mobile.jpg",
   "booking": "https://resy.com/cities/new-york-ny/venues/gilligans?date=2025-02-10&seats=2",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-965-3565"
  },
  {
   "id": "ig-new-york-shalom-japan",
@@ -19636,7 +19787,9 @@
   "enriched": 5,
   "photo": "https://shalomjapannyc.com/wp-content/uploads/2025/11/Shark-Tank-4-web-768x614.jpg",
   "booking": "https://resy.com/cities/ny/shalom-japan",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 718-388-4012"
  },
  {
   "id": "ig-new-york-sushi-tokyo",
@@ -19658,7 +19811,9 @@
   "website": "https://sushitokyo.com",
   "enriched": 5,
   "photo": "https://sushitokyo.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 718-336-7245"
  },
  {
   "id": "ig-new-york-elsie-rooftop",
@@ -19680,7 +19835,9 @@
   "photo": "https://elsierooftop.com/wp-content/uploads/2026/08/BB3A9330.webp",
   "instagram": "elsierooftopny",
   "booking": "https://www.opentable.com/r/elsie-rooftop-new-york",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-768-3100"
  },
  {
   "id": "ig-new-york-ophelia",
@@ -19702,7 +19859,9 @@
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/0dc3afa185c13d245b6a95eba90422e9/media/images/198337588ophelia_white.png",
   "booking": "https://www.opentable.com/r/casa-felix-new-york",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-980-2766"
  },
  {
   "id": "ig-new-york-candle-cafe",
@@ -19720,7 +19879,8 @@
   "kasher": true,
   "lat": 40.741905,
   "lng": -73.981209,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-kura-revolving-sushi",
@@ -19737,7 +19897,8 @@
   "lat": 40.760252,
   "lng": -73.833539,
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-wall-street-grill",
@@ -19759,7 +19920,9 @@
   "website": "https://wallstreetgrill.com",
   "enriched": 5,
   "booking": "https://resy.com/link?venue_id=5371",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-797-7070"
  },
  {
   "id": "ig-new-york-malka",
@@ -19780,7 +19943,11 @@
   "searched": 1,
   "website": "https://www.malka-usa.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-873-1000",
+  "booking": "https://resy.com/cities/ny/malka-nyc",
+  "bookingOk": 2
  },
  {
   "id": "ig-new-york-tabernacle-steakhouse",
@@ -19803,7 +19970,9 @@
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/6e74c346389de22e114a9cbf9cd5ad5c/media/images/41716DSC_9196-HDR_Darker_-_Bluer_updated.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
   "booking": "https://resy.com/cities/ny/tabernacle-steakhouse?date=2022-05-06&seats=2",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-564-8585"
  },
  {
   "id": "ig-new-york-shawarma-shabazi",
@@ -19821,7 +19990,8 @@
   "kasher": true,
   "lat": 40.792014,
   "lng": -73.97211,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-maison-valero",
@@ -19842,7 +20012,8 @@
   "searched": 1,
   "website": "https://maison-valero.wheree.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-sip-and-sizzle",
@@ -19860,7 +20031,8 @@
   "kasher": true,
   "lat": 40.775026,
   "lng": -73.94817,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-tsumo",
@@ -19880,7 +20052,8 @@
   "enriched": 5,
   "photo": "https://images.squarespace-cdn.com/content/v1/655815c56c5689087a028cb0/b0468f75-608f-4cbb-9e82-12793ecd4cb7/Untitled-1897.jpg?format=2500w",
   "booking": "https://resy.com/cities/ny/tsumo",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-okiboru-udon",
@@ -19901,7 +20074,8 @@
   "website": "https://okiboru.com",
   "enriched": 5,
   "photo": "https://static.spotapps.co/web/okiboru--com/custom/quotes_new.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-sentir",
@@ -19922,7 +20096,10 @@
   "searched": 1,
   "website": "https://sentirnyc.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-675-2090",
+  "booking": "https://www.opentable.com/r/sentir-new-york"
  },
  {
   "id": "ig-new-york-bhi-thursdays",
@@ -19945,7 +20122,9 @@
   "enriched": 5,
   "photo": "https://www.bhithursdays.com/og-image.jpg",
   "booking": "https://www.bhithursdays.com/reservations?from=%2F",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 718-627-1234"
  },
  {
   "id": "ig-new-york-bonito-47",
@@ -19963,7 +20142,8 @@
   "kasher": true,
   "lat": 40.758178,
   "lng": -73.982984,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-caffe-aronne",
@@ -19985,7 +20165,9 @@
   "website": "https://www.caffearonne.com",
   "enriched": 5,
   "photo": "http://static1.squarespace.com/static/669a949ce4973c667985d593/t/6abdebd94c0b323022361bf2/1721578694989/Indoor+Bar+Cart.jpg?format=1500w",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 917-475-1044"
  },
  {
   "id": "ig-new-york-pop-up-bagels",
@@ -20007,7 +20189,8 @@
   "website": "https://www.popupbagels.com",
   "enriched": 5,
   "photo": "https://www.popupbagels.com/_next/static/media/location_pin.3b7caf1f.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-burgers-bar",
@@ -20025,7 +20208,9 @@
   "kasher": true,
   "lat": 40.614197,
   "lng": -73.962875,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "+1 718-998-3800"
  },
  {
   "id": "ig-new-york-sauteed",
@@ -20046,7 +20231,9 @@
   "searched": 1,
   "website": "https://sauteed.wheree.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 718-998-5050"
  },
  {
   "id": "ig-new-york-ricotta-coffee",
@@ -20064,7 +20251,8 @@
   "kasher": true,
   "lat": 40.662466,
   "lng": -73.939825,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-jersey-shore-sushi-co",
@@ -20082,7 +20270,8 @@
   "kasher": true,
   "lat": 40.610967,
   "lng": -73.962262,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-pitabar",
@@ -20104,7 +20293,8 @@
   "website": "https://pitabar.nyc",
   "enriched": 5,
   "photo": "https://img1.wsimg.com/isteam/ip/4fe63c56-32d8-474e-a121-a043c5c5af5c/IMG_6662.jpeg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-rosie-s-pizza",
@@ -20122,7 +20312,8 @@
   "kasher": true,
   "lat": 40.752648,
   "lng": -73.987579,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-zoares-kosher-grill",
@@ -20140,7 +20331,8 @@
   "kasher": true,
   "lat": 40.596331,
   "lng": -73.961419,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-le-marais",
@@ -20163,7 +20355,9 @@
   "enriched": 5,
   "photo": "http://static1.squarespace.com/static/5c65f1f5d7819e615a024198/t/5de5ccb78d3bc029402c3589/1575341244120/Asset+2.0.png?format=1500w",
   "booking": "https://resy.com/cities/ny/le-marais?date=2022-09-12&seats=2",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+1 212-869-0900"
  },
  {
   "id": "ig-new-york-izzy-s",
@@ -20184,7 +20378,9 @@
   "searched": 1,
   "website": "https://izzys-smokehouse.wheree.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+1 212-330-8888"
  },
  {
   "id": "ig-tel-aviv-katzir",
@@ -20204,7 +20400,9 @@
   "website": "https://katzirtlv.com",
   "enriched": 5,
   "photo": "https://katzirtlv.com/wp-content/uploads/2025/09/section1-image-1-flip.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+972 3-520-5555"
  },
  {
   "id": "ig-tel-aviv-imersion",
@@ -20222,7 +20420,8 @@
   "kasher": true,
   "lat": 32.05366,
   "lng": 34.757001,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-le-rendez-vous",
@@ -20243,7 +20442,9 @@
   "photo": "https://rendezvous-nevetsedek.co.il/og.png",
   "instagram": "rendezvous.tlv",
   "booking": "https://ontopo.com/he/il/page/40980635?source=rv_site_direct_unknown",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "+972 3-516-5165"
  },
  {
   "id": "ig-tel-aviv-asi-ve-adnan",
@@ -20258,7 +20459,8 @@
   "priceSrc": "estim",
   "city": "Tel-Aviv",
   "instagram": "asi_ve_adnan",
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-garger-hazahav",
@@ -20273,7 +20475,8 @@
   "priceSrc": "estim",
   "city": "Tel-Aviv",
   "instagram": "garger_hazahav",
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-abu-hassan",
@@ -20290,7 +20493,8 @@
   "instagram": "abu_hassan_karawan",
   "lat": 32.049723,
   "lng": 34.750463,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-ola-ola",
@@ -20308,7 +20512,8 @@
   "kasher": true,
   "lat": 32.068,
   "lng": 34.767079,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-darya",
@@ -20328,7 +20533,8 @@
   "website": "https://www.daryatlv.com",
   "enriched": 5,
   "photo": "https://www.daryatlv.com/_files/ugd/...jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-florentina",
@@ -20348,7 +20554,8 @@
   "website": "https://florentina.co.il",
   "enriched": 5,
   "photo": "https://florentina.co.il/wp-content/uploads/2024/07/%D7%9C%D7%95%D7%92%D7%95-%D7%91%D7%90%D7%A0%D7%A8-%D7%A8%D7%90%D7%A9%D7%99-%D7%9C%D7%91%D7%9F-e1722358724808-2048x689.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-dvora",
@@ -20370,7 +20577,8 @@
   "website": "https://dvoratlv.com",
   "enriched": 5,
   "photo": "https://cdn.prod.website-files.com/677e8bf889e562b830d6f0cf/67d295cff7f80ac3fced7fe0_workwithus.avif",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-otoro",
@@ -20386,7 +20594,8 @@
   "city": "Tel-Aviv",
   "instagram": "otoro_handrollbar",
   "kasher": true,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-malka",
@@ -20409,7 +20618,8 @@
   "enriched": 5,
   "photo": "https://malkarest.com/wp-content/uploads/2024/04/About-photo.webp",
   "phone": "05 42 47 19 01",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-pankina",
@@ -20427,7 +20637,8 @@
   "kasher": true,
   "lat": 32.082504,
   "lng": 34.769964,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-cartola",
@@ -20442,7 +20653,8 @@
   "priceSrc": "estim",
   "city": "Tel-Aviv",
   "instagram": "cartola_il",
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-tel-aviv-qumran",
@@ -20462,7 +20674,9 @@
   "website": "https://qumrantlv.com",
   "enriched": 5,
   "photo": "https://i0.wp.com/qumrantlv.com/wp-content/uploads/2023/09/&#1493;&#1463;&#1497;&#1463;&#1468;&#1506;&#1463;&#1513;&#1474;-&#1500;&#1464;&#1492;&#1462;&#1501;-&#1502;&#1460;&#1513;&#1456;&#1473;&#1514;&#1462;&#1468;&#1492;-&#1493;&#1463;&#1497;&#1465;&#1468;&#1488;&#1499;&#1456;&#1500;&#1493;&#1468;-&#1493;&#1463;&#1497;&#1460;&#1468;&#1513;&#1456;&#1473;&#1514;&#1468;&#1493;&#1468;.png?w=3780&ssl=1",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+972 3-696-6966"
  },
  {
   "id": "ig-tel-aviv-poupee",
@@ -20478,7 +20692,9 @@
   "city": "Tel-Aviv",
   "instagram": "poupee.tlv",
   "kasher": true,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "+972 3-560-5999"
  },
  {
   "id": "ig-tel-aviv-salon-yevani",
@@ -20501,7 +20717,8 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/ac0b37_1896cd7cd8784e85aad93bf574b54a48~mv2.png",
   "phone": "05 27 34 84 62",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-jerusalem-seoul-house",
@@ -20522,7 +20739,9 @@
   "searched": 1,
   "website": "https://seoulhouse.co.il",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "+972 2-628-6053"
  },
  {
   "id": "ig-jerusalem-anthony-s-pizza",
@@ -20543,7 +20762,8 @@
   "enriched": 5,
   "photo": "https://anthonys.co.il/wp-content/uploads/2021/06/stamp_1_1-100x100.png",
   "phone": "07 79 96 62 29",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-jerusalem-andalucia",
@@ -20559,7 +20779,8 @@
   "city": "Jérusalem",
   "instagram": "andalucia_cocktail_restaurant",
   "kasher": true,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-jerusalem-black-iron",
@@ -20577,7 +20798,8 @@
   "kasher": true,
   "lat": 31.783423,
   "lng": 35.214891,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-jerusalem-la-piedra",
@@ -20593,7 +20815,8 @@
   "city": "Jérusalem",
   "instagram": "pizzeria_piedra",
   "kasher": true,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-jerusalem-zuta",
@@ -20614,7 +20837,8 @@
   "searched": 1,
   "website": "https://zuta.wheree.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-jerusalem-mimonis",
@@ -20632,7 +20856,8 @@
   "kasher": true,
   "lat": 31.78491,
   "lng": 35.210482,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-canoe-crecy-la-chapelle",
@@ -20648,7 +20873,8 @@
   "lat": 48.857789,
   "lng": 2.922245,
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "u-mw75y5krckxf",
@@ -20670,7 +20896,8 @@
   "phone": "01 40 28 97 46",
   "instagram": "shoei_1951",
   "booking": "https://www.opentable.fr/r/wagyu-restaurant-1129-paris",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "u-mw762sjzd6yf",
