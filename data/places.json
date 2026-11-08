@@ -448,7 +448,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "paris-1-japonais-yamato-grill",
@@ -939,7 +940,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "telephone"
+  "resa": "telephone",
+  "noInsta": 1
  },
  {
   "id": "paris-2-francais-one-and-one",
@@ -1596,7 +1598,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noInsta": 1
  },
  {
   "id": "paris-2-chinois-xialongkan",
@@ -1953,7 +1956,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un concept novateur et engagé qui propose une cuisine végétale créative et savoureuse. L'ambiance y est moderne, décontractée et résolument tournée vers le bien-manger.",
-  "resa": "sans"
+  "resa": "sans",
+  "noInsta": 1
  },
  {
   "id": "paris-2-vegan-mama-nissa",
@@ -2018,7 +2022,8 @@
   "igSearched": 1,
   "booking": "https://www.thefork.fr/restaurant/cafe-jeanne-park-hyatt-paris-vendome-r706347",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "noInsta": 1
  },
  {
   "id": "paris-2-cafe-contrastes",
@@ -2811,7 +2816,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Pizzeria et trattoria italienne authentique proposant de délicieuses pizzas napolitaines dans une ambiance chaleureuse et conviviale.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "paris-4-italien-little-babel",
@@ -4980,7 +4986,8 @@
   "igSearched": 1,
   "aiFill": 1,
   "summary": "Institution parisienne spécialisée dans le traditionnel pot-au-feu servi dans une ambiance de bistrot rétro et authentique. Un lieu chaleureux et réconfortant pour déguster une cuisine française génaisuse et intemporelle.",
-  "resa": "telephone"
+  "resa": "telephone",
+  "noInsta": 1
  },
  {
   "id": "paris-9-francais-bien-eleve",
@@ -7077,7 +7084,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "paris-11-italien-itaglio",
@@ -8901,7 +8909,8 @@
   "aiFill": 1,
   "phone": "01 45 40 60 40",
   "summary": "Un lieu convivial aux accents chaleureux proposant une cuisine réconfortante et de savoureux burgers dans une ambiance détendue.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "paris-14-americain-mosugo",
@@ -8975,7 +8984,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=363545&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant japonais convivial où l'on déguste des grillades préparées directement sous vos yeux sur plaque teppanyaki, dans une ambiance chaleureuse et authentique."
+  "summary": "Un restaurant japonais convivial où l'on déguste des grillades préparées directement sous vos yeux sur plaque teppanyaki, dans une ambiance chaleureuse et authentique.",
+  "noInsta": 1
  },
  {
   "id": "paris-14-thailandais-basilic-thai",
@@ -9234,7 +9244,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une pizzeria de quartier chaleureuse et sans chichis. Idéale pour déguster des pizzas croustillantes et savoureuses dans une ambiance familiale et décontractée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "paris-15-italien-gioco",
@@ -9350,7 +9361,8 @@
   "igSearched": 1,
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noInsta": 1
  },
  {
   "id": "paris-15-japonais-okirama",
@@ -9423,7 +9435,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 45 77 15 15",
-  "summary": "Un restaurant japonais chaleureux offrant une cuisine généreuse et savoureuse, parfaite pour déguster des sushis et plats traditionnels dans une ambiance conviviale."
+  "summary": "Un restaurant japonais chaleureux offrant une cuisine généreuse et savoureuse, parfaite pour déguster des sushis et plats traditionnels dans une ambiance conviviale.",
+  "noInsta": 1
  },
  {
   "id": "paris-15-japonais-kumo",
@@ -9447,7 +9460,8 @@
   "aiFill": 1,
   "phone": "01 45 78 40 40",
   "summary": "Un restaurant japonais chaleureux proposant des sushis, sashimis et plats traditionnels soignés. L'ambiance y est intime et conviviale.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "paris-15-japonais-kasumi",
@@ -9513,7 +9527,8 @@
   "igSearched": 1,
   "aiFill": 1,
   "summary": "Une cantine cambodgienne familiale et sans chichis, idéale pour savourer de délicieuses soupes de nouilles et des plats parfumés. L'accueil y est particulièrement chaleureux.",
-  "resa": "sans"
+  "resa": "sans",
+  "noInsta": 1
  },
  {
   "id": "paris-15-indien-rasna",
@@ -9917,7 +9932,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "booking": "https://module.lafourchette.com/fr_FR/module/742111-57697"
+  "booking": "https://module.lafourchette.com/fr_FR/module/742111-57697",
+  "noInsta": 1
  },
  {
   "id": "paris-16-burger-sma-ma-mash",
@@ -10013,7 +10029,8 @@
   "igSearched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une petite cantine italienne de quartier chaleureuse et sans chichis. On y savoure des pâtes fraîches généreuses et des recettes familiales réconfortantes dans une ambiance conviviale."
+  "summary": "Une petite cantine italienne de quartier chaleureuse et sans chichis. On y savoure des pâtes fraîches généreuses et des recettes familiales réconfortantes dans une ambiance conviviale.",
+  "noInsta": 1
  },
  {
   "id": "paris-16-italien-le-madison",
@@ -11361,7 +11378,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un charmant café du 18e arrondissement proposant une cuisine simple et gourmande, parfaite pour un brunch ou un déjeuner dans une atmosphère détendue et familiale.",
-  "resa": "sans"
+  "resa": "sans",
+  "noInsta": 1
  },
  {
   "id": "paris-19-francais-xiii",
@@ -11423,7 +11441,8 @@
   "igSearched": 1,
   "aiFill": 1,
   "summary": "Un bistrot de quartier authentique et chaleureux, idéal pour déguster une cuisine française traditionnelle et réconfortante dans une ambiance conviviale.",
-  "resa": "telephone"
+  "resa": "telephone",
+  "noInsta": 1
  },
  {
   "id": "paris-19-thailandais-chez-sommay",
@@ -11704,7 +11723,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "paris-20-japonais-boken",
@@ -11922,7 +11942,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-gate-vr",
@@ -12062,7 +12083,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-objectif-horlogerie",
@@ -12164,7 +12186,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-eclipso",
@@ -12219,7 +12242,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-creation-de-bougie",
@@ -12234,7 +12258,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-atelier-poterie",
@@ -12249,7 +12274,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-lol-qui-rit-sort",
@@ -12264,7 +12290,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-paint-me-up",
@@ -12300,7 +12327,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-one-hour-escape-game",
@@ -12338,7 +12366,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-activite-kintsugi",
@@ -13552,7 +13581,8 @@
   "igSearched": 1,
   "cuisine": "Français",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-resto-naritake-ramen",
@@ -13885,7 +13915,8 @@
   "aiFill": 1,
   "phone": "01 42 36 86 54",
   "summary": "Une adresse chaleureuse à Paris pour déguster d'authentiques fondues chinoises et des plats traditionnels savoureux dans une ambiance conviviale.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-resto-dominicos",
@@ -15819,7 +15850,8 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-cafe-kith",
@@ -16131,7 +16163,8 @@
   "summary": "Bar de quartier convivial et sans chichis, parfait pour boire un verre entre amis dans une ambiance détendue au cœur du Marais.",
   "lat": 48.860282,
   "lng": 2.3639,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noInsta": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-coco",

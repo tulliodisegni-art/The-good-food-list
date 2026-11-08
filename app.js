@@ -379,6 +379,7 @@ function openSheet(id, keepScroll) {
         <a class="q" href="${esc(L.menu)}" target="_blank" rel="noopener">${icon("menu")}<span>Menu</span></a>
         ${igHandle(p) ? `<button class="q" data-ig="${esc(igHandle(p))}">${icon("insta")}<span>Instagram</span></button>`
           : /instagram\.com/.test(p.source || "") ? `<a class="q" href="${esc(p.source)}" target="_blank" rel="noopener">${icon("insta")}<span>Instagram</span></a>`
+          : p.noInsta ? `<span class="q off">${icon("insta")}<span>Instagram</span><i>pas de compte</i></span>`
           : `<button class="q missing" data-need="instagram">${icon("insta")}<span>Instagram</span><i>+ compte</i></button>`}
       </div>
 
@@ -429,7 +430,7 @@ function openSheet(id, keepScroll) {
           : p.resa === "inconnu" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : appelle pour réserver" : "Pas de réservation en ligne", p.phone ? L.call : "")
           : infoRow("book", "Réservation", "", "")}
         ${infoRow("menu", "Menu", p.menu ? "Voir le menu" : "", p.menu)}
-        ${infoRow("insta", "Instagram", igHandle(p) ? "@" + igHandle(p) : "", igHandle(p) ? L.insta : "")}
+        ${infoRow("insta", "Instagram", igHandle(p) ? "@" + igHandle(p) : p.noInsta ? "Pas de compte Instagram" : "", igHandle(p) ? L.insta : "")}
         ${p.source && p.source !== L.insta ? infoRow("insta", "Publication", "Voir la publication", p.source) : ""}
         ${infoRow("web", "Site web", p.website ? p.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") : "", p.website)}
         <form class="edit-info" id="editInfo" hidden>
