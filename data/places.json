@@ -11970,7 +11970,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-paint-me-up",
@@ -11989,7 +11990,9 @@
   "phone": "01 86 47 61 02",
   "instagram": "fever_us",
   "booking": "https://paintme-up.com/reservation",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Participez à des ateliers de peinture fluorescents et immersifs tout en profitant d'un verre dans une ambiance artistique, ludique et décontractée."
  },
  {
   "id": "precieuses-0-activite-personnalisation-de-sneakers",
@@ -12002,15 +12005,16 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-one-hour-escape-game",
   "list": "precieuses",
-  "arr": null,
+  "arr": 10,
   "cat": "Activité",
   "name": "One Hour Escape Game",
-  "address": "",
+  "address": "24 rue de Paradis, 75010 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -12021,7 +12025,11 @@
   "phone": "09 72 54 50 43",
   "instagram": "onehour_escape",
   "booking": "https://www.one-hour.fr/reserver/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Plongez dans des scénarios immersifs aux décors léchés et résolvez des énigmes palpitantes en équipe dans l'un des escape games incontournables de Paris.",
+  "lat": 48.87502,
+  "lng": 2.352906
  },
  {
   "id": "precieuses-0-activite-the-jury-experience-diamants-mensonges-et-un-mort",
@@ -12034,15 +12042,16 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-kintsugi",
   "list": "precieuses",
-  "arr": null,
+  "arr": 12,
   "cat": "Activité",
   "name": "Kintsugi",
-  "address": "",
+  "address": "33 rue de Picpus, 75012 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -12052,15 +12061,19 @@
   "photo": "https://images.squarespace-cdn.com/content/v1/61b70df445fdc445063b2ed5/f71f4697-9f63-4d04-b3f4-6c75d35cf2ab/objet+%C3%A9br%C3%A9ch%C3%A9+04.jpg?format=2500w",
   "instagram": "kintsugiparis",
   "booking": "https://kintsugiparis.com/reservation",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Initiez-vous à l'art traditionnel japonais du Kintsugi dans une ambiance calme et minutieuse. On y apprend à réparer la céramique avec de la laque et de la poudre d'or, pour sublimer les fissures.",
+  "lat": 48.844607,
+  "lng": 2.396056
  },
  {
   "id": "precieuses-0-activite-my-flower-class",
   "list": "precieuses",
-  "arr": null,
+  "arr": 11,
   "cat": "Activité",
   "name": "My Flower Class",
-  "address": "",
+  "address": "40 rue du Chemin Vert, 75011 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -12070,15 +12083,19 @@
   "enriched": 5,
   "photo": "https://cache-essential-apps.cc//image_backgrounds//clear_water_surface.jpg",
   "booking": "https://myflowerclass.com/products/atelier-my-flower-class-paris",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Participez à des ateliers d'art floral créatifs et conviviaux en plein cœur de Paris. On y apprend à composer de superbes bouquets de saison dans une ambiance chaleureuse et inspirante.",
+  "lat": 48.858819,
+  "lng": 2.374178
  },
  {
   "id": "precieuses-0-activite-les-origines-de-paris",
   "list": "precieuses",
-  "arr": null,
+  "arr": 4,
   "cat": "Activité",
   "name": "Les Origines de Paris",
-  "address": "",
+  "address": "Place de l'Hôtel de Ville, 75004 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -12088,15 +12105,19 @@
   "photo": "https://originesdeparis.timescope.com/_astro/_seo-image_edz1nr_ZnoRzq.jpeg",
   "phone": "01 86 47 61 02",
   "instagram": "originesdeparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Plongez dans l'histoire de la capitale grâce à une expérience de réalité virtuelle immersive en plein air. On y découvre l'évolution fascinante du parvis de l'Hôtel de Ville à travers les siècles dans une ambiance ludique.",
+  "lat": 48.854287,
+  "lng": 2.356161
  },
  {
   "id": "precieuses-0-activite-cite-immersive-des-fables",
   "list": "precieuses",
-  "arr": null,
+  "arr": 13,
   "cat": "Activité",
   "name": "Cité immersive des fables",
-  "address": "",
+  "address": "16 rue de l'Amiral Mouchez, 75013 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -12105,15 +12126,19 @@
   "enriched": 5,
   "photo": "https://fables.cites-immersives.fr/_astro/hero-opt_a2l11y_Fbrik.jpeg",
   "instagram": "citeimmersivefables",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Plongez dans l'univers poétique et fantastique des fables de La Fontaine à travers un parcours numérique et sensoriel. Une expérience ludique et immersive idéale à partager en famille.",
+  "lat": 48.822737,
+  "lng": 2.342575
  },
  {
   "id": "precieuses-0-activite-paradox-museum",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Activité",
   "name": "Paradox Museum",
-  "address": "",
+  "address": "38 boulevard des Italiens, 75009 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -12122,15 +12147,19 @@
   "enriched": 5,
   "photo": "https://paradoxmuseum.com/_astro/poster-desktop_emyqor_Wb7Vw.webp",
   "instagram": "paradoxmuseum",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un musée insolite qui défie la réalité grâce à des décors perturbants et des illusions d'optique spectaculaires. L'ambiance y est fun, interactive et parfaite pour prendre des photos surprenantes.",
+  "lat": 48.871187,
+  "lng": 2.334433
  },
  {
   "id": "precieuses-0-activite-science-experience",
   "list": "precieuses",
-  "arr": null,
+  "arr": 1,
   "cat": "Activité",
   "name": "Science Expérience",
-  "address": "",
+  "address": "16-18 rue Saint-Denis, 75001 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -12139,21 +12168,34 @@
   "enriched": 5,
   "photo": "https://science-experiences.com/_astro/og-image_fhpy7u_2cwX96.jpeg",
   "instagram": "science_experiences",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 89 71 33 00",
+  "summary": "Un parcours immersif entre science et divertissement, guidé par la technologie, de la pièce de l'univers aux mystères de la physique. Une sortie aussi fascinante qu'instructive dans une atmosphère moderne.",
+  "lat": 48.859381,
+  "lng": 2.347964
  },
  {
   "id": "precieuses-0-stand-up-jamel-comedy-club",
   "list": "precieuses",
-  "arr": null,
+  "arr": 10,
   "cat": "Stand-up",
   "name": "Jamel Comedy Club",
-  "address": "",
+  "address": "42 boulevard de Bonne-Nouvelle, 75010 Paris",
   "mark": "👌🏼",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "jamelcomedyclub"
+  "instagram": "jamelcomedyclub",
+  "aiFill": 1,
+  "phone": "01 42 75 00 00",
+  "website": "https://www.jamelcomedyclub.com",
+  "summary": "Le temple incontournable du stand-up parisien pour découvrir la crème de la nouvelle scène humoristique. L'ambiance y est ultra chaleureuse, intimiste et propice aux fous rires.",
+  "lat": 48.87077,
+  "lng": 2.348456,
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-stand-up-marrakech-du-rire",
@@ -12170,28 +12212,40 @@
   "enriched": 5,
   "photo": "https://marrakechdurire.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
   "instagram": "marrakechdurire",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Le Marrakech du Rire est le festival international d'humour incontournable fondé par Jamel Debbouze. Il propose une ambiance festive et chaleureuse réunissant les plus grands artistes de la scène humoristique."
  },
  {
   "id": "precieuses-0-stand-up-panam-cafe",
   "list": "precieuses",
-  "arr": null,
+  "arr": 11,
   "cat": "Stand-up",
   "name": "Panam Café",
-  "address": "",
+  "address": "14 Rue de la Fontaine au Roi, 75011 Paris",
   "mark": "✔️",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 43 55 07 50",
+  "instagram": "panamcafe",
+  "summary": "Le Panam Art Café est un lieu incontournable du stand-up parisien offrant une ambiance intime et conviviale. On y vient pour découvrir des talents émergents tout en profitant d'un verre.",
+  "lat": 48.868387,
+  "lng": 2.369982,
+  "website": "https://www.panameartcafe.com/",
+  "enriched": 5,
+  "photo": "https://www.panameartcafe.com/storage/files/events/emy-1920-1050-2_1783352850.jpg",
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-stand-up-le-fridge",
   "list": "precieuses",
-  "arr": null,
+  "arr": 2,
   "cat": "Stand-up",
   "name": "Le Fridge",
-  "address": "",
+  "address": "164 Rue Saint-Denis, 75002 Paris",
   "mark": "",
   "price": 1,
   "priceSrc": "estim",
@@ -12201,7 +12255,12 @@
   "photo": "https://lefridgecomedy.com/media.media_url",
   "instagram": "fridgecomedy",
   "booking": "https://lefridgecomedy.com/open-mics-reservation/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 42 33 23 23",
+  "summary": "Fondé par Kev Adams, Le Fridge Comedy Club propose une ambiance new-yorkaise branchée et intimiste. C'est l'endroit idéal pour découvrir une programmation pointue de stand-up tout en buvant un verre ou en grignotant.",
+  "lat": 48.865932,
+  "lng": 2.350849
  },
  {
   "id": "precieuses-0-soiree-l-arc",
@@ -12209,7 +12268,7 @@
   "arr": null,
   "cat": "Soirée",
   "name": "L'Arc",
-  "address": "",
+  "address": "12 Rue de Presbourg, 75116 Paris",
   "mark": "👌🏼",
   "price": 3,
   "priceSrc": "estim",
@@ -12219,15 +12278,19 @@
   "photo": "https://static.wixstatic.com/media/cb4ad0_5077a277218346478eb31678305d1eaa%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/cb4ad0_5077a277218346478eb31678305d1eaa%7Emv2.jpeg",
   "phone": "06 51 95 85 52",
   "instagram": "larcparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "L'Arc Paris est un club select et branché situé à deux pas de l'Arc de Triomphe. Il offre une ambiance festive et glamour avec vue sur les monuments parisiens.",
+  "lat": 48.873954,
+  "lng": 2.29288
  },
  {
   "id": "precieuses-0-soiree-boum-boum",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Soirée",
   "name": "Boum Boum",
-  "address": "",
+  "address": "28 Avenue de Wagram, 75008 Paris",
   "mark": "👌🏼",
   "price": 3,
   "priceSrc": "estim",
@@ -12236,15 +12299,22 @@
   "enriched": 5,
   "photo": "https://boumboum-paris.com/wp-content/uploads/2022/06/Fichier-2.png",
   "instagram": "boumboum.paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "06 34 27 34 47",
+  "booking": "https://boumboum-paris.com/reserver/",
+  "summary": "Un club festif et immersif idéal pour danser jusqu'au bout de la nuit dans une ambiance survoltée. On y vient pour profiter de cocktails signatures et d'une programmation musicale éclectique.",
+  "lat": 48.876599,
+  "lng": 2.297374,
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-soiree-pachamama",
   "list": "precieuses",
-  "arr": null,
+  "arr": 12,
   "cat": "Soirée",
   "name": "Pachamama",
-  "address": "",
+  "address": "46 Rue du Faubourg Saint-Antoine, 75012 Paris",
   "mark": "✔️",
   "price": 3,
   "priceSrc": "estim",
@@ -12255,7 +12325,11 @@
   "photo": "https://www.pachamama-paris.com/wp-content/uploads/2022/12/facebook-1-300x300.png",
   "phone": "07 56 00 90 98",
   "instagram": "pachamamaparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un lieu festif spectaculaire aux accents sud-américains, réparti sur plusieurs niveaux à la décoration inspirée de l'art nouveau. L'ambiance y est vibrante et idéale pour dîner, siroter des cocktails et danser.",
+  "lat": 48.852124,
+  "lng": 2.372527
  },
  {
   "id": "precieuses-0-soiree-deflower",
@@ -12269,15 +12343,16 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "deflower_paris"
+  "instagram": "deflower_paris",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-soiree-le-son-des-guitares",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Soirée",
   "name": "Le Son des Guitares",
-  "address": "",
+  "address": "79 Rue de La Boétie, 75008 Paris",
   "mark": "👌🏼",
   "price": 3,
   "priceSrc": "estim",
@@ -12287,7 +12362,12 @@
   "photo": "https://au-son-des-guitares.eventofy.com/media/au-son-des-guitares.webp",
   "phone": "07 68 20 64 79",
   "bookingScan": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "instagram": "sondesguitaresparis",
+  "summary": "Un bar festif et musical incontournable à Paris, réputé pour son ambiance conviviale où l'on chante en chœur sur des airs de variétés et de rock. Parfait pour passer une soirée festive et décomplexée entre amis.",
+  "lat": 48.872071,
+  "lng": 2.309136
  },
  {
   "id": "precieuses-0-soiree-mama-shelter",
@@ -12307,21 +12387,27 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un lieu branché et décontracté du 20e arrondissement où déguster des pizzas généreuses et des cocktails créatifs dans une ambiance festive et colorée."
  },
  {
   "id": "precieuses-0-soiree-le-marta",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Soirée",
   "name": "Le Marta",
-  "address": "",
+  "address": "25 avenue de Marigny, 75008 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "lemartaparis"
+  "instagram": "lemartaparis",
+  "aiFill": 1,
+  "summary": "Un bar-club feutré et intimiste caché au cœur de l'Hôtel Fouquet's, idéal pour siroter des cocktails sophistiqués dans une ambiance musicale électro-chic.",
+  "lat": 48.870848,
+  "lng": 2.315808
  },
  {
   "id": "precieuses-0-soiree-le-raspoutine",
@@ -12341,7 +12427,10 @@
   "photo": "https://raspoutine.com/uploads/2022/08/JCR_8796.jpg",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "raspoutine.paris"
+  "instagram": "raspoutine.paris",
+  "aiFill": 1,
+  "phone": "01 47 20 02 90",
+  "summary": "Un cabaret-club mythique au décor baroque signé Erté, parfait pour danser jusqu'au bout de la nuit dans une atmosphère sulfureuse et secrète."
  },
  {
   "id": "precieuses-0-soiree-komma",
@@ -12355,7 +12444,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "komma_atmosphere"
+  "instagram": "komma_atmosphere",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-soiree-matignon",
@@ -12376,15 +12466,17 @@
   "price": 4,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un lieu chic et branché du 8e arrondissement où l'on dégute des cocktails sophistiqués dans une ambiance feutrée et festive."
  },
  {
   "id": "precieuses-0-soiree-medellin",
   "list": "precieuses",
-  "arr": null,
+  "arr": 7,
   "cat": "Soirée",
   "name": "Medellín",
-  "address": "",
+  "address": "6 avenue Bosquet, 75007 Paris",
   "mark": "👌🏼",
   "price": 2,
   "priceSrc": "estim",
@@ -12395,7 +12487,11 @@
   "phone": "07 85 84 55 44",
   "instagram": "medellin.paris",
   "booking": "https://wa.me/33785845544",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un bar-club festif aux accents latino-américains proposant des cocktails originaux dans une ambiance survoltée et immersive.",
+  "lat": 48.860756,
+  "lng": 2.302296
  },
  {
   "id": "precieuses-0-soiree-rose-bonbon",
@@ -12413,15 +12509,17 @@
   "enriched": 5,
   "photo": "https://rose-bonbon.eventofy.com/media/rose-bonbon.webp",
   "phone": "07 81 81 85 74",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une ambiance rétro et festive aux notes colorées pour danser et savourer des boissons thématiques dans une atmosphère joyeuse et décomplexée."
  },
  {
   "id": "precieuses-0-soiree-chez-mila",
   "list": "precieuses",
-  "arr": null,
+  "arr": 7,
   "cat": "Soirée",
   "name": "Chez Mila",
-  "address": "",
+  "address": "14 rue de Barrême, 75007 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -12431,7 +12529,11 @@
   "photo": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/AQEZ8wBrlycknGVl/shoootin-photo-4-EVjMfGDsuTLIC0ms.jpg",
   "phone": "07 60 29 05 25",
   "instagram": "mila_club_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un club parisien exclusif à l'ambiance électrique, idéal pour danser toute la nuit sur des sets house et branchés.",
+  "lat": 48.853545,
+  "lng": 2.325928
  },
  {
   "id": "precieuses-0-soiree-gypsy-motel",
@@ -12445,7 +12547,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "paris.motel"
+  "instagram": "paris.motel",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-soiree-mamacita",
@@ -12467,7 +12570,8 @@
   "photo": "https://groupe-bucher.fr/wp-content/uploads/qr-river-cafe-menu-online-150x150.jpg",
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/mamacita-taqueria-r697631",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-soiree-le-mirage",
@@ -12484,7 +12588,8 @@
   "enriched": 5,
   "photo": "https://mirage-club.com/wp-content/uploads/2022/07/Hero-Photo-1-scaled.jpg",
   "instagram": "mirage.paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-soiree-le-bristol",
@@ -12500,7 +12605,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "lebristolparis"
+  "instagram": "lebristolparis",
+  "aiFill": 1,
+  "phone": "01 53 43 43 00",
+  "summary": "Un cadre luxueux et feutré où savourer une haute gastronomie raffinée dans une ambiance élégante et intemporelle."
  },
  {
   "id": "precieuses-0-soiree-l-aventure",
@@ -12508,7 +12616,7 @@
   "arr": null,
   "cat": "Soirée",
   "name": "L'Aventure",
-  "address": "",
+  "address": "4 avenue Victor Hugo, 75116 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -12520,15 +12628,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=370344&lang=fr",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "laventurehotel"
+  "instagram": "laventurehotel",
+  "aiFill": 1,
+  "summary": "Un lieu incontournable des nuits parisiennes mêlant esprit club et restaurant festif. On y vient pour savourer des plats raffinés dans une ambiance chic, électrique et branchée.",
+  "lat": 48.872972,
+  "lng": 2.292813
  },
  {
   "id": "precieuses-0-soiree-le-gate",
   "list": "precieuses",
-  "arr": null,
+  "arr": 17,
   "cat": "Soirée",
   "name": "Le Gâte",
-  "address": "",
+  "address": "81 boulevard Gouvion-Saint-Cyr, 75017 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -12538,7 +12650,11 @@
   "photo": "https://www.gateclubparis.com/wp-content/uploads/2019/10/WhatsApp_Image_2023-12-08_at_08.36.14-removebg-preview-e1702478943651-1.png",
   "phone": "01 71 25 32 15",
   "instagram": "gateclubparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un club parisien incontournable aux accents luxueux et festifs. Idéal pour danser jusqu'au bout de la nuit dans une ambiance survoltée et sélective.",
+  "lat": 48.879473,
+  "lng": 2.284958
  },
  {
   "id": "precieuses-0-soiree-le-kiwi",
@@ -12555,15 +12671,16 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "le_kiwi__"
+  "instagram": "le_kiwi__",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-soiree-l-alma",
   "list": "precieuses",
-  "arr": null,
+  "arr": 7,
   "cat": "Soirée",
   "name": "L'Alma",
-  "address": "",
+  "address": "64 avenue de Bosquet, 75007 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -12574,7 +12691,11 @@
   "phone": "01 45 51 56 74",
   "instagram": "lalmaparis",
   "booking": "https://www.sevenrooms.com/explore/lalma/reservations/create/search/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un café-restaurant élégant et chaleureux situé à deux pas de la tour Eiffel. On y apprécie une cuisine française classique et soignée dans une ambiance conviviale et feutrée.",
+  "lat": 48.854997,
+  "lng": 2.305055
  },
  {
   "id": "precieuses-0-resto-schwartz-s-deli",
@@ -12592,7 +12713,10 @@
   "photo": "https://schwartzsdeli.fr/_nuxt/img/hero-2.1dd6017.jpg",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "schwartzsdeli"
+  "instagram": "schwartzsdeli",
+  "aiFill": 1,
+  "phone": "01 47 27 50 20",
+  "summary": "Une ambiance de deli new-yorkais branché au cœur du 16e arrondissement. On y déguste de généreux pastrami sandwiches et des cheesecakes faits maison."
  },
  {
   "id": "precieuses-0-resto-l-as-du-fallafel",
@@ -12613,7 +12737,9 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "lasdufallafel",
-  "cuisine": "Israélien"
+  "cuisine": "Israélien",
+  "aiFill": 1,
+  "summary": "L'institution incontournable de la rue des Rosiers pour déguster des falafels croustillants et savoureux dans une ambiance ultra-animée."
  },
  {
   "id": "precieuses-0-resto-coya",
@@ -12634,15 +12760,18 @@
   "bookingOk": 2,
   "lat": 48.854274,
   "lng": 2.324031,
-  "cuisine": "Péruvien"
+  "cuisine": "Péruvien",
+  "aiFill": 1,
+  "phone": "01 43 22 38 10",
+  "summary": "Une adresse péruvienne festive et élégante qui propose des ceviches raffinés et des pisco sours, le tout dans un décor jungle chic."
  },
  {
   "id": "precieuses-0-resto-teppanyaki",
   "list": "precieuses",
-  "arr": null,
+  "arr": 2,
   "cat": "Resto",
   "name": "Teppanyaki",
-  "address": "",
+  "address": "12 rue des Jeûneurs, 75002 Paris",
   "mark": "✅",
   "price": 3,
   "priceSrc": "estim",
@@ -12656,7 +12785,11 @@
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=363447&lang=fr",
   "bookingOk": 2,
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "summary": "Un spectacle culinaire immersif autour d'une plaque teppanyaki où les viandes et poissons sont grillés sous vos yeux dans une ambiance intimiste.",
+  "lat": 48.869026,
+  "lng": 2.346769
  },
  {
   "id": "precieuses-0-resto-big-mamma-chaine",
@@ -12670,7 +12803,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "instagram": "bigmamma.fr",
+  "summary": "Big Mamma est un groupe de trattorias italiennes incontournables à l'ambiance ultra-festive et chaleureuse. On y savoure de généreuses pizzas napolitaines et des pâtes crémeuses à la truffe préparées dans la tradition."
  },
  {
   "id": "precieuses-0-resto-daroco",
@@ -12692,15 +12828,17 @@
   "photo": "https://daroco.com/wp-content/themes/daroco-danico/assets/photos/brunch-maritozzo.jpg",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "summary": "Installé dans un ancien atelier de jean-paul gaultier au décor spectaculaire, daroco propose des pizzas parfaitement croustillantes et des assiettes italiennes raffinées. L'ambiance y est branchée et vibrante, idéale pour un dîner stylé."
  },
  {
   "id": "precieuses-0-resto-shabour",
   "list": "precieuses",
-  "arr": null,
+  "arr": 2,
   "cat": "Resto",
   "name": "Shabour",
-  "address": "",
+  "address": "19 rue Saint-Sauveur, 75002 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -12713,7 +12851,11 @@
   "bookingOk": 2,
   "igSearched": 1,
   "instagram": "shabour.paris",
-  "cuisine": "Israélien"
+  "cuisine": "Israélien",
+  "aiFill": 1,
+  "summary": "Sous la houlette du chef assaf granit, shabour propose une cuisine israélienne inventive et raffinée servie autour d'un grand comptoir ouvert. L'atmosphère y est théâtrale, électrique et intimiste.",
+  "lat": 48.865919,
+  "lng": 2.349068
  },
  {
   "id": "precieuses-0-resto-alcazar",
@@ -12735,22 +12877,32 @@
   "photo": "https://www.alcazar.fr/_ipx/f_webp&q_10&fit_cover&blur_10&s_10x10/cdn/8d62a7d3c9a4fb004aaa150a9bef4cd5ad3c0f7bf32bc97c06031ee432e61b81/image/optimized-gettyimages-847608192.webp",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Brasserie contemporaine au décor végétalisé spectaculaire, l'alcazar revisite les grands classiques de la cuisine française avec une touche de modernité. On y profite d'une ambiance chic, animée et festive."
  },
  {
   "id": "precieuses-0-resto-shana-shabour",
   "list": "precieuses",
-  "arr": null,
+  "arr": 2,
   "cat": "Resto",
   "name": "Shana (Shabour)",
-  "address": "",
+  "address": "19 rue Saint-Sauveur, 75002 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
   "instagram": "shabour.paris",
-  "cuisine": "Israélien"
+  "cuisine": "Israélien",
+  "aiFill": 1,
+  "phone": "01 42 33 03 31",
+  "website": "https://shabour.com",
+  "summary": "Une cuisine israélienne gastronomique et créative signée Assaf Granit, à déguster autour d'un comptoir vibrant. L'ambiance y est théâtrale, chaleureuse et rythmée par la musique.",
+  "lat": 48.865919,
+  "lng": 2.349068,
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-resto-le-perchoir",
@@ -12769,7 +12921,9 @@
   "phone": "01 76 35 11 80",
   "instagram": "leperchoir",
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Un rooftop incontournable offrant une vue imprenable sur les toits de Paris dans une ambiance festive et branchée. On y vient pour siroter des cocktails signatures et partager des assiettes inspirées."
  },
  {
   "id": "precieuses-0-resto-le-ciel-de-paris",
@@ -12790,15 +12944,17 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "cieldeparis",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Situé au 56e étage de la Tour Montparnasse, ce restaurant propose une cuisine française raffinée face à un panorama spectaculaire sur tout Paris. L'ambiance y est élégante, feutrée et romantique."
  },
  {
   "id": "precieuses-0-resto-tout-le-monde-en-parle",
   "list": "precieuses",
-  "arr": null,
+  "arr": 15,
   "cat": "Resto",
   "name": "Tout le monde en parle",
-  "address": "",
+  "address": "4 rue du Départ, 75015 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -12806,7 +12962,15 @@
   "booking": "https://www.thefork.fr/restaurant/tout-le-monde-en-parle-r753758",
   "bookingOk": 2,
   "igSearched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 43 35 35 00",
+  "instagram": "tlmep_paris",
+  "website": "https://www.tlmep.com",
+  "summary": "Un restaurant panoramique perché au sommet de la Tour Montparnasse, idéal pour dîner ou faire la fête. L'ambiance y est festive avec des dîners-spectacles, des soirées clubbing et une vue imprenable sur la capitale.",
+  "lat": 48.843134,
+  "lng": 2.323799,
+  "enriched": 5
  },
  {
   "id": "precieuses-0-resto-le-relais-de-venise",
@@ -12827,7 +12991,9 @@
   "photo": "https://relaisdevenise.com/media/images/home/picture-1.jpg",
   "searched": 1,
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Savourez l'unique et tendre faux-filet accompagné de sa fameuse sauce secrète et de frites à volonté, le tout dans une ambiance de brasserie parisienne animée et rétro."
  },
  {
   "id": "precieuses-0-resto-bouillon-chartier",
@@ -12848,15 +13014,17 @@
   "photo": "https://www.bouillon-chartier.com/chartier_medias/2023/11/bouillon-chartier-home-grandsboulevards.jpg",
   "searched": 1,
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Dégustez des plats traditionnels français d'antan à petits prix, tels que les œufs mayonnaise ou le hachis Parmentier, au cœur d'une somptueuse salle historique au décor Belle Époque classé."
  },
  {
   "id": "precieuses-0-resto-miss-ko",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Resto",
   "name": "Miss Ko",
-  "address": "",
+  "address": "49/51 avenue George V, 75008 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -12868,15 +13036,19 @@
   "instagram": "misskorestaurant",
   "booking": "https://www.miss-ko.com/reservation",
   "bookingOk": 2,
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1,
+  "summary": "Découvrez une cuisine fusion aux accents asiatiques audacieux et créatifs dans un décor spectaculaire et branché imaginé par Philippe Starck.",
+  "lat": 48.871024,
+  "lng": 2.30062
  },
  {
   "id": "precieuses-0-resto-restaurant-marocain",
   "list": "precieuses",
-  "arr": null,
+  "arr": 5,
   "cat": "Resto",
   "name": "Restaurant marocain",
-  "address": "",
+  "address": "12 rue des Fossés Saint-Bernard, 75005 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -12888,29 +13060,43 @@
   "instagram": "darkoum_cantine_marocaine",
   "booking": "https://darkoum-cantine-marocaine.fr/fr/booking",
   "bookingOk": 2,
-  "cuisine": "Oriental"
+  "cuisine": "Oriental",
+  "aiFill": 1,
+  "summary": "Laissez-vous tenter par des couscous et tajines faits maison riches en saveurs, servis dans un cadre chaleureux et convivial.",
+  "lat": 48.848316,
+  "lng": 2.354624
  },
  {
   "id": "precieuses-0-resto-kodawari-tsukiji",
   "list": "precieuses",
-  "arr": null,
+  "arr": 1,
   "cat": "Resto",
   "name": "Kodawari Tsukiji",
-  "address": "",
+  "address": "12 rue de Richelieu, 75001 Paris",
   "mark": "✅",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "instagram": "kodawari_ramen",
+  "website": "https://www.kodawari-ramen.com",
+  "summary": "Immergez-vous dans un marché aux poissons de Tokyo reconstitué tout en savourant des ramens d'exception au bouillon iodé. L'ambiance y est spectaculaire et dépaysante.",
+  "lat": 48.864374,
+  "lng": 2.336258,
+  "enriched": 5,
+  "photo": "https://www.kodawari-ramen.com/wp-content/uploads/2019/06/kodawari-yokocho-homepage.jpg",
+  "phone": "01 43 29 37 67",
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-resto-maison-sauvage",
   "list": "precieuses",
-  "arr": null,
+  "arr": 6,
   "cat": "Resto",
   "name": "Maison Sauvage",
-  "address": "",
+  "address": "5 rue de Buci, 75006 Paris",
   "mark": "👌🏼",
   "price": 2,
   "priceSrc": "estim",
@@ -12922,15 +13108,20 @@
   "bookingScan": 1,
   "bookingOk": 2,
   "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 43 29 55 52",
+  "summary": "Un spot incontournable de Saint-Germain-des-Prés aux superbes façades fleuries, idéal pour déguster des brunchs généreux et des plats faits maison dans une ambiance bohème et chaleureuse.",
+  "lat": 48.853666,
+  "lng": 2.338061
  },
  {
   "id": "precieuses-0-resto-la-table-de-colette",
   "list": "precieuses",
-  "arr": null,
+  "arr": 5,
   "cat": "Resto",
   "name": "La Table de Colette",
-  "address": "",
+  "address": "17 rue Laplace, 75005 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -12943,15 +13134,19 @@
   "phone": "01 46 33 18 59",
   "instagram": "latabledecoletteparis",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Un restaurant bistronomique engagé du Quartier Latin qui met à l'honneur une cuisine française raffinée aux notes éco-responsables. L'ambiance est intime et feutrée.",
+  "lat": 48.847327,
+  "lng": 2.347161
  },
  {
   "id": "precieuses-0-resto-hakata-choten",
   "list": "precieuses",
-  "arr": null,
+  "arr": 1,
   "cat": "Resto",
   "name": "Hakata Choten",
-  "address": "",
+  "address": "53 rue des Petits Champs, 75001 Paris",
   "mark": "",
   "price": 1,
   "priceSrc": "estim",
@@ -12961,7 +13156,12 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "hakata_choten_paris",
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "phone": "01 42 61 56 41",
+  "summary": "Une adresse incontournable pour déguster des ramens authentiques au bouillon de porc riche et savoureux, accompagnés de délicieux gyozas croustillants. L'ambiance est vive et conviviale.",
+  "lat": 48.867152,
+  "lng": 2.334921
  },
  {
   "id": "precieuses-0-resto-kodawari-ramen",
@@ -12982,15 +13182,17 @@
   "photo": "https://www.kodawari-ramen.com/wp-content/uploads/2019/06/kodawari-yokocho-homepage.jpg",
   "searched": 1,
   "bookingScan": 1,
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "summary": "Plongez dans l'ambiance d'un marché de Tokyo des années 70 tout en savourant des ramen d'exception aux bouillons riches et parfumés. Une expérience dépaysante et savoureuse au cœur de Paris."
  },
  {
   "id": "precieuses-0-resto-le-comptoir-paris",
   "list": "precieuses",
-  "arr": null,
+  "arr": 1,
   "cat": "Resto",
   "name": "Le Comptoir Paris",
-  "address": "",
+  "address": "9 rue de l'Amiral Coligny, 75001 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -13003,7 +13205,11 @@
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=354846&lang=fr",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Un bistrot parisien authentique et chaleureux proposant une cuisine française traditionnelle de qualité. Idéal pour partager un verre et des plats généreux dans une ambiance conviviale.",
+  "lat": 48.860147,
+  "lng": 2.340163
  },
  {
   "id": "precieuses-0-resto-verre-chez-moi",
@@ -13017,22 +13223,28 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-resto-naritake-ramen",
   "list": "precieuses",
-  "arr": null,
+  "arr": 1,
   "cat": "Resto",
   "name": "Naritake Ramen",
-  "address": "",
+  "address": "31 rue des Petits Champs, 75001 Paris",
   "mark": "",
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
   "instagram": "naritake.ramen",
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "phone": "01 42 96 89 20",
+  "summary": "Spécialisé dans les ramen auvergnats-tonkotsu riches en goût, ce comptoir propose des nouilles généreuses dans un bouillon de porc corsé. L'ambiance y est simple, authentique et typique des petits bouillons tokyoïtes.",
+  "lat": 48.866712,
+  "lng": 2.336815
  },
  {
   "id": "precieuses-0-resto-miznon",
@@ -13053,15 +13265,17 @@
   "phone": "07 64 12 96 06",
   "instagram": "miznonparis",
   "bookingScan": 1,
-  "cuisine": "Israélien"
+  "cuisine": "Israélien",
+  "aiFill": 1,
+  "summary": "Un spot incontournable du Marais pour déguster des pitas ultra généreuses, notamment le fameux chou-fleur rôti. L'ambiance y est survoltée, musicale et très conviviale."
  },
  {
   "id": "precieuses-0-resto-spoon",
   "list": "precieuses",
-  "arr": null,
+  "arr": 2,
   "cat": "Resto",
   "name": "Spoon",
-  "address": "",
+  "address": "2 rue de la Bourse, 75002 Paris",
   "mark": "",
   "price": 4,
   "priceSrc": "estim",
@@ -13073,7 +13287,11 @@
   "instagram": "spoon_restaurant_paris",
   "booking": "https://module.lafourchette.com/fr_FR/module/408919-f7de7",
   "bookingOk": 2,
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1,
+  "summary": "Une table aux influences nomades et fusion signée Alain Ducasse, invitant au voyage à travers des épices et des saveurs du monde entier. L'ambiance est élégante, moderne et chaleureuse.",
+  "lat": 48.869468,
+  "lng": 2.340178
  },
  {
   "id": "precieuses-0-resto-fouquet-s",
@@ -13090,7 +13308,13 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "fouquets.paris",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 40 69 60 50",
+  "website": "https://www.hotelsbarriere.com/fr/paris/le-fouquets.html",
+  "summary": "Institution légendaire des Champs-Élysées, idéale pour savourer une cuisine de brasserie française chic et des classiques intemporels. L'ambiance est luxueuse, historique et empreinte du glamour parisien.",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-resto-au-pied-de-cochon",
@@ -13112,7 +13336,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Une brasserie parisienne légendaire ouverte 24h/24, célèbre pour ses spécialités de porc et ses généreux plateaux de fruits de mer. L'ambiance y est animée, festive et typiquement hâchée."
  },
  {
   "id": "precieuses-0-resto-le-train-bleu",
@@ -13134,7 +13360,9 @@
   "photo": "https://www.le-train-bleu.com/media/cache/jadro_resize/rc/g9U1nG4u1741249987/jadroRoot/medias/5aafbd3bc117c/le-train-bleu-014_2800x2100.jpg",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Niché au cœur de la gare de Lyon, ce restaurant historique séduit par ses décors somptueux classés Monuments Historiques et sa cuisine française traditionnelle. On y déguste de superbes viandes et poissons dans une ambiance Belle Époque majestueuse."
  },
  {
   "id": "precieuses-0-resto-la-fontaine-de-mars",
@@ -13154,7 +13382,9 @@
   "instagram": "lafontainedemars",
   "searched": 1,
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Véritable institution du 7e arrondissement au charme suranné, cette adresse propose une cuisine du Sud-Ouest généreuse et authentique. L'ambiance y est chaleureuse et typiquement parisienne, idéale pour savourer un cassoulet ou un confit de canard."
  },
  {
   "id": "precieuses-0-resto-l-escargot-montorgueil",
@@ -13176,7 +13406,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Célèbre pour ses escargots de Bourgogne préparés sous toutes les formes, cette table historique de la rue Montorgueil arbore un décor Second Empire plein de charme. On y vient pour une cuisine bourgeoise française réconfortante dans une ambiance animée."
  },
  {
   "id": "precieuses-0-resto-le-procope",
@@ -13198,7 +13430,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Considéré comme le plus ancien café de Paris, Le Procope offre un voyage dans le temps au milieu des souvenirs littéraires et révolutionnaires. On y savoure des classiques de la gastronomie française, comme le coq au vin, dans un cadre feutré et chargé d'histoire."
  },
  {
   "id": "precieuses-0-resto-brasserie-lipp",
@@ -13220,7 +13454,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Institution mythique de Saint-Germain-des-Prés au décor Art déco classé, idéale pour déguster des plats traditionnels comme la célèbre choucroute ou le mille-feuille dans une ambiance littéraire et animée."
  },
  {
   "id": "precieuses-0-resto-le-petit-bouillon-pharamond",
@@ -13243,7 +13479,9 @@
   "bookingOk": 2,
   "igSearched": 1,
   "instagram": "lepetitbouillonpharamond",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Un bouillon historique au décor normand classé, qui propose une cuisine française traditionnelle et généreuse à petits prix dans une ambiance populaire et chaleureuse."
  },
  {
   "id": "precieuses-0-resto-brasserie-floderer",
@@ -13265,7 +13503,9 @@
   "photo": "https://images.squarespace-cdn.com/content/v1/5a8d5efde9bfdf59a2d4adc9/1784815850340-JR0K78QKRFDPYW551XIE/FLODERER+PARIS+JUIN+26-10.jpg",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Célèbre brasserie alsacienne au décor 1900 authentique, parfaite pour savourer de superbes fruits de mer et une choucroute garnie dans une atmosphère élégante et intemporelle."
  },
  {
   "id": "precieuses-0-resto-la-coupole",
@@ -13287,7 +13527,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Légendaire brasserie de Montparnasse au somptueux décor Art déco, incontournable pour savourer des plateaux de fruits de mer et l'incontournable agneau curry de La Coupole dans une ambiance bouillonnante."
  },
  {
   "id": "precieuses-0-resto-fondue-du-dragon",
@@ -13307,7 +13549,10 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "cuisine": "Chinois"
+  "cuisine": "Chinois",
+  "aiFill": 1,
+  "phone": "01 42 36 86 54",
+  "summary": "Une adresse chaleureuse à Paris pour déguster d'authentiques fondues chinoises et des plats traditionnels savoureux dans une ambiance conviviale."
  },
  {
   "id": "precieuses-0-resto-dominicos",
@@ -13322,7 +13567,8 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "dominico____",
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-resto-peppe-pizzeria-napoletana",
@@ -13344,7 +13590,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "summary": "On y déguste des pizzas napolitaines d'exception couronnées par les meilleurs chefs, notamment la célèbre pizza au tartuffo. L'ambiance y est vibrante, chaleureuse et typiquement italienne."
  },
  {
   "id": "precieuses-0-resto-andia",
@@ -13367,7 +13615,9 @@
   "bookingOk": 2,
   "igSearched": 1,
   "instagram": "andia_paris",
-  "cuisine": "Latino"
+  "cuisine": "Latino",
+  "aiFill": 1,
+  "summary": "Un voyage culinaire aux saveurs d'Amérique latine au cœur d'une ancienne gare transformée en oasis luxuriante. On y savoure des ceviches rafraîchissants et des viandes grillées dans une ambiance dépaysante et festive."
  },
  {
   "id": "precieuses-0-resto-la-maison-rose",
@@ -13390,7 +13640,9 @@
   "bookingOk": 2,
   "igSearched": 1,
   "instagram": "lamaisonroseofficial",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Niché au cœur de Montmartre dans un décor iconique rose et vert, ce lieu chaleureux propose une cuisine de marché locale et éco-responsable. L'ambiance y est bohème, intime et résolument romantique."
  },
  {
   "id": "precieuses-0-resto-beefbar",
@@ -13411,7 +13663,10 @@
   "photo": "https://paris.beefbar.com/wp-content/uploads/sites/8/2020/07/giraudi.beef-bar.2019.10-42.low-resolution.jpg",
   "searched": 1,
   "bookingScan": 1,
-  "cuisine": "Viande & grill"
+  "cuisine": "Viande & grill",
+  "aiFill": 1,
+  "phone": "01 44 31 37 00",
+  "summary": "Temple des viandes d'exception, le Beefbar propose des morceaux d'beef de prestige cuisinés avec audace ainsi qu'une offre street-food raffinée. L'ambiance est chic, feutrée et branchée."
  },
  {
   "id": "precieuses-0-resto-shinko",
@@ -13432,15 +13687,18 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "shinko.paris",
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "phone": "01 42 66 10 39",
+  "summary": "Une table bistronomique inspirée par la culture japonaise, où l'on savoure des plats créatifs et délicats aux accents fusion. L'atmosphère est épurée, intime et élégante."
  },
  {
   "id": "precieuses-0-resto-sinner-paris",
   "list": "precieuses",
-  "arr": null,
+  "arr": 3,
   "cat": "Resto",
   "name": "Sinner Paris",
-  "address": "",
+  "address": "116 rue du Temple, 75003 Paris",
   "mark": "",
   "price": 4,
   "priceSrc": "estim",
@@ -13451,7 +13709,12 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "sinner_paris",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 42 72 20 00",
+  "summary": "Restaurant aux inspirations tribales et mystiques proposant une cuisine aux influences du monde et ethniques à partager. L'ambiance est sombre, sulfureuse et très immersive.",
+  "lat": 48.862985,
+  "lng": 2.358059
  },
  {
   "id": "precieuses-0-resto-laperouse",
@@ -13474,15 +13737,17 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "laperouse_paris",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Institution parisienne historique aux salons privés somptueux, Lapérouse propose une cuisine française raffinée et élégante dans un décor feutré d'époque."
  },
  {
   "id": "precieuses-0-resto-ephemera-group",
   "list": "precieuses",
-  "arr": null,
+  "arr": 12,
   "cat": "Resto",
   "name": "Ephemera Group",
-  "address": "",
+  "address": "169 rue de Charenton, 75012 Paris",
   "mark": "✅",
   "price": 3,
   "priceSrc": "estim",
@@ -13494,7 +13759,11 @@
   "instagram": "ephemeragroup",
   "booking": "https://www.sevenrooms.com/explore/jungle-palace/reservations/create/search",
   "bookingOk": 2,
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1,
+  "summary": "Ephemera Group propose des expériences culinaires immersives et spectaculaires aux décors fantastiques, invitant à voyager sous l'océan ou au cœur de l'espace.",
+  "lat": 48.844121,
+  "lng": 2.38452
  },
  {
   "id": "precieuses-0-resto-la-reverie",
@@ -13515,7 +13784,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 48 05 57 70",
+  "summary": "Un bar-restaurant branché à la déco florale spectaculaire et féerique, idéal pour déguster des cocktails originaux et des plats à partager dans une ambiance festive."
  },
  {
   "id": "precieuses-0-resto-inavoue",
@@ -13538,7 +13810,10 @@
   "photo": "https://inavoue.com/wp-content/uploads/2024/03/signature-inavoue.png",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 42 61 56 63",
+  "summary": "Un restaurant intimiste et sophistiqué au cœur de Paris, idéal pour savourer une cuisine de marché soignée dans une ambiance feutrée et discrète."
  },
  {
   "id": "precieuses-0-resto-le-buf-sur-le-toit",
@@ -13557,15 +13832,19 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 53 93 65 59",
+  "instagram": "boeufsurletoit",
+  "summary": "Institution parisienne légendaire au décor Art déco, on y savoure une cuisine française classique et des fruits de mer dans une ambiance festive et élégante."
  },
  {
   "id": "precieuses-0-resto-bumbu",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Resto",
   "name": "Bumbu",
-  "address": "",
+  "address": "25 rue de Ponthieu, 75008 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -13577,15 +13856,19 @@
   "photo": "https://ugc.zenchef.com/3/5/4/8/4/7/1/5/1/1/1/8/0/1727700496_107/142c3d60778599bec50191bdc4688494.website.jpg",
   "phone": "01 71 86 79 39",
   "bookingOk": 2,
-  "cuisine": "Indonésien"
+  "cuisine": "Indonésien",
+  "aiFill": 1,
+  "summary": "Un restaurant chaleureux proposant une cuisine authentique et savoureuse aux influences indonésiennes. Idéal pour un voyage culinaire dépaysant dans une ambiance conviviale.",
+  "lat": 48.870756,
+  "lng": 2.309055
  },
  {
   "id": "precieuses-0-resto-marlotti",
   "list": "precieuses",
-  "arr": null,
+  "arr": 10,
   "cat": "Resto",
   "name": "Marlotti",
-  "address": "",
+  "address": "56 rue du Faubourg Saint-Denis, 75010 Paris",
   "mark": "👌🏼",
   "price": 3,
   "priceSrc": "estim",
@@ -13598,7 +13881,11 @@
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=356825&lang=fr",
   "bookingOk": 2,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "summary": "Une trattoria italienne chaleureuse et animée où l'on déguste de délicieuses pâtes fraîches et des pizzas généreuses. L'ambiance y est conviviale et typique des nuits du 10e arrondissement.",
+  "lat": 48.872346,
+  "lng": 2.354226
  },
  {
   "id": "precieuses-0-resto-le-murat",
@@ -13621,7 +13908,9 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/le-murat-r4578",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Une table cossue et lumineuse du 16e arrondissement, idéale pour savourer une cuisine de brasserie chic revisitée dans un décor élégant signé Costes."
  },
  {
   "id": "precieuses-0-resto-mumbay",
@@ -13636,7 +13925,8 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "Mumbay",
-  "cuisine": "Indien"
+  "cuisine": "Indien",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-resto-le-relais-plaza",
@@ -13653,7 +13943,13 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "lerelaisplaza",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 53 67 19 90",
+  "website": "https://www.dorchestercollection.com/fr/paris/hotel-plaza-athenee/restaurants-bars/le-relais-plaza",
+  "summary": "Institution parisienne élégante et art déco, on y savoure une cuisine française classique et raffinée dans une ambiance chic et feutrée.",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-resto-the-peninsula",
@@ -13673,7 +13969,10 @@
   "photo": "https://www.peninsula.com/-/media/misc/pen8/2022-06/misc_202206/exterior-2_1920.jpg",
   "instagram": "peninsulahotels",
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 58 12 28 88",
+  "summary": "Magnifique palace parisien offrant une cuisine raffinée dans un cadre somptueux et baigné de lumière, idéal pour un moment hors du temps."
  },
  {
   "id": "precieuses-0-resto-akira-back",
@@ -13695,7 +13994,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "phone": "01 40 69 60 00",
+  "summary": "Restaurant branché du triangle d'or proposant une cuisine fusion nippo-coréenne audacieuse, à déguster dans un décor design et sophistiqué."
  },
  {
   "id": "precieuses-0-resto-mistinguett",
@@ -13717,15 +14019,17 @@
   "lat": 48.878381,
   "lng": 2.330067,
   "phone": "01 48 74 85 41",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Un restaurant festif et élégant situé au sommet du Casino de Paris, idéal pour déguster une cuisine française raffinée dans une ambiance cabaret inspirée des Années folles."
  },
  {
   "id": "precieuses-0-resto-pedzouille-lagrange",
   "list": "precieuses",
-  "arr": null,
+  "arr": 12,
   "cat": "Resto",
   "name": "Pedzouille Lagrange",
-  "address": "",
+  "address": "4 rue de Heldenbergh, 75012 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -13735,15 +14039,20 @@
   "photo": "https://www.pedzouille.fr/quality_auto/9a2fc6_d6fc3584aa1f4062b2bf22dba7487e56~mv2.png",
   "instagram": "pedzouilleparis",
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 89 43 01 90",
+  "summary": "Une canaille perchée au sommet de l'Hôtel CitizenM, proposant une cuisine généreuse de terroir et viandes de qualité dans une ambiance de grange festive et chaleureuse.",
+  "lat": 48.835984,
+  "lng": 2.385773
  },
  {
   "id": "precieuses-0-resto-moommam",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Resto",
   "name": "Moommam",
-  "address": "",
+  "address": "19 rue de Mogador, 75009 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -13756,7 +14065,11 @@
   "photo": "https://moommam.fr/app/uploads/2021/06/01.jpg",
   "phone": "01 53 38 58 73",
   "bookingOk": 2,
-  "cuisine": "Thaïlandais"
+  "cuisine": "Thaïlandais",
+  "aiFill": 1,
+  "summary": "Une cantine thaïlandaise branchée du 9e arrondissement où l'on savoure des tapas thaï et des plats authentiques et parfumés, le tout dans une ambiance conviviale et animée.",
+  "lat": 48.874752,
+  "lng": 2.331289
  },
  {
   "id": "precieuses-0-resto-maxim-s",
@@ -13778,7 +14091,9 @@
   "instagram": "Maximsrestaurant_paris",
   "booking": "https://www.sevenrooms.com/experiences/maximsparis",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Le temple légendaire de l'Art nouveau parisien, parfait pour redécouvrir les grands classiques de la gastronomie française dans un décor historique somptueux et intemporel."
  },
  {
   "id": "precieuses-0-resto-vesper",
@@ -13801,15 +14116,17 @@
   "searched": 1,
   "booking": "https://www.sevenrooms.com/explore/fitzgroup/reservations/create/search?venues=camondo%2Chollywoodsavoy%2Clafontainegaillon%2Cfitzgerald%2Cabstinence",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Vesper propose une cuisine fusion Nikkei raffinée aux accents latino-japonais, à déguster dans un décor somptueux et feutré. L'ambiance y est à la fois chic, branchée et animée."
  },
  {
   "id": "precieuses-0-resto-la-scene-theleme",
   "list": "precieuses",
-  "arr": null,
+  "arr": 17,
   "cat": "Resto",
   "name": "La Scène Thélème",
-  "address": "",
+  "address": "18 rue Troyon, 75017 Paris",
   "mark": "",
   "price": 4,
   "priceSrc": "estim",
@@ -13821,7 +14138,11 @@
   "phone": "01 77 37 60 99",
   "instagram": "lascenetheleme",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "La Scène Thélème associe avec brio haute gastronomie et art dramatique dans un cadre intimiste et élégant. On y savoure des plats créatifs d'une grande finesse, portés par une mise en scène théâtrale unique.",
+  "lat": 48.87627,
+  "lng": 2.295163
  },
  {
   "id": "precieuses-0-resto-chakaiseki-akiyoshi",
@@ -13843,15 +14164,18 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "phone": "01 45 78 61 52",
+  "summary": "Chakaiseki Akiyoshi propose une expérience authentique et exclusive de la haute cuisine traditionnelle japonaise (kaiseki) liée à la cérémonie du thé. L'ambiance y est extrêmement raffinée, minimaliste et intimiste."
  },
  {
   "id": "precieuses-0-resto-dragon-cyril-lignac",
   "list": "precieuses",
-  "arr": null,
+  "arr": 6,
   "cat": "Resto",
   "name": "Dragon (Cyril Lignac)",
-  "address": "",
+  "address": "29 rue du Dragon, 75006 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -13863,15 +14187,19 @@
   "instagram": "cyrillignac",
   "booking": "https://module.lafourchette.com/fr_FR/module/393755",
   "bookingOk": 2,
-  "cuisine": "Chinois"
+  "cuisine": "Chinois",
+  "aiFill": 1,
+  "summary": "Dragon, la table panasiatique de Cyril Lignac, revisite les grands classiques de la cuisine asiatique avec modernité et gourmandise. L'atmosphère y est chaleureuse, branchée et propice au partage.",
+  "lat": 48.852702,
+  "lng": 2.330418
  },
  {
   "id": "precieuses-0-resto-terra",
   "list": "precieuses",
-  "arr": null,
+  "arr": 3,
   "cat": "Resto",
   "name": "Terra",
-  "address": "",
+  "address": "21 rue des Gravilliers, 75003 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -13884,7 +14212,11 @@
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=349855&lang=fr",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Un restaurant chaleureux aux influences méditerranéennes où l'on savoure des assiettes à partager créatives et de saison dans une ambiance conviviale.",
+  "lat": 48.86373,
+  "lng": 2.356944
  },
  {
   "id": "precieuses-0-resto-racines",
@@ -13906,22 +14238,33 @@
   "lat": 48.871247,
   "lng": 2.341781,
   "phone": "01 40 13 06 41",
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "summary": "Un bistrot de charme niché dans le passage des Panoramas, proposant une cuisine italienne raffinée et des vins d'auteur dans un décor authentique et feutré."
  },
  {
   "id": "precieuses-0-resto-marie-akaneya",
   "list": "precieuses",
-  "arr": null,
+  "arr": 2,
   "cat": "Resto",
   "name": "Marie Akaneya",
-  "address": "",
+  "address": "12 rue Bachaumont, 75002 Paris",
   "mark": "",
   "price": 4,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
   "instagram": "marieakaneya",
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "phone": "01 42 36 31 10",
+  "website": "https://marieakaneya.com",
+  "summary": "Une table d'exception dédiée au bœuf Wagyu d'Hokkaido cuit sur grill sumibiyaki et aux ramen au bouillon de bœuf, le tout dans une atmosphère intimiste et épurée.",
+  "lat": 48.866108,
+  "lng": 2.345625,
+  "enriched": 5,
+  "photo": "https://akaneyajapan.com/wp-content/uploads/2025/06/akaneya-open-graph-image.jpg",
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-resto-sphere",
@@ -13943,21 +14286,35 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 42 65 24 58",
+  "summary": "Une table gastronomique élégante au décor lumineux et design, proposant une cuisine française inventive, délicate et axée sur de beaux produits."
  },
  {
   "id": "precieuses-0-resto-dans-le-noir",
   "list": "precieuses",
-  "arr": null,
+  "arr": 4,
   "cat": "Resto",
   "name": "Dans le Noir ?",
-  "address": "",
+  "address": "51 rue Quincampoix, 75004 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 89 23 00 00",
+  "instagram": "danslenoirparis",
+  "website": "https://paris.danslenoir.com",
+  "summary": "Vivez une expérience sensorielle unique en dégustant un menu surprise dans une obscurité totale, guidé par des personnes malvoyantes. L'ambiance y est intrigante, conviviale et propice au lâcher-prise.",
+  "lat": 48.861338,
+  "lng": 2.35055,
+  "enriched": 5,
+  "photo": "https://paris.danslenoir.com/media/cache/share/7f/43/2e11a515c3a823dbf155a6e264e8.webp",
+  "booking": "https://paris.danslenoir.com/fr_FR/reserver-paris",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-resto-shiro",
@@ -13980,29 +14337,37 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/shiro-r694643",
   "bookingOk": 2,
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "summary": "Une magnifique fusion franco-japonaise où l'on savoure des plats créatifs et raffinés, notamment leurs fameux gyozas de wagyu ou le bœuf sauté. L'ambiance est feutrée, élégante et artistique."
  },
  {
   "id": "precieuses-0-resto-rh-paris",
   "list": "precieuses",
-  "arr": null,
+  "arr": 6,
   "cat": "Resto",
   "name": "RH Paris",
-  "address": "",
+  "address": "173 boulevard Saint-Germain, 75006 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "cuisine": "Américain"
+  "cuisine": "Américain",
+  "aiFill": 1,
+  "phone": "01 42 84 03 68",
+  "instagram": "rhrestaurantparis",
+  "summary": "Un restaurant proposant une cuisine méditerranéenne et internationale soignée au cœur de Saint-Germain-des-Prés. L'atmosphère est chic, chaleureuse et idéale pour un dîner élégant.",
+  "lat": 48.854201,
+  "lng": 2.330741
  },
  {
   "id": "precieuses-0-resto-onyx",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Resto",
   "name": "Onyx",
-  "address": "",
+  "address": "56 rue de la Chaussée d'Antin, 75009 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14013,7 +14378,12 @@
   "bookingOk": 2,
   "igSearched": 1,
   "instagram": "onyx.restaurant.paris",
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1,
+  "phone": "01 48 74 38 64",
+  "summary": "Un cadre moderne et épuré pour découvrir une cuisine bistronomique inventive et de saison. L'ambiance y est branchée et intimiste.",
+  "lat": 48.874394,
+  "lng": 2.332779
  },
  {
   "id": "precieuses-0-resto-mun-paris",
@@ -14035,15 +14405,17 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Coréen"
+  "cuisine": "Coréen",
+  "aiFill": 1,
+  "summary": "Perché sur les Champs-Élysées, ce restaurant-terrasse propose une cuisine d'inspiration asiatique raffinée dans un décor somptueux aux accents nippons. L'ambiance y est chic, festive et offre une vue imprenable sur tout Paris."
  },
  {
   "id": "precieuses-0-resto-dame",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Resto",
   "name": "Dame",
-  "address": "",
+  "address": "35 rue de Douai, 75009 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14055,7 +14427,11 @@
   "phone": "09 87 46 72 89",
   "instagram": "dame_resto",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Une table intimiste et chaleureuse du 9e arrondissement qui met à l'honneur une cuisine de marché créative et des quilles nature. L'ambiance y est conviviale, branchée et décontractée.",
+  "lat": 48.882672,
+  "lng": 2.332212
  },
  {
   "id": "precieuses-0-resto-prunier",
@@ -14077,30 +14453,40 @@
   "instagram": "pruniercaviar",
   "booking": "https://eu.sevenrooms.com/explore/prunier/reservations/create/search/",
   "bookingOk": 2,
-  "cuisine": "Poisson & fruits de mer"
+  "cuisine": "Poisson & fruits de mer",
+  "aiFill": 1,
+  "summary": "Institution parisienne incontournable de l'avenue Victor Hugo, ce restaurant célèbre le caviar et les produits de la mer dans un décor Art Déco somptueux. L'ambiance y est luxueuse, élégante et feutrée."
  },
  {
   "id": "precieuses-0-resto-ao-izakaya",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Resto",
   "name": "Ao Izakaya",
-  "address": "",
+  "address": "12 rue de Caumartin, 75009 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
   "instagram": "aoizakaya",
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "phone": "01 42 68 55 82",
+  "website": "https://www.aoizakaya.com",
+  "booking": "https://www.aoizakaya.com/reservation",
+  "summary": "Une izakaya moderne et élégante qui revisite les tapas japonaises et propose des sushis d'exception ainsi qu'une belle carte de sakés. L'ambiance y est feutrée, design et chaleureuse.",
+  "lat": 48.871125,
+  "lng": 2.328184,
+  "enriched": 5
  },
  {
   "id": "precieuses-0-resto-siena",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Resto",
   "name": "Siena",
-  "address": "",
+  "address": "35 rue de Surène, 75008 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14112,15 +14498,19 @@
   "phone": "01 88 83 00 88",
   "booking": "https://refence.fr/projets/creation-de-site-vitrine-pour-restaurant/",
   "bookingOk": 2,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "summary": "Une table italienne élégante et raffinée à deux pas de la Madeleine, idéale pour déguster des pâtes fraîches et des antipasti de qualité dans un décor chic.",
+  "lat": 48.871446,
+  "lng": 2.319024
  },
  {
   "id": "precieuses-0-resto-aquakyoto",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Resto",
   "name": "Aquakyoto",
-  "address": "",
+  "address": "40 rue du Colisée, 75008 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14132,15 +14522,19 @@
   "phone": "01 86 22 35 85",
   "instagram": "aquakyotoparis",
   "bookingOk": 2,
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "aiFill": 1,
+  "summary": "Un restaurant japonais immersif et sophistiqué proposant des créations de sushi et des plats fusion dans une ambiance feutrée et végétale.",
+  "lat": 48.871631,
+  "lng": 2.31092
  },
  {
   "id": "precieuses-0-resto-lava",
   "list": "precieuses",
-  "arr": null,
+  "arr": 6,
   "cat": "Resto",
   "name": "Lava",
-  "address": "",
+  "address": "12 rue de la Grande Chaumière, 75006 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14151,7 +14545,12 @@
   "enriched": 5,
   "photo": "https://framerusercontent.com/assets/9fIiat79DqYK69FcdqrRtnNjY68.png",
   "bookingOk": 2,
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1,
+  "phone": "01 43 26 55 55",
+  "summary": "Un restaurant auvergnat moderne et chaleureux du 6e arrondissement, parfait pour découvrir des spécialités revisitées et des produits du terroir dans une ambiance conviviale.",
+  "lat": 48.84227,
+  "lng": 2.330527
  },
  {
   "id": "precieuses-0-resto-hotel-le-collectionneur",
@@ -14167,15 +14566,19 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 58 36 67 00",
+  "instagram": "hotellecollectionneur",
+  "summary": "Un palace Art Déco au charme intemporel proposant une cuisine raffinée au restaurant et des cocktails signatures créatifs dans un bar feutré et élégant."
  },
  {
   "id": "precieuses-0-resto-cepe-et-figue",
   "list": "precieuses",
-  "arr": null,
+  "arr": 13,
   "cat": "Resto",
   "name": "Cèpe et Figue",
-  "address": "",
+  "address": "127 rue de Tolbiac, 75013 Paris",
   "mark": "👌🏼",
   "price": 3,
   "priceSrc": "estim",
@@ -14186,15 +14589,19 @@
   "instagram": "cepeetfigue",
   "booking": "https://www.cepeetfigue.fr/reservation/",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Une cuisine bistronomique raffinée et chaleureuse qui met à l'honneur les produits de saison. L'ambiance y est intime et conviviale.",
+  "lat": 48.826225,
+  "lng": 2.36133
  },
  {
   "id": "precieuses-0-resto-cache",
   "list": "precieuses",
-  "arr": null,
+  "arr": 20,
   "cat": "Resto",
   "name": "Caché",
-  "address": "",
+  "address": "10 Villa Riberolle, 75020 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14206,7 +14613,11 @@
   "instagram": "cache_paris",
   "booking": "https://bookings.zenchef.com/results?rid=353214&lang=fr",
   "bookingOk": 2,
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1,
+  "summary": "Caché au fond d'une impasse verdoyante du 20e arrondissement, ce restaurant met en valeur les poissons et fruits de mer dans une ambiance chaleureuse et branchée.",
+  "lat": 48.857756,
+  "lng": 2.396932
  },
  {
   "id": "precieuses-0-resto-festif-victoria",
@@ -14214,7 +14625,7 @@
   "arr": null,
   "cat": "Resto festif",
   "name": "Victoria",
-  "address": "",
+  "address": "1 rue de Presbourg, 75116 Paris",
   "mark": "",
   "price": 4,
   "priceSrc": "estim",
@@ -14225,15 +14636,19 @@
   "phone": "01 44 17 97 72",
   "instagram": "victoriaparisrestaurant",
   "bookingScan": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Idéalement situé face à l'Arc de Triomphe, ce restaurant propose une cuisine italienne élégante dans un décor somptueux aux accents festifs.",
+  "lat": 48.872899,
+  "lng": 2.293739
  },
  {
   "id": "precieuses-0-resto-festif-le-verde",
   "list": "precieuses",
-  "arr": null,
+  "arr": 12,
   "cat": "Resto festif",
   "name": "Le Verde",
-  "address": "",
+  "address": "24 rue de Cîteaux, 75012 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14245,15 +14660,19 @@
   "phone": "06 75 34 90 19",
   "instagram": "verde.paris",
   "bookingOk": 2,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "summary": "Un restaurant festif et élégant qui propose une cuisine méditerranéenne soignée. L'ambiance y est vibrante et rythmée pour prolonger la soirée.",
+  "lat": 48.848647,
+  "lng": 2.380989
  },
  {
   "id": "precieuses-0-resto-festif-l-empire-du-8e",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Resto festif",
   "name": "L'Empire du 8e",
-  "address": "",
+  "address": "32 rue de Ponthieu, 75008 Paris",
   "mark": "✔️",
   "price": 3,
   "priceSrc": "estim",
@@ -14265,7 +14684,11 @@
   "instagram": "lempiredu8eme.paris",
   "booking": "https://www.opentable.fr/booking/restref/availability?lang=fr-FR&restRef=279756",
   "bookingOk": 2,
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1,
+  "summary": "Un restaurant festif au cœur du 8e arrondissement proposant une cuisine raffinée dans une ambiance chic et animée. Idéal pour prolonger la soirée en musique.",
+  "lat": 48.871085,
+  "lng": 2.308531
  },
  {
   "id": "precieuses-0-resto-festif-manko-paris",
@@ -14287,7 +14710,9 @@
   "bookingOk": 2,
   "lat": 48.865672,
   "lng": 2.303279,
-  "cuisine": "Péruvien"
+  "cuisine": "Péruvien",
+  "aiFill": 1,
+  "summary": "Une table péruvienne vibrante orchestrée par Gastón Acurio, où l'on savoure des ceviches d'exception et des cocktails audacieux dans une ambiance festive et élégante."
  },
  {
   "id": "precieuses-0-resto-festif-noto-paris",
@@ -14308,7 +14733,9 @@
   "phone": "01 86 95 96 60",
   "instagram": "notoparis",
   "bookingScan": 1,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "summary": "Une table sicilienne festive située dans la salle Pleyel, idéale pour déguster des plats méditerranéens savoureux tout en profitant d'une ambiance musicale vibrante et élégante."
  },
  {
   "id": "precieuses-0-resto-festif-les-bains",
@@ -14330,7 +14757,9 @@
   "instagram": "lesbainsparis",
   "booking": "https://bookings.zenchef.com/results?rid=356965&lang=fr",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Lieu mythique du Marais mêlant table gastronomique, bar à cocktails et club branché. On y vient pour savourer une cuisine créative dans une atmosphère artistique et survoltée."
  },
  {
   "id": "precieuses-0-resto-festif-gallopin",
@@ -14352,7 +14781,9 @@
   "photo": "https://gallopin.com/wp-content/uploads/sites/5/2023/06/DSC08219-2.png",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "summary": "Une brasserie historique et élégante au cœur de Paris qui propose une cuisine française raffinée dans un décor somptueux Belle Époque, avec une ambiance festive et animée en soirée."
  },
  {
   "id": "precieuses-0-resto-festif-salvaje",
@@ -14374,7 +14805,10 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "salvajeparis",
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "aiFill": 1,
+  "phone": "01 43 59 36 30",
+  "summary": "Un restaurant festif aux accents japonais et tokyoïtes proposant une cuisine fusion sophistiquée dans une ambiance ultra-branchée et spectaculaire."
  },
  {
   "id": "precieuses-0-resto-festif-mamamia",
@@ -14396,15 +14830,18 @@
   "priceSrc": "estim",
   "searched": 1,
   "bookingOk": 2,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "phone": "01 47 20 67 79",
+  "summary": "Une table italienne festive et glamour qui propose des plats généreux et des cocktails signatures dans une atmosphère musicale et chaleureuse."
  },
  {
   "id": "precieuses-0-resto-festif-hollywood-savoy",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Resto festif",
   "name": "Hollywood Savoy",
-  "address": "",
+  "address": "44 boulevard des Italiens, 75009 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14413,7 +14850,15 @@
   "bookingOk": 2,
   "igSearched": 1,
   "instagram": "hollywood_savoy",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 42 97 42 16",
+  "website": "https://hollywoodsavoy.fr",
+  "summary": "Un lieu festif au style rétro-chic inspiré des années dorées, idéal pour déguster des plats créatifs tout en profitant d'une ambiance vibrante et musicale.",
+  "lat": 48.871518,
+  "lng": 2.336341,
+  "enriched": 5,
+  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72ba08cca1f5f7f67d5_og-hollywood-savoy.jpg"
  },
  {
   "id": "precieuses-0-salon-de-the-coco-palais-garnier",
@@ -14428,7 +14873,11 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 42 68 86 80",
+  "instagram": "coco_paris_",
+  "summary": "Un cadre somptueux et théâtral au cœur du Palais Garnier pour déguster une cuisine élégante dans une ambiance chic et feutrée."
  },
  {
   "id": "precieuses-0-salon-de-the-angelina",
@@ -14448,7 +14897,9 @@
   "priceSrc": "estim",
   "photo": "https://cdn.prod.website-files.com/6393398914410c453e1df00f/6acd0449b1bdfa251763cc63_angelina_packshot_26-compressed.webp",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Institution parisienne incontournable, célèbre pour son chocolat chaud onctueux à l'ancienne et son savoureux Mont-Blanc dans un décor Belle Époque."
  },
  {
   "id": "precieuses-0-salon-de-the-hotel-de-crillon",
@@ -14464,7 +14915,15 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "rosewoodhoteldecrillon"
+  "instagram": "rosewoodhoteldecrillon",
+  "aiFill": 1,
+  "phone": "01 44 71 15 00",
+  "website": "https://www.rosewoodhotels.com/fr/hotel-de-crillon",
+  "summary": "Un cadre somptueux et historique sur la place de la Concorde pour savourer des créations pâtissières exquises dans une atmosphère luxueuse.",
+  "enriched": 5,
+  "photo": "https://images.rosewoodhotels.com/is/image/rwhg/heroshot-punta-bonita-pool-and-beach-1",
+  "booking": "https://www.rosewoodhotels.com/en/reservations/select-a-destination",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-salon-de-the-ritz-paris",
@@ -14483,7 +14942,10 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "ritzparis"
+  "instagram": "ritzparis",
+  "aiFill": 1,
+  "phone": "01 43 16 30 30",
+  "summary": "Un moment suspendu dans le temps au Salon Marcel Proust pour déguster un tea time raffiné accompagné de madeleines signatures dans un décor aristocratique."
  },
  {
   "id": "precieuses-0-salon-de-the-fattyferia",
@@ -14497,7 +14959,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "thefattyferia"
+  "instagram": "thefattyferia",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-salon-de-the-alain-ducasse",
@@ -14513,7 +14976,8 @@
   "website": "https://www.ducasse-paris.com",
   "enriched": 5,
   "instagram": "alainducasse",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-salon-de-the-le-meurice",
@@ -14533,7 +14997,9 @@
   "searched": 1,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "lemeuriceparis"
+  "instagram": "lemeuriceparis",
+  "aiFill": 1,
+  "summary": "Savourez les sublimes créations pâtissières de Cédric Grolet dans un décor somptueux inspiré du salon de la Paix. Une halte luxueuse et gourmande au cœur de Paris."
  },
  {
   "id": "precieuses-0-salon-de-the-intercontinental-paris-le-grand",
@@ -14548,7 +15014,15 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 40 04 36 36",
+  "instagram": "intercontinentalparislegrand",
+  "website": "https://www.parislegrand.intercontinental.com",
+  "summary": "Découvrez le Café de la Paix et ses superbes salons historiques pour un tea time raffiné. L'ambiance y est élégante, feutrée et empreinte du charme parisien du XIXe siècle.",
+  "enriched": 5,
+  "photo": "https://parislegrand.intercontinental.com/assets/uploads/2023/09/InterContinental-Paris-Le-Grand-Junior-Suite-Balcony-%C2%A9-Eric-Cuvillier-3-370x247.jpeg",
+  "booking": "https://widget.thefork.com/fr/e85c5b5e-4c70-4f97-ae20-8b6e7f3efaf6?step=date"
  },
  {
   "id": "precieuses-0-rooftop-the-peninsula-l-oiseau-blanc",
@@ -14567,7 +15041,10 @@
   "enriched": 5,
   "photo": "https://www.peninsula.com/-/media/misc/pen8/2022-06/misc_202206/exterior-2_1920.jpg",
   "instagram": "peninsulahotels",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 58 12 67 30",
+  "summary": "Ce restaurant doublement étoilé propose une cuisine française raffinée et aérienne avec vue imprenable sur Paris. L'ambiance est luxueuse et élégante, inspirée par l'aviation."
  },
  {
   "id": "precieuses-0-rooftop-shangri-la",
@@ -14586,7 +15063,10 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "shangrilaparis"
+  "instagram": "shangrilaparis",
+  "aiFill": 1,
+  "phone": "01 53 67 19 98",
+  "summary": "Un cadre somptueux et feutré offrant une vue spectaculaire sur la tour Eiffel. On y savoure une cuisine gastronomique d'excellence dans une ambiance palatiale et intime."
  },
  {
   "id": "precieuses-0-rooftop-four-seasons-george-v",
@@ -14605,7 +15085,10 @@
   "enriched": 5,
   "photo": "https://www.fourseasons.com/alt/img-opt/~75.430.0,0000-150,5459-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/FSH/FSH_4400_original.jpg",
   "instagram": "fourseasons",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 49 52 70 00",
+  "summary": "Un lieu mythique abritant des tables d'exception couronnées d'étoiles Michelin. L'ambiance y est somptueuse, romantique et empreinte du service légendaire du palace."
  },
  {
   "id": "precieuses-0-rooftop-le-perchoir-marais",
@@ -14625,15 +15108,17 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un rooftop branché perché sur les toits du BHV Marais, idéal pour siroter des cocktails originaux face aux toits de Paris. L'ambiance est festive, décontractée et musicale."
  },
  {
   "id": "precieuses-0-rooftop-gigi",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Rooftop",
   "name": "Gigi",
-  "address": "",
+  "address": "15 avenue Montaigne, 75008 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14643,7 +15128,12 @@
   "photo": "https://gigi-restaurant.com/app/app-uploads/2023/10/Gigi-Val-d-isere-banner-1.jpg",
   "instagram": "gigi_restaurant",
   "booking": "https://www.sevenrooms.com/experiences/gigiparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 47 23 55 99",
+  "summary": "Une table italienne élégante et festive avec une vue imprenable sur Paris. On y savoure des spécialités transalpines raffinées dans une ambiance chic et chaleureuse.",
+  "lat": 48.865672,
+  "lng": 2.303279
  },
  {
   "id": "precieuses-0-rooftop-mama-shelter",
@@ -14663,15 +15153,17 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un rooftop branché et décontracté dans l'est parisien, idéal pour partager des pizzas généreuses et des cocktails entre amis. L'ambiance y est festive, colorée et résolument conviviale."
  },
  {
   "id": "precieuses-0-rooftop-le-toit-de-la-girafe",
   "list": "precieuses",
-  "arr": null,
+  "arr": 16,
   "cat": "Rooftop",
   "name": "Le Toit de la Girafe",
-  "address": "",
+  "address": "1 place du Trocadéro et du 11 Novembre, 75016 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14681,7 +15173,12 @@
   "photo": "https://girafe-restaurant.com/app/app-uploads/2025/07/Tables-Girafe-250610-003.jpg",
   "instagram": "girafe_paris",
   "booking": "https://www.sevenrooms.com/experiences/girafeparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 40 62 70 61",
+  "summary": "Un rooftop d'exception face à la Tour Eiffel, spécialisé dans les poissons et fruits de mer d'une grande fraîcheur. L'atmosphère est luxueuse, lumineuse et spectaculaire.",
+  "lat": 48.862905,
+  "lng": 2.288342
  },
  {
   "id": "precieuses-0-rooftop-madame-reve",
@@ -14702,7 +15199,9 @@
   "phone": "01 80 40 77 70",
   "instagram": "hotelmadamereve",
   "booking": "https://www.sevenrooms.com/explore/restaurantmr/reservations/create/search/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un rooftop suspendu au cœur de Paris offrant une vue panoramique époustouflante sur les monuments de la capitale. On y profite d'une cuisine aux accents méditerranéens dans un décor végétalisé et feutré."
  },
  {
   "id": "precieuses-0-rooftop-chez-mila",
@@ -14716,42 +15215,53 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "chezmilaparis"
+  "instagram": "chezmilaparis",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-rooftop-il-volo-bar",
   "list": "precieuses",
-  "arr": null,
+  "arr": 15,
   "cat": "Rooftop",
   "name": "Il Volo Bar",
-  "address": "",
+  "address": "15 Rue de Vaugirard, 75015 Paris",
   "mark": "✅",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 40 64 15 35",
+  "instagram": "ilvolobarparis",
+  "summary": "Perché au sommet de l'hôtel, ce rooftop offre une vue imprenable sur la tour Eiffel. On y savoure des cocktails originaux dans une ambiance chic et feutrée.",
+  "lat": 48.839563,
+  "lng": 2.303163
  },
  {
   "id": "precieuses-0-rooftop-10eme-ciel",
   "list": "precieuses",
-  "arr": null,
+  "arr": 16,
   "cat": "Rooftop",
   "name": "10ème Ciel",
-  "address": "",
+  "address": "10 Avenue de New York, 75016 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "10emeciel"
+  "instagram": "10emeciel",
+  "aiFill": 1,
+  "summary": "Situé au dernier étage du Pullman Paris Tour Eiffel, ce bar éphémère propose une vue spectaculaire face à la tour Eiffel. L'ambiance y est branchée et idéale pour admirer le coucher du soleil.",
+  "lat": 48.864058,
+  "lng": 2.299052
  },
  {
   "id": "precieuses-0-rooftop-too-hotel",
   "list": "precieuses",
-  "arr": null,
+  "arr": 13,
   "cat": "Rooftop",
   "name": "TOO Hôtel",
-  "address": "",
+  "address": "65 Rue Bruneseau, 75013 Paris",
   "mark": "✅",
   "price": 3,
   "priceSrc": "estim",
@@ -14762,7 +15272,11 @@
   "phone": "01 78 90 79 90",
   "instagram": "toohotelparis",
   "booking": "https://www.sevenrooms.com/explore/tootactac/reservations",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Surplombant Paris depuis les hauteurs du 13e arrondissement, le TOO TacTac Skybar offre un panorama grandiose à couper le souffle. On y vient pour siroter des cocktails créations dans une atmosphère festive et ultra-design.",
+  "lat": 48.825335,
+  "lng": 2.382428
  },
  {
   "id": "precieuses-0-rooftop-cheval-blanc",
@@ -14781,7 +15295,10 @@
   "enriched": 5,
   "photo": "https://images.prismic.io/lvmh-chevalblanc/aGUCC3fc4bHWi86A_Light-ChevalBlancParis_Fa%C3%A7ade_OliverFly.jpg?auto=format%2Ccompress&rect=0%2C234%2C5614%2C7018&w=3840&fit=max&q=0.9",
   "instagram": "chevalblancofficial",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 79 35 50 22",
+  "summary": "Profitez d'une vue spectaculaire sur la Seine et les monuments de Paris tout en dégustant une cuisine de brasserie contemporaine raffinée dans une ambiance chic et élégante."
  },
  {
   "id": "precieuses-0-rooftop-villa-m",
@@ -14803,7 +15320,9 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un rooftop verdoyant et lumineux offrant une vue panoramique sur les toits de Paris, idéal pour siroter des cocktails originaux dans une ambiance végétale et détendue."
  },
  {
   "id": "precieuses-0-rooftop-bonnie",
@@ -14822,7 +15341,8 @@
   "photo": "https://i0.wp.com/bonnie-restaurant.com/app/app-uploads/2024/07/Tables-Bonnie-220726-040.jpg?fit=1600%2C1066&#038;ssl=1",
   "instagram": "bonnie_restaurant",
   "booking": "https://www.sevenrooms.com/experiences/bonnie",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-rooftop-le-roof",
@@ -14843,7 +15363,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "booking": "https://www.sevenrooms.com/explore/restaurantmr/reservations/create/search/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 80 40 77 70",
+  "summary": "Situé sur le toit de l'Hôtel Madame Rêve, ce rooftop végétalisé offre un panorama d'exception sur l'église Saint-Eustache pour savourer des cocktails signatures dans une atmosphère feutrée et branchée."
  },
  {
   "id": "precieuses-0-rooftop-terraza-mikuna",
@@ -14864,15 +15387,17 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Sur le rooftop du BHV Marais, la Terraza Mikuna propose une cuisine aux accents latino-américains à savourer dans une ambiance festive et estivale avec vue sur Paris."
  },
  {
   "id": "precieuses-0-rooftop-perruche",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Rooftop",
   "name": "Perruche",
-  "address": "",
+  "address": "Printemps Haussmann, 2 rue du Havre (9ème étage), 75009 Paris",
   "mark": "✅",
   "price": 3,
   "priceSrc": "estim",
@@ -14882,7 +15407,12 @@
   "photo": "https://perruche-restaurant.com/app/app-uploads/2024/05/05-Perruche.jpg",
   "instagram": "perruche_paris",
   "booking": "https://www.sevenrooms.com/experiences/perrucheparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 40 64 39 40",
+  "summary": "Perché sur le toit du Printemps Haussmann, ce rooftop offre une vue imprenable sur tout Paris dans une ambiance chic, lumineuse et végétale, idéale pour savourer des cocktails et une cuisine aux accents du Sud.",
+  "lat": 48.874002,
+  "lng": 2.327231
  },
  {
   "id": "precieuses-0-cafe-bofinger",
@@ -14903,7 +15433,9 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Véritable institution parisienne, cette brasserie historique au décor 1900 sublime les fruits de mer, les choucroutes et les classiques de la cuisine française dans une ambiance élégante et intemporelle."
  },
  {
   "id": "precieuses-0-cafe-spootnik-bar",
@@ -14918,15 +15450,16 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-cafe-kith",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Café",
   "name": "Kith",
-  "address": "",
+  "address": "49 Rue Pierre Charron, 75008 Paris",
   "mark": "✅",
   "price": 1,
   "priceSrc": "estim",
@@ -14936,15 +15469,19 @@
   "photo": "http://kith.com/cdn/shop/files/Screen_Shot_2021-01-15_at_5.30.34_PM.png?v=1610753478",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "kith"
+  "instagram": "kith",
+  "aiFill": 1,
+  "summary": "Un coffee shop branché et léché au sein du concept store Kith, idéal pour déguster de délicieuses glaces signatures et des boissons rafraîchissantes dans une ambiance ultra-stylée.",
+  "lat": 48.869091,
+  "lng": 2.30223
  },
  {
   "id": "precieuses-0-cafe-chez-fringe",
   "list": "precieuses",
-  "arr": null,
+  "arr": 3,
   "cat": "Café",
   "name": "Chez Fringe",
-  "address": "",
+  "address": "106 Rue de Turenne, 75003 Paris",
   "mark": "",
   "price": 1,
   "priceSrc": "estim",
@@ -14953,7 +15490,11 @@
   "website": "https://www.fringecoffeeparis.com",
   "enriched": 5,
   "photo": "https://www.fringecoffeeparis.com/assets/images/hero-1.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un café de spécialité lumineux et arty du Haut-Marais, parfait pour déguster un excellent café accompagné de pâtisseries maison au milieu d'expositions photographiques.",
+  "lat": 48.862736,
+  "lng": 2.36476
  },
  {
   "id": "precieuses-0-boire-un-verre-maison-souquet",
@@ -14974,15 +15515,17 @@
   "phone": "01 48 78 55 55",
   "instagram": "maisonsouquetofficial",
   "booking": "https://www.maisonsouquet.com/fr/reserver-chambre-en-journee/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un bar à cocktails somptueux et feutré aux accents 1900, idéal pour savourer des breuvages d'exception imaginés par des mixologues dans une ambiance intime et sulfureuse."
  },
  {
   "id": "precieuses-0-boire-un-verre-l-entracte",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Boire un verre",
   "name": "L'Entracte",
-  "address": "",
+  "address": "1 Rue Auber, 75009 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -14994,34 +15537,51 @@
   "booking": "https://entracte-opera.fr/fr/booking",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "entracte_paris"
+  "instagram": "entracte_paris",
+  "aiFill": 1,
+  "summary": "Un bar-restaurant élégant situé à deux pas de l'Opéra, parfait pour boire un verre ou grignoter dans un décor théâtral et raffiné.",
+  "lat": 48.871145,
+  "lng": 2.33146
  },
  {
   "id": "precieuses-0-boire-un-verre-yago-pigalle",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Boire un verre",
   "name": "Yago Pigalle",
-  "address": "",
+  "address": "25 rue Victor Massé, 75009 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "instagram": "yago.pigalle",
+  "summary": "Un bar feutré et sulfureux aux accents interlope, parfait pour siroter des cocktails originaux dans une ambiance intimiste et nocturne.",
+  "lat": 48.880796,
+  "lng": 2.338036
  },
  {
   "id": "precieuses-0-boire-un-verre-cheper-perchoir",
   "list": "precieuses",
-  "arr": null,
+  "arr": 10,
   "cat": "Boire un verre",
   "name": "Cheper Perchoir",
-  "address": "",
+  "address": "Gare de l'Est, 9 bis rue du 8 Mai 1945, 75010 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "cheper.perchoir"
+  "instagram": "cheper.perchoir",
+  "aiFill": 1,
+  "website": "https://leperchoir.fr",
+  "summary": "Niché sous les toits de la Gare de l'Est, ce bar-restaurant offre une vue insolite et des cocktails créatifs dans un décor branché et lumineux.",
+  "lat": 48.876238,
+  "lng": 2.357469,
+  "enriched": 5,
+  "photo": "https://leperchoir.fr/wp-content/uploads/2020/07/LePerchoir_site_photo-etablissement_le-perchoir-menilmontant_3-scaled.jpg",
+  "phone": "01 76 35 11 80"
  },
  {
   "id": "precieuses-0-boire-un-verre-mandarin-oriental",
@@ -15039,7 +15599,11 @@
   "website": "https://www.mandarinoriental.com",
   "enriched": 5,
   "bookingScan": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 70 98 78 88",
+  "instagram": "mo_paris",
+  "summary": "Un cadre luxueux et verdoyant en plein cœur de Paris, idéal pour déguster des cocktails d'auteur raffinés dans un calme absolu."
  },
  {
   "id": "precieuses-0-boire-un-verre-hotel-particulier-montmartre",
@@ -15059,15 +15623,18 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "hotelparticuliermontmartre"
+  "instagram": "hotelparticuliermontmartre",
+  "aiFill": 1,
+  "phone": "01 53 41 81 40",
+  "summary": "Un havre de paix caché dans un écrin de verdure montmartrois, idéal pour savourer des cocktails recherchés dans une atmosphère bohème et chic."
  },
  {
   "id": "precieuses-0-boire-un-verre-secret-8",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Boire un verre",
   "name": "Secret 8",
-  "address": "",
+  "address": "8 rue Boissy d'Anglas, 75008 Paris",
   "mark": "👌🏼",
   "price": 3,
   "priceSrc": "estim",
@@ -15076,15 +15643,20 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "secret8bybuddhabar"
+  "instagram": "secret8bybuddhabar",
+  "aiFill": 1,
+  "phone": "01 53 05 90 00",
+  "summary": "Un speakeasy feutré et mystérieux caché derrière une bibliothèque, idéal pour siroter des cocktails créatifs d'exception dans une ambiance intime et luxueuse.",
+  "lat": 48.868097,
+  "lng": 2.32147
  },
  {
   "id": "precieuses-0-boire-un-verre-solera",
   "list": "precieuses",
-  "arr": null,
+  "arr": 5,
   "cat": "Boire un verre",
   "name": "Solera",
-  "address": "",
+  "address": "28 rue Saint-Jacques, 75005 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -15095,15 +15667,19 @@
   "phone": "06 95 54 12 00",
   "instagram": "solera.paris",
   "booking": "https://www.covermanager.com/reservation/module_restaurant/restaurante-solera/french",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un bar à cocktails branché et théâtral où l'on savoure des créations surprenantes servies dans des contenants originaux, le tout dans une ambiance festive et chaleureuse.",
+  "lat": 48.851335,
+  "lng": 2.345662
  },
  {
   "id": "precieuses-0-boire-un-verre-mobster-bar",
   "list": "precieuses",
-  "arr": null,
+  "arr": 11,
   "cat": "Boire un verre",
   "name": "Mobster Bar",
-  "address": "",
+  "address": "8 rue de Crussol, 75011 Paris",
   "mark": "✅",
   "price": 2,
   "priceSrc": "estim",
@@ -15113,7 +15689,11 @@
   "enriched": 5,
   "photo": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0ae9c3fb-56cb-4533-b531-08740977d01b/id-preview-258ec785--a48a64ca-1458-430f-a96b-a245897d6617.lovable.app-1773056956313.png",
   "phone": "09 63 61 84 78",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un speakeasy aux accents des années 1930 caché derrière une fausse cabine téléphonique, parfait pour déguster d'excellents cocktails dans une ambiance feutrée et jazzy.",
+  "lat": 48.863959,
+  "lng": 2.36748
  },
  {
   "id": "precieuses-0-boire-un-verre-les-ambassadeurs",
@@ -15129,7 +15709,15 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "lesambassadeursofficiel"
+  "instagram": "lesambassadeursofficiel",
+  "aiFill": 1,
+  "phone": "01 44 71 15 00",
+  "website": "https://www.rosewoodhotels.com/fr/crillon/dining/bar-les-ambassadeurs",
+  "summary": "Le somptueux bar du Hôtel de Crillon propose des cocktails signatures raffinés sous des lustres majestueux, offrant une ambiance palace somptueuse et rythmée par des concerts live.",
+  "enriched": 5,
+  "photo": "https://images.rosewoodhotels.com/is/image/rwhg/heroshot-punta-bonita-pool-and-beach-1",
+  "booking": "https://www.rosewoodhotels.com/en/reservations/select-a-destination",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-boire-un-verre-grouvie",
@@ -15144,28 +15732,35 @@
   "searched": 1,
   "igSearched": 1,
   "lat": 48.852915,
-  "lng": 2.33913
+  "lng": 2.33913,
+  "aiFill": 1,
+  "instagram": "grouvie.paris",
+  "summary": "Un bar à cocktails confidentiel et chaleureux situé dans le 6e arrondissement, idéal pour siroter des créations originales dans une ambiance intimiste."
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-de-l-escadrille",
   "list": "precieuses",
-  "arr": null,
+  "arr": 3,
   "cat": "Boire un verre",
   "name": "Bar de l'Escadrille",
-  "address": "",
+  "address": "22 rue de Thorigny, 75003 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "summary": "Bar de quartier convivial et sans chichis, parfait pour boire un verre entre amis dans une ambiance détendue au cœur du Marais.",
+  "lat": 48.860282,
+  "lng": 2.3639
  },
  {
   "id": "precieuses-0-boire-un-verre-coco",
   "list": "precieuses",
-  "arr": null,
+  "arr": 7,
   "cat": "Boire un verre",
   "name": "Coco",
-  "address": "",
+  "address": "1 Pl. Jacques Rueff, 75007 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -15175,21 +15770,34 @@
   "photo": "https://restaurant-beaucoco.com/app/app-uploads/2024/10/00-Coco-Paris.jpg",
   "instagram": "cocorestaurant_",
   "booking": "https://www.sevenrooms.com/experiences/beaucocoparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 42 68 55 81",
+  "summary": "Situé au coeur de l'Opéra Garnier, le restaurant Coco propose une cuisine élégante et festive dans un décor spectaculaire d'inspiration tropicale et Art déco.",
+  "lat": 48.858633,
+  "lng": 2.322606
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-8",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Boire un verre",
   "name": "Bar 8",
-  "address": "",
+  "address": "10 rue Boissy d'Anglas, 75008 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "bar_8_"
+  "instagram": "bar_8_",
+  "aiFill": 1,
+  "phone": "01 53 43 44 44",
+  "website": "https://www.mandarinoriental.com",
+  "summary": "Le Bar 8 du Mandarin Oriental offre un cadre luxueux et contemporain pour déguster des cocktails sophistiqués et des créations de chef.",
+  "lat": 48.868288,
+  "lng": 2.321596,
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-hemingway",
@@ -15205,7 +15813,13 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "bar_hemingway_"
+  "instagram": "bar_hemingway_",
+  "aiFill": 1,
+  "phone": "01 43 16 33 74",
+  "website": "https://www.ritzparis.com",
+  "summary": "Un bar légendaire et intime au sein du Ritz Paris, célèbre pour ses cocktails signatures créés par Colin Field et son ambiance feutrée inspirée de l'écrivain.",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-botaniste",
@@ -15213,41 +15827,64 @@
   "arr": null,
   "cat": "Boire un verre",
   "name": "Bar Botaniste",
-  "address": "",
+  "address": "10 avenue d'Iéna, 75116 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "lebarbotaniste"
+  "instagram": "lebarbotaniste",
+  "aiFill": 1,
+  "phone": "01 53 67 19 98",
+  "website": "https://www.shangri-la.com",
+  "summary": "Niché au cœur du Shangri-La Paris, ce bar met à l'honneur les spiritueux botaniques et les créations inspirées par le prince Roland Bonaparte dans un décor élégant.",
+  "lat": 48.863783,
+  "lng": 2.293219,
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-josephine",
   "list": "precieuses",
-  "arr": null,
+  "arr": 1,
   "cat": "Boire un verre",
   "name": "Bar Joséphine",
-  "address": "",
+  "address": "21 boulevard de la Madeleine, 75001 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "lebarjosephine"
+  "instagram": "lebarjosephine",
+  "aiFill": 1,
+  "phone": "01 43 12 10 00",
+  "summary": "Situé dans l'hôtel Lutetia (historiquement associé au Hotel Paris Opéra selon les déclinaisons, mais ici au Lutetia pour Joséphine Baker), un cadre somptueux et musical pour siroter des cocktails raffinés.",
+  "lat": 48.869343,
+  "lng": 2.325651
  },
  {
   "id": "precieuses-0-boire-un-verre-le-gainsbarre",
   "list": "precieuses",
-  "arr": null,
+  "arr": 7,
   "cat": "Boire un verre",
   "name": "Le Gainsbarre",
-  "address": "",
+  "address": "5 rue de Verneuil, 75007 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "legainsbarre"
+  "instagram": "legainsbarre",
+  "aiFill": 1,
+  "phone": "01 49 27 01 23",
+  "website": "https://www.maisongainsbourg.fr",
+  "summary": "À la fois café le jour et bar à cocktails le soir, Le Gainsbarre prolonge l'univers artistique et intime de Serge Gainsbourg dans une ambiance feutrée et élégante.",
+  "lat": 48.857155,
+  "lng": 2.331749,
+  "enriched": 5,
+  "bookingScan": 1,
+  "booking": "https://www.maisongainsbourg.fr/billetterie",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-boire-un-verre-maison-revka",
@@ -15255,7 +15892,7 @@
   "arr": null,
   "cat": "Boire un verre",
   "name": "Maison Revka",
-  "address": "",
+  "address": "59 avenue Raymond Poincaré, 75116 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -15265,7 +15902,12 @@
   "photo": "https://maisonrevka.com/app/app-uploads/2024/07/01-Maison-Revka.jpg",
   "instagram": "maisonrevka_restaurant",
   "booking": "https://www.sevenrooms.com/experiences/maisonrevkaparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 40 67 10 00",
+  "summary": "Maison Revka propose une délicieuse cuisine aux accents slaves dans un cadre somptueux et feutré. L'ambiance y est élégante, idéale pour savourer un cocktail signature ou une coupe de champagne.",
+  "lat": 48.867427,
+  "lng": 2.285735
  },
  {
   "id": "precieuses-0-boire-un-verre-hotel-lancaster",
@@ -15286,7 +15928,9 @@
   "phone": "01 40 76 40 76",
   "instagram": "hotel_lancaster_paris",
   "booking": "https://bookings.zenchef.com/results?rid=387347&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Le bar de l'Hôtel Lancaster offre un cadre intimiste et feutré, parfait pour déguster des cocktails créatifs dans une atmosphère artistique et luxueuse. Un véritable havre de paix au cœur de Paris."
  },
  {
   "id": "precieuses-0-boire-un-verre-la-marta",
@@ -15300,7 +15944,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "lemartaparis"
+  "instagram": "lemartaparis",
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-baronne",
@@ -15308,7 +15953,7 @@
   "arr": null,
   "cat": "Boire un verre",
   "name": "Baronne",
-  "address": "",
+  "address": "34 avenue de New York, 75116 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -15319,34 +15964,52 @@
   "phone": "01 42 25 73 35",
   "instagram": "baronne_restaurant",
   "booking": "https://www.sevenrooms.com/experiences/baronne",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Situé dans un cadre somptueux avec vue sur la Seine, Baronne propose des cocktails raffinés et une ambiance chic et feutrée. C'est le spot idéal pour un verre élégant dans un décor grandiose.",
+  "lat": 48.862993,
+  "lng": 2.294822
  },
  {
   "id": "precieuses-0-a-tester-yum-tcha-bubble-tea",
   "list": "precieuses",
-  "arr": null,
+  "arr": 2,
   "cat": "À tester",
   "name": "Yum Tcha (bubble tea)",
-  "address": "",
+  "address": "69 rue de Richelieu, 75002 Paris",
   "mark": "",
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "instagram": "yum.tcha"
+  "instagram": "yum.tcha",
+  "aiFill": 1,
+  "summary": "Un salon de thé chaleureux proposant d'authentiques bubble teas aux perles de tapioca fondantes et des créations parfumées. L'ambiance y est cosy et idéale pour une pause gourmande.",
+  "lat": 48.867536,
+  "lng": 2.337724
  },
  {
   "id": "precieuses-0-brunch-violetta-alfredo",
   "list": "precieuses",
-  "arr": null,
+  "arr": 9,
   "cat": "Brunch",
   "name": "Violetta & Alfredo",
-  "address": "",
+  "address": "30 rue de Trévise, 75009 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "phone": "01 42 46 82 69",
+  "instagram": "violetta_et_alfredo",
+  "summary": "Un salon de thé au décor théâtral et raffiné inspiré de l'opéra. On y déguste de superbes pâtisseries maison et un brunch copieux dans une atmosphère romantique.",
+  "lat": 48.874844,
+  "lng": 2.345508,
+  "website": "https://violettaetalfredo.fr",
+  "enriched": 5,
+  "photo": "https://violettaetalfredo.fr/wp-content/uploads/2022/02/IMG_1611-scaled.jpg",
+  "bookingScan": 1
  },
  {
   "id": "precieuses-0-brunch-404-brunch-oriental",
@@ -15367,7 +16030,11 @@
   "booking": "https://www.brunch.fr/pourquoi-reserver-en-ligne/",
   "bookingOk": 2,
   "igSearched": 1,
-  "cuisine": "Oriental"
+  "cuisine": "Oriental",
+  "aiFill": 1,
+  "phone": "01 42 74 57 81",
+  "instagram": "le404paris",
+  "summary": "Un restaurant berbère incontournable qui propose un copieux brunch oriental aux saveurs réconfortantes, composé de couscous, tajines, pâtisseries marocaines et thés à la menthe. L'ambiance y est chaleureuse, ethnique et dépaysante."
  },
  {
   "id": "precieuses-0-brunch-le-royal-monceau",
@@ -15384,15 +16051,23 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "leroyalmonceau",
-  "cuisine": "Brunch"
+  "cuisine": "Brunch",
+  "aiFill": 1,
+  "phone": "01 42 99 88 00",
+  "website": "https://www.raffles.com/paris",
+  "booking": "https://www.tablecheck.com/fr/shops/le-royal-monceau-paris-restaurants/reserve",
+  "summary": "Un brunch luxueux et grandiose orchestré par les chefs pâtissiers, proposant des buffets somptueux de mets salés et de créations sucrées d'exception. L'ambiance est ultra-chic, artistique et feutrée au cœur d'un palace parisien.",
+  "enriched": 5,
+  "photo": "https://www.raffles.com/content/dam/raffles-aem/default-social-media-image.jpg/_jcr_content/renditions/cq5dam.zoom.2048.2048.jpeg",
+  "bookingOk": 2
  },
  {
   "id": "precieuses-0-brunch-bande-de-cheffes",
   "list": "precieuses",
-  "arr": null,
+  "arr": 15,
   "cat": "Brunch",
   "name": "Bande de Cheffes",
-  "address": "",
+  "address": "28 rue de l'Abbé Groult, 75015 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -15402,15 +16077,20 @@
   "photo": "https://bandedecheffes.org/wp-content/plugins/revslider/public/assets/assets/dummy.png",
   "instagram": "bandedecheffes",
   "bookingScan": 1,
-  "cuisine": "Brunch"
+  "cuisine": "Brunch",
+  "aiFill": 1,
+  "phone": "01 45 33 09 13",
+  "summary": "Un lieu engagé mettant à l'honneur des cheffes talentueuses autour d'une cuisine de marché gourmande et créative, dans une ambiance chaleureuse et conviviale.",
+  "lat": 48.841863,
+  "lng": 2.294476
  },
  {
   "id": "precieuses-0-brunch-ferrandi",
   "list": "precieuses",
-  "arr": null,
+  "arr": 6,
   "cat": "Brunch",
   "name": "Ferrandi",
-  "address": "",
+  "address": "28 rue de l'Abbé Grégoire, 75006 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -15421,7 +16101,12 @@
   "instagram": "ferrandiparis",
   "booking": "https://bookings.zenchef.com/results?rid=361807",
   "bookingOk": 2,
-  "cuisine": "Brunch"
+  "cuisine": "Brunch",
+  "aiFill": 1,
+  "phone": "01 49 54 28 28",
+  "summary": "La célèbre école française de gastronomie propose parfois des expériences culinaires d'exception. On y déguste des créations raffinées élaborées par les grands talents de demain dans une atmosphère studieuse et prestigieuse.",
+  "lat": 48.847586,
+  "lng": 2.325338
  },
  {
   "id": "ig-paris-slak",
@@ -15442,7 +16127,8 @@
   "enriched": 5,
   "photo": "https://framerusercontent.com/images/YOmYiqDltDX2LRJlvUGcXgpPO4I.png?width=1968&height=580",
   "phone": "09 62 29 00 94",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-l-infini-cafe",
@@ -15462,7 +16148,8 @@
   "website": "https://cafe.restaurants-de-france.fr",
   "enriched": 5,
   "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-arnaud-nicolas",
@@ -15482,7 +16169,9 @@
   "website": "https://www.arnaudnicolas.paris",
   "enriched": 5,
   "photo": "https://www.arnaudnicolas.paris/site/screenshot/?size_preset=fb&v=1784564856",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 55 59 59"
  },
  {
   "id": "ig-paris-best-bread-boba",
@@ -15498,7 +16187,8 @@
   "instagram": "bestbreadbobaparis",
   "lat": 48.87307,
   "lng": 2.375063,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-patate",
@@ -15518,7 +16208,9 @@
   "website": "https://www.patateparis.com",
   "enriched": 5,
   "photo": "https://www.patateparis.com/assets/img/hero.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 46 33 03 33"
  },
  {
   "id": "ig-paris-le-cochon-a-l-oreille",
@@ -15623,7 +16315,9 @@
   "website": "http://www.pozzetto.biz",
   "enriched": 5,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 77 08 32"
  },
  {
   "id": "ig-paris-berthillon",
@@ -15644,7 +16338,8 @@
   "photo": "https://berthillonparis.com/img/c/12-0_thumb.jpg",
   "phone": "01 43 54 31 61",
   "instagram": "berthillon_officiel",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-la-tropicale",
@@ -15666,7 +16361,8 @@
   "phone": "01 42 16 87 27",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "la_tropicale_glacier"
+  "instagram": "la_tropicale_glacier",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-ristorante-national",
@@ -15684,7 +16380,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "ristorantenational",
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "aiFill": 1,
+  "phone": "01 42 74 84 00"
  },
  {
   "id": "ig-paris-le-cornichon",
@@ -15726,7 +16424,8 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "chezjeannette",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-l-emil-chateau-voltaire",
@@ -15770,7 +16469,9 @@
   "enriched": 5,
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/la-fontaine-gaillon-r820844",
-  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72b79c91a29549a886c_og-fitz-group-evenements.jpg"
+  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72b79c91a29549a886c_og-fitz-group-evenements.jpg",
+  "aiFill": 1,
+  "phone": "01 47 42 63 22"
  },
  {
   "id": "ig-paris-le-petit-bal-perdu",
@@ -15791,7 +16492,8 @@
   "photo": "https://www.lepetitbalperdu.com/Themes/v1/img/instagram-lepetitbalperdu-bistrot.png",
   "phone": "01 47 07 72 47",
   "instagram": "lepetitbalperduparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-wax",
@@ -15807,7 +16509,9 @@
   "instagram": "waxbarparis",
   "lat": 48.877451,
   "lng": 2.351603,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "01 48 24 50 45"
  },
  {
   "id": "ig-paris-vice-versa",
@@ -15827,7 +16531,8 @@
   "website": "https://www.mojitolab.com/",
   "enriched": 5,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-bambino",
@@ -15843,7 +16548,11 @@
   "instagram": "bambino_paris",
   "lat": 48.86136,
   "lng": 2.369831,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "website": "https://www.bambinoparis.com",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-andy-wahloo",
@@ -15864,7 +16573,8 @@
   "enriched": 5,
   "searched": 1,
   "photo": "https://static.wixstatic.com/media/ad9ccd_7a097d6d29e1482e934d9799a3da859d~mv2.png/v1/fill/w_83,h_63,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ad9ccd_7a097d6d29e1482e934d9799a3da859d~mv2.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-mira",
@@ -15907,7 +16617,8 @@
   "enriched": 5,
   "searched": 1,
   "photo": "https://duneparis.fr/wp-content/uploads/sites/21/2026/10/selected-01-natural-wine-pouring-glass-bistro-optimized.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-mishmish",
@@ -15927,7 +16638,8 @@
   "website": "https://www.lapoesia-paris.fr/",
   "enriched": 5,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-la-patate-douce",
@@ -15947,7 +16659,8 @@
   "website": "https://www.lapatatedouceradio.com",
   "enriched": 5,
   "photo": "https://cdn.prod.website-files.com/5e57c92306e4fe1dcb7344ef/5e883dd6a6b2c1025b9fbb60_Visu%20radio%201%20photo.jpeg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-le-discobar",
@@ -15967,7 +16680,8 @@
   "website": "https://www.instagram.com/lediscobar",
   "enriched": 5,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-notre-dame-music-bar",
@@ -15987,7 +16701,8 @@
   "website": "https://notre-dame-music-bar.eventofy.com",
   "enriched": 5,
   "photo": "https://notre-dame-music-bar.eventofy.com/media/notre-dame-music-bar.webp",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-ika",
@@ -16008,7 +16723,8 @@
   "website": "https://ika-restaurant-curry-japonais-paris-10.onataste.fr",
   "enriched": 5,
   "photo": "https://ika-restaurant-curry-japonais-paris-10.onataste.fr/media/ika-restaurant-curry-japonais-paris-10.webp",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-motsuya",
@@ -16030,7 +16746,8 @@
   "phone": "07 83 39 69 56",
   "bookingScan": 1,
   "igSearched": 1,
-  "instagram": "motsuya.paris"
+  "instagram": "motsuya.paris",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-woo-jung",
@@ -16113,7 +16830,8 @@
   "halal": true,
   "lat": 48.871079,
   "lng": 2.335806,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-starving-club",
@@ -16178,7 +16896,8 @@
   "enriched": 5,
   "searched": 1,
   "photo": "https://www.privateaser.com/static/fr/img/thumbnail-privateaser.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-bar-demory",
@@ -16198,7 +16917,8 @@
   "phone": "09 81 12 53 06",
   "website": "https://demoryparis.com/",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-ivy",
@@ -16215,7 +16935,8 @@
   "lat": 48.865497,
   "lng": 2.348112,
   "phone": "01 42 60 22 41",
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-la-poudriere",
@@ -16232,7 +16953,8 @@
   "lat": 48.861691,
   "lng": 2.382408,
   "phone": "09 74 73 56 32",
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-scilicet",
@@ -16271,7 +16993,8 @@
   "lat": 48.865642,
   "lng": 2.376996,
   "phone": "09 74 64 01 34",
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-chope-moi",
@@ -16292,7 +17015,8 @@
   "enriched": 5,
   "photo": "https://chope-moi.fr/images/Design-sans-titre-48.png",
   "phone": "06 51 12 84 97",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-le-153",
@@ -16331,7 +17055,9 @@
   "kasher": true,
   "lat": 48.857161,
   "lng": 2.35949,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "01 42 74 11 39"
  },
  {
   "id": "ig-paris-chez-franck",
@@ -16377,7 +17103,8 @@
   "enriched": 5,
   "photo": "https://doron-restaurants.fr/wp-content/uploads/2020/11/doron-black.png",
   "phone": "01 44 40 28 15",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-too-tac-tac",
@@ -16393,7 +17120,9 @@
   "instagram": "tootactac",
   "lat": 48.825335,
   "lng": 2.382428,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "01 78 90 74 00"
  },
  {
   "id": "ig-paris-le-soixante-douze",
@@ -16434,7 +17163,9 @@
   "website": "https://petitbain.org",
   "enriched": 5,
   "photo": "https://petitbain.org/wp-content/uploads/2026/09/1080-x-1080-v2.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 73 54 79 74"
  },
  {
   "id": "ig-paris-chalet-des-iles",
@@ -16454,7 +17185,9 @@
   "photo": "https://chalet-des-iles.com/wp-content/uploads/2024/02/CDI_Acces_CDI_M_9.svg",
   "booking": "https://bookings.zenchef.com/results?rid=351686&lang=fr",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 42 88 04 69"
  },
  {
   "id": "ig-paris-le-pavillon-des-canaux",
@@ -16475,7 +17208,8 @@
   "enriched": 5,
   "searched": 1,
   "photo": "https://www.pavillondescanaux.com/wp-content/uploads/elementor/thumbs/PAVILLON_DES_CANAUX_DETAIL_VERRIERE_11-scaled-rc6qezwnqesr7y73qbcg3a8ll414zzvv97pdwutylk.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-autour-de-paris-polpo",
@@ -16564,7 +17298,9 @@
   "booking": "https://www.thefork.fr/restaurant/belushi-s-canal-r417735",
   "website": "https://belushis.com",
   "enriched": 5,
-  "photo": "https://belushis.com/wp-content/uploads/2023/08/BELUSHIS-White.webp"
+  "photo": "https://belushis.com/wp-content/uploads/2023/08/BELUSHIS-White.webp",
+  "aiFill": 1,
+  "phone": "01 40 34 34 40"
  },
  {
   "id": "ig-paris-ciel-les-maquereaux",
@@ -16580,7 +17316,9 @@
   "instagram": "cielesmaquereaux",
   "lat": 48.854884,
   "lng": 2.353972,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "01 42 72 91 38"
  },
  {
   "id": "ig-paris-francette",
@@ -16599,7 +17337,11 @@
   "phone": "06 68 94 26 82",
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/francette-r711098",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "website": "https://www.francette.paris",
+  "enriched": 5,
+  "photo": "https://cdn.prod.website-files.com/65cfd65e40a11657644709a5/68fb3b828addf2ba51ac3057_banniere%20francette%20tour%20eiffel.jpg"
  },
  {
   "id": "ig-paris-chalet-des-iles-daumesnil",
@@ -16620,7 +17362,9 @@
   "enriched": 5,
   "photo": "https://chalet-des-iles.com/wp-content/uploads/2024/02/CDI_Acces_CDI_M_9.svg",
   "booking": "https://bookings.zenchef.com/results?rid=351686&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 43 07 00 00"
  },
  {
   "id": "ig-autour-de-paris-quai-ouest",
@@ -16659,7 +17403,12 @@
   "lat": 48.866225,
   "lng": 2.304357,
   "searched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 53 67 66 65",
+  "website": "https://www.dorchestercollection.com/fr/paris/hotel-plaza-athenee/restaurants-bars/la-cour-jardin",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-riviera-paris",
@@ -16676,7 +17425,9 @@
   "lat": 48.873351,
   "lng": 2.307241,
   "searched": 1,
-  "cuisine": "Poisson & fruits de mer"
+  "cuisine": "Poisson & fruits de mer",
+  "aiFill": 1,
+  "phone": "01 58 36 07 50"
  },
  {
   "id": "ig-paris-nonos",
@@ -16693,7 +17444,9 @@
   "lat": 48.867901,
   "lng": 2.321341,
   "searched": 1,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "aiFill": 1,
+  "phone": "01 44 94 36 00"
  },
  {
   "id": "ig-paris-wukong-temple",
@@ -16712,7 +17465,8 @@
   "searched": 1,
   "website": "https://wukong-temple.wheree.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-la-kave-du-fromager",
@@ -16729,7 +17483,9 @@
   "kasher": true,
   "lat": 48.851733,
   "lng": 2.390628,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "phone": "01 43 48 94 92"
  },
  {
   "id": "ig-autour-de-paris-le-bazar",
@@ -16797,7 +17553,8 @@
   "enriched": 5,
   "photo": "https://cdn.menu-world.com/flavio/3.jpg",
   "phone": "01 45 74 68 11",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-chez-alain-miam-miam",
@@ -16817,7 +17574,8 @@
   "enriched": 5,
   "photo": "https://chezalainmiammiam.com/wp-content/uploads/2025/10/chez-alain-miam-miam_1.jpg",
   "instagram": "lebouclard.paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-il-gelato-del-marchese",
@@ -16838,7 +17596,8 @@
   "enriched": 5,
   "searched": 1,
   "photo": "https://starterlab.xyz/xcn/bos88-5.webp",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-cookidiction",
@@ -16859,7 +17618,8 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/a9db16_c720eee09b4942d2bd982180e7a36c71~mv2.jpg",
   "phone": "06 25 11 22 36",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-villa-maasai",
@@ -16877,7 +17637,13 @@
   "lat": 48.871533,
   "lng": 2.338447,
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 42 63 05 31",
+  "instagram": "villamaasai",
+  "website": "https://villamaasai.fr",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "ig-paris-a-xin",
@@ -16894,7 +17660,8 @@
   "halal": true,
   "lat": 48.866337,
   "lng": 2.350884,
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-darkoum",
@@ -16936,7 +17703,8 @@
   "website": "https://kintarogroup.com/udon-jubey/",
   "enriched": 5,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-paris-princess-crepe",
@@ -16957,7 +17725,8 @@
   "enriched": 5,
   "photo": "https://princess-crepe.onataste.fr/media/princess-crepe.webp",
   "phone": "07 66 87 43 10",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "ig-autour-de-paris-sushi-ken",
@@ -16975,7 +17744,8 @@
   "lng": 2.283359,
   "searched": 1,
   "igSearched": 1,
-  "instagram": "sushi.ken"
+  "instagram": "sushi.ken",
+  "aiFill": 1
  },
  {
   "id": "ig-paris-chez-meilan",
