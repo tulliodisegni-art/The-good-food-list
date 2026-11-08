@@ -5,8 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Appeler la fonction ia
+      - name: Appeler la fonction ia avec un lien Instagram
         run: |
           URL=$(jq -r .avis.url data/config.json); KEY=$(jq -r .avis.key data/config.json)
-          curl -sS -m 90 -X POST "$URL/functions/v1/ia" -H "apikey: $KEY" -H "content-type: application/json" \
-            -d '{"prompt":"Réponds juste en JSON {\"name\":\"\",\"address\":\"\"} pour le restaurant Big Mamma East Mamma à Paris.","web":true}' -w "\nHTTP %{http_code}\n"
+          LINK="https://www.instagram.com/reel/DfcsBWXoEjN/"
+          P='Identifie le lieu présenté dans cette publication Instagram. Le compte qui publie est souvent un média food, pas le lieu. Ne propose jamais un lieu au hasard : sans indice clair, laisse name vide. Réponds uniquement en JSON {"name":"","address":"","cat":"","summary":"","doubt":""}. Lien : '"$LINK"
+          BODY=$(jq -n --arg p "$P" --arg l "$LINK" '{prompt:$p, link:$l, job:"test-verif", web:true}')
+          time curl -sS -m 150 -X POST "$URL/functions/v1/ia" -H "apikey: $KEY" -H "content-type: application/json" -d "$BODY" -w "\nHTTP %{http_code}\n"
+          sleep 3
+          curl -sS "$URL/rest/v1/lectures?id=eq.test-verif&select=id,error" -H "apikey: $KEY"; echo
+      - name: Légende Instagram vue depuis GitHub
+        run: |
+          curl -sS -m 10 -A "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)" "https://www.instagram.com/p/DfcsBWXoEjN/embed/captioned/" | grep -o 'class="Caption".\{0,600\}' | head -3 || echo "pas de légende"
