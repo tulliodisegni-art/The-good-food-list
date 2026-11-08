@@ -61,7 +61,9 @@ const euros = (n) => (n ? "€".repeat(n) : "");
 function rebuild() {
   // Une adresse publiée pour tous arrive dans la liste commune : sa copie locale s'efface.
   const ids = new Set(S.base.map((p) => p.id));
+  const hide = new Set(store.get("masques", []));
   let custom = store.get("custom", []);
+  if (custom.some((p) => hide.has(p.id))) { custom = custom.filter((p) => !hide.has(p.id)); store.set("custom", custom); }
   const edits = store.get("edits", {});
   if (custom.some((p) => ids.has(p.id))) {
     for (const p of custom.filter((c) => ids.has(c.id))) {

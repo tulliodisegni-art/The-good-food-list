@@ -715,7 +715,10 @@ addEventListener("hashchange", () => { if (location.hash !== "#carte" && RT.id) 
 // Elles s'ajoutent tout de suite à la liste commune, avant même la prochaine mise en ligne.
 async function loadShared() {
   try {
-    if (!AVIS.url) Object.assign(AVIS, (await (await fetch("data/config.json", { cache: "no-cache" })).json()).avis || {});
+    const conf = await (await fetch("data/config.json", { cache: "no-cache" })).json().catch(() => ({}));
+    if (!AVIS.url) Object.assign(AVIS, conf.avis || {});
+    // Fiches partagées retirées après coup (erreur de lecture…).
+    if (Array.isArray(conf.masques)) store.set("masques", conf.masques);
     if (!AVIS.url) return;
     const ctl = new AbortController(); setTimeout(() => ctl.abort(), 4000);
     const r = await fetch(`${AVIS.url}/rest/v1/ajouts?select=place,created_at&order=created_at.asc&limit=5000`, { headers: sbHead(), signal: ctl.signal });
@@ -726,8 +729,11 @@ async function loadShared() {
   } catch { mergeShared(store.get("sharedCache", [])); }
 }
 function mergeShared(rows) {
+  const hide = new Set(store.get("masques", []));
+  S.base = S.base.filter((p) => !hide.has(p.id));
   const have = new Map(S.base.map((p) => [p.id, p]));
   for (const p of rows) {
+    if (hide.has(p.id)) continue;
     // La version enrichie par la mise en ligne garde la priorité.
     if (!have.has(p.id)) { const q = { ...p, shared: true }; S.base.push(q); have.set(p.id, q); }
   }
