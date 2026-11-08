@@ -117,3 +117,49 @@ for (let i = 0; i < todo.length && calls < MAX; i += PER) {
   await new Promise((ok) => setTimeout(ok, 5000));
 }
 console.log(`${calls} appels, ${filled} fiches complétées`);
+
+// Réservation : pour les lieux sans lien de résa, on note comment on réserve
+// ("telephone" = par téléphone seulement, "sans" = sans réservation, "inconnu" = pas de résa en ligne trouvée).
+const RESA = 8;
+const noBook = places.filter((p) => !p.booking && !p.resa);
+console.log(`${noBook.length} lieux sans lien de réservation`);
+let fails2 = 0;
+for (let i = 0; i < noBook.length && calls < MAX; i += RESA) {
+  const batch = noBook.slice(i, i + RESA);
+  calls++;
+  const items = batch.map((p) => ({ id: p.id, nom: p.name, type: p.cat || "", lieu: p.address || p.city || "Paris", site: p.website || "" }));
+  const prompt = `Pour chacun de ces lieux (restos, bars, sorties), cherche sur le web comment on réserve.
+Réponds "en_ligne" avec le lien direct de réservation (TheFork, Zenchef, SevenRooms, page Réserver du site…) s'il existe,
+"telephone" si on réserve seulement par téléphone, "sans" si le lieu ne prend pas de réservation (premier arrivé, premier servi),
+ou "" si tu ne trouves pas d'info fiable. Vérifie que c'est bien CE lieu. N'invente jamais de lien.
+Lieux :
+${JSON.stringify(items, null, 1)}
+Réponds uniquement avec un tableau JSON : [{"id": "", "resa": "en_ligne|telephone|sans|", "booking": ""}]`;
+  let res;
+  try {
+    const r = await fetch(`${conf.url}/functions/v1/ia`, { method: "POST", headers: { apikey: conf.key, "content-type": "application/json" }, body: JSON.stringify({ prompt, web: true }) });
+    const out = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(out.error || `erreur ${r.status}`);
+    const t = String(out.text || "");
+    res = JSON.parse(t.slice(t.indexOf("["), t.lastIndexOf("]") + 1));
+  } catch (e) {
+    console.log(`résa lot : ${e.message.slice(0, 300)}`);
+    if (++fails2 >= 4) break;
+    await new Promise((ok) => setTimeout(ok, 65000));
+    i -= RESA;
+    continue;
+  }
+  fails2 = 0;
+  for (const p of batch) {
+    const r = (Array.isArray(res) ? res : []).find((x) => x && x.id === p.id) || {};
+    let mode = ["telephone", "sans"].includes(r.resa) ? r.resa : "inconnu";
+    if (r.resa === "en_ligne" && isUrl(r.booking) && BOOKING.test(r.booking)) {
+      const g = await get(r.booking);
+      if (g && (g.status < 400 || g.status === 403)) { p.booking = r.booking; mode = ""; }
+    }
+    if (mode) p.resa = mode;
+    console.log(`${p.name} : ${p.booking ? "résa en ligne" : mode}`);
+  }
+  await writeFile(FILE, JSON.stringify(places, null, 1));
+  await new Promise((ok) => setTimeout(ok, 5000));
+}

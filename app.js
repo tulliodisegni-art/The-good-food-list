@@ -373,6 +373,8 @@ function openSheet(id, keepScroll) {
         ${p.phone ? `<a class="q" href="${esc(L.call)}">${icon("phone")}<span>Appeler</span></a>`
           : `<button class="q missing" data-need="phone">${icon("phone")}<span>Appeler</span><i>+ numéro</i></button>`}
         ${p.booking ? `<a class="q" href="${esc(p.booking)}" target="_blank" rel="noopener">${icon("book")}<span>Réserver</span></a>`
+          : p.resa === "sans" ? `<span class="q off">${icon("book")}<span>Sans résa</span><i>premier arrivé</i></span>`
+          : (p.resa === "telephone" || p.resa === "inconnu") && p.phone ? `<a class="q" href="${esc(L.call)}">${icon("book")}<span>Réserver</span><i>par tél.</i></a>`
           : `<button class="q missing" data-need="booking">${icon("book")}<span>Réserver</span><i>+ lien</i></button>`}
         <a class="q" href="${esc(L.menu)}" target="_blank" rel="noopener">${icon("menu")}<span>Menu</span></a>
         ${igHandle(p) ? `<button class="q" data-ig="${esc(igHandle(p))}">${icon("insta")}<span>Instagram</span></button>`
@@ -421,7 +423,11 @@ function openSheet(id, keepScroll) {
         <div class="block-head"><h3>Infos</h3><button class="link-btn" data-editinfo>${icon("pencil")}Compléter</button></div>
         ${infoRow("phone", "Téléphone", p.phone, p.phone ? L.call : "")}
         ${infoRow("clock", "Horaires", p.hours, "")}
-        ${infoRow("book", "Réservation", p.booking ? "Lien de réservation" : "", p.booking)}
+        ${p.booking ? infoRow("book", "Réservation", "Réserver en ligne", p.booking)
+          : p.resa === "sans" ? infoRow("book", "Réservation", "Ne prend pas de réservation (premier arrivé, premier servi)", "")
+          : p.resa === "telephone" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : par téléphone uniquement" : "Par téléphone uniquement", p.phone ? L.call : "")
+          : p.resa === "inconnu" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : appelle pour réserver" : "Pas de réservation en ligne", p.phone ? L.call : "")
+          : infoRow("book", "Réservation", "", "")}
         ${infoRow("menu", "Menu", p.menu ? "Voir le menu" : "", p.menu)}
         ${infoRow("insta", "Instagram", igHandle(p) ? "@" + igHandle(p) : "", igHandle(p) ? L.insta : "")}
         ${p.source && p.source !== L.insta ? infoRow("insta", "Publication", "Voir la publication", p.source) : ""}
