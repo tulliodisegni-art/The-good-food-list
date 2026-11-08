@@ -30,6 +30,12 @@ jobs:
           node-version: 20
       - name: Assembler les listes (notes + adresses publiées depuis l'appli)
         run: python3 scripts/build_data.py
+      - name: Compléter les fiches avec l'IA (adresse, téléphone, réservation, photo…)
+        continue-on-error: true
+        timeout-minutes: 30
+        env:
+          AI_MAX: ${{ vars.AI_MAX || '60' }}
+        run: node scripts/fill_ai.mjs
       - name: Placer les adresses sur la carte
         run: node scripts/geocode.mjs
       - name: Téléphones et sites depuis OpenStreetMap

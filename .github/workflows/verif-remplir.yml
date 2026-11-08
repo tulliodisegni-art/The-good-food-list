@@ -1,0 +1,11 @@
+name: Tester le remplissage IA
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: AI_MAX=3 node scripts/fill_ai.mjs
+      - run: git diff --stat; git diff data/places.json | grep '^[+-] ' | head -80
