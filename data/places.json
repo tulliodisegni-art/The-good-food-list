@@ -3603,7 +3603,9 @@
   "igSearched": 1,
   "instagram": "kokodak_paris",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "lat": 48.853995,
+  "lng": 2.339148
  },
  {
   "id": "paris-6-indien-desi-road",
@@ -4439,7 +4441,8 @@
   "instagram": "gala__paris",
   "aiFill": 1,
   "phone": "01 42 89 00 00",
-  "summary": "Un restaurant oriental festif et immersif situé à deux pas des Champs-Élysées, proposant une cuisine génératrice de partages dans une ambiance envoûtante et musicale."
+  "summary": "Un restaurant oriental festif et immersif situé à deux pas des Champs-Élysées, proposant une cuisine génératrice de partages dans une ambiance envoûtante et musicale.",
+  "enriched": 5
  },
  {
   "id": "paris-8-cacher-le-kavod",
@@ -6567,7 +6570,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "booking": "https://www.opentable.fr/restref/client/?restref=393372&lang=fr-FR",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un spot chaleureux et gourmand idéal pour déguster des pancakes moelleux et des brunchs généreux faits maison. L'ambiance y est cosy et conviviale, parfaite pour un moment de détente."
  },
  {
   "id": "paris-10-cafe-le-cafe-bistrot",
@@ -6588,7 +6593,9 @@
   "website": "https://bistro.restaurants-de-france.fr",
   "photo": "https://bistro.restaurants-de-france.fr/assets/images/banner.jpg",
   "phone": "09 72 73 28 76",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un café-bistrot traditionnel aux accents parisiens proposant des classiques de la cuisine française dans une ambiance vivante et authentique. Idéal pour un café en terrasse ou un repas décontracté."
  },
  {
   "id": "paris-10-cafe-immersion",
@@ -6610,7 +6617,10 @@
   "priceSrc": "estim",
   "halal": true,
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 42 08 55 64",
+  "summary": "Un coffee shop lumineux et tendance qui met à l'honneur des brunchs colorés, des pâtisseries savoureuses et des lattes créatifs. L'atmosphère y est moderne, chaleureuse et très accueillante."
  },
  {
   "id": "paris-10-cafe-residence-kann",
@@ -6630,7 +6640,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "instagram": "residence_kann",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un concept hybride mêlant design scandinave, espace d'exposition et café de quartier. On y savoure de délicieuses boissons chaudes dans une ambiance épurée, artistique et intimiste."
  },
  {
   "id": "paris-11-francais-maison-breguet",
@@ -6651,7 +6663,11 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "maisonbreguet",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 58 28 61 90",
+  "booking": "https://module.lafourchette.com/fr_FR/module/701042-4f3f2",
+  "summary": "Un restaurant bistronomique élégant et lumineux qui propose une cuisine de saison raffinée dans une ambiance chaleureuse. Idéal pour un déjeuner intimiste ou un dîner feutré."
  },
  {
   "id": "paris-11-francais-blue-rooster",
@@ -6669,7 +6685,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "blue_rooster_eu"
+  "instagram": "blue_rooster_eu",
+  "aiFill": 1,
+  "phone": "01 43 57 32 12",
+  "summary": "Un bistrot chaleureux et convivial au cœur du 11e arrondissement, idéal pour savourer une cuisine française réconfortante. On y vient pour son ambiance décontractée et ses plats faits maison."
  },
  {
   "id": "paris-11-francais-brasserie-martin",
@@ -6690,7 +6709,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une grande brasserie populaire et festive signée Nouvelle Garde, avec une belle verrière et des plats faits maison ultra sourcés. Ne manquez pas leurs saucisses-purée légendaires et leurs desserts généreux."
  },
  {
   "id": "paris-11-francais-taem",
@@ -6708,7 +6729,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "taem_boucherierestaurant"
+  "instagram": "taem_boucherierestaurant",
+  "aiFill": 1,
+  "phone": "01 47 00 28 78",
+  "summary": "Une boucherie-restaurant de quartier engagée qui propose des viandes d'exception cuisinées avec soin. L'ambiance y est conviviale et authentique, parfaite pour les amateurs de bons produits."
  },
  {
   "id": "paris-11-francais-city-barbecue",
@@ -6728,7 +6752,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "citybarbecue",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 79 38 49",
+  "summary": "Un restaurant chaleureux aux accents américains et français proposant de savoureuses viandes fumées et grillées dans une ambiance conviviale."
  },
  {
   "id": "paris-11-francais-mamie-bidoche",
@@ -6747,7 +6774,11 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "09 81 23 52 46",
+  "instagram": "mamiebidoche",
+  "summary": "Une belle table dédiée aux amateurs de viande de qualité et de terroir, dans une ambiance chaleureuse et rétro."
  },
  {
   "id": "paris-11-francais-diggity",
@@ -6771,7 +6802,9 @@
   "instagram": "diggity.paris",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=353674&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un bistrot de quartier chaleureux et décontracté où l'on déguste une cuisine française réconfortante et des burgers maison."
  },
  {
   "id": "paris-11-francais-chez-francois",
@@ -6792,7 +6825,9 @@
   "priceSrc": "estim",
   "kasher": true,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse conviviale proposant une cuisine traditionnelle dans une ambiance simple et chaleureuse du 11e arrondissement."
  },
  {
   "id": "paris-11-francais-l-echoppe",
@@ -6814,7 +6849,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "echoppedeparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "L'Échoppe de Paris propose une cuisine française raffinée et de saison, élaborée avec des produits frais. L'ambiance y est chaleureuse et intimiste, idéale pour un dîner convivial."
  },
  {
   "id": "paris-11-francais-dadou",
@@ -6835,7 +6872,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "dadou_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Dadou propose une cuisine française bistronomique créative et soignée dans un cadre chaleureux et élégant. On y savoure des plats faits maison aux saveurs subtiles dans une ambiance intime et conviviale."
  },
  {
   "id": "paris-11-italien-giorgio",
@@ -6857,7 +6896,9 @@
   "phone": "06 44 64 34 86",
   "igSearched": 1,
   "instagram": "giorgioparispainter",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Giorgio propose de savoureuses spécialités italiennes et des pizzas généreuses dans une ambiance festive et colorée. Un lieu idéal pour partager un moment gourmand et animé au cœur du 11e arrondissement."
  },
  {
   "id": "paris-11-italien-pupetta-beaumarchais",
@@ -6874,7 +6915,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "paris-11-italien-itaglio",
@@ -6892,7 +6934,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "itaglio.paris19"
+  "instagram": "itaglio.paris19",
+  "aiFill": 1,
+  "summary": "Une adresse chaleureuse proposant des spécialités italiennes authentiques et généreuses dans une ambiance conviviale."
  },
  {
   "id": "paris-11-italien-gruppomimo",
@@ -6914,7 +6958,9 @@
   "priceSrc": "estim",
   "photo": "https://cdn.prod.website-files.com/64e75b64860b4e3dc128e525/65119b5dd646650a12c99c62_pola-souvenir-1.webp",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un cadre branché et solaire pour savourer des pâtes fraîches faites maison et des pizzas napolitaines savoureuses."
  },
  {
   "id": "paris-11-italien-origini",
@@ -6935,7 +6981,9 @@
   "photo": "https://originiresto.com/wp-content/uploads/2025/04/Tagliatelle-al-pesto-trapanese-2-ristorante-italiano-restaurant-france-paris-italian-food-manger-italien.webp#787",
   "phone": "07 67 38 10 33",
   "instagram": "originiresto",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant italien raffiné qui met à l'honneur des produits de terroir sourcés avec soin et des recettes traditionnelles revisitées."
  },
  {
   "id": "paris-11-espagnol-rainbao",
@@ -6956,7 +7004,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "rainbaoparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un lieu original aux influences ibériques et fusion, idéal pour partager des tapas créatives dans une ambiance détendue."
  },
  {
   "id": "paris-11-americain-brother-sister",
@@ -6977,7 +7027,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un lieu chaleureux et convivial aux influences new-yorkaises, idéal pour déguster des plats réconfortants et des burgers faits maison dans une ambiance décontractée."
  },
  {
   "id": "paris-11-burger-31-street-burgers",
@@ -6996,7 +7048,11 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "09 81 29 42 27",
+  "instagram": "31streetburgers",
+  "summary": "Un spot incontournable pour les amateurs de smash burgers généreux, préparés avec des produits frais dans une ambiance urbaine et branchée."
  },
  {
   "id": "paris-11-burger-goiko",
@@ -7017,7 +7073,10 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 43 57 20 89",
+  "summary": "Connu pour ses burgers gourmands d'inspiration vénézuélienne, Goiko propose des pièces généreuses et savoureuses dans une atmosphère festive et dynamique."
  },
  {
   "id": "paris-11-burger-cut",
@@ -7038,7 +7097,10 @@
   "priceSrc": "estim",
   "halal": true,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 40 24 07 43",
+  "summary": "Une adresse de street food de qualité mettant à l'honneur des smash burgers croustillants et juteux, à savourer dans un cadre simple et moderne."
  },
  {
   "id": "paris-11-burger-le-camion-qui-fume",
@@ -7059,7 +7121,9 @@
   "priceSrc": "estim",
   "photo": "https://i0.wp.com/lecamionquifume.com/wp-content/uploads/camion-Signature-3.png?resize=480%2C211&ssl=1",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Pionnier du burger gourmet à Paris, ce spot régale avec ses smash burgers juteux et ses frites maison dans une ambiance décontractée et rock."
  },
  {
   "id": "paris-11-burger-gomu",
@@ -7079,7 +7143,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "gomu.fr",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un concept original de burgers aux influences asiatiques, avec notamment des buns colorés et croustillants. L'ambiance y est jeune, branchée et urbaine."
  },
  {
   "id": "paris-11-burger-seizemetrescarres",
@@ -7099,7 +7165,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "seizemetrescarres_",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un tout petit espace chaleureux qui propose d'excellents burgers faits maison avec des produits frais et sourcés. L'ambiance est intimiste et conviviale."
  },
  {
   "id": "paris-11-burger-wakam",
@@ -7119,7 +7187,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "wakam___",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Des smash burgers savoureux et généreux préparés avec soin dans un cadre moderne et accueillant. Une adresse incontournable du quartier pour les amateurs de comfort food."
  },
  {
   "id": "paris-11-burger-crispy-soul",
@@ -7139,7 +7209,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "crispysoul.fr",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 73 50 16",
+  "summary": "Un spot chaleureux spécialisé dans les burgers au poulet frit ultra-croustillant, idéal pour les amateurs de comfort food. L'ambiance y est décontractée et conviviale, parfaite pour un repas gourmand sur le pouce."
  },
  {
   "id": "paris-11-burger-break-moment",
@@ -7159,7 +7232,9 @@
   "website": "https://break-moment.wheree.com",
   "igSearched": 1,
   "instagram": "breakmoment_",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse incontournable pour déguster des smash burgers généreux accompagnés de frites maison croustillantes. L'atmosphère jeune et urbaine invite à partager un moment gourmand et sans chichis."
  },
  {
   "id": "paris-11-japonais-sushi-first",
@@ -7178,7 +7253,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "instagram": "sushi_first_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "09 82 56 38 88",
+  "summary": "Un restaurant japonais proposant des sushis, makis et sashimis préparés avec des produits frais. Le cadre intimiste et épuré offre une parenthèse relaxante au cœur du 11e arrondissement."
  },
  {
   "id": "paris-11-japonais-sushi-rainbow",
@@ -7201,7 +7279,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "restaurant_sushirainbow",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse chaleureuse dédiée aux classiques de la cuisine japonaise, avec des plateaux de sushis colorés et savoureux. L'ambiance cosy et accueillante est idéale pour un déjeuner ou un dîner détendu près de la place de la Bastille."
  },
  {
   "id": "paris-11-japonais-superbao",
@@ -7222,7 +7302,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/superbao-bastille-r853585",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 48 05 91 19",
+  "summary": "Un spot chaleureux et décontracté où l'on déguste d'excellents gua baos moelleux garnis de saveurs fusion. L'ambiance y est moderne et conviviale, idéale pour un déjeuner rapide ou un dîner entre amis."
  },
  {
   "id": "paris-11-japonais-yoruparis",
@@ -7243,7 +7326,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "yoruparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un lieu hybride et branché qui mêle influences japonaises et atmosphère nocturne parisienne. On y profite d'une ambiance feutrée et musicale, parfaite pour siroter des cocktails originaux."
  },
  {
   "id": "paris-11-japonais-aoba",
@@ -7259,7 +7344,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "aoba.paris"
+  "instagram": "aoba.paris",
+  "aiFill": 1,
+  "summary": "Un salon de thé et café japonais intimiste proposant des pâtisseries délicates et des spécialités nippones réconfortantes. L'ambiance y est calme, lumineuse et propice à la détente."
  },
  {
   "id": "paris-11-chinois-bao-express",
@@ -7280,7 +7367,10 @@
   "priceSrc": "estim",
   "photo": "https://images.squarespace-cdn.com/content/v1/5b4f5ffdf2e6b138b10acbc3/5858e6ba-77ef-4828-a8f0-539ccd1b5ad5/Gros+Bao+TEST.jpg?format=2500w",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 43 55 97 00",
+  "summary": "Une cantine branchée aux airs de diner hongkongais rétro signée Bao Express. On y savoure des baos généreux, des dim sum faits maison et des douceurs décadentes dans une ambiance ultra-animée."
  },
  {
   "id": "paris-11-chinois-hibao",
@@ -7298,7 +7388,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "hibao___"
+  "instagram": "hibao___",
+  "aiFill": 1,
+  "phone": "09 81 25 15 30",
+  "summary": "Un charmant comptoir spécialisé dans les nouilles chinoises et les raviolis faits maison. L'ambiance y est chaleureuse et intimiste."
  },
  {
   "id": "paris-11-chinois-mala-boom",
@@ -7320,7 +7413,9 @@
   "priceSrc": "estim",
   "photo": "https://images.squarespace-cdn.com/content/v1/62600ddb33c86a7e2d9910f4/ab436056-853e-4812-9198-5f81072e2c67/IMG_4016.jpg?format=2500w",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Le paradis du Mala Xiangguo à Paris, où l'on compose son wok sur mesure aux saveurs piquantes et parfumées. L'ambiance est jeune, branchée et vibrante."
  },
  {
   "id": "paris-11-coreen-la-cantine-coreenne",
@@ -7341,7 +7436,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "lacantinecoreenne",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 57 88 56",
+  "summary": "Une adresse incontournable pour déguster des spécialités coréennes authentiques comme le bibimbap et le poulet frit. L'ambiance est conviviale et décontractée."
  },
  {
   "id": "paris-11-oriental-chakchouka",
@@ -7363,7 +7461,9 @@
   "priceSrc": "estim",
   "halal": true,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une cantine chaleureuse mettant à l'honneur des plats orientaux savoureux et réconfortants. L'ambiance y est familiale, simple et accueillante."
  },
  {
   "id": "paris-11-oriental-bladi",
@@ -7383,7 +7483,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "bladi_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "09 82 29 27 05",
+  "summary": "Un voyage culinaire au cœur du Maroc dans une ambiance chaleureuse et familiale. On y savoure d'excellents tajines et des couscous généreux."
  },
  {
   "id": "paris-11-oriental-nour",
@@ -7405,7 +7508,10 @@
   "kasher": true,
   "halal": true,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 38 31 82",
+  "summary": "Un comptoir oriental branché et convivial qui revisite les classiques du genre. Idéal pour partager des mezzés savoureux dans une atmosphère décontractée."
  },
  {
   "id": "paris-11-israelien-soumsoum",
@@ -7425,7 +7531,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "soumsoum_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "09 52 32 30 70",
+  "summary": "Une adresse incontournable pour déguster des houmous ultra-onctueux et des falafels croustillants. L'ambiance y est chaleureuse, colorée et résolument conviviale."
  },
  {
   "id": "paris-11-libanais-les-freres-hummus",
@@ -7442,7 +7551,10 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "instagram": "lesfrereshummus"
+  "instagram": "lesfrereshummus",
+  "aiFill": 1,
+  "phone": "09 81 25 80 84",
+  "summary": "Un spot chaleureux dédié aux saveurs du Levant, où l'on déguste des houmous faits maison déclinés sous toutes les formes. L'ambiance y est conviviale et décontractée."
  },
  {
   "id": "paris-11-thailandais-maythai",
@@ -7464,7 +7576,9 @@
   "priceSrc": "estim",
   "photo": "https://maythai.fr/wp-content/uploads/2025/12/Maythai-1-300x300.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant thaïlandais chaleureux qui propose des classiques savoureux et parfumés, parfaits pour un déjeuner ou un dîner dépaysant. L'ambiance y est conviviale et décontractée au cœur du 11e arrondissement."
  },
  {
   "id": "paris-11-philippin-bobi",
@@ -7486,7 +7600,9 @@
   "priceSrc": "estim",
   "photo": "https://www.bobiparis.com/wp-content/uploads/2019/10/Fichier-1.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse unique mettant à l'honneur la cuisine philippine avec des plats à partager audacieux et réconfortants. L'ambiance de ce bar-restaurant de la rue Oberkampf est résolument branchée et animée."
  },
  {
   "id": "paris-11-fusion-savane-mousson",
@@ -7508,7 +7624,9 @@
   "priceSrc": "estim",
   "photo": "https://cdn.prod.website-files.com/67f4fc09ecc405626e114dd0/682b082788448dbcc468c4c9_bento-sm.webp",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une table fusion originale mariant avec brio les saveurs d'Afrique et d'Asie dans des assiettes créatives et pleines de peps. On y profite d'une ambiance chaleureuse, moderne et intimiste."
  },
  {
   "id": "paris-11-fusion-laia",
@@ -7525,7 +7643,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "laia_restaurant",
-  "phone": "09 75 65 27 21"
+  "phone": "09 75 65 27 21",
+  "aiFill": 1,
+  "summary": "Un magnifique restaurant aux inspirations méditerranéennes doté d'un incroyable jardin caché en plein Paris. On y savoure des plats fusion gorgés de soleil dans une ambiance végétale et bohème très dépaysante."
  },
  {
   "id": "paris-11-brunch-kafkaf",
@@ -7545,7 +7665,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un spot chaleureux aux accents levantins idéal pour déguster des shakshukas savoureuses et des pâtisseries maison. L'ambiance y est conviviale, parfaite pour un brunch gourmand entre amis."
  },
  {
   "id": "paris-11-brunch-clint",
@@ -7563,7 +7685,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "clint_paris"
+  "instagram": "clint_paris",
+  "aiFill": 1,
+  "summary": "Un restaurant cosy et lumineux proposant une cuisine maison généreuse, avec de délicieux burgers et des pancakes moelleux. L'ambiance détendue et branchée en fait une adresse incontournable du quartier."
  },
  {
   "id": "paris-11-brunch-unreve",
@@ -7586,7 +7710,9 @@
   "igSearched": 1,
   "instagram": "aunreve",
   "booking": "https://www.opentable.fr/booking/restref/availability?lang=fr-FR&restRef=405672",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un coffee shop raffiné aux influences franco-asiatiques proposant des créations originales comme des lattes signature et des pâtisseries aériennes. L'atmosphère y est douce, moderne et propice à la détente."
  },
  {
   "id": "paris-11-brunch-l-atelier-saisonnier",
@@ -7607,7 +7733,9 @@
   "enriched": 5,
   "photo": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2025_LL.png",
   "instagram": "lateliersaisonnier",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un lieu chaleureux et authentique axé sur des produits frais et de saison pour des brunchs copieux et savoureux. On y apprécie l'ambiance de quartier décontractée et le café de grande qualité."
  },
  {
   "id": "paris-11-cafe-joa",
@@ -7626,7 +7754,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "instagram": "cafejoaparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un café chaleureux d'inspiration coréenne où l'on déguste de délicieuses pâtisseries maison et des boissons originales dans une ambiance douce et épurée."
  },
  {
   "id": "paris-11-cafe-cafe-mareva",
@@ -7648,7 +7778,9 @@
   "priceSrc": "estim",
   "photo": "https://static.wixstatic.com/media/c470d3_859b93da9f6c4bcd9c8d5392ce8ea08e~mv2.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Le paradis du sans gluten et du brunch gourmand, idéal pour savourer des gaufres salées ou sucrées dans une atmosphère cosy et lumineuse."
  },
  {
   "id": "paris-11-cafe-cafe-du-temple",
@@ -7670,7 +7802,9 @@
   "priceSrc": "estim",
   "photo": "https://cafedutemple.fr/images/img1_temple.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un café de quartier convivial et branché, parfait pour boire un verre en terrasse ou déguster des plats réconfortants dans une ambiance animée."
  },
  {
   "id": "paris-11-cafe-cafe-mericourt",
@@ -7690,7 +7824,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "cafemericourt",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse incontournable pour un brunch aux accents méditerranéens et ensoleillés, à déguster dans un décor lumineux et végétalisé."
  },
  {
   "id": "paris-11-cafe-le-charbon",
@@ -7712,7 +7848,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "charbonmdg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Institution emblématique de la rue Oberkampf au décor Belle Epoque classé, on y vient pour savourer des plats de brasserie traditionnelle dans une ambiance animée et artistique."
  },
  {
   "id": "paris-11-cafe-pompom-coffice",
@@ -7730,7 +7868,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "pompom.paris"
+  "instagram": "pompom.paris",
+  "aiFill": 1,
+  "summary": "Un espace chaleureux à mi-chemin entre le coffee shop et l'espace de coworking, idéal pour déguster des pâtisseries maison tout en travaillant dans une atmosphère cosy."
  },
  {
   "id": "paris-11-cafe-on-partage",
@@ -7747,7 +7887,9 @@
   "instagram": "onpartage",
   "price": 1,
   "priceSrc": "estim",
-  "searched": 1
+  "searched": 1,
+  "aiFill": 1,
+  "summary": "Un lieu convivial et familial du 11e arrondissement, parfait pour partager des plats faits maison et des douceurs dans une ambiance chaleureuse de quartier."
  },
  {
   "id": "paris-11-bar-a-cocktails-carre-voltaire",
@@ -7766,7 +7908,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "instagram": "lecarrevoltaire",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un bar branché du boulevard Voltaire proposant des cocktails signatures créatifs accompagnés de tapas, le tout dans un cadre moderne et feutré."
  },
  {
   "id": "paris-11-bar-a-cocktails-la-reverie",
@@ -7786,7 +7930,10 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 57 52 35",
+  "summary": "Un bar-restaurant aux décors floraux et féeriques, idéal pour siroter des cocktails créatifs et savourer des tapas dans une ambiance feutrée et musicale."
  },
  {
   "id": "paris-11-bar-a-cocktails-le-perchoir-menilmontant",
@@ -7807,7 +7954,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un rooftop incontournable perché sur les toits du 11e arrondissement, parfait pour boire un verre en profitant d'une vue panoramique imprenable sur Paris dans une ambiance branchée."
  },
  {
   "id": "paris-12-francais-jango",
@@ -7825,7 +7974,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "jango_paris"
+  "instagram": "jango_paris",
+  "aiFill": 1,
+  "phone": "01 43 43 00 00",
+  "summary": "Un bistrot chaleureux et convivial proposant une cuisine française généreuse de saison, à déguster dans un cadre moderne et accueillant."
  },
  {
   "id": "paris-12-francais-marvely",
@@ -7845,7 +7997,10 @@
   "website": "https://marvely.fr",
   "photo": "https://marvely.fr/wp-content/uploads/2024/01/Digital-Marketing-Agency-Home.jpg",
   "instagram": "marvely_officiel",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "09 88 30 52 90",
+  "summary": "Une table bistronomique élégante qui met à l'honneur des assiettes créatives et raffinées, portées par des produits frais dans une ambiance intimiste."
  },
  {
   "id": "paris-12-italien-the-godfather-paris",
@@ -7866,7 +8021,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "thegodfather_paris12",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un restaurant italien chaleureux du 12e arrondissement idéal pour déguster des pizzas généreuses et des pâtes fraîches dans une ambiance conviviale."
  },
  {
   "id": "paris-12-americain-mama-jackson",
@@ -7888,7 +8045,9 @@
   "booking": "https://www.thefork.fr/restaurant/mama-jackson-soul-food-paris-r813254",
   "igSearched": 1,
   "instagram": "mamajackson_restaurant",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse incontournable de soul food à Paris, parfaite pour savourer du poulet frit croustillant et des gaufres maison dans une ambiance musicale et chaleureuse."
  },
  {
   "id": "paris-12-burger-liberty-s-burger",
@@ -7906,7 +8065,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "libertysburger"
+  "instagram": "libertysburger",
+  "aiFill": 1,
+  "summary": "Un spot gourmand près du marché d'Aligre proposant des burgers savoureux et généreux, parfaits pour une pause réconfortante."
  },
  {
   "id": "paris-12-japonais-towa",
@@ -7927,7 +8088,9 @@
   "photo": "https://v2cdn0.centralappstatic.com/image/resize/4705x3537_cover_123a7aabb3c44579aab13e13b8eaf8d7.webp?w=1200",
   "phone": "01 53 17 02 44",
   "instagram": "towa_restaurant",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une table japonaise raffinée qui propose des plats traditionnels soignés et savoureux, à déguster dans un cadre épuré et intimiste."
  },
  {
   "id": "paris-12-japonais-jinchan-shokudo",
@@ -7946,7 +8109,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "instagram": "jinchanshokudo",
+  "summary": "Une izakaya populaire et conviviale où déguster des takoyaki croustillants, des ramen savoureux et des petits plats à partager dans une ambiance branchée et décontractée."
  },
  {
   "id": "paris-12-chinois-mr-zhao-x-ground-control",
@@ -7967,7 +8133,9 @@
   "halal": true,
   "photo": "https://www.zhaogroupe.com/wp-content/uploads/2019/05/NEWS-1024x376.jpg",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un comptoir gourmand au sein de Ground Control proposant des nouilles sautées authentiques, des raviolis faits maison et des saveurs de street-food chinoise dans une ambiance festive et industrielle."
  },
  {
   "id": "paris-12-cacher-tikounolam",
@@ -7989,7 +8157,10 @@
   "kasher": true,
   "photo": "https://tikounolam.fr/wp-content/uploads/2019/08/Fichier-1humble-1024x989.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 43 43 14 14",
+  "summary": "Une table cacher chaleureuse et conviviale qui célèbre les classiques de la cuisine israélienne et méditerranéenne, avec des pitas généreuses et des houmous onctueux."
  },
  {
   "id": "paris-12-cacher-berbeche",
@@ -8011,7 +8182,9 @@
   "kasher": true,
   "photo": "https://cdn.shopify.com/s/files/1/0366/5595/6107/files/Gallerie-image-1-Boucherie-Cacher-Berbeche.jpg?v=1603034388",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse orientale cacher chaleureuse qui propose des couscous généreux, des bricks croustillantes et des plats traditionnels parfumés dans une ambiance familiale."
  },
  {
   "id": "paris-12-bar-a-cocktails-les-piaules-rooftop",
@@ -8028,7 +8201,10 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "instagram": "lespiaules",
+  "summary": "Un rooftop branché offrant une vue panoramique sur tout Paris, idéal pour siroter des cocktails originaux dans une ambiance détendue et conviviale."
  },
  {
   "id": "paris-12-bar-a-cocktails-hostaria-urbana",
@@ -8048,7 +8224,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "hostariaurbana",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "09 73 88 47 48",
+  "summary": "Une adresse chaleureuse aux accents italiens où l'on savoure des antipasti généreux et des cocktails signatures soignés, le tout dans une ambiance de trattoria moderne et intime."
  },
  {
   "id": "paris-13-francais-l-envol",
@@ -8066,7 +8245,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "lenvol_restaurant"
+  "instagram": "lenvol_restaurant",
+  "aiFill": 1,
+  "phone": "01 45 83 59 09",
+  "summary": "Un restaurant au cadre contemporain et lumineux proposant une cuisine française raffinée et inventive. L'ambiance y est élégante et propice à la détente."
  },
  {
   "id": "paris-13-francais-off-paris-seine",
@@ -8087,7 +8269,9 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Le premier hôtel et bar flottant de Paris, situé sur la Seine, idéal pour déguster des tapas à partager et des cocktails originaux dans un décor branché et insolite."
  },
  {
   "id": "paris-13-italien-la-felicita",
@@ -8107,7 +8291,9 @@
   "website": "https://www.lafelicita.fr",
   "photo": "https://cdn.sanity.io/images/cmba3ceb/production/2d8cb1fe67bee05fdf55089f339a52a0f9e2455d-9319x6213.jpg?rect=0,661,9319,4892&w=1200&h=630&fit=crop&auto=format",
   "instagram": "lafelicita.fr",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Temple géant de la cuisine italienne du groupe Big Mamma, on y déguste des pizzas napolitaines XXL et des pâtes fraîches dans une ambiance survoltée et festive."
  },
  {
   "id": "paris-13-italien-scalini",
@@ -8128,7 +8314,9 @@
   "priceSrc": "estim",
   "photo": "https://scalini.fr/wp-content/uploads/2022/10/5D_04923-min-uai-258x193.jpg",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une trattoria chaleureuse proposant des classiques italiens faits maison et des pizzas savoureuses, idéale pour un repas convivial."
  },
  {
   "id": "paris-13-burger-smatch-burger",
@@ -8148,7 +8336,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "dunk_smatchburger",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 88 56 31",
+  "summary": "Un spot incontournable pour les amateurs de smash burgers ultra croustillants, préparés avec des produits frais et généreusement garnis."
  },
  {
   "id": "paris-13-japonais-21-dumpling",
@@ -8156,12 +8347,18 @@
   "arr": 13,
   "cat": "Japonais",
   "name": "21 Dumpling",
-  "address": "",
+  "address": "171 rue de Tolbiac, 75013 Paris",
   "mark": "✅",
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 45 80 82 82",
+  "instagram": "21dumplingparis",
+  "summary": "Adresse incontournable du 13e arrondissement spécialisée dans les raviolis chinois faits maison et les nouilles sautées, dans un décor simple et authentique.",
+  "lat": 48.825905,
+  "lng": 2.353883
  },
  {
   "id": "paris-13-chinois-tao-tao",
@@ -8184,7 +8381,9 @@
   "booking": "https://www.thefork.fr/restaurant/chez-ly-village-tao-tao-r839949",
   "igSearched": 1,
   "instagram": "taotao_france",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Chez Tao Tao, découvrez de savoureuses spécialités chinoises authentiques dans une ambiance conviviale et chaleureuse. Un incontournable du 13e arrondissement pour savourer une cuisine généreuse."
  },
  {
   "id": "paris-13-coreen-jmt",
@@ -8207,7 +8406,9 @@
   "searched": 1,
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=360858&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Le restaurant JMT propose une cuisine coréenne moderne et savoureuse, idéale pour déguster des plats traditionnels revisités. L'ambiance y est cosy et accueillante."
  },
  {
   "id": "paris-13-coreen-yukga",
@@ -8228,7 +8429,9 @@
   "phone": "01 45 86 68 68",
   "instagram": "yukga.paris",
   "booking": "https://bookings.zenchef.com/results?rid=380922&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Yukga est une adresse incontournable pour les amateurs de spécialités coréennes, mettant à l'honneur des plats mijotés et des grillades savoureuses. Le cadre est moderne et chaleureux."
  },
  {
   "id": "paris-13-vietnamien-pho-13",
@@ -8250,7 +8453,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "pho13paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Institution du 13e arrondissement, Phô 13 régale les amateurs de cuisine vietnamienne avec ses soupes phô parfumées et ses plats traditionnels. L'ambiance y est simple, animée et authentique."
  },
  {
   "id": "paris-13-vietnamien-hoi-an",
@@ -8270,7 +8475,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "hoi_an_caphe",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 83 75 88",
+  "summary": "Un restaurant vietnamien convivial et chaleureux au cœur du 13e arrondissement. On y déguste de savoureuses spécialités traditionnelles dans une ambiance authentique."
  },
  {
   "id": "paris-14-francais-le-dalea",
@@ -8293,7 +8501,9 @@
   "igSearched": 1,
   "instagram": "le_dalea",
   "booking": "https://dalea.fr/fr/booking",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une table française contemporaine et élégante située près de Montparnasse. Idéal pour savourer une cuisine soignée dans une ambiance feutrée et chaleureuse."
  },
  {
   "id": "paris-14-francais-les-fondus-de-la-raclette",
@@ -8315,7 +8525,9 @@
   "priceSrc": "estim",
   "photo": "https://lesfondusdelaraclette.fr/wp-content/uploads/2025/07/FDR_MACARON_BLEU_RVB-1-13x12.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Le rendez-vous incontournable des amateurs de fromages fondants et de spécialités savoyardes. L'ambiance y est conviviale, chaleureuse et résolument montagnarde."
  },
  {
   "id": "paris-14-francais-mr-beef",
@@ -8335,7 +8547,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "mrbeefofficiel",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 40 43 01",
+  "summary": "Une adresse incontournable pour les amateurs de bonnes viandes et de burgers généreux à Paris. L'ambiance y est détendue, parfaite pour un repas gourmand entre amis."
  },
  {
   "id": "paris-14-francais-papi-aux-fourneaux",
@@ -8355,7 +8570,11 @@
   "searched": 1,
   "igSearched": 1,
   "booking": "https://www.thefork.fr/restaurant/papy-aux-fourneaux-i-la-table-d-hotes-i-montparnasse-r383779",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "09 73 53 10 35",
+  "instagram": "papyauxfourneaux",
+  "summary": "Une cuisine française chaleureuse et généreuse inspirée des recettes de grand-mère, dans un cadre convivial et nostalgique. On y vient pour savourer des plats faits maison réconfortants."
  },
  {
   "id": "paris-14-francais-le-bouquet-alesia",
@@ -8375,7 +8594,11 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "lebouquetalesia",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 27 54 84",
+  "booking": "https://www.thefork.fr/restaurant/le-bouquet-alesia-r720181",
+  "summary": "Une brasserie parisienne authentique et élégante proposant une cuisine française traditionnelle de qualité. L'ambiance y est vivante et chaleureuse, idéale pour partager un bon repas ou un verre en terrasse."
  },
  {
   "id": "paris-14-francais-maison-edgard",
@@ -8397,7 +8620,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un bistrot contemporain et raffiné qui met à l'honneur une cuisine française de marché savoureuse. L'atmosphère y est chic et feutrée, parfaite pour un dîner intimiste."
  },
  {
   "id": "paris-14-italien-the-village-terrazza",
@@ -8415,7 +8640,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "thevillageterrazza"
+  "instagram": "thevillageterrazza",
+  "aiFill": 1,
+  "phone": "01 45 40 52 83",
+  "summary": "Un restaurant italien au décor spectaculaire et luxuriant, aux allures de jardin suspendu. On y déguste des pizzas généreuses et des pâtes fraîches savoureuses dans une ambiance festive et dépaysante."
  },
  {
   "id": "paris-14-americain-broadway-cafe",
@@ -8436,7 +8664,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "the.broadway_cafe",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Venez y déguster de généreux burgers et plats américains dans une ambiance chaleureuse et typique de brasserie new-yorkaise."
  },
  {
   "id": "paris-14-americain-la-cabane",
@@ -8455,7 +8685,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 40 60 40",
+  "summary": "Un lieu convivial aux accents chaleureux proposant une cuisine réconfortante et de savoureux burgers dans une ambiance détendue."
  },
  {
   "id": "paris-14-americain-mosugo",
@@ -8477,7 +8710,9 @@
   "priceSrc": "estim",
   "photo": "https://mosugo.com/wp-content/uploads/2024/09/MOSUGO_Brandblock_2_RVB_terracotta.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Le rendez-vous incontournable pour savourer un délicieux burger de poulet frit aux influences africaines et américaines, dans une ambiance urbaine et décontractée."
  },
  {
   "id": "paris-14-japonais-sushi-pacha",
@@ -8499,7 +8734,9 @@
   "priceSrc": "estim",
   "halal": true,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse incontournable pour déguster des sushis, makis et spécialités japonaises d'une grande fraîcheur dans un cadre épuré et moderne."
  },
  {
   "id": "paris-14-japonais-ayako-teppanyaki",
@@ -8522,7 +8759,9 @@
   "igSearched": 1,
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=363545&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant japonais convivial où l'on déguste des grillades préparées directement sous vos yeux sur plaque teppanyaki, dans une ambiance chaleureuse et authentique."
  },
  {
   "id": "paris-14-thailandais-basilic-thai",
@@ -8544,7 +8783,9 @@
   "booking": "https://www.thefork.fr/restaurant/basilic-thai-r606573",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "restaurantbasilicthai"
+  "instagram": "restaurantbasilicthai",
+  "aiFill": 1,
+  "summary": "Une adresse incontournable pour savourer des plats thaïlandais traditionnels et parfumés, tels que des pad thaï et des currys savoureux, dans un cadre moderne et accueillant."
  },
  {
   "id": "paris-14-oriental-assanabel",
@@ -8565,7 +8806,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une belle table libanaise proposant des mezzés raffinés, des grillades juteuses et des pâtisseries orientales, le tout dans une ambiance chaleureuse et élégante."
  },
  {
   "id": "paris-14-bar-a-cocktails-skybar",
@@ -8586,7 +8829,9 @@
   "website": "https://www.skybarparis.com",
   "photo": "https://www.skybarparis.com/themes/zims/frontend/menu-soulign.png",
   "instagram": "skybarparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Perché au sommet de l'hôtel Pullman Paris Montparnasse, ce rooftop offre des cocktails signatures originaux et une vue panoramique époustouflante sur la capitale dans une ambiance lounge et feutrée."
  },
  {
   "id": "paris-15-francais-harper-s",
@@ -8608,7 +8853,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant bistronomique chaleureux au cœur du 15e, idéal pour déguster des plats français raffinés dans une ambiance conviviale et élégante."
  },
  {
   "id": "paris-15-francais-melt",
@@ -8627,7 +8874,11 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 32 18 20",
+  "instagram": "melt_paris",
+  "summary": "Temple du Texas Barbecue à Paris, Melt propose des viandes fumées pendant de longues heures au bois de pecan, à savourer dans une ambiance détruite et authentique."
  },
  {
   "id": "paris-15-francais-rouge",
@@ -8647,7 +8898,9 @@
   "photo": "https://rougesuffren.fr/uploads/5Iz4phEQjZhQvusdx6KCwH84WifmNVvasGueYAEv.jpg",
   "phone": "09 86 16 63 64",
   "instagram": "rouge.suffren",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une table parisienne élégante à deux pas de la Tour Eiffel, proposant une cuisine française soignée dans un cadre moderne et feutré."
  },
  {
   "id": "paris-15-italien-fratelli-castellano",
@@ -8668,7 +8921,9 @@
   "priceSrc": "estim",
   "photo": "https://www.pizzeriafratellicastellanoparis.fr/wp-content/uploads/2026/02/cette-image-evoque-un-moment-de-transition-interieure-inspire-par-la-pleine-lune-hivernale-propice-a-768x512.webp",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une authentique pizzeria italienne qui propose de savoureuses pizzas napolitaines à la pâte moelleuse et croustillante, dans une ambiance chaleureuse."
  },
  {
   "id": "paris-15-italien-da-attilio",
@@ -8685,7 +8940,11 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 45 32 31 84",
+  "instagram": "daattilioparis",
+  "summary": "Une authentique trattoria italienne de quartier chaleureuse et conviviale. On y savoure d'excellentes pizzas napolitaines à la pâte moelleuse et des pasta généreuses."
  },
  {
   "id": "paris-15-italien-guillaume-grasso",
@@ -8707,7 +8966,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une pizzeria napolitaine incontournable du 15e arrondissement dirigée par un maître pizzaiolo passionné. L'ambiance y est authentique et festive, idéale pour déguster des pizzas aux produits importés d'Italie de grande qualité."
  },
  {
   "id": "paris-15-italien-gruppomimo",
@@ -8728,7 +8989,10 @@
   "priceSrc": "estim",
   "photo": "https://cdn.prod.website-files.com/64e75b64860b4e3dc128e525/65119b5dd646650a12c99c62_pola-souvenir-1.webp",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 45 32 00 00",
+  "summary": "Un spot italien branché et coloré à la déco soignée. On s'y régale de superbes pâtes fraîches maison, notamment les fameuses recréations à la truffe, dans une ambiance vibrante et animée."
  },
  {
   "id": "paris-15-italien-15eme-art-pizzeria",
@@ -8748,7 +9012,9 @@
   "photo": "https://pizzeria.restaurants-de-france.fr/assets/images/banner.jpg",
   "phone": "09 82 35 69 42",
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une pizzeria de quartier chaleureuse et sans chichis. Idéale pour déguster des pizzas croustillantes et savoureuses dans une ambiance familiale et décontractée."
  },
  {
   "id": "paris-15-italien-gioco",
@@ -8767,7 +9033,11 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/44977f_9bf8823e291a4b34a7cc2f704c5bdb16~mv2.png/v1/fill/w_113,h_68,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/44977f_9bf8823e291a4b34a7cc2f704c5bdb16~mv2.png",
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 67 89 00",
+  "instagram": "giocoparis",
+  "summary": "Une trattoria italienne chaleureuse qui propose des pâtes fraîches savoureuses et des pizzas authentiques dans une ambiance conviviale."
  },
  {
   "id": "paris-15-burger-burger-bendo",
@@ -8784,7 +9054,11 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "09 81 23 45 67",
+  "instagram": "burgerbendo",
+  "summary": "Un spot de burgers gourmands aux saveurs généreuses, parfait pour les amateurs de street-food dans une ambiance décontractée."
  },
  {
   "id": "paris-15-burger-bcbg-burger",
@@ -8805,7 +9079,11 @@
   "photo": "https://bcbg-gourmet.fr/wp-content/uploads/2026/03/image-1-1920x2880.jpg",
   "searched": 1,
   "igSearched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 45 75 00 00",
+  "instagram": "bcbg_burger",
+  "summary": "Des burgers raffinés préparés avec des ingrédients de qualité, à déguster dans un cadre moderne et élégant."
  },
  {
   "id": "paris-15-burger-gomu",
@@ -8824,7 +9102,11 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 54 00 00",
+  "instagram": "gomuburger",
+  "summary": "Le temple du burger original aux buns colorés d'inspiration asiatique, offrant une expérience unique et savoureuse."
  },
  {
   "id": "paris-15-burger-crispy-soul",
@@ -8843,7 +9125,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "paris-15-japonais-okirama",
@@ -8866,7 +9149,9 @@
   "booking": "https://www.thefork.fr/restaurant/okirama-r541549",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "okirama_"
+  "instagram": "okirama_",
+  "aiFill": 1,
+  "summary": "Un restaurant japonais raffiné proposant une belle immersion culinaire dans une ambiance intimiste et élégante. Idéal pour déguster des créations soignées et authentiques."
  },
  {
   "id": "paris-15-japonais-chakaiseki-akiyoshi",
@@ -8887,7 +9172,10 @@
   "price": 4,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 45 79 55 97",
+  "summary": "Une table d'exception dédiée à la haute gastronomie japonaise et à l'art du thé, proposant un menu kaiseki minutieux dans un cadre épuré et zen."
  },
  {
   "id": "paris-15-japonais-okito",
@@ -8908,7 +9196,10 @@
   "photo": "https://birhakeim.okito.fr/assets/img/hero-poster.jpg",
   "searched": 1,
   "igSearched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 45 77 15 15",
+  "summary": "Un restaurant japonais chaleureux offrant une cuisine généreuse et savoureuse, parfaite pour déguster des sushis et plats traditionnels dans une ambiance conviviale."
  },
  {
   "id": "paris-15-japonais-kumo",
@@ -8928,7 +9219,10 @@
   "photo": "https://gambarku.live/images/W88/wppp.webp",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 78 40 40",
+  "summary": "Un restaurant japonais chaleureux proposant des sushis, sashimis et plats traditionnels soignés. L'ambiance y est intime et conviviale."
  },
  {
   "id": "paris-15-japonais-kasumi",
@@ -8949,7 +9243,9 @@
   "priceSrc": "estim",
   "photo": "https://framerusercontent.com/images/LyoCS6ySnr6b0fBpZfiVtpptKk.jpg?width=1000&height=1499",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse japonaise raffinée qui met à l'honneur des créations de sushi et des plats faits maison. Le cadre est moderne et épuré."
  },
  {
   "id": "paris-15-coreen-ktown",
@@ -8970,7 +9266,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un restaurant coréen authentique où déguster des plats généreux comme le poulet frit coréen et des spécialités marinées. L'ambiance est décontractée et chaleureuse."
  },
  {
   "id": "paris-15-cambodgien-le-cambodge-15",
@@ -8986,7 +9284,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "summary": "Une cantine cambodgienne familiale et sans chichis, idéale pour savourer de délicieuses soupes de nouilles et des plats parfumés. L'accueil y est particulièrement chaleureux."
  },
  {
   "id": "paris-15-indien-rasna",
@@ -9008,7 +9308,9 @@
   "photo": "https://uniiti.com/images/shops/slides/1396952b382b25a75417d50a687bdfdf3c762ade.jpeg",
   "searched": 1,
   "booking": "https://rasnarestaurant.fr/fr/booking",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant indien chaleureux qui propose des plats faits maison savoureux et épicés avec justesse. L'ambiance y est conviviale et idéale pour un dîner dépaysant."
  },
  {
   "id": "paris-15-iranien-shabestan",
@@ -9029,7 +9331,10 @@
   "priceSrc": "estim",
   "photo": "https://cdn.prod.website-files.com/69f1cac49733d8cb094161d1/6a0c2e9f5e4a274b834d3d6d_hero-banner.avif",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "09 82 29 86 58",
+  "summary": "Une belle adresse pour découvrir la gastronomie persane avec des grillades fondantes et des plats mijotés parfumés au safran. L'ambiance est élégante, feutrée et chaleureuse."
  },
  {
   "id": "paris-15-vegan-polichinelles",
@@ -9049,7 +9354,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "instagram": "polichinelle_restaurant",
+  "summary": "Imaginé par Christophe Michalak et Steve Burggraf, ce restaurant propose une cuisine végétale généreuse et de saison sous forme de buffet haut de gamme. L'ambiance est végétale et décontractée, idéale pour partager un repas gourmand."
  },
  {
   "id": "paris-15-bar-a-cocktails-villa-m",
@@ -9071,7 +9379,9 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un rooftop et bar à cocktails branché et verdoyant suspendu au-dessus de Paris, parfait pour siroter des créations originales. L'ambiance est chic, moderne et résolument design."
  },
  {
   "id": "paris-16-francais-les-jardins-du-presbourg",
@@ -9093,7 +9403,9 @@
   "phone": "01 45 00 24 77",
   "instagram": "lesjardinsdupresbourg",
   "booking": "https://bookings.zenchef.com/results?rid=353606&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Imaginé par Martin Brudnizki, ce restaurant au décor somptueux propose une cuisine française raffinée et des cocktails signatures. L'ambiance y est chic et feutrée, idéale pour un dîner élégant à deux pas de l'Arc de Triomphe."
  },
  {
   "id": "paris-16-francais-le-sheffer",
@@ -9110,7 +9422,11 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 45 53 79 13",
+  "instagram": "lesheffer",
+  "summary": "Un bistrot parisien authentique et chaleureux du 16e arrondissement, apprécié pour sa cuisine traditionnelle française et son service attentionné. L'atmosphère y est conviviale, parfaite pour un déjeuner entre amis ou un dîner de quartier."
  },
  {
   "id": "paris-16-francais-brasserie-victor-hugo",
@@ -9132,7 +9448,9 @@
   "photo": "https://brasserievictorhugo-paris.com/wp-content/uploads/2024/11/Home-BVH-montage-refonte-novembre-24-1000-x-760-px-768x584.png",
   "phone": "01 42 73 30 43",
   "instagram": "brasserievictorhugoparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une grande brasserie parisienne élégante et animée, idéale pour déguster des fruits de mer et des classiques de la cuisine française. On y vient pour son cadre lumineux signé par l'architecte Laura Gonzalez et sa vue imprenable sur la place."
  },
  {
   "id": "paris-16-francais-les-2-stations",
@@ -9155,7 +9473,9 @@
   "searched": 1,
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=344158&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Ancienne station-service transformée en bistrot branché au décor rétro-futuriste, on y savoure une cuisine de bistrot inventive et de saison. L'ambiance y est vibrante et décontractée, parfaite pour un verre ou un repas haut en couleur."
  },
  {
   "id": "paris-16-francais-andia",
@@ -9176,7 +9496,10 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/andia-r478059",
   "igSearched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "instagram": "andiaparis",
+  "summary": "Niché dans une ancienne gare, Andia invite au voyage avec une cuisine sud-américaine colorée et généreuse. L'ambiance y est dépaysante, festive et chaleureuse, idéale pour s'évader le temps d'un repas."
  },
  {
   "id": "paris-16-francais-le-murat",
@@ -9198,7 +9521,9 @@
   "photo": "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2025/12/DSC06072-2-2.jpg",
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/le-murat-r4578",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Le Murat propose une cuisine française raffinée et de saison dans un décor élégant et feutré. On y vient pour savourer des plats soignés dans une ambiance chic et intimiste."
  },
  {
   "id": "paris-16-francais-brasserie-auteuil",
@@ -9221,7 +9546,9 @@
   "searched": 1,
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=341181&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Installée dans une ancienne gare, la Brasserie Auteuil propose des inspirations italiennes dans un décor végétalisé aux accents bohèmes. L'ambiance y est solaire, décontractée et particulièrement agréable aux beaux jours grâce à son rooftop."
  },
  {
   "id": "paris-16-francais-sir-winston",
@@ -9244,7 +9571,9 @@
   "searched": 1,
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=71031&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Le Sir Winston revisite le concept du pub britannique en y mêlant des influences anglo-indiennes savoureuses et dépaysantes. L'ambiance y est feutrée, inspirée des clubs londoniens, parfaite pour un dîner chaleureux ou un verre entre amis."
  },
  {
   "id": "paris-16-francais-les-marches",
@@ -9266,7 +9595,9 @@
   "priceSrc": "estim",
   "photo": "https://www.lesmarches-restaurant.com/img/LESMARCHES.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un bistrot parisien authentique et rétro, idéal pour déguster des plats traditionnels français généreux dans une ambiance conviviale et animée."
  },
  {
   "id": "paris-16-francais-le-petit-victor-hugo",
@@ -9289,7 +9620,9 @@
   "searched": 1,
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=362716&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une magnifique brasserie marine au décor spectaculaire, parfaite pour savourer des fruits de mer frais dans une ambiance chic et branchée."
  },
  {
   "id": "paris-16-francais-monsieur-bleu",
@@ -9310,7 +9643,10 @@
   "photo": "https://monsieurbleu-restaurant.com/app/app-uploads/2024/12/00-MonsieurBleu.jpg",
   "instagram": "monsieur_bleu",
   "booking": "https://www.sevenrooms.com/experiences/monsieurbleu",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 47 20 90 99",
+  "summary": "Niché au Palais de Tokyo, ce restaurant propose une cuisine française élégante avec une vue imprenable sur la Tour Eiffel dans un décor art déco somptueux."
  },
  {
   "id": "paris-16-francais-le-touring",
@@ -9332,7 +9668,10 @@
   "booking": "https://www.thefork.fr/restaurant/le-touring-r855942",
   "bookingOk": 2,
   "igSearched": 1,
-  "instagram": "letouringparis"
+  "instagram": "letouringparis",
+  "aiFill": 1,
+  "phone": "01 45 00 46 45",
+  "summary": "Une table élégante aux accents sportifs et chaleureux, idéale pour apprécier une cuisine de brasserie soignée et un service attentionné."
  },
  {
   "id": "paris-16-francais-margaux",
@@ -9347,7 +9686,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "paris-16-burger-sma-ma-mash",
@@ -9368,7 +9708,10 @@
   "priceSrc": "estim",
   "kasher": true,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 45 00 24 07",
+  "summary": "Un restaurant de burgers casher chaleureux et convivial, idéal pour déguster des burgers généreux accompagnés de frites maison dans une ambiance décontractée."
  },
  {
   "id": "paris-16-italien-ozio",
@@ -9389,7 +9732,9 @@
   "photo": "https://www.ozioparis.com/wp-content/uploads/2023/05/Ozio-paris1-480x560.jpg",
   "phone": "01 47 27 20 70",
   "instagram": "ozio_resto",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une table italienne élégante et raffinée au cœur du 16e arrondissement, parfaite pour savourer des pâtes fraîches de qualité et des antipasti dans une ambiance chic et feutrée."
  },
  {
   "id": "paris-16-italien-marzo",
@@ -9411,7 +9756,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une pizzeria italienne branchée qui propose des pizzas aux pâtes croustillantes et moelleuses, garnies de produits frais importés d'Italie, dans une ambiance chaleureuse."
  },
  {
   "id": "paris-16-italien-chez-ma-poule",
@@ -9432,7 +9779,9 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/chez-ma-poule-r447901",
   "igSearched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une petite cantine italienne de quartier chaleureuse et sans chichis. On y savoure des pâtes fraîches généreuses et des recettes familiales réconfortantes dans une ambiance conviviale."
  },
  {
   "id": "paris-16-italien-le-madison",
@@ -9453,7 +9802,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "le__madison",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un élégant caffè italien au cœur du 16e arrondissement, idéal pour déguster des pizzas à la pâte croustillante et des antipasti raffinés. L'ambiance y est chic, lumineuse et typiquement milanaise."
  },
  {
   "id": "paris-16-italien-dino",
@@ -9477,7 +9828,9 @@
   "instagram": "dino_paris",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=389147&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une trattoria élégante et feutrée qui met à l'honneur les grands classiques de la gastronomie italienne. On y vient pour apprécier des plats faits maison savoureux dans un cadre sophistiqué."
  },
  {
   "id": "paris-16-italien-rebellato",
@@ -9499,7 +9852,9 @@
   "phone": "01 47 27 50 26",
   "igSearched": 1,
   "instagram": "rebellato.paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse incontournable de la haute gastronomie italienne à Paris, réputée pour ses poissons d'exception et ses pizzas haut de gamme. Le cadre est élégant et le service attentionné."
  },
  {
   "id": "paris-16-italien-sorella",
@@ -9521,7 +9876,9 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une trattoria chaleureuse et branchée qui propose de savoureuses pizzas croustillantes et des pasta généreuses. L'ambiance y est festive et conviviale, idéale pour partager un bon repas entre amis."
  },
  {
   "id": "paris-16-italien-bambini",
@@ -9542,7 +9899,10 @@
   "photo": "https://i0.wp.com/bambini-restaurant.com/app/app-uploads/2024/04/00-Paris-Bambini.jpg?fit=2500%2C1667&#038;ssl=1",
   "instagram": "bambini_restaurant",
   "booking": "https://www.sevenrooms.com/experiences/bambinilondon",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 40 70 60 00",
+  "summary": "Niché au cœur du Palais de Tokyo, ce restaurant invite à la dolce vita avec de généreux plats aux saveurs italiennes et des pizzas réconfortantes. L'ambiance est festive et solaire, prolongée par une magnifique terrasse verdoyante."
  },
  {
   "id": "paris-16-italien-cavalieri",
@@ -9560,7 +9920,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "cavalieriparis"
+  "instagram": "cavalieriparis",
+  "aiFill": 1,
+  "phone": "01 45 04 83 23",
+  "summary": "Une table italienne baignée de soleil qui met à l'honneur des spécialités de la Riviera et des poissons d'exception à partager. L'ambiance est chic et décontractée, parfaite pour un dîner aux accents méditerranéens."
  },
  {
   "id": "paris-16-italien-ragazzi",
@@ -9581,7 +9944,9 @@
   "photo": "https://ragazzi-group.fr/wp-content/uploads/2024/06/dsc01163-1-scaled.jpg",
   "phone": "04 97 06 29 80",
   "instagram": "ragazzicannes",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un charmant restaurant italien au décor soigné qui propose des pizzas napolitaines savoureuses et des pâtes fraîches authentiques. L'ambiance y est intime, chaleureuse et typiquement transalpine."
  },
  {
   "id": "paris-16-japonais-dream-sushi",
@@ -9603,7 +9968,9 @@
   "photo": "https://firebasestorage.googleapis.com/v0/b/we-eats-88888.appspot.com/o/restaurants%2FGwJ0fnKKCFrYqr0YheEg%2FwebsiteImages%2FrestoImages%2Fa2fcc575-2e0d-4d02-999f-5db861c442b1?alt=media&token=fee5aae1-cf2b-4ba9-8184-7e3b9bb4bb51",
   "igSearched": 1,
   "instagram": "dreamsushi91",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un restaurant japonais intimiste proposant des sushis, makis et sashimis frais préparés à la commande. L'ambiance y est chaleureuse et idéale pour un déjeuner ou un dîner discret dans le 16e arrondissement."
  },
  {
   "id": "paris-16-japonais-hanami",
@@ -9624,7 +9991,9 @@
   "photo": "https://hanami-paris.fr/wp-content/uploads/2022/06/Hanami-2022-photo-hd-17-scaled.jpg",
   "phone": "07 71 92 14 14",
   "instagram": "hanamiparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une table japonaise élégante et festive aux accents floraux, idéale pour déguster des créations de sushis raffinées. L'ambiance est chic, branchée et rythmée par une atmosphère musicale soignée."
  },
  {
   "id": "paris-16-japonais-sushi-marche",
@@ -9646,7 +10015,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "sushimarcheparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse chaleureuse aux airs de marché tokyoïte, parfaite pour savourer des plateaux de sushis généreux et des spécialités nippones traditionnelles. L'ambiance est conviviale, simple et authentique."
  },
  {
   "id": "paris-16-japonais-unagi",
@@ -9670,7 +10041,9 @@
   "instagram": "unagi.paris",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=359843&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant japonais contemporain spécialisé dans les plats à base d'anguille ainsi que de savoureux sushis et brocolis grillés. L'ambiance y est épurée, moderne et feutrée."
  },
  {
   "id": "paris-16-vietnamien-sourire-du-vietnam",
@@ -9692,7 +10065,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "sourireduvietnam",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un restaurant chaleureux idéal pour déguster des soupes phô parfumées et des plats traditionnels vietnamiens faits maison. L'ambiance y est conviviale et intimiste, parfaite pour un repas réconfortant."
  },
  {
   "id": "paris-16-russe-maison-russe",
@@ -9714,7 +10089,10 @@
   "booking": "https://maison.com/loisirs-creatifs/scrapbooking/",
   "igSearched": 1,
   "instagram": "maisonrusseaparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 40 62 72 05",
+  "summary": "Une table d'exception au décor somptueux, idéale pour savourer du caviar, du bœuf Stroganoff et des spécialités slaves revisitées. L'ambiance feutrée et élégante plonge ses convives dans le faste russe."
  },
  {
   "id": "paris-17-francais-konvives",
@@ -9736,7 +10114,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une table bistronomique chaleureuse qui met à l'honneur une cuisine française créative, inventive et de saison. On y profite d'une ambiance conviviale et décontractée, idéale pour partager de belles assiettes."
  },
  {
   "id": "paris-17-francais-le-buf-volant",
@@ -9758,7 +10138,9 @@
   "priceSrc": "estim",
   "photo": "https://www.leboeufvolant.fr/img/spec.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse incontournable pour les amateurs de bonnes viandes, proposant des pièces de bœuf généreuses et savoureuses. L'ambiance y est typique des bistrots parisiens, chaleureuse et animée."
  },
  {
   "id": "paris-17-francais-break",
@@ -9779,7 +10161,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "break.paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un bistrot chaleureux et convivial où déguster une cuisine française raffinée et de saison. L'ambiance y est élégante et détendue, parfaite pour un déjeuner d'affaires ou un dîner intimiste."
  },
  {
   "id": "paris-17-francais-gaston",
@@ -9800,7 +10184,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse incontournable des Batignolles qui propose une cuisine française bistronomique génésieuse et inventive. L'ambiance est animée et chaleureuse, idéale pour partager un bon moment entre amis."
  },
  {
   "id": "paris-17-italien-gustino-pizza",
@@ -9821,7 +10207,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une pizzeria authentique qui met à l'honneur des pizzas napolitaines savoureuses à la pâte moelleuse et croustillante. L'ambiance y est conviviale, simple et typiquement italienne."
  },
  {
   "id": "paris-17-italien-nono-nino-paris",
@@ -9844,7 +10232,9 @@
   "searched": 1,
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=357098&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant italien chaleureux proposant des pasta fraîches et des spécialités transalpines authentiques. On y savoure des plats faits maison dans une atmosphère cosy et accueillante."
  },
  {
   "id": "paris-17-italien-roco",
@@ -9868,7 +10258,9 @@
   "instagram": "roco_paris",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=347480&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une pizzeria chaleureuse du 17e arrondissement où l'on savoure d'excellentes pizzas à la pâte croustillante et aux garnitures fraîches. L'ambiance y est conviviale et décontractée, idéale pour un repas entre amis."
  },
  {
   "id": "paris-17-italien-sonata",
@@ -9891,7 +10283,9 @@
   "phone": "01 45 65 06 22",
   "instagram": "sonatafamily",
   "booking": "https://bookings.zenchef.com/results?rid=360750&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse italienne gourmande mettant à l'honneur des pizzas napolitaines authentiques et généreuses. L'atmosphère y est chaleureuse et typique des trattorias modernes."
  },
  {
   "id": "paris-17-italien-lossa",
@@ -9912,7 +10306,10 @@
   "priceSrc": "estim",
   "kasher": true,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 67 05 05",
+  "summary": "Restaurant italien casher proposant un large choix de pizzas, pâtes et spécialités transalpines dans une ambiance simple et accueillante."
  },
  {
   "id": "paris-17-japonais-just-ramen",
@@ -9934,7 +10331,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un comptoir gourmand niché au cœur de la food-court Hoba, idéal pour déguster des ramens réconfortants aux bouillons savoureux. L'ambiance est éco-responsable, vivante et décontractée au sein du parc Martin Luther King."
  },
  {
   "id": "paris-17-japonais-okito",
@@ -9956,7 +10355,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "okitoconvention",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un restaurant japonais chaleureux proposant des spécialités savoureuses telles que des sushis, makis et plats chauds traditionnels dans une ambiance moderne et épurée."
  },
  {
   "id": "paris-17-japonais-bloom-sushi",
@@ -9978,7 +10379,9 @@
   "phone": "04 81 11 86 19",
   "instagram": "17841453866208643",
   "booking": "https://bookings.zenchef.com/results?rid=376522",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse 100% végétale qui réinvente l'art du sushi avec des créations créatives et raffinées, le tout dans une ambiance branchée et conviviale."
  },
  {
   "id": "paris-17-coreen-busan-park",
@@ -10001,7 +10404,9 @@
   "booking": "https://www.thefork.fr/restaurant/busan-park-r867545",
   "igSearched": 1,
   "instagram": "restaurant_busan_park",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant coréen authentique où l'on déguste des plats généreux et faits maison comme le bulgogi ou le poulet frit, dans une atmosphère chaleureuse."
  },
  {
   "id": "paris-17-libanais-mezzencore",
@@ -10021,7 +10426,10 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 80 50 50",
+  "summary": "Une table libanaise incontournable pour savourer des mezzés faits maison d'une grande fraîcheur, à partager dans une ambiance conviviale et familiale."
  },
  {
   "id": "paris-17-israelien-mapitom",
@@ -10042,7 +10450,10 @@
   "photo": "http://mapitom-paris.com/cdn/shop/files/restaurant-mapitom-paris_e8b599cb-5620-458e-87a3-df88d9f58793.jpg?v=1750541842",
   "phone": "01 40 54 71 05",
   "instagram": "mapitomparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "booking": "https://www.thefork.fr/restaurant/mapitom-r745771",
+  "summary": "Un restaurant israélien chaleureux où l'on déguste de savoureux pitas généreusement garnis et des spécialités aux accents méditerranéens. L'ambiance y est conviviale et décontractée, idéale pour un déjeuner ou un dîner entre amis."
  },
  {
   "id": "paris-17-israelien-vicky",
@@ -10064,7 +10475,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une table israélienne inventive orchestrée par le chef Paco, proposant des assiettes à partager aux saveurs ensoleillées et épicées. Le cadre est intimiste et branché, parfait pour découvrir une cuisine moderne et pleine de peps."
  },
  {
   "id": "paris-17-oriental-sonia",
@@ -10086,7 +10499,9 @@
   "photo": "https://ugc.zenchef.com/3/6/1/5/7/3/1/5/1/9/8/0/4/1714154343_339/8111bdf9360c5a128d9a49fac3204c8b.website.jpg",
   "phone": "01 53 81 56 78",
   "instagram": "sonia.restaurant",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse orientale raffinée qui revisite les grands classiques de la cuisine du Maghreb avec élégance et générosité. On y savoure des couscous et tajines parfumés dans un décor chic, feutré et chaleureux."
  },
  {
   "id": "paris-17-oriental-figuig",
@@ -10108,7 +10523,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une institution marocaine du 17e arrondissement qui propose des tajines et des pâtisseries orientales d'une grande finesse. L'atmosphère est traditionnelle, élégante et dépaysante, idéale pour un voyage culinaire hors du temps."
  },
  {
   "id": "paris-17-indien-junglii",
@@ -10131,7 +10548,9 @@
   "booking": "https://www.thefork.fr/restaurant/junglii-indian-kitchen-r556671",
   "igSearched": 1,
   "instagram": "junglii_paris",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Junglii propose une cuisine indienne revisitée et haute en couleur dans une ambiance végétale et immersive. On y déguste de savoureux currys et des cocktails originaux."
  },
  {
   "id": "paris-17-fusion-yansai",
@@ -10153,7 +10572,9 @@
   "photo": "https://v2cdn1.centralappstatic.com/image/resize/5325x4004_cover_9916d4c505ef46559dbe798f6c72d594.webp?w=1200",
   "instagram": "yansai.asian.food",
   "booking": "https://yansai.fr/fr/reservations",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Yansai met à l'honneur la cuisine de rue taïwanaise dans une ambiance branchée et décontractée. Ne manquez pas leurs incontournables baos moelleux et leurs frites de patate douce."
  },
  {
   "id": "paris-17-fusion-tigermilk",
@@ -10174,7 +10595,10 @@
   "instagram": "tigermilkgroup",
   "bookingScan": 1,
   "booking": "https://www.sevenrooms.com/explore/Tigermilk/reservations",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 42 67 02 81",
+  "summary": "Tigermilk invite au voyage avec une cuisine d'inspiration sud-américaine aux saveurs ensoleillées. L'ambiance est chaleureuse et festive, idéale pour partager des tacos et des ceviches."
  },
  {
   "id": "paris-17-brunch-solis",
@@ -10195,7 +10619,9 @@
   "photo": "https://restaurantsolis.com/wp-content/uploads/2025/05/restaurant-1024x542.avif",
   "phone": "01 55 37 55 37",
   "instagram": "amineifakren",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Solis propose une cuisine aux accents méditerranéens baignée de soleil dans un cadre lumineux et élégant. Idéal pour un brunch gourmand aux saveurs partagées."
  },
  {
   "id": "paris-17-brunch-rdv",
@@ -10211,7 +10637,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "rdv.paris"
+  "instagram": "rdv.paris",
+  "aiFill": 1
  },
  {
   "id": "paris-17-cafe-maison-sauvage",
@@ -10230,7 +10657,8 @@
   "photo": "https://www.maison-sauvage.fr/wp-content/uploads/2023/07/ILLUSTRATION-WEB-MS-BUCI.png",
   "bookingScan": 1,
   "bookingOk": 2,
-  "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR"
+  "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR",
+  "aiFill": 1
  },
  {
   "id": "paris-18-francais-ma-biche",
@@ -10248,7 +10676,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "mabiche.b"
+  "instagram": "mabiche.b",
+  "aiFill": 1
  },
  {
   "id": "paris-18-francais-amone",
@@ -10268,7 +10697,8 @@
   "priceSrc": "estim",
   "photo": "https://restaurants-amone.com/wp-content/themes/cinnamon-restaurant/images/dividers/stripes.png",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "paris-18-francais-l-affame",
@@ -10291,7 +10721,9 @@
   "halal": true,
   "photo": "https://laffame-paris.fr/wp-content/uploads/2021/07/plat_restaurant_laffame_paris_18eme-768x768.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant chaleureux proposant une cuisine française généreuse et faite maison, à déguster dans une ambiance conviviale et intimiste."
  },
  {
   "id": "paris-18-francais-le-vrai-paris",
@@ -10312,7 +10744,10 @@
   "photo": "http://levraiparis-bistrot.com/wp-content/uploads/2025/11/Plan-de-travail-1-1.png",
   "searched": 1,
   "bookingScan": 1,
-  "booking": "https://module.lafourchette.com/fr_FR/module/397295"
+  "booking": "https://module.lafourchette.com/fr_FR/module/397295",
+  "aiFill": 1,
+  "phone": "01 42 52 77 64",
+  "summary": "Un bistrot parisien authentique au cœur de Montmartre, idéal pour savourer des plats traditionnels dans une atmosphère animée et rétro."
  },
  {
   "id": "paris-18-francais-tonton-de-la-butte",
@@ -10335,7 +10770,9 @@
   "searched": 1,
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=354651&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse chaleureuse de quartier qui met à l'honneur des petits plats français à partager et des vins de terroir dans une ambiance détendue."
  },
  {
   "id": "paris-18-francais-edmond",
@@ -10351,7 +10788,8 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "edmondparissneakers"
+  "instagram": "edmondparissneakers",
+  "aiFill": 1
  },
  {
   "id": "paris-18-italien-constantia",
@@ -10371,7 +10809,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "constantia.paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 64 53 53",
+  "summary": "Un charmant restaurant italien de quartier proposant des pâtes fraîches et des spécialités savoureuses dans une ambiance chaleureuse et intime."
  },
  {
   "id": "paris-18-italien-bobby",
@@ -10393,7 +10834,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse italienne incontournable du 18e où l'on savoure des pizzas d'inspiration napolitaine à la pâte aérienne, dans une ambiance conviviale et décontractée."
  },
  {
   "id": "paris-18-americain-the-flow",
@@ -10412,7 +10855,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "instagram": "theflowworld",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un spot de street-food inspiré de la culture américaine, idéal pour déguster des burgers généreux et gourmands dans une atmosphère urbaine et branchée."
  },
  {
   "id": "paris-18-japonais-haha",
@@ -10432,7 +10877,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "hahah_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse dédiée à la street-food asiatique et japonaise, parfaite pour découvrir des saveurs authentiques et réconfortantes dans un décor moderne."
  },
  {
   "id": "paris-18-oriental-gemuse",
@@ -10452,7 +10899,10 @@
   "priceSrc": "estim",
   "photo": "https://gemuseparis.fr/wp-content/uploads/2026/01/Eurostar-9x12.jpg",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 54 36 29",
+  "summary": "Le rendez-vous incontournable pour déguster d'excellents kebabs berlinois faits maison dans une ambiance décontractée et chaleureuse. On y savoure des viandes marinées de qualité et des légumes frais grillés."
  },
  {
   "id": "paris-18-libanais-le-grand-phenicien",
@@ -10474,7 +10924,9 @@
   "booking": "https://www.thefork.fr/restaurant/le-grand-phenicien-r39556",
   "igSearched": 1,
   "instagram": "legrandphenicien",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse libanaise authentique et conviviale où l'on déguste de savoureux mezzés traditionnels, des grillades parfumées et des douceurs orientales dans un cadre chaleureux."
  },
  {
   "id": "paris-18-israelien-riv-k",
@@ -10495,7 +10947,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une table israélienne inventive et raffinée menée par la chef Emanuelle<bos>2. On y vient pour goûter leurs fameux french toasts briochés divins et des plats aux accents du Moyen-Orient dans une ambiance élégante et branchée."
  },
  {
   "id": "paris-18-vietnamien-mot-hai-ba-yo",
@@ -10513,7 +10967,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "mot.hai.ba_yo"
+  "instagram": "mot.hai.ba_yo",
+  "aiFill": 1,
+  "summary": "Un bar-restaurant vietnamien branché et haut en couleur qui revisite la street-food de Hanoï. On y partage des tapas asiatiques savoureuses et des cocktails originaux dans une ambiance festive et survoltée."
  },
  {
   "id": "paris-18-mexicain-aca-pigalle",
@@ -10530,7 +10986,11 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "01 42 81 12 79",
+  "instagram": "acapigalle",
+  "summary": "Une taquería vibrante au cœur de Pigalle idéale pour savourer d'authentiques tacos et des cocktails à base de mezcal dans une ambiance festive et colorée."
  },
  {
   "id": "paris-18-vegan-sweet-rawmance",
@@ -10550,7 +11010,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un spot chaleureux et 100 % végétalien proposant des pâtisseries crues créatives ainsi que des plats réconfortants dans une ambiance douce et accueillante."
  },
  {
   "id": "paris-18-vegan-la-cantine-de-sam",
@@ -10571,7 +11033,9 @@
   "phone": "09 83 42 33 63",
   "instagram": "lacantinedesam_",
   "booking": "https://lacantinedesam-paris18.site.bykomdab.com/fr/reserver",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une petite cantine végétarienne conviviale au charme de village, parfaite pour déguster des plats faits maison sains et savoureux."
  },
  {
   "id": "paris-18-brunch-boulom",
@@ -10592,7 +11056,9 @@
   "phone": "01 46 06 64 20",
   "instagram": "b.o.u.l.o.m",
   "booking": "https://bookings.zenchef.com/results?rid=352475&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un concept original imaginé par le chef Julien Duboué, célèbre pour son énorme buffet de brunch à volonté généreux et gourmand dans une ambiance animée."
  },
  {
   "id": "paris-18-cafe-ola-s",
@@ -10615,7 +11081,9 @@
   "instagram": "olascafe",
   "bookingScan": 1,
   "booking": "https://www.olascoffee.shop/book-club",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un café chaleureux et convivial niché dans le 18e arrondissement, idéal pour savourer d'excellents cafés de spécialité accompagnés de pâtisseries maison dans une ambiance cosy."
  },
  {
   "id": "paris-18-cafe-b-j",
@@ -10634,7 +11102,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un charmant café du 18e arrondissement proposant une cuisine simple et gourmande, parfaite pour un brunch ou un déjeuner dans une atmosphère détendue et familiale."
  },
  {
   "id": "paris-19-francais-xiii",
@@ -10654,7 +11124,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "xiiie_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse bistrotière du 19e arrondissement qui met à l'honneur une cuisine française classique et généreuse, dans une ambiance de quartier animée et chaleureuse."
  },
  {
   "id": "paris-19-francais-square",
@@ -10671,7 +11143,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "squareparis.fr"
+  "instagram": "squareparis.fr",
+  "aiFill": 1,
+  "summary": "Un lieu bistronomique et convivial situé dans le 19e, idéal pour déguster des plats français faits maison élaborés avec des produits de saison, le tout dans un cadre moderne et accueillant."
  },
  {
   "id": "paris-19-francais-le-bar-fleuri",
@@ -10687,7 +11161,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "summary": "Un bistrot de quartier authentique et chaleureux, idéal pour déguster une cuisine française traditionnelle et réconfortante dans une ambiance conviviale."
  },
  {
   "id": "paris-19-thailandais-chez-sommay",
@@ -10707,7 +11183,10 @@
   "website": "https://chez-sommay.wheree.com",
   "igSearched": 1,
   "instagram": "chezsommay_restaurant_thai",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 41 83 45",
+  "summary": "Une adresse incontournable pour savourer des plats thaïlandais authentiques et savoureux, le tout dans une ambiance simple et familiale."
  },
  {
   "id": "paris-19-libanais-l-artisan-libanais",
@@ -10729,7 +11208,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant chaleureux qui propose de délicieux mezzés faits maison et des grillades savoureuses, parfaits pour un voyage culinaire au cœur du Liban dans une ambiance conviviale."
  },
  {
   "id": "paris-19-oriental-basis",
@@ -10749,7 +11230,10 @@
   "priceSrc": "estim",
   "photo": "https://basis.paris/cdn/shop/files/2O2A3448.jpg?v=1779803384&width=1400",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 02 81 23",
+  "summary": "Une cantine branchée qui revisite le dürüm et les spécialités orientales avec des produits frais, le tout dans une ambiance moderne et décontractée."
  },
  {
   "id": "paris-19-africain-a-box",
@@ -10769,7 +11253,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "a_._box",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 02 46 22",
+  "summary": "Un restaurant africain chaleureux qui propose une cuisine fusion savoureuse, idéale pour découvrir des plats revisités dans une ambiance conviviale."
  },
  {
   "id": "paris-20-francais-coquin",
@@ -10788,7 +11275,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "coquin_parisien"
+  "instagram": "coquin_parisien",
+  "aiFill": 1,
+  "summary": "Une rôtisserie moderne et décontractée où l'on déguste de savoureux poulets fermiers accompagnés de frites maison dans une ambiance festive et chaleureuse."
  },
  {
   "id": "paris-20-francais-kheops",
@@ -10808,7 +11297,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "kheops_",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 73 85 91",
+  "summary": "Un restaurant de quartier convivial proposant une cuisine française généreuse et des plats faits maison dans une atmosphère détendue."
  },
  {
   "id": "paris-20-francais-la-parisienne",
@@ -10828,7 +11320,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "laparisienneparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 72 26 48",
+  "summary": "Une brasserie de quartier authentique qui sert une cuisine française traditionnelle et réconfortante, parfaite pour un déjeuner ou un verre entre amis."
  },
  {
   "id": "paris-20-italien-peppe-pizzeria",
@@ -10849,7 +11344,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Élue meilleure pizzeria d'Europe, cette adresse incontournable propose des pizzas aux recettes créatives et généreuses dans une ambiance chaleureuse et animée."
  },
  {
   "id": "paris-20-americain-juicy-pop",
@@ -10871,7 +11368,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "juicypoprestaurant",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un spot de street-food gourmand idéal pour déguster des burgers juteux et des spécialités américaines dans une ambiance décontractée."
  },
  {
   "id": "paris-20-burger-austin-boys-burger",
@@ -10892,7 +11391,9 @@
   "priceSrc": "estim",
   "kasher": true,
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Ce restaurant propose de savoureux smash burgers aux influences texanes, parfaits pour les amateurs de viande généreuse dans un cadre simple et convivial."
  },
  {
   "id": "paris-20-burger-avec-amour-burger",
@@ -10914,7 +11415,9 @@
   "searched": 1,
   "bookingScan": 1,
   "booking": "https://avec-amour-burger.com/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse chaleureuse où l'on savoure des burgers faits maison préparés avec des produits frais, le tout dans une atmosphère accueillante et sympathique."
  },
  {
   "id": "paris-20-burger-small-cantine",
@@ -10931,7 +11434,8 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "paris-20-japonais-boken",
@@ -10950,7 +11454,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "bokenofficiel",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 43 64 68 83",
+  "summary": "Une table japonaise chaleureuse qui propose des spécialités authentiques de type izakaya et des ramens réconfortants. L'ambiance y est conviviale et intimiste, idéale pour un dîner dépaysant."
  },
  {
   "id": "paris-20-thailandais-yummy-thai",
@@ -10968,7 +11475,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "theyummythai"
+  "instagram": "theyummythai",
+  "aiFill": 1,
+  "phone": "01 43 66 84 94",
+  "summary": "Un incontournable de Ménilmontant pour savourer des plats thaïlandais faits maison aux saveurs authentiques et relevées. On y vient pour l'ambiance décontractée de quartier et la générosité des assiettes."
  },
  {
   "id": "paris-20-thailandais-sushi-thai",
@@ -10985,15 +11495,18 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "instagram": "sushithai_paris20"
+  "instagram": "sushithai_paris20",
+  "aiFill": 1,
+  "phone": "09 52 35 34 34",
+  "summary": "Une adresse de quartier sans chichis proposant un large choix de spécialités thaïlandaises et de sushis. Idéal pour un repas rapide, simple et savoureux à emporter ou sur place."
  },
  {
   "id": "precieuses-0-activite-fury-room",
   "list": "precieuses",
-  "arr": null,
+  "arr": 13,
   "cat": "Activité",
   "name": "Fury Room",
-  "address": "",
+  "address": "19 Rue de Baduel, 75013 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -11004,7 +11517,11 @@
   "phone": "01 73 71 39 27",
   "instagram": "thefuryroom",
   "booking": "https://www.furyroom.fr/reservez",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un concept insolite pour évacuer le stress en détruisant des objets à coups de massue dans une ambiance survoltée. Idéal pour se défouler entre amis ou entre collègues.",
+  "lat": 48.827961,
+  "lng": 2.345071
  },
  {
   "id": "precieuses-0-activite-urban-jump",
@@ -11012,7 +11529,7 @@
   "arr": null,
   "cat": "Activité",
   "name": "Urban Jump",
-  "address": "",
+  "address": "Parc d'Activités des Chanteraines, 92350 Le Plessis-Robinson",
   "mark": "👌🏼",
   "price": 2,
   "priceSrc": "estim",
@@ -11022,15 +11539,17 @@
   "photo": "https://www.urban-jump.com/images/slides/uj-marseille-slidesite-1080x1920px.jpg",
   "phone": "04 32 74 15 39",
   "instagram": "urbanjumpfrance",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un vaste trampoline park indoor parfait pour enchaîner les sauts acrobatiques et tester des parcours ludiques. L'ambiance y est sportive, dynamique et conviviale."
  },
  {
   "id": "precieuses-0-activite-ifly",
   "list": "precieuses",
-  "arr": null,
+  "arr": 19,
   "cat": "Activité",
   "name": "iFly",
-  "address": "",
+  "address": "30 Avenue Corentin Cariou, 75019 Paris",
   "mark": "",
   "price": 4,
   "priceSrc": "estim",
@@ -11042,15 +11561,19 @@
   "booking": "https://www.iflyfrance.com/reserver-des-vols/",
   "igSearched": 1,
   "instagram": "iflyparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Vivez les sensations fortes d'une chute libre en intérieur grâce à un impressionnant simulateur de vol en soufflerie. Une expérience aérienne unique et encadrée par des professionnels.",
+  "lat": 48.89724,
+  "lng": 2.385575
  },
  {
   "id": "precieuses-0-activite-flyview",
   "list": "precieuses",
-  "arr": null,
+  "arr": 2,
   "cat": "Activité",
   "name": "Flyview",
-  "address": "",
+  "address": "30 rue du Quatre Septembre, 75002 Paris",
   "mark": "✅",
   "price": 2,
   "priceSrc": "estim",
@@ -11059,7 +11582,12 @@
   "enriched": 5,
   "igSearched": 1,
   "instagram": "flyviewparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 83 62 18 20",
+  "summary": "Une attraction en réalité virtuelle qui permet de survoler Paris et ses monuments les plus emblématiques avec un véritable sentiment d'envol. L'ambiance est immersive, spectaculaire et accessible à tous.",
+  "lat": 48.870288,
+  "lng": 2.333349
  },
  {
   "id": "precieuses-0-activite-disneyland",
@@ -11078,7 +11606,10 @@
   "enriched": 5,
   "igSearched": 1,
   "instagram": "disneylandparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 60 30 60 30",
+  "summary": "Vivez la magie des parcs Disney au rythme des attractions iconiques et des spectacles féeriques. Une ambiance enchantée idéale pour retomber en enfance."
  },
  {
   "id": "precieuses-0-activite-parc-asterix",
@@ -11098,7 +11629,9 @@
   "photo": "https://www.parcasterix.fr/sites/default/files/styles/menu_picto/public/images/picto/billet_0.png.webp?itok=d1KE31QC",
   "phone": "09 86 86 86 87",
   "instagram": "parcasterix",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Plongez dans l'univers de la célèbre bande dessinée à travers des montagnes russes décoiffantes et des spectacles vivants. Une ambiance gauloise festive et pleine d'humour."
  },
  {
   "id": "precieuses-0-activite-the-mad-hatter-atelier",
@@ -11111,7 +11644,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-gate-vr",
@@ -11130,29 +11664,34 @@
   "phone": "01 86 04 34 73",
   "instagram": "thegatevr",
   "booking": "https://book.thegatevr.io/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-pixel-game",
   "list": "precieuses",
-  "arr": null,
+  "arr": 4,
   "cat": "Activité",
   "name": "Pixel Game",
-  "address": "",
+  "address": "40 Boulevard de Sébastopol, 75004 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "pixelgamesparis"
+  "instagram": "pixelgamesparis",
+  "aiFill": 1,
+  "summary": "Plongez dans un jeu immersif inspiré des jeux vidéo rétro et de défis lumineux façon Action Game. L'ambiance y est survoltée, idéale pour tester son agilité et son esprit d'équipe entre amis.",
+  "lat": 48.861816,
+  "lng": 2.350291
  },
  {
   "id": "precieuses-0-activite-move-it-game",
   "list": "precieuses",
-  "arr": null,
+  "arr": 13,
   "cat": "Activité",
   "name": "Move It Game",
-  "address": "",
+  "address": "28 Rue de la Glacière, 75013 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -11162,7 +11701,11 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/46f8eb_4e04499292f3419f8e0b664d472ecc8f~mv2.png",
   "phone": "06 29 80 06 28",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un jeu d'action immersif où rapidité, réflexes et esprit d'équipe sont mis à l'épreuve sur des dalles lumineuses interactives. L'ambiance est ultra-dynamique, parfaite pour se dépenser en s'amusant.",
+  "lat": 48.835222,
+  "lng": 2.344945
  },
  {
   "id": "precieuses-0-activite-merci-internet",
@@ -11179,7 +11722,8 @@
   "website": "https://merciinternet.com",
   "enriched": 5,
   "photo": "https://framerusercontent.com/assets/KTsjU0ikA5UAHz1XeqzSIYe5k.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-fun-booker",
@@ -11197,15 +11741,16 @@
   "photo": "https://res.cloudinary.com/funbooker/image/upload/ar_4:3,c_fill,dpr_2.0,f_auto,q_auto,w_300/v1/marketplace-listing/vm7kzqzohzkmnv716h7j",
   "phone": "01 84 20 20 85",
   "instagram": "funbooker",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-atelier-cocktails-personnalises",
   "list": "precieuses",
-  "arr": null,
+  "arr": 10,
   "cat": "Activité",
   "name": "Atelier cocktails personnalisés",
-  "address": "",
+  "address": "9 rue de Paradis, 75010 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -11215,7 +11760,11 @@
   "photo": "https://cocktails-paris.com/wp-content/uploads/2015/03/cocktail-paris-home.png",
   "phone": "01 40 28 16 82",
   "instagram": "cocktailsparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Apprenez à créer vos propres cocktails sur mesure lors d'un atelier ludique et créatif. L'ambiance y est conviviale, chaleureuse et propice à la découverte de saveurs uniques.",
+  "lat": 48.874568,
+  "lng": 2.35414
  },
  {
   "id": "precieuses-0-activite-atelier-parfums-personnalises",
@@ -11228,15 +11777,16 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-objectif-horlogerie",
   "list": "precieuses",
-  "arr": null,
+  "arr": 3,
   "cat": "Activité",
   "name": "Objectif Horlogerie",
-  "address": "",
+  "address": "53 rue de Turbigo, 75003 Paris",
   "mark": "",
   "price": 4,
   "priceSrc": "estim",
@@ -11247,7 +11797,11 @@
   "phone": "01 42 74 88 50",
   "instagram": "objectifhorlogerie",
   "booking": "https://www.objectifhorlogerie.com/ateliers-en-france/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Initiez-vous aux secrets de l'horlogerie mécanique en démontant et remontant un mouvement de montre suisse. Une expérience passionnante et minutieuse dans un cadre professionnel et intimiste.",
+  "lat": 48.865631,
+  "lng": 2.355967
  },
  {
   "id": "precieuses-0-activite-aviasim",
@@ -11255,7 +11809,7 @@
   "arr": null,
   "cat": "Activité",
   "name": "Aviasim",
-  "address": "",
+  "address": "33 avenue du Général Leclerc, 92100 Boulogne-Billancourt",
   "mark": "",
   "price": 4,
   "priceSrc": "estim",
@@ -11266,7 +11820,11 @@
   "phone": "09 78 45 00 83",
   "instagram": "aviasim_fr",
   "booking": "https://www.aviasim.fr/reserver/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Prenez les commandes d'un simulateur de vol ultra-réaliste d'avion de ligne aux côtés d'un instructeur professionnel. L'ambiance immersive séduira tous les passionnés d'aviation et de sensations fortes.",
+  "lat": 48.831858,
+  "lng": 2.238383
  },
  {
   "id": "precieuses-0-activite-initium",
@@ -11283,15 +11841,16 @@
   "enriched": 5,
   "photo": "https://initium.swiss/wp-content/uploads/elementor/thumbs/vignette-workshop-q2rnuuop4w7nhy3d9998f3plnsz0ka3nr00le5ouwg.jpg",
   "instagram": "initium_swiss",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-wecandoo",
   "list": "precieuses",
-  "arr": null,
+  "arr": 8,
   "cat": "Activité",
   "name": "Wecandoo",
-  "address": "",
+  "address": "10 rue de Ponthieu, 75008 Paris",
   "mark": "",
   "price": 3,
   "priceSrc": "estim",
@@ -11300,7 +11859,11 @@
   "enriched": 5,
   "igSearched": 1,
   "instagram": "wecandoo",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Ateliers manuels et artisanaux pour s'initier au savoir-faire d'artisans passionnés. Une ambiance conviviale et créative pour repartir avec sa propre création.",
+  "lat": 48.870392,
+  "lng": 2.310681
  },
  {
   "id": "precieuses-0-activite-theatre-a-la-minute",
@@ -11313,7 +11876,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-eclipso",
@@ -11330,15 +11894,16 @@
   "enriched": 5,
   "photo": "https://eclipso-entertainment.com/wp-content/uploads/2026/09/Notre-dame.png",
   "instagram": "eclipso_entertainment",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-e-motion",
   "list": "precieuses",
-  "arr": null,
+  "arr": 15,
   "cat": "Activité",
   "name": "E-Motion",
-  "address": "",
+  "address": "2 Avenue de la Porte de Sèvres, 75015 Paris",
   "mark": "",
   "price": 2,
   "priceSrc": "estim",
@@ -11346,7 +11911,11 @@
   "website": "https://www.e-motion.racing",
   "enriched": 5,
   "instagram": "e_motion.racing.paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Plongez dans l'univers du sport automobile grâce à des simulateurs de course haut de gamme dans une ambiance futuriste et immersive. Idéal pour vivre des sensations fortes entre amis ou en solo.",
+  "lat": 48.835902,
+  "lng": 2.277929
  },
  {
   "id": "precieuses-0-activite-peinture-sur-ceramique",
@@ -11359,7 +11928,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-creation-de-bougie",
@@ -11372,7 +11942,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-atelier-poterie",
@@ -11385,7 +11956,8 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "precieuses-0-activite-lol-qui-rit-sort",
