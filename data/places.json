@@ -18,7 +18,9 @@
   "priceSrc": "estim",
   "photo": "https://images.squarespace-cdn.com/content/v1/581b12f99de4bbcf73351547/1495525542817-3DFP3J7SLQ1V2B5PXO8H/ellsfacade2.jpg",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une ambiance bistrot branchée et chaleureuse où l'on savoure une cuisine de marché inventive aux inspirations américaines. Ne manquez pas leur fameux poulet frit."
  },
  {
   "id": "paris-1-francais-les-artizans",
@@ -41,7 +43,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "lesartizans",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant bistronomique convivial situé rue Montorgueil, proposant une cuisine française inventive qui marie tradition et modernité. On y déguste des plats raffinés et des pâtisseries maison soignées dans un cadre chaleureux."
  },
  {
   "id": "paris-1-francais-plume",
@@ -63,7 +67,9 @@
   "priceSrc": "estim",
   "photo": "https://laplumerivedroite.com/wp-content/uploads/2026/01/DSC_2156-Enhanced-NR.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant élégant et feutré perché sur les toits, offrant une cuisine française raffinée aux accents contemporains. L'atmosphère y est chic et romantique, idéale pour savourer des plats délicats tout en profitant d'une vue imprenable."
  },
  {
   "id": "paris-1-francais-pied-de-cochon",
@@ -85,7 +91,9 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Mythique brasserie parisienne ouverte 24h/24 au cœur des Halles, célèbre pour son ambiance animée et généreuse. L'incontournable à y goûter est bien sûr le pied de cochon grillé ainsi que leurs superbes plateau de fruits de mer."
  },
  {
   "id": "paris-1-francais-inavoue",
@@ -107,7 +115,9 @@
   "kasher": true,
   "photo": "https://inavoue.com/wp-content/uploads/2024/03/signature-inavoue.png",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un bar à manger intimiste et chaleureux au cœur de Paris, idéal pour partager des assiettes canailles et des vins d'auteur en toute discrétion."
  },
  {
   "id": "paris-1-francais-maslow",
@@ -128,7 +138,9 @@
   "priceSrc": "estim",
   "photo": "https://maslow-restaurants.com/wp-content/themes/maslow-group-multi/assets/footer-maslow.webp",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une table végétarienne gourmande et décomplexée avec vue sur la Seine, mettant à l'honneur des pâtes réconfortantes et des plats à partager."
  },
  {
   "id": "paris-1-francais-le-roch-restaurant",
@@ -147,7 +159,10 @@
   "enriched": 5,
   "igSearched": 1,
   "instagram": "lerochhotel",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 40 20 09 39",
+  "summary": "Un cadre feutré et élégant signé Sarah Lavoine, où l'on savoure une cuisine française raffinée et inventive orchestrée par le chef."
  },
  {
   "id": "paris-1-francais-la-poule-au-pot",
@@ -168,7 +183,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "lapouleaupotparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un restaurant bistronomique parisien mythique et chaleureux, repris par le groupe Alain Ducasse, qui célèbre les grands classiques de la cuisine bourgeoise française."
  },
  {
   "id": "paris-1-italien-cicciolina",
@@ -189,7 +206,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "cicciolinaparis",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "booking": "https://www.thefork.fr/restaurant/cicciolina-r723783",
+  "summary": "Une trattoria chaleureuse et branchée aux abords de Châtelet, parfaite pour déguster des pâtes fraîches maison et des antipasti généreux dans une ambiance conviviale."
  },
  {
   "id": "paris-1-italien-liberto",
@@ -207,7 +227,11 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "liberto_parisi"
+  "instagram": "liberto_parisi",
+  "aiFill": 1,
+  "phone": "01 42 33 13 31",
+  "booking": "https://www.thefork.fr/restaurant/liberto-r697193",
+  "summary": "Un restaurant italien festif et coloré au cœur des Halles, idéal pour savourer des pizzas croustillantes et des cocktails signatures dans une ambiance survoltée."
  },
  {
   "id": "paris-1-italien-presto-fresco",
@@ -228,7 +252,10 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "booking": "https://www.thefork.fr/restaurant/presto-fresco-r47514",
+  "summary": "Une adresse italienne authentique et accueillante près des Halles, idéale pour déguster de savoureuses pizzas au feu de bois et des plats de pâtes généreux dans une ambiance détendue."
  },
  {
   "id": "paris-1-italien-tzantza",
@@ -248,7 +275,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "tzantza.paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 33 03 84",
+  "summary": "Un restaurant bar au concept italo-latino unique, proposant des tapas raffinées et des cocktails créatifs dans une ambiance tamisée et festive."
  },
  {
   "id": "paris-1-japonais-foujita",
@@ -270,7 +300,9 @@
   "photo": "https://foujita.onataste.fr/media/foujita.webp",
   "igSearched": 1,
   "instagram": "_foujita",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Institution japonaise historique du 1er arrondissement, Foujita propose des sashimis, sushis et plats traditionnels réconfortants dans une ambiance intime et chaleureuse. On y vient pour savourer l'authenticité d'une cuisine soignée au cœur de Paris."
  },
  {
   "id": "paris-1-japonais-takara",
@@ -293,7 +325,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "takara_paris",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Considéré comme l'un des plus anciens restaurants japonais de Paris, Takara invite à découvrir des spécialités traditionnelles telles que le sukiyaki et des sushis d'une grande finesse. L'atmosphère y est feutrée et authentique."
  },
  {
   "id": "paris-1-japonais-enyaa",
@@ -316,7 +350,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "restaurant_enyaa",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Niché face au Palais-Royal, Enyaa propose une haute gastronomie japonaise mettant à l'honneur des nouilles soba d'exception et des menus kaiseki raffinés. Le cadre est élégant, épuré et propice à une expérience culinaire délicate."
  },
  {
   "id": "paris-1-japonais-japanos-ramen-bar",
@@ -338,7 +374,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Japanos Ramen Bar propose des ramens généreux aux bouillons savoureux ainsi que des tapas japonaises incontournables. L'ambiance y est dynamique, moderne et typique des bars à nouilles urbains."
  },
  {
   "id": "paris-1-japonais-sushi-way",
@@ -361,7 +399,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "sushiwayofficiel",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un concept ludique de sushis livrés directement à table sur des mini-trains à grande vitesse. L'ambiance y est moderne, idéale pour un repas rapide et amusant."
  },
  {
   "id": "paris-1-japonais-restaurant-zen",
@@ -383,7 +423,9 @@
   "priceSrc": "estim",
   "photo": "https://www.zenrestaurantparis.fr/wp-content/uploads/2025/04/ZEN_CarteMenu_Diner_250418-1536x1024.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une adresse authentique au cœur de Paris pour savourer de délicieux bentos, sushis et plats traditionnels faits maison. L'atmosphère est calme, chaleureuse et typiquement nippone."
  },
  {
   "id": "paris-1-japonais-pink-koi",
@@ -398,7 +440,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "paris-1-japonais-yamato-grill",
@@ -420,7 +463,9 @@
   "booking": "https://lor.paris/r/yamato-grill-paris",
   "igSearched": 1,
   "instagram": "yamato.grill",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Spécialisé dans les grillades japonaises et les viandes d'exception, ce restaurant propose une cuisine savoureuse dans une ambiance conviviale et contemporaine."
  },
  {
   "id": "paris-1-japonais-nodaiwa",
@@ -440,7 +485,9 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Spécialisé dans l'anguille (unagi) grillée à la perfection selon un savoir-faire ancestral tokyoïte. L'ambiance y est feutrée, élégante et résolument traditionnelle."
  },
  {
   "id": "paris-1-chinois-bobun-chatelet",
@@ -460,7 +507,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "bobun_chatelet",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 33 28 88",
+  "summary": "Un incontournable pour déguster de généreux bo-buns faits maison et des nems croustillants. L'ambiance est simple, chaleureuse et idéale pour un déjeuner rapide et savoureux."
  },
  {
   "id": "paris-1-chinois-ravioli-nord-est",
@@ -481,7 +531,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "raviolinordest",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une adresse authentique réputée pour ses délicieux raviolis faits main aux multiples farces traditionnelles. Le cadre est modeste et l'atmosphère conviviale met à l'honneur la cuisine populaire du nord-est de la Chine."
  },
  {
   "id": "paris-1-coreen-dongne-chicken",
@@ -499,7 +551,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "dongne_chicken"
+  "instagram": "dongne_chicken",
+  "aiFill": 1,
+  "phone": "09 73 59 13 41",
+  "summary": "Le paradis du poulet frit coréen ultra croustillant, enrobé de sauces savoureuses et addictives. L'ambiance est jeune, décontractée et typique des rues animées de Séoul."
  },
  {
   "id": "paris-1-coreen-go-oun",
@@ -521,7 +576,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "resto_gooun",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un restaurant coréen intimiste où l'on savoure des plats faits maison authentiques dans une ambiance chaleureuse. On y déguste notamment d'excellents bibimbaps et des raviolis traditionnels."
  },
  {
   "id": "paris-1-coreen-fondue-du-dragon",
@@ -540,7 +597,11 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 33 08 26",
+  "instagram": "fonduedragonparis",
+  "summary": "Une adresse incontournable pour les amateurs de fondues asiatiques généreuses et de spécialités coréennes. L'ambiance y est conviviale et idéale pour partager un repas chaleureux en groupe."
  },
  {
   "id": "paris-1-coreen-jjan",
@@ -559,7 +620,10 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/aa84fc_8f61f9b67b4947c38932b4a31f95db8d~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/aa84fc_8f61f9b67b4947c38932b4a31f95db8d~mv2.jpg",
   "instagram": "jjan_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 33 38 12",
+  "summary": "Un bar-restaurant coréen branché qui propose des tapas et des plats à partager accompagnés de cocktails originaux. L'atmosphère est animée et parfaite pour une soirée entre amis."
  },
  {
   "id": "paris-1-indonesien-djakarta-bali",
@@ -580,7 +644,10 @@
   "website": "https://djakarta-bali.com",
   "igSearched": 1,
   "instagram": "djakartabali",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 45 08 83 11",
+  "summary": "Une véritable invitation au voyage au cœur de l'Indonésie avec des saveurs parfumées et dépaysantes. On y savoure un excellent nasi goreng dans un cadre chaleureux aux décors traditionnels."
  },
  {
   "id": "paris-1-brunch-baguett-s-cafe",
@@ -600,7 +667,10 @@
   "searched": 1,
   "website": "https://baguettscafe.fr",
   "photo": "https://cdn.prod.website-files.com/68ba57ab0daf5a0e6cfe772a/68ba5d3306ac635d83864edc_DSC05274.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 61 81 77",
+  "summary": "Un café chaleureux et convivial où déguster de généreux avocado toasts, des œufs brouillés savoureux et des pâtisseries maison dans une ambiance cosy."
  },
  {
   "id": "paris-1-brunch-immersion-vendome",
@@ -617,7 +687,11 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1,
+  "phone": "09 81 25 79 31",
+  "instagram": "immersion.paris",
+  "summary": "Un spot de brunch ultra gourmand et lumineux, idéal pour savourer des pancakes ultra moelleux et des plats colorés dans une ambiance branchée."
  },
  {
   "id": "paris-1-cafe-le-tiki-rose",
@@ -635,7 +709,9 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "tikiroseparis"
+  "instagram": "tikiroseparis",
+  "aiFill": 1,
+  "summary": "Un bar-café aux accents tropicaux et colorés, parfait pour siroter des cocktails originaux et profiter d'une ambiance festive et chaleureuse en plein cœur de Paris."
  },
  {
   "id": "paris-1-cafe-cafe-kitsune",
@@ -656,7 +732,9 @@
   "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
   "igSearched": 1,
   "instagram": "cafekitsune",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Un comptoir à café incontournable sous les arcades du Palais-Royal, réputé pour son excellent matcha latte et ses boissons de specialty coffee dans un décor minimaliste et chic."
  },
  {
   "id": "paris-1-cafe-le-cafe-de-l-epoque",
@@ -678,7 +756,10 @@
   "searched": 1,
   "igSearched": 1,
   "booking": "https://cafedelepoque.fr/fr/booking",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "instagram": "lecafedelepoque",
+  "summary": "Un café-brasserie élégant et rétro situé à deux pas du Palais-Royal. On y savoure une cuisine française classique dans une ambiance chaleureuse et intemporelle."
  },
  {
   "id": "paris-1-cafe-le-cafe-marly",
@@ -700,7 +781,9 @@
   "priceSrc": "estim",
   "photo": "https://cdn.prod.website-files.com/6835b87931e0113e00db557e/686b748a6faec8ecc25261b7_restaurant%20face%20au%20louvre.webp",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Situé sous les arcades de la Cour Napoléon du Louvre, ce café offre une vue imprenable sur la pyramide. Idéal pour admirer le panorama chic et artistique autour d'une carte raffinée."
  },
  {
   "id": "paris-1-cafe-cafe-laperouse",
@@ -721,7 +804,9 @@
   "photo": "https://cafelaperouse-concorde.com/wp-content/uploads/2026/01/cafe-laperouse-2-2.webp",
   "phone": "01 53 93 65 53",
   "instagram": "cafelaperouse_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Niché à l'Hôtel de la Marine, ce café-restaurant séduit par son décor inspiré des grands voyages et sa terrasse face à la place de la Concorde. Un lieu sophistiqué pour déguster des plats marins et des douceurs."
  },
  {
   "id": "paris-1-cafe-aki",
@@ -742,7 +827,9 @@
   "price": 1,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Une boulangerie-café incontournable de la rue Sainte-Anne pour savourer d'excellents choux au matcha et des bentos japonais. L'ambiance y est toujours animée et gourmande."
  },
  {
   "id": "paris-1-cafe-musset",
@@ -765,7 +852,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "lemussetparis",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un café-brasserie chic et chaleureux situé en face de la Comédie-Française, idéal pour savourer une cuisine française classique et des cocktails soignés dans une ambiance élégante."
  },
  {
   "id": "paris-1-bar-a-cocktails-le-roof",
@@ -786,7 +875,10 @@
   "priceSrc": "estim",
   "searched": 1,
   "booking": "https://www.sevenrooms.com/explore/restaurantmr/reservations/create/search/",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 80 40 76 40",
+  "summary": "Perché sur le toit de l'Hôtel Madame Rêve, ce rooftop végétalisé offre des cocktails créatifs d'inspiration japonaise et une vue panoramique imprenable sur Paris dans une ambiance feutrée et luxueuse."
  },
  {
   "id": "paris-2-francais-strogoff",
@@ -804,7 +896,11 @@
   "priceSrc": "estim",
   "searched": 1,
   "igSearched": 1,
-  "instagram": "strogoff_paris"
+  "instagram": "strogoff_paris",
+  "aiFill": 1,
+  "phone": "01 42 33 52 46",
+  "booking": "https://www.thefork.fr",
+  "summary": "Une belle brasserie contemporaine aux accents rétro proposant une cuisine française généreuse et des viandes d'exception, le tout dans une ambiance animée et élégante."
  },
  {
   "id": "paris-2-francais-les-carnivores",
@@ -821,7 +917,8 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "igSearched": 1
+  "igSearched": 1,
+  "aiFill": 1
  },
  {
   "id": "paris-2-francais-one-and-one",
@@ -844,7 +941,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "oneandone.paris",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Niché dans le passage des Panoramas, ce restaurant propose une cuisine française bistronomique et de saison dans une ambiance chaleureuse et intimiste."
  },
  {
   "id": "paris-2-francais-brasserie-dubillot",
@@ -865,7 +964,9 @@
   "price": 2,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "summary": "Grande brasserie moderne au décor spectaculaire, idéale pour savourer des classiques de la cuisine française généreux et faits maison dans une ambiance festive et animée."
  },
  {
   "id": "paris-2-francais-itacoa",
@@ -886,7 +987,10 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "itacoa_paris",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "phone": "01 42 36 83 88",
+  "summary": "Table du chef Rafael Gomes, Itacoa propose une cuisine bistronomique créative et métissée, mettant à l'honneur des produits bruts et de saison dans un cadre épuré."
  },
  {
   "id": "paris-2-francais-the-hoxton",
@@ -907,7 +1011,10 @@
   "price": 3,
   "priceSrc": "estim",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "phone": "01 85 65 75 00",
+  "summary": "Un hôtel-restaurant branché du Sentier où l'on dégute des plats d'inspiration française et internationale dans un cadre design et feutré, très prisé pour son ambiance cosmopolite."
  },
  {
   "id": "paris-2-francais-la-grappe",
@@ -930,7 +1037,9 @@
   "igSearched": 1,
   "instagram": "la__grappe",
   "booking": "https://www.opentable.fr/booking/restref/availability?rid=364110&restref=364110&lang=fr-FR",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une ambiance chaleureuse de bistrot de quartier mettant à l'honneur des vins naturels et une cuisine française de saison axée sur le partage. On y déguste des assiettes créatives et réconfortantes dans un cadre intimiste."
  },
  {
   "id": "paris-2-francais-astair",
@@ -952,7 +1061,9 @@
   "priceSrc": "estim",
   "photo": "https://www.astair.paris/wp-content/uploads/2026/04/Astair-04-30-255x382.jpg",
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une brasserie contemporaine élégante nichée au cœur du passage des Panoramas. On y savoure des classiques revisités de la cuisine française et des plats faits maison dans un décor feutré aux accents rétro."
  },
  {
   "id": "paris-2-francais-circonstances",
@@ -975,7 +1086,9 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "circonstances.paris",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Un restaurant de quartier à l'atmosphère conviviale et soignée, proposant une cuisine française inventive et de saison. Idéal pour découvrir des assiettes raffinées accompagnées de belles quilles nature."
  },
  {
   "id": "paris-2-francais-montecito",
@@ -996,7 +1109,9 @@
   "phone": "01 80 40 76 40",
   "instagram": "montecitorestaurantparis",
   "booking": "https://www.opentable.fr/restref/client/?restref=330084&lang=fr-FR",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "aiFill": 1,
+  "summary": "Une table spacieuse et lumineuse aux airs de brasserie californienne chic en plein cœur de Paris. On y apprécie une cuisine généreuse et colorée dans une ambiance branchée et décontractée."
  },
  {
   "id": "paris-2-italien-pizz-aria",
