@@ -963,6 +963,7 @@ function aiPrompt(link, text) {
 Les images sont des captures d'écran d'une publication (Instagram, TikTok, Facebook, site…).${link ? `\nLien de la publication : ${link}` : ""}${text ? `\nTexte de la légende :\n${text}` : ""}
 
 Identifie le lieu présenté.${link && !text ? " S'il n'y a que le lien, ouvre-le ; s'il est illisible (Instagram, TikTok), cherche le compte et la publication sur le web." : ""} Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.
+Attention : le compte qui publie est souvent un média ou un influenceur food, pas le lieu lui-même. Le lieu est celui nommé ou tagué dans la légende ou visible sur les images. Ne propose JAMAIS un lieu au hasard ou seulement « ressemblant » : si tu n'as pas d'indice clair (nom, tag, adresse), laisse "name" vide et explique dans "doubt" ce qui manque.
 
 Choix de la liste :
 - "paris" : restaurant ou adresse à manger dans Paris intra-muros (75001 à 75020).
@@ -988,17 +989,22 @@ function aiError(e) {
 
 // Sans clé sur le téléphone, la lecture passe par la fonction « ia » de Supabase, qui garde la clé côté serveur.
 const aiServer = () => !store.get("aiKey", "") && typeof AVIS !== "undefined" && AVIS.url;
-async function aiAsk(prompt, images = [], web = true) {
-  const r = await fetch(`${AVIS.url}/functions/v1/ia`, { method: "POST", headers: { ...sbHead(), "content-type": "application/json" }, body: JSON.stringify({ prompt, images, web }) });
+async function aiAsk(prompt, images = [], web = true, extra = {}) {
+  const r = await fetch(`${AVIS.url}/functions/v1/ia`, { method: "POST", headers: { ...sbHead(), "content-type": "application/json" }, body: JSON.stringify({ prompt, images, web, ...extra }) });
   const out = await r.json().catch(() => ({}));
   if (!r.ok) { const e = new Error(out.error || `erreur ${r.status}`); e.status = out.status || r.status; throw e; }
   return out.text || "";
 }
 async function aiRead(link, text) {
   if (aiServer()) {
-    const out = await aiAsk(aiPrompt(link, text), aiImages);
-    const json = out.slice(out.indexOf("{"), out.lastIndexOf("}") + 1);
-    try { return JSON.parse(json); } catch { throw new Error("réponse incomplète, réessaie"); }
+    // Le serveur range aussi le résultat sous ce numéro : si on quitte l'appli, on le récupère au retour.
+    const job = (crypto.randomUUID ? crypto.randomUUID() : Date.now() + "-" + Math.random().toString(36).slice(2));
+    store.set("aiJob", { job, link, at: Date.now() });
+    let out;
+    try { out = await aiAsk(aiPrompt(link, text), aiImages, true, { link, job }); }
+    catch (e) { if (e.status) { store.set("aiJob", null); throw e; } out = await aiWait(job); }
+    store.set("aiJob", null);
+    return aiParse(out);
   }
   const { default: Anthropic } = await import("./vendor/anthropic/anthropic.mjs");
   const client = new Anthropic({ apiKey: store.get("aiKey", ""), dangerouslyAllowBrowser: true });
@@ -1024,6 +1030,43 @@ async function aiRead(link, text) {
   const out = res.content.filter((b) => b.type === "text").map((b) => b.text).join("");
   const json = out.slice(out.indexOf("{"), out.lastIndexOf("}") + 1);
   try { return JSON.parse(json); } catch { throw new Error("réponse incomplète, réessaie"); }
+}
+
+function aiParse(out) {
+  const json = String(out || "").slice(out.indexOf("{"), out.lastIndexOf("}") + 1);
+  try { return JSON.parse(json); } catch { throw new Error("réponse incomplète, réessaie"); }
+}
+// Attend le résultat rangé par le serveur (table « lectures »), jusqu'à 3 minutes après le lancement.
+async function aiWait(job, since = Date.now()) {
+  while (Date.now() - since < 180000) {
+    await new Promise((ok) => setTimeout(ok, 3000));
+    if (document.hidden) continue;
+    try {
+      const r = await fetch(`${AVIS.url}/rest/v1/lectures?id=eq.${encodeURIComponent(job)}&select=text,error`, { headers: sbHead() });
+      const row = r.ok ? (await r.json())[0] : null;
+      if (row?.error) { store.set("aiJob", null); throw new Error(row.error); }
+      if (row?.text) return row.text;
+    } catch (e) { if (!(e instanceof TypeError)) throw e; }
+  }
+  store.set("aiJob", null);
+  throw new Error("la lecture n'a pas abouti, réessaie");
+}
+// Une lecture lancée avant de quitter l'appli : on la reprend à l'ouverture.
+async function aiResume() {
+  const p = store.get("aiJob", null);
+  if (!p || !aiServer() || Date.now() - p.at > 180000) { if (p) store.set("aiJob", null); return; }
+  const status = $("#aiStatus");
+  location.hash = "ajouter"; show("ajouter");
+  status.hidden = false; status.className = "ai-status"; status.textContent = "Je récupère la lecture lancée tout à l'heure…";
+  try {
+    const r = aiParse(await aiWait(p.job, p.at));
+    store.set("aiJob", null);
+    if (!r.name) throw new Error("aucun lieu reconnu");
+    fillFromAi(r, p.link);
+    status.className = "ai-status ok";
+    status.textContent = r.doubt ? `Fiche remplie. À vérifier : ${r.doubt}` : "Fiche remplie, vérifie et touche Ajouter.";
+    setTimeout(() => $("#placeForm").scrollIntoView({ behavior: "smooth" }), 80);
+  } catch (err) { status.className = "ai-status err"; status.textContent = aiError(err); }
 }
 
 function fillFromAi(r, link) {
@@ -1056,7 +1099,7 @@ $("#aiForm").addEventListener("submit", async (e) => {
   status.hidden = false; status.className = "ai-status"; status.textContent = "Lecture des captures et recherche de l'adresse…";
   try {
     const r = await aiRead(link, text);
-    if (!r.name) throw new Error("aucun lieu reconnu sur ces images");
+    if (!r.name) throw new Error(`lieu pas trouvé avec certitude${r.doubt ? ` (${r.doubt})` : ""}. Ajoute une capture où on voit le nom du lieu`);
     fillFromAi(r, link);
     status.className = "ai-status ok";
     status.textContent = r.doubt ? `Fiche remplie. À vérifier : ${r.doubt}` : "Fiche remplie, vérifie et touche Ajouter.";
@@ -1158,7 +1201,10 @@ async function boot() {
     location.hash = "ajouter"; show("ajouter");
     $("#linkUrl").value = url; $("#aiText").value = rest;
     if (url || rest) setTimeout(() => $("#aiForm").requestSubmit(), 300);
-  } else show(["carte", "ajouter", "precieuses", "envies"].includes(h0) ? h0 : "accueil");
+  } else {
+    show(["carte", "ajouter", "precieuses", "envies"].includes(h0) ? h0 : "accueil");
+    aiResume();
+  }
   const setHead = () => document.documentElement.style.setProperty("--head-h", `${Math.round($(".top").offsetHeight)}px`);
   setHead(); addEventListener("resize", setHead);
 }
