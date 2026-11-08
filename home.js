@@ -99,11 +99,11 @@ function gfWish(q, P) {
   return { res, labels: hit.map((c) => c.label) };
 }
 
-function gfCard(p, why) {
+function gfCard(p, why, m) {
   const addr = p.address ? " · " + esc(String(p.address).replace(/,?\s*750\d\d Paris$/, "")) : "";
   return `<button class="pcard" data-gf-id="${esc(p.id)}"><div class="ph" ${gfBg(gfGoodPhoto(p.photo) ? p.photo : "")}>${gfGoodPhoto(p.photo) ? "" : esc((p.name || "?")[0])}</div>
     <div style="min-width:0"><b>${esc(p.name)}</b><small>${esc(gfCuis(p) || p.cat || "")}${addr}</small>
-    <div class="tags">${p.price ? `<span class="tag">${"€".repeat(p.price)}</span>` : ""}${p.tested ? '<span class="tag ok">Testé</span>' : ""}${p.kasher ? '<span class="tag k">Kasher</span>' : ""}${p.halal ? '<span class="tag h">Halal</span>' : ""}</div>
+    <div class="tags">${m != null ? `<span class="tag near">${fmtDist(m)} · ${walkMin(m)} min à pied</span>` : ""}${p.price ? `<span class="tag">${"€".repeat(p.price)}</span>` : ""}${p.tested ? '<span class="tag ok">Testé</span>' : ""}${p.kasher ? '<span class="tag k">Kasher</span>' : ""}${p.halal ? '<span class="tag h">Halal</span>' : ""}</div>
     ${why && why.length ? `<div class="why">✓ ${esc(why.join(" · "))}</div>` : ""}</div>${p.want ? '<span class="heart">♥</span>' : ""}</button>`;
 }
 function gfGrouped(items) {
@@ -129,6 +129,24 @@ function gfHero() {
   </header>`;
 }
 
+// Autour de moi : les adresses les plus proches, toutes listes confondues (seulement les Précieuses en mode Précieuses).
+function gfNear() {
+  if (!S.me) return [];
+  return (GF.prec ? gfPool() : S.places).map((p) => ({ p, m: distM(S.me, p) })).filter((x) => x.m != null).sort((a, b) => a.m - b.m);
+}
+function gfNearSec() {
+  const N = gfNear().filter((x) => x.m < 1500).slice(0, 8);
+  if (!S.me) return `<section class="sec"><button class="near-cta" data-gf-near><span class="pin">◎</span><span><b>Autour de moi</b><small>Localise-toi pour voir les bonnes adresses à côté</small></span><i>›</i></button></section>`;
+  return `<section class="sec"><div class="sec-h"><h2>Autour de moi</h2><button class="all" data-gf-near>${N.length ? "Tout voir ›" : "Actualiser ›"}</button></div>
+    ${N.length ? `<div class="cards">${N.slice(0, 4).map((x) => gfCard(x.p, null, x.m)).join("")}</div>` : `<p class="none" style="margin:0">Rien à moins de 1,5 km. Touche « Actualiser » pour voir les plus proches.</p>`}</section>`;
+}
+function gfOpenNear() {
+  const go = () => gfOpen({ near: 1 });
+  if (S.me && Date.now() - S.me.t < 5 * 60000) return go();
+  toast("Je te localise…");
+  locateMe(true).then(go).catch(() => {});
+}
+
 function gfHomeBody() {
   const P = gfPool(), c = GF_CITIES.find((x) => x.id === GF.city);
   const { Z, ks } = gfZkeys(P);
@@ -136,6 +154,7 @@ function gfHomeBody() {
   const outs = Object.keys(GF_OUT).map((n) => [n, P.filter((p) => gfOutOf(p) === n).length]).filter((x) => x[1]);
   const k = P.filter((p) => p.kasher).length, h = P.filter((p) => p.halal).length;
   return `<div style="height:34px"></div>
+  ${gfNearSec()}
   <section class="sec"><div class="sec-h"><h2>${esc(c.zoneTitle)}</h2><span>${gfCount(P.length)}</span></div>
     <div class="zrail">${ks.map((z) => `<button class="zp" data-gf-zone="${esc(z)}">${gfSign(z)}<small>${gfCount(Z[z])}</small></button>`).join("")}</div></section>
   <section class="sec"><div class="sec-h"><h2>Une envie ?</h2></div>
@@ -165,6 +184,14 @@ function gfListBody() {
     const { res, labels } = gfWish(L.wish, P);
     return head("Ton envie", `<p style="margin:0 0 4px;color:var(--muted)">« ${esc(L.wish)} »</p>${labels.length ? `<div class="tags" style="margin-bottom:12px">${labels.map((l) => `<span class="tag">${esc(l)}</span>`).join("")}</div>` : ""}`)
       + `<div class="cards">${res.slice(0, 40).map((x) => gfCard(x.p, x.why)).join("") || `<p class="none">Rien trouvé, essaie avec d'autres mots.</p>`}</div>`;
+  }
+  if (L.near) {
+    const N = gfNear(), bands = [["À 5 min à pied", 450], ["À 10 min", 900], ["À 20 min", 1800], ["Un peu plus loin", 4000]];
+    let from = 0;
+    const out = bands.map(([t, max]) => { const g = N.filter((x) => x.m >= from && x.m < max); from = max; return g.length ? `<div class="subhead" style="--sc:var(--accent)"><h3>${t}</h3><i></i><span>${g.length}</span></div><div class="cards">${g.slice(0, 40).map((x) => gfCard(x.p, null, x.m)).join("")}</div>` : ""; }).join("");
+    const far = !N.some((x) => x.m < 4000);
+    return head("Autour de moi", `<button class="btn" data-gf-near style="margin:0 0 6px">◎ Actualiser ma position</button>`)
+      + (out || "") + (far ? `<p class="none">Rien à moins de 4 km. Voici les plus proches :</p><div class="cards">${N.slice(0, 10).map((x) => gfCard(x.p, null, x.m)).join("")}</div>` : "");
   }
   let items = [], title = "", flat = false;
   if (L.diet) { items = P.filter((p) => p[L.diet]); title = L.diet === "kasher" ? "Kasher" : "Halal"; }
@@ -238,6 +265,7 @@ document.addEventListener("click", (e) => {
   if ((b = t.closest("[data-gf-cat]"))) { gfOpen({ cat: b.dataset.gfCat }); return; }
   if ((b = t.closest("[data-gf-out]"))) { gfOpen({ out: b.dataset.gfOut }); return; }
   if ((b = t.closest("[data-gf-diet]"))) { gfOpen({ diet: b.dataset.gfDiet }); return; }
+  if (t.closest("[data-gf-near]")) { gfOpenNear(); return; }
   if (t.closest("[data-gf-allcats]")) { gfOpen({ allcats: 1 }); return; }
   if (t.closest("[data-gf-wish]")) { const v = $("#gfWish").value.trim(); if (v) gfOpen({ wish: v }); return; }
   if ((b = t.closest("[data-gf-ex]"))) { gfOpen({ wish: b.dataset.gfEx }); return; }
