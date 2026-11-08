@@ -98,8 +98,11 @@ for (let i = 0; i < todo.length && calls < MAX; i += PER) {
   calls++;
   let res;
   try { res = await ask(batch); } catch (e) {
-    console.log(`lot ${calls} : ${e.message.slice(0, 200)}`);
+    console.log(`lot ${calls} : ${e.message.slice(0, 1500)}`);
     if (++fails >= 4) { console.log("Quota atteint, on reprendra au prochain passage"); break; }
+    // Limite par minute du quota gratuit : on souffle, puis on retente ce lot.
+    await new Promise((ok) => setTimeout(ok, 65000));
+    i -= PER;
     continue;
   }
   fails = 0;
@@ -111,5 +114,6 @@ for (let i = 0; i < todo.length && calls < MAX; i += PER) {
     if (got.length) { filled++; console.log(`${p.name} : ${got.join(", ")}`); }
   }
   await writeFile(FILE, JSON.stringify(places, null, 1));
+  await new Promise((ok) => setTimeout(ok, 5000));
 }
 console.log(`${calls} appels, ${filled} fiches complétées`);
