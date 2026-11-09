@@ -667,7 +667,7 @@ function drawRoute() {
 // et Waze / Plans prennent le relais (bouchons en direct, itinéraire plus rapide proposé).
 function rushNote(r) {
   if (r && r.live) {
-    const d = Math.round(r.delay), alt = r.alt;
+    const d = Math.round(Math.max(r.delay || 0, (r.min - (r.free || r.min)))), alt = r.alt;
     const state = d >= 10 ? `<b class="jam">Bouchons : +${d} min</b> sur le trajet` : d >= 3 ? `<b class="slow">Ça ralentit : +${d} min</b>` : `<b class="fluid">Ça roule bien</b>`;
     const bis = alt ? ` · <button class="linkish" data-route-alt>${RT.alt ? "Revenir au trajet principal" : `Itinéraire bis : ${fmtMin(alt.min)}${alt.delay >= 1 ? ` (+${Math.round(alt.delay)} min de bouchons)` : ""}`}</button>` : "";
     return `<p class="rt-note">Trafic en direct : ${state}${bis}. Waze et Plans te guident en suivant le trafic.</p>`;
