@@ -1943,7 +1943,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,18:30-23:00",
+   "12:00-14:30,18:30-23:00",
+   "12:00-14:30,18:30-23:00",
+   "12:00-14:30,18:30-23:00",
+   "12:00-14:30,18:30-23:30",
+   "12:00-14:30,18:30-23:30",
+   "12:00-14:30,18:30-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-japonais-zuzuttomo",
@@ -1970,7 +1982,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-japonais-kimochi",
@@ -1997,7 +2021,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-japonais-devant-vous",
@@ -2023,7 +2059,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "09 83 26 50 62",
-  "summary": "Un restaurant japonais chaleureux proposant une cuisine authentique et soignée, parfaite pour découvrir des plats traditionnels faits maison au cœur du 2e arrondissement."
+  "summary": "Un restaurant japonais chaleureux proposant une cuisine authentique et soignée, parfaite pour découvrir des plats traditionnels faits maison au cœur du 2e arrondissement.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-japonais-isshin-ramen",
@@ -2050,7 +2098,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:45-14:45,18:45-22:45",
+   "11:45-14:45,18:45-22:45",
+   "11:45-14:45,18:45-22:45",
+   "11:45-14:45,18:45-23:00",
+   "11:45-14:45,18:45-23:00",
+   "11:45-15:00,18:45-23:00",
+   "11:45-15:00,18:45-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-japonais-moemachi",
@@ -2074,7 +2134,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un charmant restaurant japonais proposant de délicieux plats traditionnels dans une atmosphère chaleureuse et intimiste. Idéal pour déguster des spécialités authentiques au cœur du 2e arrondissement.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-chinois-supermian",
@@ -2099,7 +2171,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 96 15 89",
-  "summary": "Une adresse incontournable pour les amateurs de nouilles sautées et de soupes de nouilles artisanales aux saveurs piquantes. L'ambiance y est décontractée et typique des cantines de rue chinoises."
+  "summary": "Une adresse incontournable pour les amateurs de nouilles sautées et de soupes de nouilles artisanales aux saveurs piquantes. L'ambiance y est décontractée et typique des cantines de rue chinoises.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-chinois-baobaoland",
@@ -2123,7 +2207,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-chinois-xialongkan",
@@ -2147,7 +2232,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Plongez dans l'ambiance authentique des bouillons sichuanais pour y savourer des fondues traditionnelles ultra-épicées et généreuses. Le cadre immersif transporte directement dans les rues de Chengdu."
+  "summary": "Plongez dans l'ambiance authentique des bouillons sichuanais pour y savourer des fondues traditionnelles ultra-épicées et généreuses. Le cadre immersif transporte directement dans les rues de Chengdu.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-15:00,18:00-23:30",
+   "12:00-15:00,18:00-23:30",
+   "12:00-15:00,18:00-23:30",
+   "12:00-15:00,18:00-23:30",
+   "12:00-15:00,18:00-23:30",
+   "12:00-15:00,18:00-23:30",
+   "12:00-15:00,18:00-23:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-chinois-chez-toye",
@@ -2171,7 +2268,19 @@
   "booking": "https://cheztoye.fr/fr/booking",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse chaleureuse idéale pour déguster des spécialités chinoises authentiques et réconfortantes. L'ambiance y est conviviale et parfaite pour un déjeuner ou un dîner dépaysant en plein cœur de Paris."
+  "summary": "Une adresse chaleureuse idéale pour déguster des spécialités chinoises authentiques et réconfortantes. L'ambiance y est conviviale et parfaite pour un déjeuner ou un dîner dépaysant en plein cœur de Paris.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-chinois-sweetraviolis",
@@ -2195,7 +2304,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Le paradis des raviolis chinois faits maison aux garnitures savoureuses et variées. On y profite d'une ambiance moderne et décontractée, idéale pour une pause gourmande.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-chinois-mr-zhao",
@@ -2220,7 +2341,19 @@
   "aiFill": 1,
   "phone": "01 42 33 60 76",
   "summary": "Une cantine populaire qui met à l'honneur les nouilles et plats faits maison typiques de la cuisine chinoise de rue. L'ambiance y est animée et authentique.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-coreen-hang-a-ri",
@@ -2246,7 +2379,19 @@
   "resa": "telephone",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-coreen-sam-chic",
@@ -2269,7 +2414,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 97 45 42",
-  "summary": "Adresse incontournable pour savourer un délicieux poulet frit coréen croustillant et des plats faits maison, le tout dans une ambiance détendue et moderne."
+  "summary": "Adresse incontournable pour savourer un délicieux poulet frit coréen croustillant et des plats faits maison, le tout dans une ambiance détendue et moderne.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-thailandais-bomba",
@@ -2294,7 +2451,19 @@
   "aiFill": 1,
   "phone": "09 78 81 50 18",
   "summary": "Un lieu festif et coloré aux influences latines et tropicales, parfait pour siroter des cocktails originaux et partager des tapas aux saveurs ensoleillées.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-thailandais-brique-machine",
@@ -2319,7 +2488,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-libanais-noura",
@@ -2344,7 +2514,8 @@
   "aiFill": 1,
   "summary": "Une institution libanaise incontournable proposant des mezzés savoureux dans une ambiance chaleureuse et élégante.",
   "booking": "https://www.noura.com/pages/reservation",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-israelien-dalia",
@@ -2368,7 +2539,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table levantine vibrante et solaire où l'on déguste des plats à partager généreusement épicés dans un cadre verdoyant."
+  "summary": "Une table levantine vibrante et solaire où l'on déguste des plats à partager généreusement épicés dans un cadre verdoyant.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-argentin-asado",
@@ -2394,7 +2566,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-fusion-uma-nota",
@@ -2419,7 +2592,8 @@
   "aiFill": 1,
   "phone": "01 42 33 78 50",
   "summary": "Un restaurant au concept unique mêlant influences brésiliennes et japonaises, idéal pour déguster des cocktails créatifs dans une atmosphère festive et branchée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-fusion-sweetea-s",
@@ -2446,7 +2620,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-corse-alma",
@@ -2471,7 +2646,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=354151&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table corse authentique et raffinée au cœur du 2e arrondissement. On y savoure des spécialités de l'île et des tapas de charcuterie dans une ambiance chaleureuse et élégante."
+  "summary": "Une table corse authentique et raffinée au cœur du 2e arrondissement. On y savoure des spécialités de l'île et des tapas de charcuterie dans une ambiance chaleureuse et élégante.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-vegan-mopa",
@@ -2498,7 +2674,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-vegan-mama-nissa",
@@ -2525,7 +2702,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-brunch-oubruncher",
@@ -2551,7 +2729,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-brunch-cafe-jeanne-du-palace",
@@ -2575,7 +2754,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-cafe-contrastes",
@@ -2599,7 +2779,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un café de quartier chaleureux et épuré, parfait pour déguster des pâtisseries fines et des boissons de spécialité dans une ambiance calme.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-cafe-etienne-marcel",
@@ -2625,7 +2806,8 @@
   "phone": "01 45 08 01 01",
   "summary": "Une brasserie branchée et animée, parfaite pour apprécier des plats classiques revisités et des cocktails dans un décor moderne.",
   "booking": "https://bookings.zenchef.com/results?rid=346581&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-francais-benedict",
@@ -2649,7 +2831,8 @@
   "aiFill": 1,
   "phone": "01 42 71 61 70",
   "booking": "https://www.thefork.fr/restaurant/benedict-r33649",
-  "summary": "Le paradis des œufs benedict revisités sous toutes les coutures, à déguster dans une ambiance chaleureuse et branchée au coeur du Marais."
+  "summary": "Le paradis des œufs benedict revisités sous toutes les coutures, à déguster dans une ambiance chaleureuse et branchée au coeur du Marais.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-francais-mr-t",
@@ -2676,7 +2859,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-francais-supernova",
@@ -2701,7 +2885,19 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-francais-season",
@@ -2725,7 +2921,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Le spot incontournable du healthy et du brunch, proposant des avocado toasts et des pancakes généreux dans un décor lumineux au style minimaliste.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-francais-envie-le-banquet",
@@ -2749,7 +2957,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Envie le Banquet propose une cuisine française soignée dans un cadre chaleureux et convivial. Idéal pour savourer des plats gourmands faits maison lors d'un moment de partage."
+  "summary": "Envie le Banquet propose une cuisine française soignée dans un cadre chaleureux et convivial. Idéal pour savourer des plats gourmands faits maison lors d'un moment de partage.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-italien-addomme",
@@ -2774,7 +2983,8 @@
   "resa": "telephone",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-italien-big-love",
@@ -2799,7 +3009,19 @@
   "summary": "Big Love est un temple de la gastronomie italienne du groupe Big Mamma, célèbre pour ses pâtes d'exception et ses célèbres desserts ultra-gourmands. L'ambiance y est vibrante et branchée.",
   "noPhone": 1,
   "ogTry": 1,
-  "photo": "https://menu.bigmammagroup.com/og-image.png"
+  "photo": "https://menu.bigmammagroup.com/og-image.png",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-23:15",
+   "12:00-15:15,19:00-23:15",
+   "12:00-15:15,19:00-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-italien-all-antico-vinaio",
@@ -2822,7 +3044,19 @@
   "aiFill": 1,
   "summary": "All'Antico Vinaio propose des schiacciate gargantuesques garnies de charcuteries et fromages italiens d'une fraîcheur absolue. L'ambiance est dynamique et embaumée des saveurs toscanes.",
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:30",
+   "11:00-23:30",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-japonais-ogata",
@@ -2846,7 +3080,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une halte nippone d'exception dédiée à l'art de vivre, où l'on savoure une cuisine raffinée dans un cadre minimaliste et apaisant.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-japonais-onii-san",
@@ -2869,7 +3104,19 @@
   "booking": "https://www.onii-san.fr/reservation",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un izakaya moderne et branché au cœur du Marais, idéal pour partager des assiettes fusion créatives dans une ambiance festive et chaleureuse."
+  "summary": "Un izakaya moderne et branché au cœur du Marais, idéal pour partager des assiettes fusion créatives dans une ambiance festive et chaleureuse.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-chinois-mao-dumpling-bar",
@@ -2895,7 +3142,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-chinois-dimdimsum",
@@ -2920,7 +3179,19 @@
   "instagram": "dimdimsum.paris",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une cantine hong-kongaise ultra-populaire spécialisée dans les dim sum ludiques et savoureux, à déguster dans une ambiance animée et colorée."
+  "summary": "Une cantine hong-kongaise ultra-populaire spécialisée dans les dim sum ludiques et savoureux, à déguster dans une ambiance animée et colorée.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-23:15",
+   "12:00-15:15,19:00-23:15",
+   "12:00-15:15,19:00-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-coreen-doma",
@@ -2944,7 +3215,8 @@
   "booking": "https://restaurant-doma.fr/fr/booking",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table coréenne intimiste et chaleureuse qui revisite les classiques avec finesse. On y savoure des plats faits maison aux saveurs authentiques dans une ambiance épurée."
+  "summary": "Une table coréenne intimiste et chaleureuse qui revisite les classiques avec finesse. On y savoure des plats faits maison aux saveurs authentiques dans une ambiance épurée.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-burger-paris-new-york",
@@ -2968,7 +3240,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un spot branché idéal pour déguster des burgers ultra-gourmands préparés avec des viandes d'exception et des frites croustillantes. L'ambiance y est vibrante et résolument design.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-americain-808-mac-and-cheese",
@@ -2993,7 +3266,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-oriental-mabrouk",
@@ -3018,7 +3292,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un restaurant inspiré de l'hospitalité tunisienne qui propose des couscous savoureux et des mezzés ensoleillés à partager. Le décor, aux accents rétro et lumineux, invite au voyage.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-oriental-qasti-shawarma",
@@ -3041,7 +3316,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse libanaise décontractée signée Alan Geaam, idéale pour déguster des shawarmas savoureux et des grillades dans une ambiance chaleureuse.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-polonais-matka",
@@ -3064,7 +3340,19 @@
   "instagram": "matka.restaurant",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant polonais raffiné qui revisite la gastronomie d'Europe centrale à travers des plats faits maison, le tout dans un cadre élégant et intimiste."
+  "summary": "Un restaurant polonais raffiné qui revisite la gastronomie d'Europe centrale à travers des plats faits maison, le tout dans un cadre élégant et intimiste.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-fusion-goku-asian-canteen",
@@ -3090,7 +3378,10 @@
   "summary": "Une cantine asiatique branchée proposant des burgers fusion et des spécialités inspirées de la street-food dans une ambiance pop et vibrante.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "closed": 1,
+  "closedSrc": "https://www.instagram.com/gokuasiancanteen/"
  },
  {
   "id": "paris-3-fusion-sweetea-s",
@@ -3116,7 +3407,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-fusion-inka",
@@ -3140,7 +3432,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=352296&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Niché au cœur de Paris, Inka propose une cuisine fusion originale aux influences péruviennes et japonaises dans une ambiance chaleureuse et feutrée. On y déguste de délicieux sushis revisités et des cocktails signature créatifs."
+  "summary": "Niché au cœur de Paris, Inka propose une cuisine fusion originale aux influences péruviennes et japonaises dans une ambiance chaleureuse et feutrée. On y déguste de délicieux sushis revisités et des cocktails signature créatifs.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-3-brunch-santa-lyna",
@@ -3164,7 +3457,19 @@
   "aiFill": 1,
   "summary": "Santa Lyna invite au voyage avec ses brunchs généreux aux saveurs californiennes et mexicaines, à déguster dans un décor lumineux et végétalisé. Ne manquez pas leurs pancakes ultra-gourmands et leurs huevos rancheros.",
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-cafe-cafe-creme",
@@ -3191,7 +3496,19 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-cafe-cafe-des-musees",
@@ -3215,7 +3532,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Ce bistrot parisien authentique, situé à deux pas du musée Picasso, séduit par son cadre boisé traditionnel et son ambiance typique de quartier. On y savoure des classiques de la cuisine française généreux et faits maison, comme l'incontournable bœuf bourguignon."
+  "summary": "Ce bistrot parisien authentique, situé à deux pas du musée Picasso, séduit par son cadre boisé traditionnel et son ambiance typique de quartier. On y savoure des classiques de la cuisine française généreux et faits maison, comme l'incontournable bœuf bourguignon.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "09:00-23:00",
+   "09:00-23:00",
+   "09:00-23:00",
+   "09:00-23:00",
+   "09:00-23:00",
+   "09:00-23:00",
+   "09:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-3-patisserie-la-maison-du-mochi",
@@ -3239,7 +3568,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une charmante boutique spécialisée dans les mochis artisanaux aux saveurs variées, à déguster dans une ambiance épurée et délicicate.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "",
+   "11:00-19:30",
+   "11:00-19:30",
+   "11:00-19:30",
+   "11:00-19:30",
+   "11:00-19:30",
+   "11:00-19:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-4-francais-cheper",
@@ -3263,7 +3604,8 @@
   "aiFill": 1,
   "phone": "01 42 72 44 44",
   "summary": "Un lieu branché au cœur du Marais proposant une cuisine française inventive et soignée dans un cadre design et chaleureux.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-francais-la-baguette-du-relais",
@@ -3289,7 +3631,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-4-francais-bonnie",
@@ -3313,7 +3667,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 89 43 01 50",
-  "summary": "Un restaurant perché au sommet de l'hôtel SO/Paris offrant une vue panoramique imprenable sur la capitale, idéal pour savourer une cuisine française chic et des cocktails sophistiqués."
+  "summary": "Un restaurant perché au sommet de l'hôtel SO/Paris offrant une vue panoramique imprenable sur la capitale, idéal pour savourer une cuisine française chic et des cocktails sophistiqués.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:30-15:30,19:00-02:00",
+   "12:30-15:30,19:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-4-francais-fabula",
@@ -3337,7 +3703,8 @@
   "resa": "inconnu",
   "noPhone": 1,
   "ogTry": 2,
-  "photo": "https://menu.joli-restaurant.fr/img/content/covers/1-pana.jpg"
+  "photo": "https://menu.joli-restaurant.fr/img/content/covers/1-pana.jpg",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-francais-le-paradis",
@@ -3362,7 +3729,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un café-restaurant convivial au cœur du 4e arrondissement, idéal pour une pause gourmande ou un verre entre amis dans une ambiance décontractée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-francais-jolie",
@@ -3385,7 +3753,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Un cadre chaleureux et soigné proposant une cuisine française bistronomique savoureuse. Parfait pour un dîner intimiste dans le Marais.",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-italien-pupetta-marais",
@@ -3412,7 +3781,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-italien-little-babel",
