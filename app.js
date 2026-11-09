@@ -851,13 +851,8 @@ $("#mapLists").addEventListener("click", (e) => {
 });
 $("#mapCat").addEventListener("change", (e) => { S.mapCat = e.target.value; refreshMarkers(); });
 $("#locate").addEventListener("click", () => {
-  if (!map || !navigator.geolocation) return toast("Localisation indisponible");
-  navigator.geolocation.getCurrentPosition((pos) => {
-    const ll = [pos.coords.latitude, pos.coords.longitude];
-    S.me = { lat: ll[0], lng: ll[1], t: Date.now() }; store.set("me", S.me);
-    map.setView(ll, 16);
-    showMe();
-  }, () => toast("Autorise la localisation pour te situer"), { enableHighAccuracy: true, timeout: 10000 });
+  if (!map) return toast("Localisation indisponible");
+  locateMe(true).then((me) => { map.setView([me.lat, me.lng], 16); showMe(); }).catch(() => {});
 });
 
 // Place les pins à partir des adresses (Base Adresse Nationale), une seule fois par adresse.

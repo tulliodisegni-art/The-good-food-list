@@ -14,24 +14,40 @@ applyTheme(store.get("theme", ""));
 // ---------- Position ----------
 const FRESH = 20 * 60 * 1000;
 { const last = store.get("me", null); if (last && Date.now() - last.t < FRESH) S.me = last; }
-let locating = null;
+let locating = null, watching = null, geoDenied = false;
+// Une seule demande d'autorisation par ouverture de l'appli : après le premier « Autoriser », on suit la position
+// en continu (watchPosition) au lieu de la redemander à chaque bouton.
+function startWatch() {
+  if (watching != null || !navigator.geolocation) return;
+  watching = navigator.geolocation.watchPosition((pos) => {
+    S.me = { lat: pos.coords.latitude, lng: pos.coords.longitude, t: Date.now() };
+    store.set("me", S.me);
+  }, () => {}, { enableHighAccuracy: true, maximumAge: 30000 });
+}
 function locateMe(force) {
   const last = store.get("me", null);
   if (!force && last && Date.now() - last.t < FRESH) { S.me = last; return Promise.resolve(last); }
+  // Position déjà suivie : pas de nouvelle demande.
+  if (watching != null && S.me && Date.now() - S.me.t < 600000) return Promise.resolve(S.me);
+  if (geoDenied) { toast("Position refusée : autorise-la dans les réglages du téléphone"); return Promise.reject(new Error("refusé")); }
   if (locating) return locating;
   locating = new Promise((resolve, reject) => {
     if (!navigator.geolocation) { reject(new Error("indisponible")); return; }
     navigator.geolocation.getCurrentPosition((pos) => {
       S.me = { lat: pos.coords.latitude, lng: pos.coords.longitude, t: Date.now() };
-      store.set("me", S.me); resolve(S.me);
-    }, (err) => { toast("Position indisponible : autorise-la dans les réglages du téléphone"); reject(err); },
-    { enableHighAccuracy: true, timeout: 12000, maximumAge: 60000 });
+      store.set("me", S.me); store.set("geoOk", 1); startWatch(); resolve(S.me);
+    }, (err) => {
+      if (err.code === 1) geoDenied = true;
+      toast("Position indisponible : autorise-la dans les réglages du téléphone"); reject(err);
+    }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 60000 });
   }).finally(() => { locating = null; });
   return locating;
 }
-// Si la position est déjà autorisée, on la rafraîchit sans rien demander.
+// Si la position est déjà autorisée, on la suit sans rien demander.
 navigator.permissions?.query({ name: "geolocation" }).then((st) => {
-  if (st.state === "granted") locateMe(true).then(() => renderAll()).catch(() => {});
+  if (st.state === "granted") { startWatch(); locateMe(true).then(() => renderAll()).catch(() => {}); }
+  if (st.state === "denied") geoDenied = true;
+  st.onchange = () => { geoDenied = st.state === "denied"; if (st.state === "granted") startWatch(); };
 }).catch(() => {});
 
 // ---------- Partager ----------
