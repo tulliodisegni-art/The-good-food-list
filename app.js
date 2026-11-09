@@ -744,7 +744,7 @@ const markers = new Map();
 function initMap() {
   const top = $(".top").getBoundingClientRect().bottom;
   document.documentElement.style.setProperty("--map-top", `${Math.round(top)}px`);
-  if (map) { setTimeout(() => map.invalidateSize(), 50); return; }
+  if (map) { setTimeout(() => map.invalidateSize(), 50); if (!geoDone && !$("#view-carte").classList.contains("warm")) { geoDone = true; geocodeMissing(); } return; }
   if (!window.L) { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; return; }
   map = L.map("map", { zoomControl: false, attributionControl: true }).setView([48.8606, 2.3425], 13);
   // Fond de carte clair et lisible, même en mode sombre. S'il ne charge pas
@@ -786,8 +786,10 @@ function initMap() {
   if (typeof showMe === "function") showMe();
   fillMapCats();
   refreshMarkers();
-  geocodeMissing();
+  // Préparée en arrière-plan : on ne cherche les pins manquants qu'à l'ouverture de la carte.
+  if (!$("#view-carte").classList.contains("warm")) { geoDone = true; geocodeMissing(); }
 }
+let geoDone = false;
 
 function fillMapCats() {
   const list = S.mapList;
@@ -1218,6 +1220,13 @@ async function boot() {
   setHead(); addEventListener("resize", setHead);
 }
 boot();
+// La carte se prépare en arrière-plan dès l'ouverture de l'appli : quand on touche « Carte », elle est déjà là.
+setTimeout(() => {
+  if (map || S.view === "carte" || !window.L) return;
+  const v = $("#view-carte"); v.classList.add("warm");
+  try { initMap(); } catch {}
+  setTimeout(() => v.classList.remove("warm"), 8000);
+}, 1200);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));

@@ -651,6 +651,14 @@ function drawRoute() {
     map.fitBounds(RT.line.getBounds(), pad);
   }
 }
+// Pas de trafic en direct ici : le temps affiché est « route libre ». Aux heures de pointe on prévient,
+// et Waze / Plans prennent le relais (bouchons en direct, itinéraire plus rapide proposé).
+function rushNote(r) {
+  const d = new Date(), h = d.getHours() + d.getMinutes() / 60, wk = d.getDay() >= 1 && d.getDay() <= 5;
+  const rush = wk && ((h >= 7.5 && h < 9.75) || (h >= 16.5 && h < 20));
+  const more = r && !r.est ? ` : compte plutôt ≈ ${fmtMin(r.min * 1.6)} avec le trafic habituel` : "";
+  return `<p class="rt-note">${rush ? `<b>Heure de pointe${more}.</b> ` : ""}Temps calculé sans bouchons. Pour le trafic en direct et un itinéraire qui les évite, ouvre <b>Waze</b> ou <b>Plans</b>.</p>`;
+}
 function renderRouteCard() {
   const p = S.places.find((x) => x.id === RT.id);
   const card = $("#routeCard");
@@ -665,6 +673,7 @@ function renderRouteCard() {
   card.innerHTML = `<div class="rt-head"><div><b>${esc(p.name)}</b><span>${r ? `${r.km.toFixed(1).replace(".", ",")} km${r.est ? " · estimation, horaires exacts dans Citymapper" : ""}` : "Calcul du trajet…"}</span></div>
       <button class="rt-close" data-route-close aria-label="Fermer l'itinéraire"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
     <div class="rt-modes">${MODES.map(([k, l, e]) => `<button class="${k === RT.mode ? "on" : ""}" data-route-mode="${k}"><span>${e}</span><b>${time(k)}</b><small>${l}</small></button>`).join("")}</div>
+    ${RT.mode === "car" ? rushNote(r) : ""}
     <div class="rt-go"><span>Y aller avec</span>${goLinks(p, RT.mode).map(([l, u, c]) => `<a class="nav-app ${c}" href="${esc(u)}" target="_blank" rel="noopener"><span class="app-dot"></span>${l}</a>`).join("")}</div>`;
   card.hidden = false;
 }
