@@ -1,0 +1,74 @@
+/* Horaires, lieux fermés, collections, « À commander » (plus.js). */
+
+/* État d'ouverture en haut de la fiche */
+.oh-line { display: flex; align-items: center; gap: 7px; margin-top: 8px; font-size: 14px; color: var(--muted); }
+.oh-line b { font-weight: 800; }
+.oh-line i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex: none; }
+.oh-line.open b, .oh-line.open i { color: var(--ok); }
+.oh-line.soon b, .oh-line.soon i { color: #c9821b; }
+.oh-line.shut b, .oh-line.gone b { color: var(--danger); }
+.oh-line.shut i, .oh-line.gone i { color: var(--danger); }
+
+/* Horaires de la semaine, dans les infos */
+.oh-row { align-items: start; }
+.oh-week summary { cursor: pointer; list-style: none; font-weight: 600; }
+.oh-week summary::-webkit-details-marker { display: none; }
+.oh-week summary::after { content: " ›"; color: var(--muted); }
+.oh-week[open] summary::after { content: " ⌄"; }
+.oh-week ul { list-style: none; margin: 8px 0 4px; padding: 0; display: grid; gap: 3px; font-size: 13.5px; }
+.oh-week li { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); }
+.oh-week li span:first-child { text-transform: capitalize; }
+.oh-week li.today { color: var(--ink); font-weight: 700; }
+.oh-week small { display: block; color: var(--muted); font-size: 11.5px; margin-top: 4px; }
+
+/* Étiquettes des cartes */
+.gf .tag.open { background: #e2f2e7; color: #1f8a4c; }
+.gf .tag.gone { background: #fbe4e2; color: #b4372e; }
+.gf .pcard.gone { opacity: .55; }
+body.gf-prec .gf .tag.open { color: #7fd8a0; border-color: #24563a; background: #0c1f14; }
+
+/* Filtre « Ouvert maintenant » dans Autour de moi */
+.near-acts { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 6px; }
+.oh-toggle { display: inline-flex; align-items: center; gap: 7px; }
+.oh-toggle i { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid currentColor; }
+.oh-toggle.on { background: var(--ok); border-color: var(--ok); color: #fff; }
+.oh-toggle.on i { background: #fff; border-color: #fff; }
+.oh-note { margin: 2px 0 8px; color: var(--muted); font-size: 12.5px; }
+
+/* Fermé définitivement */
+.closed-banner { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; padding: 10px 12px; border-radius: 12px; font-size: 13.5px;
+  background: color-mix(in srgb, var(--danger) 10%, transparent); border: 1px solid color-mix(in srgb, var(--danger) 35%, transparent); }
+.closed-banner b { color: var(--danger); flex-basis: 100%; }
+.closed-banner a { color: inherit; font-weight: 700; }
+.closed-banner .link-btn { padding: 0; margin-left: auto; }
+
+/* Collections : sur la fiche */
+.coll-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: -2px; }
+.coll-line .link-btn { padding: 4px 2px; }
+.coll-chip { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.coll-pick { display: grid; gap: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.coll-opts { display: flex; flex-wrap: wrap; gap: 6px; }
+.coll-opt { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 13.5px; font-weight: 700; cursor: pointer; }
+.coll-opt small { color: var(--muted); font-weight: 600; }
+.coll-opt.on { background: var(--plaque); border-color: var(--plaque); color: #fff; }
+.coll-opt.on small { color: rgba(255, 255, 255, .8); }
+.coll-new { display: flex; gap: 8px; }
+.coll-new input { flex: 1 1 0; width: 0; min-width: 0; font: inherit; font-size: 15px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); }
+
+/* Collections : dans Mes envies */
+.coll-h { margin: 4px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.coll-rail { display: flex; gap: 10px; overflow-x: auto; padding: 2px 2px 12px; scrollbar-width: none; }
+.coll-rail::-webkit-scrollbar { display: none; }
+.coll-card { flex: none; min-width: 128px; text-align: left; border: 1px solid var(--line); background: var(--card, var(--surface)); color: var(--ink); border-radius: 16px; padding: 12px 14px; font: inherit; cursor: pointer; box-shadow: var(--gshadow, none); }
+.coll-card b { display: block; font-size: 15px; }
+.coll-card small { color: var(--muted); font-size: 12px; }
+.coll-hint { margin: 0; color: var(--muted); font-size: 13px; }
+.coll-sub { margin: 0 0 8px; color: var(--muted); }
+.coll-acts { display: flex; flex-wrap: wrap; gap: 8px; }
+.coll-acts .btn { display: inline-flex; align-items: center; gap: 6px; }
+.coll-acts .ico { width: 16px; height: 16px; }
+
+/* À commander */
+.to-order { display: flex; align-items: center; gap: 10px; margin: 10px 0 8px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.to-order span { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); white-space: nowrap; }
+.to-order input { flex: 1 1 0; width: 0; min-width: 0; border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 15px; outline: none; }

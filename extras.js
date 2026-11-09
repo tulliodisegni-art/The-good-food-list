@@ -716,7 +716,8 @@ async function showRoute(id) {
   if (!p || !p.lat) { toast("Ce lieu n'est pas encore placé sur la carte"); return; }
   // On attend que l'onglet Carte soit affiché : une carte cachée n'a pas de taille.
   if (location.hash !== "#carte") { location.hash = "carte"; await new Promise((r) => setTimeout(r, 150)); }
-  if (!map) initMap();
+  if (!map) await initMap();
+  if (!map) return;
   map.invalidateSize();
   RT.id = id; RT.res = {};
   renderRouteCard();
