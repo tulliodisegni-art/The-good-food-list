@@ -206,19 +206,19 @@ function gfListBody() {
     return head("Autour de moi", `<div class="near-acts"><button class="btn" data-gf-near>◎ Actualiser</button><button class="btn oh-toggle ${GF.openOnly ? "on" : ""}" data-gf-open aria-pressed="${!!GF.openOnly}"><i></i>Ouvert maintenant</button></div>${GF.openOnly ? `<p class="oh-note">Seulement les adresses dont on connaît les horaires.</p>` : ""}`)
       + (out || "") + (GF.openOnly && !N.length ? `<p class="none">Aucune adresse ouverte connue autour de toi pour l'instant.</p>` : far ? `<p class="none">Rien à moins de 4 km. Voici les plus proches :</p><div class="cards">${N.slice(0, 10).map((x) => gfCard(x.p, null, x.m)).join("")}</div>` : "");
   }
+  if (L.want) return listsBody(L, head);
   let items = [], title = "", flat = false;
   if (L.diet) { items = P.filter((p) => p[L.diet]); title = L.diet === "kasher" ? "Kasher" : "Halal"; }
   if (L.out) { items = (GF.prec ? P : gfSorties()).filter((p) => gfOutOf(p) === L.out); title = esc(GF_OUT[L.out]); flat = true; }
   if (L.cat) { items = P.filter((p) => gfCuis(p) === L.cat); title = esc(L.cat); flat = true; }
   if (L.inst) { items = gfInst(); title = "Les institutions"; flat = true; }
-  if (L.want) { items = S.places.filter((p) => p.want); title = "Mes envies"; }
   if (L.q != null) {
     const q = norm(L.q).trim();
     items = S.places.filter((p) => norm(`${p.name} ${p.cat} ${p.cuisine || ""} ${p.address || ""} ${p.city || ""} ${p.summary || ""}`).includes(q));
     title = q ? `« ${esc(L.q)} »` : "Toutes les adresses";
   }
   const body = flat ? `<div class="cards" style="margin-top:14px">${items.map((p) => gfCard(p)).join("")}</div>` : gfGrouped(items);
-  return head(title, L.want ? collRail() : "") + (items.length ? body : `<p class="none">${L.want ? "Touche le cœur d'une fiche pour la garder ici." : "Rien ici pour l'instant."}</p>`);
+  return head(title) + (items.length ? body : `<p class="none">Rien ici pour l'instant.</p>`);
 }
 
 renderHome = function () {
@@ -259,7 +259,7 @@ function gfOpen(l, keep) {
   if (!keep) window.scrollTo({ top: l && !l.zone ? 300 : 0 });
 }
 
-// Les onglets Précieuses et Mes envies s'affichent dans l'accueil.
+// Les onglets Précieuses et Mes listes s'affichent dans l'accueil.
 function gfRoute(view) {
   if (view === "precieuses") { GF.prec = true; GF.list = null; return true; }
   if (view === "envies") { GF.prec = false; GF.list = { want: 1 }; return true; }
@@ -286,7 +286,7 @@ document.addEventListener("click", (e) => {
   if (t.closest("[data-gf-wish]")) { const v = $("#gfWish").value.trim(); if (v) gfOpen({ wish: v }); return; }
   if ((b = t.closest("[data-gf-ex]"))) { gfOpen({ wish: b.dataset.gfEx }); return; }
   if (t.closest("[data-gf-back]")) {
-    if (GF.list?.coll) { gfOpen({ want: 1 }); return; }
+    if (GF.list?.coll) { gfOpen({ want: 1, tab: "colls" }); return; }
     const w = GF.list?.want, z = GF.list?.zone; GF.list = null; if (w) location.hash = "accueil"; renderHome();
     // Retour d'un arrondissement : on revient en douceur sur les plaques.
     const rail = z && $(".gf .zrail"); window.scrollTo({ top: rail ? Math.max(0, rail.getBoundingClientRect().top + window.scrollY - 120) : 0, behavior: z ? "smooth" : "auto" });

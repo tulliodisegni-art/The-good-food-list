@@ -668,7 +668,7 @@ const VIEWS = {
   ajouter: ["Nouvelle adresse", "Ajouter"],
 };
 function show(view) {
-  // Nouvel accueil : Précieuses et Mes envies s'ouvrent dans l'accueil.
+  // Nouvel accueil : Précieuses et Mes listes s'ouvrent dans l'accueil.
   const gf = typeof gfRoute === "function" && gfRoute(view);
   if (gf || !VIEWS[view]) view = "accueil";
   S.view = view;
