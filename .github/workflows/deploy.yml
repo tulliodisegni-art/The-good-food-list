@@ -47,10 +47,6 @@ jobs:
         env:
           HOURS_MAX: ${{ vars.HOURS_MAX || '12' }}
         run: node scripts/hours.mjs
-      - name: Photos libres (Wikimedia Commons)
-        continue-on-error: true
-        timeout-minutes: 10
-        run: node scripts/photos_libres.mjs
       - name: Sites, comptes Instagram et pages TheFork par recherche web
         continue-on-error: true
         timeout-minutes: 20

@@ -14,4 +14,4 @@ Les liens de menu, photos, résumés et liens Instagram se renseignent dans `dat
 
 ## Horaires, lieux fermés et photos libres
 
-À chaque mise en ligne, `scripts/osm.mjs` reprend les horaires d'OpenStreetMap, puis `scripts/hours.mjs` cherche sur le web ceux qui manquent (et repère les lieux fermés définitivement), par petits lots gratuits. Les horaires sont rangés dans `oh` (7 jours, du lundi au dimanche, ex. `"12:00-14:30,19:00-22:30"`, vide = fermé). `scripts/photos_libres.mjs` ajoute des photos libres de Wikimedia Commons aux fiches qui n'en ont pas.
+À chaque mise en ligne, `scripts/osm.mjs` reprend les horaires d'OpenStreetMap, puis `scripts/hours.mjs` cherche sur le web ceux qui manquent (et repère les lieux fermés définitivement), par petits lots gratuits. Les horaires sont rangés dans `oh` (7 jours, du lundi au dimanche, ex. `"12:00-14:30,19:00-22:30"`, vide = fermé).
