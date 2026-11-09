@@ -164,7 +164,7 @@ function gfHomeBody() {
   ${gfNearSec()}
   <section class="sec"><div class="sec-h"><h2>${esc(c.zoneTitle)}</h2><span>${gfCount(P.length)}</span></div>
     <div class="zrail">${ks.map((z) => `<button class="zp" data-gf-zone="${esc(z)}">${gfSign(z)}<small>${gfCount(Z[z])}</small></button>`).join("")}</div></section>
-  ${INS.length ? `<section class="sec"><div class="sec-h"><h2>Les institutions</h2><button class="all" data-gf-inst>Tout voir ›</button></div>
+  ${!GF.prec && INS.length ? `<section class="sec"><div class="sec-h"><h2>Les institutions</h2><button class="all" data-gf-inst>Tout voir ›</button></div>
     <div class="rail">${INS.slice(0, 12).map((p, i) => `<button class="tile cuis" data-gf-id="${esc(p.id)}" ${gfBg(gfGoodPhoto(p.photo) ? p.photo : gfPhoto([p], i))}><div class="t"><h3>${esc(p.name)}</h3><p>${esc(p.cat || "")}</p></div></button>`).join("")}</div></section>` : ""}
   <section class="sec"><div class="sec-h"><h2>Une envie ?</h2></div>
     <div class="wish"><textarea id="gfWish" rows="2" placeholder="Décris ce dont tu as envie… ex. un resto chaleureux, cuisine réconfortante et gourmande"></textarea><button data-gf-wish>Trouver</button></div>

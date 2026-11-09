@@ -742,9 +742,12 @@ for (const [btn, list] of [["#favParis", "paris"], ["#favPrec", "precieuses"]]) 
 // ---------- Carte ----------
 let map, cluster;
 const markers = new Map();
+// La carte commence sous le bandeau du haut, recalculé dès que sa taille change (titre, mise à jour, rotation).
+const setMapTop = () => { if (S.view !== "carte") return; const top = $(".top").getBoundingClientRect().bottom; if (top > 0) document.documentElement.style.setProperty("--map-top", `${Math.round(top)}px`); if (typeof map !== "undefined" && map) map.invalidateSize(); };
+if (window.ResizeObserver) new ResizeObserver(setMapTop).observe($(".top"));
+addEventListener("resize", setMapTop);
 function initMap() {
-  const top = $(".top").getBoundingClientRect().bottom;
-  document.documentElement.style.setProperty("--map-top", `${Math.round(top)}px`);
+  setMapTop(); requestAnimationFrame(setMapTop); setTimeout(setMapTop, 300);
   if (map) { setTimeout(() => map.invalidateSize(), 50); if (!geoDone && !$("#view-carte").classList.contains("warm")) { geoDone = true; geocodeMissing(); } return; }
   if (!window.L) { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; return; }
   map = L.map("map", { zoomControl: false, attributionControl: true }).setView([48.8606, 2.3425], 13);
