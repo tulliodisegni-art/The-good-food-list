@@ -27,6 +27,23 @@ async function geocodeWorld(address, city) {
   return res;
 }
 
+// Recherche du lieu par son nom : gardée seulement si OpenStreetMap renvoie bien un lieu de ce nom.
+const simple = (x) => String(x || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+async function geocodePlace(p) {
+  const name = p.name.replace(/\(.*\)/, "").trim();
+  if (simple(name).length < 4) return null;
+  const q = `${name}, ${p.address.replace(/\(.*\)/, "").trim()}${abroad(p) ? `, ${p.city}` : ""}`;
+  let res = null;
+  try {
+    const r = await fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=3&q=${encodeURIComponent(q)}`,
+      { headers: { "user-agent": "TheGoodFoodList/1.0 (github.com/tulliodisegni-art/The-good-food-list)" } });
+    const f = r.ok ? (await r.json()).find((x) => simple(x.name).includes(simple(name)) || simple(name).includes(simple(x.name) || "§")) : null;
+    if (f) res = [+f.lat, +f.lon];
+  } catch { /* réessayé au prochain passage */ }
+  await new Promise((r) => setTimeout(r, 1100));
+  return res;
+}
+
 async function geocode(address) {
   if (cache.has(address)) return cache.get(address);
   for (const url of sources) {
@@ -46,8 +63,10 @@ let found = 0, missing = [];
 for (const p of places) {
   if (p.lat || !p.address) continue;
   // Une adresse sans numéro ni rue (juste un quartier ou une ville) placerait le pin au hasard.
-  if (abroad(p) && !/\d/.test(p.address)) continue;
-  const c = abroad(p) ? await geocodeWorld(p.address, p.city) : await geocode(p.address);
+  // Sinon on cherche le lieu lui-même par son nom (ex. « Manhatta, 28 Liberty St », « Solum, Pont Alexandre III »).
+  const named = () => geocodePlace(p);
+  let c = abroad(p) ? (/\d/.test(p.address) ? await geocodeWorld(p.address, p.city) : null) : await geocode(p.address);
+  if (!c) c = await named();
   if (c) { [p.lat, p.lng] = c.map((x) => Math.round(x * 1e6) / 1e6); found++; } else missing.push(`${p.name} (${p.address})`);
   await new Promise((r) => setTimeout(r, 40));
 }

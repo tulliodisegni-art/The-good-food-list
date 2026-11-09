@@ -38,9 +38,15 @@ jobs:
         run: node scripts/fill_ai.mjs
       - name: Placer les adresses sur la carte
         run: node scripts/geocode.mjs
-      - name: Téléphones et sites depuis OpenStreetMap
+      - name: Téléphones, sites, horaires et photos depuis OpenStreetMap
         continue-on-error: true
         run: node scripts/osm.mjs
+      - name: Horaires et lieux fermés, par recherche web
+        continue-on-error: true
+        timeout-minutes: 15
+        env:
+          HOURS_MAX: ${{ vars.HOURS_MAX || '12' }}
+        run: node scripts/hours.mjs
       - name: Sites, comptes Instagram et pages TheFork par recherche web
         continue-on-error: true
         timeout-minutes: 20

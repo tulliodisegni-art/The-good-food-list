@@ -1,6 +1,7 @@
-// Complète téléphones et sites web avec OpenStreetMap (données libres) :
+// Complète téléphones, sites web, horaires et photos avec OpenStreetMap (données libres) :
 // on cherche le resto du même nom à moins de 200 m de son adresse.
 import { readFile, writeFile } from "node:fs/promises";
+import { parseOsmHours } from "./oh.mjs";
 
 const FILE = new URL("../data/places.json", import.meta.url);
 const places = JSON.parse(await readFile(FILE, "utf8"));
@@ -38,19 +39,36 @@ function frPhone(raw) {
   return /^0[1-9]\d{8}$/.test(d) ? d.replace(/(\d{2})(?=\d)/g, "$1 ") : null;
 }
 
-let phones = 0, sites = 0;
+const today = new Date().toISOString().slice(0, 10);
+// Photo libre du lieu : lien direct vers une image, ou fichier de Wikimedia Commons.
+function osmPhoto(o) {
+  if (/^https?:\/\/\S+\.(jpe?g|png|webp)(\?\S*)?$/i.test(o.image || "")) return o.image;
+  const f = String(o.commons || (/^File:/i.test(o.image || "") ? o.image : "")).replace(/^File:/i, "").trim();
+  return /\.(jpe?g|png|webp)$/i.test(f) ? `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(f.replace(/ /g, "_"))}?width=1200` : "";
+}
+
+let phones = 0, sites = 0, hours = 0, photos = 0;
 for (const p of places) {
-  if (!p.lat || (p.phone && p.website && p.instagram)) continue;
+  if (!p.lat) continue;
   const n = norm(p.name);
   if (n.length < 3) continue;
   const match = osm
     .filter((o) => (o.n === n || (n.length >= 5 && o.n.includes(n)) || (o.n.length >= 5 && n.includes(o.n))) && dist(o, p) < 200)
     .sort((a, b) => dist(a, p) - dist(b, p))[0];
   if (!match) continue;
+  // Horaires : OpenStreetMap est rafraîchi à chaque passage ; ceux trouvés sur le web ne sont pas écrasés.
+  const oh = parseOsmHours(match.hours);
+  if (oh && (!p.oh || p.ohSrc === "osm")) {
+    if (JSON.stringify(oh) !== JSON.stringify(p.oh)) hours++;
+    p.oh = oh; p.ohSrc = "osm"; p.ohAt = today;
+  }
+  const img = !p.photo && osmPhoto(match);
+  if (img) { p.photo = img; photos++; }
+  if (p.phone && p.website && p.instagram) continue;
   const tel = !p.phone && frPhone(match.phone);
   if (tel) { p.phone = tel; phones++; }
   if (!p.instagram && /^[A-Za-z0-9._]{2,30}$/.test(match.instagram)) p.instagram = match.instagram;
   if (!p.website && /^https?:\/\//.test(match.website || "")) { p.website = match.website; sites++; p.enriched = 0; }
 }
 await writeFile(FILE, JSON.stringify(places, null, 1));
-console.log(`OpenStreetMap : ${phones} téléphones et ${sites} sites web ajoutés (${osm.length} lieux lus)`);
+console.log(`OpenStreetMap : ${phones} téléphones, ${sites} sites web, ${hours} horaires et ${photos} photos ajoutés (${osm.length} lieux lus)`);

@@ -14,7 +14,7 @@ const store = {
   },
 };
 // Ce qui suit le compte (sauvegardé en ligne, retrouvé sur un autre téléphone) : adresses ajoutées, notes et coches, préférences.
-const GSYNC = ["custom", "edits", "name", "group", "univ", "gfCity", "pick"];
+const GSYNC = ["custom", "edits", "name", "group", "univ", "gfCity", "pick", "colls"];
 
 // ---------- Outils ----------
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -67,7 +67,7 @@ function rebuild() {
   const edits = store.get("edits", {});
   if (custom.some((p) => ids.has(p.id))) {
     for (const p of custom.filter((c) => ids.has(c.id))) {
-      const mine = Object.fromEntries(["tested", "rating", "comment", "want"].filter((k) => p[k] !== undefined).map((k) => [k, p[k]]));
+      const mine = Object.fromEntries(["tested", "rating", "comment", "want", "toOrder"].filter((k) => p[k] !== undefined).map((k) => [k, p[k]]));
       edits[p.id] = { ...mine, ...(edits[p.id] || {}) };
     }
     custom = custom.filter((p) => !ids.has(p.id));
@@ -361,6 +361,7 @@ function openSheet(id, keepScroll) {
           ${p.arr ? `<span>${arrLabel(p.arr)} arrondissement</span>` : ""}
           ${p.price ? `<span class="price-tag" title="${PRICE_HINT[p.price]}${p.priceSrc === "estim" ? " (estimation)" : ""}">${euros(p.price)}<i>${"€".repeat(4 - p.price)}</i></span>` : ""}
           ${p.gRating ? `<span class="g-rating">${STAR}${esc(p.gRating)} Google</span>` : ""}</div>
+        ${ohLine(p)}
         ${window.Social ? window.Social.sheetHtml(p) : ""}
         <div class="class-line">${p.list === "precieuses" || p.prec ? `<span class="prec-badge">${icon("gem")}Précieuse</span>` : ""}
           ${p.kasher ? `<span class="prec-badge diet">Kasher</span>` : ""}${p.halal ? `<span class="prec-badge diet">Halal</span>` : ""}
@@ -392,12 +393,15 @@ function openSheet(id, keepScroll) {
         </button>
         <button class="want-btn ${p.want ? "on" : ""}" data-want aria-pressed="${!!p.want}">${HEART}<span>${p.want ? "Envie !" : "Envie"}</span></button>
       </div>
+      ${collLine(p)}
+      ${closedBanner(p)}
 
       <section class="block">
         <div class="block-head"><h3>Mon avis</h3><span class="rating-label">${r ? RATING_LABELS[r] : "Pas encore noté"}</span></div>
         <div class="stars" role="radiogroup" aria-label="Ma note">
           ${[1, 2, 3, 4, 5].map((n) => `<button class="star ${n <= r ? "on" : ""}" data-rate="${n}" role="radio" aria-checked="${n === r}" aria-label="${n} sur 5, ${RATING_LABELS[n]}">${STAR}</button>`).join("")}
         </div>
+        <label class="to-order"><span>À commander</span><input id="toOrder" value="${esc(p.toOrder || "")}" placeholder="la burrata, le tiramisu…" autocomplete="off" enterkeyhint="done"></label>
         <label class="sr" for="comment">Mon commentaire</label>
         <textarea id="comment" rows="3" placeholder="Mon commentaire : plats à reprendre, ambiance, avec qui y aller…">${esc(p.comment || "")}</textarea>
         <span class="saved" id="savedHint" hidden>Enregistré</span>
@@ -424,7 +428,7 @@ function openSheet(id, keepScroll) {
       <section class="block infos">
         <div class="block-head"><h3>Infos</h3><button class="link-btn" data-editinfo>${icon("pencil")}Compléter</button></div>
         ${infoRow("phone", "Téléphone", p.phone || (p.noPhone ? "Pas de numéro trouvé" : ""), p.phone ? L.call : "")}
-        ${infoRow("clock", "Horaires", p.hours, "")}
+        ${ohRow(p)}
         ${p.booking ? infoRow("book", "Réservation", "Réserver en ligne", p.booking)
           : p.resa === "sans" ? infoRow("book", "Réservation", "Ne prend pas de réservation (premier arrivé, premier servi)", "")
           : p.resa === "telephone" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : par téléphone uniquement" : "Par téléphone uniquement", p.phone ? L.call : "")
@@ -746,7 +750,22 @@ const markers = new Map();
 const setMapTop = () => { if (S.view !== "carte") return; const top = $(".top").getBoundingClientRect().bottom; if (top > 0) document.documentElement.style.setProperty("--map-top", `${Math.round(top)}px`); if (typeof map !== "undefined" && map) map.invalidateSize(); };
 if (window.ResizeObserver) new ResizeObserver(setMapTop).observe($(".top"));
 addEventListener("resize", setMapTop);
+// Les outils de la carte (≈ 300 Ko) ne sont chargés qu'au premier besoin : l'appli s'ouvre plus vite.
+let mapLibs = null;
+function loadMapLibs() {
+  if (window.L && window.L.markerClusterGroup) return Promise.resolve();
+  if (!mapLibs) {
+    const add = (src) => new Promise((ok, ko) => { const el = document.createElement("script"); el.src = src; el.onload = ok; el.onerror = ko; document.head.appendChild(el); });
+    mapLibs = add("vendor/leaflet/leaflet.js")
+      .then(() => Promise.all([add("vendor/markercluster/leaflet.markercluster.js"), add("vendor/protomaps/protomaps-leaflet.js").catch(() => {})]))
+      .catch((e) => { mapLibs = null; throw e; });
+  }
+  return mapLibs;
+}
 function initMap() {
+  if (!map && !(window.L && window.L.markerClusterGroup)) {
+    return loadMapLibs().then(() => { if (!map) initMap(); }, () => { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; });
+  }
   setMapTop(); requestAnimationFrame(setMapTop); setTimeout(setMapTop, 300);
   if (map) { setTimeout(() => map.invalidateSize(), 50); if (!geoDone && !$("#view-carte").classList.contains("warm")) { geoDone = true; geocodeMissing(); } return; }
   if (!window.L) { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; return; }
@@ -1283,24 +1302,43 @@ Réponds uniquement avec un objet JSON : {"address": "", "phone": "", "website":
 }
 
 // ---------- Démarrage ----------
-async function boot() {
+// La liste gardée sur le téléphone s'affiche tout de suite ; la version en ligne arrive ensuite, sans bloquer l'ouverture.
+async function freshBase() {
   try {
     const r = await fetch("data/places.json", { cache: "no-cache" });
-    S.base = await r.json();
-  } catch {
-    S.base = store.get("baseCache", []);
+    if (!r.ok) return null;
+    const txt = await r.text();
+    const list = JSON.parse(txt);
+    const same = txt === localStorage.getItem("gfl.baseCache");
+    if (!same) try { localStorage.setItem("gfl.baseCache", txt); } catch { /* stockage plein */ }
+    return { list, same };
+  } catch { return null; }
+}
+async function boot() {
+  const cached = store.get("baseCache", []);
+  if (cached.length) {
+    S.base = cached; mergeShared(store.get("sharedCache", []));
+    rebuild(); renderAll(); start();
   }
-  if (S.base.length) store.set("baseCache", S.base);
+  const fresh = await freshBase();
+  if (fresh) S.base = fresh.list; else if (!cached.length) S.base = [];
+  const before = localStorage.getItem("gfl.sharedCache") + localStorage.getItem("gfl.masques");
   await loadShared();
-  rebuild();
-  renderAll();
+  const changed = !cached.length || (fresh && !fresh.same) || before !== localStorage.getItem("gfl.sharedCache") + localStorage.getItem("gfl.masques");
+  if (!changed) return;
+  rebuild(); renderAll();
+  if (!cached.length) start();
+  else if (current && !$("#sheet").hidden && S.places.some((p) => p.id === current.id)) openSheet(current.id, true);
+}
+function start() {
   // L'appli s'ouvre toujours sur l'accueil, sauf lien direct vers la carte ou l'ajout.
   const h0 = location.hash.slice(1);
   if (!["carte", "ajouter", "precieuses", "envies"].includes(h0)) history.replaceState(null, "", location.pathname + location.search);
   // Partagé depuis Instagram (menu Partager ou raccourci iPhone) : ?lien=…&texte=… → lecture par l'IA.
   const qs = new URLSearchParams(location.search);
   const shared = [qs.get("lien"), qs.get("texte"), qs.get("titre")].filter(Boolean).join(" ").trim();
-  if (shared) {
+  if (collFromLink(qs)) { /* collection reçue par lien */ }
+  else if (shared) {
     history.replaceState(null, "", location.pathname);
     const url = (shared.match(/https?:\/\/\S+/) || [""])[0];
     const rest = shared.replace(url, "").trim();
@@ -1314,14 +1352,15 @@ async function boot() {
   const setHead = () => document.documentElement.style.setProperty("--head-h", `${Math.round($(".top").offsetHeight)}px`);
   setHead(); addEventListener("resize", setHead);
 }
-boot();
+// Tous les fichiers de l'appli sont lus avant le premier affichage.
+document.addEventListener("DOMContentLoaded", boot);
 // La carte se prépare en arrière-plan dès l'ouverture de l'appli : quand on touche « Carte », elle est déjà là.
-setTimeout(() => {
-  if (map || S.view === "carte" || !window.L) return;
+setTimeout(() => loadMapLibs().then(() => {
+  if (map || S.view === "carte") return;
   const v = $("#view-carte"); v.classList.add("warm");
   try { initMap(); } catch {}
   setTimeout(() => v.classList.remove("warm"), 8000);
-}, 1200);
+}).catch(() => {}), 1200);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
