@@ -1,1 +1,79 @@
-[]
+[
+ {
+  "id": "bigmamma-gloria-osteria",
+  "list": "paris",
+  "name": "Gloria Osteria",
+  "address": "41 rue de Lille, 75007 Paris",
+  "arr": 7,
+  "cat": "Italien",
+  "cuisine": "Italien",
+  "summary": "Trattoria du groupe Big Mamma : pizzas et pâtes généreuses, cadre festif et soigné.",
+  "chain": "Big Mamma"
+ },
+ {
+  "id": "bigmamma-pizzeria-popolare",
+  "list": "paris",
+  "name": "Pizzeria Popolare",
+  "address": "111 rue Réaumur, 75002 Paris",
+  "arr": 2,
+  "cat": "Italien",
+  "cuisine": "Italien",
+  "summary": "Trattoria du groupe Big Mamma : pizzas et pâtes généreuses, cadre festif et soigné.",
+  "chain": "Big Mamma"
+ },
+ {
+  "id": "bigmamma-pink-mamma",
+  "list": "paris",
+  "name": "Pink Mamma",
+  "address": "20 bis rue de Douai, 75009 Paris",
+  "arr": 9,
+  "cat": "Italien",
+  "cuisine": "Italien",
+  "summary": "Trattoria du groupe Big Mamma : pizzas et pâtes généreuses, cadre festif et soigné.",
+  "chain": "Big Mamma"
+ },
+ {
+  "id": "bigmamma-libertino",
+  "list": "paris",
+  "name": "Libertino",
+  "address": "44 rue de Paradis, 75010 Paris",
+  "arr": 10,
+  "cat": "Italien",
+  "cuisine": "Italien",
+  "summary": "Trattoria du groupe Big Mamma : pizzas et pâtes généreuses, cadre festif et soigné.",
+  "chain": "Big Mamma"
+ },
+ {
+  "id": "bigmamma-ober-mamma",
+  "list": "paris",
+  "name": "Ober Mamma",
+  "address": "107 boulevard Richard-Lenoir, 75011 Paris",
+  "arr": 11,
+  "cat": "Italien",
+  "cuisine": "Italien",
+  "summary": "Trattoria du groupe Big Mamma : pizzas et pâtes généreuses, cadre festif et soigné.",
+  "chain": "Big Mamma"
+ },
+ {
+  "id": "bigmamma-east-mamma",
+  "list": "paris",
+  "name": "East Mamma",
+  "address": "133 rue du Faubourg Saint-Antoine, 75011 Paris",
+  "arr": 11,
+  "cat": "Italien",
+  "cuisine": "Italien",
+  "summary": "Trattoria du groupe Big Mamma : pizzas et pâtes généreuses, cadre festif et soigné.",
+  "chain": "Big Mamma"
+ },
+ {
+  "id": "bigmamma-mamma-primi",
+  "list": "paris",
+  "name": "Mamma Primi",
+  "address": "18 rue Boursault, 75017 Paris",
+  "arr": 17,
+  "cat": "Italien",
+  "cuisine": "Italien",
+  "summary": "Trattoria du groupe Big Mamma : pizzas et pâtes généreuses, cadre festif et soigné.",
+  "chain": "Big Mamma"
+ }
+]

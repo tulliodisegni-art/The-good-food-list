@@ -108,22 +108,70 @@ function ogImage(h) {
   }
   return "";
 }
+// Grandes images de la page (hors logos, icônes, pictos).
+function pageImages(h) {
+  const out = [];
+  for (const m of h.matchAll(/<img\b[^>]*>/gi)) {
+    const tag = m[0];
+    const src = (tag.match(/\b(?:data-src|data-lazy-src|src)=["']([^"']+)["']/i) || [])[1]
+      || ((tag.match(/\bsrcset=["']([^"']+)["']/i) || [])[1] || "").split(",").pop().trim().split(" ")[0];
+    if (!src || !/\.(jpe?g|webp|png)(\?|$)/i.test(src)) continue;
+    if (/logo|icon|favicon|picto|sprite|placeholder|avatar|badge|flag|arrow|svg/i.test(tag)) continue;
+    const w = +(tag.match(/\bwidth=["']?(\d+)/i) || [])[1] || 0;
+    if (w && w < 300) continue;
+    out.push(src);
+    if (out.length >= 3) break;
+  }
+  return out;
+}
+async function okImage(img, base) {
+  try { img = new URL(img.replace(/&amp;/g, "&"), base).href; } catch { return ""; }
+  if (/logo|favicon|icon|placeholder|default/i.test(img)) return "";
+  const g = await get(img);
+  return g && g.status < 400 && /^image\//.test(g.type) && !(g.size && g.size < 15000) ? img : "";
+}
+// Wikipédia : pour les adresses connues (brasseries, institutions…), l'image de l'article.
+const norm = (x) => String(x || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]/g, "");
+async function wikiPhoto(p) {
+  const n = norm(p.name.replace(/\(.*\)/, ""));
+  if (n.length < 5) return "";
+  const city = p.list === "villes" ? p.city || "" : "Paris";
+  const q = `https://fr.wikipedia.org/w/api.php?action=query&format=json&generator=search&gsrlimit=3&gsrsearch=${encodeURIComponent(`${p.name} ${city}`)}&prop=pageimages|extracts&exintro=1&explaintext=1&exchars=500&piprop=thumbnail&pithumbsize=1000`;
+  try {
+    const r = await fetch(q, { headers: { "user-agent": "GoodFoodList/1.0 (carnet d'adresses personnel; github.com/tulliodisegni-art/The-good-food-list)" } });
+    const pages = Object.values((await r.json())?.query?.pages || {}).sort((a, b) => a.index - b.index);
+    for (const pg of pages) {
+      const t = norm(pg.title);
+      if (!pg.thumbnail?.source || !(t === n || (t.includes(n) && t.length - n.length < 12))) continue;
+      if (city && !norm(pg.extract).includes(norm(city))) continue;
+      return pg.thumbnail.source;
+    }
+  } catch {}
+  return "";
+}
+const PHOTO_V = 2;
 const siteOf = (p) => p.website || (/^https?:/.test(p.menu || "") && !/\.pdf/i.test(p.menu) ? p.menu : "");
-const noPic = places.filter((p) => !p.photo && !p.ogTry && isUrl(siteOf(p)) && !BAD_SITE.test(siteOf(p)));
-let pics = 0;
+const noPic = places.filter((p) => !p.photo && (+p.ogTry || 0) < PHOTO_V);
+let pics = 0, wpics = 0;
 for (let i = 0; i < noPic.length; i += 8) {
   await Promise.all(noPic.slice(i, i + 8).map(async (p) => {
-    p.ogTry = 1;
-    const page = await html(siteOf(p));
-    if (!page) return;
-    let img = ogImage(page.text);
-    if (!img || /logo|favicon|icon|placeholder|default/i.test(img)) return;
-    try { img = new URL(img, page.url).href; } catch { return; }
-    const g = await get(img);
-    if (g && g.status < 400 && /^image\//.test(g.type) && !(g.size && g.size < 8000)) { p.photo = img; pics++; console.log(`${p.name} : photo du site`); }
+    p.ogTry = PHOTO_V;
+    // 1. Site officiel puis page de réservation : image de partage, sinon grandes photos de la page.
+    const srcs = [siteOf(p), p.booking].filter((u) => isUrl(u) && !/google\.|instagram\.|facebook\.|tiktok\./i.test(u));
+    for (const u of [...new Set(srcs)]) {
+      const page = await html(u);
+      if (!page) continue;
+      for (const c of [ogImage(page.text), ...pageImages(page.text)].filter(Boolean)) {
+        const img = await okImage(c, page.url);
+        if (img) { p.photo = img; pics++; console.log(`${p.name} : photo (${new URL(u).hostname})`); return; }
+      }
+    }
+    // 2. Wikipédia.
+    const w = await wikiPhoto(p);
+    if (w) { p.photo = w; wpics++; console.log(`${p.name} : photo Wikipédia`); }
   }));
 }
-console.log(`${noPic.length} sites regardés, ${pics} photos ajoutées`);
+console.log(`${noPic.length} fiches sans photo regardées : ${pics} photos des sites, ${wpics} de Wikipédia`);
 if (noPic.length) await writeFile(FILE, JSON.stringify(places, null, 1));
 
 const todo = places.filter((p) => (+p.aiFill || 0) < V && missing(p).length);

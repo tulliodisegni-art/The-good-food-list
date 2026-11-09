@@ -35,9 +35,7 @@
   "cuisine": "Japonais"
  },
  "precieuses-0-resto-big-mamma-chaine": {
-  "cuisine": "Italien",
-  "list": "paris",
-  "cat": "Italien"
+  "removed": true
  },
  "precieuses-0-resto-daroco": {
   "cuisine": "Italien"
