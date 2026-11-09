@@ -344,7 +344,7 @@ function openSheet(id, keepScroll) {
   const prevScroll = sheet.scrollTop;
   const plaque = p.list === "paris" && p.arr
     ? `<span class="plaque"><span class="p-kick">Arrondt</span><span class="p-num">${arrHtml(p.arr)}</span></span>`
-    : `<span class="plaque"><span class="p-kick">${p.list === "precieuses" ? "Précieuses" : esc(p.city || "Ville")}</span><span class="p-num" style="font-size:17px">${esc(p.cat || "")}</span></span>`;
+    : `<span class="plaque"><span class="p-kick">${p.list === "precieuses" ? "Précieuses" : p.list === "sorties" ? "Sortie" : esc(p.city || "Ville")}</span><span class="p-num" style="font-size:17px">${esc(p.cat || "")}</span></span>`;
   const r = p.rating || 0;
   sheet.innerHTML = `
     <div class="sheet-top"><span class="grab"></span>
@@ -478,7 +478,7 @@ function classifyForm(p) {
   const opt = (v, l, cur) => `<option value="${esc(v)}" ${v === cur ? "selected" : ""}>${esc(l)}</option>`;
   return `<form class="edit-info class-form" id="classForm" hidden>
     <label for="c-list">Liste</label>
-    <select id="c-list" name="list">${opt("paris", "Paris", p.list)}${opt("precieuses", "Précieuses seulement", p.list)}${opt("villes", "Autre ville", p.list)}</select>
+    <select id="c-list" name="list">${opt("paris", "Paris", p.list)}${opt("precieuses", "Précieuses (haut de gamme)", p.list)}${opt("sorties", "Sorties & activités", p.list)}${opt("villes", "Autre ville", p.list)}</select>
     <div data-for="paris" ${p.list !== "paris" ? "hidden" : ""}><label for="c-arr">Arrondissement</label>
       <select id="c-arr" name="arr">${opt("", "Choisir", "")}${Array.from({ length: 20 }, (_, i) => opt(String(i + 1), `${arrLabel(i + 1)} arrondissement`, String(p.arr || ""))).join("")}</select></div>
     <div data-for="villes" ${p.list !== "villes" ? "hidden" : ""}><label for="c-city">Ville</label><input id="c-city" name="city" value="${esc(p.city || "")}" placeholder="Ex. New York"></div>
@@ -1001,12 +1001,13 @@ Attention : le compte qui publie est souvent un média ou un influenceur food, p
 
 Choix de la liste :
 - "paris" : restaurant ou adresse à manger dans Paris intra-muros (75001 à 75020).
-- "precieuses" : lieu chic ou d'exception, rooftop, bar, soirée, salon de thé, activité, à Paris ou en Île-de-France.
+- "precieuses" : UNIQUEMENT le haut de gamme : restaurant chic ou gastronomique, palace, rooftop ou bar chic, soirée select, à Paris ou en Île-de-France.
+- "sorties" : activité, atelier, jeu, escape game, stand-up, bar ou soirée festive, rooftop ou guinguette décontractés (pas haut de gamme), à Paris ou en Île-de-France.
 - "villes" : tout lieu hors région parisienne (ex. New York, Tel-Aviv).
 Types déjà utilisés (réutilise-en un si ça colle) : ${cats}.
 
 Réponds uniquement avec un objet JSON, sans texte autour :
-{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|villes", "arr": 0, "city": "", "cat": "", "price": "budget par personne : 1 = moins de 20 €, 2 = 20 à 40 €, 3 = 40 à 80 €, 4 = plus de 80 €", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "instagram": "compte Instagram du lieu, sans @", "booking": "lien direct de réservation (TheFork, Zenchef, page Réserver du site…) si trouvé", "doubt": "ce qui reste incertain, sinon vide", "branches": [{"address": "", "arr": 0}]}
+{"name": "", "address": "adresse complète avec code postal et ville", "list": "paris|precieuses|sorties|villes", "arr": 0, "city": "", "cat": "", "price": "budget par personne : 1 = moins de 20 €, 2 = 20 à 40 €, 3 = 40 à 80 €, 4 = plus de 80 €", "summary": "1 à 2 phrases en français : ce qu'il faut y goûter, l'ambiance", "menu": "lien du menu ou du site si trouvé", "phone": "", "website": "", "instagram": "compte Instagram du lieu, sans @", "booking": "lien direct de réservation (TheFork, Zenchef, page Réserver du site…) si trouvé", "doubt": "ce qui reste incertain, sinon vide", "branches": [{"address": "", "arr": 0}]}
 "branches" : vérifie si c'est une chaîne. S'il y a plusieurs adresses dans la même ville, liste-les TOUTES (adresse complète, arrondissement pour Paris), y compris celle de "address". Sinon laisse [].
 "arr" est le numéro d'arrondissement (1 à 20) pour Paris, sinon 0.`;
 }
@@ -1105,7 +1106,7 @@ async function aiResume() {
 
 function fillFromAi(r, link) {
   resetForm();
-  const list = ["paris", "precieuses", "villes"].includes(r.list) ? r.list : "paris";
+  const list = ["paris", "precieuses", "sorties", "villes"].includes(r.list) ? r.list : "paris";
   $("#fName").value = r.name || ""; $("#fAddress").value = r.address || "";
   $("#fList").value = list;
   const zip = String(r.address || "").match(/750(\d\d)/);

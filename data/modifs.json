@@ -5,7 +5,10 @@
  },
  "precieuses-0-resto-racines": {
   "address": "8 passage des Panoramas, 75002 Paris",
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "list": "paris",
+  "cat": "Italien",
+  "arr": 2
  },
  "precieuses-0-resto-coya": {
   "address": "83-85 rue du Bac, 75007 Paris",
@@ -23,13 +26,17 @@
   "cuisine": "Péruvien"
  },
  "precieuses-0-resto-l-as-du-fallafel": {
-  "cuisine": "Israélien"
+  "cuisine": "Israélien",
+  "list": "paris",
+  "cat": "Israélien"
  },
  "precieuses-0-resto-teppanyaki": {
   "cuisine": "Japonais"
  },
  "precieuses-0-resto-big-mamma-chaine": {
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "list": "paris",
+  "cat": "Italien"
  },
  "precieuses-0-resto-daroco": {
   "cuisine": "Italien"
@@ -44,52 +51,76 @@
   "cuisine": "Israélien"
  },
  "precieuses-0-resto-le-perchoir": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "sorties"
  },
  "precieuses-0-resto-le-ciel-de-paris": {
   "cuisine": "Français"
  },
  "precieuses-0-resto-tout-le-monde-en-parle": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-le-relais-de-venise": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-bouillon-chartier": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-miss-ko": {
   "cuisine": "Fusion"
  },
  "precieuses-0-resto-restaurant-marocain": {
-  "cuisine": "Oriental"
+  "cuisine": "Oriental",
+  "list": "paris",
+  "cat": "Oriental"
  },
  "precieuses-0-resto-kodawari-tsukiji": {
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "list": "paris",
+  "cat": "Japonais"
  },
  "precieuses-0-resto-maison-sauvage": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "removed": true
  },
  "precieuses-0-resto-la-table-de-colette": {
   "cuisine": "Français"
  },
  "precieuses-0-resto-hakata-choten": {
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "list": "paris",
+  "cat": "Japonais"
  },
  "precieuses-0-resto-kodawari-ramen": {
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "list": "paris",
+  "cat": "Japonais"
  },
  "precieuses-0-resto-le-comptoir-paris": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-verre-chez-moi": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-naritake-ramen": {
-  "cuisine": "Japonais"
+  "cuisine": "Japonais",
+  "list": "paris",
+  "cat": "Japonais"
  },
  "precieuses-0-resto-miznon": {
-  "cuisine": "Israélien"
+  "cuisine": "Israélien",
+  "list": "paris",
+  "cat": "Israélien"
  },
  "precieuses-0-resto-spoon": {
   "cuisine": "Fusion"
@@ -98,7 +129,9 @@
   "cuisine": "Français"
  },
  "precieuses-0-resto-au-pied-de-cochon": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-le-train-bleu": {
   "cuisine": "Français"
@@ -110,34 +143,49 @@
   "cuisine": "Français"
  },
  "precieuses-0-resto-le-procope": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-brasserie-lipp": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-le-petit-bouillon-pharamond": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-brasserie-floderer": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-la-coupole": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-fondue-du-dragon": {
-  "cuisine": "Chinois"
+  "cuisine": "Chinois",
+  "removed": true
  },
  "precieuses-0-resto-dominicos": {
   "cuisine": "Fusion"
  },
  "precieuses-0-resto-peppe-pizzeria-napoletana": {
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "list": "paris",
+  "cat": "Italien"
  },
  "precieuses-0-resto-andia": {
   "cuisine": "Latino"
  },
  "precieuses-0-resto-la-maison-rose": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-beefbar": {
   "cuisine": "Viande & grill"
@@ -161,10 +209,14 @@
   "cuisine": "Français"
  },
  "precieuses-0-resto-le-buf-sur-le-toit": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-bumbu": {
-  "cuisine": "Indonésien"
+  "cuisine": "Indonésien",
+  "list": "paris",
+  "cat": "Indonésien"
  },
  "precieuses-0-resto-marlotti": {
   "cuisine": "Italien"
@@ -185,10 +237,14 @@
   "cuisine": "Japonais"
  },
  "precieuses-0-resto-pedzouille-lagrange": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-moommam": {
-  "cuisine": "Thaïlandais"
+  "cuisine": "Thaïlandais",
+  "list": "paris",
+  "cat": "Thaïlandais"
  },
  "precieuses-0-resto-maxim-s": {
   "cuisine": "Français"
@@ -245,7 +301,9 @@
   "cuisine": "Japonais"
  },
  "precieuses-0-resto-lava": {
-  "cuisine": "Fusion"
+  "cuisine": "Fusion",
+  "list": "paris",
+  "cat": "Fusion"
  },
  "precieuses-0-resto-hotel-le-collectionneur": {
   "cuisine": "Français"
@@ -272,7 +330,9 @@
   "cuisine": "Français"
  },
  "precieuses-0-resto-festif-gallopin": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "paris",
+  "cat": "Français"
  },
  "precieuses-0-resto-festif-salvaje": {
   "cuisine": "Fusion"
@@ -284,16 +344,22 @@
   "cuisine": "Français"
  },
  "precieuses-0-brunch-violetta-alfredo": {
-  "cuisine": "Italien"
+  "cuisine": "Italien",
+  "list": "paris",
+  "cat": "Italien"
  },
  "precieuses-0-brunch-404-brunch-oriental": {
-  "cuisine": "Oriental"
+  "cuisine": "Oriental",
+  "list": "paris",
+  "cat": "Oriental"
  },
  "precieuses-0-brunch-le-royal-monceau": {
   "cuisine": "Brunch"
  },
  "precieuses-0-brunch-bande-de-cheffes": {
-  "cuisine": "Brunch"
+  "cuisine": "Brunch",
+  "list": "paris",
+  "cat": "Brunch"
  },
  "precieuses-0-brunch-ferrandi": {
   "cuisine": "Brunch"
@@ -305,7 +371,8 @@
   "cuisine": "Français"
  },
  "ig-paris-chez-jeannette": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "sorties"
  },
  "ig-paris-l-emil-chateau-voltaire": {
   "cuisine": "Français"
@@ -329,7 +396,8 @@
   "cuisine": "Français"
  },
  "ig-paris-bistrot-podium": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "list": "sorties"
  },
  "ig-paris-aux-enfants-gates": {
   "cuisine": "Français"
@@ -407,5 +475,321 @@
  },
  "u-mw75r0j6bbnp": {
   "removed": true
+ },
+ "precieuses-0-activite-fury-room": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-urban-jump": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-ifly": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-flyview": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-disneyland": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-parc-asterix": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-the-mad-hatter-atelier": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-gate-vr": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-pixel-game": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-move-it-game": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-merci-internet": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-fun-booker": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-atelier-cocktails-personnalises": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-atelier-parfums-personnalises": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-objectif-horlogerie": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-aviasim": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-initium": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-wecandoo": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-theatre-a-la-minute": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-eclipso": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-e-motion": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-peinture-sur-ceramique": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-creation-de-bougie": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-atelier-poterie": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-lol-qui-rit-sort": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-paint-me-up": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-personnalisation-de-sneakers": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-one-hour-escape-game": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-the-jury-experience-diamants-mensonges-et-un-mort": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-kintsugi": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-my-flower-class": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-les-origines-de-paris": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-cite-immersive-des-fables": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-paradox-museum": {
+  "list": "sorties"
+ },
+ "precieuses-0-activite-science-experience": {
+  "list": "sorties"
+ },
+ "precieuses-0-stand-up-jamel-comedy-club": {
+  "list": "sorties"
+ },
+ "precieuses-0-stand-up-marrakech-du-rire": {
+  "list": "sorties"
+ },
+ "precieuses-0-stand-up-panam-cafe": {
+  "list": "sorties"
+ },
+ "precieuses-0-stand-up-le-fridge": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-boum-boum": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-deflower": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-le-son-des-guitares": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-mama-shelter": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-medellin": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-rose-bonbon": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-chez-mila": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-gypsy-motel": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-mamacita": {
+  "list": "sorties"
+ },
+ "precieuses-0-soiree-le-kiwi": {
+  "list": "sorties"
+ },
+ "precieuses-0-salon-de-the-angelina": {
+  "list": "paris",
+  "cat": "Salon de thé"
+ },
+ "precieuses-0-salon-de-the-fattyferia": {
+  "list": "paris",
+  "cat": "Salon de thé"
+ },
+ "precieuses-0-rooftop-le-perchoir-marais": {
+  "list": "sorties"
+ },
+ "precieuses-0-rooftop-mama-shelter": {
+  "list": "sorties"
+ },
+ "precieuses-0-rooftop-chez-mila": {
+  "list": "sorties"
+ },
+ "precieuses-0-rooftop-10eme-ciel": {
+  "list": "sorties"
+ },
+ "precieuses-0-rooftop-terraza-mikuna": {
+  "list": "sorties"
+ },
+ "precieuses-0-cafe-bofinger": {
+  "list": "paris",
+  "cat": "Français"
+ },
+ "precieuses-0-cafe-spootnik-bar": {
+  "list": "paris",
+  "cat": "Café"
+ },
+ "precieuses-0-cafe-kith": {
+  "list": "paris",
+  "cat": "Café"
+ },
+ "precieuses-0-cafe-chez-fringe": {
+  "list": "paris",
+  "cat": "Café"
+ },
+ "precieuses-0-boire-un-verre-cheper-perchoir": {
+  "list": "sorties"
+ },
+ "precieuses-0-boire-un-verre-mobster-bar": {
+  "list": "sorties"
+ },
+ "precieuses-0-boire-un-verre-bar-de-l-escadrille": {
+  "list": "sorties"
+ },
+ "precieuses-0-boire-un-verre-le-gainsbarre": {
+  "list": "sorties"
+ },
+ "precieuses-0-a-tester-yum-tcha-bubble-tea": {
+  "list": "paris",
+  "cat": "Salon de thé"
+ },
+ "ig-paris-wax": {
+  "list": "sorties"
+ },
+ "ig-paris-vice-versa": {
+  "list": "sorties"
+ },
+ "ig-paris-bambino": {
+  "list": "sorties"
+ },
+ "ig-paris-andy-wahloo": {
+  "list": "sorties"
+ },
+ "ig-paris-mira": {
+  "list": "sorties"
+ },
+ "ig-paris-frequence": {
+  "list": "sorties"
+ },
+ "ig-paris-mishmish": {
+  "list": "sorties"
+ },
+ "ig-paris-la-patate-douce": {
+  "list": "sorties"
+ },
+ "ig-paris-le-discobar": {
+  "list": "sorties"
+ },
+ "ig-paris-notre-dame-music-bar": {
+  "list": "sorties"
+ },
+ "ig-paris-starving-club": {
+  "list": "sorties"
+ },
+ "ig-paris-gatsby": {
+  "list": "sorties"
+ },
+ "ig-paris-miamor": {
+  "list": "sorties"
+ },
+ "ig-paris-bar-demory": {
+  "list": "sorties"
+ },
+ "ig-paris-ivy": {
+  "list": "sorties"
+ },
+ "ig-paris-la-poudriere": {
+  "list": "sorties"
+ },
+ "ig-paris-scilicet": {
+  "list": "sorties"
+ },
+ "ig-paris-besame-mucho": {
+  "list": "sorties"
+ },
+ "ig-paris-chope-moi": {
+  "list": "sorties"
+ },
+ "ig-paris-le-153": {
+  "list": "sorties"
+ },
+ "ig-paris-le-soixante-douze": {
+  "list": "sorties"
+ },
+ "ig-paris-petit-bain": {
+  "list": "sorties"
+ },
+ "ig-paris-la-demesure": {
+  "list": "sorties"
+ },
+ "ig-paris-belushi-s-canal": {
+  "list": "sorties"
+ },
+ "ig-paris-ciel-les-maquereaux": {
+  "list": "sorties"
+ },
+ "ig-paris-chalet-des-iles-daumesnil": {
+  "list": "sorties"
+ },
+ "ig-paris-rehab": {
+  "list": "sorties"
+ },
+ "ig-paris-le-syndicat": {
+  "list": "sorties"
+ },
+ "ig-paris-carvan": {
+  "list": "sorties"
+ },
+ "ig-paris-silencio-des-pres": {
+  "list": "sorties"
+ },
+ "ig-paris-grand-duc": {
+  "list": "sorties"
+ },
+ "ig-paris-fitzgerald": {
+  "list": "sorties"
+ },
+ "ig-paris-bisou": {
+  "list": "sorties"
+ },
+ "ig-paris-prescription-cocktail-club": {
+  "list": "sorties"
+ },
+ "ig-paris-danico": {
+  "list": "sorties"
+ },
+ "ig-paris-candelaria": {
+  "list": "sorties"
+ },
+ "ig-paris-moonshiner": {
+  "list": "sorties"
+ },
+ "ig-paris-canoe-crecy-la-chapelle": {
+  "list": "sorties"
  }
 }

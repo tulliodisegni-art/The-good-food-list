@@ -159,7 +159,7 @@ function renderHome() {
 // Recherche depuis l'accueil : dans toutes les listes à la fois.
 function renderSearch(q) {
   const match = (p) => norm(`${p.name} ${p.address} ${p.cat} ${p.city || ""} ${p.arr ? arrLabel(p.arr) : ""} ${p.summary || ""} ${p.comment || ""}`).includes(q);
-  const groups = [["paris", "Paris"], ["precieuses", "Précieuses"], ["villes", "Autres villes"]].map(([list, title]) => [title, S.places.filter((p) => p.list === list && match(p))]);
+  const groups = [["paris", "Paris"], ["precieuses", "Précieuses"], ["sorties", "Sorties & activités"], ["villes", "Autres villes"]].map(([list, title]) => [title, S.places.filter((p) => p.list === list && match(p))]);
   const total = groups.reduce((n, [, ps]) => n + ps.length, 0);
   $("#homeResults").innerHTML = total ? groups.filter(([, ps]) => ps.length).map(([title, ps]) => `<section class="group"><div class="subhead">${title} <span class="sub-n">${ps.length}</span></div>
     <div class="rows">${ps.slice(0, 40).map((p) => rowHtml(p, esc(placeSub(p)))).join("")}</div></section>`).join("")

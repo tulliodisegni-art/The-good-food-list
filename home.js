@@ -60,9 +60,11 @@ const gfCord = (c) => {
   return c in GF_CORD ? GF_CORD[c] : 999;
 };
 const gfCuis = (p) => (GF.prec && p.list === "precieuses" ? p.cuisine || null : p.cat);
-const gfOutOf = (p) => { const c = p.list === "precieuses" ? p.cat : p.prec; return c && GF_OUT[c] ? c : null; };
+const gfOutOf = (p) => { const c = p.list === "precieuses" || p.list === "sorties" ? p.cat : p.prec; return c && GF_OUT[c] ? c : null; };
 const gfGroup = (p) => gfCuis(p) || GF_OUT[gfOutOf(p)] || "Autres";
-const gfPool = () => S.places.filter((p) => gfCityOf(p) === GF.city && (GF.prec ? gfIsPrec(p) : p.list !== "precieuses"));
+const gfPool = () => S.places.filter((p) => gfCityOf(p) === GF.city && (GF.prec ? gfIsPrec(p) : p.list !== "precieuses" && p.list !== "sorties"));
+// Sorties & activités : à part des Précieuses (réservées au haut de gamme) et des restos.
+const gfSorties = () => S.places.filter((p) => gfCityOf(p) === GF.city && p.list === "sorties");
 const gfZones = (P) => { const m = {}; P.forEach((p) => { const z = gfZone(p); if (z) m[z] = (m[z] || 0) + 1; }); return m; };
 function gfZkeys(P) {
   const Z = gfZones(P);
@@ -152,6 +154,8 @@ function gfHomeBody() {
   const { Z, ks } = gfZkeys(P);
   const cats = Object.entries(P.reduce((a, p) => { const k = gfCuis(p); if (k) a[k] = (a[k] || 0) + 1; return a; }, {})).sort((a, b) => gfCord(a[0]) - gfCord(b[0]));
   const outs = Object.keys(GF_OUT).map((n) => [n, P.filter((p) => gfOutOf(p) === n).length]).filter((x) => x[1]);
+  const SO_ = GF.prec ? [] : gfSorties();
+  const souts = ["Activité", "Soirée", "Boire un verre", "Rooftop", "Stand-up", "Resto festif", "Salon de thé", "Café", "À tester"].map((n) => [n, SO_.filter((p) => gfOutOf(p) === n).length]).filter((x) => x[1]);
   const k = P.filter((p) => p.kasher).length, h = P.filter((p) => p.halal).length;
   return `<div style="height:34px"></div>
   ${gfNearSec()}
@@ -162,8 +166,10 @@ function gfHomeBody() {
     <div class="ex">${["Chaleureux, réconfortant et gourmand", "Léger et frais, pas cher", "Romantique avec une belle vue", "Festif entre amis, ça bouge", "Sushi de qualité", "Sucré pour le goûter"].map((x) => `<button data-gf-ex="${esc(x)}">${esc(x)}</button>`).join("")}</div></section>
   ${cats.length ? `<section class="sec"><div class="sec-h"><h2>Par cuisine</h2><button class="all" data-gf-allcats>Tout voir ›</button></div>
     <div class="rail">${cats.slice(0, 10).map(([n, v], i) => `<button class="tile cuis" data-gf-cat="${esc(n)}" ${gfBg(gfPhoto(P.filter((p) => gfCuis(p) === n), i))}><div class="t"><h3>${esc(n)}</h3><p>${gfCount(v)}</p></div></button>`).join("")}</div></section>` : ""}
-  ${GF.prec && outs.length ? `<section class="sec"><div class="sec-h"><h2>Sorties & activités</h2></div>
+  ${GF.prec && outs.length ? `<section class="sec"><div class="sec-h"><h2>Soirées, rooftops & bars chic</h2></div>
     <div class="rail">${outs.map(([n, v], i) => `<button class="tile cuis" data-gf-out="${esc(n)}" ${gfBg(gfPhoto(P.filter((p) => gfOutOf(p) === n), i + 3))}><div class="t"><h3>${esc(GF_OUT[n])}</h3><p>${gfCount(v)}</p></div></button>`).join("")}</div></section>` : ""}
+  ${!GF.prec && SO_.length ? `<section class="sec"><div class="sec-h"><h2>Sorties & activités</h2><span>${gfCount(SO_.length)}</span></div>
+    <div class="rail">${souts.map(([n, v], i) => `<button class="tile cuis" data-gf-out="${esc(n)}" ${gfBg(gfPhoto(SO_.filter((p) => gfOutOf(p) === n), i + 5))}><div class="t"><h3>${esc(GF_OUT[n])}</h3><p>${gfCount(v)}</p></div></button>`).join("")}</div></section>` : ""}
   ${k || h ? `<section class="sec"><div class="sec-h"><h2>Régimes</h2></div><div class="diet">${k ? `<button data-gf-diet="kasher"><span class="seal" style="background:#1d3b78">K</span><span><b>Kasher</b><small>${gfCount(k)}</small></span></button>` : ""}${h ? `<button data-gf-diet="halal"><span class="seal" style="background:#2c7a4b">H</span><span><b>Halal</b><small>${gfCount(h)}</small></span></button>` : ""}</div></section>` : ""}
   <div style="height:20px"></div>`;
 }
@@ -195,7 +201,7 @@ function gfListBody() {
   }
   let items = [], title = "", flat = false;
   if (L.diet) { items = P.filter((p) => p[L.diet]); title = L.diet === "kasher" ? "Kasher" : "Halal"; }
-  if (L.out) { items = P.filter((p) => gfOutOf(p) === L.out); title = esc(GF_OUT[L.out]); flat = true; }
+  if (L.out) { items = (GF.prec ? P : gfSorties()).filter((p) => gfOutOf(p) === L.out); title = esc(GF_OUT[L.out]); flat = true; }
   if (L.cat) { items = P.filter((p) => gfCuis(p) === L.cat); title = esc(L.cat); flat = true; }
   if (L.want) { items = S.places.filter((p) => p.want); title = "Mes envies"; }
   if (L.q != null) {
