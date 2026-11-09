@@ -28,7 +28,8 @@
  "precieuses-0-resto-l-as-du-fallafel": {
   "cuisine": "Israélien",
   "list": "paris",
-  "cat": "Israélien"
+  "cat": "Israélien",
+  "institution": true
  },
  "precieuses-0-resto-teppanyaki": {
   "cuisine": "Japonais"
@@ -65,12 +66,14 @@
  "precieuses-0-resto-le-relais-de-venise": {
   "cuisine": "Français",
   "list": "paris",
-  "cat": "Français"
+  "cat": "Français",
+  "institution": true
  },
  "precieuses-0-resto-bouillon-chartier": {
   "cuisine": "Français",
   "list": "paris",
-  "cat": "Français"
+  "cat": "Français",
+  "institution": true
  },
  "precieuses-0-resto-miss-ko": {
   "cuisine": "Fusion"
@@ -126,46 +129,46 @@
   "cuisine": "Fusion"
  },
  "precieuses-0-resto-fouquet-s": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "precieuses-0-resto-au-pied-de-cochon": {
   "cuisine": "Français",
-  "list": "paris",
-  "cat": "Français"
+  "institution": true
  },
  "precieuses-0-resto-le-train-bleu": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "precieuses-0-resto-la-fontaine-de-mars": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "precieuses-0-resto-l-escargot-montorgueil": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "precieuses-0-resto-le-procope": {
   "cuisine": "Français",
-  "list": "paris",
-  "cat": "Français"
+  "institution": true
  },
  "precieuses-0-resto-brasserie-lipp": {
   "cuisine": "Français",
-  "list": "paris",
-  "cat": "Français"
+  "institution": true
  },
  "precieuses-0-resto-le-petit-bouillon-pharamond": {
   "cuisine": "Français",
   "list": "paris",
-  "cat": "Français"
+  "cat": "Français",
+  "institution": true
  },
  "precieuses-0-resto-brasserie-floderer": {
   "cuisine": "Français",
-  "list": "paris",
-  "cat": "Français"
+  "institution": true
  },
  "precieuses-0-resto-la-coupole": {
   "cuisine": "Français",
-  "list": "paris",
-  "cat": "Français"
+  "institution": true
  },
  "precieuses-0-resto-fondue-du-dragon": {
   "cuisine": "Chinois",
@@ -185,7 +188,8 @@
  "precieuses-0-resto-la-maison-rose": {
   "cuisine": "Français",
   "list": "paris",
-  "cat": "Français"
+  "cat": "Français",
+  "institution": true
  },
  "precieuses-0-resto-beefbar": {
   "cuisine": "Viande & grill"
@@ -197,7 +201,8 @@
   "cuisine": "Français"
  },
  "precieuses-0-resto-laperouse": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "precieuses-0-resto-ephemera-group": {
   "cuisine": "Fusion"
@@ -210,8 +215,7 @@
  },
  "precieuses-0-resto-le-buf-sur-le-toit": {
   "cuisine": "Français",
-  "list": "paris",
-  "cat": "Français"
+  "institution": true
  },
  "precieuses-0-resto-bumbu": {
   "cuisine": "Indonésien",
@@ -247,7 +251,8 @@
   "cat": "Thaïlandais"
  },
  "precieuses-0-resto-maxim-s": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "precieuses-0-resto-vesper": {
   "cuisine": "Français"
@@ -289,7 +294,8 @@
   "cuisine": "Français"
  },
  "precieuses-0-resto-prunier": {
-  "cuisine": "Poisson & fruits de mer"
+  "cuisine": "Poisson & fruits de mer",
+  "institution": true
  },
  "precieuses-0-resto-ao-izakaya": {
   "cuisine": "Japonais"
@@ -331,8 +337,7 @@
  },
  "precieuses-0-resto-festif-gallopin": {
   "cuisine": "Français",
-  "list": "paris",
-  "cat": "Français"
+  "institution": true
  },
  "precieuses-0-resto-festif-salvaje": {
   "cuisine": "Fusion"
@@ -418,19 +423,22 @@
   "cuisine": "Français"
  },
  "ig-paris-lasserre": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "ig-paris-le-clarence": {
   "cuisine": "Français"
  },
  "ig-paris-le-taillevent": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "ig-paris-chez-fred": {
   "cuisine": "Français"
  },
  "ig-paris-l-ambroisie": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "ig-paris-kei": {
   "cuisine": "Français"
@@ -439,7 +447,8 @@
   "cuisine": "Français"
  },
  "ig-paris-lucas-carton": {
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "institution": true
  },
  "paris-4-cacher-tekes": {
   "cat": "Israélien",
@@ -625,7 +634,8 @@
  },
  "precieuses-0-salon-de-the-angelina": {
   "list": "paris",
-  "cat": "Salon de thé"
+  "cat": "Salon de thé",
+  "institution": true
  },
  "precieuses-0-salon-de-the-fattyferia": {
   "list": "paris",
@@ -647,8 +657,7 @@
   "list": "sorties"
  },
  "precieuses-0-cafe-bofinger": {
-  "list": "paris",
-  "cat": "Français"
+  "institution": true
  },
  "precieuses-0-cafe-spootnik-bar": {
   "list": "paris",
@@ -791,5 +800,29 @@
  },
  "ig-paris-canoe-crecy-la-chapelle": {
   "list": "sorties"
+ },
+ "paris-6-francais-laperouse": {
+  "institution": true
+ },
+ "paris-9-cafe-cafe-de-la-paix": {
+  "institution": true
+ },
+ "precieuses-0-soiree-le-raspoutine": {
+  "institution": true
+ },
+ "precieuses-0-salon-de-the-hotel-de-crillon": {
+  "institution": true
+ },
+ "precieuses-0-salon-de-the-ritz-paris": {
+  "institution": true
+ },
+ "precieuses-0-salon-de-the-le-meurice": {
+  "institution": true
+ },
+ "precieuses-0-boire-un-verre-bar-hemingway": {
+  "institution": true
+ },
+ "ig-paris-berthillon": {
+  "institution": true
  }
 }

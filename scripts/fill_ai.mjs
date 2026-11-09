@@ -90,6 +90,42 @@ async function apply(p, r) {
   return got;
 }
 
+// Photos : l'image de partage (og:image) du site officiel du lieu, quand il en a un.
+async function html(url, ms = 12000) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), ms);
+  try {
+    const r = await fetch(url, { signal: ctrl.signal, redirect: "follow", headers: { "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15", "accept-language": "fr-FR,fr;q=0.9" } });
+    if (!r.ok || !/html/.test(r.headers.get("content-type") || "")) return null;
+    return { text: (await r.text()).slice(0, 400000), url: r.url };
+  } catch { return null; } finally { clearTimeout(t); }
+}
+function ogImage(h) {
+  for (const prop of ["og:image:secure_url", "og:image", "twitter:image", "twitter:image:src"]) {
+    const m = h.match(new RegExp(`<meta[^>]+(?:property|name)=["']${prop}["'][^>]*content=["']([^"']+)["']`, "i"))
+      || h.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["']${prop}["']`, "i"));
+    if (m) return m[1].replace(/&amp;/g, "&");
+  }
+  return "";
+}
+const siteOf = (p) => p.website || (/^https?:/.test(p.menu || "") && !/\.pdf/i.test(p.menu) ? p.menu : "");
+const noPic = places.filter((p) => !p.photo && !p.ogTry && isUrl(siteOf(p)) && !BAD_SITE.test(siteOf(p)));
+let pics = 0;
+for (let i = 0; i < noPic.length; i += 8) {
+  await Promise.all(noPic.slice(i, i + 8).map(async (p) => {
+    p.ogTry = 1;
+    const page = await html(siteOf(p));
+    if (!page) return;
+    let img = ogImage(page.text);
+    if (!img || /logo|favicon|icon|placeholder|default/i.test(img)) return;
+    try { img = new URL(img, page.url).href; } catch { return; }
+    const g = await get(img);
+    if (g && g.status < 400 && /^image\//.test(g.type) && !(g.size && g.size < 8000)) { p.photo = img; pics++; console.log(`${p.name} : photo du site`); }
+  }));
+}
+console.log(`${noPic.length} sites regardés, ${pics} photos ajoutées`);
+if (noPic.length) await writeFile(FILE, JSON.stringify(places, null, 1));
+
 const todo = places.filter((p) => (+p.aiFill || 0) < V && missing(p).length);
 console.log(`${todo.length} fiches incomplètes, ${Math.min(todo.length, MAX * PER)} traitées ce passage`);
 let calls = 0, filled = 0, fails = 0;

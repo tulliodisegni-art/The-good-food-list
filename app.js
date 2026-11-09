@@ -1208,9 +1208,81 @@ $("#placeForm").addEventListener("submit", (e) => {
   if (map) geocodeMissing();
   toast(prev && prev.list !== "pending" ? "Adresse modifiée" : extra.length ? `${p.name} ajouté avec ses ${extra.length + 1} adresses` : `${p.name} ajouté`);
   if (canPublish()) setTimeout(() => { publishPlace(id); extra.forEach((b, i) => setTimeout(() => publishPlace(b.id), 400 * (i + 1))); }, 1200);
+  // Nouvelle adresse : on cherche tout seul ce qui manque (numéro, site, Insta, résa, photo…).
+  if (!(prev && prev.list !== "pending")) completePlace([id, ...extra.map((b) => b.id)]);
   location.hash = list; show(list);
   setTimeout(() => openSheet(id), 60);
 });
+
+// ---------- Compléter une nouvelle fiche ----------
+// Après un ajout, l'IA cherche sur le web ce qui manque ; chaque info est vérifiée avant d'être gardée
+// (une image doit vraiment s'afficher, un lien doit être un vrai lien). Rien n'est jamais écrasé.
+const FILL_KEYS = ["address", "phone", "website", "instagram", "booking", "photo", "summary"];
+const imgOk = (u) => new Promise((ok) => {
+  if (!/^https?:\/\//.test(u || "")) return ok(false);
+  const i = new Image(); const t = setTimeout(() => ok(false), 8000);
+  i.onload = () => { clearTimeout(t); ok(i.naturalWidth >= 200 && i.naturalHeight >= 150); };
+  i.onerror = () => { clearTimeout(t); ok(false); };
+  i.src = u;
+});
+async function completePlace(ids) {
+  if (!aiServer()) return;
+  const all = () => store.get("custom", []);
+  const p = all().find((x) => x.id === ids[0]);
+  if (!p) return;
+  const want = FILL_KEYS.filter((k) => !p[k] && !(k === "website" && /^https?:/.test(p.menu || "") && !/\.pdf/i.test(p.menu)));
+  if (!want.length && (p.booking || p.resa)) return;
+  const lieu = p.list === "villes" ? p.city || "" : p.arr ? `Paris ${p.arr}e` : "Paris / Île-de-France";
+  const prompt = `Tu complètes la fiche d'un lieu (resto, bar, sortie) dans un carnet d'adresses. Cherche sur le web les infos officielles de CE lieu :
+${JSON.stringify({ nom: p.name, type: p.cat || "", lieu, adresse: p.address || "", site: p.website || (/^https?:/.test(p.menu || "") ? p.menu : ""), instagram: p.instagram || "", a_trouver: want }, null, 1)}
+Règles strictes :
+- Vérifie que c'est bien CE lieu (même nom, même ville ou arrondissement). Au moindre doute sur une info, laisse-la vide. N'invente jamais.
+- "address" : adresse postale complète avec code postal et ville.
+- "phone" : numéro du lieu, format « 01 23 45 67 89 » pour la France.
+- "website" : site officiel (pas TripAdvisor, Google, TheFork, Instagram).
+- "instagram" : compte officiel du lieu, sans @.
+- "booking" : lien direct de réservation (TheFork, Zenchef, SevenRooms, page Réserver du site…).
+- "resa" : "en_ligne" si on peut réserver en ligne, "telephone" si seulement par téléphone, "sans" si pas de réservation, "" si tu ne sais pas.
+- "photo" : URL directe d'une image du lieu ou de ses plats. Ouvre le site officiel et prends l'image de partage (balise og:image) ou une grande photo de la page. Seulement une URL d'image exacte, sinon vide.
+- "summary" : 1 à 2 phrases en français, ce qu'il faut y goûter et l'ambiance.
+Réponds uniquement avec un objet JSON : {"address": "", "phone": "", "website": "", "instagram": "", "booking": "", "resa": "", "photo": "", "summary": ""}`;
+  let r;
+  try { r = aiParse(await aiAsk(prompt, [], true)); } catch { return; }
+  const url = (u) => /^https?:\/\/[^\s"]+\.[a-z]{2,}/i.test(u || "");
+  const BAD = /google\.|instagram\.|facebook\.|tiktok\.|tripadvisor|yelp|restaurantguru|sluurpy|pagesjaunes|thefork|lafourchette/i;
+  const add = {};
+  if (want.includes("address") && String(r.address || "").length > 8) {
+    const zip = r.address.match(/\b750(\d\d)\b/);
+    if (p.list !== "paris" || (zip && (!p.arr || +zip[1] === +p.arr))) add.address = r.address.trim();
+  }
+  if (want.includes("phone") && (String(r.phone || "").match(/\d/g) || []).length >= 9) add.phone = r.phone.trim();
+  if (want.includes("website") && url(r.website) && !BAD.test(r.website)) add.website = r.website.trim();
+  const ig = String(r.instagram || "").replace(/^@|https?:\/\/(www\.)?instagram\.com\//g, "").replace(/[/?].*$/, "").trim();
+  if (want.includes("instagram") && /^[a-z0-9._]{2,30}$/i.test(ig)) add.instagram = ig;
+  if (!p.booking && url(r.booking)) add.booking = r.booking.trim();
+  if (!p.booking && !add.booking && ["telephone", "sans"].includes(r.resa)) add.resa = r.resa;
+  if (want.includes("summary") && String(r.summary || "").length > 20 && r.summary.length < 400) add.summary = r.summary.trim();
+  if (want.includes("photo") && await imgOk(r.photo)) add.photo = r.photo.trim();
+  // Rien trouvé : on l'écrit sur la fiche (« pas de numéro », « pas d'Instagram »…).
+  const got = Object.keys(add).filter((k) => k !== "resa");
+  const custom = all();
+  let changed = false;
+  for (const x of custom) {
+    if (!ids.includes(x.id)) continue;
+    for (const [k, v] of Object.entries(add)) if (!x[k] && !(k === "address" && x.id !== ids[0])) { x[k] = v; changed = true; }
+    if (!x.phone) x.noPhone = 1;
+    if (!x.instagram && !/instagram\.com/.test(x.source || "")) x.noInsta = 1;
+    if (!x.menu && !x.website) x.noMenu = 1;
+    x.aiFill = 1; changed = true;
+  }
+  if (!changed) return;
+  store.set("custom", custom);
+  rebuild(); renderAll();
+  if (current && ids.includes(current.id)) openSheet(current.id, true);
+  const names = { address: "adresse", phone: "numéro", website: "site", instagram: "Instagram", booking: "réservation", photo: "photo", summary: "résumé" };
+  if (got.length) toast(`${p.name} : ${got.map((k) => names[k]).join(", ")} trouvés`);
+  if (canPublish()) ids.forEach((id, i) => setTimeout(() => publishPlace(id, 0, true), 400 * i));
+}
 
 // ---------- Démarrage ----------
 async function boot() {

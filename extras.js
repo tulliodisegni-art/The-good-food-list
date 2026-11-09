@@ -424,7 +424,7 @@ const PERSONAL = ["tested", "rating", "comment", "want", "published", "createdAt
 // Publier ne demande plus de clé : l'adresse part dans la base Supabase (table « ajouts »),
 // tout le monde la voit au prochain chargement, et la mise en ligne l'enrichit (carte, photo…).
 const canPublish = () => !!(SB().url || store.get("ghToken", ""));
-async function publishPlace(id, attempt = 0) {
+async function publishPlace(id, attempt = 0, quiet = false) {
   const k = store.get("ghToken", "");
   const local = store.get("custom", []).find((p) => p.id === id);
   if (!local || local.list === "pending") return;
@@ -435,7 +435,7 @@ async function publishPlace(id, attempt = 0) {
       const r = await fetch(`${SB().url}/rest/v1/ajouts`, { method: "POST", headers: { ...sbHead(), "content-type": "application/json" }, body: JSON.stringify({ place, author: store.get("name", "") || null }) });
       if (!r.ok) throw new Error(r.status);
       setEdit(id, { published: true });
-      toast(`${place.name} publié pour tous`);
+      if (!quiet) toast(`${place.name} publié pour tous`);
       if (current?.id === id) openSheet(id, true);
     } catch { toast("Publication impossible, vérifie ta connexion et réessaie depuis la fiche"); }
     return;

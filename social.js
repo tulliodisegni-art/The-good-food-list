@@ -162,7 +162,7 @@
       <div class="row-actions"><input id="socialFollow" placeholder="Pseudo d'un ami (ex. karim)" autocapitalize="off" autocomplete="off" style="flex:1;min-width:0"><button class="btn" data-social-follow>Suivre</button></div>
       <ul class="social-list">${ids.map((u) => `<li><span>${h(nameOf(u))}</span>${u === SO.ownerId ? `<span class="muted small">liste de base</span>` : `<button class="btn ghost small" data-social-unfollow="${u}">Ne plus suivre</button>`}</li>`).join("")}
         ${pend.map((f) => `<li><span>${h(nameOf(f.followee))}</span><span class="muted small">demande envoyée · <button class="linkish" data-social-unfollow="${f.followee}">annuler</button></span></li>`).join("")}</ul>
-      ${followers.length ? `<h4>Me suivent</h4><ul class="social-list">${followers.map((f) => `<li><span>${h(nameOf(f.follower))}</span><button class="btn ghost small" data-social-remove="${f.follower}">Retirer</button></li>`).join("")}</ul>` : ""}
+      ${followers.length ? `<h4>Me suivent</h4><ul class="social-list">${followers.map((f) => `<li><span>${h(nameOf(f.follower))}</span><span>${SO.follows.some((g) => g.follower === meId() && g.followee === f.follower) ? "" : `<button class="btn small" data-social-followback="${f.follower}">Suivre aussi</button> `}<button class="btn ghost small" data-social-remove="${f.follower}">Retirer</button></span></li>`).join("")}</ul>` : ""}
     </section>`;
   }
 
@@ -178,7 +178,7 @@
 
   /* ---------- clics ---------- */
   document.addEventListener("click", async (e) => {
-    const t = e.target.closest("[data-map-who],[data-who],[data-share-toggle],[data-social-rename],[data-social-follow],[data-social-ok],[data-social-no],[data-social-unfollow],[data-social-remove],[data-social-link]");
+    const t = e.target.closest("[data-map-who],[data-who],[data-share-toggle],[data-social-rename],[data-social-follow],[data-social-ok],[data-social-no],[data-social-unfollow],[data-social-remove],[data-social-followback],[data-social-link]");
     if (!t) return;
     try {
       if (t.dataset.mapWho !== undefined) {
@@ -195,6 +195,7 @@
       if (t.dataset.socialOk) { await answer(t.dataset.socialOk, true); toast("Demande acceptée"); return; }
       if (t.dataset.socialNo) { await answer(t.dataset.socialNo, false); return; }
       if (t.dataset.socialUnfollow) { await unfollow(t.dataset.socialUnfollow); return; }
+      if (t.dataset.socialFollowback) { const pr = SO.profiles.get(t.dataset.socialFollowback); if (!pr) return; await follow(pr.handle); toast(`Demande envoyée à ${pr.name || "@" + pr.handle} : sa carte apparaîtra dès son accord`); return; }
       if (t.dataset.socialRemove) { await removeFollower(t.dataset.socialRemove); return; }
       if (t.dataset.socialLink) { const url = t.dataset.socialLink, text = "Suis-moi sur The Good Food List pour voir mes adresses :"; try { if (navigator.share) { await navigator.share({ title: "Mon profil", text, url }); return; } } catch (x) { if (x && x.name === "AbortError") return; } try { await navigator.clipboard.writeText(text + " " + url); toast("Lien copié"); } catch (x) { prompt("Lien de ton profil", url); } return; }
     } catch (x) { toast(x.message || "Pas de connexion"); }

@@ -65,6 +65,8 @@ const gfGroup = (p) => gfCuis(p) || GF_OUT[gfOutOf(p)] || "Autres";
 const gfPool = () => S.places.filter((p) => gfCityOf(p) === GF.city && (GF.prec ? gfIsPrec(p) : p.list !== "precieuses" && p.list !== "sorties"));
 // Sorties & activités : à part des Précieuses (réservées au haut de gamme) et des restos.
 const gfSorties = () => S.places.filter((p) => gfCityOf(p) === GF.city && p.list === "sorties");
+// Les institutions : brasseries mythiques et adresses légendaires, toutes listes confondues.
+const gfInst = () => S.places.filter((p) => p.institution && gfCityOf(p) === GF.city);
 const gfZones = (P) => { const m = {}; P.forEach((p) => { const z = gfZone(p); if (z) m[z] = (m[z] || 0) + 1; }); return m; };
 function gfZkeys(P) {
   const Z = gfZones(P);
@@ -157,10 +159,13 @@ function gfHomeBody() {
   const SO_ = GF.prec ? [] : gfSorties();
   const souts = ["Activité", "Soirée", "Boire un verre", "Rooftop", "Stand-up", "Resto festif", "Salon de thé", "Café", "À tester"].map((n) => [n, SO_.filter((p) => gfOutOf(p) === n).length]).filter((x) => x[1]);
   const k = P.filter((p) => p.kasher).length, h = P.filter((p) => p.halal).length;
+  const INS = gfInst().sort((a, b) => (gfGoodPhoto(b.photo) ? 1 : 0) - (gfGoodPhoto(a.photo) ? 1 : 0));
   return `<div style="height:34px"></div>
   ${gfNearSec()}
   <section class="sec"><div class="sec-h"><h2>${esc(c.zoneTitle)}</h2><span>${gfCount(P.length)}</span></div>
     <div class="zrail">${ks.map((z) => `<button class="zp" data-gf-zone="${esc(z)}">${gfSign(z)}<small>${gfCount(Z[z])}</small></button>`).join("")}</div></section>
+  ${INS.length ? `<section class="sec"><div class="sec-h"><h2>Les institutions</h2><button class="all" data-gf-inst>Tout voir ›</button></div>
+    <div class="rail">${INS.slice(0, 12).map((p, i) => `<button class="tile cuis" data-gf-id="${esc(p.id)}" ${gfBg(gfGoodPhoto(p.photo) ? p.photo : gfPhoto([p], i))}><div class="t"><h3>${esc(p.name)}</h3><p>${esc(p.cat || "")}</p></div></button>`).join("")}</div></section>` : ""}
   <section class="sec"><div class="sec-h"><h2>Une envie ?</h2></div>
     <div class="wish"><textarea id="gfWish" rows="2" placeholder="Décris ce dont tu as envie… ex. un resto chaleureux, cuisine réconfortante et gourmande"></textarea><button data-gf-wish>Trouver</button></div>
     <div class="ex">${["Chaleureux, réconfortant et gourmand", "Léger et frais, pas cher", "Romantique avec une belle vue", "Festif entre amis, ça bouge", "Sushi de qualité", "Sucré pour le goûter"].map((x) => `<button data-gf-ex="${esc(x)}">${esc(x)}</button>`).join("")}</div></section>
@@ -203,6 +208,7 @@ function gfListBody() {
   if (L.diet) { items = P.filter((p) => p[L.diet]); title = L.diet === "kasher" ? "Kasher" : "Halal"; }
   if (L.out) { items = (GF.prec ? P : gfSorties()).filter((p) => gfOutOf(p) === L.out); title = esc(GF_OUT[L.out]); flat = true; }
   if (L.cat) { items = P.filter((p) => gfCuis(p) === L.cat); title = esc(L.cat); flat = true; }
+  if (L.inst) { items = gfInst(); title = "Les institutions"; flat = true; }
   if (L.want) { items = S.places.filter((p) => p.want); title = "Mes envies"; }
   if (L.q != null) {
     const q = norm(L.q).trim();
@@ -272,6 +278,7 @@ document.addEventListener("click", (e) => {
   if ((b = t.closest("[data-gf-out]"))) { gfOpen({ out: b.dataset.gfOut }); return; }
   if ((b = t.closest("[data-gf-diet]"))) { gfOpen({ diet: b.dataset.gfDiet }); return; }
   if (t.closest("[data-gf-near]")) { gfOpenNear(); return; }
+  if (t.closest("[data-gf-inst]")) { gfOpen({ inst: 1 }); return; }
   if (t.closest("[data-gf-allcats]")) { gfOpen({ allcats: 1 }); return; }
   if (t.closest("[data-gf-wish]")) { const v = $("#gfWish").value.trim(); if (v) gfOpen({ wish: v }); return; }
   if ((b = t.closest("[data-gf-ex]"))) { gfOpen({ wish: b.dataset.gfEx }); return; }
