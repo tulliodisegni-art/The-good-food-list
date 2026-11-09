@@ -371,6 +371,7 @@ function openSheet(id, keepScroll) {
 
       <div class="quick">
         ${p.phone ? `<a class="q" href="${esc(L.call)}">${icon("phone")}<span>Appeler</span></a>`
+          : p.noPhone ? `<span class="q off">${icon("phone")}<span>Appeler</span><i>pas de numéro</i></span>`
           : `<button class="q missing" data-need="phone">${icon("phone")}<span>Appeler</span><i>+ numéro</i></button>`}
         ${p.booking ? `<a class="q" href="${esc(p.booking)}" target="_blank" rel="noopener">${icon("book")}<span>Réserver</span></a>`
           : p.resa === "sans" ? `<span class="q off">${icon("book")}<span>Sans résa</span><i>premier arrivé</i></span>`
@@ -422,14 +423,14 @@ function openSheet(id, keepScroll) {
 
       <section class="block infos">
         <div class="block-head"><h3>Infos</h3><button class="link-btn" data-editinfo>${icon("pencil")}Compléter</button></div>
-        ${infoRow("phone", "Téléphone", p.phone, p.phone ? L.call : "")}
+        ${infoRow("phone", "Téléphone", p.phone || (p.noPhone ? "Pas de numéro trouvé" : ""), p.phone ? L.call : "")}
         ${infoRow("clock", "Horaires", p.hours, "")}
         ${p.booking ? infoRow("book", "Réservation", "Réserver en ligne", p.booking)
           : p.resa === "sans" ? infoRow("book", "Réservation", "Ne prend pas de réservation (premier arrivé, premier servi)", "")
           : p.resa === "telephone" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : par téléphone uniquement" : "Par téléphone uniquement", p.phone ? L.call : "")
           : p.resa === "inconnu" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : appelle pour réserver" : "Pas de réservation en ligne", p.phone ? L.call : "")
           : infoRow("book", "Réservation", "", "")}
-        ${infoRow("menu", "Menu", p.menu ? "Voir le menu" : "", p.menu)}
+        ${infoRow("menu", "Menu", p.menu ? "Voir le menu" : p.noMenu ? "Pas de menu en ligne" : "", p.menu)}
         ${infoRow("insta", "Instagram", igHandle(p) ? "@" + igHandle(p) : p.noInsta ? "Pas de compte Instagram" : "", igHandle(p) ? L.insta : "")}
         ${p.source && p.source !== L.insta ? infoRow("insta", "Publication", "Voir la publication", p.source) : ""}
         ${infoRow("web", "Site web", p.website ? p.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") : "", p.website)}

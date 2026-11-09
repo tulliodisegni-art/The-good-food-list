@@ -118,7 +118,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un bar à manger intimiste et chaleureux au cœur de Paris, idéal pour partager des assiettes canailles et des vins d'auteur en toute discrétion."
+  "summary": "Un bar à manger intimiste et chaleureux au cœur de Paris, idéal pour partager des assiettes canailles et des vins d'auteur en toute discrétion.",
+  "noPhone": 1
  },
  {
   "id": "paris-1-francais-maslow",
@@ -141,7 +142,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table végétarienne gourmande et décomplexée avec vue sur la Seine, mettant à l'honneur des pâtes réconfortantes et des plats à partager."
+  "summary": "Une table végétarienne gourmande et décomplexée avec vue sur la Seine, mettant à l'honneur des pâtes réconfortantes et des plats à partager.",
+  "noPhone": 1
  },
  {
   "id": "paris-1-francais-le-roch-restaurant",
@@ -449,7 +451,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-1-japonais-yamato-grill",
@@ -729,7 +733,8 @@
   "instagram": "tikiroseparis",
   "aiFill": 1,
   "summary": "Un bar-café aux accents tropicaux et colorés, parfait pour siroter des cocktails originaux et profiter d'une ambiance festive et chaleureuse en plein cœur de Paris.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-1-cafe-cafe-kitsune",
@@ -753,7 +758,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un comptoir à café incontournable sous les arcades du Palais-Royal, réputé pour son excellent matcha latte et ses boissons de specialty coffee dans un décor minimaliste et chic.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-1-cafe-le-cafe-de-l-epoque",
@@ -941,7 +947,8 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "telephone",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-2-francais-one-and-one",
@@ -1157,7 +1164,8 @@
   "instagram": "pizz.aria",
   "aiFill": 1,
   "summary": "Une pizzeria italienne décontractée située rue Montmartre. On y déguste des pizzas généreuses dans une ambiance conviviale et branchée.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-2-italien-rivolta",
@@ -1178,7 +1186,8 @@
   "instagram": "rivoltaparis",
   "aiFill": 1,
   "summary": "Une table italienne contemporaine au cœur du 2e arrondissement. L'ambiance est chaleureuse et met à l'honneur des spécialités inspirées de la tradition italienne.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-2-italien-dalmata",
@@ -1200,7 +1209,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un spot de pizza napolitaine ultra-tendance et néonisé rue Tiquetonne. On y savoure des pizzas créatives et savoureuses dans une ambiance festive et colorée."
+  "summary": "Un spot de pizza napolitaine ultra-tendance et néonisé rue Tiquetonne. On y savoure des pizzas créatives et savoureuses dans une ambiance festive et colorée.",
+  "noPhone": 1
  },
  {
   "id": "paris-2-italien-pupetta",
@@ -1221,7 +1231,8 @@
   "instagram": "_pupetta",
   "aiFill": 1,
   "summary": "Une trattoria animée rue Saint-Denis proposant de savoureuses pizzas et des plats italiens authentiques. L'ambiance y est vivante et typiquement italienne.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-2-italien-bianco",
@@ -1410,7 +1421,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un restaurant lumineux aux vibes californiennes idéal pour bruncher ou savourer des plats réconfortants baignés de soleil. L'ambiance est festive, chaleureuse et résolument dépaysante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-2-japonais-gyoza-bar",
@@ -1599,7 +1611,8 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "sans",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-2-chinois-xialongkan",
@@ -1788,7 +1801,8 @@
   "instagram": "briquemachine",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une taproom et brasserie artisanale branchée, parfaite pour découvrir des bières locales audacieuses accompagnées de comfort food dans un décor industriel et ludique."
+  "summary": "Une taproom et brasserie artisanale branchée, parfaite pour découvrir des bières locales audacieuses accompagnées de comfort food dans un décor industriel et ludique.",
+  "noMenu": 1
  },
  {
   "id": "paris-2-libanais-noura",
@@ -1957,7 +1971,8 @@
   "aiFill": 1,
   "summary": "Un concept novateur et engagé qui propose une cuisine végétale créative et savoureuse. L'ambiance y est moderne, décontractée et résolument tournée vers le bien-manger.",
   "resa": "sans",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-2-vegan-mama-nissa",
@@ -2023,7 +2038,9 @@
   "booking": "https://www.thefork.fr/restaurant/cafe-jeanne-park-hyatt-paris-vendome-r706347",
   "bookingOk": 2,
   "aiFill": 1,
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-2-cafe-contrastes",
@@ -2142,7 +2159,8 @@
   "instagram": "supernovaparis_",
   "aiFill": 1,
   "summary": "Bistrot de quartier chaleureux et animé, idéal pour partager des assiettes soignées et des quilles de vin nature dans une ambiance décontractée.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-3-francais-season",
@@ -2234,7 +2252,8 @@
   "instagram": "bigloveparis",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Big Love est un temple de la gastronomie italienne du groupe Big Mamma, célèbre pour ses pâtes d'exception et ses célèbres desserts ultra-gourmands. L'ambiance y est vibrante et branchée."
+  "summary": "Big Love est un temple de la gastronomie italienne du groupe Big Mamma, célèbre pour ses pâtes d'exception et ses célèbres desserts ultra-gourmands. L'ambiance y est vibrante et branchée.",
+  "noPhone": 1
  },
  {
   "id": "paris-3-italien-all-antico-vinaio",
@@ -2256,7 +2275,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "All'Antico Vinaio propose des schiacciate gargantuesques garnies de charcuteries et fromages italiens d'une fraîcheur absolue. L'ambiance est dynamique et embaumée des saveurs toscanes.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-3-japonais-ogata",
@@ -2420,7 +2440,8 @@
   "instagram": "808.macandcheese",
   "aiFill": 1,
   "summary": "Le paradis des amateurs de comfort food américaine, spécialisé dans les mac and cheese ultra-fondants et généreux. L'ambiance est décontractée et rythmée par une vibe hip-hop.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-3-oriental-mabrouk",
@@ -2584,7 +2605,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Santa Lyna invite au voyage avec ses brunchs généreux aux saveurs californiennes et mexicaines, à déguster dans un décor lumineux et végétalisé. Ne manquez pas leurs pancakes ultra-gourmands et leurs huevos rancheros.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-3-cafe-cafe-creme",
@@ -2607,7 +2629,8 @@
   "instagram": "cafe_creme_paris",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Véritable repère branché du Marais, le Café Crème propose des cafés de spécialité et une cuisine de bistrot moderne dans une ambiance conviviale et décontractée. Idéal pour savourer un avocado toast ou une pâtisserie maison en terrasse."
+  "summary": "Véritable repère branché du Marais, le Café Crème propose des cafés de spécialité et une cuisine de bistrot moderne dans une ambiance conviviale et décontractée. Idéal pour savourer un avocado toast ou une pâtisserie maison en terrasse.",
+  "noPhone": 1
  },
  {
   "id": "paris-3-cafe-cafe-des-musees",
@@ -2747,7 +2770,8 @@
   "instagram": "fabula.paris",
   "aiFill": 1,
   "summary": "Restaurant éphémère estival situé dans la cour du musée Carnavalet. Ambiance magique et végétale pour une cuisine inventive.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-4-francais-le-paradis",
@@ -2794,7 +2818,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=357647&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un cadre chaleureux et soigné proposant une cuisine française bistronomique savoureuse. Parfait pour un dîner intimiste dans le Marais."
+  "summary": "Un cadre chaleureux et soigné proposant une cuisine française bistronomique savoureuse. Parfait pour un dîner intimiste dans le Marais.",
+  "noPhone": 1
  },
  {
   "id": "paris-4-italien-pupetta-marais",
@@ -2817,7 +2842,8 @@
   "aiFill": 1,
   "summary": "Pizzeria et trattoria italienne authentique proposant de délicieuses pizzas napolitaines dans une ambiance chaleureuse et conviviale.",
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-4-italien-little-babel",
@@ -2840,7 +2866,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un charmant comptoir italien du Marais proposant de délicieuses focaccias garnies de produits frais dans une ambiance conviviale et chaleureuse.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-4-japonais-kuma",
@@ -3202,7 +3229,8 @@
   "instagram": "mimiramen75",
   "aiFill": 1,
   "summary": "Un spot chaleureux de nouilles japonaises où l'on déguste des ramens savoureux aux bouillons mijotés. L'ambiance est simple et intimiste, parfaite pour un repas réconfortant.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-5-japonais-lamian-latian",
@@ -3222,7 +3250,8 @@
   "aiFill": 1,
   "phone": "09 82 27 05 53",
   "summary": "Découvrez des nouilles ramen authentiques et savoureuses dans un cadre chaleureux et intime. L'ambiance y est conviviale, parfaite pour un repas réconfortant au cœur du 5e arrondissement.",
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "paris-5-burger-shiso-burger",
@@ -3269,7 +3298,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Des smash burgers croustillants et juteux, préparés avec des viandes parfaitement caramélisées et fromagées. L'ambiance est urbaine, idéale pour une pause gourmande sur le pouce.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-5-thailandais-le-wok-saint-germain",
@@ -3747,7 +3777,8 @@
   "instagram": "metou_officiel",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-6-brunch-tipana",
@@ -3767,7 +3798,8 @@
   "igSearched": 1,
   "instagram": "tipana_patisserienomade",
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-6-cafe-patrol",
@@ -3812,7 +3844,8 @@
   "booking": "https://www.thefork.fr/restaurant/yakuza-sando-r742909",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un spot de street food japonaise réputé pour ses katsu sandos croustillants et savoureux, à savourer dans un cadre minimaliste et moderne au cœur de Saint-Germain-des-Prés."
+  "summary": "Un spot de street food japonaise réputé pour ses katsu sandos croustillants et savoureux, à savourer dans un cadre minimaliste et moderne au cœur de Saint-Germain-des-Prés.",
+  "noPhone": 1
  },
  {
   "id": "paris-7-francais-thoumieux",
@@ -4028,7 +4061,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un café de quartier chaleureux et convivial, parfait pour savourer des pâtisseries maison accompagnées d'un café de spécialité dans une ambiance cosy.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-8-francais-beefbar",
@@ -4389,7 +4423,8 @@
   "instagram": "dokidoki_handrollbar",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un bar à handrolls branché et décontracté où l'on déguste des rouleaux de nori croustillants garnis de poisson ultra-frais. L'ambiance est conviviale, rythmée par le ballet des chefs qui roulent les makis minute devant les clients attablés au comptoir."
+  "summary": "Un bar à handrolls branché et décontracté où l'on déguste des rouleaux de nori croustillants garnis de poisson ultra-frais. L'ambiance est conviviale, rythmée par le ballet des chefs qui roulent les makis minute devant les clients attablés au comptoir.",
+  "noPhone": 1
  },
  {
   "id": "paris-8-japonais-enni-udon",
@@ -4987,7 +5022,8 @@
   "aiFill": 1,
   "summary": "Institution parisienne spécialisée dans le traditionnel pot-au-feu servi dans une ambiance de bistrot rétro et authentique. Un lieu chaleureux et réconfortant pour déguster une cuisine française génaisuse et intemporelle.",
   "resa": "telephone",
-  "noInsta": 1
+  "noInsta": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-9-francais-bien-eleve",
@@ -5026,7 +5062,9 @@
   "igSearched": 1,
   "instagram": "lepetitbonbon1",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-9-italien-pepe-ronchon",
@@ -5072,7 +5110,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un spot incontournable pour les amateurs de pizza napolitaine signatures imaginées par le champion du monde Peppe Cutraro. L'ambiance y est animée et résolument chaleureuse."
+  "summary": "Un spot incontournable pour les amateurs de pizza napolitaine signatures imaginées par le champion du monde Peppe Cutraro. L'ambiance y est animée et résolument chaleureuse.",
+  "noPhone": 1
  },
  {
   "id": "paris-9-burger-cot-cot",
@@ -5808,7 +5847,8 @@
   "instagram": "braunnotescoffee",
   "aiFill": 1,
   "summary": "Un café de specialty coffee branché et lumineux, idéal pour déguster un café filtre d'exception accompagné de pâtisseries maison dans une atmosphère calme.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-9-cafe-book-nook",
@@ -5831,7 +5871,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un concept original et chaleureux mêlant coffee shop et librairie anglo-saxonne, parfait pour déguster de délicieux cheesecakes et pâtisseries maison.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-9-cafe-cafe-de-la-paix",
@@ -6043,7 +6084,9 @@
   "instagram": "josephetraymond",
   "aiFill": 1,
   "summary": "Joseph et Raymond est un bistrot de quartier chaleureux et convivial, parfait pour partager des plats faits maison aux accents méditerranéens. L'ambiance y est détendue et idéale pour un déjeuner ou un dîner entre amis.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-10-francais-casimir",
@@ -6231,7 +6274,9 @@
   "igSearched": 1,
   "instagram": "coderak_paris",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-10-japonais-john-weng",
@@ -6422,7 +6467,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 46 08 26",
-  "summary": "Un restaurant coréen intimiste qui propose des classiques faits maison comme le bulgogi ou le bibimbap. On y apprécie l'accueil chaleureux et l'ambiance cosy et authentique."
+  "summary": "Un restaurant coréen intimiste qui propose des classiques faits maison comme le bulgogi ou le bibimbap. On y apprécie l'accueil chaleureux et l'ambiance cosy et authentique.",
+  "noMenu": 1
  },
  {
   "id": "paris-10-grec-kali-greek-food",
@@ -6637,7 +6683,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une taqueria chaleureuse au cœur du 10e arrondissement qui propose des tacos authentiques et savoureux. L'ambiance y est décontractée et parfaite pour un déjeuner sur le pouce ou un dîner entre amis.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-10-fusion-siseng",
@@ -6682,7 +6729,8 @@
   "instagram": "galbar_officiel",
   "aiFill": 1,
   "summary": "Une crêperie nouvelle génération qui revisite la galette de sarrasin sous forme de cône croustillant, à déguster garnie de produits frais. Le cadre est moderne et épuré, parfait pour une pause gourmande originale.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-10-vegan-ora",
@@ -6705,7 +6753,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un restaurant végétarien installé dans un magnifique décor artistique et bohème au sein de la Caserne. On y savoure une cuisine créative et colorée dressée directement sur la table dans une ambiance immersive unique.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-10-brunch-parenthese",
@@ -6801,7 +6850,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un concept hybride mêlant design scandinave, espace d'exposition et café de quartier. On y savoure de délicieuses boissons chaudes dans une ambiance épurée, artistique et intimiste.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-11-francais-maison-breguet",
@@ -6992,7 +7042,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse conviviale proposant une cuisine traditionnelle dans une ambiance simple et chaleureuse du 11e arrondissement.",
-  "resa": "telephone"
+  "resa": "telephone",
+  "noPhone": 1
  },
  {
   "id": "paris-11-francais-l-echoppe",
@@ -7085,7 +7136,8 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-11-italien-itaglio",
@@ -7106,7 +7158,8 @@
   "instagram": "itaglio.paris19",
   "aiFill": 1,
   "summary": "Une adresse chaleureuse proposant des spécialités italiennes authentiques et généreuses dans une ambiance conviviale.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-11-italien-gruppomimo",
@@ -7177,7 +7230,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un lieu original aux influences ibériques et fusion, idéal pour partager des tapas créatives dans une ambiance détendue.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-11-americain-brother-sister",
@@ -7320,7 +7374,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un concept original de burgers aux influences asiatiques, avec notamment des buns colorés et croustillants. L'ambiance y est jeune, branchée et urbaine.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-11-burger-seizemetrescarres",
@@ -7343,7 +7398,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un tout petit espace chaleureux qui propose d'excellents burgers faits maison avec des produits frais et sourcés. L'ambiance est intimiste et conviviale.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-11-burger-wakam",
@@ -7366,7 +7422,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Des smash burgers savoureux et généreux préparés avec soin dans un cadre moderne et accueillant. Une adresse incontournable du quartier pour les amateurs de comfort food.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-11-burger-crispy-soul",
@@ -7413,7 +7470,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse incontournable pour déguster des smash burgers généreux accompagnés de frites maison croustillantes. L'atmosphère jeune et urbaine invite à partager un moment gourmand et sans chichis.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-11-japonais-sushi-first",
@@ -7509,7 +7567,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un lieu hybride et branché qui mêle influences japonaises et atmosphère nocturne parisienne. On y profite d'une ambiance feutrée et musicale, parfaite pour siroter des cocktails originaux.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-11-japonais-aoba",
@@ -7528,7 +7587,9 @@
   "instagram": "aoba.paris",
   "aiFill": 1,
   "summary": "Un salon de thé et café japonais intimiste proposant des pâtisseries délicates et des spécialités nippones réconfortantes. L'ambiance y est calme, lumineuse et propice à la détente.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-11-chinois-bao-express",
@@ -7835,7 +7896,8 @@
   "phone": "09 75 65 27 21",
   "aiFill": 1,
   "summary": "Un magnifique restaurant aux inspirations méditerranéennes doté d'un incroyable jardin caché en plein Paris. On y savoure des plats fusion gorgés de soleil dans une ambiance végétale et bohème très dépaysante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "paris-11-brunch-kafkaf",
@@ -7858,7 +7920,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un spot chaleureux aux accents levantins idéal pour déguster des shakshukas savoureuses et des pâtisseries maison. L'ambiance y est conviviale, parfaite pour un brunch gourmand entre amis.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-11-brunch-clint",
@@ -7879,7 +7942,8 @@
   "instagram": "clint_paris",
   "aiFill": 1,
   "summary": "Un restaurant cosy et lumineux proposant une cuisine maison généreuse, avec de délicieux burgers et des pancakes moelleux. L'ambiance détendue et branchée en fait une adresse incontournable du quartier.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-11-brunch-unreve",
@@ -7949,7 +8013,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un café chaleureux d'inspiration coréenne où l'on déguste de délicieuses pâtisseries maison et des boissons originales dans une ambiance douce et épurée.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-11-cafe-cafe-mareva",
@@ -8020,7 +8085,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse incontournable pour un brunch aux accents méditerranéens et ensoleillés, à déguster dans un décor lumineux et végétalisé.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-11-cafe-le-charbon",
@@ -8066,7 +8132,8 @@
   "instagram": "pompom.paris",
   "aiFill": 1,
   "summary": "Un espace chaleureux à mi-chemin entre le coffee shop et l'espace de coworking, idéal pour déguster des pâtisseries maison tout en travaillant dans une atmosphère cosy.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-11-cafe-on-partage",
@@ -8086,7 +8153,8 @@
   "searched": 1,
   "aiFill": 1,
   "summary": "Un lieu convivial et familial du 11e arrondissement, parfait pour partager des plats faits maison et des douceurs dans une ambiance chaleureuse de quartier.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-11-bar-a-cocktails-carre-voltaire",
@@ -8108,7 +8176,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un bar branché du boulevard Voltaire proposant des cocktails signatures créatifs accompagnés de tapas, le tout dans un cadre moderne et feutré.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-11-bar-a-cocktails-la-reverie",
@@ -8271,7 +8340,8 @@
   "instagram": "libertysburger",
   "aiFill": 1,
   "summary": "Un spot gourmand près du marché d'Aligre proposant des burgers savoureux et généreux, parfaits pour une pause réconfortante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-12-japonais-towa",
@@ -8341,7 +8411,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un comptoir gourmand au sein de Ground Control proposant des nouilles sautées authentiques, des raviolis faits maison et des saveurs de street-food chinoise dans une ambiance festive et industrielle.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-12-cacher-tikounolam",
@@ -8412,7 +8483,8 @@
   "aiFill": 1,
   "instagram": "lespiaules",
   "summary": "Un rooftop branché offrant une vue panoramique sur tout Paris, idéal pour siroter des cocktails originaux dans une ambiance détendue et conviviale.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-12-bar-a-cocktails-hostaria-urbana",
@@ -8505,7 +8577,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Temple géant de la cuisine italienne du groupe Big Mamma, on y déguste des pizzas napolitaines XXL et des pâtes fraîches dans une ambiance survoltée et festive.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-13-italien-scalini",
@@ -8573,7 +8646,8 @@
   "summary": "Adresse incontournable du 13e arrondissement spécialisée dans les raviolis chinois faits maison et les nouilles sautées, dans un décor simple et authentique.",
   "lat": 48.825905,
   "lng": 2.353883,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "paris-13-chinois-tao-tao",
@@ -9362,7 +9436,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "sans",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-15-japonais-okirama",
@@ -9528,7 +9603,8 @@
   "aiFill": 1,
   "summary": "Une cantine cambodgienne familiale et sans chichis, idéale pour savourer de délicieuses soupes de nouilles et des plats parfumés. L'accueil y est particulièrement chaleureux.",
   "resa": "sans",
-  "noInsta": 1
+  "noInsta": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-15-indien-rasna",
@@ -9933,7 +10009,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "booking": "https://module.lafourchette.com/fr_FR/module/742111-57697",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-16-burger-sma-ma-mash",
@@ -10900,7 +10978,9 @@
   "igSearched": 1,
   "instagram": "rdv.paris",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-17-cafe-maison-sauvage",
@@ -10920,7 +11000,8 @@
   "bookingScan": 1,
   "bookingOk": 2,
   "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR",
-  "aiFill": 1
+  "aiFill": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-18-francais-ma-biche",
@@ -10940,7 +11021,8 @@
   "igSearched": 1,
   "instagram": "mabiche.b",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-18-francais-amone",
@@ -10962,7 +11044,8 @@
   "searched": 1,
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-18-francais-l-affame",
@@ -11054,7 +11137,9 @@
   "igSearched": 1,
   "instagram": "edmondparissneakers",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-18-italien-constantia",
@@ -11124,7 +11209,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un spot de street-food inspiré de la culture américaine, idéal pour déguster des burgers généreux et gourmands dans une atmosphère urbaine et branchée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-18-japonais-haha",
@@ -11147,7 +11233,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse dédiée à la street-food asiatique et japonaise, parfaite pour découvrir des saveurs authentiques et réconfortantes dans un décor moderne.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-18-oriental-gemuse",
@@ -11240,7 +11327,8 @@
   "instagram": "mot.hai.ba_yo",
   "aiFill": 1,
   "summary": "Un bar-restaurant vietnamien branché et haut en couleur qui revisite la street-food de Hanoï. On y partage des tapas asiatiques savoureuses et des cocktails originaux dans une ambiance festive et survoltée.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "paris-18-mexicain-aca-pigalle",
@@ -11285,7 +11373,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un spot chaleureux et 100 % végétalien proposant des pâtisseries crues créatives ainsi que des plats réconfortants dans une ambiance douce et accueillante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-18-vegan-la-cantine-de-sam",
@@ -11379,7 +11468,8 @@
   "aiFill": 1,
   "summary": "Un charmant café du 18e arrondissement proposant une cuisine simple et gourmande, parfaite pour un brunch ou un déjeuner dans une atmosphère détendue et familiale.",
   "resa": "sans",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-19-francais-xiii",
@@ -11402,7 +11492,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse bistrotière du 19e arrondissement qui met à l'honneur une cuisine française classique et généreuse, dans une ambiance de quartier animée et chaleureuse.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-19-francais-square",
@@ -11422,7 +11513,8 @@
   "instagram": "squareparis.fr",
   "aiFill": 1,
   "summary": "Un lieu bistronomique et convivial situé dans le 19e, idéal pour déguster des plats français faits maison élaborés avec des produits de saison, le tout dans un cadre moderne et accueillant.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "paris-19-francais-le-bar-fleuri",
@@ -11442,7 +11534,8 @@
   "aiFill": 1,
   "summary": "Un bistrot de quartier authentique et chaleureux, idéal pour déguster une cuisine française traditionnelle et réconfortante dans une ambiance conviviale.",
   "resa": "telephone",
-  "noInsta": 1
+  "noInsta": 1,
+  "noMenu": 1
  },
  {
   "id": "paris-19-thailandais-chez-sommay",
@@ -11680,7 +11773,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Ce restaurant propose de savoureux smash burgers aux influences texanes, parfaits pour les amateurs de viande généreuse dans un cadre simple et convivial.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "paris-20-burger-avec-amour-burger",
@@ -11704,7 +11798,8 @@
   "booking": "https://avec-amour-burger.com/",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse chaleureuse où l'on savoure des burgers faits maison préparés avec des produits frais, le tout dans une atmosphère accueillante et sympathique."
+  "summary": "Une adresse chaleureuse où l'on savoure des burgers faits maison préparés avec des produits frais, le tout dans une atmosphère accueillante et sympathique.",
+  "noPhone": 1
  },
  {
   "id": "paris-20-burger-small-cantine",
@@ -11724,7 +11819,8 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1
  },
  {
   "id": "paris-20-japonais-boken",
@@ -11943,7 +12039,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-gate-vr",
@@ -11982,7 +12080,9 @@
   "summary": "Plongez dans un jeu immersif inspiré des jeux vidéo rétro et de défis lumineux façon Action Game. L'ambiance y est survoltée, idéale pour tester son agilité et son esprit d'équipe entre amis.",
   "lat": 48.861816,
   "lng": 2.350291,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-move-it-game",
@@ -12024,7 +12124,8 @@
   "photo": "https://framerusercontent.com/assets/KTsjU0ikA5UAHz1XeqzSIYe5k.jpg",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-fun-booker",
@@ -12084,7 +12185,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-objectif-horlogerie",
@@ -12149,7 +12252,8 @@
   "instagram": "initium_swiss",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-wecandoo",
@@ -12171,7 +12275,8 @@
   "summary": "Ateliers manuels et artisanaux pour s'initier au savoir-faire d'artisans passionnés. Une ambiance conviviale et créative pour repartir avec sa propre création.",
   "lat": 48.870392,
   "lng": 2.310681,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-theatre-a-la-minute",
@@ -12187,7 +12292,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-eclipso",
@@ -12206,7 +12313,8 @@
   "instagram": "eclipso_entertainment",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-e-motion",
@@ -12227,7 +12335,8 @@
   "summary": "Plongez dans l'univers du sport automobile grâce à des simulateurs de course haut de gamme dans une ambiance futuriste et immersive. Idéal pour vivre des sensations fortes entre amis ou en solo.",
   "lat": 48.835902,
   "lng": 2.277929,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-peinture-sur-ceramique",
@@ -12243,7 +12352,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-creation-de-bougie",
@@ -12259,7 +12370,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-atelier-poterie",
@@ -12275,7 +12388,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-lol-qui-rit-sort",
@@ -12291,7 +12406,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-paint-me-up",
@@ -12328,7 +12445,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-one-hour-escape-game",
@@ -12367,7 +12486,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-activite-kintsugi",
@@ -12389,7 +12510,8 @@
   "aiFill": 1,
   "summary": "Initiez-vous à l'art traditionnel japonais du Kintsugi dans une ambiance calme et minutieuse. On y apprend à réparer la céramique avec de la laque et de la poudre d'or, pour sublimer les fissures.",
   "lat": 48.844607,
-  "lng": 2.396056
+  "lng": 2.396056,
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-my-flower-class",
@@ -12411,7 +12533,8 @@
   "aiFill": 1,
   "summary": "Participez à des ateliers d'art floral créatifs et conviviaux en plein cœur de Paris. On y apprend à composer de superbes bouquets de saison dans une ambiance chaleureuse et inspirante.",
   "lat": 48.858819,
-  "lng": 2.374178
+  "lng": 2.374178,
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-les-origines-de-paris",
@@ -12456,7 +12579,8 @@
   "summary": "Plongez dans l'univers poétique et fantastique des fables de La Fontaine à travers un parcours numérique et sensoriel. Une expérience ludique et immersive idéale à partager en famille.",
   "lat": 48.822737,
   "lng": 2.342575,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-paradox-museum",
@@ -12478,7 +12602,8 @@
   "summary": "Un musée insolite qui défie la réalité grâce à des décors perturbants et des illusions d'optique spectaculaires. L'ambiance y est fun, interactive et parfaite pour prendre des photos surprenantes.",
   "lat": 48.871187,
   "lng": 2.334433,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-activite-science-experience",
@@ -12544,7 +12669,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Le Marrakech du Rire est le festival international d'humour incontournable fondé par Jamel Debbouze. Il propose une ambiance festive et chaleureuse réunissant les plus grands artistes de la scène humoristique.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-stand-up-panam-cafe",
@@ -12677,7 +12803,9 @@
   "igSearched": 1,
   "instagram": "deflower_paris",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-soiree-le-son-des-guitares",
@@ -12743,7 +12871,9 @@
   "summary": "Un bar-club feutré et intimiste caché au cœur de l'Hôtel Fouquet's, idéal pour siroter des cocktails sophistiqués dans une ambiance musicale électro-chic.",
   "lat": 48.870848,
   "lng": 2.315808,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-soiree-le-raspoutine",
@@ -12783,7 +12913,9 @@
   "igSearched": 1,
   "instagram": "komma_atmosphere",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-soiree-matignon",
@@ -12889,7 +13021,9 @@
   "igSearched": 1,
   "instagram": "paris.motel",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-soiree-mamacita",
@@ -12931,7 +13065,8 @@
   "instagram": "mirage.paris",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-soiree-le-bristol",
@@ -12951,7 +13086,8 @@
   "aiFill": 1,
   "phone": "01 53 43 43 00",
   "summary": "Un cadre luxueux et feutré où savourer une haute gastronomie raffinée dans une ambiance élégante et intemporelle.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-soiree-l-aventure",
@@ -13017,7 +13153,8 @@
   "igSearched": 1,
   "instagram": "le_kiwi__",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-soiree-l-alma",
@@ -13154,7 +13291,9 @@
   "aiFill": 1,
   "instagram": "bigmamma.fr",
   "summary": "Big Mamma est un groupe de trattorias italiennes incontournables à l'ambiance ultra-festive et chaleureuse. On y savoure de généreuses pizzas napolitaines et des pâtes crémeuses à la truffe préparées dans la tradition.",
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-resto-daroco",
@@ -13582,7 +13721,9 @@
   "cuisine": "Français",
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-resto-naritake-ramen",
@@ -13603,7 +13744,8 @@
   "summary": "Spécialisé dans les ramen auvergnats-tonkotsu riches en goût, ce comptoir propose des nouilles généreuses dans un bouillon de porc corsé. L'ambiance y est simple, authentique et typique des petits bouillons tokyoïtes.",
   "lat": 48.866712,
   "lng": 2.336815,
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-resto-miznon",
@@ -13933,7 +14075,9 @@
   "instagram": "dominico____",
   "cuisine": "Fusion",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-resto-peppe-pizzeria-napoletana",
@@ -14132,7 +14276,8 @@
   "aiFill": 1,
   "summary": "Ephemera Group propose des expériences culinaires immersives et spectaculaires aux décors fantastiques, invitant à voyager sous l'océan ou au cœur de l'espace.",
   "lat": 48.844121,
-  "lng": 2.38452
+  "lng": 2.38452,
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-resto-la-reverie",
@@ -14298,7 +14443,9 @@
   "instagram": "Mumbay",
   "cuisine": "Indien",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-resto-le-relais-plaza",
@@ -14738,7 +14885,8 @@
   "summary": "Un restaurant proposant une cuisine méditerranéenne et internationale soignée au cœur de Saint-Germain-des-Prés. L'atmosphère est chic, chaleureuse et idéale pour un dîner élégant.",
   "lat": 48.854201,
   "lng": 2.330741,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-resto-onyx",
@@ -14950,7 +15098,8 @@
   "phone": "01 58 36 67 00",
   "instagram": "hotellecollectionneur",
   "summary": "Un palace Art Déco au charme intemporel proposant une cuisine raffinée au restaurant et des cocktails signatures créatifs dans un bar feutré et élégant.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-resto-cepe-et-figue",
@@ -15261,7 +15410,8 @@
   "phone": "01 42 68 86 80",
   "instagram": "coco_paris_",
   "summary": "Un cadre somptueux et théâtral au cœur du Palais Garnier pour déguster une cuisine élégante dans une ambiance chic et feutrée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-salon-de-the-angelina",
@@ -15347,7 +15497,9 @@
   "igSearched": 1,
   "instagram": "thefattyferia",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-salon-de-the-alain-ducasse",
@@ -15365,7 +15517,8 @@
   "instagram": "alainducasse",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-salon-de-the-le-meurice",
@@ -15611,7 +15764,9 @@
   "igSearched": 1,
   "instagram": "chezmilaparis",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-rooftop-il-volo-bar",
@@ -15631,7 +15786,8 @@
   "summary": "Perché au sommet de l'hôtel, ce rooftop offre une vue imprenable sur la tour Eiffel. On y savoure des cocktails originaux dans une ambiance chic et feutrée.",
   "lat": 48.839563,
   "lng": 2.303163,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-rooftop-10eme-ciel",
@@ -15650,7 +15806,9 @@
   "summary": "Situé au dernier étage du Pullman Paris Tour Eiffel, ce bar éphémère propose une vue spectaculaire face à la tour Eiffel. L'ambiance y est branchée et idéale pour admirer le coucher du soleil.",
   "lat": 48.864058,
   "lng": 2.299052,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-rooftop-too-hotel",
@@ -15740,7 +15898,8 @@
   "instagram": "bonnie_restaurant",
   "booking": "https://www.sevenrooms.com/experiences/bonnie",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-rooftop-le-roof",
@@ -15851,7 +16010,9 @@
   "igSearched": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-cafe-kith",
@@ -15874,7 +16035,8 @@
   "summary": "Un coffee shop branché et léché au sein du concept store Kith, idéal pour déguster de délicieuses glaces signatures et des boissons rafraîchissantes dans une ambiance ultra-stylée.",
   "lat": 48.869091,
   "lng": 2.30223,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-cafe-chez-fringe",
@@ -15896,7 +16058,8 @@
   "summary": "Un café de spécialité lumineux et arty du Haut-Marais, parfait pour déguster un excellent café accompagné de pâtisseries maison au milieu d'expositions photographiques.",
   "lat": 48.862736,
   "lng": 2.36476,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-maison-souquet",
@@ -15962,7 +16125,9 @@
   "summary": "Un bar feutré et sulfureux aux accents interlope, parfait pour siroter des cocktails originaux dans une ambiance intimiste et nocturne.",
   "lat": 48.880796,
   "lng": 2.338036,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-cheper-perchoir",
@@ -16145,7 +16310,9 @@
   "aiFill": 1,
   "instagram": "grouvie.paris",
   "summary": "Un bar à cocktails confidentiel et chaleureux situé dans le 6e arrondissement, idéal pour siroter des créations originales dans une ambiance intimiste.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-de-l-escadrille",
@@ -16164,7 +16331,9 @@
   "lat": 48.860282,
   "lng": 2.3639,
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-coco",
@@ -16276,7 +16445,8 @@
   "summary": "Situé dans l'hôtel Lutetia (historiquement associé au Hotel Paris Opéra selon les déclinaisons, mais ici au Lutetia pour Joséphine Baker), un cadre somptueux et musical pour siroter des cocktails raffinés.",
   "lat": 48.869343,
   "lng": 2.325651,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-le-gainsbarre",
@@ -16362,7 +16532,9 @@
   "igSearched": 1,
   "instagram": "lemartaparis",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-baronne",
@@ -16403,7 +16575,9 @@
   "summary": "Un salon de thé chaleureux proposant d'authentiques bubble teas aux perles de tapioca fondantes et des créations parfumées. L'ambiance y est cosy et idéale pour une pause gourmande.",
   "lat": 48.867536,
   "lng": 2.337724,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "precieuses-0-brunch-violetta-alfredo",
@@ -16571,7 +16745,8 @@
   "photo": "https://cafe.restaurants-de-france.fr/assets/images/banner.jpg",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-paris-arnaud-nicolas",
@@ -16612,7 +16787,9 @@
   "lng": 2.375063,
   "searched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-patate",
@@ -16811,7 +16988,8 @@
   "cuisine": "Italien",
   "aiFill": 1,
   "phone": "01 42 74 84 00",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-le-cornichon",
@@ -16855,7 +17033,8 @@
   "instagram": "chezjeannette",
   "cuisine": "Français",
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-l-emil-chateau-voltaire",
@@ -16943,7 +17122,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "01 48 24 50 45",
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-vice-versa",
@@ -16986,7 +17166,8 @@
   "website": "https://www.bambinoparis.com",
   "enriched": 5,
   "bookingScan": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-paris-andy-wahloo",
@@ -17098,7 +17279,8 @@
   "photo": "https://cdn.prod.website-files.com/5e57c92306e4fe1dcb7344ef/5e883dd6a6b2c1025b9fbb60_Visu%20radio%201%20photo.jpeg",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-paris-le-discobar",
@@ -17142,7 +17324,8 @@
   "photo": "https://notre-dame-music-bar.eventofy.com/media/notre-dame-music-bar.webp",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-paris-ika",
@@ -17274,7 +17457,9 @@
   "lng": 2.335806,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-starving-club",
@@ -17381,7 +17566,8 @@
   "phone": "01 42 60 22 41",
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-la-poudriere",
@@ -17400,7 +17586,8 @@
   "phone": "09 74 73 56 32",
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-scilicet",
@@ -17441,7 +17628,8 @@
   "phone": "09 74 64 01 34",
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-chope-moi",
@@ -17506,7 +17694,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "01 42 74 11 39",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-chez-franck",
@@ -17573,7 +17762,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "01 78 90 74 00",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-le-soixante-douze",
@@ -17772,7 +17962,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "01 42 72 91 38",
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-francette",
@@ -17883,7 +18074,8 @@
   "cuisine": "Poisson & fruits de mer",
   "aiFill": 1,
   "phone": "01 58 36 07 50",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-nonos",
@@ -17903,7 +18095,8 @@
   "cuisine": "Français",
   "aiFill": 1,
   "phone": "01 44 94 36 00",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-wukong-temple",
@@ -17924,7 +18117,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-paris-la-kave-du-fromager",
@@ -17944,7 +18138,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "01 43 48 94 92",
-  "resa": "telephone"
+  "resa": "telephone",
+  "noMenu": 1
  },
  {
   "id": "ig-autour-de-paris-le-bazar",
@@ -18036,7 +18231,8 @@
   "instagram": "lebouclard.paris",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-paris-il-gelato-del-marchese",
@@ -18126,7 +18322,9 @@
   "lng": 2.350884,
   "searched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-darkoum",
@@ -18213,7 +18411,9 @@
   "igSearched": 1,
   "instagram": "sushi.ken",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-chez-meilan",
@@ -18256,7 +18456,9 @@
   "lng": 2.303639,
   "searched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-888-night-market",
@@ -18301,7 +18503,8 @@
   "photo": "https://deliverect.imgix.net/static/a188ff26-aafa-4133-b584-dc9937a8606c/assets/image-1783421058.png?w=800&fit=crop&auto=compress,format&cs=srgb",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-paris-le-cafe-maxime-frederic-chez-louis-vuitton",
@@ -18324,7 +18527,8 @@
   "igSearched": 1,
   "instagram": "maxime.frederic",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-paris-jun",
@@ -18343,7 +18547,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "01 43 26 84 36",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-tanori",
@@ -18362,7 +18567,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "09 81 29 41 85",
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-bistrot-podium",
@@ -18425,7 +18631,9 @@
   "lng": 2.382581,
   "searched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-aux-enfants-gates",
@@ -18608,7 +18816,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "01 42 77 88 88",
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-pasta-suta",
@@ -18651,7 +18860,8 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/odoumak-r731426",
   "aiFill": 1,
-  "phone": "09 88 55 58 88"
+  "phone": "09 88 55 58 88",
+  "noMenu": 1
  },
  {
   "id": "ig-paris-claudine",
@@ -18694,7 +18904,9 @@
   "igSearched": 1,
   "instagram": "rehab_paris",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-le-syndicat",
@@ -18716,7 +18928,8 @@
   "photo": "https://freight.cargo.site/t/original/i/01a448d7869785cf905e58aa3674ede7bf2dd4f8e5f0a21d47692097bc8589e9/Cut-Architectures_LeSyndicat06david-Foessel.jpg",
   "booking": "https://bookings.zenchef.com/results?rid=347818&lang=fr",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "noPhone": 1
  },
  {
   "id": "ig-paris-carvan",
@@ -18735,7 +18948,9 @@
   "igSearched": 1,
   "instagram": "__carvan__",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-silencio-des-pres",
@@ -18777,7 +18992,9 @@
   "igSearched": 1,
   "instagram": "legrandduc_officiel",
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-fitzgerald",
@@ -19216,7 +19433,8 @@
   "igSearched": 1,
   "aiFill": 1,
   "phone": "212-505-8555",
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-barney-greengrass",
@@ -19336,7 +19554,8 @@
   "instagram": "kikoosushi",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-akimori",
@@ -19359,7 +19578,8 @@
   "enriched": 5,
   "booking": "https://www.akimorinyc.com/reserve",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-tempura",
@@ -19382,7 +19602,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-7th-street-burger",
@@ -19405,7 +19626,8 @@
   "photo": "https://7thstreetburger.com/media/pages/home/623be9a590-1781218184/burg-1600x-q80.webp",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-bis",
@@ -19426,7 +19648,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "+1 212-722-2220",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-zinc-bar",
@@ -19752,7 +19975,8 @@
   "instagram": "meilaiwahcoffeeshop",
   "aiFill": 1,
   "phone": "+1 212-226-6894",
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-prince-street-pizza",
@@ -19867,7 +20091,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "booking": "https://www.opentable.com/r/ortomare-new-york"
+  "booking": "https://www.opentable.com/r/ortomare-new-york",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-kaiten-zushi",
@@ -20006,7 +20231,9 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-mimi-cheng-s",
@@ -20168,7 +20395,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-abba-bar-grill",
@@ -20192,7 +20420,8 @@
   "bookingScan": 1,
   "booking": "https://www.abbabar.com/reservations",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-don-angie",
@@ -20215,7 +20444,8 @@
   "photo": "https://images.getbento.com/GiUwZKATSEeII7KhlCqP_DonAngie01.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=EDEDF1&pad=100",
   "booking": "https://www.opentable.com/r/san-sabino-new-york",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-the-mulberry-bar",
@@ -20238,7 +20468,8 @@
   "photo": "https://themulberrybar.com/images/og-image.jpg",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-duzan",
@@ -20401,7 +20632,9 @@
   "lng": -73.981209,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-kura-revolving-sushi",
@@ -20420,7 +20653,9 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-wall-street-grill",
@@ -20514,7 +20749,9 @@
   "lng": -73.97211,
   "searched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-maison-valero",
@@ -20537,7 +20774,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-sip-and-sizzle",
@@ -20557,7 +20795,9 @@
   "lng": -73.94817,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-tsumo",
@@ -20578,7 +20818,8 @@
   "photo": "https://images.squarespace-cdn.com/content/v1/655815c56c5689087a028cb0/b0468f75-608f-4cbb-9e82-12793ecd4cb7/Untitled-1897.jpg?format=2500w",
   "booking": "https://resy.com/cities/ny/tsumo",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-okiboru-udon",
@@ -20601,7 +20842,8 @@
   "photo": "https://static.spotapps.co/web/okiboru--com/custom/quotes_new.png",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-sentir",
@@ -20670,7 +20912,9 @@
   "lng": -73.982984,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-caffe-aronne",
@@ -20719,7 +20963,8 @@
   "photo": "https://www.popupbagels.com/_next/static/media/location_pin.3b7caf1f.png",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-burgers-bar",
@@ -20740,7 +20985,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "+1 718-998-3800",
-  "resa": "sans"
+  "resa": "sans",
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-sauteed",
@@ -20784,7 +21030,9 @@
   "lng": -73.939825,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-jersey-shore-sushi-co",
@@ -20804,7 +21052,9 @@
   "lng": -73.962262,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-pitabar",
@@ -20828,7 +21078,8 @@
   "photo": "https://img1.wsimg.com/isteam/ip/4fe63c56-32d8-474e-a121-a043c5c5af5c/IMG_6662.jpeg",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-new-york-rosie-s-pizza",
@@ -20848,7 +21099,9 @@
   "lng": -73.987579,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-zoares-kosher-grill",
@@ -20868,7 +21121,9 @@
   "lng": -73.961419,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-new-york-le-marais",
@@ -20960,7 +21215,9 @@
   "lng": 34.757001,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-le-rendez-vous",
@@ -21000,7 +21257,9 @@
   "instagram": "asi_ve_adnan",
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-garger-hazahav",
@@ -21017,7 +21276,9 @@
   "instagram": "garger_hazahav",
   "searched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-abu-hassan",
@@ -21036,7 +21297,9 @@
   "lng": 34.750463,
   "searched": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-ola-ola",
@@ -21056,7 +21319,9 @@
   "lng": 34.767079,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-darya",
@@ -21078,7 +21343,8 @@
   "photo": "https://www.daryatlv.com/_files/ugd/...jpg",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-tel-aviv-florentina",
@@ -21100,7 +21366,8 @@
   "photo": "https://florentina.co.il/wp-content/uploads/2024/07/%D7%9C%D7%95%D7%92%D7%95-%D7%91%D7%90%D7%A0%D7%A8-%D7%A8%D7%90%D7%A9%D7%99-%D7%9C%D7%91%D7%9F-e1722358724808-2048x689.png",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-tel-aviv-dvora",
@@ -21124,7 +21391,8 @@
   "photo": "https://cdn.prod.website-files.com/677e8bf889e562b830d6f0cf/67d295cff7f80ac3fced7fe0_workwithus.avif",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-tel-aviv-otoro",
@@ -21142,7 +21410,9 @@
   "kasher": true,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-malka",
@@ -21187,7 +21457,9 @@
   "lng": 34.769964,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-cartola",
@@ -21204,7 +21476,9 @@
   "instagram": "cartola_il",
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-qumran",
@@ -21246,7 +21520,8 @@
   "searched": 1,
   "aiFill": 1,
   "phone": "+972 3-560-5999",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noMenu": 1
  },
  {
   "id": "ig-tel-aviv-salon-yevani",
@@ -21336,7 +21611,9 @@
   "kasher": true,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-jerusalem-black-iron",
@@ -21356,7 +21633,9 @@
   "lng": 35.214891,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-jerusalem-la-piedra",
@@ -21374,7 +21653,9 @@
   "kasher": true,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-jerusalem-zuta",
@@ -21397,7 +21678,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1
  },
  {
   "id": "ig-jerusalem-mimonis",
@@ -21417,7 +21699,9 @@
   "lng": 35.210482,
   "searched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "ig-paris-canoe-crecy-la-chapelle",
@@ -21435,7 +21719,9 @@
   "searched": 1,
   "igSearched": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "noPhone": 1,
+  "noMenu": 1
  },
  {
   "id": "u-mw75y5krckxf",
@@ -21527,7 +21813,8 @@
   "lng": 2.338081,
   "searched": 1,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "noPhone": 1
  },
  {
   "id": "u-mw93a0ymmt97-2",
@@ -21550,7 +21837,8 @@
   "lng": 2.337517,
   "searched": 1,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "noPhone": 1
  },
  {
   "id": "u-mw9eh3oygqxo",
@@ -21572,7 +21860,8 @@
   "searched": 1,
   "enriched": 5,
   "photo": "https://lastcrumb.com/social-preview",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "noPhone": 1
  },
  {
   "id": "u-mw9ekjd4z01m",

@@ -109,8 +109,12 @@ for (let i = 0; i < todo.length && calls < MAX; i += PER) {
   for (const p of batch) {
     const r = (Array.isArray(res) ? res : []).find((x) => x && x.id === p.id);
     p.aiFill = V;
-    if (!r) continue;
+    if (!r) { if (!p.phone) p.noPhone = 1; if (!p.menu && !p.website) p.noMenu = 1; continue; }
     const got = await apply(p, r);
+    // Rien trouvé : on le note sur la fiche (« pas de numéro », « pas de menu en ligne », « pas d'Instagram »).
+    if (!p.phone) p.noPhone = 1;
+    if (!p.menu && !p.website) p.noMenu = 1;
+    if (!p.instagram && !/instagram\.com/.test(p.source || "")) p.noInsta = 1;
     if (got.length) { filled++; console.log(`${p.name} : ${got.join(", ")}`); }
   }
   await writeFile(FILE, JSON.stringify(places, null, 1));
