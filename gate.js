@@ -32,7 +32,9 @@
 .gt-card img{width:88px;height:88px;border-radius:22px;margin:0 auto;box-shadow:0 10px 30px rgba(0,0,0,.4)}
 .gt-card h1{margin:0;font-size:1.9rem;line-height:1.05;color:var(--gt-acc,#E9B949)} .gt-card h2{margin:0;font-size:1.25rem}
 .gt-card p{margin:0;opacity:.85;line-height:1.4}
-.gt-card input{padding:14px;border-radius:14px;border:1.5px solid rgba(10,19,48,.15);font-size:1.15rem;text-align:center;color:#0A1330;letter-spacing:.08em;text-transform:uppercase;width:100%;box-sizing:border-box}
+.gt-card input{padding:14px;border-radius:14px;border:2px solid #E9B949;background:#fff;font-size:1.3rem;font-weight:800;text-align:center;color:#0A1330;-webkit-text-fill-color:#0A1330;caret-color:#0A1330;opacity:1;letter-spacing:.08em;text-transform:uppercase;width:100%;box-sizing:border-box;color-scheme:light}
+.gt-card input::placeholder{color:#8a93ad;-webkit-text-fill-color:#8a93ad;font-weight:600}
+.gt-tip{font-size:.88rem;background:rgba(255,255,255,.12);border-radius:12px;padding:10px 12px;text-align:left}
 .gt-card input.free{text-transform:none;letter-spacing:0;text-align:left}
 .gt-btn{padding:15px;border:0;border-radius:14px;background:linear-gradient(135deg,#F2CB66,#E9B949 50%,#B98A2C);color:#0A1330;font-weight:800;font-size:1.05rem;letter-spacing:.03em;cursor:pointer}
 .gt-btn:disabled{opacity:.6} .gt-ghost{background:none;border:0;color:inherit;opacity:.65;font-size:.88rem;text-decoration:underline;cursor:pointer;padding:6px}
@@ -55,6 +57,7 @@
       <p>Cette appli est sur invitation. Entre le code que tu as reçu.</p>
       <input id="gt-code" placeholder="XXXX-XXXX" autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" maxlength="12">
       <button class="gt-btn" id="gt-go">Entrer</button><div class="gt-err" id="gt-err" role="alert"></div>
+      ${/iPhone|iPad/.test(navigator.userAgent) && !navigator.standalone ? `<p class="gt-tip">📲 Le plus simple : ajoute d'abord l'appli sur ton écran d'accueil (bouton Partager › « Sur l'écran d'accueil »), puis ouvre-la depuis l'écran d'accueil et entre ton code là.</p>` : ""}
       <button class="gt-ghost" id="gt-own">Je suis le propriétaire</button>`);
     const inp = q(lockEl, "#gt-code"), err = q(lockEl, "#gt-err"), go = q(lockEl, "#gt-go");
     const fromUrl = new URLSearchParams(location.search).get("invite"); if (fromUrl) inp.value = fromUrl.toUpperCase();
@@ -117,7 +120,7 @@
         const code = await rpc("app_invite_create", { p_key: adminKey(), p_app: C.app, p_label: who, p_max: 1 });
         e.textContent = ""; draw();
         const url = C.link + "?invite=" + encodeURIComponent(code);
-        const text = `${who ? who + ", je" : "Je"} t'invite sur ${C.name}. Ouvre le lien dans Safari, puis Partager › « Sur l'écran d'accueil ». Ton code d'invitation : ${code} (il ne marche que sur un téléphone).`;
+        const text = `${who ? who + ", je" : "Je"} t'invite sur ${C.name}. 1) Ouvre le lien dans Safari. 2) Partager › « Sur l'écran d'accueil ». 3) Ouvre l'appli depuis l'écran d'accueil et entre ton code : ${code}`;
         try { if (navigator.share) { await navigator.share({ title: C.name, text, url }); return; } } catch (x) { if (x && x.name === "AbortError") return; }
         try { await navigator.clipboard.writeText(text + "\n" + url); e.style.color = "#1E9C80"; e.textContent = "Message copié : colle-le à " + (who || "ton invité") + "."; } catch (x) { e.textContent = "Code : " + code; }
       } catch (x) {
