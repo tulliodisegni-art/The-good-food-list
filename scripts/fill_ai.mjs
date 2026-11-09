@@ -144,6 +144,8 @@ async function wikiPhoto(p) {
       const t = norm(pg.title);
       if (!pg.thumbnail?.source || !(t === n || (t.includes(n) && t.length - n.length < 12))) continue;
       if (city && !norm(pg.extract).includes(norm(city))) continue;
+      // L'article doit parler d'un lieu où l'on mange ou sort (pas d'un tableau ou d'un film du même nom).
+      if (!/restaurant|brasserie|caf[eé]|bistrot|bar |h[oô]tel|palace|glacier|p[aâ]tisserie|salon de th[eé]|cabaret|boulangerie|traiteur|chef/i.test(pg.extract || "")) continue;
       return pg.thumbnail.source;
     }
   } catch {}
@@ -151,11 +153,12 @@ async function wikiPhoto(p) {
 }
 const PHOTO_V = 2;
 const siteOf = (p) => p.website || (/^https?:/.test(p.menu || "") && !/\.pdf/i.test(p.menu) ? p.menu : "");
-const noPic = places.filter((p) => !p.photo && (+p.ogTry || 0) < PHOTO_V);
+const picKey = (p) => `${PHOTO_V}|${siteOf(p)}|${p.booking || ""}`;
+const noPic = places.filter((p) => !p.photo && p.ogTry !== picKey(p) && (+p.ogTry || 0) !== PHOTO_V);
 let pics = 0, wpics = 0;
 for (let i = 0; i < noPic.length; i += 8) {
   await Promise.all(noPic.slice(i, i + 8).map(async (p) => {
-    p.ogTry = PHOTO_V;
+    p.ogTry = picKey(p);
     // 1. Site officiel puis page de réservation : image de partage, sinon grandes photos de la page.
     const srcs = [siteOf(p), p.booking].filter((u) => isUrl(u) && !/google\.|instagram\.|facebook\.|tiktok\./i.test(u));
     for (const u of [...new Set(srcs)]) {
@@ -251,3 +254,53 @@ Réponds uniquement avec un tableau JSON : [{"id": "", "resa": "en_ligne|telepho
   await writeFile(FILE, JSON.stringify(places, null, 1));
   await new Promise((ok) => setTimeout(ok, 5000));
 }
+
+// Photos par la presse : l'IA donne l'adresse d'un article ou d'une fiche consacrés au lieu (Le Fooding, Sortir à Paris,
+// Time Out, guides…) ; on ouvre la page, on vérifie qu'elle parle bien de ce lieu, et on prend son image de partage.
+const PRESS = 6;
+const noPic2 = places.filter((p) => !p.photo && !p.pressTry);
+let ppics = 0, fails3 = 0;
+console.log(`${noPic2.length} fiches sans photo pour la recherche presse`);
+for (let i = 0; i < noPic2.length && calls < MAX; i += PRESS) {
+  const batch = noPic2.slice(i, i + PRESS);
+  calls++;
+  const items = batch.map((p) => ({ id: p.id, nom: p.name, type: p.cat || "", lieu: p.address || p.city || "Paris" }));
+  const prompt = `Pour chacun de ces lieux (restos, bars, sorties), cherche sur le web jusqu'à 3 pages consacrées à CE lieu précis avec une photo : article ou fiche du lieu sur Le Fooding, Sortir à Paris, Time Out, Le Bonbon, Paris Zigzag, Télérama, Le Figaro, Michelin, Gault&Millau, TheFork, ou le site officiel.
+Donne l'URL exacte de la page (pas d'image, pas de page de recherche, pas de liste générale). Vérifie que c'est bien CE lieu (même nom, même ville). N'invente jamais d'URL.
+Lieux :
+${JSON.stringify(items, null, 1)}
+Réponds uniquement avec un tableau JSON : [{"id": "", "pages": ["", ""]}]`;
+  let res;
+  try {
+    const r = await fetch(`${conf.url}/functions/v1/ia`, { method: "POST", headers: { apikey: conf.key, "content-type": "application/json" }, body: JSON.stringify({ prompt, web: true }) });
+    const out = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(out.error || `erreur ${r.status}`);
+    const t = String(out.text || "");
+    res = JSON.parse(t.slice(t.indexOf("["), t.lastIndexOf("]") + 1));
+  } catch (e) {
+    console.log(`photos presse : ${e.message.slice(0, 300)}`);
+    if (++fails3 >= 4) break;
+    await new Promise((ok) => setTimeout(ok, 65000));
+    i -= PRESS;
+    continue;
+  }
+  fails3 = 0;
+  await Promise.all(batch.map(async (p) => {
+    p.pressTry = 1;
+    const r = (Array.isArray(res) ? res : []).find((x) => x && x.id === p.id) || {};
+    const n = norm(p.name.replace(/\(.*\)/, ""));
+    for (const u of (Array.isArray(r.pages) ? r.pages : []).filter(isUrl).slice(0, 3)) {
+      if (/google\.|instagram\.|facebook\.|tiktok\./i.test(u)) continue;
+      const page = await html(u);
+      if (!page) continue;
+      const title = (page.text.match(/<title[^>]*>([^<]*)/i) || [])[1] || "";
+      const head = norm(`${title} ${(page.text.match(/<meta[^>]+og:title["'][^>]*content=["']([^"']+)/i) || [])[1] || ""} ${(page.text.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || ""}`);
+      if (n.length < 3 || !head.includes(n)) continue;
+      const img = await okImage(ogImage(page.text) || "", page.url);
+      if (img) { p.photo = img; ppics++; console.log(`${p.name} : photo (${new URL(page.url).hostname})`); return; }
+    }
+  }));
+  await writeFile(FILE, JSON.stringify(places, null, 1));
+  await new Promise((ok) => setTimeout(ok, 5000));
+}
+console.log(`photos presse : ${ppics} ajoutées`);
