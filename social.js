@@ -143,7 +143,7 @@
   function sheetHtml(p) {
     const fr = (p.friends || []).filter((f) => f.tested || f.rating || f.added);
     const mineLine = !p.fromFriend && (p.tested || p.rating || store.get("custom", []).some((c) => c.id === p.id))
-      ? `<button class="btn ghost small" data-share-toggle="${h(p.id)}">${p.hidden ? "🔒 Caché à mes abonnés · montrer" : "👥 Visible par mes abonnés · cacher"}</button>` : "";
+      ? `<button class="btn ghost small" data-share-toggle="${h(p.id)}">${p.hidden ? "🔒 Masquée pour mes abonnés · la montrer" : "👥 Mes abonnés la voient · la masquer"}</button>` : "";
     if (!fr.length && !mineLine && !p.fromFriend) return "";
     const lines = fr.map((f) => `<li><b>${h(nameOf(f.uid))}</b> ${f.added ? "l'a ajoutée" : ""}${f.tested ? (f.added ? " · " : "") + "a testé" : ""}${f.rating ? ` · ${"★".repeat(f.rating)}` : ""}</li>`).join("");
     return `<div class="friends-box">${p.fromFriend ? `<p class="muted small">Adresse de <b>${h(nameOf(p.fromFriend))}</b>.</p>` : ""}${lines ? `<ul>${lines}</ul>` : ""}${mineLine}</div>`;
