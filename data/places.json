@@ -11890,7 +11890,7 @@
  },
  {
   "id": "precieuses-0-activite-fury-room",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 13,
   "cat": "Activité",
   "name": "Fury Room",
@@ -11913,7 +11913,7 @@
  },
  {
   "id": "precieuses-0-activite-urban-jump",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Urban Jump",
@@ -11934,7 +11934,7 @@
  },
  {
   "id": "precieuses-0-activite-ifly",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 19,
   "cat": "Activité",
   "name": "iFly",
@@ -11958,7 +11958,7 @@
  },
  {
   "id": "precieuses-0-activite-flyview",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 2,
   "cat": "Activité",
   "name": "Flyview",
@@ -11981,7 +11981,7 @@
  },
  {
   "id": "precieuses-0-activite-disneyland",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Disneyland",
@@ -12004,7 +12004,7 @@
  },
  {
   "id": "precieuses-0-activite-parc-asterix",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Parc Astérix",
@@ -12027,7 +12027,7 @@
  },
  {
   "id": "precieuses-0-activite-the-mad-hatter-atelier",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "The Mad Hatter Atelier",
@@ -12045,7 +12045,7 @@
  },
  {
   "id": "precieuses-0-activite-gate-vr",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Gate VR",
@@ -12065,7 +12065,7 @@
  },
  {
   "id": "precieuses-0-activite-pixel-game",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 4,
   "cat": "Activité",
   "name": "Pixel Game",
@@ -12086,7 +12086,7 @@
  },
  {
   "id": "precieuses-0-activite-move-it-game",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 13,
   "cat": "Activité",
   "name": "Move It Game",
@@ -12109,7 +12109,7 @@
  },
  {
   "id": "precieuses-0-activite-merci-internet",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Merci Internet",
@@ -12129,7 +12129,7 @@
  },
  {
   "id": "precieuses-0-activite-fun-booker",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Fun Booker",
@@ -12150,7 +12150,7 @@
  },
  {
   "id": "precieuses-0-activite-atelier-cocktails-personnalises",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 10,
   "cat": "Activité",
   "name": "Atelier cocktails personnalisés",
@@ -12173,7 +12173,7 @@
  },
  {
   "id": "precieuses-0-activite-atelier-parfums-personnalises",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Atelier parfums personnalisés",
@@ -12191,7 +12191,7 @@
  },
  {
   "id": "precieuses-0-activite-objectif-horlogerie",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 3,
   "cat": "Activité",
   "name": "Objectif Horlogerie",
@@ -12214,7 +12214,7 @@
  },
  {
   "id": "precieuses-0-activite-aviasim",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Aviasim",
@@ -12237,7 +12237,7 @@
  },
  {
   "id": "precieuses-0-activite-initium",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Initium",
@@ -12257,7 +12257,7 @@
  },
  {
   "id": "precieuses-0-activite-wecandoo",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 8,
   "cat": "Activité",
   "name": "Wecandoo",
@@ -12280,7 +12280,7 @@
  },
  {
   "id": "precieuses-0-activite-theatre-a-la-minute",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Théâtre à la minute",
@@ -12298,7 +12298,7 @@
  },
  {
   "id": "precieuses-0-activite-eclipso",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Eclipso",
@@ -12318,7 +12318,7 @@
  },
  {
   "id": "precieuses-0-activite-e-motion",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 15,
   "cat": "Activité",
   "name": "E-Motion",
@@ -12340,7 +12340,7 @@
  },
  {
   "id": "precieuses-0-activite-peinture-sur-ceramique",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Peinture sur céramique",
@@ -12358,7 +12358,7 @@
  },
  {
   "id": "precieuses-0-activite-creation-de-bougie",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Création de bougie",
@@ -12376,7 +12376,7 @@
  },
  {
   "id": "precieuses-0-activite-atelier-poterie",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Atelier poterie",
@@ -12394,7 +12394,7 @@
  },
  {
   "id": "precieuses-0-activite-lol-qui-rit-sort",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Lol qui rit sort",
@@ -12412,7 +12412,7 @@
  },
  {
   "id": "precieuses-0-activite-paint-me-up",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Paint Me Up",
@@ -12433,7 +12433,7 @@
  },
  {
   "id": "precieuses-0-activite-personnalisation-de-sneakers",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "Personnalisation de sneakers",
@@ -12451,7 +12451,7 @@
  },
  {
   "id": "precieuses-0-activite-one-hour-escape-game",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 10,
   "cat": "Activité",
   "name": "One Hour Escape Game",
@@ -12474,7 +12474,7 @@
  },
  {
   "id": "precieuses-0-activite-the-jury-experience-diamants-mensonges-et-un-mort",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Activité",
   "name": "The Jury Experience : Diamants, mensonges et un mort",
@@ -12492,7 +12492,7 @@
  },
  {
   "id": "precieuses-0-activite-kintsugi",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 12,
   "cat": "Activité",
   "name": "Kintsugi",
@@ -12515,7 +12515,7 @@
  },
  {
   "id": "precieuses-0-activite-my-flower-class",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 11,
   "cat": "Activité",
   "name": "My Flower Class",
@@ -12538,7 +12538,7 @@
  },
  {
   "id": "precieuses-0-activite-les-origines-de-paris",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 4,
   "cat": "Activité",
   "name": "Les Origines de Paris",
@@ -12561,7 +12561,7 @@
  },
  {
   "id": "precieuses-0-activite-cite-immersive-des-fables",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 13,
   "cat": "Activité",
   "name": "Cité immersive des fables",
@@ -12584,7 +12584,7 @@
  },
  {
   "id": "precieuses-0-activite-paradox-museum",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 9,
   "cat": "Activité",
   "name": "Paradox Museum",
@@ -12607,7 +12607,7 @@
  },
  {
   "id": "precieuses-0-activite-science-experience",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 1,
   "cat": "Activité",
   "name": "Science Expérience",
@@ -12630,7 +12630,7 @@
  },
  {
   "id": "precieuses-0-stand-up-jamel-comedy-club",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 10,
   "cat": "Stand-up",
   "name": "Jamel Comedy Club",
@@ -12653,7 +12653,7 @@
  },
  {
   "id": "precieuses-0-stand-up-marrakech-du-rire",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Stand-up",
   "name": "Marrakech du rire",
@@ -12674,7 +12674,7 @@
  },
  {
   "id": "precieuses-0-stand-up-panam-cafe",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 11,
   "cat": "Stand-up",
   "name": "Panam Café",
@@ -12698,7 +12698,7 @@
  },
  {
   "id": "precieuses-0-stand-up-le-fridge",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 2,
   "cat": "Stand-up",
   "name": "Le Fridge",
@@ -12744,7 +12744,7 @@
  },
  {
   "id": "precieuses-0-soiree-boum-boum",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 8,
   "cat": "Soirée",
   "name": "Boum Boum",
@@ -12791,7 +12791,7 @@
  },
  {
   "id": "precieuses-0-soiree-deflower",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Soirée",
   "name": "Deflower",
@@ -12809,7 +12809,7 @@
  },
  {
   "id": "precieuses-0-soiree-le-son-des-guitares",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 8,
   "cat": "Soirée",
   "name": "Le Son des Guitares",
@@ -12833,7 +12833,7 @@
  },
  {
   "id": "precieuses-0-soiree-mama-shelter",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 20,
   "cat": "Soirée",
   "name": "Mama Shelter",
@@ -12942,7 +12942,7 @@
  },
  {
   "id": "precieuses-0-soiree-medellin",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 7,
   "cat": "Soirée",
   "name": "Medellín",
@@ -12965,7 +12965,7 @@
  },
  {
   "id": "precieuses-0-soiree-rose-bonbon",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Soirée",
   "name": "Rose Bonbon",
@@ -12986,7 +12986,7 @@
  },
  {
   "id": "precieuses-0-soiree-chez-mila",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 7,
   "cat": "Soirée",
   "name": "Chez Mila",
@@ -13009,7 +13009,7 @@
  },
  {
   "id": "precieuses-0-soiree-gypsy-motel",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Soirée",
   "name": "Gypsy Motel",
@@ -13027,7 +13027,7 @@
  },
  {
   "id": "precieuses-0-soiree-mamacita",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 9,
   "cat": "Soirée",
   "name": "Mamacita",
@@ -13138,7 +13138,7 @@
  },
  {
   "id": "precieuses-0-soiree-le-kiwi",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Soirée",
   "name": "Le Kiwi",
@@ -13203,9 +13203,9 @@
  },
  {
   "id": "precieuses-0-resto-l-as-du-fallafel",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 4,
-  "cat": "Resto",
+  "cat": "Israélien",
   "name": "L'As du Fallafel",
   "address": "34 rue des Rosiers, 75004 Paris",
   "mark": "✅",
@@ -13277,9 +13277,9 @@
  },
  {
   "id": "precieuses-0-resto-big-mamma-chaine",
-  "list": "precieuses",
+  "list": "paris",
   "arr": null,
-  "cat": "Resto",
+  "cat": "Italien",
   "name": "Big Mamma (chaîne)",
   "address": "",
   "mark": "👌🏼",
@@ -13394,7 +13394,7 @@
  },
  {
   "id": "precieuses-0-resto-le-perchoir",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Resto",
   "name": "Le Perchoir",
@@ -13440,9 +13440,9 @@
  },
  {
   "id": "precieuses-0-resto-tout-le-monde-en-parle",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 15,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Tout le monde en parle",
   "address": "4 rue du Départ, 75015 Paris",
   "mark": "",
@@ -13464,9 +13464,9 @@
  },
  {
   "id": "precieuses-0-resto-le-relais-de-venise",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 17,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Le Relais de Venise",
   "address": "271 boulevard Pereire, 75017 Paris",
   "mark": "✅",
@@ -13488,9 +13488,9 @@
  },
  {
   "id": "precieuses-0-resto-bouillon-chartier",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 9,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Bouillon Chartier",
   "address": "7 rue du Faubourg Montmartre, 75009 Paris",
   "mark": "👌🏼",
@@ -13536,9 +13536,9 @@
  },
  {
   "id": "precieuses-0-resto-restaurant-marocain",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 5,
-  "cat": "Resto",
+  "cat": "Oriental",
   "name": "Restaurant marocain",
   "address": "12 rue des Fossés Saint-Bernard, 75005 Paris",
   "mark": "",
@@ -13560,9 +13560,9 @@
  },
  {
   "id": "precieuses-0-resto-kodawari-tsukiji",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 1,
-  "cat": "Resto",
+  "cat": "Japonais",
   "name": "Kodawari Tsukiji",
   "address": "12 rue de Richelieu, 75001 Paris",
   "mark": "✅",
@@ -13582,31 +13582,6 @@
   "phone": "01 43 29 37 67",
   "bookingScan": 1,
   "resa": "sans"
- },
- {
-  "id": "precieuses-0-resto-maison-sauvage",
-  "list": "precieuses",
-  "arr": 6,
-  "cat": "Resto",
-  "name": "Maison Sauvage",
-  "address": "5 rue de Buci, 75006 Paris",
-  "mark": "👌🏼",
-  "price": 2,
-  "priceSrc": "estim",
-  "searched": 1,
-  "instagram": "maisonsauvageparis",
-  "website": "https://www.maison-sauvage.fr",
-  "enriched": 5,
-  "photo": "https://www.maison-sauvage.fr/wp-content/uploads/2023/07/ILLUSTRATION-WEB-MS-BUCI.png",
-  "bookingScan": 1,
-  "bookingOk": 2,
-  "booking": "https://www.opentable.fr/restref/client/?rid=400287&lang=fr-FR",
-  "cuisine": "Français",
-  "aiFill": 1,
-  "phone": "01 43 29 55 52",
-  "summary": "Un spot incontournable de Saint-Germain-des-Prés aux superbes façades fleuries, idéal pour déguster des brunchs généreux et des plats faits maison dans une ambiance bohème et chaleureuse.",
-  "lat": 48.853666,
-  "lng": 2.338061
  },
  {
   "id": "precieuses-0-resto-la-table-de-colette",
@@ -13635,9 +13610,9 @@
  },
  {
   "id": "precieuses-0-resto-hakata-choten",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 1,
-  "cat": "Resto",
+  "cat": "Japonais",
   "name": "Hakata Choten",
   "address": "53 rue des Petits Champs, 75001 Paris",
   "mark": "",
@@ -13659,9 +13634,9 @@
  },
  {
   "id": "precieuses-0-resto-kodawari-ramen",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 6,
-  "cat": "Resto",
+  "cat": "Japonais",
   "name": "Kodawari Ramen",
   "address": "29 rue Mazarine, 75006 Paris",
   "mark": "✅",
@@ -13683,9 +13658,9 @@
  },
  {
   "id": "precieuses-0-resto-le-comptoir-paris",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 1,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Le Comptoir Paris",
   "address": "9 rue de l'Amiral Coligny, 75001 Paris",
   "mark": "",
@@ -13708,9 +13683,9 @@
  },
  {
   "id": "precieuses-0-resto-verre-chez-moi",
-  "list": "precieuses",
+  "list": "paris",
   "arr": null,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Verre chez moi",
   "address": "",
   "mark": "",
@@ -13727,9 +13702,9 @@
  },
  {
   "id": "precieuses-0-resto-naritake-ramen",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 1,
-  "cat": "Resto",
+  "cat": "Japonais",
   "name": "Naritake Ramen",
   "address": "31 rue des Petits Champs, 75001 Paris",
   "mark": "",
@@ -13749,9 +13724,9 @@
  },
  {
   "id": "precieuses-0-resto-miznon",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 4,
-  "cat": "Resto",
+  "cat": "Israélien",
   "name": "Miznon",
   "address": "22 rue des Écouffes, 75004 Paris",
   "mark": "✅",
@@ -13821,9 +13796,9 @@
  },
  {
   "id": "precieuses-0-resto-au-pied-de-cochon",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 1,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Au Pied de Cochon",
   "address": "6 rue Coquillière, 75001 Paris",
   "mark": "",
@@ -13916,9 +13891,9 @@
  },
  {
   "id": "precieuses-0-resto-le-procope",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 6,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Le Procope",
   "address": "13 rue de l'Ancienne Comédie, 75006 Paris",
   "mark": "✅",
@@ -13940,9 +13915,9 @@
  },
  {
   "id": "precieuses-0-resto-brasserie-lipp",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 6,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Brasserie Lipp",
   "address": "151 boulevard Saint-Germain, 75006 Paris",
   "mark": "✅",
@@ -13964,9 +13939,9 @@
  },
  {
   "id": "precieuses-0-resto-le-petit-bouillon-pharamond",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 1,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Le Petit Bouillon Pharamond",
   "address": "24 rue de la Grande Truanderie, 75001 Paris",
   "mark": "",
@@ -13989,9 +13964,9 @@
  },
  {
   "id": "precieuses-0-resto-brasserie-floderer",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 10,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Brasserie Floderer",
   "address": "7 cour des Petites Écuries, 75010 Paris",
   "mark": "",
@@ -14013,9 +13988,9 @@
  },
  {
   "id": "precieuses-0-resto-la-coupole",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 14,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "La Coupole",
   "address": "102 boulevard du Montparnasse, 75014 Paris",
   "mark": "",
@@ -14034,31 +14009,6 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Légendaire brasserie de Montparnasse au somptueux décor Art déco, incontournable pour savourer des plateaux de fruits de mer et l'incontournable agneau curry de La Coupole dans une ambiance bouillonnante."
- },
- {
-  "id": "precieuses-0-resto-fondue-du-dragon",
-  "list": "precieuses",
-  "arr": 1,
-  "cat": "Resto",
-  "name": "Fondue du dragon",
-  "address": "5 rue Étienne Marcel, 75001 Paris",
-  "mark": "",
-  "lat": 48.863467,
-  "lng": 2.350248,
-  "menu": "https://fonduedragon.fr/fr/menu",
-  "website": "https://fonduedragon.fr",
-  "enriched": 5,
-  "price": 2,
-  "priceSrc": "estim",
-  "searched": 1,
-  "bookingScan": 1,
-  "igSearched": 1,
-  "cuisine": "Chinois",
-  "aiFill": 1,
-  "phone": "01 42 36 86 54",
-  "summary": "Une adresse chaleureuse à Paris pour déguster d'authentiques fondues chinoises et des plats traditionnels savoureux dans une ambiance conviviale.",
-  "resa": "inconnu",
-  "noInsta": 1
  },
  {
   "id": "precieuses-0-resto-dominicos",
@@ -14081,9 +14031,9 @@
  },
  {
   "id": "precieuses-0-resto-peppe-pizzeria-napoletana",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 20,
-  "cat": "Resto",
+  "cat": "Italien",
   "name": "Peppe Pizzeria Napoletana",
   "address": "2 place Saint-Blaise, 75020 Paris",
   "mark": "✅",
@@ -14130,9 +14080,9 @@
  },
  {
   "id": "precieuses-0-resto-la-maison-rose",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 18,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "La Maison Rose",
   "address": "2 rue de l'Abreuvoir, 75018 Paris",
   "mark": "",
@@ -14332,9 +14282,9 @@
  },
  {
   "id": "precieuses-0-resto-le-buf-sur-le-toit",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 8,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Le Bœuf sur le Toit",
   "address": "34 rue du Colisée, 75008 Paris",
   "mark": "",
@@ -14356,9 +14306,9 @@
  },
  {
   "id": "precieuses-0-resto-bumbu",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 8,
-  "cat": "Resto",
+  "cat": "Indonésien",
   "name": "Bumbu",
   "address": "25 rue de Ponthieu, 75008 Paris",
   "mark": "",
@@ -14547,9 +14497,9 @@
  },
  {
   "id": "precieuses-0-resto-pedzouille-lagrange",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 12,
-  "cat": "Resto",
+  "cat": "Français",
   "name": "Pedzouille Lagrange",
   "address": "4 rue de Heldenbergh, 75012 Paris",
   "mark": "",
@@ -14571,9 +14521,9 @@
  },
  {
   "id": "precieuses-0-resto-moommam",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 9,
-  "cat": "Resto",
+  "cat": "Thaïlandais",
   "name": "Moommam",
   "address": "19 rue de Mogador, 75009 Paris",
   "mark": "",
@@ -14743,9 +14693,9 @@
  },
  {
   "id": "precieuses-0-resto-racines",
-  "list": "precieuses",
-  "arr": null,
-  "cat": "Resto",
+  "list": "paris",
+  "arr": 2,
+  "cat": "Italien",
   "name": "Racines",
   "address": "8 passage des Panoramas, 75002 Paris",
   "mark": "",
@@ -15057,9 +15007,9 @@
  },
  {
   "id": "precieuses-0-resto-lava",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 6,
-  "cat": "Resto",
+  "cat": "Fusion",
   "name": "Lava",
   "address": "12 rue de la Grande Chaumière, 75006 Paris",
   "mark": "",
@@ -15294,9 +15244,9 @@
  },
  {
   "id": "precieuses-0-resto-festif-gallopin",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 2,
-  "cat": "Resto festif",
+  "cat": "Français",
   "name": "Gallopin",
   "address": "40 rue Notre-Dame-des-Victoires, 75002 Paris",
   "mark": "",
@@ -15415,7 +15365,7 @@
  },
  {
   "id": "precieuses-0-salon-de-the-angelina",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 1,
   "cat": "Salon de thé",
   "name": "Angelina",
@@ -15485,7 +15435,7 @@
  },
  {
   "id": "precieuses-0-salon-de-the-fattyferia",
-  "list": "precieuses",
+  "list": "paris",
   "arr": null,
   "cat": "Salon de thé",
   "name": "Fattyferia",
@@ -15637,7 +15587,7 @@
  },
  {
   "id": "precieuses-0-rooftop-le-perchoir-marais",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 4,
   "cat": "Rooftop",
   "name": "Le Perchoir Marais",
@@ -15683,7 +15633,7 @@
  },
  {
   "id": "precieuses-0-rooftop-mama-shelter",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 20,
   "cat": "Rooftop",
   "name": "Mama Shelter",
@@ -15752,7 +15702,7 @@
  },
  {
   "id": "precieuses-0-rooftop-chez-mila",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": null,
   "cat": "Rooftop",
   "name": "Chez Mila",
@@ -15791,7 +15741,7 @@
  },
  {
   "id": "precieuses-0-rooftop-10eme-ciel",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 16,
   "cat": "Rooftop",
   "name": "10ème Ciel",
@@ -15927,7 +15877,7 @@
  },
  {
   "id": "precieuses-0-rooftop-terraza-mikuna",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 4,
   "cat": "Rooftop",
   "name": "Terraza Mikuna",
@@ -15973,9 +15923,9 @@
  },
  {
   "id": "precieuses-0-cafe-bofinger",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 4,
-  "cat": "Café",
+  "cat": "Français",
   "name": "Bofinger",
   "address": "5-7 rue de la Bastille, 75004 Paris",
   "mark": "",
@@ -15996,7 +15946,7 @@
  },
  {
   "id": "precieuses-0-cafe-spootnik-bar",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 3,
   "cat": "Café",
   "name": "Spootnik Bar",
@@ -16016,7 +15966,7 @@
  },
  {
   "id": "precieuses-0-cafe-kith",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 8,
   "cat": "Café",
   "name": "Kith",
@@ -16040,7 +15990,7 @@
  },
  {
   "id": "precieuses-0-cafe-chez-fringe",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 3,
   "cat": "Café",
   "name": "Chez Fringe",
@@ -16131,7 +16081,7 @@
  },
  {
   "id": "precieuses-0-boire-un-verre-cheper-perchoir",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 10,
   "cat": "Boire un verre",
   "name": "Cheper Perchoir",
@@ -16248,7 +16198,7 @@
  },
  {
   "id": "precieuses-0-boire-un-verre-mobster-bar",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 11,
   "cat": "Boire un verre",
   "name": "Mobster Bar",
@@ -16316,7 +16266,7 @@
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-de-l-escadrille",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 3,
   "cat": "Boire un verre",
   "name": "Bar de l'Escadrille",
@@ -16450,7 +16400,7 @@
  },
  {
   "id": "precieuses-0-boire-un-verre-le-gainsbarre",
-  "list": "precieuses",
+  "list": "sorties",
   "arr": 7,
   "cat": "Boire un verre",
   "name": "Le Gainsbarre",
@@ -16561,9 +16511,9 @@
  },
  {
   "id": "precieuses-0-a-tester-yum-tcha-bubble-tea",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 2,
-  "cat": "À tester",
+  "cat": "Salon de thé",
   "name": "Yum Tcha (bubble tea)",
   "address": "69 rue de Richelieu, 75002 Paris",
   "mark": "",
@@ -16581,9 +16531,9 @@
  },
  {
   "id": "precieuses-0-brunch-violetta-alfredo",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 9,
-  "cat": "Brunch",
+  "cat": "Italien",
   "name": "Violetta & Alfredo",
   "address": "30 rue de Trévise, 75009 Paris",
   "mark": "",
@@ -16606,9 +16556,9 @@
  },
  {
   "id": "precieuses-0-brunch-404-brunch-oriental",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 3,
-  "cat": "Brunch",
+  "cat": "Oriental",
   "name": "404 (brunch oriental)",
   "address": "69 rue des Gravilliers, 75003 Paris",
   "mark": "",
@@ -16656,7 +16606,7 @@
  },
  {
   "id": "precieuses-0-brunch-bande-de-cheffes",
-  "list": "precieuses",
+  "list": "paris",
   "arr": 15,
   "cat": "Brunch",
   "name": "Bande de Cheffes",
@@ -17016,7 +16966,7 @@
  },
  {
   "id": "ig-paris-chez-jeannette",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Chez Jeannette",
   "cat": "Resto",
   "address": "47 rue du Faubourg Saint-Denis, 75010 Paris",
@@ -17107,7 +17057,7 @@
  },
  {
   "id": "ig-paris-wax",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "WAX",
   "cat": "Soirée",
   "address": "98 rue d'Hauteville, 75010 Paris",
@@ -17127,7 +17077,7 @@
  },
  {
   "id": "ig-paris-vice-versa",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Vice Versa",
   "cat": "Soirée",
   "address": "28 rue Keller, 75011 Paris",
@@ -17149,7 +17099,7 @@
  },
  {
   "id": "ig-paris-bambino",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Bambino",
   "cat": "Soirée",
   "address": "25 rue Saint-Sébastien, 75011 Paris",
@@ -17171,7 +17121,7 @@
  },
  {
   "id": "ig-paris-andy-wahloo",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Andy Wahloo",
   "cat": "Soirée",
   "address": "69 rue des Gravilliers, 75003 Paris",
@@ -17194,7 +17144,7 @@
  },
  {
   "id": "ig-paris-mira",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Mira",
   "cat": "Soirée",
   "address": "4 bis rue Saint-Sauveur, 75002 Paris",
@@ -17216,7 +17166,7 @@
  },
  {
   "id": "ig-paris-frequence",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Fréquence",
   "cat": "Soirée",
   "address": "20 rue Keller, 75011 Paris",
@@ -17239,7 +17189,7 @@
  },
  {
   "id": "ig-paris-mishmish",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Mishmish",
   "cat": "Soirée",
   "address": "3 rue de la Fidélité, 75010 Paris",
@@ -17261,7 +17211,7 @@
  },
  {
   "id": "ig-paris-la-patate-douce",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "La Patate Douce",
   "cat": "Soirée",
   "address": "10 rue Montgolfier, 75003 Paris",
@@ -17284,7 +17234,7 @@
  },
  {
   "id": "ig-paris-le-discobar",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Le Discobar",
   "cat": "Soirée",
   "address": "92 rue Rebeval, 75019 Paris",
@@ -17306,7 +17256,7 @@
  },
  {
   "id": "ig-paris-notre-dame-music-bar",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Notre Dame Music Bar",
   "cat": "Soirée",
   "address": "6 rue Émile-Lepeu, 75011 Paris",
@@ -17463,7 +17413,7 @@
  },
  {
   "id": "ig-paris-starving-club",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Starving Club",
   "cat": "Soirée",
   "address": "11 boulevard Pasteur, 75015 Paris",
@@ -17485,7 +17435,7 @@
  },
  {
   "id": "ig-paris-gatsby",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Gatsby",
   "cat": "Soirée",
   "address": "64 avenue Bosquet, 75007 Paris",
@@ -17507,7 +17457,7 @@
  },
  {
   "id": "ig-paris-miamor",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Miamor",
   "cat": "Soirée",
   "address": "60 rue de l'Arbre-Sec, 75001 Paris",
@@ -17529,7 +17479,7 @@
  },
  {
   "id": "ig-paris-bar-demory",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Bar Demory",
   "cat": "Soirée",
   "address": "62 rue Quincampoix, 75004 Paris",
@@ -17551,7 +17501,7 @@
  },
  {
   "id": "ig-paris-ivy",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Ivy",
   "cat": "Soirée",
   "address": "52 rue Greneta, 75002 Paris",
@@ -17571,7 +17521,7 @@
  },
  {
   "id": "ig-paris-la-poudriere",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "La Poudrière",
   "cat": "Soirée",
   "address": "41 rue Servan, 75011 Paris",
@@ -17591,7 +17541,7 @@
  },
  {
   "id": "ig-paris-scilicet",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Scilicet",
   "cat": "Soirée",
   "address": "134 voie Georges-Pompidou, 75001 Paris",
@@ -17613,7 +17563,7 @@
  },
  {
   "id": "ig-paris-besame-mucho",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Besame Mucho",
   "cat": "Soirée",
   "address": "103 rue Oberkampf, 75011 Paris",
@@ -17633,7 +17583,7 @@
  },
  {
   "id": "ig-paris-chope-moi",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Chope Moi",
   "cat": "Soirée",
   "address": "30 boulevard du Temple, 75011 Paris",
@@ -17656,7 +17606,7 @@
  },
  {
   "id": "ig-paris-le-153",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Le 153",
   "cat": "Soirée",
   "address": "153 rue Saint-Martin, 75003 Paris",
@@ -17767,7 +17717,7 @@
  },
  {
   "id": "ig-paris-le-soixante-douze",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Le Soixante-Douze",
   "cat": "Soirée",
   "address": "72 rue du Chevaleret, 75013 Paris",
@@ -17788,7 +17738,7 @@
  },
  {
   "id": "ig-paris-petit-bain",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Petit Bain",
   "cat": "Soirée",
   "address": "7 port de la Gare, 75013 Paris",
@@ -17903,7 +17853,7 @@
  },
  {
   "id": "ig-paris-la-demesure",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "La Démesure",
   "cat": "Soirée",
   "address": "69 port de la Rapée, 75012 Paris",
@@ -17925,7 +17875,7 @@
  },
  {
   "id": "ig-paris-belushi-s-canal",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Belushi's Canal",
   "cat": "Boire un verre",
   "address": "159 rue de Crimée, 75019 Paris",
@@ -17947,7 +17897,7 @@
  },
  {
   "id": "ig-paris-ciel-les-maquereaux",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Ciel ! Les Maquereaux",
   "cat": "Boire un verre",
   "address": "Quai de l'Hôtel de Ville, 75004 Paris",
@@ -17990,7 +17940,7 @@
  },
  {
   "id": "ig-paris-chalet-des-iles-daumesnil",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Chalet des Îles Daumesnil",
   "cat": "Soirée",
   "address": "Île de Reuilly, Bois de Vincennes, 75012 Paris",
@@ -18572,7 +18522,7 @@
  },
  {
   "id": "ig-paris-bistrot-podium",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Bistrot Podium",
   "cat": "Resto festif",
   "address": "2 rue Linois, 75015 Paris",
@@ -18889,7 +18839,7 @@
  },
  {
   "id": "ig-paris-rehab",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Rehab",
   "cat": "Boire un verre",
   "address": "7 rue de l'Échelle, 75001 Paris",
@@ -18910,7 +18860,7 @@
  },
  {
   "id": "ig-paris-le-syndicat",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Le Syndicat",
   "cat": "Boire un verre",
   "address": "51 rue du Faubourg-Saint-Denis, 75010 Paris",
@@ -18933,7 +18883,7 @@
  },
  {
   "id": "ig-paris-carvan",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Carvan",
   "cat": "Boire un verre",
   "address": "17 rue Jean-de-la-Fontaine, 75016 Paris",
@@ -18954,7 +18904,7 @@
  },
  {
   "id": "ig-paris-silencio-des-pres",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Silencio des Prés",
   "cat": "Boire un verre",
   "address": "22 rue Guillaume-Apollinaire, 75006 Paris",
@@ -18977,7 +18927,7 @@
  },
  {
   "id": "ig-paris-grand-duc",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Grand Duc",
   "cat": "Boire un verre",
   "address": "32 rue de Picardie, 75003 Paris",
@@ -18998,7 +18948,7 @@
  },
  {
   "id": "ig-paris-fitzgerald",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Fitzgerald",
   "cat": "Boire un verre",
   "address": "54 boulevard de la Tour-Maubourg, 75007 Paris",
@@ -19020,7 +18970,7 @@
  },
  {
   "id": "ig-paris-bisou",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Bisou",
   "cat": "Boire un verre",
   "address": "15 boulevard du Temple, 75003 Paris",
@@ -19043,7 +18993,7 @@
  },
  {
   "id": "ig-paris-prescription-cocktail-club",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Prescription Cocktail Club",
   "cat": "Boire un verre",
   "address": "23 rue Mazarine, 75006 Paris",
@@ -19066,7 +19016,7 @@
  },
  {
   "id": "ig-paris-danico",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Danico",
   "cat": "Boire un verre",
   "address": "6 rue Vivienne, 75002 Paris",
@@ -19088,7 +19038,7 @@
  },
  {
   "id": "ig-paris-candelaria",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Candelaria",
   "cat": "Boire un verre",
   "address": "52 rue de Saintonge, 75003 Paris",
@@ -19112,7 +19062,7 @@
  },
  {
   "id": "ig-paris-moonshiner",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Moonshiner",
   "cat": "Boire un verre",
   "address": "5 rue Sedaine, 75011 Paris",
@@ -21705,7 +21655,7 @@
  },
  {
   "id": "ig-paris-canoe-crecy-la-chapelle",
-  "list": "precieuses",
+  "list": "sorties",
   "name": "Balade en canoë à Crécy-la-Chapelle",
   "cat": "Activité",
   "address": "Crécy-la-Chapelle, 77580",
@@ -21887,5 +21837,22 @@
   "enriched": 5,
   "photo": "https://www.hersheyland.com/content/dam/hersheyland/en-us/life-style/home/2026-holiday-updates/hersheyland-homepage-hero.jpg",
   "bookingScan": 1
+ },
+ {
+  "id": "u-mw9g63wf7peu",
+  "cat": "Salon de thé",
+  "city": "New York",
+  "list": "villes",
+  "name": "Sunday Morning Cinnamon Rolls",
+  "price": 1,
+  "source": "https://www.instagram.com/reel/Dd9ZHsjNEu4/?dlrf=MXA5N2YzYnF6Mjlkaw==",
+  "addedAt": "2026-11-09",
+  "address": "New York, NY, USA",
+  "summary": "Des cinnamon rolls ultra gourmands et nappés, dont une version à la pistache particulièrement appréciée. Une adresse incontournable pour les amateurs de douceurs sucrées à New York.",
+  "instagram": "sundaymorningcinnamonrolls",
+  "shared": true,
+  "aiFill": 1,
+  "resa": "inconnu",
+  "searched": 1
  }
 ]
