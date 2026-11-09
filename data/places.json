@@ -19866,7 +19866,8 @@
   "website": "https://ortomare-ristorante-pizzeria.wheree.com",
   "enriched": 5,
   "bookingScan": 1,
-  "aiFill": 1
+  "aiFill": 1,
+  "booking": "https://www.opentable.com/r/ortomare-new-york"
  },
  {
   "id": "ig-new-york-kaiten-zushi",
@@ -19911,7 +19912,8 @@
   "photo": "https://images.getbento.com/accounts/76b6b09b073ff7acaeeffc630bdeb2c4/media/images/229094B956ADE-B53A-4FA6-A9E9-F091FC37EFC1.jpeg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 718-433-1499"
+  "phone": "+1 718-433-1499",
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-deluxe-green-bo",
@@ -20622,7 +20624,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 212-675-2090"
+  "phone": "+1 212-675-2090",
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-bhi-thursdays",
@@ -21478,5 +21481,29 @@
   "enriched": 5,
   "photo": "https://lademocratierestaurant.com/wp-content/uploads/lademocratie-carte-noel-2026-480x679.jpg",
   "phone": "01 72 68 50 89"
+ },
+ {
+  "id": "u-mw8wrip8atrx",
+  "arr": 6,
+  "cat": "Japonais",
+  "list": "paris",
+  "name": "Muku",
+  "price": 3,
+  "source": "https://www.instagram.com/reel/Dd6ncaxNhzQ/?xtok=bnpjdTF1bm54Y292",
+  "addedAt": "2026-11-09",
+  "address": "8 Rue Suger, 75006 Paris",
+  "summary": "Un izakaya caché derrière une toute petite porte à l'ambiance intimiste. On y savoure de délicieuses spécialités japonaises.",
+  "instagram": "muku.paris",
+  "shared": true,
+  "aiFill": 1,
+  "resa": "inconnu",
+  "lat": 48.853034,
+  "lng": 2.342187,
+  "phone": "01 42 01 77 85",
+  "website": "https://www.muku-paris.fr/",
+  "enriched": 5,
+  "searched": 1,
+  "photo": "https://static.wixstatic.com/media/2837c4_424f28a9d6da4f5e82c071c607fd52d4~mv2.png/v1/fill/w_738,h_299,al_c/2837c4_424f28a9d6da4f5e82c071c607fd52d4~mv2.png",
+  "bookingScan": 1
  }
 ]
