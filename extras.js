@@ -618,6 +618,18 @@ async function osrm(mode, a, b) {
   }
   return null;
 }
+// Trafic en direct (fonction « trafic » + TomTom). Renvoie null si indisponible : on garde alors l'estimation.
+async function trafic(a, b) {
+  if (!AVIS.url) return null;
+  try {
+    const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), 9000);
+    const r = await fetch(`${AVIS.url}/functions/v1/trafic`, { method: "POST", signal: ctrl.signal, headers: { ...sbHead(), "content-type": "application/json" }, body: JSON.stringify({ from: { lat: a.lat, lng: a.lng }, to: { lat: b.lat, lng: b.lng } }) });
+    clearTimeout(t);
+    const j = r.ok ? await r.json() : null;
+    const [main, alt] = j?.routes || [];
+    return main ? { ...main, live: true, alt: alt || null } : null;
+  } catch { return null; }
+}
 const fmtMin = (m) => (m < 60 ? `${Math.max(1, Math.round(m))} min` : `${Math.floor(m / 60)} h ${String(Math.round(m % 60)).padStart(2, "0")}`);
 const RT = { id: null, mode: "car", res: {}, line: null };
 function goLinks(p, mode) {
@@ -637,7 +649,7 @@ function drawRoute() {
   if (!p || !map) return;
   if (RT.line) { map.removeLayer(RT.line); RT.line = null; }
   map.invalidateSize();
-  const r = RT.res[RT.mode];
+  const r = RT.mode === "car" && RT.alt && RT.res.car?.alt ? RT.res.car.alt : RT.res[RT.mode];
   const pad = { paddingTopLeft: [30, 110], paddingBottomRight: [30, ($("#routeCard").offsetHeight || 220) + 30] };
   if (r && r.geo) {
     RT.line = L.layerGroup([
@@ -654,6 +666,12 @@ function drawRoute() {
 // Pas de trafic en direct ici : le temps affiché est « route libre ». Aux heures de pointe on prévient,
 // et Waze / Plans prennent le relais (bouchons en direct, itinéraire plus rapide proposé).
 function rushNote(r) {
+  if (r && r.live) {
+    const d = Math.round(r.delay), alt = r.alt;
+    const state = d >= 10 ? `<b class="jam">Bouchons : +${d} min</b> sur le trajet` : d >= 3 ? `<b class="slow">Ça ralentit : +${d} min</b>` : `<b class="fluid">Ça roule bien</b>`;
+    const bis = alt ? ` · <button class="linkish" data-route-alt>${RT.alt ? "Revenir au trajet principal" : `Itinéraire bis : ${fmtMin(alt.min)}${alt.delay >= 1 ? ` (+${Math.round(alt.delay)} min de bouchons)` : ""}`}</button>` : "";
+    return `<p class="rt-note">Trafic en direct : ${state}${bis}. Waze et Plans te guident en suivant le trafic.</p>`;
+  }
   const d = new Date(), h = d.getHours() + d.getMinutes() / 60, wk = d.getDay() >= 1 && d.getDay() <= 5;
   const rush = wk && ((h >= 7.5 && h < 9.75) || (h >= 16.5 && h < 20));
   const more = r && !r.est ? ` : compte plutôt ≈ ${fmtMin(r.min * 1.6)} avec le trafic habituel` : "";
@@ -691,10 +709,11 @@ async function showRoute(id) {
   showMe();
   const a = S.me;
   renderRouteCard();
+  RT.alt = false;
   await Promise.all(["car", "foot", "bike"].map(async (m) => {
-    RT.res[m] = await osrm(m, a, p);
+    RT.res[m] = (m === "car" && await trafic(a, p)) || await osrm(m, a, p);
     // OSRM ne connaît pas la circulation : en ville, on ajoute 30 % au temps en voiture.
-    if (m === "car" && RT.res.car) RT.res.car.min *= 1.3;
+    if (m === "car" && RT.res.car && !RT.res.car.live) RT.res.car.min *= 1.3;
     // Transports en commun : estimation à partir du trajet à pied (marche + attente + métro).
     if (m === "foot" && RT.res.foot) {
       const km = RT.res.foot.km;
@@ -712,6 +731,7 @@ function closeRoute() {
   if (RT.line && map) { map.removeLayer(RT.line); RT.line = null; }
 }
 document.addEventListener("click", (e) => {
+  if (e.target.closest("[data-route-alt]")) { RT.alt = !RT.alt; renderRouteCard(); drawRoute(); return; }
   const t = e.target.closest("[data-route-mode],[data-route-close],[data-route-sheet]");
   if (!t) return;
   if (t.hasAttribute("data-route-sheet")) { const id = current?.id; closeSheet(); if (id) setTimeout(() => showRoute(id), 80); return; }

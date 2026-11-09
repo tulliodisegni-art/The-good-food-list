@@ -872,3 +872,7 @@ button.q { border: 0; cursor: pointer; font: inherit; font-size: 12px; font-weig
 #view-carte.warm[hidden] { display: block !important; visibility: hidden; pointer-events: none; }
 .rt-note { margin: 8px 0 0; font-size: 12px; line-height: 1.4; color: var(--muted); }
 .rt-note b { color: var(--ink, inherit); }
+.trafic-btn { bottom: calc(var(--tabs-h) + env(safe-area-inset-bottom, 0px) + 72px); }
+.trafic-btn.on { background: var(--plaque); } .trafic-btn.on svg { stroke: #fff; }
+.rt-note .jam { color: #c0392b; } .rt-note .slow { color: #d68910; } .rt-note .fluid { color: #1f8a4c; }
+.rt-note .linkish { background: none; border: 0; padding: 0; color: var(--accent, inherit); text-decoration: underline; font: inherit; font-weight: 700; cursor: pointer; }

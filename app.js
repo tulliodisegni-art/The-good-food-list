@@ -784,12 +784,30 @@ function initMap() {
     if (r) r.onclick = () => { map.closePopup(); showRoute(r.dataset.route); };
   });
   if (typeof showMe === "function") showMe();
+  initTraficLayer();
   fillMapCats();
   refreshMarkers();
   // Préparée en arrière-plan : on ne cherche les pins manquants qu'à l'ouverture de la carte.
   if (!$("#view-carte").classList.contains("warm")) { geoDone = true; geocodeMissing(); }
 }
 let geoDone = false;
+// Calque « trafic en direct » (routes colorées selon les bouchons), seulement si la fonction trafic a sa clé.
+function initTraficLayer(tries = 0) {
+  const btn = $("#traficBtn");
+  if (!btn) return;
+  if (typeof AVIS === "undefined" || !AVIS.url) { if (tries < 5) setTimeout(() => initTraficLayer(tries + 1), 3000); return; }
+  fetch(`${AVIS.url}/functions/v1/trafic?z=0&x=0&y=0`).then((r) => {
+    if (r.status !== 400) return;
+    btn.hidden = false;
+    let layer = null;
+    btn.onclick = () => {
+      if (layer) { map.removeLayer(layer); layer = null; btn.classList.remove("on"); return; }
+      if (!map.getPane("trafic")) map.createPane("trafic").style.zIndex = 260;
+      layer = L.tileLayer(`${AVIS.url}/functions/v1/trafic?z={z}&x={x}&y={y}`, { maxZoom: 19, maxNativeZoom: 18, minZoom: 6, opacity: 0.85, pane: "trafic", attribution: "Trafic &copy; TomTom" }).addTo(map);
+      btn.classList.add("on"); toast("Trafic en direct : vert = fluide, orange = ralenti, rouge = bouchons");
+    };
+  }).catch(() => {});
+}
 
 function fillMapCats() {
   const list = S.mapList;
