@@ -1,0 +1,12 @@
+name: Vérifier le trafic
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          URL=$(jq -r .avis.url data/config.json); KEY=$(jq -r .avis.key data/config.json)
+          curl -sS -m 30 -X POST "$URL/functions/v1/trafic" -H "apikey: $KEY" -H "content-type: application/json" \
+            -d '{"from":{"lat":48.8738,"lng":2.2950},"to":{"lat":48.8530,"lng":2.3499}}' | jq -c '{routes: [.routes[]? | {min, free, delay, km, pts: (.geo.coordinates|length)}], error}'
+          echo; curl -sS -m 30 -o tile.png -w "tuile HTTP %{http_code} %{content_type} %{size_download}o\n" "$URL/functions/v1/trafic?z=13&x=4149&y=2818"
