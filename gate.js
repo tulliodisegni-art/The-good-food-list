@@ -107,13 +107,14 @@
     d.addEventListener("click", (ev) => { if (ev.target === d) d.remove(); });
     const draw = async () => {
       try {
-        const rows = await rpc("app_invite_list", { p_key: adminKey(), p_app: C.app });
+        // Les invitations retirées disparaissent de la liste.
+        const rows = (await rpc("app_invite_list", { p_key: adminKey(), p_app: C.app })).filter((r) => !r.revoked);
         list.innerHTML = rows.length ? rows.map((r) => `<li class="${r.revoked ? "off" : ""}"><span><code>${esc(r.code)}</code> · ${esc(r.label || "sans nom")}</span>
           <small>${r.revoked ? "retirée" : r.uses >= r.max_uses ? "utilisée" : "pas encore utilisée"} · ${new Date(r.created_at).toLocaleDateString("fr-FR")}</small>
-          <button data-rv="${esc(r.code)}" data-on="${r.revoked ? 0 : 1}">${r.revoked ? "Rétablir" : "Retirer"}</button></li>`).join("") : "<li><small>Aucune invitation pour l'instant.</small></li>";
+          <button data-rv="${esc(r.code)}" data-on="1">Retirer</button></li>`).join("") : "<li><small>Aucune invitation pour l'instant.</small></li>";
       } catch (x) { if (missing(x)) { list.innerHTML = "<li><small>Les codes d'invitation s'activeront quand le script invitations.sql sera installé dans Supabase. En attendant, le lien suffit.</small></li>"; return; } list.innerHTML = `<li><small>${x.status === 400 || /autoris/.test(x.message) ? "Clé propriétaire refusée." : "Pas de connexion."}</small></li>`; }
     };
-    list.onclick = async (ev) => { const b = ev.target.closest("[data-rv]"); if (!b) return; b.disabled = true; try { await rpc("app_invite_revoke", { p_key: adminKey(), p_code: b.dataset.rv, p_revoked: b.dataset.on === "1" }); } catch (x) {} draw(); };
+    list.onclick = async (ev) => { const b = ev.target.closest("[data-rv]"); if (!b) return; if (!confirm("Retirer cette invitation ? La personne n'aura plus accès à l'appli.")) return; b.disabled = true; try { await rpc("app_invite_revoke", { p_key: adminKey(), p_code: b.dataset.rv, p_revoked: b.dataset.on === "1" }); } catch (x) {} draw(); };
     q(d, "#gt-mk").onclick = async () => {
       const who = q(d, "#gt-who").value.trim(); e.style.color = ""; e.textContent = "Création…";
       try {
