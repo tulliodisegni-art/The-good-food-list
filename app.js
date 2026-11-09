@@ -827,11 +827,16 @@ function refreshMarkers() {
   if (!map) return;
   cluster.clearLayers(); markers.clear();
   const ms = [];
+  const fm = window.Social && window.Social.mapMatch;
   for (const p of S.places) {
     if (!p.lat || p.list === "pending") continue;
+    const f = fm ? fm(p) : null;
+    if (f === false) continue;
+    if (f === null) {
     if (S.mapList !== "all" && p.list !== S.mapList) continue;
     if (S.mapCat && p.cat !== S.mapCat) continue;
     if (window.Social && !window.Social.match(p)) continue;
+    }
     const m = markerFor(p); markers.set(p.id, m); ms.push(m);
   }
   cluster.addLayers(ms);

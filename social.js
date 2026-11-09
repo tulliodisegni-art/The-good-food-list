@@ -117,12 +117,29 @@
     return chip("", "Tout le monde") + chip("me", "Moi") + ids.sort((a, b) => (b === SO.ownerId) - (a === SO.ownerId) || nameOf(a).localeCompare(nameOf(b))).map((u) => chip(u, nameOf(u))).join("");
   }
   function renderBars() {
+    renderMapBar();
     for (const [anchor, id] of [["#chipsParis", "whoParis"], ["#univPrec", "whoPrec"]]) {
       const a = document.querySelector(anchor); if (!a) continue;
       let el = document.getElementById(id); if (!el) { el = document.createElement("div"); el.id = id; el.className = "chips who-bar"; el.setAttribute("aria-label", "Adresses de qui"); a.parentNode.insertBefore(el, a); }
       el.innerHTML = barHtml(); el.hidden = !el.innerHTML;
     }
   }
+  /* ---------- carte : défiler les amis et voir leurs adresses en plus des miennes ---------- */
+  SO.mapWho = "";
+  const extras = (uid) => (S.places || []).filter((p) => p.fromFriend === uid && p.lat);
+  function mapBarHtml() {
+    const ids = accepted().filter((u) => u !== SO.ownerId); if (!ids.length) return "";
+    const chip = (v, label, n) => `<button class="chip ${SO.mapWho === v ? "on" : ""}" data-map-who="${h(v)}">${h(label)}${n != null ? ` <small>${n}</small>` : ""}</button>`;
+    return chip("", "Ma carte") + ids.sort((a, b) => nameOf(a).localeCompare(nameOf(b))).map((u) => chip(u, nameOf(u), extras(u).length)).join("");
+  }
+  function renderMapBar() {
+    const ui = document.querySelector("#view-carte .map-ui"); if (!ui) return;
+    let el = document.getElementById("mapWho");
+    if (!el) { el = document.createElement("div"); el.id = "mapWho"; el.className = "map-who"; el.setAttribute("aria-label", "Carte de mes amis"); ui.appendChild(el); }
+    el.innerHTML = mapBarHtml(); el.hidden = !el.innerHTML;
+  }
+  // Sur la carte, un ami choisi : seulement ses adresses que je n'ai pas.
+  function mapMatch(p) { return SO.mapWho ? p.fromFriend === SO.mapWho : null; }
   function sheetHtml(p) {
     const fr = (p.friends || []).filter((f) => f.tested || f.rating || f.added);
     const mineLine = !p.fromFriend && (p.tested || p.rating || store.get("custom", []).some((c) => c.id === p.id))
@@ -154,14 +171,23 @@
 .friends-box ul{margin:0;padding-left:18px;display:grid;gap:3px;font-size:.92rem}
 .social-list{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:6px}
 .social-list li{display:flex;justify-content:space-between;align-items:center;gap:8px;border:1px solid var(--line,#e5e5e5);border-radius:12px;padding:8px 10px}
+.map-who{display:flex;gap:6px;overflow-x:auto;width:100%;padding:2px 0 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.map-who::-webkit-scrollbar{display:none}
+.map-who .chip{flex:none;box-shadow:var(--shadow);background:var(--surface,#fff);white-space:nowrap}.map-who .chip.on{background:var(--plaque,#1d3b78);color:#fff}.map-who .chip small{opacity:.7;font-weight:700}
 [data-social] h4{margin:12px 0 4px;font-size:.9rem} .linkish{background:none;border:0;padding:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit}`;
   const st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
 
   /* ---------- clics ---------- */
   document.addEventListener("click", async (e) => {
-    const t = e.target.closest("[data-who],[data-share-toggle],[data-social-rename],[data-social-follow],[data-social-ok],[data-social-no],[data-social-unfollow],[data-social-remove],[data-social-link]");
+    const t = e.target.closest("[data-map-who],[data-who],[data-share-toggle],[data-social-rename],[data-social-follow],[data-social-ok],[data-social-no],[data-social-unfollow],[data-social-remove],[data-social-link]");
     if (!t) return;
     try {
+      if (t.dataset.mapWho !== undefined) {
+        SO.mapWho = t.dataset.mapWho; renderMapBar(); refreshMarkers();
+        const pts = SO.mapWho ? extras(SO.mapWho) : [];
+        if (pts.length && typeof map !== "undefined" && map) map.fitBounds(L.latLngBounds(pts.map((p) => [p.lat, p.lng])), { padding: [50, 50], maxZoom: 15 });
+        else if (SO.mapWho) toast(`${nameOf(SO.mapWho)} n'a pas encore d'adresse en plus des tiennes`);
+        return;
+      }
       if (t.dataset.who !== undefined) { SO.who = t.dataset.who; rebuild(); renderAll(); return; }
       if (t.dataset.shareToggle) { const p = S.places.find((x) => x.id === t.dataset.shareToggle); setEdit(p.id, { hidden: !p.hidden }); publish(); renderAll(); openSheet(p.id, true); return; }
       if (t.hasAttribute("data-social-rename")) { const v = prompt("Ton pseudo (3 à 20 lettres ou chiffres)", SO.me ? SO.me.handle : toHandle(store.get("name", "") || (Acc.user.email || "").split("@")[0])); if (v) { await setHandle(v); toast("Pseudo enregistré"); } return; }
@@ -176,7 +202,7 @@
 
   /* ---------- démarrage ---------- */
   fromCache();
-  window.Social = { decorate, match, publish, renderBars, sheetHtml, settingsHtml, state: SO };
+  window.Social = { decorate, match, mapMatch, publish, renderBars, sheetHtml, settingsHtml, state: SO };
   (async () => {
     await Acc.ready;
     try { await load(); } catch (e) { return; }
