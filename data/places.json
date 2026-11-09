@@ -19866,8 +19866,7 @@
   "website": "https://ortomare-ristorante-pizzeria.wheree.com",
   "enriched": 5,
   "bookingScan": 1,
-  "aiFill": 1,
-  "booking": "https://www.opentable.com/r/ortomare-new-york"
+  "aiFill": 1
  },
  {
   "id": "ig-new-york-kaiten-zushi",
@@ -19912,8 +19911,7 @@
   "photo": "https://images.getbento.com/accounts/76b6b09b073ff7acaeeffc630bdeb2c4/media/images/229094B956ADE-B53A-4FA6-A9E9-F091FC37EFC1.jpeg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 718-433-1499",
-  "booking": "https://www.opentable.com/r/lost-in-paradise-rooftop-long-island-city"
+  "phone": "+1 718-433-1499"
  },
  {
   "id": "ig-new-york-deluxe-green-bo",
@@ -20624,8 +20622,7 @@
   "enriched": 5,
   "bookingScan": 1,
   "aiFill": 1,
-  "phone": "+1 212-675-2090",
-  "booking": "https://www.opentable.com/r/sentir-new-york"
+  "phone": "+1 212-675-2090"
  },
  {
   "id": "ig-new-york-bhi-thursdays",
