@@ -21,7 +21,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une ambiance bistrot branchée et chaleureuse où l'on savoure une cuisine de marché inventive aux inspirations américaines. Ne manquez pas leur fameux poulet frit.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-francais-les-artizans",
@@ -46,7 +47,19 @@
   "instagram": "lesartizans",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant bistronomique convivial situé rue Montorgueil, proposant une cuisine française inventive qui marie tradition et modernité. On y déguste des plats raffinés et des pâtisseries maison soignées dans un cadre chaleureux."
+  "summary": "Un restaurant bistronomique convivial situé rue Montorgueil, proposant une cuisine française inventive qui marie tradition et modernité. On y déguste des plats raffinés et des pâtisseries maison soignées dans un cadre chaleureux.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-francais-plume",
@@ -70,7 +83,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant élégant et feutré perché sur les toits, offrant une cuisine française raffinée aux accents contemporains. L'atmosphère y est chic et romantique, idéale pour savourer des plats délicats tout en profitant d'une vue imprenable."
+  "summary": "Un restaurant élégant et feutré perché sur les toits, offrant une cuisine française raffinée aux accents contemporains. L'atmosphère y est chic et romantique, idéale pour savourer des plats délicats tout en profitant d'une vue imprenable.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-francais-pied-de-cochon",
@@ -94,7 +108,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Mythique brasserie parisienne ouverte 24h/24 au cœur des Halles, célèbre pour son ambiance animée et généreuse. L'incontournable à y goûter est bien sûr le pied de cochon grillé ainsi que leurs superbes plateau de fruits de mer."
+  "summary": "Mythique brasserie parisienne ouverte 24h/24 au cœur des Halles, célèbre pour son ambiance animée et généreuse. L'incontournable à y goûter est bien sûr le pied de cochon grillé ainsi que leurs superbes plateau de fruits de mer.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-francais-inavoue",
@@ -119,7 +145,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Un bar à manger intimiste et chaleureux au cœur de Paris, idéal pour partager des assiettes canailles et des vins d'auteur en toute discrétion.",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-francais-maslow",
@@ -143,7 +170,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Une table végétarienne gourmande et décomplexée avec vue sur la Seine, mettant à l'honneur des pâtes réconfortantes et des plats à partager.",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-francais-le-roch-restaurant",
@@ -168,7 +207,19 @@
   "summary": "Un cadre feutré et élégant signé Sarah Lavoine, où l'on savoure une cuisine française raffinée et inventive orchestrée par le chef.",
   "resa": "inconnu",
   "ogTry": 1,
-  "photo": "https://leroch-hotel.com/wp-content/uploads/2024/06/Roch_Front_1.jpg"
+  "photo": "https://leroch-hotel.com/wp-content/uploads/2024/06/Roch_Front_1.jpg",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-francais-la-poule-au-pot",
@@ -195,7 +246,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-italien-cicciolina",
@@ -222,7 +285,8 @@
   "summary": "Une trattoria chaleureuse et branchée aux abords de Châtelet, parfaite pour déguster des pâtes fraîches maison et des antipasti généreux dans une ambiance conviviale.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-italien-liberto",
@@ -247,7 +311,8 @@
   "summary": "Un restaurant italien festif et coloré au cœur des Halles, idéal pour savourer des pizzas croustillantes et des cocktails signatures dans une ambiance survoltée.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-italien-presto-fresco",
@@ -271,7 +336,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "booking": "https://www.thefork.fr/restaurant/presto-fresco-r47514",
-  "summary": "Une adresse italienne authentique et accueillante près des Halles, idéale pour déguster de savoureuses pizzas au feu de bois et des plats de pâtes généreux dans une ambiance détendue."
+  "summary": "Une adresse italienne authentique et accueillante près des Halles, idéale pour déguster de savoureuses pizzas au feu de bois et des plats de pâtes généreux dans une ambiance détendue.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-italien-tzantza",
@@ -298,7 +375,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "",
+   "19:00-02:00",
+   "19:00-02:00",
+   "19:00-02:00",
+   "19:00-02:00",
+   "19:00-02:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-foujita",
@@ -323,7 +412,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Institution japonaise historique du 1er arrondissement, Foujita propose des sashimis, sushis et plats traditionnels réconfortants dans une ambiance intime et chaleureuse. On y vient pour savourer l'authenticité d'une cuisine soignée au cœur de Paris.",
-  "resa": "telephone"
+  "resa": "telephone",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "",
+   "12:00-14:15,19:00-22:15",
+   "12:00-14:15,19:00-22:15",
+   "12:00-14:15,19:00-22:15",
+   "12:00-14:15,19:00-22:15",
+   "12:00-14:15,19:00-22:15",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-takara",
@@ -348,7 +449,19 @@
   "instagram": "takara_paris",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Considéré comme l'un des plus anciens restaurants japonais de Paris, Takara invite à découvrir des spécialités traditionnelles telles que le sukiyaki et des sushis d'une grande finesse. L'atmosphère y est feutrée et authentique."
+  "summary": "Considéré comme l'un des plus anciens restaurants japonais de Paris, Takara invite à découvrir des spécialités traditionnelles telles que le sukiyaki et des sushis d'une grande finesse. L'atmosphère y est feutrée et authentique.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-enyaa",
@@ -373,7 +486,19 @@
   "instagram": "restaurant_enyaa",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Niché face au Palais-Royal, Enyaa propose une haute gastronomie japonaise mettant à l'honneur des nouilles soba d'exception et des menus kaiseki raffinés. Le cadre est élégant, épuré et propice à une expérience culinaire délicate."
+  "summary": "Niché face au Palais-Royal, Enyaa propose une haute gastronomie japonaise mettant à l'honneur des nouilles soba d'exception et des menus kaiseki raffinés. Le cadre est élégant, épuré et propice à une expérience culinaire délicate.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-japanos-ramen-bar",
@@ -397,7 +522,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Japanos Ramen Bar propose des ramens généreux aux bouillons savoureux ainsi que des tapas japonaises incontournables. L'ambiance y est dynamique, moderne et typique des bars à nouilles urbains."
+  "summary": "Japanos Ramen Bar propose des ramens généreux aux bouillons savoureux ainsi que des tapas japonaises incontournables. L'ambiance y est dynamique, moderne et typique des bars à nouilles urbains.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-sushi-way",
@@ -423,7 +560,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un concept ludique de sushis livrés directement à table sur des mini-trains à grande vitesse. L'ambiance y est moderne, idéale pour un repas rapide et amusant.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-23:00",
+   "11:30-15:00,18:00-23:00",
+   "11:30-15:00,18:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-restaurant-zen",
@@ -447,7 +596,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse authentique au cœur de Paris pour savourer de délicieux bentos, sushis et plats traditionnels faits maison. L'atmosphère est calme, chaleureuse et typiquement nippone."
+  "summary": "Une adresse authentique au cœur de Paris pour savourer de délicieux bentos, sushis et plats traditionnels faits maison. L'atmosphère est calme, chaleureuse et typiquement nippone.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-pink-koi",
@@ -470,7 +631,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-yamato-grill",
@@ -494,7 +656,19 @@
   "instagram": "yamato.grill",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Spécialisé dans les grillades japonaises et les viandes d'exception, ce restaurant propose une cuisine savoureuse dans une ambiance conviviale et contemporaine."
+  "summary": "Spécialisé dans les grillades japonaises et les viandes d'exception, ce restaurant propose une cuisine savoureuse dans une ambiance conviviale et contemporaine.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-japonais-nodaiwa",
@@ -517,7 +691,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Spécialisé dans l'anguille (unagi) grillée à la perfection selon un savoir-faire ancestral tokyoïte. L'ambiance y est feutrée, élégante et résolument traditionnelle.",
-  "resa": "telephone"
+  "resa": "telephone",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-chinois-bobun-chatelet",
@@ -544,7 +730,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-chinois-ravioli-nord-est",
@@ -572,7 +759,8 @@
   "ogTry": 2,
   "pressTry": 1,
   "commonsTry": 1,
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ravioli_Nord-Est_%40_Paris_%2835244967706%29.jpg/1280px-Ravioli_Nord-Est_%40_Paris_%2835244967706%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ravioli_Nord-Est_%40_Paris_%2835244967706%29.jpg/1280px-Ravioli_Nord-Est_%40_Paris_%2835244967706%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-coreen-dongne-chicken",
@@ -597,7 +785,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-coreen-go-oun",
@@ -622,7 +811,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un restaurant coréen intimiste où l'on savoure des plats faits maison authentiques dans une ambiance chaleureuse. On y déguste notamment d'excellents bibimbaps et des raviolis traditionnels.",
-  "resa": "telephone"
+  "resa": "telephone",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-coreen-fondue-du-dragon",
@@ -649,7 +839,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-coreen-jjan",
@@ -672,7 +874,19 @@
   "aiFill": 1,
   "phone": "01 42 33 38 12",
   "summary": "Un bar-restaurant coréen branché qui propose des tapas et des plats à partager accompagnés de cocktails originaux. L'atmosphère est animée et parfaite pour une soirée entre amis.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-indonesien-djakarta-bali",
@@ -698,7 +912,19 @@
   "phone": "01 45 08 83 11",
   "summary": "Une véritable invitation au voyage au cœur de l'Indonésie avec des saveurs parfumées et dépaysantes. On y savoure un excellent nasi goreng dans un cadre chaleureux aux décors traditionnels.",
   "ogTry": 1,
-  "photo": "http://djakarta-bali.com/wp-content/uploads/2024/03/article-figaroscope-2024-actu-1024x202.png"
+  "photo": "http://djakarta-bali.com/wp-content/uploads/2024/03/article-figaroscope-2024-actu-1024x202.png",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-brunch-baguett-s-cafe",
@@ -722,7 +948,19 @@
   "aiFill": 1,
   "phone": "01 42 61 81 77",
   "summary": "Un café chaleureux et convivial où déguster de généreux avocado toasts, des œufs brouillés savoureux et des pâtisseries maison dans une ambiance cosy.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-brunch-immersion-vendome",
@@ -747,7 +985,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-18:00",
+   "09:00-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-cafe-le-tiki-rose",
@@ -772,7 +1022,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-cafe-cafe-kitsune",
@@ -797,7 +1048,8 @@
   "aiFill": 1,
   "summary": "Un comptoir à café incontournable sous les arcades du Palais-Royal, réputé pour son excellent matcha latte et ses boissons de specialty coffee dans un décor minimaliste et chic.",
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-cafe-le-cafe-de-l-epoque",
@@ -822,7 +1074,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "instagram": "lecafedelepoque",
-  "summary": "Un café-brasserie élégant et rétro situé à deux pas du Palais-Royal. On y savoure une cuisine française classique dans une ambiance chaleureuse et intemporelle."
+  "summary": "Un café-brasserie élégant et rétro situé à deux pas du Palais-Royal. On y savoure une cuisine française classique dans une ambiance chaleureuse et intemporelle.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-cafe-le-cafe-marly",
@@ -846,7 +1099,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Situé sous les arcades de la Cour Napoléon du Louvre, ce café offre une vue imprenable sur la pyramide. Idéal pour admirer le panorama chic et artistique autour d'une carte raffinée."
+  "summary": "Situé sous les arcades de la Cour Napoléon du Louvre, ce café offre une vue imprenable sur la pyramide. Idéal pour admirer le panorama chic et artistique autour d'une carte raffinée.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-cafe-cafe-laperouse",
@@ -870,7 +1124,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Niché à l'Hôtel de la Marine, ce café-restaurant séduit par son décor inspiré des grands voyages et sa terrasse face à la place de la Concorde. Un lieu sophistiqué pour déguster des plats marins et des douceurs.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-1-cafe-aki",
@@ -894,7 +1149,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une boulangerie-café incontournable de la rue Sainte-Anne pour savourer d'excellents choux au matcha et des bentos japonais. L'ambiance y est toujours animée et gourmande.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "08:30-20:30",
+   "08:30-20:30",
+   "08:30-20:30",
+   "08:30-20:30",
+   "08:30-20:30",
+   "08:30-20:30",
+   "08:30-20:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-cafe-musset",
@@ -919,7 +1186,19 @@
   "instagram": "lemussetparis",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un café-brasserie chic et chaleureux situé en face de la Comédie-Française, idéal pour savourer une cuisine française classique et des cocktails soignés dans une ambiance élégante."
+  "summary": "Un café-brasserie chic et chaleureux situé en face de la Comédie-Française, idéal pour savourer une cuisine française classique et des cocktails soignés dans une ambiance élégante.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "07:00-02:00",
+   "07:00-02:00",
+   "07:00-02:00",
+   "07:00-02:00",
+   "07:00-02:00",
+   "07:00-02:00",
+   "07:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-1-bar-a-cocktails-le-roof",
@@ -943,7 +1222,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 80 40 76 40",
-  "summary": "Perché sur le toit de l'Hôtel Madame Rêve, ce rooftop végétalisé offre des cocktails créatifs d'inspiration japonaise et une vue panoramique imprenable sur Paris dans une ambiance feutrée et luxueuse."
+  "summary": "Perché sur le toit de l'Hôtel Madame Rêve, ce rooftop végétalisé offre des cocktails créatifs d'inspiration japonaise et une vue panoramique imprenable sur Paris dans une ambiance feutrée et luxueuse.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-francais-strogoff",
@@ -968,7 +1248,8 @@
   "summary": "Une belle brasserie contemporaine aux accents rétro proposant une cuisine française généreuse et des viandes d'exception, le tout dans une ambiance animée et élégante.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-francais-les-carnivores",
@@ -992,7 +1273,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-francais-one-and-one",
@@ -1017,7 +1299,8 @@
   "instagram": "oneandone.paris",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Niché dans le passage des Panoramas, ce restaurant propose une cuisine française bistronomique et de saison dans une ambiance chaleureuse et intimiste."
+  "summary": "Niché dans le passage des Panoramas, ce restaurant propose une cuisine française bistronomique et de saison dans une ambiance chaleureuse et intimiste.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-francais-brasserie-dubillot",
@@ -1041,7 +1324,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Grande brasserie moderne au décor spectaculaire, idéale pour savourer des classiques de la cuisine française généreux et faits maison dans une ambiance festive et animée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:30",
+   "12:00-15:00,19:00-00:00",
+   "12:00-15:00,19:00-00:00",
+   "12:00-14:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-francais-itacoa",
@@ -1066,7 +1361,8 @@
   "aiFill": 1,
   "phone": "01 42 36 83 88",
   "summary": "Table du chef Rafael Gomes, Itacoa propose une cuisine bistronomique créative et métissée, mettant à l'honneur des produits bruts et de saison dans un cadre épuré.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-francais-the-hoxton",
@@ -1090,7 +1386,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 85 65 75 00",
-  "summary": "Un hôtel-restaurant branché du Sentier où l'on dégute des plats d'inspiration française et internationale dans un cadre design et feutré, très prisé pour son ambiance cosmopolite."
+  "summary": "Un hôtel-restaurant branché du Sentier où l'on dégute des plats d'inspiration française et internationale dans un cadre design et feutré, très prisé pour son ambiance cosmopolite.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "07:00-00:00",
+   "07:00-00:00",
+   "07:00-00:00",
+   "07:00-00:00",
+   "07:00-01:00",
+   "07:00-01:00",
+   "07:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-francais-la-grappe",
@@ -1115,7 +1423,8 @@
   "booking": "https://www.opentable.fr/booking/restref/availability?rid=364110&restref=364110&lang=fr-FR",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une ambiance chaleureuse de bistrot de quartier mettant à l'honneur des vins naturels et une cuisine française de saison axée sur le partage. On y déguste des assiettes créatives et réconfortantes dans un cadre intimiste."
+  "summary": "Une ambiance chaleureuse de bistrot de quartier mettant à l'honneur des vins naturels et une cuisine française de saison axée sur le partage. On y déguste des assiettes créatives et réconfortantes dans un cadre intimiste.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-francais-astair",
@@ -1139,7 +1448,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une brasserie contemporaine élégante nichée au cœur du passage des Panoramas. On y savoure des classiques revisités de la cuisine française et des plats faits maison dans un décor feutré aux accents rétro."
+  "summary": "Une brasserie contemporaine élégante nichée au cœur du passage des Panoramas. On y savoure des classiques revisités de la cuisine française et des plats faits maison dans un décor feutré aux accents rétro.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-francais-circonstances",
@@ -1164,7 +1485,19 @@
   "instagram": "circonstances.paris",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant de quartier à l'atmosphère conviviale et soignée, proposant une cuisine française inventive et de saison. Idéal pour découvrir des assiettes raffinées accompagnées de belles quilles nature."
+  "summary": "Un restaurant de quartier à l'atmosphère conviviale et soignée, proposant une cuisine française inventive et de saison. Idéal pour découvrir des assiettes raffinées accompagnées de belles quilles nature.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-francais-montecito",
@@ -1187,7 +1520,19 @@
   "booking": "https://www.opentable.fr/restref/client/?restref=330084&lang=fr-FR",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table spacieuse et lumineuse aux airs de brasserie californienne chic en plein cœur de Paris. On y apprécie une cuisine généreuse et colorée dans une ambiance branchée et décontractée."
+  "summary": "Une table spacieuse et lumineuse aux airs de brasserie californienne chic en plein cœur de Paris. On y apprécie une cuisine généreuse et colorée dans une ambiance branchée et décontractée.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "07:00-10:30,12:00-14:30,19:00-22:30",
+   "07:00-10:30,12:00-14:30,19:00-22:30",
+   "07:00-10:30,12:00-14:30,19:00-22:30",
+   "07:00-10:30,12:00-14:30,19:00-22:30",
+   "07:00-10:30,12:00-14:30,19:00-22:30",
+   "07:00-11:00,12:00-15:00,19:00-22:30",
+   "07:00-11:00,12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-italien-pizz-aria",
@@ -1212,7 +1557,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-italien-rivolta",
@@ -1237,7 +1583,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-italien-dalmata",
@@ -1263,7 +1610,19 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45",
+   "12:00-14:45,19:00-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-italien-pupetta",
@@ -1288,7 +1647,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-italien-bianco",
@@ -1313,7 +1673,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un restaurant italien chaleureux au cœur de la rue Montorgueil, idéal pour déguster des pizzas napolitaines généreuses et des pasta savoureuses dans une ambiance conviviale.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-italien-focaccia-club",
@@ -1337,7 +1709,19 @@
   "aiFill": 1,
   "phone": "01 42 33 22 11",
   "summary": "Le spot parfait pour savourer des focaccias croustillantes et généreusement garnies de produits frais tout droit venus d'Italie, à déguster sur le pouce dans une ambiance décontractée.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-15:30,18:30-22:30",
+   "12:00-15:30,18:30-22:30",
+   "12:00-15:30,18:30-22:30",
+   "12:00-15:30,18:30-22:30",
+   "12:00-15:30,18:30-23:00",
+   "12:00-15:30,18:30-23:00",
+   "12:00-15:30,18:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-italien-maker",
@@ -1361,7 +1745,19 @@
   "booking": "https://www.thefork.fr/restaurant/maker-jeuneurs-r718947",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un concept innovant de pizzas sur-mesure à composer soi-même avec des ingrédients de qualité, le tout dans un cadre moderne et urbain."
+  "summary": "Un concept innovant de pizzas sur-mesure à composer soi-même avec des ingrédients de qualité, le tout dans un cadre moderne et urbain.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:30-15:00,18:30-23:00",
+   "11:30-15:00,18:30-23:00",
+   "11:30-15:00,18:30-23:00",
+   "11:30-15:00,18:30-23:00",
+   "11:30-15:00,18:30-23:00",
+   "11:30-15:00,18:30-23:00",
+   "11:30-15:00,18:30-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-italien-gruppomimo",
@@ -1385,7 +1781,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 36 50 20",
-  "summary": "Une trattoria branchée et lumineuse qui propose des pâtes fraîches faites maison d'une redoutable gourmandise, notamment les fameuses recréations à la truffe, dans une ambiance festive."
+  "summary": "Une trattoria branchée et lumineuse qui propose des pâtes fraîches faites maison d'une redoutable gourmandise, notamment les fameuses recréations à la truffe, dans une ambiance festive.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:45",
+   "12:00-14:30,19:00-22:45",
+   "12:00-15:00,19:00-22:45",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-burger-les-petites-pepites",
@@ -1409,7 +1817,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse chaleureuse proposant des burgers et sandwichs gourmands faits maison, parfaits pour une pause déjeuner conviviale et réconfortante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-burger-frenchie-to-go",
@@ -1434,7 +1843,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-2-burger-manhattn-s-burgers",
@@ -1458,7 +1868,19 @@
   "aiFill": 1,
   "phone": "01 89 71 31 35",
   "summary": "Un spot dynamique au cœur de Montorgueil qui sert de savoureux burgers d'inspiration belgo-américaine. L'ambiance y est urbaine et conviviale.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-americain-cali-sisters",
@@ -1484,7 +1906,19 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:30,19:00-23:00",
+   "12:00-15:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-2-japonais-gyoza-bar",
@@ -20533,7 +20967,9 @@
   "booking": "https://sveta-nyc.com/party",
   "bookingOk": 2,
   "aiFill": 1,
-  "phone": "+1 212-620-0920"
+  "phone": "+1 212-620-0920",
+  "lat": 40.729671,
+  "lng": -74.004156
  },
  {
   "id": "ig-new-york-manhatta",
@@ -21204,7 +21640,9 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "photo": "https://static.wixstatic.com/media/ac2bd4_77cec424db0140b9a5598660a7c2242e~mv2.jpg/v1/fill/w_2054,h_936,al_c/ac2bd4_77cec424db0140b9a5598660a7c2242e~mv2.jpg"
+  "photo": "https://static.wixstatic.com/media/ac2bd4_77cec424db0140b9a5598660a7c2242e~mv2.jpg/v1/fill/w_2054,h_936,al_c/ac2bd4_77cec424db0140b9a5598660a7c2242e~mv2.jpg",
+  "lat": 40.802717,
+  "lng": -73.968113
  },
  {
   "id": "ig-new-york-abba-bar-grill",
@@ -21648,7 +22086,9 @@
   "booking": "https://resy.com/cities/ny/tsumo",
   "bookingOk": 2,
   "aiFill": 1,
-  "noPhone": 1
+  "noPhone": 1,
+  "lat": 40.795591,
+  "lng": -73.969484
  },
  {
   "id": "ig-new-york-okiboru-udon",
@@ -22142,7 +22582,9 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "lat": 32.059711,
+  "lng": 34.771428
  },
  {
   "id": "ig-tel-aviv-abu-hassan",
@@ -22477,7 +22919,9 @@
   "phone": "07 79 96 62 29",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "lat": 31.779344,
+  "lng": 35.22364
  },
  {
   "id": "ig-jerusalem-andalucia",
