@@ -3809,7 +3809,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-japonais-kuma",
@@ -3833,7 +3834,8 @@
   "aiFill": 1,
   "phone": "01 42 71 80 50",
   "summary": "Adresse incontournable du Marais pour savourer des spécialités japonaises authentiques et raffinées dans un cadre épuré et intimiste.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-americain-janet-by-homer",
@@ -3858,7 +3860,8 @@
   "enriched": 5,
   "photo": "http://static1.squarespace.com/static/63eb5f7029c377736cbfd1b6/t/66704f863f519260382960ae/1718636422844/Screenshot+2023-05-25+at+14.30.23.jpg?format=1500w",
   "bookingScan": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-cacher-tekes",
@@ -3883,7 +3886,8 @@
   "booking": "https://www.tekesrestaurant.com/reservations",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table végétale d'inspiration moyen-orientale audacieuse et créative. L'ambiance y est festive, vibrante et axée sur le partage autour de légumes sublimés."
+  "summary": "Une table végétale d'inspiration moyen-orientale audacieuse et créative. L'ambiance y est festive, vibrante et axée sur le partage autour de légumes sublimés.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-tapas-la-mangerie",
@@ -3908,7 +3912,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "photo": "https://la-mangerie.com/wp-content/uploads/2021/04/home-slider-1.jpg",
-  "summary": "Un spot chaleureux et convivial au cœur du Marais, idéal pour déguster des tapas faits maison créatives et savoureuses dans une ambiance décontractée."
+  "summary": "Un spot chaleureux et convivial au cœur du Marais, idéal pour déguster des tapas faits maison créatives et savoureuses dans une ambiance décontractée.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-4-taiwanais-baobar",
@@ -3934,7 +3939,19 @@
   "aiFill": 1,
   "instagram": "baobar_paris",
   "summary": "Une adresse incontournable pour savourer des baos moelleux et des grillades exquises d'inspiration taïwanaise, le tout dans une ambiance branchée et animée.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-4-cafe-le-saint-regis",
@@ -3959,7 +3976,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un café-brasserie élégant situé sur l'île Saint-Louis, parfait pour admirer la vue tout en profitant d'une cuisine classique parisienne raffinée.",
-  "booking": "https://www.thefork.fr/restaurant/le-saint-regis-r611391"
+  "booking": "https://www.thefork.fr/restaurant/le-saint-regis-r611391",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "08:00-01:00",
+   "08:00-01:00",
+   "08:00-01:00",
+   "08:00-01:00",
+   "08:00-01:00",
+   "08:00-01:00",
+   "08:00-01:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-4-cafe-la-favorite",
@@ -3984,7 +4013,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=363761&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un café au décor fleuri et romantique près de Saint-Paul, idéal pour un brunch gourmand ou un verre dans une atmosphère cosy et chaleureuse."
+  "summary": "Un café au décor fleuri et romantique près de Saint-Paul, idéal pour un brunch gourmand ou un verre dans une atmosphère cosy et chaleureuse.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-5-francais-pee-bee",
@@ -4008,7 +4049,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Pee & Bee propose une cuisine française raffinée et inventive au cœur du 5e arrondissement. L'ambiance y est à la fois chic, chaleureuse et conviviale."
+  "summary": "Pee & Bee propose une cuisine française raffinée et inventive au cœur du 5e arrondissement. L'ambiance y est à la fois chic, chaleureuse et conviviale.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-francais-bibie",
@@ -4031,7 +4073,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Chez Bibie, on savoure des plats français authentiques et soignés dans une atmosphère intime et moderne. Un cadre idéal pour un dîner chaleureux rue Lacépède.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-italien-pepe-pizza",
@@ -4055,7 +4098,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 43 31 15 00",
-  "summary": "Peppe Pizza régale les amateurs de cuisine italienne avec ses pizzas d'exception aux saveurs napolitaines authentiques. L'ambiance y est vibrante et décontractée, idéale pour un moment gourmand rue Mouffetard."
+  "summary": "Peppe Pizza régale les amateurs de cuisine italienne avec ses pizzas d'exception aux saveurs napolitaines authentiques. L'ambiance y est vibrante et décontractée, idéale pour un moment gourmand rue Mouffetard.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-italien-pepita",
@@ -4080,7 +4124,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=354149&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Pepita invite au voyage en Italie avec des pizzas généreuses et des plats signatures savoureux. Le tout dans un décor élégant et festif sur le boulevard Saint-Germain."
+  "summary": "Pepita invite au voyage en Italie avec des pizzas généreuses et des plats signatures savoureux. Le tout dans un décor élégant et festif sur le boulevard Saint-Germain.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-italien-respiro",
@@ -4106,7 +4151,8 @@
   "summary": "Une trattoria chaleureuse au cœur du 5e arrondissement proposant de savoureuses pizzas napolitaines et des plats italiens authentiques. L'ambiance y est conviviale et idéale pour un dîner décontracté.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-italien-arrivederci",
@@ -4130,7 +4176,8 @@
   "instagram": "arrivedercipizzeriaparis",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une pizzeria italienne authentique réputée pour ses excellentes pizzas à la pâte croustillante et ses garnitures généreuses. L'atmosphère y est chaleureuse et typique des trattorias de quartier."
+  "summary": "Une pizzeria italienne authentique réputée pour ses excellentes pizzas à la pâte croustillante et ses garnitures généreuses. L'atmosphère y est chaleureuse et typique des trattorias de quartier.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-corse-u-mulinu",
@@ -4153,7 +4200,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse incontournable pour découvrir les spécialités corses, de la charcuterie aux fromages de pays en passant par de délicieux plats traditionnels. Le tout dans une ambiance conviviale et ensoleillée."
+  "summary": "Une adresse incontournable pour découvrir les spécialités corses, de la charcuterie aux fromages de pays en passant par de délicieux plats traditionnels. Le tout dans une ambiance conviviale et ensoleillée.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-japonais-mimi-ramen",
@@ -4178,7 +4226,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-japonais-lamian-latian",
@@ -4202,7 +4251,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-burger-shiso-burger",
@@ -4226,7 +4276,8 @@
   "aiFill": 1,
   "phone": "01 43 25 41 57",
   "summary": "Goûtez aux fameux burgers fusion aux accents asiatiques, sublimés par la touche unique de la feuille de shiso. L'ambiance est branchée et décontractée, avec une vue imprenable sur les quais de Seine.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-burger-smash-burger",
@@ -4253,7 +4304,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-5-thailandais-le-wok-saint-germain",
@@ -4278,7 +4330,8 @@
   "aiFill": 1,
   "instagram": "lewoksaintgermain",
   "summary": "Appréciez des plats thaïlandais savoureux préparés au wok, généreux et parfumés aux épices traditionnelles. L'ambiance est chaleureuse et animée, idéale pour un dîner dépaysant.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-6-francais-laperouse",
@@ -4304,7 +4357,19 @@
   "aiFill": 1,
   "summary": "Institution historique parisienne offrant une cuisine française raffinée dans des salons particuliers somptueux et feutrés. On y savoure des plats classiques revisités avec élégance dans une ambiance romantique et chargée d'histoire.",
   "resa": "inconnu",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-francais-le-sixieme",
@@ -4328,7 +4393,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-6-francais-le-hibou",
@@ -4353,7 +4419,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=353788&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Brasserie chic et branchée au cœur de Saint-Germain-des-Prés, idéale pour déguster des plats bistrotiers soignés et des cocktails créatifs. L'ambiance y est vibrante et artistique, entourée d'un décor éclectique et chaleureux."
+  "summary": "Brasserie chic et branchée au cœur de Saint-Germain-des-Prés, idéale pour déguster des plats bistrotiers soignés et des cocktails créatifs. L'ambiance y est vibrante et artistique, entourée d'un décor éclectique et chaleureux.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-francais-shiro",
@@ -4377,7 +4455,19 @@
   "booking": "https://www.thefork.fr/restaurant/shiro-r694643",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Restaurant fusion unique proposant une gastronomie française aux délicates influences japonaises. L'ambiance y est élégante, épurée et intimiste, parfaite pour un dîner raffiné."
+  "summary": "Restaurant fusion unique proposant une gastronomie française aux délicates influences japonaises. L'ambiance y est élégante, épurée et intimiste, parfaite pour un dîner raffiné.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-francais-brasserie-des-pres",
@@ -4401,7 +4491,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=361762&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une brasserie vivante et chaleureuse au cœur de Saint-Germain-des-Prés, idéale pour savourer des classiques revisités et de généreux desserts faits maison dans un décor soigné."
+  "summary": "Une brasserie vivante et chaleureuse au cœur de Saint-Germain-des-Prés, idéale pour savourer des classiques revisités et de généreux desserts faits maison dans un décor soigné.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "08:30-00:00",
+   "08:30-00:00",
+   "08:30-00:00",
+   "08:30-00:00",
+   "08:30-00:30",
+   "08:30-00:30",
+   "08:30-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-italien-agata",
@@ -4425,7 +4527,19 @@
   "instagram": "agata.pizzeria",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse incontournable pour les amateurs de pizza napolitaine authentique, proposant des produits frais importés d'Italie dans une ambiance conviviale et moderne."
+  "summary": "Une adresse incontournable pour les amateurs de pizza napolitaine authentique, proposant des produits frais importés d'Italie dans une ambiance conviviale et moderne.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-italien-vita",
@@ -4452,7 +4566,19 @@
   "summary": "Un restaurant chaleureux aux saveurs ensoleillées, parfait pour déguster des pâtes fraîches savoureuses et des antipasti traditionnels dans une atmosphère typiquement italienne.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-italien-anima",
@@ -4476,7 +4602,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une trattoria branchée et animée où l'on se régale de pizzas croustillantes et de plats italiens raffinés, le tout dans une ambiance branchée et accueillante."
+  "summary": "Une trattoria branchée et animée où l'on se régale de pizzas croustillantes et de plats italiens raffinés, le tout dans une ambiance branchée et accueillante.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-italien-cassaro-s",
@@ -4499,7 +4637,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse italienne chaleureuse au cœur de Saint-Germain-des-Prés, idéale pour savourer des pizzas croustillantes et des pâtes fraîches dans une ambiance décontractée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-6-burger-factory-co",
@@ -4524,7 +4663,10 @@
   "aiFill": 1,
   "phone": "01 43 25 15 15",
   "summary": "Un spot gourmand inspiré de New York proposant de généreux burgers faits maison et des cheesecakes ultra-gourmands, le tout dans une ambiance branchée et conviviale.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "closed": 1,
+  "closedSrc": "https://www.google.com/search?q=factory+%26+co+boulevard+saint-germain+ferme"
  },
  {
   "id": "paris-6-japonais-ippudo-paris",
@@ -4548,7 +4690,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Le temple incontournable des ramens authentiques, où l'on déguste des bouillons savoureux et mijotés des heures dans une ambiance dynamique et moderne.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:45-16:00,18:00-23:00",
+   "11:45-16:00,18:00-23:00",
+   "11:45-16:00,18:00-23:00",
+   "11:45-16:00,18:00-23:00",
+   "11:45-16:00,18:00-23:30",
+   "11:45-16:00,18:00-23:30",
+   "11:45-16:00,18:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-japonais-blueberry",
@@ -4572,7 +4726,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un maki bar branché et intimiste qui revisite les classiques japonais avec créativité et raffinement, proposant des rouleaux savoureux aux associations audacieuses."
+  "summary": "Un maki bar branché et intimiste qui revisite les classiques japonais avec créativité et raffinement, proposant des rouleaux savoureux aux associations audacieuses.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-japonais-o-kome",
@@ -4596,7 +4762,8 @@
   "aiFill": 1,
   "phone": "01 42 02 81 74",
   "summary": "Un comptoir intimiste idéal pour déguster d'authentiques onigiris façonnés à la main avec du riz japonais de grande qualité. L'ambiance y est chaleureuse et décontractée, parfaite pour un déjeuner sur le pouce.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-6-japonais-sushi-tsukizi",
@@ -4620,7 +4787,8 @@
   "booking": "https://www.opentable.fr/booking/restref/availability?restRef=435936&lang=fr-FR",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse incontournable pour les amateurs de sushis et sashimis d'une fraîcheur irréprochable. On y savoure des créations raffinées dans un cadre épuré et intimiste."
+  "summary": "Une adresse incontournable pour les amateurs de sushis et sashimis d'une fraîcheur irréprochable. On y savoure des créations raffinées dans un cadre épuré et intimiste.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-6-chinois-yoom",
@@ -4645,7 +4813,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 43 26 66 89",
-  "summary": "Le rendez-vous incontournable pour déguster des dim sum faits maison aux garnitures variées et savoureuses. L'ambiance y est conviviale et moderne, parfaite pour un repas à partager."
+  "summary": "Le rendez-vous incontournable pour déguster des dim sum faits maison aux garnitures variées et savoureuses. L'ambiance y est conviviale et moderne, parfaite pour un repas à partager.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-6-coreen-joayo",
@@ -4669,7 +4838,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un restaurant chaleureux proposant une cuisine coréenne généreuse, mettant à l'honneur des spécialités comme le poulet frit croustillant et les fameux bibimbaps. L'ambiance y est accueillante et décontractée près du jardin du Luxembourg.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-coreen-kokodak",
@@ -4692,7 +4873,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "lat": 48.853995,
-  "lng": 2.339148
+  "lng": 2.339148,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-indien-desi-road",
@@ -4716,7 +4909,19 @@
   "aiFill": 1,
   "phone": "01 43 26 44 91",
   "booking": "https://www.thefork.fr/restaurant/desi-road-r387979",
-  "summary": "Un restaurant indien contemporain qui revisite avec finesse la cuisine des rues de Bombay dans un décor chaleureux et élégant. On y déguste des tapas indiens savoureux et des cocktails originaux."
+  "summary": "Un restaurant indien contemporain qui revisite avec finesse la cuisine des rues de Bombay dans un décor chaleureux et élégant. On y déguste des tapas indiens savoureux et des cocktails originaux.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-fusion-metou",
@@ -4742,7 +4947,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-6-brunch-tipana",
@@ -4766,7 +4972,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-6-cafe-patrol",
@@ -4792,7 +4999,19 @@
   "summary": "Un café-brasserie idéalement situé face au Jardin du Luxembourg, parfait pour déguster des burgers généreux ou une cuisine de brasserie dans une ambiance branchée et chaleureuse.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-6-cafe-yakuza-katsu-sando-coffee",
@@ -4818,7 +5037,10 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "closed": 1,
+  "closedSrc": "https://www.instagram.com/yakuza.paris/"
  },
  {
   "id": "paris-7-francais-thoumieux",
@@ -4842,7 +5064,10 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Institution parisienne incontournable du 7e arrondissement, Thoumieux propose une cuisine française de bistrot raffinée et généreuse dans un décor élégant et intemporel."
+  "summary": "Institution parisienne incontournable du 7e arrondissement, Thoumieux propose une cuisine française de bistrot raffinée et généreuse dans un décor élégant et intemporel.",
+  "ohTry": "2026-11-09",
+  "closed": 1,
+  "closedSrc": "https://www.thoumieux.fr/"
  },
  {
   "id": "paris-7-francais-mersea",
@@ -4866,7 +5091,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 22 23 48",
-  "summary": "Un fast-good de la mer branché situé dans le complexe Beaupassage, idéal pour goûter des fish & chips revisités et des plats de poisson savoureux dans une ambiance contemporaine."
+  "summary": "Un fast-good de la mer branché situé dans le complexe Beaupassage, idéal pour goûter des fish & chips revisités et des plats de poisson savoureux dans une ambiance contemporaine.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-7-italien-solum",
@@ -4888,7 +5125,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Situé sous le pont Alexandre III, le Solum propose une cuisine italienne raffinée dans un cadre branché et festif avec vue sur la Seine. C'est l'endroit idéal pour déguster des plats méditerranéens tout en profitant d'une ambiance musicale animée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-7-burger-burger-pere-fils",
@@ -4915,7 +5153,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-7-japonais-iode-sushi",
@@ -4940,7 +5190,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=357365&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Iodé Sushi propose des créations de sushis et makis d'une grande fraîcheur, mettant à l'honneur des produits de la mer d'excellente qualité. L'ambiance est intimiste et épurée, parfaite pour un déjeuner ou un dîner tout en finesse."
+  "summary": "Iodé Sushi propose des créations de sushis et makis d'une grande fraîcheur, mettant à l'honneur des produits de la mer d'excellente qualité. L'ambiance est intimiste et épurée, parfaite pour un déjeuner ou un dîner tout en finesse.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "11:00-14:30,18:00-22:30",
+   "11:00-14:30,18:00-22:30",
+   "11:00-14:30,18:00-22:30",
+   "11:00-14:30,18:00-22:30",
+   "11:00-14:30,18:00-22:30",
+   "11:00-14:30,18:00-22:30",
+   "18:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-7-japonais-vesper",
@@ -4964,7 +5226,19 @@
   "booking": "https://www.sevenrooms.com/explore/fitzgroup/reservations/create/search?venues=camondo%2Chollywoodsavoy%2Clafontainegaillon%2Cfitzgerald%2Cabstinence",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Vesper propose une cuisine fusion nippo-péruvienne inventive et raffinée, idéale pour découvrir des accords de saveurs audacieux. Le cadre est somptueux et feutré, parfait pour un dîner chic et branché dans le 7e arrondissement."
+  "summary": "Vesper propose une cuisine fusion nippo-péruvienne inventive et raffinée, idéale pour découvrir des accords de saveurs audacieux. Le cadre est somptueux et feutré, parfait pour un dîner chic et branché dans le 7e arrondissement.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:30",
+   "12:00-15:00,19:30-23:30",
+   "12:00-15:00,19:30-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-7-indien-new-jawad-new-balal",
@@ -4991,7 +5265,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-7-brunch-kozy",
@@ -5016,7 +5302,19 @@
   "aiFill": 1,
   "phone": "09 81 60 17 38",
   "summary": "Un coffee shop lumineux et accueillant, idéal pour déguster des pancakes moelleux, des avocado toasts généreux et d'excellents lattes dans une ambiance détendue.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:30",
+   "09:00-16:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-7-cafe-cuppa-cafe",
@@ -5041,7 +5339,8 @@
   "aiFill": 1,
   "summary": "Un café de quartier chaleureux et convivial, parfait pour savourer des pâtisseries maison accompagnées d'un café de spécialité dans une ambiance cosy.",
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-francais-beefbar",
@@ -5065,7 +5364,8 @@
   "aiFill": 1,
   "phone": "01 44 31 37 00",
   "summary": "Un temple de la viande d'exception au design spectaculaire dans le Triangle d'Or. On y déguste des viandes d'une tendre rareté et des créations fusion dans une ambiance chic et branchée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-francais-mamamia",
@@ -5089,7 +5389,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 47 20 32 82",
-  "summary": "Une table italienne élégante et festive à deux pas des Champs-Élysées, idéale pour savourer des pâtes fraîches et des cocktails dans une ambiance vibrante et chic."
+  "summary": "Une table italienne élégante et festive à deux pas des Champs-Élysées, idéale pour savourer des pâtes fraîches et des cocktails dans une ambiance vibrante et chic.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-francais-le-chat-blanc",
@@ -5114,7 +5415,8 @@
   "instagram": "lechatblanc.restaurant",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant au cadre chaleureux et soigné proposant une cuisine française raffinée, parfaite pour un déjeuner d'affaires ou un dîner intimiste dans le 8e arrondissement."
+  "summary": "Un restaurant au cadre chaleureux et soigné proposant une cuisine française raffinée, parfaite pour un déjeuner d'affaires ou un dîner intimiste dans le 8e arrondissement.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-francais-le-piaf",
@@ -5138,7 +5440,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 25 18 36",
-  "summary": "Un restaurant et piano-bar feutré au charme rétro, où l'on déguste une cuisine française classique et généreuse tout en profitant d'une ambiance musicale live enveloppante."
+  "summary": "Un restaurant et piano-bar feutré au charme rétro, où l'on déguste une cuisine française classique et généreuse tout en profitant d'une ambiance musicale live enveloppante.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-francais-sphere",
@@ -5162,7 +5465,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 43 12 88 56",
-  "summary": "Une table gastronomique lumineuse et épurée offrant une cuisine française inventive aux accents internationaux, sublimée par des assiettes d'une grande finesse."
+  "summary": "Une table gastronomique lumineuse et épurée offrant une cuisine française inventive aux accents internationaux, sublimée par des assiettes d'une grande finesse.",
+  "ohTry": "2026-11-09",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-09"
  },
  {
   "id": "paris-8-italien-noto",
@@ -5186,7 +5501,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une table italienne festive et élégante au cœur de la Salle Pleyel, idéale pour savourer des pâtes raffinées dans une ambiance musicale et vibrante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-italien-maitre-pierre",
@@ -5213,7 +5529,8 @@
   "resa": "telephone",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-italien-giulia",
@@ -5237,7 +5554,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table italienne chic et intimiste du 8e arrondissement, où l'on savoure des spécialités authentiques et des pâtes fraîches dans un cadre élégant."
+  "summary": "Une table italienne chic et intimiste du 8e arrondissement, où l'on savoure des spécialités authentiques et des pâtes fraîches dans un cadre élégant.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-japonais-yatai-ramen",
@@ -5262,7 +5580,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 65 59 83",
-  "summary": "Un comptoir japonais chaleureux qui propose des ramens authentiques aux bouillons savoureux, parfaits pour un déjeuner rapide ou un dîner réconfortant."
+  "summary": "Un comptoir japonais chaleureux qui propose des ramens authentiques aux bouillons savoureux, parfaits pour un déjeuner rapide ou un dîner réconfortant.",
+  "ohTry": "2026-11-09"
  },
  {
   "id": "paris-8-japonais-l-abysse",
