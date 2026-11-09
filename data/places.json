@@ -18844,7 +18844,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "sans",
-  "ogTry": 2
+  "ogTry": 2,
+  "pressTry": 1
  },
  {
   "id": "ig-paris-princess-crepe",
@@ -22396,7 +22397,8 @@
   "photo": "https://cdn.sanity.io/images/pxj1ei6x/production/f9fc98f070765f14dc7acb8d93bfbf7f33b1c69f-2800x1500.jpg?rect=0,15,2800,1470&w=1200&h=630&fit=crop",
   "bookingScan": 1,
   "booking": "https://www.sevenrooms.com/explore/pinkmamma/reservations",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "searched": 1
  },
  {
   "id": "bigmamma-libertino",
