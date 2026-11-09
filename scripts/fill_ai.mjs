@@ -255,6 +255,36 @@ Réponds uniquement avec un tableau JSON : [{"id": "", "resa": "en_ligne|telepho
   await new Promise((ok) => setTimeout(ok, 5000));
 }
 
+// Wikimedia Commons : photo libre dont le nom de fichier contient le nom du lieu (devantures, salles connues…).
+async function commonsPhoto(p) {
+  const n = norm(p.name.replace(/\(.*\)/, ""));
+  if (n.length < 6) return "";
+  const city = p.list === "villes" ? p.city || "" : "Paris";
+  const q = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=8&gsrsearch=${encodeURIComponent(`"${p.name.replace(/\(.*\)/, "").trim()}" ${city}`)}&prop=imageinfo&iiprop=url|size|mime&iiurlwidth=1000`;
+  try {
+    const r = await fetch(q, { headers: { "user-agent": "GoodFoodList/1.0 (carnet d'adresses personnel; github.com/tulliodisegni-art/The-good-food-list)" } });
+    const pages = Object.values((await r.json())?.query?.pages || {}).sort((a, b) => a.index - b.index);
+    for (const pg of pages) {
+      const ii = pg.imageinfo?.[0];
+      if (!ii || !/jpeg|png|webp/.test(ii.mime) || ii.width < 600) continue;
+      const t = norm(pg.title.replace(/^File:|\.\w+$/g, ""));
+      if (!t.includes(n) || (city && !t.includes(norm(city)) && !t.includes(norm(p.address || "").slice(0, 8)) && t.length > n.length + 25)) continue;
+      return ii.thumburl || ii.url;
+    }
+  } catch {}
+  return "";
+}
+const noPicC = places.filter((p) => !p.photo && !p.commonsTry);
+let cpics = 0;
+for (const p of noPicC) {
+  p.commonsTry = 1;
+  const u = await commonsPhoto(p);
+  if (u) { p.photo = u; cpics++; console.log(`${p.name} : photo Wikimedia Commons (${u.split("/").pop().slice(0, 60)})`); }
+  await new Promise((ok) => setTimeout(ok, 300));
+}
+console.log(`Commons : ${noPicC.length} fiches regardées, ${cpics} photos`);
+if (noPicC.length) await writeFile(FILE, JSON.stringify(places, null, 1));
+
 // Photos par la presse : l'IA donne l'adresse d'un article ou d'une fiche consacrés au lieu (Le Fooding, Sortir à Paris,
 // Time Out, guides…) ; on ouvre la page, on vérifie qu'elle parle bien de ce lieu, et on prend son image de partage.
 const PRESS = 6;
