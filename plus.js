@@ -79,12 +79,35 @@ function collPickHtml(p) {
   return `${all.length ? `<div class="coll-opts">${all.map((c) => `<button class="coll-opt ${c.ids.includes(p.id) ? "on" : ""}" data-coll-toggle="${esc(c.id)}" aria-pressed="${c.ids.includes(p.id)}">${esc(c.name)}<small>${c.ids.length}</small></button>`).join("")}</div>` : ""}
     <form class="coll-new" id="collNew"><input name="n" maxlength="40" placeholder="Nouvelle collection : Date, Anniversaire…" autocomplete="off" enterkeyhint="done"><button class="btn" type="submit">Créer</button></form>`;
 }
-// Rangée de collections en haut de « Mes envies ».
-function collRail() {
+// Collections, dans l'onglet « Mes listes ».
+function collRail(grid) {
   const all = colls();
-  return `${all.length ? `<h3 class="coll-h">Mes collections</h3>` : ""}<div class="coll-rail">${all.map((c) => `<button class="coll-card" data-coll-open="${esc(c.id)}"><b>${esc(c.name)}</b><small>${c.ids.length} adresse${c.ids.length > 1 ? "s" : ""}</small></button>`).join("")}
+  return `<div class="coll-rail${grid ? " grid" : ""}">${all.map((c) => `<button class="coll-card" data-coll-open="${esc(c.id)}"><b>${esc(c.name)}</b><small>${c.ids.length} adresse${c.ids.length > 1 ? "s" : ""}</small></button>`).join("")}
     ${all.length ? "" : `<p class="coll-hint">Range tes adresses en collections (Date, Anniversaire, Avec les parents…) depuis une fiche, puis envoie-les à un ami.</p>`}</div>`;
 }
+// Onglet « Mes listes » : envies (cœurs), collections, et mon classement (adresses testées, par note).
+const LISTS_TABS = [["envies", "Envies"], ["colls", "Collections"], ["top", "Classement"]];
+function listsBody(L, head) {
+  const tab = L.tab || "envies";
+  const seg = `<div class="lists-seg" role="tablist">${LISTS_TABS.map(([k, t]) => `<button role="tab" class="${k === tab ? "on" : ""}" aria-selected="${k === tab}" data-lists-tab="${k}">${t}</button>`).join("")}</div>`;
+  let body = "";
+  if (tab === "envies") {
+    const items = S.places.filter((p) => p.want);
+    body = items.length ? gfGrouped(items) : `<p class="none">Touche le cœur d'une fiche pour la garder ici.</p>`;
+  } else if (tab === "colls") {
+    body = collRail(true);
+  } else {
+    const rated = S.places.filter((p) => p.tested && p.rating).sort((a, b) => b.rating - a.rating || a.name.localeCompare(b.name));
+    const unrated = S.places.filter((p) => p.tested && !p.rating).length;
+    body = rated.length
+      ? `<div class="top-acts"><button class="btn" data-top-share>${icon("share")}Envoyer mon top</button></div>
+        <div class="cards top-list">${rated.map((p, i) => `<div class="top-item"><span class="top-n">${i + 1}</span><span class="top-s">${"★".repeat(p.rating)}</span>${gfCard(p)}</div>`).join("")}</div>
+        ${unrated ? `<p class="none">${unrated} adresse${unrated > 1 ? "s" : ""} testée${unrated > 1 ? "s" : ""} sans note : ouvre leur fiche pour leur donner des étoiles.</p>` : ""}`
+      : `<p class="none">Note tes adresses testées avec les étoiles de leur fiche : ton classement se construit ici.</p>`;
+  }
+  return head("Mes listes", seg) + body;
+}
+
 // Page d'une collection (la mienne, ou reçue par lien).
 function collBody(L, head) {
   if (L.sharedColl) {
@@ -171,8 +194,14 @@ document.addEventListener("click", (e) => {
     return;
   }
   if (b.dataset.collDel) {
-    if (b.dataset.confirm) { saveColls(colls().filter((x) => x.id !== b.dataset.collDel)); gfOpen({ want: 1 }); toast("Collection supprimée"); }
+    if (b.dataset.confirm) { saveColls(colls().filter((x) => x.id !== b.dataset.collDel)); gfOpen({ want: 1, tab: "colls" }); toast("Collection supprimée"); }
     else { b.dataset.confirm = "1"; b.textContent = "Touche encore pour confirmer"; }
+    return;
+  }
+  if (b.dataset.listsTab) { gfOpen({ want: 1, tab: b.dataset.listsTab }, true); return; }
+  if (b.hasAttribute("data-top-share")) {
+    const top = S.places.filter((p) => p.tested && p.rating).sort((x, y) => y.rating - x.rating).slice(0, 20);
+    shareColl({ name: `Mon top ${top.length}`, ids: top.map((p) => p.id) });
     return;
   }
   if (b.hasAttribute("data-coll-save") && GF.list?.sharedColl) {
