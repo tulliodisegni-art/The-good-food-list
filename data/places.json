@@ -6382,7 +6382,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une brasserie élégante et accueillante proposant une cuisine française classique et soignée, parfaite pour un déjeuner d'affaires ou un dîner dans une ambiance parisienne chic."
+  "summary": "Une brasserie élégante et accueillante proposant une cuisine française classique et soignée, parfaite pour un déjeuner d'affaires ou un dîner dans une ambiance parisienne chic.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-francais-piou-piou",
@@ -6407,7 +6419,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Le paradis du poulet frit croustillant et ultra-gourmand, à déguster dans une ambiance décontractée et branchée.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-francais-rivages",
@@ -6431,7 +6455,19 @@
   "instagram": "rivages_restaurant",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table raffinée aux accents marins et végétaux, offrant une cuisine inventive et délicate dans un cadre lumineux et feutré."
+  "summary": "Une table raffinée aux accents marins et végétaux, offrant une cuisine inventive et délicate dans un cadre lumineux et feutré.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-francais-le-shack",
@@ -6455,7 +6491,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=363809",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Installé dans l'ancienne imprimerie du Calmann-Lévy, Le Shack propose une cuisine de bistrot moderne et raffinée dans un cadre spectaculaire sous une immense verrière. L'ambiance y est à la fois studieuse en journée et chaleureuse pour un dîner ou un verre entre amis."
+  "summary": "Installé dans l'ancienne imprimerie du Calmann-Lévy, Le Shack propose une cuisine de bistrot moderne et raffinée dans un cadre spectaculaire sous une immense verrière. L'ambiance y est à la fois studieuse en journée et chaleureuse pour un dîner ou un verre entre amis.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "08:30-00:00",
+   "08:30-00:00",
+   "08:30-00:00",
+   "08:30-00:00",
+   "08:30-00:00",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-francais-perlouse",
@@ -6478,7 +6526,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=350010&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Bar à tapas et cocktails de quartier à l'ambiance intimiste et feutrée, idéal pour grignoter des assiettes à partager. On y apprécie l'accueil chaleureux et le décor soigné qui invite à la détente au cœur de Pigalle."
+  "summary": "Bar à tapas et cocktails de quartier à l'ambiance intimiste et feutrée, idéal pour grignoter des assiettes à partager. On y apprécie l'accueil chaleureux et le décor soigné qui invite à la détente au cœur de Pigalle.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-francais-le-roi-du-pot-au-feu",
@@ -6502,7 +6562,19 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-francais-bien-eleve",
@@ -6525,7 +6597,8 @@
   "aiFill": 1,
   "summary": "Véritable temple des viandes d'exception maturé et des produits sourcés avec soin, Bien Élevé séduit les amateurs de bonne barbaque. L'ambiance est conviviale, chic et décontractée, parfaite pour un dîner carnivore de qualité.",
   "lat": 48.873992,
-  "lng": 2.34322
+  "lng": 2.34322,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-francais-petit-bon",
@@ -6546,7 +6619,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-italien-pepe-ronchon",
@@ -6572,7 +6646,8 @@
   "summary": "Une ambiance chaleureuse et conviviale pour déguster d'authentiques pizzas italiennes et des antipasti savoureux. On y vient pour savourer des produits frais directement importés d'Italie.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-italien-peppe",
@@ -6596,7 +6671,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Un spot incontournable pour les amateurs de pizza napolitaine signatures imaginées par le champion du monde Peppe Cutraro. L'ambiance y est animée et résolument chaleureuse.",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-burger-cot-cot",
@@ -6623,7 +6699,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-15:00,19:00-22:30",
+   "12:00-15:00,19:00-22:30",
+   "12:00-15:00,19:00-22:30",
+   "12:00-15:00,19:00-22:30",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-kibo-noki",
@@ -6650,7 +6738,8 @@
   "summary": "Un cadre immersif et végétalisé pour déguster des ramens originaux et des katsu sando savoureux. L'ambiance est chaleureuse et dépaysante, parfaite pour un voyage culinaire au cœur du Japon.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-neko-ramen",
@@ -6675,7 +6764,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un temple du ramen au décor spectaculaire, avec son immense cerisier en fleurs au centre de la salle. On y savoure des bouillons riches et mijotés longuement, dans une ambiance survoltée et festive.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-15:00,18:00-22:30",
+   "12:00-15:00,18:00-22:30",
+   "12:00-15:00,18:00-22:30",
+   "12:00-15:00,18:00-23:00",
+   "12:00-15:00,18:00-23:00",
+   "12:00-15:00,18:00-23:00",
+   "12:00-15:00,18:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-naruto-ramen",
@@ -6700,7 +6801,19 @@
   "booking": "https://reservation.dish.co/widget/hydra-0d3c17b0-de64-11eb-9d88-1ff946f3a17d",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une cantine japonaise chaleureuse qui plonge les amateurs de mangas et de culture pop dans l'univers de Naruto. On y déguste des ramens généreux et des gyozas faits maison dans une ambiance décontractée."
+  "summary": "Une cantine japonaise chaleureuse qui plonge les amateurs de mangas et de culture pop dans l'univers de Naruto. On y déguste des ramens généreux et des gyozas faits maison dans une ambiance décontractée.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "11:45-15:00,18:45-22:30",
+   "11:45-15:00,18:45-22:30",
+   "11:45-15:00,18:45-22:30",
+   "11:45-15:00,18:45-22:30",
+   "11:45-15:00,18:45-23:00",
+   "11:45-15:00,18:45-23:00",
+   "11:45-15:00,18:45-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-kokuban",
@@ -6727,7 +6840,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-23:00",
+   "11:30-15:00,18:00-23:00",
+   "11:30-15:00,18:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-okito",
