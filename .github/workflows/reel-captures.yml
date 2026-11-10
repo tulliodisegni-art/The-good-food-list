@@ -1,0 +1,108 @@
+name: Captures pour le réel
+
+on:
+  push:
+    branches: [claude/project-thread-gsu0c8]
+    paths: [.github/workflows/reel-captures.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  captures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Captures de l'appli en ligne
+        run: |
+          mkdir /tmp/cap && cd /tmp/cap
+          npm init -y > /dev/null
+          npm install playwright@1.48.2 > /dev/null
+          npx playwright install --with-deps chromium > /dev/null
+          mkdir out
+          cat > shot.js <<'JS'
+          const { chromium } = require("playwright");
+          const URL = "https://tulliodisegni-art.github.io/The-good-food-list/";
+          (async () => {
+            const b = await chromium.launch();
+            const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, locale: "fr-FR", timezoneId: "Europe/Paris",
+              userAgent: "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+              geolocation: { latitude: 48.8674, longitude: 2.3636 }, permissions: ["geolocation"] });
+            await ctx.addInitScript(() => { try { localStorage.setItem("gate.goodfood.ok", "1"); } catch (e) {} });
+            const open = async (hash) => {
+              const p = await ctx.newPage();
+              p.on("pageerror", (e) => console.log("ERREUR:", e.message));
+              await p.goto(URL + "#" + hash, { waitUntil: "networkidle" }).catch(() => {});
+              await p.waitForTimeout(3000);
+              return p;
+            };
+            const clean = (p) => p.evaluate(() => document.querySelectorAll(".ac-ov,.gt-ov").forEach((e) => e.remove()));
+            const step = async (name, fn) => { try { await fn(); console.log("ok", name); } catch (e) { console.log("RATÉ", name, String(e.message).slice(0, 300)); } };
+            const lazy = async (p) => { const h = await p.evaluate(() => document.documentElement.scrollHeight); for (let y = 0; y < h; y += 500) { await p.evaluate((y) => window.scrollTo(0, y), y); await p.waitForTimeout(350); } await p.evaluate(() => window.scrollTo(0, 0)); await p.waitForTimeout(1500); };
+
+            for (const t of ["accueil", "precieuses"]) await step(t, async () => {
+              const p = await open(t); await clean(p); await lazy(p); await clean(p);
+              await p.screenshot({ path: `out/${t}_vp.png` });
+              await p.addStyleTag({ content: "nav.tabs{display:none!important}" });
+              await p.screenshot({ path: `out/${t}_full.png`, fullPage: true });
+              await p.close();
+            });
+            for (const c of ["Italien", "Japonais"]) await step("liste " + c, async () => {
+              const p = await open("accueil"); await clean(p);
+              await p.getByText(c, { exact: true }).first().click(); await p.waitForTimeout(2500); await clean(p); await lazy(p);
+              await p.screenshot({ path: `out/liste_${c}_vp.png` });
+              await p.addStyleTag({ content: "nav.tabs{display:none!important}" });
+              await p.screenshot({ path: `out/liste_${c}_full.png`, fullPage: true, clip: undefined });
+              await p.close();
+            });
+            await step("envie", async () => {
+              const p = await open("accueil"); await clean(p);
+              await p.fill("#gfWish", "Un italien romantique pour un date");
+              await p.locator("#gfWish").scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -250)); await p.waitForTimeout(600);
+              await p.screenshot({ path: "out/envie_saisie.png" });
+              await p.click("[data-gf-wish]"); await p.waitForTimeout(2500); await clean(p); await lazy(p);
+              await p.screenshot({ path: "out/envie_resultat.png" });
+              await p.close();
+            });
+            const fiches = ["paris-2-francais-astair", "paris-6-italien-anima", "paris-1-francais-pied-de-cochon", "paris-2-italien-gruppomimo"];
+            for (const id of fiches) await step("fiche " + id, async () => {
+              const p = await open("accueil"); await clean(p);
+              await p.evaluate((id) => openSheet(id), id); await p.waitForTimeout(3500); await clean(p);
+              await p.screenshot({ path: `out/fiche_${id}_000.png` });
+              const max = await p.evaluate(() => { const s = document.getElementById("sheet"); return s.scrollHeight - s.clientHeight; });
+              console.log("défilement fiche", id, max);
+              let i = 1;
+              for (let y = 150; y < max + 150; y += 150) {
+                await p.evaluate((y) => { document.getElementById("sheet").scrollTop = y; }, Math.min(y, max)); await p.waitForTimeout(500);
+                await p.screenshot({ path: `out/fiche_${id}_${String(i++).padStart(3, "0")}.png` });
+              }
+              console.log("pas", await p.evaluate(() => document.getElementById("sheet").scrollTop));
+              await p.close();
+            });
+            await step("carte", async () => {
+              const p = await open("carte"); await clean(p); await p.waitForTimeout(6000); await clean(p);
+              await p.screenshot({ path: "out/carte.png" });
+              await p.close();
+            });
+            await step("itineraire", async () => {
+              const p = await open("accueil"); await clean(p);
+              await p.evaluate(() => showRoute("paris-2-francais-astair"));
+              await p.waitForTimeout(12000); await clean(p);
+              await p.screenshot({ path: "out/route_defaut.png" });
+              for (const m of ["foot", "car", "bike", "transit"]) {
+                const btn = p.locator(`[data-route-mode="${m}"]`);
+                if (await btn.count()) { await btn.click(); await p.waitForTimeout(3500); await p.screenshot({ path: `out/route_${m}.png` }); }
+              }
+              await p.close();
+            });
+            await b.close();
+          })();
+          JS
+          node shot.js
+          ls -la out | head -80
+      - name: Garder les captures sur la branche
+        run: |
+          rm -rf reel-captures && mkdir reel-captures && cp /tmp/cap/out/* reel-captures/
+          git add reel-captures
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "Captures pour le réel"
+          git push
