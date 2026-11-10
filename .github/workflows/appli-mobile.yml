@@ -1,0 +1,75 @@
+name: Appli mobile (versions de test)
+
+# Fabrique l'appli Android (APK à installer sur un téléphone) et l'appli iPhone pour le simulateur,
+# sur les serveurs de GitHub (un PC Windows ne peut pas fabriquer d'appli iPhone).
+# Les fichiers sont à télécharger en bas de la page du passage, rubrique « Artifacts ».
+# Pour TestFlight et l'App Store, il faudra ajouter la signature Apple (voir APPLI-MOBILE.md).
+
+on:
+  push:
+    branches: [app-mobile-capacitor]
+  workflow_dispatch:
+
+concurrency:
+  group: appli-mobile-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  android:
+    name: Android (APK de test)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Firebase (notifications Android), si le secret existe
+        env:
+          GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
+        run: if [ -n "$GOOGLE_SERVICES_JSON" ]; then echo "$GOOGLE_SERVICES_JSON" > android/app/google-services.json; fi
+      - run: npm ci
+      - name: Copier l'appli web dans le projet Android
+        run: node scripts/build_www.mjs && npx cap sync android
+      - name: Fabriquer l'APK
+        working-directory: android
+        run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon --stacktrace
+      - uses: actions/upload-artifact@v4
+        with:
+          name: good-food-android-test
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 30
+
+  ios:
+    name: iPhone (simulateur)
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Copier l'appli web dans le projet iPhone
+        run: node scripts/build_www.mjs && npx cap sync ios
+      - name: Fabriquer l'appli pour le simulateur (sans signature)
+        run: |
+          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Debug \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO build | tail -n 40
+          test -d build/Build/Products/Debug-iphonesimulator/App.app
+          cd build/Build/Products/Debug-iphonesimulator && zip -qry "$GITHUB_WORKSPACE/GoodFood-simulateur.zip" App.app
+      - uses: actions/upload-artifact@v4
+        with:
+          name: good-food-ios-simulateur
+          path: GoodFood-simulateur.zip
+          retention-days: 30

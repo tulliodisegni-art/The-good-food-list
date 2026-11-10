@@ -268,7 +268,10 @@ function openSettings() {
 
     ${window.Account && window.Account.user ? `<section class="block"><h3>Mon compte</h3>
       <p class="muted small">Connecté : <b>${esc(window.Account.user.email)}</b>. Tes adresses ajoutées, coches et notes sont sauvegardées et se retrouvent sur tes autres appareils.</p>
-      <div class="row-actions"><button class="btn" data-signout>Se déconnecter</button></div></section>` : ""}
+      <div class="row-actions"><button class="btn" data-signout>Se déconnecter</button><button class="btn danger" data-delete-account>Supprimer mon compte</button></div></section>` : ""}
+    ${window.GFPush && window.GFPush.available && window.Account && window.Account.user ? `<section class="block" data-push-block><h3>Notifications</h3>
+      <p class="muted small">Quand quelqu'un veut te suivre, accepte ta demande ou ajoute une adresse.</p>
+      <div class="row-actions"><button class="btn" data-push-on>Activer les notifications</button><button class="btn ghost" data-push-test>M'envoyer un essai</button></div></section>` : ""}
     ${window.Social ? window.Social.settingsHtml() : ""}
     <section class="block"><h3>Sauvegarde</h3>
       <p class="muted small">Tes coches, notes, commentaires, envies et adresses ajoutées sont gardés sur ce téléphone. Exporte-les de temps en temps, ou pour les passer sur un autre appareil.</p>
@@ -282,7 +285,7 @@ function openSettings() {
         ${store.get("ghToken", "") ? `<button class="btn ghost" data-gh-forget>Oublier la clé</button>` : ""}</div>
     </section>` : ""}
 
-    <section class="block"><h3>Lecture des captures par l'IA</h3>
+    <section class="block web-only"><h3>Lecture des captures par l'IA</h3>
       <p class="muted small">Clé ${store.get("aiKey", "") ? "enregistrée" : "pas encore ajoutée"}. Elle se règle dans l'onglet Ajouter.</p>
       <a class="btn" href="#ajouter" data-close-panel>Ouvrir Ajouter</a>
     </section>
@@ -307,6 +310,21 @@ async function restore(file) {
     store.set("custom", data.custom || []); store.set("edits", data.edits || {});
     rebuild(); renderAll(); openSettings(); toast("Notes restaurées");
   } catch { toast("Ce fichier n'est pas une sauvegarde de l'appli"); }
+}
+
+// Suppression du compte depuis l'appli (obligatoire sur l'App Store et Google Play).
+async function deleteAccount() {
+  const A = window.Account;
+  if (!A || !A.user) return;
+  if (!confirm(`Supprimer définitivement ton compte ${A.user.email} ?\n\nTes notes, envies, adresses ajoutées, abonnés et abonnements seront effacés. Ce compte sert aussi pour Repz, Mijonote et Jobello : leurs données seront effacées aussi.\n\nC'est irréversible.`)) return;
+  if (prompt("Pour confirmer, écris SUPPRIMER") !== "SUPPRIMER") { toast("Suppression annulée"); return; }
+  toast("Suppression en cours…");
+  try {
+    if (window.GFPush) await window.GFPush.forget();
+    await A.deleteAccount(async () => {
+      for (const k of Object.keys(localStorage)) if (k.startsWith("gfl.") || k.startsWith("acct.")) localStorage.removeItem(k);
+    });
+  } catch (e) { toast(e.message || "Suppression impossible, réessaie avec du réseau"); }
 }
 
 // ---------- Clics ----------
@@ -352,6 +370,12 @@ document.addEventListener("click", (e) => {
   }
   if (t.closest("[data-gh-forget]")) { store.set("ghToken", ""); toast("Clé oubliée sur ce téléphone"); openSettings(); return; }
   if (t.closest("[data-share-app]")) { shareApp(); return; }
+  if (t.closest("[data-delete-account]")) { deleteAccount(); return; }
+  if (t.closest("[data-push-on]")) {
+    window.GFPush.enable().then((r) => toast(r === "ok" ? "Notifications activées" : r === "refusee" ? "Notifications refusées : active-les dans les Réglages du téléphone" : "Notifications indisponibles sur ce téléphone")).catch(() => toast("Notifications indisponibles"));
+    return;
+  }
+  if (t.closest("[data-push-test]")) { window.GFPush.test().then(() => toast("Essai envoyé : il arrive dans la minute")).catch(() => toast("Envoi impossible")); return; }
   if (t.closest("[data-signout]")) { if (confirm("Te déconnecter ? Tes notes restent sauvegardées sur ton compte.")) window.Account.signOut(async () => { for (const k of GSYNC) localStorage.removeItem("gfl." + k); for (const k of Object.keys(localStorage)) if (k.startsWith("acct.goodfood")) localStorage.removeItem(k); }); return; }
   if (t.closest("[data-owner-code]") && window.Gate) { window.Gate.ownerLogin().then((ok) => { if (ok) { toast("Mode propriétaire activé"); openSettings(); } }); return; }
   if (t.closest("[data-owner-code]")) { const c = prompt("Code propriétaire"); if (c) ownerCode(c).then((ok) => { toast(ok ? "Mode propriétaire activé" : "Code incorrect"); if (ok) openSettings(); }); return; }

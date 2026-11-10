@@ -95,6 +95,8 @@ jobs:
             rm -f pmtiles pmtiles.tgz
           fi
           ls -la tiles
+      - name: Ne pas publier les projets de l'appli iPhone / Android sur le site
+        run: rm -rf android ios assets www node_modules package.json package-lock.json capacitor.config.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

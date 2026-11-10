@@ -1,0 +1,25 @@
+{
+  "name": "good-food-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Appli iPhone et Android de The Good Food List (Capacitor autour de l'appli web)",
+  "scripts": {
+    "www": "node scripts/build_www.mjs",
+    "sync": "node scripts/build_www.mjs && cap sync",
+    "icones": "node scripts/make_app_assets.mjs && capacitor-assets generate --ios --android --assetPath assets --iconBackgroundColor \"#1d3b78\" --iconBackgroundColorDark \"#1d3b78\" --splashBackgroundColor \"#1d3b78\" --splashBackgroundColorDark \"#1d3b78\""
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/ios": "^8.6.0",
+    "@capacitor/push-notifications": "^8.1.3",
+    "@capacitor/share": "^8.0.3",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.0"
+  }
+}

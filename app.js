@@ -1362,6 +1362,7 @@ setTimeout(() => loadMapLibs().then(() => {
   setTimeout(() => v.classList.remove("warm"), 8000);
 }).catch(() => {}), 1200);
 
-if ("serviceWorker" in navigator) {
+// (Pas de service worker dans l'appli iPhone / Android : les fichiers sont déjà dans l'appli.)
+if ("serviceWorker" in navigator && !window.GF_NATIVE) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
 }
