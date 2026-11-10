@@ -1,4 +1,4 @@
-// Good Food : fonction « trafic » (Supabase Edge Function).
+// Cozy Spots : fonction « trafic » (Supabase Edge Function).
 // Trafic en direct via TomTom (secret TOMTOM_API_KEY, offre gratuite). La clé reste ici, jamais dans l'appli.
 //  - POST {from:{lat,lng}, to:{lat,lng}} → temps en voiture avec les bouchons du moment + itinéraire bis.
 //  - GET ?z=&x=&y= → tuile de la carte du trafic (routes colorées selon les bouchons).

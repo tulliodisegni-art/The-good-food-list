@@ -1,4 +1,4 @@
-/* Accès sur invitation (commun à Repz, Mijonote, Good Food et Jobello).
+/* Accès sur invitation (commun à Repz, Mijonote, Cozy Spots et Jobello).
    Au premier lancement, l'appli demande un code d'invitation à usage unique, vérifié en ligne (Supabase, fonctions app_*).
    Le téléphone est ensuite reconnu ; si l'invitation est retirée, l'appli se reverrouille à la connexion suivante.
    Le propriétaire entre sa clé une fois : il passe sans code et peut créer, voir et retirer les invitations.

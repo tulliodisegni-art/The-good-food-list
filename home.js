@@ -1,4 +1,4 @@
-// Accueil Good Food : une ville à la fois (photo d'ambiance), plaques d'arrondissement ou de quartier,
+// Accueil Cozy Spots : une ville à la fois (photo d'ambiance), plaques d'arrondissement ou de quartier,
 // « Une envie ? » en texte libre, cuisines, régimes. Onglet Précieuses = même page en noir et or.
 const GF = { city: store.get("gfCity", "paris"), prec: false, list: null };
 const GF_CITIES = [
@@ -123,7 +123,7 @@ function gfHero() {
   const img = GF.prec ? "images/cities/nuit.jpg" : `images/cities/${GF.city}.jpg`;
   const n = (id) => S.places.filter((p) => gfCityOf(p) === id && (GF.prec ? gfIsPrec(p) : p.list !== "precieuses")).length;
   return `<header class="gf-hero" style="background-image:url('${img}')">
-    <div class="gtop"><div class="brand"><small>${GF.prec ? "Les Précieuses" : esc(c.kick)}</small><h1>Good Food</h1></div>
+    <div class="gtop"><div class="brand"><small>${GF.prec ? "Les Précieuses" : esc(c.kick)}</small><h1>Cozy Spots</h1></div>
     <div class="acts"><button class="ibtn" data-share-app aria-label="Envoyer l'appli"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     <button class="ibtn" data-gf-dark aria-label="Mode sombre"><svg viewBox="0 0 24 24">${gfDark() ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/>' : '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>'}</svg></button>
     <a class="ibtn add" href="#ajouter" aria-label="Ajouter"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></a></div></div>

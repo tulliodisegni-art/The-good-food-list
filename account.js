@@ -1,4 +1,4 @@
-/* Comptes (e-mail + mot de passe) et sauvegarde en ligne, communs à Repz, Mijonote et Good Food.
+/* Comptes (e-mail + mot de passe) et sauvegarde en ligne, communs à Repz, Mijonote et Cozy Spots.
    Même projet Supabase que Jobello (table « docs », dossier « fichiers »), chaque ligne est privée à son compte.
    Un seul compte sert pour toutes les applis. Les données restent aussi sur le téléphone (marche hors ligne) :
    chaque modification part en ligne, et au lancement on récupère ce qui a changé ailleurs.

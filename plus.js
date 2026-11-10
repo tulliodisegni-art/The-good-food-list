@@ -1,4 +1,4 @@
-/* Good Food : horaires (« Ouvert · ferme à 23h »), lieux fermés définitivement, collections perso partageables
+/* Cozy Spots : horaires (« Ouvert · ferme à 23h »), lieux fermés définitivement, collections perso partageables
    et « À commander » sur les fiches. Chargé avant app.js : les fonctions ci-dessous n'utilisent les outils de l'appli
    (store, esc, S, openSheet…) qu'au moment où elles sont appelées. */
 "use strict";
@@ -129,7 +129,7 @@ const b64d = (s) => decodeURIComponent(escape(atob(s.replace(/-/g, "+").replace(
 async function shareColl(c) {
   const ids = c.ids.filter((id) => S.base.some((p) => p.id === id)); // les adresses ajoutées sur ce téléphone seul ne voyagent pas
   const url = `${window.GF_NATIVE && window.GATE_CFG ? window.GATE_CFG.link : location.origin + location.pathname}?collection=${b64e(JSON.stringify({ n: c.name, i: ids }))}`;
-  const text = `${c.name} : ${ids.length} adresse${ids.length > 1 ? "s" : ""} sur Good Food`;
+  const text = `${c.name} : ${ids.length} adresse${ids.length > 1 ? "s" : ""} sur Cozy Spots`;
   try {
     if (navigator.share) await navigator.share({ title: c.name, text, url });
     else { await navigator.clipboard.writeText(`${text}\n${url}`); toast("Lien copié"); }

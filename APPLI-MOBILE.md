@@ -1,4 +1,4 @@
-# Good Food sur l'App Store et Google Play
+# Cozy Spots sur l'App Store et Google Play
 
 ## Le choix : Capacitor plutôt qu'une réécriture Expo
 
@@ -20,7 +20,7 @@ Expo vaudra le coup plus tard si Apple refuse malgré tout, ou si l'appli a beso
 - Réglages › **Notifications** : demandes d'abonnement, demandes acceptées, nouvelles adresses des amis (au plus une par ami et par heure).
 - Fenêtre « Inviter » du propriétaire : bouton **Code pour la revue Apple / Google** (un code valable sur 50 appareils).
 - Dans l'appli, plus d'astuce « Sur l'écran d'accueil » ni de clé d'IA à coller : l'appli passe par le serveur.
-- `supabase/app-stores.sql` : fonction `delete_my_account` et déclencheurs des notifications Good Food.
+- `supabase/app-stores.sql` : fonction `delete_my_account` et déclencheurs des notifications Cozy Spots.
 - `supabase/functions/notifications` : la fonction d'envoi existante, qui sait maintenant écrire aux iPhone (APNs) et aux Android (Firebase), en plus des navigateurs.
 - `.github/workflows/appli-mobile.yml` : fabrique à chaque envoi sur la branche une **APK Android** et une **appli iPhone pour simulateur** (rubrique « Artifacts » du passage).
 
@@ -28,7 +28,7 @@ Mettre à jour les applis après une modification du site : `npm run sync`. Refa
 
 ## À faire toi-même (comptes, clés, signature)
 
-1. **Nom** : remplacer « Good Food » (conflit avec BBC Good Food) dans `capacitor.config.json` (`appName`), `ios/App/App/Info.plist` (`CFBundleDisplayName`) et `android/app/src/main/res/values/strings.xml`. L'identifiant `fr.officinadisegni.goodfood` est invisible pour les utilisateurs : on peut le garder.
+1. ~~**Nom**~~ : fait le 10/11/2026, l'appli s'appelle **Cozy Spots** (« Good Food » entrait en conflit avec BBC Good Food et The Good Food List existait déjà). Libre sur l'App Store France et US à cette date. L'identifiant `fr.officinadisegni.goodfood` est invisible pour les utilisateurs : on le garde.
 2. ~~Supabase : installer `supabase/app-stores.sql` et déployer `supabase/functions/notifications`~~ : fait le 10/11/2026 (fonction en version 3, testée sur un compte fictif).
 3. **Apple** (compte développeur) : créer l'identifiant `fr.officinadisegni.goodfood` avec « Push Notifications », une clé APNs (.p8), puis ajouter dans Supabase les secrets `APNS_KEY`, `APNS_KEY_ID`, `APNS_TEAM_ID`, `APNS_TOPIC`. Pour TestFlight : une clé d'API App Store Connect dans les secrets GitHub, et on ajoutera l'étape de signature au workflow.
 4. **Google** (Play Console + Firebase) : créer le projet Firebase, mettre `google-services.json` dans le secret GitHub `GOOGLE_SERVICES_JSON` et le compte de service dans le secret Supabase `FCM_SERVICE_ACCOUNT`. Une clé de signature pour la version Play Store.
