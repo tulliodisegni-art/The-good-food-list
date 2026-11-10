@@ -29,7 +29,7 @@ Mettre à jour les applis après une modification du site : `npm run sync`. Refa
 ## À faire toi-même (comptes, clés, signature)
 
 1. **Nom** : remplacer « Good Food » (conflit avec BBC Good Food) dans `capacitor.config.json` (`appName`), `ios/App/App/Info.plist` (`CFBundleDisplayName`) et `android/app/src/main/res/values/strings.xml`. L'identifiant `fr.officinadisegni.goodfood` est invisible pour les utilisateurs : on peut le garder.
-2. **Supabase** : coller `supabase/app-stores.sql` dans le SQL Editor, puis déployer `supabase/functions/notifications`.
+2. ~~Supabase : installer `supabase/app-stores.sql` et déployer `supabase/functions/notifications`~~ : fait le 10/11/2026 (fonction en version 3, testée sur un compte fictif).
 3. **Apple** (compte développeur) : créer l'identifiant `fr.officinadisegni.goodfood` avec « Push Notifications », une clé APNs (.p8), puis ajouter dans Supabase les secrets `APNS_KEY`, `APNS_KEY_ID`, `APNS_TEAM_ID`, `APNS_TOPIC`. Pour TestFlight : une clé d'API App Store Connect dans les secrets GitHub, et on ajoutera l'étape de signature au workflow.
 4. **Google** (Play Console + Firebase) : créer le projet Firebase, mettre `google-services.json` dans le secret GitHub `GOOGLE_SERVICES_JSON` et le compte de service dans le secret Supabase `FCM_SERVICE_ACCOUNT`. Une clé de signature pour la version Play Store.
 5. **Revue** : dans l'appli, créer le code de revue (Inviter › Code pour la revue), créer un compte de démonstration (e-mail et mot de passe), puis donner les deux dans App Store Connect (« Informations de connexion » et « Notes ») et dans la Play Console (« Accès aux applis »). Supprimer le code après la validation.

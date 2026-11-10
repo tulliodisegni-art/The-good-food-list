@@ -1,6 +1,6 @@
 -- Good Food sur l'App Store et Google Play : suppression du compte et notifications des amis.
--- À coller une fois dans Supabase (projet des comptes, celui de Jobello) : SQL Editor, puis « Run ».
--- Sans danger pour les autres applis : rien n'est modifié, on ajoute une fonction et trois déclencheurs.
+-- Installé le 10/11/2026 dans le projet des comptes (celui de Jobello). À relancer tel quel si besoin : SQL Editor, puis « Run ».
+-- Sans danger pour les autres applis : rien n'est modifié, on ajoute des fonctions et deux déclencheurs sur les tables gf_*.
 
 -- 1. Supprimer son compte depuis l'appli (exigé par Apple et Google).
 --    Toutes les tables liées au compte sont en « on delete cascade » : notes, abonnements, notifications… partent avec.
@@ -61,3 +61,7 @@ end $$;
 drop trigger if exists gf_push_shared on public.gf_shared;
 create trigger gf_push_shared after insert on public.gf_shared
   for each row execute function public.gf_push_shared();
+
+-- Les fonctions de déclenchement ne servent qu'aux déclencheurs : pas d'appel direct depuis l'API.
+revoke all on function public.gf_push_follow() from public, anon, authenticated;
+revoke all on function public.gf_push_shared() from public, anon, authenticated;
