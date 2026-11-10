@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Good Food</string>
+    <string name="title_activity_main">Good Food</string>
+    <string name="package_name">fr.officinadisegni.goodfood</string>
+    <string name="custom_url_scheme">fr.officinadisegni.goodfood</string>
+</resources>

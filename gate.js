@@ -57,7 +57,7 @@
       <p>Cette appli est sur invitation. Entre le code que tu as reçu.</p>
       <input id="gt-code" placeholder="XXXX-XXXX" autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" maxlength="12">
       <button class="gt-btn" id="gt-go">Entrer</button><div class="gt-err" id="gt-err" role="alert"></div>
-      ${/iPhone|iPad/.test(navigator.userAgent) && !navigator.standalone ? `<p class="gt-tip">📲 Le plus simple : ajoute d'abord l'appli sur ton écran d'accueil (bouton Partager › « Sur l'écran d'accueil »), puis ouvre-la depuis l'écran d'accueil et entre ton code là.</p>` : ""}
+      ${/iPhone|iPad/.test(navigator.userAgent) && !navigator.standalone && !window.GF_NATIVE ? `<p class="gt-tip">📲 Le plus simple : ajoute d'abord l'appli sur ton écran d'accueil (bouton Partager › « Sur l'écran d'accueil »), puis ouvre-la depuis l'écran d'accueil et entre ton code là.</p>` : ""}
       <button class="gt-ghost" id="gt-own">Je suis le propriétaire</button>`);
     const inp = q(lockEl, "#gt-code"), err = q(lockEl, "#gt-err"), go = q(lockEl, "#gt-go");
     const fromUrl = new URLSearchParams(location.search).get("invite"); if (fromUrl) inp.value = fromUrl.toUpperCase();
@@ -101,9 +101,21 @@
       <input id="gt-who" class="free" placeholder="Pour qui ? (ex. Karim)" autocomplete="off">
       <button class="gt-btn" id="gt-mk">Créer et envoyer</button><div class="gt-err" id="gt-e"></div>
       <h2 style="font-size:1rem;margin-top:6px">Invitations</h2><ul class="gt-list" id="gt-l"><li><small>Chargement…</small></li></ul>
+      <button class="gt-ghost" id="gt-rv">Code pour la revue Apple / Google (plusieurs appareils)</button>
       <button class="gt-ghost" id="gt-x">Fermer</button>`, true);
     const e = q(d, "#gt-e"), list = q(d, "#gt-l");
     q(d, "#gt-x").onclick = () => d.remove();
+    // Les équipes de revue d'Apple et de Google testent sur plusieurs appareils : un seul code valable 50 fois,
+    // à coller dans App Store Connect (« Notes ») et la Play Console (« Accès aux applis »). À retirer après la validation.
+    q(d, "#gt-rv").onclick = async () => {
+      e.style.color = ""; e.textContent = "Création…";
+      try {
+        const code = await rpc("app_invite_create", { p_key: adminKey(), p_app: C.app, p_label: "Revue App Store / Google Play", p_max: 50 });
+        draw();
+        try { await navigator.clipboard.writeText(code); } catch (x) {}
+        e.style.color = "#1E9C80"; e.textContent = "Code de revue : " + code + " (copié). Valable sur 50 appareils.";
+      } catch (x) { e.textContent = /autoris/.test(x.message) ? "Clé propriétaire refusée." : "Pas de connexion."; }
+    };
     d.addEventListener("click", (ev) => { if (ev.target === d) d.remove(); });
     const draw = async () => {
       try {
@@ -121,7 +133,9 @@
         const code = await rpc("app_invite_create", { p_key: adminKey(), p_app: C.app, p_label: who, p_max: 1 });
         e.textContent = ""; draw();
         const url = C.link + "?invite=" + encodeURIComponent(code);
-        const text = `${who ? who + ", je" : "Je"} t'invite sur ${C.name}. 1) Ouvre le lien dans Safari. 2) Partager › « Sur l'écran d'accueil ». 3) Ouvre l'appli depuis l'écran d'accueil et entre ton code : ${code}`;
+        const text = window.GF_NATIVE
+          ? `${who ? who + ", je" : "Je"} t'invite sur ${C.name}. Installe l'appli, ouvre-la et entre ton code : ${code}`
+          : `${who ? who + ", je" : "Je"} t'invite sur ${C.name}. 1) Ouvre le lien dans Safari. 2) Partager › « Sur l'écran d'accueil ». 3) Ouvre l'appli depuis l'écran d'accueil et entre ton code : ${code}`;
         try { if (navigator.share) { await navigator.share({ title: C.name, text, url }); return; } } catch (x) { if (x && x.name === "AbortError") return; }
         try { await navigator.clipboard.writeText(text + "\n" + url); e.style.color = "#1E9C80"; e.textContent = "Message copié : colle-le à " + (who || "ton invité") + "."; } catch (x) { e.textContent = "Code : " + code; }
       } catch (x) {

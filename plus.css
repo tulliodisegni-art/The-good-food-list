@@ -86,3 +86,7 @@ body.gf-prec .gf .tag.open { color: #7fd8a0; border-color: #24563a; background: 
 .top-item { position: relative; }
 .top-n { position: absolute; z-index: 1; left: -6px; top: -6px; min-width: 24px; height: 24px; padding: 0 6px; border-radius: 12px; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 800; font-size: 12.5px; box-shadow: 0 1px 4px rgba(0, 0, 0, .2); }
 .top-s { position: absolute; z-index: 1; right: 12px; top: 10px; color: #e0a93b; font-size: 12px; letter-spacing: 1px; }
+
+/* Appli installée depuis l'App Store / Google Play (classe posée par native.js) :
+   pas d'astuces Safari ni de clé d'IA à coller, l'appli passe par le serveur. */
+html.native .web-only, html.native .share-help, html.native #aiKeyBox { display: none !important; }

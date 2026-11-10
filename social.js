@@ -152,7 +152,8 @@
     const me = SO.me, req = requests(), ids = accepted();
     const pend = SO.follows.filter((f) => f.follower === meId() && f.status === "pending");
     const followers = SO.follows.filter((f) => f.followee === meId() && f.status === "accepted");
-    const link = me ? `${location.origin}${location.pathname}?suivre=${encodeURIComponent(me.handle)}` : "";
+    const base = window.GF_NATIVE && window.GATE_CFG ? window.GATE_CFG.link : location.origin + location.pathname; // l'appli installée n'a pas d'adresse web
+    const link = me ? `${base}?suivre=${encodeURIComponent(me.handle)}` : "";
     return `<section class="block" data-social><h3>Mes amis</h3>
       ${me ? `<p class="muted small">Ton pseudo : <b>@${h(me.handle)}</b>. Ceux qui te suivent voient les adresses que tu as ajoutées et celles que tu as testées, avec ta note. Tes commentaires et tes envies restent privés.</p>
         <div class="row-actions"><button class="btn primary" data-social-link="${h(link)}">Envoyer mon profil</button><button class="btn ghost" data-social-rename>Changer de pseudo</button></div>`

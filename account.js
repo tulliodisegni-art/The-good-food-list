@@ -118,8 +118,31 @@
   }
   async function signOut(clearLocal) { try { await sb.auth.signOut(); } catch (e) {} if (clearLocal) await clearLocal(); location.reload(); }
 
+  /* ---------- suppression du compte (exigée par Apple et Google) ----------
+     Le compte est commun à toutes les applis : on efface d'abord les photos de toutes les applis,
+     puis la fonction delete_my_account (supabase/app-stores.sql) supprime le compte et, en cascade, toutes ses données. */
+  async function deleteAccount(clearLocal) {
+    if (!user) throw new Error("Pas connecté");
+    const st = sb.storage.from("fichiers");
+    const { data: dirs } = await st.list(user.id, { limit: 1000 });
+    for (const d of dirs || []) {
+      for (;;) {
+        const { data: files, error } = await st.list(user.id + "/" + d.name, { limit: 1000 });
+        if (error || !files || !files.length) break;
+        const { error: rmErr } = await st.remove(files.map((f) => user.id + "/" + d.name + "/" + f.name));
+        if (rmErr) break;
+      }
+    }
+    const { error } = await sb.rpc("delete_my_account");
+    if (error) throw new Error(/function|schema cache/i.test(error.message) ? "La suppression n'est pas encore installée sur le serveur." : error.message);
+    try { await sb.auth.signOut({ scope: "local" }); } catch (e) {}
+    try { localStorage.removeItem("td.auth"); } catch (e) {}
+    if (clearLocal) await clearLocal();
+    location.reload();
+  }
+
   window.Account = {
-    ready, push, flush, pullAll, pending, putBlob, getBlob, delBlob, listBlobs, signOut, sb,
+    ready, push, flush, pullAll, pending, putBlob, getBlob, delBlob, listBlobs, signOut, deleteAccount, sb,
     get user() { return user; },
     isFirstSync: () => !LS.get(syncedKey(), false), markSynced: () => LS.set(syncedKey(), true),
   };
