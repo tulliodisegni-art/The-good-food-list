@@ -6877,7 +6877,8 @@
   "instagram": "okitoconvention",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant japonais chaleureux proposant une cuisine authentique et soignée au cœur du 9e arrondissement. Idéal pour savourer des plats traditionnels dans une ambiance conviviale."
+  "summary": "Un restaurant japonais chaleureux proposant une cuisine authentique et soignée au cœur du 9e arrondissement. Idéal pour savourer des plats traditionnels dans une ambiance conviviale.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-abri-soba",
@@ -6901,7 +6902,8 @@
   "aiFill": 1,
   "phone": "01 48 24 32 30",
   "summary": "Une adresse incontournable pour les amateurs de nouilles soba faites maison et de spécialités japonaises raffinées. L'atmosphère y est épurée, intime et résolument authentique.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-shinjuku",
@@ -6925,7 +6927,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un spot branché inspiré des ruelles de Tokyo, parfait pour déguster des nouilles savoureuses et des plats japonais réconfortants. L'ambiance est dynamique et résolument urbaine."
+  "summary": "Un spot branché inspiré des ruelles de Tokyo, parfait pour déguster des nouilles savoureuses et des plats japonais réconfortants. L'ambiance est dynamique et résolument urbaine.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-face-noodles",
@@ -6949,7 +6952,8 @@
   "instagram": "face_noodles",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Spécialisé dans les nouilles faites main, ce restaurant propose des bouillons savoureux et des plats généreux. On y apprécie l'ambiance simple et vivante, idéale pour un déjeuner rapide ou un dîner décontracté."
+  "summary": "Spécialisé dans les nouilles faites main, ce restaurant propose des bouillons savoureux et des plats généreux. On y apprécie l'ambiance simple et vivante, idéale pour un déjeuner rapide ou un dîner décontracté.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-japonais-kome-kome",
@@ -6973,7 +6977,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Spécialisé dans les onigiris faits maison, Komé Komé propose une cuisine japonaise réconfortante et nomade. L'ambiance y est chaleureuse et décontractée, idéale pour un déjeuner rapide sur le pouce.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-chinois-monsieur-mi",
@@ -6998,7 +7003,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-chinois-ravioli-nord-est",
@@ -7026,7 +7032,8 @@
   "ogTry": 2,
   "pressTry": 1,
   "commonsTry": 1,
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ravioli_Nord-Est_%40_Paris_%2835244967706%29.jpg/1280px-Ravioli_Nord-Est_%40_Paris_%2835244967706%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ravioli_Nord-Est_%40_Paris_%2835244967706%29.jpg/1280px-Ravioli_Nord-Est_%40_Paris_%2835244967706%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-chinois-yoom",
@@ -7051,7 +7058,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 45 26 65 62",
-  "summary": "Yoom revisite les dim sum traditionnels avec créativité et modernité dans un décor épuré. On y déguste des bouchées vapeurs délicates dans une ambiance chic et décontractée."
+  "summary": "Yoom revisite les dim sum traditionnels avec créativité et modernité dans un décor épuré. On y déguste des bouchées vapeurs délicates dans une ambiance chic et décontractée.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-chinois-long-chao-shou",
@@ -7075,7 +7083,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse incontournable pour savourer d'authentiques raviolis du Sichuan aux saveurs relevées. L'ambiance y est simple, chaleureuse et résolument traditionnelle.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-coreen-budji",
@@ -7099,7 +7108,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un spot coréen moderne où l'on déguste de savoureux kimbaps et plats réconfortants. L'ambiance est décontractée et parfaite pour un déjeuner sur le pouce.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-coreen-joayo-haussmann",
@@ -7126,7 +7136,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "11:30-14:30,18:30-22:30",
+   "11:30-14:30,18:30-22:30",
+   "11:30-14:30,18:30-22:30",
+   "11:30-14:30,18:30-22:30",
+   "11:30-14:30,18:30-23:00",
+   "11:30-14:30,18:30-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-coreen-jjan",
@@ -7149,7 +7171,19 @@
   "aiFill": 1,
   "phone": "01 45 26 88 88",
   "summary": "Un bistrot coréen chaleureux idéal pour découvrir des plats faits maison et des spécialités à partager. L'ambiance y est conviviale et intimiste.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-cubain-manigua",
@@ -7172,7 +7206,19 @@
   "instagram": "manigua.official",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse chaleureuse qui met à l'honneur les saveurs authentiques de Cuba à travers des plats faits maison et des cocktails tropicaux. L'ambiance y est conviviale, vibrante et rythmée par une douce influence caribéenne."
+  "summary": "Une adresse chaleureuse qui met à l'honneur les saveurs authentiques de Cuba à travers des plats faits maison et des cocktails tropicaux. L'ambiance y est conviviale, vibrante et rythmée par une douce influence caribéenne.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-libanais-liza",
@@ -7195,7 +7241,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 55 35 96 66",
-  "summary": "Un restaurant libanais contemporain et élégant où l'on savoure des mezzés raffinés et savoureux. Le cadre est lumineux, moderne et l'atmosphère invite au partage dans un esprit de grande convivialité."
+  "summary": "Un restaurant libanais contemporain et élégant où l'on savoure des mezzés raffinés et savoureux. Le cadre est lumineux, moderne et l'atmosphère invite au partage dans un esprit de grande convivialité.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "12:00-16:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-indien-the-crossing",
@@ -7220,7 +7278,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un bistrot indien moderne qui revisite les classiques avec une approche créative et audacieuse, inspirée des voyages à travers le sous-continent. L'ambiance est chic, chaleureuse et résolument contemporaine."
+  "summary": "Un bistrot indien moderne qui revisite les classiques avec une approche créative et audacieuse, inspirée des voyages à travers le sous-continent. L'ambiance est chic, chaleureuse et résolument contemporaine.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-vietnamien-phood",
@@ -7247,7 +7317,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   "11:30-15:00,18:30-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-argentin-paris-boca",
@@ -7271,7 +7353,8 @@
   "booking": "https://www.thefork.fr/restaurant/paris-boca-r745101",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-colombien-mi-ranchito-paisa",
@@ -7295,7 +7378,19 @@
   "booking": "https://miranchitopaisa.com/fr/booking",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse chaleureuse pour découvrir les saveurs authentiques de la Colombie à travers des plats généreux comme la bandeja paisa, dans une ambiance familiale et haute en couleur."
+  "summary": "Une adresse chaleureuse pour découvrir les saveurs authentiques de la Colombie à travers des plats généreux comme la bandeja paisa, dans une ambiance familiale et haute en couleur.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:30",
+   "12:00-16:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-tapas-la-bouche-bleue",
@@ -7322,7 +7417,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-tapas-mamacita",
@@ -7346,7 +7442,8 @@
   "booking": "https://www.thefork.fr/restaurant/mamacita-taqueria-r697631",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant festif aux accents latino-américains où l'on déguste des tapas et des cocktails inspirés dans un décor luxuriant et une ambiance rythmée."
+  "summary": "Un restaurant festif aux accents latino-américains où l'on déguste des tapas et des cocktails inspirés dans un décor luxuriant et une ambiance rythmée.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-tapas-villa-mikuna",
@@ -7371,7 +7468,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-tapas-le-vert-sauvage",
@@ -7398,7 +7507,19 @@
   "summary": "Un bar à vin et tapas chaleureux proposant de superbes planches de charcuterie et de fromages bios dans une ambiance intimiste.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "17:00-00:00",
+   "17:00-00:00",
+   "17:00-00:00",
+   "17:00-00:00",
+   "17:00-00:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-poisson-fruits-de-mer-mersea",
@@ -7422,7 +7543,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 33 53 82",
-  "summary": "Un fast-good marin branché qui revisite le fish and chips et les burgers de poisson avec des produits frais et de saison."
+  "summary": "Un fast-good marin branché qui revisite le fish and chips et les burgers de poisson avec des produits frais et de saison.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-poisson-fruits-de-mer-pere-fish",
@@ -7446,7 +7568,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Le paradis du burger de poisson frais et fait maison, à savourer dans un cadre décontracté et urbain.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-brunch-kozy-kanope",
@@ -7471,7 +7605,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un spot chaleureux et incontournable pour savourer de généreux pancakes, des avocado toasts et d'excellents lattes dans une ambiance cosy.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:30",
+   "09:00-16:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-cafe-braun-notes-coffee",
@@ -7495,7 +7641,19 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "08:30-17:30",
+   "08:30-17:30",
+   "08:30-17:30",
+   "08:30-17:30",
+   "08:30-17:30",
+   "09:00-18:00",
+   "09:00-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-cafe-book-nook",
@@ -7519,7 +7677,19 @@
   "aiFill": 1,
   "summary": "Un concept original et chaleureux mêlant coffee shop et librairie anglo-saxonne, parfait pour déguster de délicieux cheesecakes et pâtisseries maison.",
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "10:00-18:30",
+   "10:00-18:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-cafe-cafe-de-la-paix",
@@ -7544,7 +7714,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Institution parisienne légendaire au décor Second Empire somptueux, idéale pour déguster des fruits de mer raffinés ou un thé viennois face à l'Opéra Garnier.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-bar-a-cocktails-les-commeres",
@@ -7568,7 +7750,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un bar à cocktails chaleureux et intimiste aux accents vintage, idéal pour déguster des créations signatures audacieuses accompagnées de délicieuses tapas.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "",
+   "17:30-01:00",
+   "17:30-01:00",
+   "17:30-02:00",
+   "17:30-02:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-bar-a-cocktails-moloko",
@@ -7593,7 +7787,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "09 81 40 33 29",
-  "summary": "Un spot branché de Pigalle mêlant bar à cocktails sophistiqués et cuisine aux inspirations asiatiques dans une ambiance festive et tamisée."
+  "summary": "Un spot branché de Pigalle mêlant bar à cocktails sophistiqués et cuisine aux inspirations asiatiques dans une ambiance festive et tamisée.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-05:00",
+   "18:00-05:00",
+   "18:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-francais-le-candide",
@@ -7620,7 +7826,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-francais-terminus-nord",
@@ -7644,7 +7862,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une brasserie parisienne historique au décor Art Déco grandiose face à la gare du Nord, parfaite pour savourer des fruits de mer et des classiques de la cuisine française."
+  "summary": "Une brasserie parisienne historique au décor Art Déco grandiose face à la gare du Nord, parfaite pour savourer des fruits de mer et des classiques de la cuisine française.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "07:00-23:00",
+   "07:00-23:00",
+   "07:00-23:00",
+   "07:00-23:00",
+   "07:00-23:00",
+   "07:00-23:00",
+   "07:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-francais-neni",
@@ -7671,7 +7901,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:30,19:00-23:30",
+   "12:00-15:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-francais-c-est-dante",
@@ -7696,7 +7938,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=357591&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "C'est Dante propose une cuisine de bistrot soignée et créative dans un cadre intime et élégant du 10e arrondissement. On y déguste des assiettes raffinées aux produits de saison, accompagnées d'une belle sélection de vins."
+  "summary": "C'est Dante propose une cuisine de bistrot soignée et créative dans un cadre intime et élégant du 10e arrondissement. On y déguste des assiettes raffinées aux produits de saison, accompagnées d'une belle sélection de vins.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-francais-vertueux",
@@ -7719,7 +7962,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Vertueux met à l'honneur une cuisine bistronomique engagée et locale dans une ambiance conviviale et chaleureuse. On y savoure des plats créatifs qui font la part belle aux produits frais et de saison."
+  "summary": "Vertueux met à l'honneur une cuisine bistronomique engagée et locale dans une ambiance conviviale et chaleureuse. On y savoure des plats créatifs qui font la part belle aux produits frais et de saison.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-francais-joseph-et-raymond",
@@ -7743,7 +7987,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-francais-casimir",
@@ -7767,7 +8012,8 @@
   "instagram": "casimir_paris",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une cantine française chaleureuse et conviviale qui met à l'honneur une cuisine de marché généreuse et authentique. L'ambiance y est décontractée et idéale pour partager un bon repas entre amis."
+  "summary": "Une cantine française chaleureuse et conviviale qui met à l'honneur une cuisine de marché généreuse et authentique. L'ambiance y est décontractée et idéale pour partager un bon repas entre amis.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-francais-gaston-et-marlo",
@@ -7790,7 +8036,8 @@
   "booking": "https://gastonetmarlo.fr/reservation/",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant bistronomique au cadre soigné, proposant une cuisine française inventive élaborée à partir de produits frais et de saison. On y profite d'une atmosphère élégante et intime."
+  "summary": "Un restaurant bistronomique au cadre soigné, proposant une cuisine française inventive élaborée à partir de produits frais et de saison. On y profite d'une atmosphère élégante et intime.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-italien-mamaioa",
@@ -7814,7 +8061,8 @@
   "instagram": "mamaioa.paris",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une trattoria dédiée aux saveurs authentiques de la Sardaigne, avec des pâtes fraîches savoureuses et des produits importés directement d'Italie. L'ambiance est chaleureuse, animée et typiquement italienne."
+  "summary": "Une trattoria dédiée aux saveurs authentiques de la Sardaigne, avec des pâtes fraîches savoureuses et des produits importés directement d'Italie. L'ambiance est chaleureuse, animée et typiquement italienne.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-italien-sonata",
@@ -7839,7 +8087,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=360750&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une pizzeria de quartier qui propose de délicieuses pizzas napolitaines à la pâte moelleuse et aux garnitures de qualité. Le cadre est moderne, accueillant et parfait pour un dîner décontracté."
+  "summary": "Une pizzeria de quartier qui propose de délicieuses pizzas napolitaines à la pâte moelleuse et aux garnitures de qualité. Le cadre est moderne, accueillant et parfait pour un dîner décontracté.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-americain-baba-zulu",
@@ -7863,7 +8112,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Temple de la soul food à Paris, on y déguste de généreux gaufres au poulet frit (chicken and waffles) dans une ambiance chaleureuse et décontractée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-burger-blossom-burgers-beers",
@@ -7889,7 +8139,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 46 22 22",
-  "summary": "Des smash burgers ultra gourmands aux steaks bien croustillants et juteux, à savourer dans une ambiance branchée et conviviale."
+  "summary": "Des smash burgers ultra gourmands aux steaks bien croustillants et juteux, à savourer dans une ambiance branchée et conviviale.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-burger-o-b-u",
@@ -7913,7 +8164,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse incontournable pour déguster des burgers faits maison généreux et savoureux, le tout dans une ambiance simple et chaleureuse.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-burger-coderak",
@@ -7936,7 +8188,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-japonais-john-weng",
@@ -7961,7 +8214,8 @@
   "aiFill": 1,
   "phone": "01 47 70 79 32",
   "summary": "Un restaurant au cadre soigné et feutré qui revisite la cuisine japonaise et asiatique avec créativité. On y déguste de délicieux plats fusion et des cocktails signatures dans une ambiance branchée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-japonais-noori",
@@ -7985,7 +8239,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "09 78 81 21 02",
-  "summary": "Le temple du taco sushi et du katsu sando dans une ambiance urbaine et décontractée. On y savoure des créations originales et croustillantes qui fusionnent les cultures mexicaine et japonaise."
+  "summary": "Le temple du taco sushi et du katsu sando dans une ambiance urbaine et décontractée. On y savoure des créations originales et croustillantes qui fusionnent les cultures mexicaine et japonaise.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-japonais-hara-kiri-ramen",
@@ -8009,7 +8275,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un bar à ramen chaleureux et sans chichis au cœur du 10e arrondissement. On y vient pour slurper des bouillons savoureux et réconfortants dans une ambiance de izakaya de quartier.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-japonais-espace-japon",
@@ -8034,7 +8312,19 @@
   "booking": "https://www.espacejapon.com/la-geometrie-du-silence/",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un lieu culturel polyvalent qui propose également des ateliers et un salon de thé proposant des douceurs nippones. Idéal pour s'imprégner de la culture japonaise dans une atmosphère calme et conviviale."
+  "summary": "Un lieu culturel polyvalent qui propose également des ateliers et un salon de thé proposant des douceurs nippones. Idéal pour s'imprégner de la culture japonaise dans une atmosphère calme et conviviale.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "13:00-19:00",
+   "13:00-19:00",
+   "13:00-19:00",
+   "13:00-19:00",
+   "13:00-19:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-chinois-la-taverne-de-zhao",
@@ -8059,7 +8349,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une cantine chaleureuse spécialisée dans les nouilles et plats traditionnels de la province du Shaanxi. L'ambiance y est conviviale et décontractée, idéale pour un déjeuner ou dîner dépaysant.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-chinois-bolobolo",
@@ -8083,7 +8385,19 @@
   "booking": "https://boloboloparis.com/fr/reservations",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant inspiré des cafés traditionnels de Hong Kong (Cha Chaan Teng) proposant des spécialités réconfortantes. L'ambiance rétro et colorée plonge directement dans le Hong Kong des années 80-90."
+  "summary": "Un restaurant inspiré des cafés traditionnels de Hong Kong (Cha Chaan Teng) proposant des spécialités réconfortantes. L'ambiance rétro et colorée plonge directement dans le Hong Kong des années 80-90.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-coreen-hite-family",
@@ -8107,7 +8421,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse incontournable pour savourer du poulet frit coréen ultra croustillant et des plats à partager. L'ambiance y est animée et festive, parfaite pour un repas entre amis.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-coreen-in-seoul-paris",
@@ -8131,7 +8457,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-grec-kali-greek-food",
@@ -8155,7 +8482,8 @@
   "booking": "https://www.google.com/maps/reserve/v/dine/c/tMn4F7R3ofw?source=pa&opi=89978449&hl=fr-FR&gei=JhJxauzuKbeokdUP3-eI2As&sourceurl=https://www.google.com/search?q%3Dkali%2Bgreek%2Bfood%2Breserver%26oq%3Dkali%2Bgreek%2Bfood%2Breserver%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOdIBCDcyOTRqMGo3qAIAsAIA%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une cantine grecque chaleureuse et authentique qui propose de savoureux souvlaki et des pitas garnies de produits frais. L'ambiance y est conviviale et décontractée, idéale pour un déjeuner sur le pouce."
+  "summary": "Une cantine grecque chaleureuse et authentique qui propose de savoureux souvlaki et des pitas garnies de produits frais. L'ambiance y est conviviale et décontractée, idéale pour un déjeuner sur le pouce.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-oriental-not-a-kebab",
@@ -8179,7 +8507,8 @@
   "aiFill": 1,
   "phone": "01 42 08 26 25",
   "summary": "Une adresse inventive qui revisite le kebab traditionnel avec des viandes marinées de qualité, des herbes fraîches et des sauces maison. Le cadre est moderne, épuré et très branché.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-oriental-levantine",
@@ -8203,7 +8532,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant aux saveurs du Levant qui met à l'honneur des mezzés à partager, des grillades parfumées et des pitas moelleuses. L'atmosphère est chaleureuse et festive, parfaite pour un dîner entre amis."
+  "summary": "Un restaurant aux saveurs du Levant qui met à l'honneur des mezzés à partager, des grillades parfumées et des pitas moelleuses. L'atmosphère est chaleureuse et festive, parfaite pour un dîner entre amis.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-oriental-mister-do-san",
@@ -8227,7 +8557,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un concept original de sando revisités aux inspirations franco-asiatiques, avec des brioches moelleuses garnies de viandes mijotées ou panées. L'ambiance est urbaine et décontractée.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-cacher-vendredi-soir",
@@ -8252,7 +8594,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=361616&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une ambiance chaleureuse et conviviale qui rappelle les repas de Shabbat en famille, pour y savourer de généreuses spécialités israéliennes aux saveurs ensoleillées."
+  "summary": "Une ambiance chaleureuse et conviviale qui rappelle les repas de Shabbat en famille, pour y savourer de généreuses spécialités israéliennes aux saveurs ensoleillées.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "",
+   "",
+   "19:00-23:00",
+   "12:00-15:00",
+   "",
+   "19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-indonesien-djawa",
@@ -8277,7 +8631,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-cambodgien-le-petit-cambodge",
@@ -8302,7 +8657,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une ambiance animée et décontractée au bord du canal Saint-Martin, parfaite pour déguster de délicieux Bo Bun et plats cambodgiens faits maison.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-10-africain-new-soul-food",
@@ -8326,7 +8693,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un concept audacieux de « street food » afro-européenne proposant des braisés savoureux et des déclinaisons créatives dans une ambiance moderne et branchée."
+  "summary": "Un concept audacieux de « street food » afro-européenne proposant des braisés savoureux et des déclinaisons créatives dans une ambiance moderne et branchée.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-10-mexicain-nomas-tacos",
