@@ -1,4 +1,4 @@
-// Good Food : fonction « ia » (Supabase Edge Function).
+// Cozy Spots : fonction « ia » (Supabase Edge Function).
 // Elle garde la clé de l'IA côté serveur (secret GEMINI_API_KEY, gratuit, ou ANTHROPIC_API_KEY) : l'appli n'a plus besoin de clé.
 // Sert à lire un lien ou une capture pour remplir une fiche, et à comprendre une « envie ».
 // Avec un « job », le résultat est aussi rangé dans la table « lectures » : si on quitte l'appli pendant la lecture,

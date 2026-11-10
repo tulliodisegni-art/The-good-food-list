@@ -67,9 +67,9 @@ jobs:
             -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
             -derivedDataPath build CODE_SIGNING_ALLOWED=NO build | tail -n 40
           test -d build/Build/Products/Debug-iphonesimulator/App.app
-          cd build/Build/Products/Debug-iphonesimulator && zip -qry "$GITHUB_WORKSPACE/GoodFood-simulateur.zip" App.app
+          cd build/Build/Products/Debug-iphonesimulator && zip -qry "$GITHUB_WORKSPACE/CozySpots-simulateur.zip" App.app
       - uses: actions/upload-artifact@v4
         with:
           name: good-food-ios-simulateur
-          path: GoodFood-simulateur.zip
+          path: CozySpots-simulateur.zip
           retention-days: 30

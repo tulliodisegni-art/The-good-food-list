@@ -1,4 +1,4 @@
--- Good Food sur l'App Store et Google Play : suppression du compte et notifications des amis.
+-- Cozy Spots sur l'App Store et Google Play : suppression du compte et notifications des amis.
 -- Installé le 10/11/2026 dans le projet des comptes (celui de Jobello). À relancer tel quel si besoin : SQL Editor, puis « Run ».
 -- Sans danger pour les autres applis : rien n'est modifié, on ajoute des fonctions et deux déclencheurs sur les tables gf_*.
 
@@ -14,7 +14,7 @@ end $$;
 revoke all on function public.delete_my_account() from public, anon;
 grant execute on function public.delete_my_account() to authenticated;
 
--- 2. Notifications Good Food : elles passent par la file « push_queue » déjà utilisée par Jobello.
+-- 2. Notifications Cozy Spots : elles passent par la file « push_queue » déjà utilisée par Jobello.
 --    La fonction « notifications » (supabase/functions/notifications) les envoie aux iPhone (APNs),
 --    aux Android (Firebase) et aux navigateurs (Web Push), chaque minute.
 create or replace function public.gf_handle(u uuid) returns text

@@ -2,7 +2,7 @@
   "name": "good-food-app",
   "private": true,
   "version": "1.0.0",
-  "description": "Appli iPhone et Android de The Good Food List (Capacitor autour de l'appli web)",
+  "description": "Appli iPhone et Android de Cozy Spots (Capacitor autour de l'appli web)",
   "scripts": {
     "www": "node scripts/build_www.mjs",
     "sync": "node scripts/build_www.mjs && cap sync",

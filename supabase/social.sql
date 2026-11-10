@@ -1,4 +1,4 @@
--- Good Food : profils, abonnements (sur demande) et adresses partagées avec ses abonnés.
+-- Cozy Spots : profils, abonnements (sur demande) et adresses partagées avec ses abonnés.
 -- À coller une fois dans Supabase (projet des comptes, celui de Jobello) : SQL Editor, puis « Run ».
 
 create table if not exists public.gf_profiles (

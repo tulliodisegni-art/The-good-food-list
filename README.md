@@ -1,4 +1,4 @@
-# The Good Food List
+# Cozy Spots
 
 Mes adresses à Paris, classées par arrondissement et par type, avec une carte, la liste « Les Précieuses » et un onglet pour les autres villes.
 

@@ -660,7 +660,7 @@ function toast(msg) {
 
 // ---------- Navigation ----------
 const VIEWS = {
-  accueil: ["Bonjour", "The Good Food List"],
+  accueil: ["Bonjour", "Cozy Spots"],
   paris: ["Paris intra-muros", "Paris"],
   carte: ["Toutes les adresses", "La carte"],
   precieuses: ["Liste d'exception", "Les Précieuses"],
@@ -1011,7 +1011,7 @@ document.addEventListener("paste", (e) => {
 
 function aiPrompt(link, text) {
   const cats = [...new Set(S.places.map((p) => p.cat).filter(Boolean))].sort().join(", ");
-  return `Tu aides à remplir une fiche dans « The Good Food List », un carnet personnel d'adresses (restos, bars, sorties).
+  return `Tu aides à remplir une fiche dans « Cozy Spots », un carnet personnel d'adresses (restos, bars, sorties).
 Les images sont des captures d'écran d'une publication (Instagram, TikTok, Facebook, site…).${link ? `\nLien de la publication : ${link}` : ""}${text ? `\nTexte de la légende :\n${text}` : ""}
 
 Identifie le lieu présenté.${link && !text ? " S'il n'y a que le lien, ouvre-le ; s'il est illisible (Instagram, TikTok), cherche le compte et la publication sur le web." : ""} Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.

@@ -1,6 +1,6 @@
 {
-  "name": "The Good Food List",
-  "short_name": "Good Food",
+  "name": "Cozy Spots",
+  "short_name": "Cozy Spots",
   "description": "Mes adresses à Paris, classées par arrondissement et par type.",
   "lang": "fr",
   "start_url": "./",

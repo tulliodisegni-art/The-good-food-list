@@ -1,7 +1,7 @@
 // Garde l'appli disponible hors connexion et l'ouvre tout de suite : les fichiers de l'appli viennent du téléphone
 // et se mettent à jour en arrière-plan (la nouvelle version sert à l'ouverture suivante ; une nouvelle version du
 // service worker recharge tout d'un coup). La liste des adresses, elle, est toujours redemandée au serveur.
-const CACHE = "gfl-v56";
+const CACHE = "gfl-v57";
 const SHELL = ["./", "index.html", "native.js", "style.css", "plus.js", "plus.css", "app.js", "extras.js", "social.js", "gate.js", "account.js", "vendor/supabase.js", "home.js", "home.css", "images/cities/paris.jpg", "images/cities/nuit.jpg", "manifest.webmanifest", "data/places.json", "icons/icon-192.png", "icons/favicon.svg", "vendor/leaflet/leaflet.js", "vendor/leaflet/leaflet.css", "vendor/markercluster/leaflet.markercluster.js", "vendor/markercluster/MarkerCluster.css", "vendor/markercluster/MarkerCluster.Default.css", "vendor/anthropic/anthropic.mjs", "vendor/protomaps/protomaps-leaflet.js"];
 
 self.addEventListener("install", (e) => {

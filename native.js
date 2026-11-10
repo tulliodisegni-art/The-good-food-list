@@ -98,7 +98,7 @@
     available: !!pushReady,
     enable: () => enablePush(true),
     status: async () => (pushReady ? (await Push.checkPermissions()).receive : "indisponible"),
-    test: async () => { const acc = window.Account; if (acc && acc.sb) await acc.sb.rpc("push_test", { p_app: "goodfood", p_title: "Good Food", p_body: "Les notifications marchent." }); },
+    test: async () => { const acc = window.Account; if (acc && acc.sb) await acc.sb.rpc("push_test", { p_app: "goodfood", p_title: "Cozy Spots", p_body: "Les notifications marchent." }); },
     forget: async () => { const s = pushState(); if (s.token && window.Account && window.Account.sb) { try { await window.Account.sb.from("push_subs").delete().eq("endpoint", platform + ":" + s.token); } catch (e) {} } savePush({ token: null }); },
   };
 

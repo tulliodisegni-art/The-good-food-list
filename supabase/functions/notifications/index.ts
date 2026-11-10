@@ -1,4 +1,4 @@
-// Fonction Supabase « notifications » : envoie les notifications programmées des applis (Jobello, Good Food…)
+// Fonction Supabase « notifications » : envoie les notifications programmées des applis (Jobello, Cozy Spots…)
 // et fabrique les fichiers « Ajouter au calendrier ». Aucune dépendance : tout est fait avec WebCrypto.
 // Réglage à faire une fois dans Supabase : désactiver « Verify JWT » pour cette fonction (voir NOTIFICATIONS.md).
 //

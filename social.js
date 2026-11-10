@@ -1,4 +1,4 @@
-/* Good Food : suivre des gens (sur demande, à accepter) et voir leurs adresses.
+/* Cozy Spots : suivre des gens (sur demande, à accepter) et voir leurs adresses.
    Chacun a un pseudo. Ce qui est partagé avec ses abonnés : les adresses qu'on a ajoutées, et pour les autres
    « testé » et la note en étoiles. Les commentaires et les envies restent privés ; une adresse peut être cachée.
    Tout nouveau membre suit Tullio d'office (sa liste est la base de l'appli). Tables : supabase/social.sql. */
@@ -198,7 +198,7 @@
       if (t.dataset.socialUnfollow) { await unfollow(t.dataset.socialUnfollow); return; }
       if (t.dataset.socialFollowback) { const pr = SO.profiles.get(t.dataset.socialFollowback); if (!pr) return; await follow(pr.handle); toast(`Demande envoyée à ${pr.name || "@" + pr.handle} : sa carte apparaîtra dès son accord`); return; }
       if (t.dataset.socialRemove) { await removeFollower(t.dataset.socialRemove); return; }
-      if (t.dataset.socialLink) { const url = t.dataset.socialLink, text = "Suis-moi sur The Good Food List pour voir mes adresses :"; try { if (navigator.share) { await navigator.share({ title: "Mon profil", text, url }); return; } } catch (x) { if (x && x.name === "AbortError") return; } try { await navigator.clipboard.writeText(text + " " + url); toast("Lien copié"); } catch (x) { prompt("Lien de ton profil", url); } return; }
+      if (t.dataset.socialLink) { const url = t.dataset.socialLink, text = "Suis-moi sur Cozy Spots pour voir mes adresses :"; try { if (navigator.share) { await navigator.share({ title: "Mon profil", text, url }); return; } } catch (x) { if (x && x.name === "AbortError") return; } try { await navigator.clipboard.writeText(text + " " + url); toast("Lien copié"); } catch (x) { prompt("Lien de ton profil", url); } return; }
     } catch (x) { toast(x.message || "Pas de connexion"); }
   });
 
