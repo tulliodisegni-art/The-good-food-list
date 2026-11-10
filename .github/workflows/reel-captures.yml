@@ -22,13 +22,36 @@ jobs:
           mkdir out
           cat > shot.js <<'JS'
           const { chromium } = require("playwright");
+          const fs = require("fs");
           const URL = "https://tulliodisegni-art.github.io/The-good-food-list/";
+          const ID = "paris-2-francais-astair";
+          const day = (n) => new Date(Date.now() - n * 864e5).toISOString();
+          const AVIS = [
+            { id: 1, place_id: ID, author: "Léa", rating: 5, comment: "Cadre magnifique et assiettes généreuses. J'y retourne !", created_at: day(2) },
+            { id: 2, place_id: ID, author: "Karim", rating: 4, comment: "Très bonne brasserie, parfait avant un spectacle.", created_at: day(6) },
+          ];
+          const pl = (name, address, lat, lng, arr, cat) => ({ place: { name, address, lat, lng, arr, cat, cuisine: cat, list: "paris", city: "paris" }, tested: true, rating: 5 });
+          const SOCIAL = {
+            me: { user_id: null, handle: "camille", name: "Camille" }, ownerId: null,
+            profiles: [{ user_id: "u1", handle: "lea", name: "Léa" }, { user_id: "u2", handle: "karim", name: "Karim" }, { user_id: "u3", handle: "sarah", name: "Sarah" }],
+            follows: [{ follower: null, followee: "u1", status: "accepted" }, { follower: null, followee: "u2", status: "accepted" }, { follower: null, followee: "u3", status: "accepted" }, { follower: "u1", followee: null, status: "accepted" }, { follower: "u3", followee: null, status: "accepted" }],
+            rows: [
+              { owner: "u1", id: ID, data: { tested: true, rating: 5 } }, { owner: "u2", id: ID, data: { tested: true, rating: 4 } },
+              { owner: "u1", id: "demo-septime", data: pl("Septime", "80 rue de Charonne, 75011 Paris", 48.8536, 2.3807, "11", "Français") },
+              { owner: "u1", id: "demo-clown-bar", data: pl("Clown Bar", "114 rue Amelot, 75011 Paris", 48.8633, 2.3672, "11", "Français") },
+              { owner: "u1", id: "demo-mokonuts", data: pl("Mokonuts", "5 rue Saint-Bernard, 75011 Paris", 48.8517, 2.3806, "11", "Café") },
+              { owner: "u1", id: "demo-dersou", data: pl("Dersou", "21 rue Saint-Nicolas, 75012 Paris", 48.8512, 2.3735, "12", "Français") },
+              { owner: "u2", id: "demo-chateaubriand", data: pl("Le Chateaubriand", "129 avenue Parmentier, 75011 Paris", 48.8697, 2.3716, "11", "Français") },
+              { owner: "u2", id: "demo-clamato", data: pl("Clamato", "80 rue de Charonne, 75011 Paris", 48.8535, 2.3809, "11", "Poisson & fruits de mer") },
+            ],
+          };
           (async () => {
             const b = await chromium.launch();
             const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, locale: "fr-FR", timezoneId: "Europe/Paris",
               userAgent: "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
               geolocation: { latitude: 48.8674, longitude: 2.3636 }, permissions: ["geolocation"] });
-            await ctx.addInitScript(() => { try { localStorage.setItem("gate.goodfood.ok", "1"); } catch (e) {} });
+            await ctx.addInitScript((social) => { try { localStorage.setItem("gate.goodfood.ok", "1"); localStorage.setItem("gfl.socialCache", JSON.stringify(social)); } catch (e) {} }, SOCIAL);
+            await ctx.route("**/rest/v1/avis*", (r) => r.request().method() === "GET" ? r.fulfill({ status: 200, contentType: "application/json", body: JSON.stringify(AVIS) }) : r.abort());
             const open = async (hash) => {
               const p = await ctx.newPage();
               p.on("pageerror", (e) => console.log("ERREUR:", e.message));
@@ -37,64 +60,76 @@ jobs:
               return p;
             };
             const clean = (p) => p.evaluate(() => document.querySelectorAll(".ac-ov,.gt-ov").forEach((e) => e.remove()));
-            const step = async (name, fn) => { try { await fn(); console.log("ok", name); } catch (e) { console.log("RATÉ", name, String(e.message).slice(0, 300)); } };
-            const lazy = async (p) => { const h = await p.evaluate(() => document.documentElement.scrollHeight); for (let y = 0; y < h; y += 500) { await p.evaluate((y) => window.scrollTo(0, y), y); await p.waitForTimeout(350); } await p.evaluate(() => window.scrollTo(0, 0)); await p.waitForTimeout(1500); };
-
-            for (const t of ["accueil", "precieuses"]) await step(t, async () => {
-              const p = await open(t); await clean(p); await lazy(p); await clean(p);
-              await p.screenshot({ path: `out/${t}_vp.png` });
-              await p.addStyleTag({ content: "nav.tabs{display:none!important}" });
-              await p.screenshot({ path: `out/${t}_full.png`, fullPage: true });
-              await p.close();
-            });
-            for (const c of ["Italien", "Japonais"]) await step("liste " + c, async () => {
-              const p = await open("accueil"); await clean(p);
-              await p.getByText(c, { exact: true }).first().click(); await p.waitForTimeout(2500); await clean(p); await lazy(p);
-              await p.screenshot({ path: `out/liste_${c}_vp.png` });
-              await p.addStyleTag({ content: "nav.tabs{display:none!important}" });
-              await p.screenshot({ path: `out/liste_${c}_full.png`, fullPage: true, clip: undefined });
-              await p.close();
-            });
-            await step("envie", async () => {
-              const p = await open("accueil"); await clean(p);
-              await p.fill("#gfWish", "Un italien romantique pour un date");
-              await p.locator("#gfWish").scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -250)); await p.waitForTimeout(600);
-              await p.screenshot({ path: "out/envie_saisie.png" });
-              await p.click("[data-gf-wish]"); await p.waitForTimeout(2500); await clean(p); await lazy(p);
-              await p.screenshot({ path: "out/envie_resultat.png" });
-              await p.close();
-            });
-            const fiches = ["paris-2-francais-astair", "paris-6-italien-anima", "paris-1-francais-pied-de-cochon", "paris-2-italien-gruppomimo"];
-            for (const id of fiches) await step("fiche " + id, async () => {
-              const p = await open("accueil"); await clean(p);
-              await p.evaluate((id) => openSheet(id), id); await p.waitForTimeout(3500); await clean(p);
-              await p.screenshot({ path: `out/fiche_${id}_000.png` });
+            const step = async (name, fn) => { try { await fn(); console.log("ok", name); } catch (e) { console.log("RATÉ", name, String(e.message).slice(0, 400)); } };
+            const coords = {};
+            const box = async (p, sel, key) => { const bb = await p.locator(sel).first().boundingBox(); coords[key] = bb; return bb; };
+            const setTop = async (p, y) => { await p.evaluate((y) => { document.getElementById("sheet").scrollTop = y; }, y); await p.waitForTimeout(500); };
+            const tall = async (p, prefix) => {
               const max = await p.evaluate(() => { const s = document.getElementById("sheet"); return s.scrollHeight - s.clientHeight; });
-              console.log("défilement fiche", id, max);
-              let i = 1;
-              for (let y = 150; y < max + 150; y += 150) {
-                await p.evaluate((y) => { document.getElementById("sheet").scrollTop = y; }, Math.min(y, max)); await p.waitForTimeout(500);
-                await p.screenshot({ path: `out/fiche_${id}_${String(i++).padStart(3, "0")}.png` });
-              }
-              console.log("pas", await p.evaluate(() => document.getElementById("sheet").scrollTop));
-              await p.close();
-            });
-            await step("carte", async () => {
-              const p = await open("carte"); await clean(p); await p.waitForTimeout(6000); await clean(p);
-              await p.screenshot({ path: "out/carte.png" });
-              await p.close();
-            });
-            await step("itineraire", async () => {
+              let i = 0;
+              for (let y = 0; y < max + 150; y += 150) { await setTop(p, Math.min(y, max)); await p.screenshot({ path: `out/${prefix}_${String(i++).padStart(3, "0")}.png` }); }
+            };
+            await step("démo fiche", async () => {
               const p = await open("accueil"); await clean(p);
-              await p.evaluate(() => showRoute("paris-2-francais-astair"));
-              await p.waitForTimeout(12000); await clean(p);
-              await p.screenshot({ path: "out/route_defaut.png" });
-              for (const m of ["foot", "car", "bike", "transit"]) {
-                const btn = p.locator(`[data-route-mode="${m}"]`);
-                if (await btn.count()) { await btn.click(); await p.waitForTimeout(3500); await p.screenshot({ path: `out/route_${m}.png` }); }
-              }
+              await p.evaluate((id) => openSheet(id), ID); await p.waitForTimeout(3500); await clean(p);
+              await p.screenshot({ path: "out/demo_0.png" });
+              await box(p, "#sheet [data-tested]", "tested");
+              await p.click("#sheet [data-tested]"); await p.waitForTimeout(400);
+              await p.screenshot({ path: "out/demo_1a.png" });
+              await p.waitForTimeout(4500); await clean(p);
+              await p.screenshot({ path: "out/demo_1.png" });
+              await tall(p, "tallA");
+              // position de défilement pour « Mon avis »
+              await setTop(p, 0);
+              const sy = await p.evaluate(() => { const s = document.getElementById("sheet"); const st = s.querySelector(".stars"); return Math.max(0, Math.round(st.getBoundingClientRect().top - s.getBoundingClientRect().top - 190)); });
+              coords.S1 = sy; await setTop(p, sy);
+              await p.screenshot({ path: "out/demo_2.png" });
+              await box(p, '#sheet [data-rate="5"]', "star5");
+              for (let n = 1; n <= 5; n++) coords["star" + n] = await p.locator(`#sheet [data-rate="${n}"]`).first().boundingBox();
+              await p.click('#sheet [data-rate="5"]'); await p.waitForTimeout(1200);
+              await setTop(p, sy); await p.waitForTimeout(4000); await clean(p);
+              await p.screenshot({ path: "out/demo_3.png" });
+              coords.S1b = await p.evaluate(() => document.getElementById("sheet").scrollTop);
+              await box(p, "#toOrder", "toOrder");
+              const t1 = "Les escargots, le baba";
+              for (const [k, n] of [["4a", 8], ["4b", 15], ["4", t1.length]]) { await p.fill("#toOrder", t1.slice(0, n)); await p.waitForTimeout(200); await p.screenshot({ path: `out/demo_${k}.png` }); }
+              await p.locator("#toOrder").dispatchEvent("change");
+              await box(p, "#comment", "comment");
+              const t2 = "Parfait pour un dîner à deux. À refaire avec les copains !";
+              for (const [k, n] of [["5a", 14], ["5b", 30], ["5c", 44], ["5", t2.length]]) { await p.fill("#comment", t2.slice(0, n)); await p.waitForTimeout(200); await p.screenshot({ path: `out/demo_${k}.png` }); }
+              await p.locator("#comment").dispatchEvent("change"); await p.locator("#comment").blur(); await p.waitForTimeout(4500);
+              await p.screenshot({ path: "out/demo_6.png" });
+              await tall(p, "tallB");
               await p.close();
             });
+            await step("carte amis", async () => {
+              const p = await open("carte"); await clean(p); await p.waitForTimeout(6000); await clean(p);
+              await p.screenshot({ path: "out/amis_carte_0.png" });
+              const chips = p.locator("[data-map-who]"); console.log("puces carte", await chips.count());
+              for (let i = 1; i < Math.min(3, await chips.count()); i++) {
+                coords["mapchip" + i] = await chips.nth(i).boundingBox();
+                await chips.nth(i).click(); await p.waitForTimeout(5000); await p.screenshot({ path: `out/amis_carte_${i}.png` });
+              }
+              const mk = p.locator(".leaflet-marker-icon").first();
+              if (await mk.count()) { await mk.click({ force: true }); await p.waitForTimeout(3000); await p.screenshot({ path: "out/amis_carte_fiche.png" }); }
+              await p.close();
+            });
+            await step("réglages amis", async () => {
+              const p = await open("carte"); await clean(p);
+              await p.evaluate(() => openSettings()); await p.waitForTimeout(2000); await clean(p);
+              await p.screenshot({ path: "out/amis_reglages_0.png" });
+              const ok = await p.evaluate(() => { const e = document.querySelector("[data-social]"); if (!e) return false; e.scrollIntoView({ block: "start" }); return true; });
+              console.log("bloc amis", ok); await p.waitForTimeout(800);
+              await p.screenshot({ path: "out/amis_reglages.png" });
+              await p.close();
+            });
+            await step("fiche d'une amie", async () => {
+              const p = await open("accueil"); await clean(p);
+              await p.evaluate(() => openSheet("demo-septime")); await p.waitForTimeout(3000); await clean(p);
+              await p.screenshot({ path: "out/amis_fiche.png" });
+              await p.close();
+            });
+            fs.writeFileSync("out/coords.json", JSON.stringify(coords, null, 1));
             await b.close();
           })();
           JS
@@ -102,7 +137,7 @@ jobs:
           ls -la out | head -80
       - name: Garder les captures sur la branche
         run: |
-          rm -rf reel-captures && mkdir reel-captures && cp /tmp/cap/out/* reel-captures/
+          mkdir -p reel-captures && cp /tmp/cap/out/* reel-captures/
           git add reel-captures
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "Captures pour le réel"
           git push
