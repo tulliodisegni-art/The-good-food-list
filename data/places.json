@@ -5606,7 +5606,19 @@
   "enriched": 5,
   "photo": "https://www.laperouse.com/wp-content/uploads/2025/07/Laperouse-Devanture-480x320.webp",
   "bookingScan": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "12:15-13:30,20:00-21:30",
+   "12:15-13:30,20:00-21:30",
+   "12:15-13:30,20:00-21:30",
+   "12:15-13:30,20:00-21:30",
+   "12:15-13:30,20:00-21:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-japonais-shinko",
@@ -5633,7 +5645,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-japonais-akira-back",
@@ -5657,7 +5681,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 40 69 60 00",
-  "summary": "Une cuisine japonaise moderne aux influences coréennes et internationales signée par le chef Akira Back. L'ambiance est chic, branchée et animée au cœur du Prince de Galles."
+  "summary": "Une cuisine japonaise moderne aux influences coréennes et internationales signée par le chef Akira Back. L'ambiance est chic, branchée et animée au cœur du Prince de Galles.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-japonais-kokuban",
@@ -5684,7 +5720,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30",
+   "11:30-15:00,18:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-japonais-weito",
@@ -5710,7 +5758,8 @@
   "resa": "telephone",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-japonais-doki-doki",
@@ -5734,7 +5783,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Un bar à handrolls branché et décontracté où l'on déguste des rouleaux de nori croustillants garnis de poisson ultra-frais. L'ambiance est conviviale, rythmée par le ballet des chefs qui roulent les makis minute devant les clients attablés au comptoir.",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-japonais-enni-udon",
@@ -5759,7 +5820,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=360717&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse incontournable pour les amateurs de nouilles japonaises authentiques, proposant des udons faits maison aux bouillons riches et réconfortants. L'ambiance y est sobre, épurée et typique des cantines traditionnelles japonaises."
+  "summary": "Une adresse incontournable pour les amateurs de nouilles japonaises authentiques, proposant des udons faits maison aux bouillons riches et réconfortants. L'ambiance y est sobre, épurée et typique des cantines traditionnelles japonaises.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-japonais-salvaje",
@@ -5786,7 +5859,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-01:00",
+   "12:00-14:30,19:00-01:00",
+   "12:00-14:30,19:00-01:00",
+   "12:00-14:30,19:00-01:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-01:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-japonais-komatsubaki",
@@ -5809,7 +5894,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 56 31 66",
-  "summary": "Une authentique table japonaise intimiste qui propose des plats faits maison raffinés et de délicieux sushis. L'ambiance y est chaleureuse et discrète."
+  "summary": "Une authentique table japonaise intimiste qui propose des plats faits maison raffinés et de délicieux sushis. L'ambiance y est chaleureuse et discrète.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:00,19:00-22:00",
+   "12:00-14:00,19:00-22:00",
+   "12:00-14:00,19:00-22:00",
+   "12:00-14:00,19:00-22:00",
+   "12:00-14:00,19:00-22:00",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-coreen-hite",
@@ -5832,7 +5929,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une adresse incontournable pour savourer des spécialités coréennes généreuses et savoureuses comme le poulet frit ou les nouilles sautées. L'ambiance y est conviviale et décontractée.",
-  "resa": "telephone"
+  "resa": "telephone",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-thailandais-mun",
@@ -5856,7 +5954,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant spectaculaire aux accents asiatiques offrant une vue imprenable sur les toits de Paris. On y déguste une cuisine fusion aux saveurs raffinées dans un décor somptueux et festif."
+  "summary": "Un restaurant spectaculaire aux accents asiatiques offrant une vue imprenable sur les toits de Paris. On y déguste une cuisine fusion aux saveurs raffinées dans un décor somptueux et festif.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-libanais-paillettes",
@@ -5881,7 +5991,8 @@
   "instagram": "paillettesparis",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un lieu festif et chaleureux qui revisite la gastronomie libanaise à travers des mezzés à partager. L'ambiance y est vibrante et festive, idéale pour passer une soirée animée."
+  "summary": "Un lieu festif et chaleureux qui revisite la gastronomie libanaise à travers des mezzés à partager. L'ambiance y est vibrante et festive, idéale pour passer une soirée animée.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-oriental-gala",
@@ -5906,7 +6017,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-cacher-le-kavod",
@@ -5930,7 +6042,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une table cacher haut de gamme incontournable du 8e arrondissement, idéale pour savourer des viandes d'exception dans un cadre élégant et feutré.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-indien-mahatma",
@@ -5955,7 +6068,8 @@
   "instagram": "mahatma_paris",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse chaleureuse dédiée aux grands classiques de la gastronomie indienne, réputée pour ses currys savoureux et ses naans moelleux dans un décor soigné."
+  "summary": "Une adresse chaleureuse dédiée aux grands classiques de la gastronomie indienne, réputée pour ses currys savoureux et ses naans moelleux dans un décor soigné.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-tapas-sergent-garcia",
@@ -5979,7 +6093,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un spot branché idéal pour partager des tapas méditerranéennes raffinées autour d'un verre, dans une ambiance conviviale et rythmée."
+  "summary": "Un spot branché idéal pour partager des tapas méditerranéennes raffinées autour d'un verre, dans une ambiance conviviale et rythmée.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-tapas-amazonia",
@@ -6004,7 +6119,8 @@
   "instagram": "amazonia_restaurant",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant au décor luxuriant et immersif qui propose des tapas et des spécialités aux accents sud-américains. L'ambiance y est festive, chaleureuse et rythmée par une atmosphère tropicale."
+  "summary": "Un restaurant au décor luxuriant et immersif qui propose des tapas et des spécialités aux accents sud-américains. L'ambiance y est festive, chaleureuse et rythmée par une atmosphère tropicale.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-grec-kalamata",
@@ -6028,7 +6144,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table grecque élégante et lumineuse qui met à l'honneur les saveurs ensoleillées de la Méditerranée et des mezzés à partager. L'ambiance est conviviale, chic et décontractée, idéale pour voyager le temps d'un repas."
+  "summary": "Une table grecque élégante et lumineuse qui met à l'honneur les saveurs ensoleillées de la Méditerranée et des mezzés à partager. L'ambiance est conviviale, chic et décontractée, idéale pour voyager le temps d'un repas.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-grec-anna",
@@ -6053,7 +6170,8 @@
   "aiFill": 1,
   "phone": "01 47 20 03 60",
   "booking": "https://www.thefork.fr/restaurant/anna-r799195",
-  "summary": "Un restaurant grec contemporain au décor soigné, proposant une cuisine méditerranéenne raffinée et des plats à partager. L'atmosphère y est à la fois chic, chaleureuse et animée."
+  "summary": "Un restaurant grec contemporain au décor soigné, proposant une cuisine méditerranéenne raffinée et des plats à partager. L'atmosphère y est à la fois chic, chaleureuse et animée.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-tibetain-lhotse",
@@ -6078,7 +6196,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=352062&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse tibétaine authentique qui invite à découvrir des spécialités himalayennes réconfortantes comme les momos traditionnels. L'ambiance est intime, chaleureuse et imprégnée d'une douce sérénité."
+  "summary": "Une adresse tibétaine authentique qui invite à découvrir des spécialités himalayennes réconfortantes comme les momos traditionnels. L'ambiance est intime, chaleureuse et imprégnée d'une douce sérénité.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-fusion-bensai-thai-japanese-fusion",
@@ -6102,7 +6221,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Bensai propose une fusion raffinée entre la cuisine thaïlandaise et japonaise dans une ambiance chic et élégante. On y déguste des sushis créatifs et des plats relevés aux saveurs d'Asie."
+  "summary": "Bensai propose une fusion raffinée entre la cuisine thaïlandaise et japonaise dans une ambiance chic et élégante. On y déguste des sushis créatifs et des plats relevés aux saveurs d'Asie.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-8-brunch-prince-de-galles",
@@ -6126,7 +6257,8 @@
   "booking": "https://www.sevenrooms.com/reservations/bar1920",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Au sein du prestigieux hôtel Prince de Galles, le restaurant 19.20 propose un brunch d'exception dans un cadre somptueux Art Déco. L'ambiance y est feutrée et met à l'honneur une cuisine française revisitée avec talent."
+  "summary": "Au sein du prestigieux hôtel Prince de Galles, le restaurant 19.20 propose un brunch d'exception dans un cadre somptueux Art Déco. L'ambiance y est feutrée et met à l'honneur une cuisine française revisitée avec talent.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-8-cafe-cafe-fino",
@@ -6152,7 +6284,19 @@
   "bookingOk": 2,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-10",
+  "oh": [
+   "08:00-16:00",
+   "08:00-16:00",
+   "08:00-16:00",
+   "08:00-16:00",
+   "08:00-16:00",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-francais-lorette-les-garcons",
@@ -6177,7 +6321,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "instagram": "lorette_les_garcons",
-  "summary": "Une belle adresse bistronomique au cœur du 9e arrondissement proposant une cuisine française généreuse et de saison. L'ambiance y est conviviale, parfaite pour partager un bon repas entre amis."
+  "summary": "Une belle adresse bistronomique au cœur du 9e arrondissement proposant une cuisine française généreuse et de saison. L'ambiance y est conviviale, parfaite pour partager un bon repas entre amis.",
+  "ohTry": "2026-11-10"
  },
  {
   "id": "paris-9-francais-le-rouge-a-levres",
@@ -6201,7 +6346,19 @@
   "instagram": "lerouge_a_levres",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un bar à tapas et à vin chaleureux au cœur du 9e arrondissement, idéal pour partager des planches de charcuterie et de savoureuses assiettes dans une ambiance intime et conviviale."
+  "summary": "Un bar à tapas et à vin chaleureux au cœur du 9e arrondissement, idéal pour partager des planches de charcuterie et de savoureuses assiettes dans une ambiance intime et conviviale.",
+  "ohTry": "2026-11-10",
+  "oh": [
+   "",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-10"
  },
  {
   "id": "paris-9-francais-mon-paris",
@@ -24130,5 +24287,56 @@
   "ogTry": 2,
   "pressTry": 1,
   "commonsTry": 1
+ },
+ {
+  "id": "u-mw9x8q9c2mv6",
+  "arr": 10,
+  "cat": "Libanais",
+  "list": "paris",
+  "name": "La Petite Rose des Sables",
+  "resa": "telephone",
+  "phone": "01 42 08 24 16",
+  "price": 2,
+  "aiFill": 1,
+  "noMenu": 1,
+  "source": "https://www.instagram.com/reel/Dfei-pwt0S8/?rpxt=eGI3OGtiZW11djBl",
+  "addedAt": "2026-11-09",
+  "address": "6 Rue de Lancry, 75010 Paris",
+  "summary": "Un charmant restaurant libanais au cœur du 10ème arrondissement, idéal pour déguster des mezzés savoureux dans une ambiance chaleureuse et conviviale.",
+  "instagram": "lapetiterosedessables",
+  "shared": true,
+  "ogTry": "2||",
+  "pressTry": 1,
+  "lat": 48.868942,
+  "lng": 2.360165,
+  "searched": 1
+ },
+ {
+  "id": "u-mw9y051qd04s",
+  "arr": 8,
+  "cat": "Japonais",
+  "list": "paris",
+  "name": "Kasumi",
+  "price": 2,
+  "source": "https://www.instagram.com/reel/DcbZyt3oZu0/?cplk=Mnk4YXA4ZzNmZTFl",
+  "addedAt": "2026-11-10",
+  "address": "15 Rue de Berri, 75008 Paris",
+  "summary": "Un buffet à volonté japonais proposant un large choix de spécialités (sushis, makis, brochettes) dans une ambiance conviviale.",
+  "instagram": "kasumi.paris",
+  "shared": true,
+  "ogTry": "2||",
+  "aiFill": 1,
+  "phone": "01 43 59 17 07",
+  "noMenu": 1,
+  "resa": "inconnu",
+  "pressTry": 1,
+  "lat": 48.872575,
+  "lng": 2.304269,
+  "searched": 1,
+  "website": "https://kasumi-restaurant.com",
+  "enriched": 5,
+  "photo": "https://framerusercontent.com/images/LyoCS6ySnr6b0fBpZfiVtpptKk.jpg?width=1000&height=1499",
+  "booking": "https://bookings.zenchef.com/results?rid=377296&lang=fr",
+  "bookingOk": 2
  }
 ]
