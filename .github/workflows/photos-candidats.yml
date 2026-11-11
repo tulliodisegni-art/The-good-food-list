@@ -1,0 +1,27 @@
+name: Photos à vérifier (candidates)
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/project-thread-zzp2lp]
+    paths: [scripts/photo_candidates.mjs, .github/workflows/photos-candidats.yml]
+permissions:
+  contents: write
+jobs:
+  candidats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/photo_candidates.mjs
+      - name: Déposer sur la branche photos-candidats
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan cand-tmp
+          git rm -rfq --cached . >/dev/null
+          git add cand
+          git commit -qm "Photos candidates"
+          git push -f origin cand-tmp:photos-candidats
