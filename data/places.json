@@ -8718,7 +8718,8 @@
   "aiFill": 1,
   "summary": "Une taqueria chaleureuse au cœur du 10e arrondissement qui propose des tacos authentiques et savoureux. L'ambiance y est décontractée et parfaite pour un déjeuner sur le pouce ou un dîner entre amis.",
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-10-fusion-siseng",
@@ -8742,7 +8743,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 06 14 36",
-  "summary": "Un spot incontournable le long du canal Saint-Martin spécialisé dans les bao burgers fusion et les frites de patate douce. L'ambiance est conviviale et branchée, idéale pour profiter de la vue sur l'eau."
+  "summary": "Un spot incontournable le long du canal Saint-Martin spécialisé dans les bao burgers fusion et les frites de patate douce. L'ambiance est conviviale et branchée, idéale pour profiter de la vue sur l'eau.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-10-creperie-galbar",
@@ -8767,7 +8769,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-10-vegan-ora",
@@ -8794,7 +8797,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-10-brunch-parenthese",
@@ -8818,7 +8822,8 @@
   "booking": "https://www.opentable.fr/restref/client/?restref=393372&lang=fr-FR",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un spot chaleureux et gourmand idéal pour déguster des pancakes moelleux et des brunchs généreux faits maison. L'ambiance y est cosy et conviviale, parfaite pour un moment de détente."
+  "summary": "Un spot chaleureux et gourmand idéal pour déguster des pancakes moelleux et des brunchs généreux faits maison. L'ambiance y est cosy et conviviale, parfaite pour un moment de détente.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-10-cafe-le-cafe-bistrot",
@@ -8842,7 +8847,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un café-bistrot traditionnel aux accents parisiens proposant des classiques de la cuisine française dans une ambiance vivante et authentique. Idéal pour un café en terrasse ou un repas décontracté.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-10-cafe-immersion",
@@ -8867,7 +8873,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 42 08 55 64",
-  "summary": "Un coffee shop lumineux et tendance qui met à l'honneur des brunchs colorés, des pâtisseries savoureuses et des lattes créatifs. L'atmosphère y est moderne, chaleureuse et très accueillante."
+  "summary": "Un coffee shop lumineux et tendance qui met à l'honneur des brunchs colorés, des pâtisseries savoureuses et des lattes créatifs. L'atmosphère y est moderne, chaleureuse et très accueillante.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:00",
+   "09:00-17:30",
+   "09:00-17:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-10-cafe-residence-kann",
@@ -8891,7 +8909,8 @@
   "aiFill": 1,
   "summary": "Un concept hybride mêlant design scandinave, espace d'exposition et café de quartier. On y savoure de délicieuses boissons chaudes dans une ambiance épurée, artistique et intimiste.",
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-francais-maison-breguet",
@@ -8916,7 +8935,19 @@
   "aiFill": 1,
   "phone": "01 58 28 61 90",
   "booking": "https://module.lafourchette.com/fr_FR/module/701042-4f3f2",
-  "summary": "Un restaurant bistronomique élégant et lumineux qui propose une cuisine de saison raffinée dans une ambiance chaleureuse. Idéal pour un déjeuner intimiste ou un dîner feutré."
+  "summary": "Un restaurant bistronomique élégant et lumineux qui propose une cuisine de saison raffinée dans une ambiance chaleureuse. Idéal pour un déjeuner intimiste ou un dîner feutré.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "07:00-22:30",
+   "07:00-22:30",
+   "07:00-22:30",
+   "07:00-22:30",
+   "07:00-22:30",
+   "07:00-22:30",
+   "07:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-11-francais-blue-rooster",
@@ -8941,7 +8972,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-francais-brasserie-martin",
@@ -8965,7 +8997,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une grande brasserie populaire et festive signée Nouvelle Garde, avec une belle verrière et des plats faits maison ultra sourcés. Ne manquez pas leurs saucisses-purée légendaires et leurs desserts généreux.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-11-francais-taem",
@@ -8990,7 +9034,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-francais-city-barbecue",
@@ -9017,7 +9062,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-francais-mamie-bidoche",
@@ -9044,7 +9090,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-francais-diggity",
@@ -9070,7 +9117,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=353674&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un bistrot de quartier chaleureux et décontracté où l'on déguste une cuisine française réconfortante et des burgers maison."
+  "summary": "Un bistrot de quartier chaleureux et décontracté où l'on déguste une cuisine française réconfortante et des burgers maison.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-francais-chez-francois",
@@ -9095,7 +9143,8 @@
   "aiFill": 1,
   "summary": "Une adresse conviviale proposant une cuisine traditionnelle dans une ambiance simple et chaleureuse du 11e arrondissement.",
   "resa": "telephone",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-francais-l-echoppe",
@@ -9119,7 +9168,8 @@
   "instagram": "echoppedeparis",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "L'Échoppe de Paris propose une cuisine française raffinée et de saison, élaborée avec des produits frais. L'ambiance y est chaleureuse et intimiste, idéale pour un dîner convivial."
+  "summary": "L'Échoppe de Paris propose une cuisine française raffinée et de saison, élaborée avec des produits frais. L'ambiance y est chaleureuse et intimiste, idéale pour un dîner convivial.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-francais-dadou",
@@ -9143,7 +9193,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Dadou propose une cuisine française bistronomique créative et soignée dans un cadre chaleureux et élégant. On y savoure des plats faits maison aux saveurs subtiles dans une ambiance intime et conviviale.",
-  "resa": "telephone"
+  "resa": "telephone",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-italien-giorgio",
@@ -9168,7 +9219,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Giorgio propose de savoureuses spécialités italiennes et des pizzas généreuses dans une ambiance festive et colorée. Un lieu idéal pour partager un moment gourmand et animé au cœur du 11e arrondissement.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-italien-pupetta-beaumarchais",
@@ -9192,7 +9244,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-italien-itaglio",
@@ -9217,7 +9270,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-italien-gruppomimo",
@@ -9241,7 +9295,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un cadre branché et solaire pour savourer des pâtes fraîches faites maison et des pizzas napolitaines savoureuses."
+  "summary": "Un cadre branché et solaire pour savourer des pâtes fraîches faites maison et des pizzas napolitaines savoureuses.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-11-italien-origini",
@@ -9264,7 +9330,8 @@
   "instagram": "originiresto",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant italien raffiné qui met à l'honneur des produits de terroir sourcés avec soin et des recettes traditionnelles revisitées."
+  "summary": "Un restaurant italien raffiné qui met à l'honneur des produits de terroir sourcés avec soin et des recettes traditionnelles revisitées.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-espagnol-rainbao",
@@ -9289,7 +9356,8 @@
   "aiFill": 1,
   "summary": "Un lieu original aux influences ibériques et fusion, idéal pour partager des tapas créatives dans une ambiance détendue.",
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-americain-brother-sister",
@@ -9315,7 +9383,8 @@
   "summary": "Un lieu chaleureux et convivial aux influences new-yorkaises, idéal pour déguster des plats réconfortants et des burgers faits maison dans une ambiance décontractée.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-31-street-burgers",
@@ -9342,7 +9411,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-goiko",
@@ -9366,7 +9436,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 43 57 20 89",
-  "summary": "Connu pour ses burgers gourmands d'inspiration vénézuélienne, Goiko propose des pièces généreuses et savoureuses dans une atmosphère festive et dynamique."
+  "summary": "Connu pour ses burgers gourmands d'inspiration vénézuélienne, Goiko propose des pièces généreuses et savoureuses dans une atmosphère festive et dynamique.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-cut",
@@ -9391,7 +9462,8 @@
   "aiFill": 1,
   "phone": "01 40 24 07 43",
   "summary": "Une adresse de street food de qualité mettant à l'honneur des smash burgers croustillants et juteux, à savourer dans un cadre simple et moderne.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-le-camion-qui-fume",
@@ -9415,7 +9487,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Pionnier du burger gourmet à Paris, ce spot régale avec ses smash burgers juteux et ses frites maison dans une ambiance décontractée et rock.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-gomu",
@@ -9442,7 +9515,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-seizemetrescarres",
@@ -9469,7 +9543,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-wakam",
@@ -9496,7 +9571,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-crispy-soul",
@@ -9523,7 +9599,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-burger-break-moment",
@@ -9550,7 +9627,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-japonais-sushi-first",
@@ -9576,7 +9654,8 @@
   "resa": "telephone",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-japonais-sushi-rainbow",
@@ -9601,7 +9680,8 @@
   "instagram": "restaurant_sushirainbow",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse chaleureuse dédiée aux classiques de la cuisine japonaise, avec des plateaux de sushis colorés et savoureux. L'ambiance cosy et accueillante est idéale pour un déjeuner ou un dîner détendu près de la place de la Bastille."
+  "summary": "Une adresse chaleureuse dédiée aux classiques de la cuisine japonaise, avec des plateaux de sushis colorés et savoureux. L'ambiance cosy et accueillante est idéale pour un déjeuner ou un dîner détendu près de la place de la Bastille.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-japonais-superbao",
@@ -9625,7 +9705,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 48 05 91 19",
-  "summary": "Un spot chaleureux et décontracté où l'on déguste d'excellents gua baos moelleux garnis de saveurs fusion. L'ambiance y est moderne et conviviale, idéale pour un déjeuner rapide ou un dîner entre amis."
+  "summary": "Un spot chaleureux et décontracté où l'on déguste d'excellents gua baos moelleux garnis de saveurs fusion. L'ambiance y est moderne et conviviale, idéale pour un déjeuner rapide ou un dîner entre amis.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-japonais-yoruparis",
@@ -9650,7 +9731,8 @@
   "aiFill": 1,
   "summary": "Un lieu hybride et branché qui mêle influences japonaises et atmosphère nocturne parisienne. On y profite d'une ambiance feutrée et musicale, parfaite pour siroter des cocktails originaux.",
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-japonais-aoba",
@@ -9674,7 +9756,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-chinois-bao-express",
@@ -9698,7 +9781,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 43 55 97 00",
-  "summary": "Une cantine branchée aux airs de diner hongkongais rétro signée Bao Express. On y savoure des baos généreux, des dim sum faits maison et des douceurs décadentes dans une ambiance ultra-animée."
+  "summary": "Une cantine branchée aux airs de diner hongkongais rétro signée Bao Express. On y savoure des baos généreux, des dim sum faits maison et des douceurs décadentes dans une ambiance ultra-animée.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-chinois-hibao",
@@ -9723,7 +9807,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-chinois-mala-boom",
@@ -9747,7 +9832,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Le paradis du Mala Xiangguo à Paris, où l'on compose son wok sur mesure aux saveurs piquantes et parfumées. L'ambiance est jeune, branchée et vibrante."
+  "summary": "Le paradis du Mala Xiangguo à Paris, où l'on compose son wok sur mesure aux saveurs piquantes et parfumées. L'ambiance est jeune, branchée et vibrante.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-coreen-la-cantine-coreenne",
@@ -9772,7 +9858,8 @@
   "aiFill": 1,
   "phone": "01 43 57 88 56",
   "summary": "Une adresse incontournable pour déguster des spécialités coréennes authentiques comme le bibimbap et le poulet frit. L'ambiance est conviviale et décontractée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-oriental-chakchouka",
@@ -9797,7 +9884,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Une cantine chaleureuse mettant à l'honneur des plats orientaux savoureux et réconfortants. L'ambiance y est familiale, simple et accueillante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-oriental-bladi",
@@ -9824,7 +9912,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-oriental-nour",
@@ -9850,7 +9939,8 @@
   "aiFill": 1,
   "phone": "01 43 38 31 82",
   "summary": "Un comptoir oriental branché et convivial qui revisite les classiques du genre. Idéal pour partager des mezzés savoureux dans une atmosphère décontractée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-israelien-soumsoum",
@@ -9877,7 +9967,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-libanais-les-freres-hummus",
@@ -9901,7 +9992,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-thailandais-maythai",
@@ -9925,7 +10017,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant thaïlandais chaleureux qui propose des classiques savoureux et parfumés, parfaits pour un déjeuner ou un dîner dépaysant. L'ambiance y est conviviale et décontractée au cœur du 11e arrondissement."
+  "summary": "Un restaurant thaïlandais chaleureux qui propose des classiques savoureux et parfumés, parfaits pour un déjeuner ou un dîner dépaysant. L'ambiance y est conviviale et décontractée au cœur du 11e arrondissement.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-philippin-bobi",
@@ -9949,7 +10042,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse unique mettant à l'honneur la cuisine philippine avec des plats à partager audacieux et réconfortants. L'ambiance de ce bar-restaurant de la rue Oberkampf est résolument branchée et animée."
+  "summary": "Une adresse unique mettant à l'honneur la cuisine philippine avec des plats à partager audacieux et réconfortants. L'ambiance de ce bar-restaurant de la rue Oberkampf est résolument branchée et animée.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-fusion-savane-mousson",
@@ -9973,7 +10067,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une table fusion originale mariant avec brio les saveurs d'Afrique et d'Asie dans des assiettes créatives et pleines de peps. On y profite d'une ambiance chaleureuse, moderne et intimiste."
+  "summary": "Une table fusion originale mariant avec brio les saveurs d'Afrique et d'Asie dans des assiettes créatives et pleines de peps. On y profite d'une ambiance chaleureuse, moderne et intimiste.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-fusion-laia",
@@ -9997,7 +10092,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-brunch-kafkaf",
@@ -10021,7 +10117,8 @@
   "aiFill": 1,
   "summary": "Un spot chaleureux aux accents levantins idéal pour déguster des shakshukas savoureuses et des pâtisseries maison. L'ambiance y est conviviale, parfaite pour un brunch gourmand entre amis.",
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-brunch-clint",
@@ -10046,7 +10143,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-brunch-unreve",
@@ -10071,7 +10169,8 @@
   "booking": "https://www.opentable.fr/booking/restref/availability?lang=fr-FR&restRef=405672",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un coffee shop raffiné aux influences franco-asiatiques proposant des créations originales comme des lattes signature et des pâtisseries aériennes. L'atmosphère y est douce, moderne et propice à la détente."
+  "summary": "Un coffee shop raffiné aux influences franco-asiatiques proposant des créations originales comme des lattes signature et des pâtisseries aériennes. L'atmosphère y est douce, moderne et propice à la détente.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-11-brunch-l-atelier-saisonnier",
@@ -10094,7 +10193,19 @@
   "instagram": "lateliersaisonnier",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un lieu chaleureux et authentique axé sur des produits frais et de saison pour des brunchs copieux et savoureux. On y apprécie l'ambiance de quartier décontractée et le café de grande qualité."
+  "summary": "Un lieu chaleureux et authentique axé sur des produits frais et de saison pour des brunchs copieux et savoureux. On y apprécie l'ambiance de quartier décontractée et le café de grande qualité.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:00",
+   "09:00-16:30",
+   "09:00-16:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-11-cafe-joa",
@@ -10120,7 +10231,19 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:30-18:30",
+   "09:30-18:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-11-cafe-cafe-mareva",
@@ -10144,7 +10267,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Le paradis du sans gluten et du brunch gourmand, idéal pour savourer des gaufres salées ou sucrées dans une atmosphère cosy et lumineuse."
+  "summary": "Le paradis du sans gluten et du brunch gourmand, idéal pour savourer des gaufres salées ou sucrées dans une atmosphère cosy et lumineuse.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "09:00-17:30",
+   "09:00-17:30",
+   "09:00-17:30",
+   "09:00-17:30",
+   "09:00-17:30",
+   "09:00-18:00",
+   "09:00-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-11-cafe-cafe-du-temple",
@@ -10168,7 +10303,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un café de quartier convivial et branché, parfait pour boire un verre en terrasse ou déguster des plats réconfortants dans une ambiance animée."
+  "summary": "Un café de quartier convivial et branché, parfait pour boire un verre en terrasse ou déguster des plats réconfortants dans une ambiance animée.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00",
+   "08:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-11-cafe-cafe-mericourt",
@@ -10195,7 +10342,19 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:00",
+   "09:00-18:30",
+   "09:00-18:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "paris-11-cafe-le-charbon",
@@ -24831,5 +24990,57 @@
   "photo": "https://framerusercontent.com/images/LyoCS6ySnr6b0fBpZfiVtpptKk.jpg?width=1000&height=1499",
   "booking": "https://bookings.zenchef.com/results?rid=377296&lang=fr",
   "bookingOk": 2
+ },
+ {
+  "id": "u-mwato9gx9nau",
+  "arr": 8,
+  "cat": "Japonais",
+  "list": "paris",
+  "name": "Sushi Club Haussmann",
+  "price": 3,
+  "aiFill": 1,
+  "noMenu": 1,
+  "source": "https://www.instagram.com/reel/Dc_dsErI4wF/?xtok=NTkzbTdjZ3NpN2Iy",
+  "addedAt": "2026-11-10",
+  "address": "170 bd Haussmann, 75008 Paris",
+  "noPhone": 1,
+  "summary": "Un restaurant de sushis à volonté de qualité dans un magnifique cadre, où l'on peut commander sans limite toutes les 15 minutes.",
+  "instagram": "sushiclub.haussmann",
+  "shared": true,
+  "ogTry": "2||",
+  "resa": "inconnu",
+  "pressTry": 1,
+  "lat": 48.875177,
+  "lng": 2.308612,
+  "searched": 1,
+  "website": "https://sushiclub-haussmann.fr",
+  "enriched": 5,
+  "photo": "https://framerusercontent.com/images/yORkZe0hwY7U8iUErKuLZMA2kvw.jpg",
+  "phone": "01 53 83 09 41",
+  "booking": "https://bookings.zenchef.com/results?rid=387472&lang=fr",
+  "bookingOk": 2
+ },
+ {
+  "id": "u-mwc0e0bfshk0",
+  "cat": "Resto festif",
+  "city": "Rishon LeZion",
+  "list": "villes",
+  "name": "הבאר - The Well",
+  "phone": "+972 3-956-6556",
+  "price": 3,
+  "aiFill": 1,
+  "noMenu": 1,
+  "source": "https://www.instagram.com/reel/DfmOgpGGWQ9/?dlrf=aWZwMHQ3cHFvMXMx",
+  "addedAt": "2026-11-11",
+  "address": "Rothschild St 17, Rishon LeZion, Israël",
+  "summary": "Une magnifique מסעדת שף (restaurant de chef) à Rishon LeZion, idéale pour les fêtes et célébrations avec une super ambiance et un DJ le weekend.",
+  "instagram": "thewell.il",
+  "shared": true,
+  "ogTry": "2||",
+  "resa": "inconnu",
+  "pressTry": 1,
+  "lat": 31.963899,
+  "lng": 34.800995,
+  "searched": 1
  }
 ]
