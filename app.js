@@ -14,7 +14,7 @@ const store = {
   },
 };
 // Ce qui suit le compte (sauvegardé en ligne, retrouvé sur un autre téléphone) : adresses ajoutées, notes et coches, préférences.
-const GSYNC = ["custom", "customDel", "edits", "name", "group", "univ", "gfCity", "pick", "colls"];
+const GSYNC = ["custom", "customDel", "edits", "name", "group", "univ", "gfCity", "gfHide", "pick", "colls"];
 // Adresse retirée de « custom » : on garde son id, pour qu'une synchro ne la fasse pas revenir.
 function forgetCustom(ids) {
   const del = new Set(store.get("customDel", []));
@@ -1267,7 +1267,7 @@ $("#placeForm").addEventListener("submit", (e) => {
   // Nouvelle adresse : on cherche tout seul ce qui manque (numéro, site, Insta, résa, photo…).
   if (!(prev && prev.list !== "pending")) completePlace([id, ...extra.map((b) => b.id)]);
   // On ouvre l'accueil sur la ville de l'adresse : elle y apparaît tout de suite.
-  if (typeof gfCityOf === "function") { GF.city = gfCityOf(p); store.set("gfCity", GF.city); }
+  if (typeof gfCityOf === "function") { GF.city = gfCityOf(p); store.set("gfCity", GF.city); if (typeof gfSetHidden === "function") gfSetHidden(GF.city, false); }
   location.hash = p.list; show(p.list);
   setTimeout(() => openSheet(id), 60);
 });
