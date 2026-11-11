@@ -64,8 +64,8 @@ function gfZone(p) {
   }
   if (gfCityOf(p) === "tlv") {
     if (/Jaffa|Yafo|HaDolfin/i.test(a)) return "Jaffa";
-    const t = (`${p.city || ""} ${a}`.match(GF_TLV_TOWNS) || [])[0];
-    if (t && !/Jaffa|Yafo/i.test(t)) return /rishon/i.test(t) ? "Rishon LeZion" : /petah|petach/i.test(t) ? "Petah Tikva" : t.replace(/^\w/, (x) => x.toUpperCase());
+    // Comme « Autour de Paris » : les villes voisines (Ramat Gan, Herzliya, Rishon…) dans une seule plaque.
+    if (GF_TLV_TOWNS.test(`${p.city || ""} ${a}`)) return "Autour de Tel-Aviv";
     return "Centre";
   }
   if (gfCityOf(p).startsWith("v:")) return String(p.city).trim();
@@ -96,7 +96,7 @@ function gfZkeys(P) {
   const Z = gfZones(P);
   const ks = GF.city === "paris"
     ? [...Array.from({ length: 20 }, (_, i) => String(i + 1)).filter((k) => Z[k]), ...(Z["Autour de Paris"] ? ["Autour de Paris"] : [])]
-    : Object.keys(Z).sort((a, b) => Z[b] - Z[a]);
+    : Object.keys(Z).sort((a, b) => (/^Autour/.test(a) - /^Autour/.test(b)) || Z[b] - Z[a]);
   return { Z, ks };
 }
 const gfGoodPhoto = (u) => u && !/logo|icon|favicon|placeholder|\.svg|\d{3,4}x\d{3,4}/i.test(u);
