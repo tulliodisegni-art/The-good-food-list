@@ -34,7 +34,7 @@ const GF_CONCEPTS = [
 const gfArr = (n) => (n === 1 ? "1<sup>er</sup>" : `${n}<sup>e</sup>`);
 // Ville d'une adresse. L'IA n'écrit pas toujours le nom pareil (« Tel Aviv », « NYC », « Rishon LeZion »…) :
 // on range les variantes et les villes voisines dans la bonne ville, et toute autre ville a sa propre page.
-const GF_TLV_TOWNS = /Jaffa|Yafo|Rishon|Ramat ?Gan|Herzliya|Holon|Bat ?Yam|Givatayim|Petah|Petach|Bnei ?Brak|Ramat Hasharon|Or Yehuda|Givat ?Shmuel|Yehud\b|Kiryat Ono|Hod ?HaSharon|Ra'?anana|Kfar ?Saba|Be'?er ?Ya'?akov|Rosh ?HaAyin|Nes ?Ziona|\bLod\b|Ramla|Airport City/i;
+const GF_TLV_TOWNS = /Jaffa|Yafo|Rishon|Ramat ?Gan|Herzliya|Holon|Bat ?Yam|Givatayim|Petah|Petach|Bnei ?Brak|Ramat Hasharon|Or Yehuda|Givat ?Shmuel|Yehud\b|Kiryat Ono|Hod ?HaSharon|Ra'?anana|Kfar ?Saba|Be'?er ?Ya'?akov|Rosh ?HaAyin|Nes ?Ziona|\bLod\b|Ramla|Airport City|Ramat ?Efal/i;
 // Les villes collées à Jérusalem, regroupées dans « Autour de Jérusalem ».
 const GF_JER_TOWNS = /Mevaseret|Ma'?ale Adumim/i;
 const gfCityNorm = (c) => String(c || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -85,9 +85,11 @@ function gfZone(p) {
     return a && a !== "New York" ? "Manhattan" : "";
   }
   if (gfCityOf(p) === "tlv") {
-    if (/Jaffa|Yafo|HaDolfin/i.test(a)) return "Jaffa";
+    // « Tel Aviv-Yafo » et « Derech Jaffa » (rue du centre) ne veulent pas dire Jaffa.
+    const b = a.replace(/Tel[- ]?Aviv[- ]Yafo|Dere(c)?k?h (Jaffa|Yafo)/gi, "Tel Aviv");
+    if (/Jaffa|Yafo|HaDolfin/i.test(b)) return "Jaffa";
     // Comme « Autour de Paris » : les villes voisines (Ramat Gan, Herzliya, Rishon…) dans une seule plaque.
-    if (GF_TLV_TOWNS.test(`${p.city || ""} ${a}`)) return "Autour de Tel-Aviv";
+    if (GF_TLV_TOWNS.test(`${p.city || ""} ${b}`)) return "Autour de Tel-Aviv";
     return "Centre";
   }
   if (gfCityOf(p).startsWith("v:")) return String(p.zone || p.city).trim();
@@ -109,7 +111,11 @@ const gfCord = (c) => {
   if (!GF_CORD) { GF_CORD = {}; S.places.forEach((p) => { if (p.cat && !(p.cat in GF_CORD)) GF_CORD[p.cat] = Object.keys(GF_CORD).length; }); }
   return c in GF_CORD ? GF_CORD[c] : 999;
 };
-const gfCuis = (p) => (GF.prec && p.list === "precieuses" ? p.cuisine || null : p.cat);
+// Listes rangées par moment (ex. la liste Tel-Aviv : petit-déj, déjeuner, dîner, verre, fancy, street, divers) :
+// le moment est dans « cat », la cuisine dans « cuisine ».
+const GF_MOMENTS = ["Petit-déjeuner", "Déjeuner", "Dîner", "Boire un verre", "Fancy", "Street food", "Divers"];
+const gfMoment = (p) => (p.list === "villes" && p.cuisine && GF_MOMENTS.includes(p.cat) ? p.cat : null);
+const gfCuis = (p) => (GF.prec && p.list === "precieuses" ? p.cuisine || null : gfMoment(p) ? p.cuisine : p.cat);
 const gfOutOf = (p) => { const c = p.list === "precieuses" || p.list === "sorties" ? p.cat : p.prec; return c && GF_OUT[c] ? c : null; };
 const gfGroup = (p) => gfCuis(p) || GF_OUT[gfOutOf(p)] || "Autres";
 const gfPool = () => S.places.filter((p) => gfCityOf(p) === GF.city && (GF.prec ? gfIsPrec(p) : p.list !== "precieuses" && p.list !== "sorties"));
@@ -218,6 +224,7 @@ function gfHomeBody() {
   const SO_ = GF.prec ? [] : gfSorties();
   const souts = ["Activité", "Soirée", "Boire un verre", "Rooftop", "Stand-up", "Resto festif", "Salon de thé", "Café", "À tester"].map((n) => [n, SO_.filter((p) => gfOutOf(p) === n).length]).filter((x) => x[1]);
   const k = P.filter((p) => p.kasher).length, h = P.filter((p) => p.halal).length;
+  const moms = GF_MOMENTS.map((n) => [n, P.filter((p) => gfMoment(p) === n).length]).filter((x) => x[1]);
   const INS = gfInst().sort((a, b) => (gfGoodPhoto(b.photo) ? 1 : 0) - (gfGoodPhoto(a.photo) ? 1 : 0));
   return `<div style="height:34px"></div>
   ${gfNearSec()}
@@ -228,6 +235,8 @@ function gfHomeBody() {
   <section class="sec"><div class="sec-h"><h2>Une envie ?</h2></div>
     <div class="wish"><textarea id="gfWish" rows="2" placeholder="Décris ce dont tu as envie… ex. un resto chaleureux, cuisine réconfortante et gourmande"></textarea><button data-gf-wish>Trouver</button></div>
     <div class="ex">${["Chaleureux, réconfortant et gourmand", "Léger et frais, pas cher", "Romantique avec une belle vue", "Festif entre amis, ça bouge", "Sushi de qualité", "Sucré pour le goûter"].map((x) => `<button data-gf-ex="${esc(x)}">${esc(x)}</button>`).join("")}</div></section>
+  ${moms.length ? `<section class="sec"><div class="sec-h"><h2>Ta liste</h2></div>
+    <div class="rail">${moms.map(([n, v], i) => `<button class="tile cuis" data-gf-mom="${esc(n)}" ${gfBg(gfPhoto(P.filter((p) => gfMoment(p) === n), i))}><div class="t"><h3>${esc(n)}</h3><p>${gfCount(v)}</p></div></button>`).join("")}</div></section>` : ""}
   ${cats.length ? `<section class="sec"><div class="sec-h"><h2>Par cuisine</h2><button class="all" data-gf-allcats>Tout voir ›</button></div>
     <div class="rail">${cats.slice(0, 10).map(([n, v], i) => `<button class="tile cuis" data-gf-cat="${esc(n)}" ${gfBg(gfPhoto(P.filter((p) => gfCuis(p) === n), i))}><div class="t"><h3>${esc(n)}</h3><p>${gfCount(v)}</p></div></button>`).join("")}</div></section>` : ""}
   ${GF.prec && outs.length ? `<section class="sec"><div class="sec-h"><h2>Soirées, rooftops & bars chic</h2></div>
@@ -269,6 +278,7 @@ function gfListBody() {
   if (L.diet) { items = P.filter((p) => p[L.diet]); title = L.diet === "kasher" ? "Kasher" : "Halal"; }
   if (L.out) { items = (GF.prec ? P : gfSorties()).filter((p) => gfOutOf(p) === L.out); title = esc(GF_OUT[L.out]); flat = true; }
   if (L.cat) { items = P.filter((p) => gfCuis(p) === L.cat); title = esc(L.cat); flat = true; }
+  if (L.mom) { items = P.filter((p) => gfMoment(p) === L.mom); title = esc(L.mom); }
   if (L.inst) { items = gfInst(); title = "Les institutions"; flat = true; }
   if (L.q != null) {
     const q = norm(L.q).trim();
@@ -336,6 +346,7 @@ document.addEventListener("click", (e) => {
   if (t.closest("[data-gf-dark]")) { const th = gfDark() ? "light" : "dark"; store.set("theme", th); applyTheme(th); renderHome(); return; }
   if ((b = t.closest("[data-gf-zone]"))) { gfOpenZone(b.dataset.gfZone); return; }
   if ((b = t.closest("[data-gf-cat]"))) { gfOpen({ cat: b.dataset.gfCat }); return; }
+  if ((b = t.closest("[data-gf-mom]"))) { gfOpen({ mom: b.dataset.gfMom }); return; }
   if ((b = t.closest("[data-gf-out]"))) { gfOpen({ out: b.dataset.gfOut }); return; }
   if ((b = t.closest("[data-gf-diet]"))) { gfOpen({ diet: b.dataset.gfDiet }); return; }
   if (t.closest("[data-gf-near]")) { gfOpenNear(); return; }
