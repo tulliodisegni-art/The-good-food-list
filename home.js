@@ -34,7 +34,7 @@ const GF_CONCEPTS = [
 const gfArr = (n) => (n === 1 ? "1<sup>er</sup>" : `${n}<sup>e</sup>`);
 // Ville d'une adresse. L'IA n'écrit pas toujours le nom pareil (« Tel Aviv », « NYC », « Rishon LeZion »…) :
 // on range les variantes et les villes voisines dans la bonne ville, et toute autre ville a sa propre page.
-const GF_TLV_TOWNS = /Jaffa|Yafo|Rishon|Ramat ?Gan|Herzliya|Holon|Bat ?Yam|Givatayim|Petah|Petach|Bnei ?Brak|Ramat Hasharon|Or Yehuda|Givat ?Shmuel|Yehud\b|Kiryat Ono/i;
+const GF_TLV_TOWNS = /Jaffa|Yafo|Rishon|Ramat ?Gan|Herzliya|Holon|Bat ?Yam|Givatayim|Petah|Petach|Bnei ?Brak|Ramat Hasharon|Or Yehuda|Givat ?Shmuel|Yehud\b|Kiryat Ono|Hod ?HaSharon|Ra'?anana|Kfar ?Saba|Be'?er ?Ya'?akov|Rosh ?HaAyin|Nes ?Ziona|\bLod\b|Ramla|Airport City/i;
 // Les villes collées à Jérusalem, regroupées dans « Autour de Jérusalem ».
 const GF_JER_TOWNS = /Mevaseret|Ma'?ale Adumim/i;
 const gfCityNorm = (c) => String(c || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -45,15 +45,12 @@ function gfCityOf(p) {
   if (/new york|^nyc$|manhattan|brooklyn|queens|bronx|staten/.test(c)) return "ny";
   if (/tel ?aviv|^tlv$/.test(c) || GF_TLV_TOWNS.test(c)) return "tlv";
   if (/jerusal|yerushala/.test(c) || GF_JER_TOWNS.test(c)) return "jer";
-  // Le reste d'Israël (Haïfa, Ashdod, Eilat…) : une seule page « Israël », rangée par région (champ zone).
-  if (gfCityNorm(p.country) === "israel") return "v:Israël";
   return "v:" + String(p.city).trim();
 }
 // Les quatre villes de base, puis les autres villes où il y a au moins une adresse.
 function gfCities() {
   const extra = [...new Set(S.places.map(gfCityOf).filter((id) => id.startsWith("v:")))].sort((a, b) => a.localeCompare(b, "fr"));
-  const isr = (id) => id === "v:Israël";
-  return [...GF_CITIES, ...extra.map((id) => ({ id, name: id.slice(2), kick: isr(id) ? "En Israël" : `À ${id.slice(2)}`, zoneTitle: isr(id) ? "Par région" : "Par quartier", other: true }))];
+  return [...GF_CITIES, ...extra.map((id) => ({ id, name: id.slice(2), kick: `À ${id.slice(2)}`, zoneTitle: "Par quartier", other: true }))];
 }
 // Villes masquées (celles où on ne compte pas aller) : elles disparaissent de l'accueil et de la recherche,
 // sans rien effacer. On les réaffiche quand on veut depuis « Villes ».
@@ -156,10 +153,17 @@ function gfWish(q, P) {
   return { res, labels: hit.map((c) => c.label) };
 }
 
+// Dans « Autour de Tel-Aviv » / « Autour de Jérusalem », la ville de chaque adresse est écrite en clair.
+function gfTownTag(p) {
+  if (!/^Autour de (Tel-Aviv|Jérusalem)$/.test(gfZone(p))) return "";
+  let t = String(p.city || "").trim();
+  if (!t || /tel ?aviv|j[ée]rusal/i.test(t)) t = (String(p.address || "").match(GF_TLV_TOWNS) || String(p.address || "").match(GF_JER_TOWNS) || [""])[0];
+  return t ? `<div class="town">📍 ${esc(t)}</div>` : "";
+}
 function gfCard(p, why, m) {
   const addr = p.address ? " · " + esc(String(p.address).replace(/,?\s*750\d\d Paris$/, "")) : "";
   return `<button class="pcard${p.closed ? " gone" : ""}" data-gf-id="${esc(p.id)}"><div class="ph" ${gfBg(gfGoodPhoto(p.photo) ? p.photo : "")}>${gfGoodPhoto(p.photo) ? "" : esc((p.name || "?")[0])}</div>
-    <div style="min-width:0"><b>${esc(p.name)}</b><small>${esc(gfCuis(p) || p.cat || "")}${addr}</small>
+    <div style="min-width:0"><b>${esc(p.name)}</b><small>${esc(gfCuis(p) || p.cat || "")}${addr}</small>${gfTownTag(p)}
     <div class="tags">${m != null ? `<span class="tag near">${fmtDist(m)} · ${walkMin(m)} min à pied</span>` : ""}${ohTag(p)}${p.price ? `<span class="tag">${"€".repeat(p.price)}</span>` : ""}${p.tested ? '<span class="tag ok">Testé</span>' : ""}${p.kasher ? '<span class="tag k">Kasher</span>' : ""}${p.halal ? '<span class="tag h">Halal</span>' : ""}</div>
     ${why && why.length ? `<div class="why">✓ ${esc(why.join(" · "))}</div>` : ""}</div>${p.want ? '<span class="heart">♥</span>' : ""}</button>`;
 }

@@ -268,7 +268,7 @@ const CITIES = [
   { name: "Jérusalem", sub: "Israël", color: "var(--c-it)" },
   { name: "Autour de Paris", sub: "Île-de-France", color: "var(--c-fr)" },
 ];
-// Même rangement que l'accueil : villes voisines avec Tel-Aviv et Jérusalem, une seule page « Israël » pour le reste du pays.
+// Même rangement que l'accueil : les villes voisines vont avec Tel-Aviv et Jérusalem.
 const villeOf = (p) => {
   const id = typeof gfCityOf === "function" ? gfCityOf(p) : "";
   return { tlv: "Tel-Aviv", jer: "Jérusalem", ny: "New York", paris: "Autour de Paris" }[id] || (id.startsWith("v:") ? id.slice(2) : p.city);
