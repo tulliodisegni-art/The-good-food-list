@@ -145,7 +145,9 @@
   "aiFill": 1,
   "summary": "Un bar à manger intimiste et chaleureux au cœur de Paris, idéal pour partager des assiettes canailles et des vins d'auteur en toute discrétion.",
   "noPhone": 1,
-  "ohTry": "2026-11-09"
+  "ohTry": "2026-11-09",
+  "ogTry": "2|https://inavoue.com|https://www.opentable.co.uk/r/inavoue-reservations-paris?restref=173412&lang=fr-FR&ot_source=Restaurant%20website&ot_campaign=site-inavoue-com",
+  "photo": "https://inavoue.com/wp-content/uploads/2024/03/signature-inavoue.png"
  },
  {
   "id": "paris-1-francais-maslow",
@@ -678,7 +680,9 @@
    "12:00-15:00,19:00-23:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|https://yamatogrill.fr|https://lor.paris/r/yamato-grill-paris",
+  "photo": "https://public-storage-s3.s3.gra.io.cloud.ovh.net/eEmXS7vzQtTIV3HZdOqiAxrSapOtd0sLRSWpfXKKfVqaTLFx7IQFuAyR1rVgdqswKtu3vw.png"
  },
  {
   "id": "paris-1-japonais-nodaiwa",
@@ -927,7 +931,7 @@
   "aiFill": 1,
   "phone": "01 45 08 83 11",
   "summary": "Une véritable invitation au voyage au cœur de l'Indonésie avec des saveurs parfumées et dépaysantes. On y savoure un excellent nasi goreng dans un cadre chaleureux aux décors traditionnels.",
-  "ogTry": 1,
+  "ogTry": "2|https://djakarta-bali.com|https://www.thefork.fr/restaurant/djakarta-bali-r15057",
   "ohTry": "2026-11-09",
   "oh": [
    "12:00-14:30,19:00-23:00",
@@ -939,7 +943,8 @@
    "12:00-14:30,19:00-23:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "pressTry": 1
  },
  {
   "id": "paris-1-brunch-baguett-s-cafe",
@@ -1066,7 +1071,9 @@
   "summary": "Un comptoir à café incontournable sous les arcades du Palais-Royal, réputé pour son excellent matcha latte et ses boissons de specialty coffee dans un décor minimaliste et chic.",
   "resa": "sans",
   "noPhone": 1,
-  "ohTry": "2026-11-09"
+  "ohTry": "2026-11-09",
+  "ogTry": "2|https://cafe.restaurants-de-france.fr|",
+  "pressTry": 1
  },
  {
   "id": "paris-1-cafe-le-cafe-de-l-epoque",
@@ -1355,7 +1362,9 @@
    "12:00-14:30,19:00-23:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|https://nouvellegardegroupe.com|",
+  "photo": "https://lanouvellegarde.com/wp-content/uploads/homepage-02.webp"
  },
  {
   "id": "paris-2-francais-itacoa",
@@ -1380,7 +1389,9 @@
   "phone": "01 42 36 83 88",
   "summary": "Table du chef Rafael Gomes, Itacoa propose une cuisine bistronomique créative et métissée, mettant à l'honneur des produits bruts et de saison dans un cadre épuré.",
   "resa": "inconnu",
-  "ohTry": "2026-11-09"
+  "ohTry": "2026-11-09",
+  "ogTry": "2|https://www.itacoa.paris|",
+  "photo": "https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb"
  },
  {
   "id": "paris-2-francais-the-hoxton",
@@ -1777,7 +1788,9 @@
    "11:30-15:00,18:30-23:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|http://maker.pizza/|https://www.thefork.fr/restaurant/maker-jeuneurs-r718947",
+  "photo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwe3aR-B5mpE63QrV-7IJFGzh1wqmdXZDpd1cNL_cexsRrlUeDg7dpQd8OqX8qsnKCH4DIPjgfz_XeDeMRSEN5Xyq7uOJnhaGTJOHlX7L0IQAKbfy3L97ePRiP8Fm8CD6OMyMJPzZL-tn1-UhgTC4aIGYgG1pDgerIckd_EuM5fBDkLMtSdVbv26pmmGE/s1600/image.png"
  },
  {
   "id": "paris-2-italien-gruppomimo",
@@ -1812,7 +1825,9 @@
    "12:00-15:00,19:00-22:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|https://www.gruppomimo.com|https://bookings.zenchef.com/results?rid=363323",
+  "photo": "https://cdn.prod.website-files.com/64e75b64860b4e3dc128e525/65119b5dd646650a12c99c62_pola-souvenir-1.webp"
  },
  {
   "id": "paris-2-burger-les-petites-pepites",
@@ -2389,7 +2404,9 @@
    ""
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|https://www.zhaogroupe.com|",
+  "pressTry": 1
  },
  {
   "id": "paris-2-coreen-hang-a-ri",
@@ -3294,7 +3311,9 @@
   "aiFill": 1,
   "summary": "Un spot branché idéal pour déguster des burgers ultra-gourmands préparés avec des viandes d'exception et des frites croustillantes. L'ambiance y est vibrante et résolument design.",
   "resa": "inconnu",
-  "ohTry": "2026-11-09"
+  "ohTry": "2026-11-09",
+  "ogTry": "2|https://www.pnyburger.com|",
+  "photo": "https://images.squarespace-cdn.com/content/v1/54a2cf6ae4b09ca9ce7134cb/dac31e46-5723-4407-8ad7-e93e23604bb6/PNY_BACONATOR.jpg"
  },
  {
   "id": "paris-3-americain-808-mac-and-cheese",
@@ -3527,7 +3546,9 @@
    "09:00-17:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|https://thehungryfamily.com|",
+  "photo": "https://thehungryfamily.com/storage/2024/01/Design-sans-titre-3.png"
  },
  {
   "id": "paris-3-cafe-cafe-creme",
@@ -3787,7 +3808,9 @@
   "aiFill": 1,
   "summary": "Un café-restaurant convivial au cœur du 4e arrondissement, idéal pour une pause gourmande ou un verre entre amis dans une ambiance décontractée.",
   "resa": "inconnu",
-  "ohTry": "2026-11-09"
+  "ohTry": "2026-11-09",
+  "ogTry": "2|https://menuonline.fr|",
+  "photo": "https://menuonline.fr/images/public/MenuOnline.png"
  },
  {
   "id": "paris-4-francais-jolie",
@@ -3943,7 +3966,9 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Une table végétale d'inspiration moyen-orientale audacieuse et créative. L'ambiance y est festive, vibrante et axée sur le partage autour de légumes sublimés.",
-  "ohTry": "2026-11-09"
+  "ohTry": "2026-11-09",
+  "ogTry": "2|https://www.tekesrestaurant.com/|https://www.tekesrestaurant.com/reservations",
+  "photo": "https://static.wixstatic.com/media/d44a12_91f87df2a8cc42b5928ab4fc21c542d8%7Emv2.png/v1/fit/w_2500,h_1330,al_c/d44a12_91f87df2a8cc42b5928ab4fc21c542d8%7Emv2.png"
  },
  {
   "id": "paris-4-tapas-la-mangerie",
@@ -4561,7 +4586,9 @@
    "08:30-00:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|https://lanouvellegarde.com/fr/brasserie-des-pres/|https://bookings.zenchef.com/results?rid=361762&lang=fr",
+  "photo": "https://lanouvellegarde.com/wp-content/uploads/sticker-canard.png"
  },
  {
   "id": "paris-6-italien-agata",
@@ -4874,7 +4901,9 @@
   "aiFill": 1,
   "phone": "01 43 26 66 89",
   "summary": "Le rendez-vous incontournable pour déguster des dim sum faits maison aux garnitures variées et savoureuses. L'ambiance y est conviviale et moderne, parfaite pour un repas à partager.",
-  "ohTry": "2026-11-09"
+  "ohTry": "2026-11-09",
+  "ogTry": "2|https://yoom.fr|https://www.thefork.fr/restaurant/yoom-saint-germain-r21631",
+  "photo": "https://yoom.fr/cdn/shop/files/Aspect_Ratio_Spacer_1.png?crop=center&height=1024&v=1724791527&width=1024"
  },
  {
   "id": "paris-6-coreen-joayo",
@@ -4980,7 +5009,9 @@
    "12:00-14:30,19:00-22:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|http://desiroadrestaurant.com|https://www.thefork.fr/restaurant/desi-road-r387979",
+  "photo": "https://studioblackflag.com/yrminsul/img/gacorbos88-slot.jpg"
  },
  {
   "id": "paris-6-fusion-metou",
@@ -5161,7 +5192,9 @@
    "11:30-15:00,18:30-22:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|https://www.merseaparis.com/nos-restaurants/mersea-beaupassage/|https://module.lafourchette.com/fr_FR/module/682755",
+  "photo": "https://www.merseaparis.com/wp-content/uploads/2020/06/Mersea-Beaupassage-min-scaled.jpg"
  },
  {
   "id": "paris-7-italien-solum",
@@ -5295,7 +5328,9 @@
    "12:00-15:00,19:30-23:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-09"
+  "ohAt": "2026-11-09",
+  "ogTry": "2|https://vesperparis.com|https://www.sevenrooms.com/explore/fitzgroup/reservations/create/search?venues=camondo%2Chollywoodsavoy%2Clafontainegaillon%2Cfitzgerald%2Cabstinence",
+  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72b79c91a29549a886c_og-fitz-group-evenements.jpg"
  },
  {
   "id": "paris-7-indien-new-jawad-new-balal",
@@ -5396,7 +5431,9 @@
   "summary": "Un café de quartier chaleureux et convivial, parfait pour savourer des pâtisseries maison accompagnées d'un café de spécialité dans une ambiance cosy.",
   "resa": "sans",
   "noPhone": 1,
-  "ohTry": "2026-11-09"
+  "ohTry": "2026-11-09",
+  "ogTry": "2|https://cafe.restaurants-de-france.fr|",
+  "pressTry": 1
  },
  {
   "id": "paris-8-francais-beefbar",
@@ -7149,7 +7186,9 @@
   "aiFill": 1,
   "phone": "01 45 26 65 62",
   "summary": "Yoom revisite les dim sum traditionnels avec créativité et modernité dans un décor épuré. On y déguste des bouchées vapeurs délicates dans une ambiance chic et décontractée.",
-  "ohTry": "2026-11-10"
+  "ohTry": "2026-11-10",
+  "ogTry": "2|https://yoom.fr|https://www.thefork.fr/restaurant/yoom-martyrs-r39497",
+  "photo": "https://yoom.fr/cdn/shop/files/Aspect_Ratio_Spacer_1.png?crop=center&height=1024&v=1724791527&width=1024"
  },
  {
   "id": "paris-9-chinois-long-chao-shou",
@@ -7345,7 +7384,9 @@
    "12:00-16:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-10"
+  "ohAt": "2026-11-10",
+  "ogTry": "2|https://www.restaurant-liza.com|https://www.thefork.fr/restaurant/liza-r341",
+  "photo": "https://www.restaurant-liza.com/wp-content/uploads/2025/01/L-202309-LizaBrunch@SimonDetraz-9-copy.jpg"
  },
  {
   "id": "paris-9-indien-the-crossing",
@@ -7647,7 +7688,9 @@
   "aiFill": 1,
   "phone": "01 42 33 53 82",
   "summary": "Un fast-good marin branché qui revisite le fish and chips et les burgers de poisson avec des produits frais et de saison.",
-  "ohTry": "2026-11-10"
+  "ohTry": "2026-11-10",
+  "ogTry": "2|https://www.merseaparis.com|https://module.lafourchette.com/fr_FR/module/682755",
+  "photo": "https://www.merseaparis.com/wp-content/uploads/2020/06/clients2-1.png"
  },
  {
   "id": "paris-9-poisson-fruits-de-mer-pere-fish",
@@ -8245,7 +8288,9 @@
   "aiFill": 1,
   "phone": "01 42 46 22 22",
   "summary": "Des smash burgers ultra gourmands aux steaks bien croustillants et juteux, à savourer dans une ambiance branchée et conviviale.",
-  "ohTry": "2026-11-10"
+  "ohTry": "2026-11-10",
+  "ogTry": "2|https://www.blossomburgers.com|https://captainhowards.com/about-us.html",
+  "photo": "https://mumon.b-cdn.net/kayutogel/koi%20dragon%20kayu.jpg"
  },
  {
   "id": "paris-10-burger-o-b-u",
@@ -8322,7 +8367,9 @@
   "phone": "01 47 70 79 32",
   "summary": "Un restaurant au cadre soigné et feutré qui revisite la cuisine japonaise et asiatique avec créativité. On y déguste de délicieux plats fusion et des cocktails signatures dans une ambiance branchée.",
   "resa": "inconnu",
-  "ohTry": "2026-11-10"
+  "ohTry": "2026-11-10",
+  "ogTry": "2|https://johnwengparis.com|",
+  "photo": "https://johnwengparis.com/wp-content/uploads/2025/10/Sexy-blonde-woman-in-lingerie-in-the-interior-1024x682.jpg"
  },
  {
   "id": "paris-10-japonais-noori",
@@ -8393,7 +8440,9 @@
    "12:00-14:30,19:00-22:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-10"
+  "ohAt": "2026-11-10",
+  "ogTry": "2|http://www.harakiriramen.fr|",
+  "photo": "https://www.harakiriramen.fr/static/sakesZoom-e7f07cb9098fe34be94e4ba31860824d.jpg"
  },
  {
   "id": "paris-10-japonais-espace-japon",
@@ -8429,7 +8478,9 @@
    ""
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-10"
+  "ohAt": "2026-11-10",
+  "ogTry": "2|https://www.espacejapon.com|https://www.espacejapon.com/la-geometrie-du-silence/",
+  "photo": "https://www.espacejapon.com/wp-content/uploads/2026/11/banniere-nwl-8.png"
  },
  {
   "id": "paris-10-chinois-la-taverne-de-zhao",
@@ -8465,7 +8516,9 @@
    "12:00-14:30,19:00-22:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-10"
+  "ohAt": "2026-11-10",
+  "ogTry": "2|https://www.zhaogroupe.com|",
+  "pressTry": 1
  },
  {
   "id": "paris-10-chinois-bolobolo",
@@ -8797,7 +8850,9 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Un concept audacieux de « street food » afro-européenne proposant des braisés savoureux et des déclinaisons créatives dans une ambiance moderne et branchée.",
-  "ohTry": "2026-11-10"
+  "ohTry": "2026-11-10",
+  "ogTry": "2|https://newsoulfood.fr|https://www.thefork.fr/restaurant/le-maquis-by-new-soul-food-r719900",
+  "photo": "https://static.wixstatic.com/media/48b9ab_1ff0fb5235b24c5784cacc81ae3a2b9b%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/48b9ab_1ff0fb5235b24c5784cacc81ae3a2b9b%7Emv2.jpg"
  },
  {
   "id": "paris-10-mexicain-nomas-tacos",
@@ -8953,7 +9008,9 @@
   "aiFill": 1,
   "summary": "Un café-bistrot traditionnel aux accents parisiens proposant des classiques de la cuisine française dans une ambiance vivante et authentique. Idéal pour un café en terrasse ou un repas décontracté.",
   "resa": "inconnu",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://bistro.restaurants-de-france.fr|",
+  "pressTry": 1
  },
  {
   "id": "paris-10-cafe-immersion",
@@ -9113,7 +9170,9 @@
    "12:00-15:00,19:00-22:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-11"
+  "ohAt": "2026-11-11",
+  "ogTry": "2|https://nouvellegardegroupe.com|",
+  "photo": "https://lanouvellegarde.com/wp-content/uploads/homepage-02.webp"
  },
  {
   "id": "paris-11-francais-taem",
@@ -9256,7 +9315,9 @@
   "summary": "Une adresse conviviale proposant une cuisine traditionnelle dans une ambiance simple et chaleureuse du 11e arrondissement.",
   "resa": "telephone",
   "noPhone": 1,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.alloj.com|",
+  "photo": "https://www.alloj.com/media/cache/img_og/uploads/voyages-cacher/ete-2026-sababa-club-miami17855048761794306251/slider/gallery/cropped/7b7dd7f4168c04bf2fcb16c48a7183244b21d612.jpg"
  },
  {
   "id": "paris-11-francais-l-echoppe",
@@ -9423,7 +9484,9 @@
    "12:00-15:00,19:00-22:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-11"
+  "ohAt": "2026-11-11",
+  "ogTry": "2|https://www.gruppomimo.com|https://bookings.zenchef.com/results?rid=363323",
+  "photo": "https://cdn.prod.website-files.com/64e75b64860b4e3dc128e525/65119b5dd646650a12c99c62_pola-souvenir-1.webp"
  },
  {
   "id": "paris-11-italien-origini",
@@ -10251,7 +10314,9 @@
   "summary": "Un spot chaleureux aux accents levantins idéal pour déguster des shakshukas savoureuses et des pâtisseries maison. L'ambiance y est conviviale, parfaite pour un brunch gourmand entre amis.",
   "resa": "sans",
   "noPhone": 1,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://thehungryfamily.com/kafkaf/|",
+  "photo": "https://thehungryfamily.com/storage/2022/06/20220613-Kafkaf-x-The-Travel-Buds21-819x1024.jpg"
  },
  {
   "id": "paris-11-brunch-clint",
@@ -10337,7 +10402,9 @@
    "09:00-16:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-11"
+  "ohAt": "2026-11-11",
+  "ogTry": "2|https://lateliersaisonnier.com|https://www.thefork.fr/restaurant/l-atelier-saisonnier-paris-11-r837415",
+  "photo": "https://lateliersaisonnier.com/wp-content/uploads/2020/07/Terrasse-charonne-jour.jpg"
  },
  {
   "id": "paris-11-cafe-joa",
@@ -10721,7 +10788,9 @@
   "phone": "09 88 30 52 90",
   "summary": "Une table bistronomique élégante qui met à l'honneur des assiettes créatives et raffinées, portées par des produits frais dans une ambiance intimiste.",
   "resa": "inconnu",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://marvely.fr|",
+  "photo": "https://marvely.fr/wp-content/uploads/2024/01/Digital-Marketing-Agency-Home.jpg"
  },
  {
   "id": "paris-12-italien-the-godfather-paris",
@@ -10882,7 +10951,9 @@
   "summary": "Un comptoir gourmand au sein de Ground Control proposant des nouilles sautées authentiques, des raviolis faits maison et des saveurs de street-food chinoise dans une ambiance festive et industrielle.",
   "resa": "sans",
   "noPhone": 1,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.zhaogroupe.com|",
+  "pressTry": 1
  },
  {
   "id": "paris-12-cacher-tikounolam",
@@ -11931,7 +12002,9 @@
   "aiFill": 1,
   "summary": "Une authentique pizzeria italienne qui propose de savoureuses pizzas napolitaines à la pâte moelleuse et croustillante, dans une ambiance chaleureuse.",
   "resa": "inconnu",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.pizzeriafratellicastellanoparis.fr|",
+  "pressTry": 1
  },
  {
   "id": "paris-15-italien-da-attilio",
@@ -12017,7 +12090,9 @@
    "12:00-14:45,19:00-22:30"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-11"
+  "ohAt": "2026-11-11",
+  "ogTry": "2|https://www.gruppomimo.com|https://bookings.zenchef.com/results?rid=363323",
+  "photo": "https://cdn.prod.website-files.com/64e75b64860b4e3dc128e525/65119b5dd646650a12c99c62_pola-souvenir-1.webp"
  },
  {
   "id": "paris-15-italien-15eme-art-pizzeria",
@@ -12041,7 +12116,9 @@
   "summary": "Une pizzeria de quartier chaleureuse et sans chichis. Idéale pour déguster des pizzas croustillantes et savoureuses dans une ambiance familiale et décontractée.",
   "resa": "inconnu",
   "noInsta": 1,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://pizzeria.restaurants-de-france.fr|",
+  "pressTry": 1
  },
  {
   "id": "paris-15-italien-gioco",
@@ -12322,7 +12399,9 @@
   "summary": "Un restaurant japonais chaleureux proposant des sushis, sashimis et plats traditionnels soignés. L'ambiance y est intime et conviviale.",
   "resa": "inconnu",
   "noInsta": 1,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.kumo-restaurant.com|",
+  "photo": "https://gambarku.live/images/W88/wzxc1.webp"
  },
  {
   "id": "paris-15-japonais-kasumi",
@@ -12485,7 +12564,7 @@
   "instagram": "polichinelle_restaurant",
   "summary": "Imaginé par Christophe Michalak et Steve Burggraf, ce restaurant propose une cuisine végétale généreuse et de saison sous forme de buffet haut de gamme. L'ambiance est végétale et décontractée, idéale pour partager un repas gourmand.",
   "resa": "inconnu",
-  "ogTry": 1,
+  "ogTry": "2|https://polichinelle-restaurant.com|",
   "ohTry": "2026-11-11",
   "oh": [
    "",
@@ -12497,7 +12576,8 @@
    "12:00-15:00"
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-11"
+  "ohAt": "2026-11-11",
+  "photo": "https://madridotramirada.es/img/gambar-wak89.jpg"
  },
  {
   "id": "paris-15-bar-a-cocktails-villa-m",
@@ -13001,7 +13081,9 @@
   "phone": "01 45 00 24 07",
   "summary": "Un restaurant de burgers casher chaleureux et convivial, idéal pour déguster des burgers généreux accompagnés de frites maison dans une ambiance décontractée.",
   "resa": "telephone",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.123cacher.fr|",
+  "photo": "https://www.123cacher.fr/images/og-facebook.jpg"
  },
  {
   "id": "paris-16-italien-ozio",
@@ -13719,7 +13801,9 @@
   "phone": "01 42 67 05 05",
   "summary": "Restaurant italien casher proposant un large choix de pizzas, pâtes et spécialités transalpines dans une ambiance simple et accueillante.",
   "resa": "telephone",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.alloj.com|",
+  "photo": "https://www.alloj.com/media/cache/img_og/uploads/voyages-cacher/ete-2026-sababa-club-miami17855048761794306251/slider/gallery/cropped/7b7dd7f4168c04bf2fcb16c48a7183244b21d612.jpg"
  },
  {
   "id": "paris-17-japonais-just-ramen",
@@ -13743,7 +13827,9 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Un comptoir gourmand niché au cœur de la food-court Hoba, idéal pour déguster des ramens réconfortants aux bouillons savoureux. L'ambiance est éco-responsable, vivante et décontractée au sein du parc Martin Luther King.",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://hoba.paris|https://hoba.paris/reservez/",
+  "photo": "https://hoba.paris/wp-content/uploads/2022/02/HOBA-Food-court-cre%CC%81dit-Samantha-Ohlsen-Alamy-1-scaled.jpg"
  },
  {
   "id": "paris-17-japonais-okito",
@@ -13866,7 +13952,9 @@
   "phone": "01 43 80 50 50",
   "summary": "Une table libanaise incontournable pour savourer des mezzés faits maison d'une grande fraîcheur, à partager dans une ambiance conviviale et familiale.",
   "resa": "inconnu",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.mezzencore.fr/|",
+  "photo": "https://static.wixstatic.com/media/7ca9d6_a0a68e1d091c4e5692779d7a7e56c160~mv2.jpg/v1/fill/w_2500,h_1562,al_c/7ca9d6_a0a68e1d091c4e5692779d7a7e56c160~mv2.jpg"
  },
  {
   "id": "paris-17-israelien-mapitom",
@@ -14419,7 +14507,9 @@
    ""
   ],
   "ohSrc": "web",
-  "ohAt": "2026-11-11"
+  "ohAt": "2026-11-11",
+  "ogTry": "2|https://lebobby.com|https://bookings.zenchef.com/results?rid=357279&lang=fr",
+  "photo": "https://lebobby.com/wp-content/uploads/2026/10/menu.bobby_.automne.26.png"
  },
  {
   "id": "paris-18-americain-the-flow",
@@ -15119,7 +15209,9 @@
   "aiFill": 1,
   "summary": "Une adresse chaleureuse où l'on savoure des burgers faits maison préparés avec des produits frais, le tout dans une atmosphère accueillante et sympathique.",
   "noPhone": 1,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://avec-amour-burger.com|https://avec-amour-burger.com/",
+  "photo": "https://gameviral.sgp1.cdn.digitaloceanspaces.com/ufo777/292671400b0ab4a0deb0df47b7d59b59.jpg"
  },
  {
   "id": "paris-20-burger-small-cantine",
@@ -15270,7 +15362,9 @@
   "aiFill": 1,
   "summary": "Un vaste trampoline park indoor parfait pour enchaîner les sauts acrobatiques et tester des parcours ludiques. L'ambiance y est sportive, dynamique et conviviale.",
   "resa": "inconnu",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.urban-jump.com|",
+  "photo": "https://www.urban-jump.com/images/slides/uj-marseille-slidesite-1080x1920px.jpg"
  },
  {
   "id": "precieuses-0-activite-ifly",
@@ -15513,7 +15607,9 @@
   "aiFill": 1,
   "booking": "https://www.funbooker.com",
   "bookingOk": 2,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://www.funbooker.com|https://www.funbooker.com",
+  "photo": "https://res.cloudinary.com/funbooker/image/upload/f_auto,q_auto,dpr_auto,w_1800/v1790850226/website/Halloween_-_Home_Page-v3.png"
  },
  {
   "id": "precieuses-0-activite-atelier-cocktails-personnalises",
@@ -15700,7 +15796,9 @@
   "aiFill": 1,
   "resa": "inconnu",
   "noPhone": 1,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://eclipso-entertainment.com|",
+  "photo": "https://db24e3fc.delivery.rocketcdn.me/wp-content/uploads/2026/05/White-1.png"
  },
  {
   "id": "precieuses-0-activite-e-motion",
@@ -15954,7 +16052,9 @@
   "lat": 48.858819,
   "lng": 2.374178,
   "noPhone": 1,
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://myflowerclass.com|https://myflowerclass.com/products/atelier-my-flower-class-paris",
+  "pressTry": 1
  },
  {
   "id": "precieuses-0-activite-les-origines-de-paris",
@@ -16796,7 +16896,9 @@
   "cuisine": "Italien",
   "aiFill": 1,
   "summary": "Installé dans un ancien atelier de jean-paul gaultier au décor spectaculaire, daroco propose des pizzas parfaitement croustillantes et des assiettes italiennes raffinées. L'ambiance y est branchée et vibrante, idéale pour un dîner stylé.",
-  "ohTry": "2026-11-11"
+  "ohTry": "2026-11-11",
+  "ogTry": "2|https://daroco.com/|https://bookings.zenchef.com/results?rid=347479&lang=fr",
+  "photo": "https://daroco.com/wp-content/uploads/2026/08/1W2A0930-scaled.jpg"
  },
  {
   "id": "precieuses-0-resto-shabour",
@@ -16993,7 +17095,8 @@
   "enriched": 5,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-le-relais-de-venise",
@@ -17018,7 +17121,8 @@
   "aiFill": 1,
   "summary": "Savourez l'unique et tendre faux-filet accompagné de sa fameuse sauce secrète et de frites à volonté, le tout dans une ambiance de brasserie parisienne animée et rétro.",
   "resa": "sans",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-bouillon-chartier",
@@ -17043,7 +17147,8 @@
   "aiFill": 1,
   "summary": "Dégustez des plats traditionnels français d'antan à petits prix, tels que les œufs mayonnaise ou le hachis Parmentier, au cœur d'une somptueuse salle historique au décor Belle Époque classé.",
   "resa": "inconnu",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-miss-ko",
@@ -17067,7 +17172,8 @@
   "aiFill": 1,
   "summary": "Découvrez une cuisine fusion aux accents asiatiques audacieux et créatifs dans un décor spectaculaire et branché imaginé par Philippe Starck.",
   "lat": 48.871024,
-  "lng": 2.30062
+  "lng": 2.30062,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-restaurant-marocain",
@@ -17091,7 +17197,8 @@
   "aiFill": 1,
   "summary": "Laissez-vous tenter par des couscous et tajines faits maison riches en saveurs, servis dans un cadre chaleureux et convivial.",
   "lat": 48.848316,
-  "lng": 2.354624
+  "lng": 2.354624,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-kodawari-tsukiji",
@@ -17116,7 +17223,19 @@
   "photo": "https://www.kodawari-ramen.com/wp-content/uploads/2019/06/kodawari-yokocho-homepage.jpg",
   "phone": "01 43 29 37 67",
   "bookingScan": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "11:45-15:15,18:30-22:30",
+   "11:45-15:15,18:30-22:30",
+   "11:45-15:15,18:30-22:30",
+   "11:45-15:15,18:30-22:30",
+   "11:45-15:15,18:30-23:00",
+   "11:45-15:15,18:30-23:00",
+   "11:45-15:15,18:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-la-table-de-colette",
@@ -17141,7 +17260,8 @@
   "aiFill": 1,
   "summary": "Un restaurant bistronomique engagé du Quartier Latin qui met à l'honneur une cuisine française raffinée aux notes éco-responsables. L'ambiance est intime et feutrée.",
   "lat": 48.847327,
-  "lng": 2.347161
+  "lng": 2.347161,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-hakata-choten",
@@ -17167,7 +17287,19 @@
   "lng": 2.334921,
   "resa": "sans",
   "ogTry": 2,
-  "photo": "http://www.hakata-choten.com/wp-content/uploads/2024/06/20240625-Menu-Opera-Les-Halles-June-2024_Page_1.png"
+  "photo": "http://www.hakata-choten.com/wp-content/uploads/2024/06/20240625-Menu-Opera-Les-Halles-June-2024_Page_1.png",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-22:30",
+   "12:00-15:00,18:30-23:00",
+   "12:00-15:00,18:30-23:00",
+   "12:00-15:00,18:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-kodawari-ramen",
@@ -17191,7 +17323,19 @@
   "cuisine": "Japonais",
   "aiFill": 1,
   "summary": "Plongez dans l'ambiance d'un marché de Tokyo des années 70 tout en savourant des ramen d'exception aux bouillons riches et parfumés. Une expérience dépaysante et savoureuse au cœur de Paris.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "11:45-15:15,18:30-22:30",
+   "11:45-15:15,18:30-22:30",
+   "11:45-15:15,18:30-22:30",
+   "11:45-15:15,18:30-22:30",
+   "11:45-15:15,18:30-23:00",
+   "11:45-15:15,18:30-23:00",
+   "11:45-15:15,18:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-le-comptoir-paris",
@@ -17216,7 +17360,8 @@
   "aiFill": 1,
   "summary": "Un bistrot parisien authentique et chaleureux proposant une cuisine française traditionnelle de qualité. Idéal pour partager un verre et des plats généreux dans une ambiance conviviale.",
   "lat": 48.860147,
-  "lng": 2.340163
+  "lng": 2.340163,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-verre-chez-moi",
@@ -17238,7 +17383,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-naritake-ramen",
@@ -17266,7 +17412,19 @@
   "commonsTry": 1,
   "photo": "https://media.timeout.com/images/105279419/image.jpg",
   "photoSrc": "https://www.timeout.com/paris/en/restaurants/kotteri-naritake-ramen",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "11:30-15:00,18:30-22:00",
+   "11:30-15:00,18:30-22:00",
+   "",
+   "11:30-15:00,18:30-22:00",
+   "11:30-15:00,18:30-22:00",
+   "11:30-15:00,18:30-22:00",
+   "11:30-15:00,18:30-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-miznon",
@@ -17290,7 +17448,19 @@
   "cuisine": "Israélien",
   "aiFill": 1,
   "summary": "Un spot incontournable du Marais pour déguster des pitas ultra généreuses, notamment le fameux chou-fleur rôti. L'ambiance y est survoltée, musicale et très conviviale.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "11:30-23:30",
+   "11:30-23:30",
+   "11:30-23:30",
+   "11:30-23:30",
+   "11:30-23:30",
+   "11:30-23:30",
+   "11:30-23:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-spoon",
@@ -17314,7 +17484,19 @@
   "aiFill": 1,
   "summary": "Une table aux influences nomades et fusion signée Alain Ducasse, invitant au voyage à travers des épices et des saveurs du monde entier. L'ambiance est élégante, moderne et chaleureuse.",
   "lat": 48.869468,
-  "lng": 2.340178
+  "lng": 2.340178,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-fouquet-s",
@@ -17342,7 +17524,19 @@
   "institution": true,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:30",
+   "08:00-23:30",
+   "08:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-au-pied-de-cochon",
@@ -17367,7 +17561,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Une brasserie parisienne légendaire ouverte 24h/24, célèbre pour ses spécialités de porc et ses généreux plateaux de fruits de mer. L'ambiance y est animée, festive et typiquement hâchée.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00",
+   "00:00-05:00,08:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-le-train-bleu",
@@ -17392,7 +17598,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Niché au cœur de la gare de Lyon, ce restaurant historique séduit par ses décors somptueux classés Monuments Historiques et sa cuisine française traditionnelle. On y déguste de superbes viandes et poissons dans une ambiance Belle Époque majestueuse.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "07:30-15:00,19:00-22:45",
+   "07:30-15:00,19:00-22:45",
+   "07:30-15:00,19:00-22:45",
+   "07:30-15:00,19:00-22:45",
+   "07:30-15:00,19:00-22:45",
+   "07:30-15:00,19:00-22:45",
+   "07:30-15:00,19:00-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-la-fontaine-de-mars",
@@ -17422,7 +17640,19 @@
   "commonsTry": 1,
   "photo": "https://cdn.lefooding.com/medias/2021/07/17_23_29_148_Fontainedemars_2015.jpg",
   "photoSrc": "https://lefooding.com/restaurants/restaurant-la-fontaine-de-mars-paris-14",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "12:00-15:00,19:30-23:00",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-l-escargot-montorgueil",
@@ -17447,7 +17677,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Célèbre pour ses escargots de Bourgogne préparés sous toutes les formes, cette table historique de la rue Montorgueil arbore un décor Second Empire plein de charme. On y vient pour une cuisine bourgeoise française réconfortante dans une ambiance animée.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-le-procope",
@@ -17472,7 +17714,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Considéré comme le plus ancien café de Paris, Le Procope offre un voyage dans le temps au milieu des souvenirs littéraires et révolutionnaires. On y savoure des classiques de la gastronomie française, comme le coq au vin, dans un cadre feutré et chargé d'histoire.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-01:00",
+   "12:00-01:00",
+   "12:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-brasserie-lipp",
@@ -17497,7 +17751,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Institution mythique de Saint-Germain-des-Prés au décor Art déco classé, idéale pour déguster des plats traditionnels comme la célèbre choucroute ou le mille-feuille dans une ambiance littéraire et animée.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "07:30-01:00",
+   "07:30-01:00",
+   "07:30-01:00",
+   "07:30-01:00",
+   "07:30-01:00",
+   "07:30-01:00",
+   "07:30-01:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-le-petit-bouillon-pharamond",
@@ -17523,7 +17789,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Un bouillon historique au décor normand classé, qui propose une cuisine française traditionnelle et généreuse à petits prix dans une ambiance populaire et chaleureuse.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-brasserie-floderer",
@@ -17548,7 +17826,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Célèbre brasserie alsacienne au décor 1900 authentique, parfaite pour savourer de superbes fruits de mer et une choucroute garnie dans une atmosphère élégante et intemporelle.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-la-coupole",
@@ -17573,7 +17863,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Légendaire brasserie de Montparnasse au somptueux décor Art déco, incontournable pour savourer des plateaux de fruits de mer et l'incontournable agneau curry de La Coupole dans une ambiance bouillonnante.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-00:30",
+   "08:00-00:30",
+   "08:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-dominicos",
@@ -17595,7 +17897,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-peppe-pizzeria-napoletana",
@@ -17619,7 +17922,19 @@
   "bookingOk": 2,
   "cuisine": "Italien",
   "aiFill": 1,
-  "summary": "On y déguste des pizzas napolitaines d'exception couronnées par les meilleurs chefs, notamment la célèbre pizza au tartuffo. L'ambiance y est vibrante, chaleureuse et typiquement italienne."
+  "summary": "On y déguste des pizzas napolitaines d'exception couronnées par les meilleurs chefs, notamment la célèbre pizza au tartuffo. L'ambiance y est vibrante, chaleureuse et typiquement italienne.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-andia",
@@ -17647,7 +17962,19 @@
   "summary": "Un voyage culinaire aux saveurs d'Amérique latine au cœur d'une ancienne gare transformée en oasis luxuriante. On y savoure des ceviches rafraîchissants et des viandes grillées dans une ambiance dépaysante et festive.",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-la-maison-rose",
@@ -17673,7 +18000,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Niché au cœur de Montmartre dans un décor iconique rose et vert, ce lieu chaleureux propose une cuisine de marché locale et éco-responsable. L'ambiance y est bohème, intime et résolument romantique.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "",
+   "",
+   "12:00-15:00,19:00-22:00",
+   "12:00-15:00,19:00-22:00",
+   "12:00-15:00,19:00-22:00",
+   "11:30-15:30,19:00-22:00",
+   "11:30-15:30,19:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-beefbar",
@@ -17698,7 +18037,19 @@
   "aiFill": 1,
   "phone": "01 44 31 37 00",
   "summary": "Temple des viandes d'exception, le Beefbar propose des morceaux d'beef de prestige cuisinés avec audace ainsi qu'une offre street-food raffinée. L'ambiance est chic, feutrée et branchée.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:30",
+   "12:00-14:30,19:30-23:30",
+   "12:00-14:30,19:30-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-shinko",
@@ -17729,7 +18080,19 @@
   "commonsTry": 1,
   "photo": "https://resizer.otstatic.com/v4/photos/97220452-2?width=640&height=640",
   "photoSrc": "https://www.opentable.fr/r/shinko-paris",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-sinner-paris",
@@ -17754,7 +18117,19 @@
   "summary": "Restaurant aux inspirations tribales et mystiques proposant une cuisine aux influences du monde et ethniques à partager. L'ambiance est sombre, sulfureuse et très immersive.",
   "lat": 48.862985,
   "lng": 2.358059,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-laperouse",
@@ -17781,7 +18156,19 @@
   "aiFill": 1,
   "summary": "Institution parisienne historique aux salons privés somptueux, Lapérouse propose une cuisine française raffinée et élégante dans un décor feutré d'époque.",
   "resa": "inconnu",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-ephemera-group",
@@ -17806,7 +18193,19 @@
   "summary": "Ephemera Group propose des expériences culinaires immersives et spectaculaires aux décors fantastiques, invitant à voyager sous l'océan ou au cœur de l'espace.",
   "lat": 48.844121,
   "lng": 2.38452,
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-la-reverie",
@@ -17831,7 +18230,19 @@
   "aiFill": 1,
   "phone": "01 48 05 57 70",
   "summary": "Un bar-restaurant branché à la déco florale spectaculaire et féerique, idéal pour déguster des cocktails originaux et des plats à partager dans une ambiance festive.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-inavoue",
@@ -17856,7 +18267,10 @@
   "cuisine": "Français",
   "aiFill": 1,
   "phone": "01 42 61 56 63",
-  "summary": "Un restaurant intimiste et sophistiqué au cœur de Paris, idéal pour savourer une cuisine de marché soignée dans une ambiance feutrée et discrète."
+  "summary": "Un restaurant intimiste et sophistiqué au cœur de Paris, idéal pour savourer une cuisine de marché soignée dans une ambiance feutrée et discrète.",
+  "ogTry": "2|https://inavoue.com|https://www.opentable.co.uk/r/inavoue-reservations-paris?restref=173412&lang=fr-FR&ot_source=Restaurant%20website&ot_campaign=site-inavoue-com",
+  "photo": "https://inavoue.com/wp-content/uploads/2024/03/signature-inavoue.png",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-le-buf-sur-le-toit",
@@ -17887,7 +18301,19 @@
   "commonsTry": 1,
   "photo": "https://secretparisien.com/wp-content/uploads/2026/08/1280px-Rue_du_ColisC3A9e_34.jpg",
   "photoSrc": "https://secretparisien.com/lieux/le-boeuf-sur-le-toit/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00",
+   "12:00-14:30,19:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-bumbu",
@@ -17911,7 +18337,19 @@
   "aiFill": 1,
   "summary": "Un restaurant chaleureux proposant une cuisine authentique et savoureuse aux influences indonésiennes. Idéal pour un voyage culinaire dépaysant dans une ambiance conviviale.",
   "lat": 48.870756,
-  "lng": 2.309055
+  "lng": 2.309055,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-marlotti",
@@ -17936,7 +18374,19 @@
   "aiFill": 1,
   "summary": "Une trattoria italienne chaleureuse et animée où l'on déguste de délicieuses pâtes fraîches et des pizzas généreuses. L'ambiance y est conviviale et typique des nuits du 10e arrondissement.",
   "lat": 48.872346,
-  "lng": 2.354226
+  "lng": 2.354226,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-le-murat",
@@ -17961,7 +18411,19 @@
   "bookingOk": 2,
   "cuisine": "Français",
   "aiFill": 1,
-  "summary": "Une table cossue et lumineuse du 16e arrondissement, idéale pour savourer une cuisine de brasserie chic revisitée dans un décor élégant signé Costes."
+  "summary": "Une table cossue et lumineuse du 16e arrondissement, idéale pour savourer une cuisine de brasserie chic revisitée dans un décor élégant signé Costes.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "07:30-23:00",
+   "07:30-23:00",
+   "07:30-23:00",
+   "07:30-23:00",
+   "07:30-23:00",
+   "08:00-23:00",
+   "08:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-mumbay",
@@ -17983,7 +18445,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-le-relais-plaza",
@@ -18013,7 +18476,19 @@
   "commonsTry": 1,
   "photo": "https://res.cloudinary.com/du5jifpgg/image/upload/t_opengraph_image/Surcharge-APIDAE/Relais-plaza.jpg",
   "photoSrc": "https://www.visitparisregion.com/en/le-relais-plaza",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-the-peninsula",
@@ -18037,7 +18512,8 @@
   "aiFill": 1,
   "phone": "01 58 12 28 88",
   "summary": "Magnifique palace parisien offrant une cuisine raffinée dans un cadre somptueux et baigné de lumière, idéal pour un moment hors du temps.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-akira-back",
@@ -18062,7 +18538,19 @@
   "cuisine": "Japonais",
   "aiFill": 1,
   "phone": "01 40 69 60 00",
-  "summary": "Restaurant branché du triangle d'or proposant une cuisine fusion nippo-coréenne audacieuse, à déguster dans un décor design et sophistiqué."
+  "summary": "Restaurant branché du triangle d'or proposant une cuisine fusion nippo-coréenne audacieuse, à déguster dans un décor design et sophistiqué.",
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-mistinguett",
@@ -18087,7 +18575,8 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Un restaurant festif et élégant situé au sommet du Casino de Paris, idéal pour déguster une cuisine française raffinée dans une ambiance cabaret inspirée des Années folles.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-pedzouille-lagrange",
@@ -18111,7 +18600,8 @@
   "summary": "Une canaille perchée au sommet de l'Hôtel CitizenM, proposant une cuisine généreuse de terroir et viandes de qualité dans une ambiance de grange festive et chaleureuse.",
   "lat": 48.835984,
   "lng": 2.385773,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-moommam",
@@ -18136,7 +18626,19 @@
   "aiFill": 1,
   "summary": "Une cantine thaïlandaise branchée du 9e arrondissement où l'on savoure des tapas thaï et des plats authentiques et parfumés, le tout dans une ambiance conviviale et animée.",
   "lat": 48.874752,
-  "lng": 2.331289
+  "lng": 2.331289,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-maxim-s",
@@ -18161,7 +18663,8 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Le temple légendaire de l'Art nouveau parisien, parfait pour redécouvrir les grands classiques de la gastronomie française dans un décor historique somptueux et intemporel.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-vesper",
@@ -18185,7 +18688,10 @@
   "bookingOk": 2,
   "cuisine": "Français",
   "aiFill": 1,
-  "summary": "Vesper propose une cuisine fusion Nikkei raffinée aux accents latino-japonais, à déguster dans un décor somptueux et feutré. L'ambiance y est à la fois chic, branchée et animée."
+  "summary": "Vesper propose une cuisine fusion Nikkei raffinée aux accents latino-japonais, à déguster dans un décor somptueux et feutré. L'ambiance y est à la fois chic, branchée et animée.",
+  "ogTry": "2|https://vesperparis.com|https://www.sevenrooms.com/explore/fitzgroup/reservations/create/search?venues=camondo%2Chollywoodsavoy%2Clafontainegaillon%2Cfitzgerald%2Cabstinence",
+  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72b79c91a29549a886c_og-fitz-group-evenements.jpg",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-la-scene-theleme",
@@ -18209,7 +18715,8 @@
   "aiFill": 1,
   "summary": "La Scène Thélème associe avec brio haute gastronomie et art dramatique dans un cadre intimiste et élégant. On y savoure des plats créatifs d'une grande finesse, portés par une mise en scène théâtrale unique.",
   "lat": 48.87627,
-  "lng": 2.295163
+  "lng": 2.295163,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-chakaiseki-akiyoshi",
@@ -18234,7 +18741,8 @@
   "cuisine": "Japonais",
   "aiFill": 1,
   "phone": "01 45 78 61 52",
-  "summary": "Chakaiseki Akiyoshi propose une expérience authentique et exclusive de la haute cuisine traditionnelle japonaise (kaiseki) liée à la cérémonie du thé. L'ambiance y est extrêmement raffinée, minimaliste et intimiste."
+  "summary": "Chakaiseki Akiyoshi propose une expérience authentique et exclusive de la haute cuisine traditionnelle japonaise (kaiseki) liée à la cérémonie du thé. L'ambiance y est extrêmement raffinée, minimaliste et intimiste.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-dragon-cyril-lignac",
@@ -18258,7 +18766,19 @@
   "aiFill": 1,
   "summary": "Dragon, la table panasiatique de Cyril Lignac, revisite les grands classiques de la cuisine asiatique avec modernité et gourmandise. L'atmosphère y est chaleureuse, branchée et propice au partage.",
   "lat": 48.852702,
-  "lng": 2.330418
+  "lng": 2.330418,
+  "ohTry": "2026-11-11",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-terra",
@@ -18283,7 +18803,8 @@
   "aiFill": 1,
   "summary": "Un restaurant chaleureux aux influences méditerranéennes où l'on savoure des assiettes à partager créatives et de saison dans une ambiance conviviale.",
   "lat": 48.86373,
-  "lng": 2.356944
+  "lng": 2.356944,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-racines",
@@ -18308,7 +18829,8 @@
   "cuisine": "Italien",
   "aiFill": 1,
   "summary": "Un bistrot de charme niché dans le passage des Panoramas, proposant une cuisine italienne raffinée et des vins d'auteur dans un décor authentique et feutré.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-marie-akaneya",
@@ -18333,7 +18855,8 @@
   "enriched": 5,
   "photo": "https://akaneyajapan.com/wp-content/uploads/2025/06/akaneya-open-graph-image.jpg",
   "bookingScan": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-sphere",
@@ -18358,7 +18881,8 @@
   "cuisine": "Français",
   "aiFill": 1,
   "phone": "01 42 65 24 58",
-  "summary": "Une table gastronomique élégante au décor lumineux et design, proposant une cuisine française inventive, délicate et axée sur de beaux produits."
+  "summary": "Une table gastronomique élégante au décor lumineux et design, proposant une cuisine française inventive, délicate et axée sur de beaux produits.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-dans-le-noir",
@@ -18382,7 +18906,10 @@
   "lng": 2.35055,
   "enriched": 5,
   "booking": "https://paris.danslenoir.com/fr_FR/reserver-paris",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ogTry": "2|https://paris.danslenoir.com|https://paris.danslenoir.com/fr_FR/reserver-paris",
+  "photo": "https://paris.danslenoir.com/media/cache/share/7f/43/2e11a515c3a823dbf155a6e264e8.webp",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-shiro",
@@ -18407,7 +18934,8 @@
   "bookingOk": 2,
   "cuisine": "Japonais",
   "aiFill": 1,
-  "summary": "Une magnifique fusion franco-japonaise où l'on savoure des plats créatifs et raffinés, notamment leurs fameux gyozas de wagyu ou le bœuf sauté. L'ambiance est feutrée, élégante et artistique."
+  "summary": "Une magnifique fusion franco-japonaise où l'on savoure des plats créatifs et raffinés, notamment leurs fameux gyozas de wagyu ou le bœuf sauté. L'ambiance est feutrée, élégante et artistique.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-rh-paris",
@@ -18432,7 +18960,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-onyx",
@@ -18462,7 +18991,8 @@
   "commonsTry": 1,
   "photo": "https://restodeparis.com/wp-content/uploads/2024/07/restaurant-gastronomique-onyx-paris-9-mur-onyx.jpg",
   "photoSrc": "https://restodeparis.com/en/restaurant/onyx/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-mun-paris",
@@ -18486,7 +19016,8 @@
   "bookingOk": 2,
   "cuisine": "Coréen",
   "aiFill": 1,
-  "summary": "Perché sur les Champs-Élysées, ce restaurant-terrasse propose une cuisine d'inspiration asiatique raffinée dans un décor somptueux aux accents nippons. L'ambiance y est chic, festive et offre une vue imprenable sur tout Paris."
+  "summary": "Perché sur les Champs-Élysées, ce restaurant-terrasse propose une cuisine d'inspiration asiatique raffinée dans un décor somptueux aux accents nippons. L'ambiance y est chic, festive et offre une vue imprenable sur tout Paris.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-resto-dame",
@@ -18734,7 +19265,9 @@
   "summary": "Idéalement situé face à l'Arc de Triomphe, ce restaurant propose une cuisine italienne élégante dans un décor somptueux aux accents festifs.",
   "lat": 48.872899,
   "lng": 2.293739,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ogTry": "2|https://victoria-paris.com|",
+  "photo": "http://victoria-paris.com/wp-content/uploads/2026/04/Thibaud_Georges_Copyright-50-1-scaled.jpg"
  },
  {
   "id": "precieuses-0-resto-festif-le-verde",
@@ -19038,7 +19571,9 @@
   "enriched": 5,
   "booking": "https://www.rosewoodhotels.com/en/reservations/select-a-destination",
   "bookingOk": 2,
-  "institution": true
+  "institution": true,
+  "ogTry": "2|https://www.rosewoodhotels.com/fr/hotel-de-crillon|https://www.rosewoodhotels.com/en/reservations/select-a-destination",
+  "photo": "https://images.rosewoodhotels.com/is/image/rwhg/htel-de-crillon-suite-duc-de-crillon-209-living-by-reto-guntli"
  },
  {
   "id": "precieuses-0-salon-de-the-ritz-paris",
@@ -19238,7 +19773,9 @@
   "aiFill": 1,
   "phone": "01 49 52 70 00",
   "summary": "Un lieu mythique abritant des tables d'exception couronnées d'étoiles Michelin. L'ambiance y est somptueuse, romantique et empreinte du service légendaire du palace.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ogTry": "2|https://www.fourseasons.com|",
+  "photo": "https://www.fourseasons.com/alt/img-opt/~75.430.0,0000-0,0000-2499,5556-1406,0000/publish/content/dam/fourseasons/images/web/LCP/LCP_007_original.jpg"
  },
  {
   "id": "precieuses-0-rooftop-le-perchoir-marais",
@@ -19283,7 +19820,9 @@
   "phone": "01 47 23 55 99",
   "summary": "Une table italienne élégante et festive avec une vue imprenable sur Paris. On y savoure des spécialités transalpines raffinées dans une ambiance chic et chaleureuse.",
   "lat": 48.865672,
-  "lng": 2.303279
+  "lng": 2.303279,
+  "ogTry": "2|https://gigi-restaurant.com|https://www.sevenrooms.com/experiences/gigiparis",
+  "photo": "https://gigi-restaurant.com/app/app-uploads/2023/10/Gigi-Val-d-isere-banner-1.jpg"
  },
  {
   "id": "precieuses-0-rooftop-mama-shelter",
@@ -19912,7 +20451,9 @@
   "summary": "Un speakeasy aux accents des années 1930 caché derrière une fausse cabine téléphonique, parfait pour déguster d'excellents cocktails dans une ambiance feutrée et jazzy.",
   "lat": 48.863959,
   "lng": 2.36748,
-  "resa": "sans"
+  "resa": "sans",
+  "ogTry": "2|https://mobster.azadestudio.fr|",
+  "photo": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0ae9c3fb-56cb-4533-b531-08740977d01b/id-preview-258ec785--a48a64ca-1458-430f-a96b-a245897d6617.lovable.app-1773056956313.png"
  },
  {
   "id": "precieuses-0-boire-un-verre-les-ambassadeurs",
@@ -19935,7 +20476,9 @@
   "summary": "Le somptueux bar du Hôtel de Crillon propose des cocktails signatures raffinés sous des lustres majestueux, offrant une ambiance palace somptueuse et rythmée par des concerts live.",
   "enriched": 5,
   "booking": "https://www.rosewoodhotels.com/en/reservations/select-a-destination",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ogTry": "2|https://www.rosewoodhotels.com/fr/crillon/dining/bar-les-ambassadeurs|https://www.rosewoodhotels.com/en/reservations/select-a-destination",
+  "pressTry": 1
  },
  {
   "id": "precieuses-0-boire-un-verre-grouvie",
@@ -20337,7 +20880,9 @@
   "booking": "https://www.tablecheck.com/fr/shops/le-royal-monceau-paris-restaurants/reserve",
   "summary": "Un brunch luxueux et grandiose orchestré par les chefs pâtissiers, proposant des buffets somptueux de mets salés et de créations sucrées d'exception. L'ambiance est ultra-chic, artistique et feutrée au cœur d'un palace parisien.",
   "enriched": 5,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ogTry": "2|https://www.raffles.com/paris|https://www.tablecheck.com/fr/shops/le-royal-monceau-paris-restaurants/reserve",
+  "photo": "https://m.ahstatic.com/is/image/accorhotels/met_p_a006-01?wid=1920"
  },
  {
   "id": "precieuses-0-brunch-bande-de-cheffes",
@@ -20430,7 +20975,9 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ogTry": "2|https://cafe.restaurants-de-france.fr|",
+  "pressTry": 1
  },
  {
   "id": "ig-paris-arnaud-nicolas",
@@ -20452,7 +20999,9 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "01 45 55 59 59",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ogTry": "2|https://www.arnaudnicolas.paris|",
+  "photo": "https://www.arnaudnicolas.paris/site/screenshot/?size_preset=fb&v=1784564856"
  },
  {
   "id": "ig-paris-best-bread-boba",
@@ -20543,7 +21092,10 @@
   "booking": "https://www.thefork.fr/restaurant/au-bon-coin-r25128",
   "website": "https://bistro.restaurants-de-france.fr",
   "enriched": 5,
-  "phone": "09 72 73 28 76"
+  "phone": "09 72 73 28 76",
+  "ogTry": "2|https://bistro.restaurants-de-france.fr|https://www.thefork.fr/restaurant/au-bon-coin-r25128",
+  "aiFill": 1,
+  "pressTry": 1
  },
  {
   "id": "ig-paris-le-guersant",
@@ -20786,7 +21338,9 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/la-fontaine-gaillon-r820844",
   "aiFill": 1,
-  "phone": "01 47 42 63 22"
+  "phone": "01 47 42 63 22",
+  "ogTry": "2|https://www.fitz-group.fr/fontaine-gaillon-paris|https://www.thefork.fr/restaurant/la-fontaine-gaillon-r820844",
+  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72c5fe5739cdf32b34c_og-la-fontaine-gaillon.jpg"
  },
  {
   "id": "ig-paris-le-petit-bal-perdu",
@@ -21578,7 +22132,9 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "01 73 54 79 74",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ogTry": "2|https://petitbain.org|",
+  "photo": "https://petitbain.org/wp-content/uploads/2026/05/water-damage-etran-de-lair-square-500x500.png"
  },
  {
   "id": "ig-paris-chalet-des-iles",
@@ -22052,7 +22608,9 @@
   "searched": 1,
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ogTry": "2|https://www.ilgelatodelmarchese.com/|",
+  "photo": "https://starterlab.xyz/xcn/bos88-14.webp"
  },
  {
   "id": "ig-paris-cookidiction",
@@ -22345,7 +22903,9 @@
   "instagram": "maxime.frederic",
   "aiFill": 1,
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ogTry": "2|https://cafe.restaurants-de-france.fr|",
+  "pressTry": 1
  },
  {
   "id": "ig-paris-jun",
@@ -22583,7 +23143,9 @@
   "instagram": "elnopalparis",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ogTry": "2|https://elnopalparis.com/|",
+  "photo": "https://elnopalparis.com/wp-content/uploads/2025/10/taco.png"
  },
  {
   "id": "ig-paris-machiya",
@@ -22876,7 +23438,9 @@
   "booking": "https://www.thefork.fr/restaurant/fitzgerald-r211931",
   "instagram": "fitzgroupevents",
   "aiFill": 1,
-  "phone": "01 45 51 38 38"
+  "phone": "01 45 51 38 38",
+  "ogTry": "2|https://www.fitz-group.fr/fitzgerald-paris|https://www.thefork.fr/restaurant/fitzgerald-r211931",
+  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/658337e9bf17d5c7272c21ed_FITZ_HERO_DT.jpg"
  },
  {
   "id": "ig-paris-bisou",
@@ -22943,7 +23507,9 @@
   "phone": "01 42 21 93 71",
   "instagram": "darocoparis",
   "booking": "https://bookings.zenchef.com/results?rid=347479&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ogTry": "2|https://daroco.com/|https://bookings.zenchef.com/results?rid=347479&lang=fr",
+  "photo": "https://daroco.com/wp-content/uploads/2026/08/1W2A0930-scaled.jpg"
  },
  {
   "id": "ig-paris-candelaria",
@@ -23234,7 +23800,9 @@
   "enriched": 5,
   "phone": "01 42 33 14 74",
   "instagram": "restaurantkei",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "ogTry": "2|https://restaurant-kei.fr|https://www.thefork.fr/restaurant/restaurant-kei-r857881",
+  "photo": "https://cdn.shopify.com/s/files/1/0780/0799/2615/files/map_trad.png?v=1690476742"
  },
  {
   "id": "ig-paris-plenitude-cheval-blanc",
@@ -23706,7 +24274,8 @@
   "commonsTry": 1,
   "photo": "https://symphony.cdn.tambourine.com/perrine-restaurant/media/perrinerestaurant-bestluxuryhotelsnewyorkcity-673f985b7c596.jpg",
   "photoSrc": "https://www.perrinenyc.com/",
-  "photoManual": 1
+  "photoManual": 1,
+  "resa": "inconnu"
  },
  {
   "id": "ig-new-york-izakaya-nana",
@@ -24266,7 +24835,9 @@
   "website": "https://www.labarcacantina.com",
   "enriched": 5,
   "bookingScan": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ogTry": "2|https://www.labarcacantina.com|",
+  "photo": "https://images.ctfassets.net/kpmk8wktzj4t/5LrKjPVCkjTb7rj6f1xkkk/153d50f3b4d1c097ff2fdf17430e4d59/CL_Hop_Hero.jpg"
  },
  {
   "id": "ig-new-york-phayul",
@@ -25820,7 +26391,7 @@
   "city": "Ramat Gan",
   "instagram": "tre_bialik",
   "kasher": true,
-  "ogTry": "2||",
+  "ogTry": "2|https://israel-streets.openalfa.com|",
   "aiFill": 1,
   "noPhone": 1,
   "noMenu": 1,
@@ -25830,7 +26401,8 @@
   "searched": 1,
   "website": "https://israel-streets.openalfa.com",
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "pressTry": 1
  },
  {
   "id": "ig-petah-tikva-ricco-tortilla",
@@ -28621,7 +29193,9 @@
   "searched": 1,
   "photo": "https://media.timeout.com/images/105994825/image.jpg",
   "photoSrc": "https://www.timeout.com/israel/restaurants/vicky-cristina",
-  "photoManual": 1
+  "photoManual": 1,
+  "igSearched": 1,
+  "instagram": "vickycristinatlv"
  },
  {
   "id": "ig-tel-aviv-romano",
@@ -28800,7 +29374,9 @@
   "lat": 32.073768,
   "lng": 34.779129,
   "searched": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "igSearched": 1,
+  "instagram": "helena1telaviv"
  },
  {
   "id": "ig-tel-aviv-bar-51",
@@ -28954,7 +29530,9 @@
   "pressTry": 1,
   "searched": 1,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "m25.meatmarket"
  },
  {
   "id": "ig-tel-aviv-ouzeria",
@@ -29182,7 +29760,8 @@
   "resa": "inconnu",
   "pressTry": 1,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "searched": 1
  },
  {
   "id": "ig-tel-aviv-emesh",
@@ -29637,7 +30216,8 @@
   "lng": 34.77488,
   "searched": 1,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-tel-aviv-eatmeat",
@@ -30054,7 +30634,8 @@
   "pressTry": 1,
   "lat": 32.068336,
   "lng": 34.770034,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-tel-aviv-mifgash-rambam",
@@ -30207,7 +30788,8 @@
   "pressTry": 1,
   "enriched": 5,
   "photo": "https://www.delitlv.co.il/media/snowdog/menu/node/cache/8/6/86986.jpg",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "searched": 1
  },
  {
   "id": "ig-tel-aviv-delicatessen-derech-ben-zvi-84",
@@ -30546,7 +31128,9 @@
   "pressTry": 1,
   "lat": 32.078283,
   "lng": 34.774424,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "abcd"
  },
  {
   "id": "ig-tel-aviv-azura",
@@ -30570,7 +31154,9 @@
   "pressTry": 1,
   "lat": 32.062621,
   "lng": 34.775786,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "azura_tlv"
  },
  {
   "id": "ig-tel-aviv-kab-kem",
@@ -30857,7 +31443,8 @@
   "lat": 32.056292,
   "lng": 34.758153,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "searched": 1
  },
  {
   "id": "ig-tel-aviv-beit-kandinof",
@@ -30934,7 +31521,8 @@
   "website": "https://www.bigmammagroup.com/en/trattorias/pizzeria-popolare",
   "enriched": 5,
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/pizzeria-popolare-r845334"
+  "booking": "https://www.thefork.fr/restaurant/pizzeria-popolare-r845334",
+  "pressTry": 1
  },
  {
   "id": "bigmamma-pink-mamma",
@@ -30960,7 +31548,8 @@
   "bookingScan": 1,
   "booking": "https://www.sevenrooms.com/explore/pinkmamma/reservations",
   "bookingOk": 2,
-  "searched": 1
+  "searched": 1,
+  "pressTry": 1
  },
  {
   "id": "bigmamma-libertino",
@@ -30984,7 +31573,8 @@
   "website": "https://www.bigmammagroup.com/fr/trattorias/libertino/",
   "enriched": 5,
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/libertino-r845336"
+  "booking": "https://www.thefork.fr/restaurant/libertino-r845336",
+  "pressTry": 1
  },
  {
   "id": "bigmamma-ober-mamma",
@@ -31008,7 +31598,8 @@
   "website": "https://www.bigmammagroup.com/",
   "enriched": 5,
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/ober-mamma-r845333"
+  "booking": "https://www.thefork.fr/restaurant/ober-mamma-r845333",
+  "pressTry": 1
  },
  {
   "id": "bigmamma-east-mamma",
@@ -31032,7 +31623,8 @@
   "website": "https://www.bigmammagroup.com/fr/trattorias/east-mamma",
   "enriched": 5,
   "searched": 1,
-  "booking": "https://www.thefork.fr/restaurant/east-mamma-r845335"
+  "booking": "https://www.thefork.fr/restaurant/east-mamma-r845335",
+  "pressTry": 1
  },
  {
   "id": "bigmamma-mamma-primi",
@@ -31102,7 +31694,9 @@
   "booking": "https://www.thefork.fr/restaurant/la-democratie-r748586",
   "website": "https://lademocratierestaurant.com",
   "enriched": 5,
-  "phone": "01 72 68 50 89"
+  "phone": "01 72 68 50 89",
+  "ogTry": "2|https://lademocratierestaurant.com|https://www.thefork.fr/restaurant/la-democratie-r748586",
+  "photo": "https://lademocratierestaurant.com/wp-content/uploads/lademocratie-carte-noel-2026.jpg"
  },
  {
   "id": "u-mw8wrip8atrx",
