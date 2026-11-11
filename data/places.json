@@ -14534,7 +14534,8 @@
   "booking": "https://www.olascoffee.shop/book-club",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un café chaleureux et convivial niché dans le 18e arrondissement, idéal pour savourer d'excellents cafés de spécialité accompagnés de pâtisseries maison dans une ambiance cosy."
+  "summary": "Un café chaleureux et convivial niché dans le 18e arrondissement, idéal pour savourer d'excellents cafés de spécialité accompagnés de pâtisseries maison dans une ambiance cosy.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-18-cafe-b-j",
@@ -14561,7 +14562,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-19-francais-xiii",
@@ -14588,7 +14590,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-19-francais-square",
@@ -14612,7 +14615,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-19-francais-le-bar-fleuri",
@@ -14636,7 +14640,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-19-thailandais-chez-sommay",
@@ -14663,7 +14668,8 @@
   "resa": "telephone",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-19-libanais-l-artisan-libanais",
@@ -14687,7 +14693,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant chaleureux qui propose de délicieux mezzés faits maison et des grillades savoureuses, parfaits pour un voyage culinaire au cœur du Liban dans une ambiance conviviale."
+  "summary": "Un restaurant chaleureux qui propose de délicieux mezzés faits maison et des grillades savoureuses, parfaits pour un voyage culinaire au cœur du Liban dans une ambiance conviviale.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-19-oriental-basis",
@@ -14711,7 +14718,8 @@
   "aiFill": 1,
   "phone": "01 42 02 81 23",
   "summary": "Une cantine branchée qui revisite le dürüm et les spécialités orientales avec des produits frais, le tout dans une ambiance moderne et décontractée.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-19-africain-a-box",
@@ -14738,7 +14746,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-francais-coquin",
@@ -14763,7 +14772,8 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-francais-kheops",
@@ -14790,7 +14800,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-francais-la-parisienne",
@@ -14817,7 +14828,8 @@
   "resa": "telephone",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-italien-peppe-pizzeria",
@@ -14840,7 +14852,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Élue meilleure pizzeria d'Europe, cette adresse incontournable propose des pizzas aux recettes créatives et généreuses dans une ambiance chaleureuse et animée."
+  "summary": "Élue meilleure pizzeria d'Europe, cette adresse incontournable propose des pizzas aux recettes créatives et généreuses dans une ambiance chaleureuse et animée.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-americain-juicy-pop",
@@ -14865,7 +14878,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un spot de street-food gourmand idéal pour déguster des burgers juteux et des spécialités américaines dans une ambiance décontractée.",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-burger-austin-boys-burger",
@@ -14890,7 +14904,8 @@
   "aiFill": 1,
   "summary": "Ce restaurant propose de savoureux smash burgers aux influences texanes, parfaits pour les amateurs de viande généreuse dans un cadre simple et convivial.",
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-burger-avec-amour-burger",
@@ -14915,7 +14930,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Une adresse chaleureuse où l'on savoure des burgers faits maison préparés avec des produits frais, le tout dans une atmosphère accueillante et sympathique.",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-burger-small-cantine",
@@ -14939,7 +14955,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-japonais-boken",
@@ -14965,7 +14982,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-thailandais-yummy-thai",
@@ -14990,7 +15008,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-20-thailandais-sushi-thai",
@@ -15014,7 +15033,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-fury-room",
@@ -15037,7 +15057,8 @@
   "aiFill": 1,
   "summary": "Un concept insolite pour évacuer le stress en détruisant des objets à coups de massue dans une ambiance survoltée. Idéal pour se défouler entre amis ou entre collègues.",
   "lat": 48.827961,
-  "lng": 2.345071
+  "lng": 2.345071,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-urban-jump",
@@ -15058,7 +15079,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un vaste trampoline park indoor parfait pour enchaîner les sauts acrobatiques et tester des parcours ludiques. L'ambiance y est sportive, dynamique et conviviale.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-ifly",
@@ -15082,7 +15104,8 @@
   "aiFill": 1,
   "summary": "Vivez les sensations fortes d'une chute libre en intérieur grâce à un impressionnant simulateur de vol en soufflerie. Une expérience aérienne unique et encadrée par des professionnels.",
   "lat": 48.89724,
-  "lng": 2.385575
+  "lng": 2.385575,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-flyview",
@@ -15108,7 +15131,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-disneyland",
@@ -15134,7 +15158,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-parc-asterix",
@@ -15157,7 +15182,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Plongez dans l'univers de la célèbre bande dessinée à travers des montagnes russes décoiffantes et des spectacles vivants. Une ambiance gauloise festive et pleine d'humour.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-the-mad-hatter-atelier",
@@ -15178,7 +15204,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-gate-vr",
@@ -15198,7 +15225,8 @@
   "instagram": "thegatevr",
   "booking": "https://book.thegatevr.io/",
   "bookingOk": 2,
-  "aiFill": 1
+  "aiFill": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-pixel-game",
@@ -15222,7 +15250,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-move-it-game",
@@ -15245,7 +15274,8 @@
   "summary": "Un jeu d'action immersif où rapidité, réflexes et esprit d'équipe sont mis à l'épreuve sur des dalles lumineuses interactives. L'ambiance est ultra-dynamique, parfaite pour se dépenser en s'amusant.",
   "lat": 48.835222,
   "lng": 2.344945,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-merci-internet",
@@ -15265,7 +15295,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-fun-booker",
@@ -15286,7 +15317,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "booking": "https://www.funbooker.com",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-atelier-cocktails-personnalises",
@@ -15309,7 +15341,8 @@
   "summary": "Apprenez à créer vos propres cocktails sur mesure lors d'un atelier ludique et créatif. L'ambiance y est conviviale, chaleureuse et propice à la découverte de saveurs uniques.",
   "lat": 48.874568,
   "lng": 2.35414,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-atelier-parfums-personnalises",
@@ -15330,7 +15363,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-objectif-horlogerie",
@@ -15353,7 +15387,8 @@
   "aiFill": 1,
   "summary": "Initiez-vous aux secrets de l'horlogerie mécanique en démontant et remontant un mouvement de montre suisse. Une expérience passionnante et minutieuse dans un cadre professionnel et intimiste.",
   "lat": 48.865631,
-  "lng": 2.355967
+  "lng": 2.355967,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-aviasim",
@@ -15376,7 +15411,8 @@
   "aiFill": 1,
   "summary": "Prenez les commandes d'un simulateur de vol ultra-réaliste d'avion de ligne aux côtés d'un instructeur professionnel. L'ambiance immersive séduira tous les passionnés d'aviation et de sensations fortes.",
   "lat": 48.831858,
-  "lng": 2.238383
+  "lng": 2.238383,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-initium",
@@ -15396,7 +15432,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-wecandoo",
@@ -15422,7 +15459,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-theatre-a-la-minute",
@@ -15443,7 +15481,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-eclipso",
@@ -15463,7 +15502,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-e-motion",
@@ -15488,7 +15528,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-peinture-sur-ceramique",
@@ -15509,7 +15550,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-creation-de-bougie",
@@ -15530,7 +15572,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-atelier-poterie",
@@ -15551,7 +15594,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-lol-qui-rit-sort",
@@ -15572,7 +15616,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-paint-me-up",
@@ -15593,7 +15638,8 @@
   "booking": "https://paintme-up.com/reservation",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Participez à des ateliers de peinture fluorescents et immersifs tout en profitant d'un verre dans une ambiance artistique, ludique et décontractée."
+  "summary": "Participez à des ateliers de peinture fluorescents et immersifs tout en profitant d'un verre dans une ambiance artistique, ludique et décontractée.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-personnalisation-de-sneakers",
@@ -15614,7 +15660,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-one-hour-escape-game",
@@ -15637,7 +15684,8 @@
   "aiFill": 1,
   "summary": "Plongez dans des scénarios immersifs aux décors léchés et résolvez des énigmes palpitantes en équipe dans l'un des escape games incontournables de Paris.",
   "lat": 48.87502,
-  "lng": 2.352906
+  "lng": 2.352906,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-the-jury-experience-diamants-mensonges-et-un-mort",
@@ -15658,7 +15706,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-kintsugi",
@@ -15681,7 +15730,8 @@
   "summary": "Initiez-vous à l'art traditionnel japonais du Kintsugi dans une ambiance calme et minutieuse. On y apprend à réparer la céramique avec de la laque et de la poudre d'or, pour sublimer les fissures.",
   "lat": 48.844607,
   "lng": 2.396056,
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-my-flower-class",
@@ -15704,7 +15754,8 @@
   "summary": "Participez à des ateliers d'art floral créatifs et conviviaux en plein cœur de Paris. On y apprend à composer de superbes bouquets de saison dans une ambiance chaleureuse et inspirante.",
   "lat": 48.858819,
   "lng": 2.374178,
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-les-origines-de-paris",
@@ -15727,7 +15778,8 @@
   "summary": "Plongez dans l'histoire de la capitale grâce à une expérience de réalité virtuelle immersive en plein air. On y découvre l'évolution fascinante du parvis de l'Hôtel de Ville à travers les siècles dans une ambiance ludique.",
   "lat": 48.854287,
   "lng": 2.356161,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-cite-immersive-des-fables",
@@ -15750,7 +15802,8 @@
   "lat": 48.822737,
   "lng": 2.342575,
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-paradox-museum",
@@ -15773,7 +15826,8 @@
   "lat": 48.871187,
   "lng": 2.334433,
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-activite-science-experience",
@@ -15796,7 +15850,8 @@
   "summary": "Un parcours immersif entre science et divertissement, guidé par la technologie, de la pièce de l'univers aux mystères de la physique. Une sortie aussi fascinante qu'instructive dans une atmosphère moderne.",
   "lat": 48.859381,
   "lng": 2.347964,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-stand-up-jamel-comedy-club",
@@ -15822,7 +15877,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-stand-up-marrakech-du-rire",
@@ -15843,7 +15899,8 @@
   "aiFill": 1,
   "summary": "Le Marrakech du Rire est le festival international d'humour incontournable fondé par Jamel Debbouze. Il propose une ambiance festive et chaleureuse réunissant les plus grands artistes de la scène humoristique.",
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-stand-up-panam-cafe",
@@ -15867,7 +15924,8 @@
   "enriched": 5,
   "photo": "https://www.panameartcafe.com/storage/files/events/emy-1920-1050-2_1783352850.jpg",
   "bookingScan": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-stand-up-le-fridge",
@@ -15890,7 +15948,8 @@
   "phone": "01 42 33 23 23",
   "summary": "Fondé par Kev Adams, Le Fridge Comedy Club propose une ambiance new-yorkaise branchée et intimiste. C'est l'endroit idéal pour découvrir une programmation pointue de stand-up tout en buvant un verre ou en grignotant.",
   "lat": 48.865932,
-  "lng": 2.350849
+  "lng": 2.350849,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-soiree-l-arc",
@@ -15913,7 +15972,8 @@
   "summary": "L'Arc Paris est un club select et branché situé à deux pas de l'Arc de Triomphe. Il offre une ambiance festive et glamour avec vue sur les monuments parisiens.",
   "lat": 48.873954,
   "lng": 2.29288,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "precieuses-0-soiree-boum-boum",
@@ -25450,7 +25510,8 @@
   "resa": "sans",
   "lat": 32.030886,
   "lng": 34.850372,
-  "searched": 1
+  "searched": 1,
+  "pressTry": 1
  },
  {
   "id": "ig-bat-yam-moses-bat-yam",
@@ -25876,7 +25937,7 @@
   "city": "Tel-Aviv",
   "instagram": "burger_station_il",
   "kasher": true,
-  "ogTry": "2||",
+  "ogTry": "2|https://www.burgerstation.co.il|",
   "aiFill": 1,
   "website": "https://www.burgerstation.co.il",
   "noPhone": 1,
@@ -25885,7 +25946,10 @@
   "lat": 32.073792,
   "lng": 34.780894,
   "searched": 1,
-  "pressTry": 1
+  "pressTry": 1,
+  "photo": "https://burgerstation.co.il/__l5e/assets-v1/1f4dd109-2266-4adf-9698-0c2729794146/bs-4bc78bbb1702.jpg",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "ig-bat-yam-burger-station-bat-yam",
@@ -25903,14 +25967,17 @@
   "kasher": true,
   "lat": 32.011067,
   "lng": 34.736953,
-  "ogTry": "2||",
+  "ogTry": "2|https://www.burgerstation.co.il|",
   "aiFill": 1,
   "website": "https://www.burgerstation.co.il",
   "noPhone": 1,
   "noMenu": 1,
   "resa": "inconnu",
   "searched": 1,
-  "pressTry": 1
+  "pressTry": 1,
+  "photo": "https://burgerstation.co.il/__l5e/assets-v1/1f4dd109-2266-4adf-9698-0c2729794146/bs-4bc78bbb1702.jpg",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "ig-jerusalem-mordechai-1987-jerusalem",
@@ -26291,13 +26358,12 @@
   "ogTry": "2||",
   "aiFill": 1,
   "phone": "+972 2-502-3333",
-  "instagram": "joseph_burger_bar",
+  "instagram": "josephburger",
   "noMenu": 1,
   "resa": "inconnu",
   "searched": 1,
   "pressTry": 1,
-  "igSearched": 1,
-  "instagram": "josephburger"
+  "igSearched": 1
  },
  {
   "id": "ig-tel-aviv-tau-77",
@@ -26555,7 +26621,9 @@
   "lat": 31.783772,
   "lng": 35.213997,
   "searched": 1,
-  "pressTry": 1
+  "pressTry": 1,
+  "igSearched": 1,
+  "instagram": "helen_jerusalen"
  },
  {
   "id": "ig-mevaseret-zion-gril-bar-mevaseret",
@@ -26624,7 +26692,8 @@
   "noPhone": 1,
   "noMenu": 1,
   "resa": "inconnu",
-  "searched": 1
+  "searched": 1,
+  "pressTry": 1
  },
  {
   "id": "ig-jerusalem-bisrabak-jerusalem",
@@ -26782,13 +26851,16 @@
   "kasher": true,
   "country": "Israël",
   "zone": "Shfela",
-  "ogTry": "2||",
+  "ogTry": "2|https://www.hamishkan.co.il|",
   "aiFill": 1,
   "phone": "08-946-6444",
   "website": "https://www.hamishkan.co.il",
   "resa": "inconnu",
   "searched": 1,
-  "pressTry": 1
+  "pressTry": 1,
+  "photo": "https://www.hamishkan.co.il/wp-content/uploads/2025/12/miluim.jpg",
+  "enriched": 5,
+  "bookingScan": 1
  },
  {
   "id": "ig-jerusalem-segev-batayelet",
@@ -27666,7 +27738,9 @@
   "noMenu": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "jethro_i"
  },
  {
   "id": "ig-petah-tikva-memphis",
