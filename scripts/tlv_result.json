@@ -1,0 +1,1634 @@
+[
+ {
+  "demande": [
+   "Petit-déjeuner",
+   "Orby",
+   "café, sud de Tel-Aviv"
+  ],
+  "nom_demande": "Orby",
+  "nom": "Orby",
+  "statut": "ouvert",
+  "adresses": [
+   "Ha-Rakevet St 42, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972-3-560-6677",
+  "site": "",
+  "instagram": "orby_tlv",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Café",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un café de quartier branché dans le sud de Tel-Aviv, idéal pour déguster un excellent café de spécialité et des pâtisseries fraîches dans une ambiance décontractée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Petit-déjeuner",
+   "Café Shneor",
+   "café, centre de Tel-Aviv"
+  ],
+  "nom_demande": "Café Shneor",
+  "nom": "Café Shneor",
+  "statut": "ouvert",
+  "adresses": [
+   "Shneor St 15, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972-3-525-5025",
+  "site": "",
+  "instagram": "cafe_shneor",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Café",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Café de quartier incontournable près de Dizengoff, parfait pour un petit-déjeuner au soleil, des sandwichs généreux et une ambiance typiquement tel-avivienne.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Petit-déjeuner",
+   "Hamania",
+   "café petit-déjeuner (Cafe Hamaniya / Hamanya)"
+  ],
+  "nom_demande": "Hamania",
+  "nom": "Hamaniya",
+  "statut": "ouvert",
+  "adresses": [
+   "Dizengoff St 265, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972-3-546-5111",
+  "site": "",
+  "instagram": "hamaniya_",
+  "reservation": "",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Israélien",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Célèbre pour ses pancakes aériens et ses petits-déjeuners copieux, Hamaniya offre une ambiance chaleureuse et gourmande sur Dizengoff.",
+  "doute": "L'orthographe varie parfois entre Hamania et Hamaniya."
+ },
+ {
+  "demande": [
+   "Petit-déjeuner",
+   "Café Yom Tov",
+   "café, rue Yom Tov"
+  ],
+  "nom_demande": "Café Yom Tov",
+  "nom": "Café Yom Tov",
+  "statut": "ouvert",
+  "adresses": [
+   "Yom Tov St 30, Kerem HaTeimanim, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-516-7288",
+  "site": "",
+  "instagram": "cafe_yomtov",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Café",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un café de quartier chaleureux et sans prétention au cœur du Kerem HaTeimanim, idéal pour un petit-déjeuner simple et authentique.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Petit-déjeuner",
+   "Kirsh",
+   "café, Dizengoff"
+  ],
+  "nom_demande": "Kirsh",
+  "nom": "Kirsh",
+  "statut": "ouvert",
+  "adresses": [
+   "Dizengoff St 192, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-522-8644",
+  "site": "",
+  "instagram": "kirsh_tlv",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Café",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un café-boulangerie incontournable de Dizengoff, parfait pour déguster des pâtisseries fraîches et un bon café dans une ambiance de quartier animée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Petit-déjeuner",
+   "Café Cucu",
+   "café de l'hôtel Cucu"
+  ],
+  "nom_demande": "Café Cucu",
+  "nom": "Cafe Cucu",
+  "statut": "ouvert",
+  "adresses": [
+   "Dizengoff St 83, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-942-5555",
+  "site": "https://cucuhotel.co.il/",
+  "instagram": "cucuhotel",
+  "reservation": "https://ontopo.co.il/",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Café",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Le café branché rattaché au Cucu Hotel sur Dizengoff, offrant un petit-déjeuner coloré et soigné dans un décor design et artistique.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Petit-déjeuner",
+   "Café Puaa",
+   "café, Jaffa"
+  ],
+  "nom_demande": "Café Puaa",
+  "nom": "Café Puaa",
+  "statut": "ouvert",
+  "adresses": [
+   "Rabbi Yohanan St 8, Jaffa, Tel-Aviv"
+  ],
+  "telephone": "+972 3-682-3821",
+  "site": "https://www.cafepuaa.com",
+  "instagram": "cafepuaa",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Café / Israélien",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un lieu incontournable au cœur du marché aux puces de Jaffa, parfait pour un petit-déjeuner copieux dans une ambiance rétro et bohème où tout est à vendre.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Vicky Cristina",
+   "tapas, HaTachana"
+  ],
+  "nom_demande": "Vicky Cristina",
+  "nom": "Vicky Cristina",
+  "statut": "ouvert",
+  "adresses": [
+   "HaTachana, Kaufmann St 2, Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-517-3033",
+  "site": "https://vickycristina.co.il",
+  "instagram": "vickycristina_tlv",
+  "reservation": "https://ontopo.co.il/vickycristina",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Tapas / Bar à vin",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Bar à tapas et vin animé situé dans le complexe historique de la gare (HaTachana), idéal pour partager des assiettes sous les ficus géants.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Romano",
+   "Eyal Shani, Jaffa"
+  ],
+  "nom_demande": "Romano",
+  "nom": "Romano",
+  "statut": "ouvert",
+  "adresses": [
+   "Derech Jaffa 9 (1er étage), Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-947-7474",
+  "site": "",
+  "instagram": "romano.tlv",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Israélien / Contemporain",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Le repaire branché d'Eyal Shani niché dans une vieille cour de Jaffa/Sud Tel-Aviv, proposant une cuisine généreuse de bistro et une excellente ambiance musicale.",
+  "doute": "Situé techniquement à la frontière entre Tel-Aviv et Jaffa (Derech Jaffa)."
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Port Said",
+   "Eyal Shani"
+  ],
+  "nom_demande": "Port Said",
+  "nom": "Port Said",
+  "statut": "ouvert",
+  "adresses": [
+   {
+    "rue": "Har Sinai St 5",
+    "quartier": "Centre-ville / Synagogue, Tel-Aviv"
+   }
+  ],
+  "telephone": "+972 3-620-7432",
+  "site": "",
+  "instagram": "portsaid_tlv",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Israélien moderne",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un lieu incontournable d'Eyal Shani, branché et animé, où l'on déguste des plats de rue revisités et des tomates magiques en écoutant des vinyles.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Santa Katarina",
+   "resto"
+  ],
+  "nom_demande": "Santa Katarina",
+  "nom": "Santa Katarina",
+  "statut": "ouvert",
+  "adresses": [
+   {
+    "rue": "Har Sinai St 2",
+    "quartier": "Centre-ville / Synagogue, Tel-Aviv"
+   }
+  ],
+  "telephone": "+972 3-556-7847",
+  "site": "",
+  "instagram": "santakatarina",
+  "reservation": "https://ontopo.co.il/santakatarina",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Méditerranéen",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Caché dans une cour près de la Grande Synagogue, ce restaurant propose une cuisine vive cuite au four à bois, menée par le chef Tomer Agai.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "HaBasta",
+   "resto près du Carmel market"
+  ],
+  "nom_demande": "HaBasta",
+  "nom": "HaBasta",
+  "statut": "ouvert",
+  "adresses": [
+   {
+    "rue": "HaShomer St 4",
+    "quartier": "Marché HaCarmel, Tel-Aviv"
+   }
+  ],
+  "telephone": "+972 3-566-0599",
+  "site": "",
+  "instagram": "habasta_tlv",
+  "reservation": "https://ontopo.co.il/habasta",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Bistronomique",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Un marché-bistrot mythique adossé au marché Carmel, célèbre pour sa sélection de vins pointue, ses produits ultra-frais et son ambiance survoltée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Pereh",
+   "resto lié à HaBasta ? (פרא)"
+  ],
+  "nom_demande": "Pereh",
+  "nom": "Pereh",
+  "statut": "ouvert",
+  "adresses": [
+   "HaTserif 2, Jaffa, Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-518-8040",
+  "site": "",
+  "instagram": "pereh.ta",
+  "reservation": "https://ontopo.co.il/pereh",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Méditerranéen",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un restaurant branché à Jaffa fondé par l'équipe du célèbre HaBasta, proposant des plats créatifs axés sur les produits locaux et une belle sélection de vins dans une ambiance intime.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Café Europa",
+   "resto Rothschild"
+  ],
+  "nom_demande": "Café Europa",
+  "nom": "Café Europa",
+  "statut": "ouvert",
+  "adresses": [
+   "Rothschild Blvd 9, Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-525-1599",
+  "site": "",
+  "instagram": "cafe_europa",
+  "reservation": "https://ontopo.co.il/cafeeuropa",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Israélien",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Institution incontournable du boulevard Rothschild, ce restaurant-bar propose une cuisine bistro inventive et des grillades savoureuses dans une ambiance animée avec terrasse.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Helena",
+   "resto"
+  ],
+  "nom_demande": "Helena",
+  "nom": "Helena",
+  "statut": "inconnu",
+  "adresses": [],
+  "telephone": "",
+  "site": "",
+  "instagram": "",
+  "reservation": "",
+  "resa": "",
+  "menu": "",
+  "cuisine": "",
+  "prix": 0,
+  "kasher": null,
+  "resume": "",
+  "doute": "Il existe un restaurant renommé 'Helena' à Césarée (port de Césarée), mais aucun restaurant majeur ou établissement permanent sous ce nom précis n'est clairement identifié comme actif à Tel-Aviv/Jaffa."
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Bar 51",
+   "resto/bar"
+  ],
+  "nom_demande": "Bar 51",
+  "nom": "Bar 51",
+  "statut": "ouvert",
+  "adresses": [
+   "HaYarkon St 51, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3 516 5151",
+  "site": "https://www.bar51.co.il",
+  "instagram": "bar51.tlv",
+  "reservation": "https://ontopo.co.il/bar51",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Méditerranéen",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Une table branchée face à la mer proposant des assiettes raffinées et créatives, dans une ambiance animée et sophistiquée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "La Shuk",
+   "resto"
+  ],
+  "nom_demande": "La Shuk",
+  "nom": "La Shuk",
+  "statut": "ouvert",
+  "adresses": [
+   "Dizengoff St 205, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3 629 5555",
+  "site": "https://www.lashuk.co.il",
+  "instagram": "lashuk_tlv",
+  "reservation": "https://ontopo.co.il/lashuk",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Israélien",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un restaurant-bistro vibrant situé sur Dizengoff, inspiré par l'énergie et les produits du marché, idéal pour partager des plats méditerranéens généreux.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Radler",
+   "bar/resto"
+  ],
+  "nom_demande": "Radler",
+  "nom": "Radler",
+  "statut": "ouvert",
+  "adresses": [
+   "Ahad Ha'Am St 25, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3 560 6010",
+  "site": "",
+  "instagram": "radler_tlv",
+  "reservation": "https://ontopo.co.il/radler",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Bar à vin",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un bar à vin et restaurant élégant au cœur de Tel-Aviv, proposant une belle carte de vins et des petits plats raffinés dans une ambiance feutrée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Dîner",
+   "Bicicletta",
+   "resto italien"
+  ],
+  "nom_demande": "Bicicletta",
+  "nom": "Bicicletta",
+  "statut": "ouvert",
+  "adresses": [
+   "Nahalat Binyamin St 29, Lev HaIr, Tel-Aviv"
+  ],
+  "telephone": "+972 3-522-3031",
+  "site": "https://bicicletta.co.il",
+  "instagram": "bicicletta_tlv",
+  "reservation": "https://ontopo.co.il/bicicletta",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Méditerranéen",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un lieu bohème et décontracté doté d'une charmante cour intérieure, idéal pour partager des assiettes créatives et boire un verre.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Manta Ray",
+   "resto de plage"
+  ],
+  "nom_demande": "Manta Ray",
+  "nom": "Manta Ray",
+  "statut": "ouvert",
+  "adresses": [
+   "Kaufman St 2, Alma Beach, Tel-Aviv-Jaffa"
+  ],
+  "telephone": "+972 3-517-4774",
+  "site": "https://www.mantaray.co.il",
+  "instagram": "mantaray_tlv",
+  "reservation": "https://ontopo.co.il/mantaray",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Poissons et fruits de mer",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Institution incontournable face à la mer, parfaite pour déguster des mezzes raffinés et des plats de poissons les pieds dans l'eau.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Mirage",
+   "resto"
+  ],
+  "nom_demande": "Mirage",
+  "nom": "Mirage Tel Aviv",
+  "statut": "ouvert",
+  "adresses": [
+   "Ahad Ha'Am St 30, Tel-Aviv-Jaffa"
+  ],
+  "telephone": "+972 3-620-3333",
+  "site": "",
+  "instagram": "mirage_tlv",
+  "reservation": "https://ontopo.co.il",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Israélien",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Restaurant et bar branché au cœur de Tel-Aviv, proposant une cuisine moderne et une ambiance nocturne animée.",
+  "doute": "Le statut exact et les détails du site web officiel peuvent varier, l'établissement étant souvent lié aux plateformes de réservation comme Ontopo."
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "M25",
+   "viande, Carmel market"
+  ],
+  "nom_demande": "M25",
+  "nom": "M25",
+  "statut": "ouvert",
+  "adresses": [
+   "Simtat HaCarmel 30, HaCarmel Market, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-510-3162",
+  "site": "",
+  "instagram": "m25_carmel",
+  "reservation": "https://ontopo.co.il/m25",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Viande",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Niché au cœur du marché du Carmel, ce repaire de viandes propose des pièces d'agneau et de bœuf d'une fraîcheur absolue, à déguster dans une ambiance animée de marché.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Fortuna Del Mar",
+   "poisson"
+  ],
+  "nom_demande": "Fortuna Del Mar",
+  "nom": "Fortuna Del Mar",
+  "statut": "ouvert",
+  "adresses": [
+   "HaTsorfim 1, Jaffa, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-682-8262",
+  "site": "",
+  "instagram": "fortunadelmar_jaffa",
+  "reservation": "https://ontopo.co.il/fortunadelmar",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Poissons et fruits de mer",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Situé dans les ruelles historiques de Jaffa, ce restaurant propose des poissons frais et des fruits de mer aux accents méditerranéens dans un cadre charmant et pittoresque.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Ouzeria",
+   "grec"
+  ],
+  "nom_demande": "Ouzeria",
+  "nom": "Ouzeria",
+  "statut": "ouvert",
+  "adresses": [
+   "Matalon St 44, Lev HaIr, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-533-0899",
+  "site": "",
+  "instagram": "ouzeria_tlv",
+  "reservation": "https://ontopo.co.il/ouzeria",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Grec",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un bar-restaurant grec branché et chaleureux situé près du marché Levinsky, idéal pour partager des mezzés savoureux accompagnés d'ouzo dans une ambiance survoltée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Café Noir",
+   "brasserie"
+  ],
+  "nom_demande": "Café Noir",
+  "nom": "Café Noir",
+  "statut": "ouvert",
+  "adresses": [
+   "Ahad Ha'Am St 43, Lev HaIr, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-566-5505",
+  "site": "https://cafenoir.co.il",
+  "instagram": "cafenoir_tlv",
+  "reservation": "https://www.ontopo.co.il/cafenoir",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Brasserie, Autrichienne-Européenne",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Institution incontournable de Tel-Aviv au style viennois élégant, célèbre pour son schnitzel légendaire et sa purée de pommes de terre onctueuse. L'ambiance est animée, classique et très fréquentée par les locaux.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Chicchetti",
+   "italien (Cicchetti)"
+  ],
+  "nom_demande": "Chicchetti",
+  "nom": "Cicchetti",
+  "statut": "ouvert",
+  "adresses": [
+   "Yehuda Halevi St 58, Lev HaIr, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-560-0861",
+  "site": "https://www.cicchetti.co.il",
+  "instagram": "cicchetti_tlv",
+  "reservation": "https://www.ontopo.co.il/cicchetti",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Italien, Bar à vin",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un bar à vin et restaurant italien branché inspiré des bars à « cicchetti » vénitiens, parfait pour partager des petits plats de pâtes fraîches et des antipasti. L'atmosphère est intime, chaleureuse et romantique.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Mi Va",
+   "resto (מיוה / Miva ?)"
+  ],
+  "nom_demande": "Mi Va",
+  "nom": "",
+  "statut": "inconnu",
+  "adresses": [],
+  "telephone": "",
+  "site": "",
+  "instagram": "",
+  "reservation": "",
+  "resa": "",
+  "menu": "",
+  "cuisine": "",
+  "prix": 0,
+  "kasher": null,
+  "resume": "",
+  "doute": "Impossible de trouver un restaurant clairement identifié sous le nom de 'Mi Va' ou 'Miva' à Tel-Aviv-Jaffa avec certitude."
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Kapara Mio",
+   "resto"
+  ],
+  "nom_demande": "Kapara Mio",
+  "nom": "Kapara Mio",
+  "statut": "ouvert",
+  "adresses": [
+   "HaTserofim St 12, Jaffa, Tel-Aviv"
+  ],
+  "telephone": "+972 3-518-6565",
+  "site": "",
+  "instagram": "kaparamio_jaffa",
+  "reservation": "",
+  "resa": "telephone",
+  "menu": "",
+  "cuisine": "Italienne",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Restaurant italien chaleureux niché dans les ruelles anciennes de Jaffa, servant des pizzas au feu de bois et des pâtes fraîches dans une ambiance romantique.",
+  "doute": "Le site web officiel direct n'est pas clairement identifié, la réservation se fait principalement par téléphone."
+ },
+ {
+  "demande": [
+   "Déjeuner",
+   "Kalamata",
+   "grec, Jaffa"
+  ],
+  "nom_demande": "Kalamata",
+  "nom": "Kalamata",
+  "statut": "ouvert",
+  "adresses": [
+   "Kikar Kedumim 10, Jaffa, Tel-Aviv"
+  ],
+  "telephone": "+972 3-681-7999",
+  "site": "https://kalamata.co.il",
+  "instagram": "kalamata_jaffa",
+  "reservation": "https://www.ontopo.co.il/kalamata",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Grecque",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Restaurant grec incontournable situé sur la place Kedumim à Jaffa, offrant une vue imprenable sur la mer Méditerranée et des plats méditerranéens savoureux.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Boire un verre",
+   "Teder",
+   "bar, Jaffa"
+  ],
+  "nom_demande": "Teder",
+  "nom": "Teder.FM",
+  "statut": "ouvert",
+  "adresses": [
+   "Derech Jaffa 9, Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-510-3162",
+  "site": "https://teder.fm",
+  "instagram": "teder.fm",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Bar / Pizza",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Lieu branché incontournable de la jeunesse tel-avivienne dans une cour historique, proposant les célèbres pizzas du chef Eyal Shani, de la bière fraîche et de la musique live.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Boire un verre",
+   "Kissa",
+   "listening bar"
+  ],
+  "nom_demande": "Kissa",
+  "nom": "Kissa",
+  "statut": "ouvert",
+  "adresses": [
+   "Lilienblum St 41, Tel-Aviv-Jaffa"
+  ],
+  "telephone": "+972 3-560-5999",
+  "site": "https://www.kissatlv.com",
+  "instagram": "kissa.tlv",
+  "reservation": "https://ontopo.co.il/kissa",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Bar à cocktails / Japonais",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un listening bar inspiré de Tokyo proposant des cocktails sophistiqués et des petits plats à partager dans une ambiance musicale pointue.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Boire un verre",
+   "Speakeasy",
+   "bar rooftop"
+  ],
+  "nom_demande": "Speakeasy",
+  "nom": "Speakeasy",
+  "statut": "ouvert",
+  "adresses": [
+   "Rothschild Blvd 24, Tel-Aviv-Jaffa"
+  ],
+  "telephone": "+972 3-525-4555",
+  "site": "",
+  "instagram": "speakeasy_tlv",
+  "reservation": "https://ontopo.co.il/speakeasy",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Bar / Rooftop",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un rooftop branché perché sur le boulevard Rothschild, idéal pour siroter des cocktails en admirant la vue sur la ville.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Boire un verre",
+   "Emesh",
+   "bar/pub"
+  ],
+  "nom_demande": "Emesh",
+  "nom": "Emesh",
+  "statut": "ouvert",
+  "adresses": [
+   "Lilienblum St 30, Tel-Aviv-Jaffa"
+  ],
+  "telephone": "+972 3-516-1111",
+  "site": "",
+  "instagram": "emesh.tlv",
+  "reservation": "https://ontopo.co.il/emesh",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Israélien / Bar",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un lieu hybride très animé entre restaurant festif et bar, servant une cuisine israélienne moderne et généreuse dans une ambiance survoltée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Boire un verre",
+   "Gazetta",
+   "bar"
+  ],
+  "nom_demande": "Gazetta",
+  "nom": "Gazza",
+  "statut": "ouvert",
+  "adresses": [
+   {
+    "rue": "Lilinblum St 23",
+    "quartier": "Centre-ville"
+   }
+  ],
+  "telephone": "+972 3-560-6050",
+  "site": "",
+  "instagram": "gazza_tlv",
+  "reservation": "",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Bar à vin",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un bar à vin animé et branché situé rue Lilienblum, idéal pour déguster des quilles naturelles et des petits plats à partager dans une ambiance nocturne typique de Tel-Aviv.",
+  "doute": "Orthographe parfois trouvée sous 'Gazetta' mais le lieu officiel à Tel-Aviv est 'Gazza' (ou Gazza Wine Bar)."
+ },
+ {
+  "demande": [
+   "Boire un verre",
+   "Bellboy",
+   "bar à cocktails"
+  ],
+  "nom_demande": "Bellboy",
+  "nom": "Bellboy",
+  "statut": "ferme_definitivement",
+  "adresses": [],
+  "telephone": "",
+  "site": "",
+  "instagram": "bellboybar",
+  "reservation": "",
+  "resa": "",
+  "menu": "",
+  "cuisine": "Bar à cocktails",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Célèbre bar à cocktails speakeasy qui était situé à l'hôtel Berdichevsky, connu pour ses créations artistiques et extravagantes servies dans des contenants insolites.",
+  "doute": "Le bar a fermé ses portes suite aux évolutions post-COVID et à la fermeture de ses activités à cet emplacement."
+ },
+ {
+  "demande": [
+   "Boire un verre",
+   "Uganda Bar",
+   "bar (à Tel-Aviv, pas Jérusalem)"
+  ],
+  "nom_demande": "Uganda Bar",
+  "nom": "",
+  "statut": "ferme_definitivement",
+  "adresses": [],
+  "telephone": "",
+  "site": "",
+  "instagram": "",
+  "reservation": "",
+  "resa": "",
+  "menu": "",
+  "cuisine": "Bar",
+  "prix": 2,
+  "kasher": null,
+  "resume": "L'antenne du célèbre bar alternatif de Jérusalem a brièvement existé à Tel-Aviv (notamment vers Levontin / HaRakevet), mais elle a fermé depuis longtemps.",
+  "doute": "L'établissement originel est à Jérusalem. La tentative d'ouverture à Tel-Aviv a fermé il y a plusieurs années et ne laisse plus de trace active."
+ },
+ {
+  "demande": [
+   "Boire un verre",
+   "The Prince",
+   "bar"
+  ],
+  "nom_demande": "The Prince",
+  "nom": "The Prince",
+  "statut": "ouvert",
+  "adresses": [
+   "Nahalat Binyamin St 18, Lev Tel-Aviv, Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-525-4555",
+  "site": "",
+  "instagram": "theprince_tlv",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Bar / Rooftop",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un bar-rooftop bohème et charmant niché dans un vieux bâtiment historique de Nahalat Binyamin, idéal pour boire un verre dans une ambiance détendue.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "Milgo & Milbar",
+   "resto + bar"
+  ],
+  "nom_demande": "Milgo & Milbar",
+  "nom": "Milgo & Milbar",
+  "statut": "ouvert",
+  "adresses": [
+   "Rothschild Blvd 142, Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-533-8922",
+  "site": "https://www.milgoandmilbar.com",
+  "instagram": "milgoandmilbar",
+  "reservation": "https://ontopo.co.il/milgoandmilbar",
+  "resa": "en_ligne",
+  "menu": "https://www.milgoandmilbar.com",
+  "cuisine": "Israélien / Gastronomique",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Une table haut de gamme animée par le chef Motti Titman sur Rothschild, proposant une cuisine israélienne créative et raffinée dans un cadre chic.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "Selas",
+   "resto"
+  ],
+  "nom_demande": "Selas",
+  "nom": "Selas",
+  "statut": "ouvert",
+  "adresses": [
+   "Rabbi Yehuda HaNasi St 2, Jaffa, Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-677-7055",
+  "site": "",
+  "instagram": "selas_jaffa",
+  "reservation": "https://ontopo.co.il/selas",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Méditerranéen / Israélien",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un restaurant intime et sophistiqué à Jaffa du chef Haitham Halabi, mettant à l'honneur des saveurs locales de la Galilée et de la mer Méditerranée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "Naifa",
+   "resto"
+  ],
+  "nom_demande": "Naifa",
+  "nom": "Naifa",
+  "statut": "ouvert",
+  "adresses": [
+   "HaTserofim St 12, Jaffa, Tel-Aviv"
+  ],
+  "telephone": "+972 3-518-8833",
+  "site": "https://www.naifamill.com",
+  "instagram": "naifa_mill",
+  "reservation": "https://ontopo.co.il/naifa",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Méditerranéen",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Situé dans un ancien moulin à Jaffa, le chef Naifa Mulla y propose une cuisine méditerranéenne raffinée aux accents galiléens dans un cadre historique et élégant.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "Animar",
+   "resto à l'hôtel Dan"
+  ],
+  "nom_demande": "Animar",
+  "nom": "Animar",
+  "statut": "ouvert",
+  "adresses": [
+   "HaYarkon St 99, Tel-Aviv-Jaffa"
+  ],
+  "telephone": "+972 3-520-2580",
+  "site": "https://animar.co.il",
+  "instagram": "animar_tlv",
+  "reservation": "https://www.tabit.co.il/animar",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Méditerranéen",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Installé à l'hôtel Dan, le chef Afik Ben Baruch y célèbre les saveurs de la Méditerranée moderne et de Tel-Aviv avec une vue imprenable sur la mer.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "George & John",
+   "resto de l'hôtel Drisco, Relais & Châteaux"
+  ],
+  "nom_demande": "George & John",
+  "nom": "George & John",
+  "statut": "ouvert",
+  "adresses": [
+   "Auerbach St 6, Jaffa, Tel-Aviv-Jaffa"
+  ],
+  "telephone": "+972 3-741-6467",
+  "site": "https://www.georgeandjohnlv.com",
+  "instagram": "georgeandjohn_tlv",
+  "reservation": "https://www.tabit.co.il/georgeandjohn",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Israélien",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Situé dans le prestigieux hôtel The Drisco à Jaffa, le chef Tomer Agai y propose une cuisine gastronomique locale inventive et de haut vol dans un cadre somptueux.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "Mashya",
+   "resto hôtel Mendeli Street"
+  ],
+  "nom_demande": "Mashya",
+  "nom": "Mashya",
+  "statut": "ouvert",
+  "adresses": [
+   "Mendeli St 5, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-750-0999",
+  "site": "https://www.mashya.co.il",
+  "instagram": "mashya_tlv",
+  "reservation": "https://ontopo.co.il/mashya",
+  "resa": "en_ligne",
+  "menu": "https://www.mashya.co.il",
+  "cuisine": "Israélien moderne",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Une cuisine israélienne moderne et inventive aux accents épicés, située dans l'hôtel Mendeli Street, dans une ambiance élégante et branchée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "Shila",
+   "resto Ben Yehuda"
+  ],
+  "nom_demande": "Shila",
+  "nom": "Shila - The Colorful Place",
+  "statut": "ouvert",
+  "adresses": [
+   "Ben Yehuda St 182, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-522-1224",
+  "site": "https://www.shilatlv.com",
+  "instagram": "shilatlv",
+  "reservation": "https://ontopo.co.il/shila",
+  "resa": "en_ligne",
+  "menu": "https://www.shilatlv.com",
+  "cuisine": "Fruits de mer / Méditerranéen",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Un restaurant de fruits de mer et de poissons incontournable de Tel-Aviv, proposant des plats raffinés dans une ambiance animée et festive.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "Sun Young",
+   "resto"
+  ],
+  "nom_demande": "Sun Young",
+  "nom": "Sun Young",
+  "statut": "ferme_definitivement",
+  "adresses": [],
+  "telephone": "",
+  "site": "",
+  "instagram": "",
+  "reservation": "",
+  "resa": "",
+  "menu": "",
+  "cuisine": "Asiatique",
+  "prix": 0,
+  "kasher": null,
+  "resume": "",
+  "doute": "Le restaurant Sun Young (anciennement situé à Tel-Aviv) semble avoir fermé ses portes définitivement et ne figure plus sur les plateformes de réservation ou guides actifs."
+ },
+ {
+  "demande": [
+   "Fancy",
+   "The Norman Hotel",
+   "hôtel, pour boire un verre"
+  ],
+  "nom_demande": "The Norman Hotel",
+  "nom": "The Norman Hotel (The Library Bar / The Norman Restaurant)",
+  "statut": "ouvert",
+  "adresses": [
+   "Nachmani St 23-25, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3 543 5555",
+  "site": "https://www.thenorman.com/",
+  "instagram": "thenormanotel",
+  "reservation": "https://www.thenorman.com/dining",
+  "resa": "en_ligne",
+  "menu": "https://www.thenorman.com/dining",
+  "cuisine": "Méditerranéen / Gastronomique",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Un hôtel de luxe au charme Art Déco idéal pour siroter un cocktail sophistiqué au Library Bar ou déguster une cuisine raffinée. L'ambiance y est élégante, feutrée et exclusive.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "Haiku Skybar",
+   "rooftop du Brown Hotel"
+  ],
+  "nom_demande": "Haiku Skybar",
+  "nom": "Haiku Skybar",
+  "statut": "ferme_definitivement",
+  "adresses": [
+   "Kalisher St 30, Tel Aviv-Yafo"
+  ],
+  "telephone": "",
+  "site": "",
+  "instagram": "",
+  "reservation": "",
+  "resa": "",
+  "menu": "",
+  "cuisine": "Asiatique / Bar à cocktails",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Ancien rooftop branché situé sur le toit du Brown Hotel, offrant des vues sur la ville et des cocktails d'inspiration asiatique.",
+  "doute": "Le Haiku Skybar au Brown TLV a fermé ses portes il y a un certain temps, remplacé ou inactif."
+ },
+ {
+  "demande": [
+   "Fancy",
+   "The Jaffa Hotel",
+   "hôtel, pour boire un verre (bar)"
+  ],
+  "nom_demande": "The Jaffa Hotel",
+  "nom": "The Jaffa Hotel (Chapel Bar)",
+  "statut": "ouvert",
+  "adresses": [
+   "Louis Pasteur St 2, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3 504 2000",
+  "site": "https://www.thejaffaotel.com/",
+  "instagram": "thejaffahotel",
+  "reservation": "https://www.thejaffaotel.com/culinary",
+  "resa": "en_ligne",
+  "menu": "https://www.thejaffaotel.com/culinary",
+  "cuisine": "Bar à cocktails / Lounge",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Situé dans un ancien couvent rénové à Jaffa, le Chapel Bar propose des cocktails d'auteur dans un décor spectaculaire mêlant néo-gothique et design contemporain. L'ambiance est luxueuse et mystique.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Fancy",
+   "OCD Restaurant",
+   "resto"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Street food",
+   "Kebab Jasmino",
+   "kebab sur Allenby, ouvert le soir"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Street food",
+   "Eat Meat",
+   "sandwichs entrecôte"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Street food",
+   "Sabich Tchernikhovski",
+   "sabich rue Tchernichovsky"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Street food",
+   "Yashka",
+   "shawarma"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Street food",
+   "Vitrina",
+   "burger"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Street food",
+   "Prozdor",
+   "burger"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Street food",
+   "Har Sinai",
+   "pizza"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Street food",
+   "Migbash Rambam",
+   "(מגבש / Migbash, rue Rambam ?)"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Social Club",
+   "resto"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Aria",
+   "resto"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Delicatessen",
+   "épicerie-café"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "HaAchim",
+   "resto (The Brothers)"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Montefiore",
+   "resto de l'hôtel Montefiore (style Costes)"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "TYO",
+   "sushi haut de gamme"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Cantina",
+   "resto Rothschild"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Popina",
+   "resto Neve Tzedek"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Café Popular",
+   "café/bar"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Bucke",
+   "café"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Café Xoho",
+   "petit-déjeuner"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "Rustico",
+   "italien (chaîne : toutes les adresses à Tel-Aviv)"
+  ],
+  "erreur": "Cannot read properties of null (reading '0')"
+ },
+ {
+  "demande": [
+   "Divers",
+   "ABCD",
+   "resto"
+  ],
+  "nom_demande": "ABCD",
+  "nom": "",
+  "statut": "inconnu",
+  "adresses": [],
+  "telephone": "",
+  "site": "",
+  "instagram": "",
+  "reservation": "",
+  "resa": "",
+  "menu": "",
+  "cuisine": "",
+  "prix": 0,
+  "kasher": null,
+  "resume": "",
+  "doute": "Aucun restaurant notable ou vérifiable sous le nom exact 'ABCD' à Tel-Aviv/Jaffa n'a été trouvé."
+ },
+ {
+  "demande": [
+   "Divers",
+   "Azura",
+   "irakien"
+  ],
+  "nom_demande": "Azura",
+  "nom": "Azura",
+  "statut": "ouvert",
+  "adresses": [
+   "Ha-Shikma St 1, Shuk HaPishpeshim, Jaffa, Tel-Aviv"
+  ],
+  "telephone": "+972 3-516-1191",
+  "site": "",
+  "instagram": "azura.jaffa",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Kurde / Israélien",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Célèbre pour ses plats mijotés aux saveurs kurdes et moyen-orientales dans une ambiance de marché animée à Jaffa.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Kab Kem",
+   "thaï"
+  ],
+  "nom_demande": "Kab Kem",
+  "nom": "Kab Kem",
+  "statut": "ouvert",
+  "adresses": [
+   "Lilienblum St 25, Tel-Aviv-Yafo"
+  ],
+  "telephone": "+972 3-516-6556",
+  "site": "",
+  "instagram": "kabkem_tlv",
+  "reservation": "https://www.ontopo.co.il/kabkem",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Thaïlandais",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Bar à manger thaïlandais branché proposant des plats épicés et des cocktails audacieux dans une ambiance nocturne vibrante.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "North Abraxas",
+   "resto (Abraxas North)"
+  ],
+  "nom_demande": "North Abraxas",
+  "nom": "North Abraxas",
+  "statut": "ouvert",
+  "adresses": [
+   "Lilienblum St 40, Lev HaIr, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-516-6660",
+  "site": "",
+  "instagram": "north_abraxas",
+  "reservation": "https://ontopo.co.il/northabraxas",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Israélien",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Célèbre institution animée du chef Eyal Shani, incontournable pour ses plats servis directement sur du papier sulfurisé au milieu d'une ambiance musicale survoltée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Moon",
+   "resto (sushi ?)"
+  ],
+  "nom_demande": "Moon",
+  "nom": "Moon Sushi",
+  "statut": "ouvert",
+  "adresses": [
+   "Bograshov St 51, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972 3-629-9555",
+  "site": "https://www.moon-sushi.co.il",
+  "instagram": "moonsushitlv",
+  "reservation": "https://ontopo.co.il/moonsushi",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Japonais",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un bar à sushis historique et très populaire de Tel-Aviv, proposant des makis créatifs et des plats japonais dans une ambiance branchée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Caphe Hanoi",
+   "vietnamien"
+  ],
+  "nom_demande": "Caphe Hanoi",
+  "nom": "Caphe Hanoi",
+  "statut": "ferme_definitivement",
+  "adresses": [
+   "Malchei Israel St 3, Tel Aviv-Yafo"
+  ],
+  "telephone": "",
+  "site": "",
+  "instagram": "",
+  "reservation": "",
+  "resa": "",
+  "menu": "",
+  "cuisine": "Vietnamien",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Ancien restaurant vietnamien branché situé près de la place Rabin, connu pour ses soupes phở et ses cocktails.",
+  "doute": "L'établissement a fermé ses portes définitivement."
+ },
+ {
+  "demande": [
+   "Divers",
+   "Thai House",
+   "thaï"
+  ],
+  "nom_demande": "Thai House",
+  "nom": "Thai House",
+  "statut": "ouvert",
+  "adresses": [
+   "Bograshov St 8, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972-3-529-6888",
+  "site": "https://www.thaihouse.co.il",
+  "instagram": "thaihouse_tlv",
+  "reservation": "https://www.ontopo.co.il/thaihouse",
+  "resa": "en_ligne",
+  "menu": "https://www.thaihouse.co.il",
+  "cuisine": "Thaïlandais",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Une institution thaïlandaise à Tel-Aviv servant des currys parfumés et des plats authentiques dans une ambiance animée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Suzanna",
+   "resto Neve Tzedek"
+  ],
+  "nom_demande": "Suzanna",
+  "nom": "Suzanna",
+  "statut": "ouvert",
+  "adresses": [
+   "Shabazi St 9, Neve Tzedek, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972-3-510-7575",
+  "site": "",
+  "instagram": "suzanna_rest",
+  "reservation": "",
+  "resa": "telephone",
+  "menu": "",
+  "cuisine": "Moyen-oriental",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Un restaurant chaleureux et historique situé dans le quartier pittoresque de Neve Tzedek, idéal pour déguster des plats traditionnels sous la pergola.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Whiskey Bar & Museum",
+   "Sarona"
+  ],
+  "nom_demande": "Whiskey Bar & Museum",
+  "nom": "Whiskey Bar & Museum",
+  "statut": "ouvert",
+  "adresses": [
+   "David Elazar St 27, Sarona Complex, Tel Aviv-Yafo"
+  ],
+  "telephone": "+972-3-955-1105",
+  "site": "https://whiskeybarmuseum.co.il",
+  "instagram": "whiskeybarandmuseum",
+  "reservation": "https://www.ontopo.co.il/whiskeybarandmuseum",
+  "resa": "en_ligne",
+  "menu": "https://whiskeybarmuseum.co.il",
+  "cuisine": "Bar à cocktails",
+  "prix": 4,
+  "kasher": false,
+  "resume": "Situé dans les caves historiques de Sarona, ce bar-musée propose une immense sélection de whiskies du monde entier accompagnée de plats raffinés dans une ambiance ténébreuse et élégante.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Sarona Market",
+   "marché couvert, Sarona"
+  ],
+  "nom_demande": "Sarona Market",
+  "nom": "Sarona Market",
+  "statut": "ouvert",
+  "adresses": [
+   "Aluf Kalman Magen St 3, Sarona, Tel-Aviv"
+  ],
+  "telephone": "+972 3-624-2424",
+  "site": "https://saronamarket.co.il",
+  "instagram": "saronamarket",
+  "reservation": "",
+  "resa": "sans",
+  "menu": "",
+  "cuisine": "Marché gastronomique",
+  "prix": 2,
+  "kasher": false,
+  "resume": "Le plus grand marché couvert d'Israël regroupe des dizaines de stands de street food, épiceries fines et restaurants dans une ambiance animée.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Claro",
+   "resto, Sarona"
+  ],
+  "nom_demande": "Claro",
+  "nom": "Claro",
+  "statut": "ouvert",
+  "adresses": [
+   "David Elazar St 30, Sarona, Tel-Aviv"
+  ],
+  "telephone": "+972 3-601-7777",
+  "site": "https://www.clarotlv.com",
+  "instagram": "clarotlv",
+  "reservation": "https://www.ontopo.co.il/claro",
+  "resa": "en_ligne",
+  "menu": "https://www.clarotlv.com",
+  "cuisine": "Méditerranéen",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Installé dans une ancienne bâtisse des Templiers, ce restaurant du chef Ran Shmueli propose une cuisine du marché axée sur le feu de bois et les produits locaux, dans un cadre chic et chaleureux.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Itzik HaGadol",
+   "viande grillée, Jaffa"
+  ],
+  "nom_demande": "Itzik HaGadol",
+  "nom": "Itzik HaGadol",
+  "statut": "ouvert",
+  "adresses": [
+   "Rabbi Tanhum St 15, Jaffa, Tel-Aviv"
+  ],
+  "telephone": "+972 3-681-5533",
+  "site": "https://www.itzik-hagadol.co.il",
+  "instagram": "itzik_hagadol",
+  "reservation": "https://www.ontopo.co.il",
+  "resa": "en_ligne",
+  "menu": "",
+  "cuisine": "Viandes grillées",
+  "prix": 3,
+  "kasher": true,
+  "resume": "Institution incontournable de Jaffa réputée pour ses grillades de viandes et ses innombrables salades traditionnelles servies en entrées. L'ambiance y est généreuse et familiale.",
+  "doute": ""
+ },
+ {
+  "demande": [
+   "Divers",
+   "Beit Kandinof",
+   "Jaffa"
+  ],
+  "nom_demande": "Beit Kandinof",
+  "nom": "Beit Kandinof",
+  "statut": "ouvert",
+  "adresses": [
+   "Hatsarefim St 14, Jaffa, Tel-Aviv"
+  ],
+  "telephone": "+972 3-650-2938",
+  "site": "https://www.beitkandinof.co.il",
+  "instagram": "beit_kandinof",
+  "reservation": "https://www.ontopo.co.il/55986877",
+  "resa": "en_ligne",
+  "menu": "https://www.beitkandinof.co.il/menu",
+  "cuisine": "Méditerranéen",
+  "prix": 3,
+  "kasher": false,
+  "resume": "Un lieu artistique unique à Jaffa mêlant galerie d'art contemporain et cuisine fusion méditerranéenne créative dans une ambiance bohème et branchée.",
+  "doute": ""
+ }
+]
