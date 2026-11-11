@@ -12,7 +12,7 @@ const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const norm = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase()
   .replace(/\b(le|la|les|l|the|chez|restaurant|resto|paris)\b/g, " ").replace(/[^a-z0-9]+/g, "");
-const SKIP = /google\.|instagram\.|facebook\.|tiktok\.|youtube\.|pinterest\.|twitter\.|x\.com|linkedin\.|bing\.|duckduckgo|wikipedia|apple\.com|waze|mappy/i;
+const SKIP = /restaurants-de-france|google\.|instagram\.|facebook\.|tiktok\.|youtube\.|pinterest\.|twitter\.|x\.com|linkedin\.|bing\.|duckduckgo|wikipedia|apple\.com|waze|mappy/i;
 
 async function get(url, ms = 12000) {
   const ctrl = new AbortController();
@@ -89,7 +89,8 @@ if (ONLY !== "current") {
     const nn = norm(name);
     const street = (p.address || "").replace(/,?\s*\d{5}.*$/, "").replace(/^\d+\s*(bis|ter)?\s*/i, "");
     const q = `${name} ${p.list === "villes" ? p.city || "" : "Paris"} ${street}`.replace(/\s+/g, " ").trim();
-    const links = await results(q);
+    let links = await results(q);
+    for (let k = 0; !links.length && k < 2; k++) { await sleep(60000); links = await results(q); }
     const cands = [];
     for (const u of links.slice(0, 8)) {
       if (cands.length >= 4) break;
@@ -112,7 +113,7 @@ if (ONLY !== "current") {
     out.push({ kind: "new", id: p.id, name: p.name, where: where(p), address: p.address || "", q, links, cands });
     console.log(`${n}/${miss.length} ${p.name} : ${cands.length} candidates (${links.length} résultats)`);
     if (n % 20 === 0) await writeFile("cand/index.json", JSON.stringify(out, null, 1));
-    await sleep(1500 + Math.random() * 1500);
+    await sleep(4000 + Math.random() * 3000);
   }
 }
 await writeFile("cand/index.json", JSON.stringify(out, null, 1));
