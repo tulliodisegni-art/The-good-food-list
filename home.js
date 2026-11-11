@@ -116,7 +116,8 @@ const gfPool = () => S.places.filter((p) => gfCityOf(p) === GF.city && (GF.prec 
 // Sorties & activités : à part des Précieuses (réservées au haut de gamme) et des restos.
 const gfSorties = () => S.places.filter((p) => gfCityOf(p) === GF.city && p.list === "sorties");
 // Les institutions : brasseries mythiques et adresses légendaires, toutes listes confondues.
-const gfInst = () => S.places.filter((p) => p.institution && gfCityOf(p) === GF.city);
+// Dans les Précieuses, on garde les institutions qui en font partie.
+const gfInst = () => S.places.filter((p) => p.institution && gfCityOf(p) === GF.city && (!GF.prec || gfIsPrec(p)));
 const gfZones = (P) => { const m = {}; P.forEach((p) => { const z = gfZone(p); if (z) m[z] = (m[z] || 0) + 1; }); return m; };
 function gfZkeys(P) {
   const Z = gfZones(P);
@@ -222,7 +223,7 @@ function gfHomeBody() {
   ${gfNearSec()}
   <section class="sec"><div class="sec-h"><h2>${esc(c.zoneTitle)}</h2><span>${gfCount(P.length)}</span></div>
     <div class="zrail">${ks.map((z) => `<button class="zp" data-gf-zone="${esc(z)}">${gfSign(z)}<small>${gfCount(Z[z])}</small></button>`).join("")}</div></section>
-  ${!GF.prec && INS.length ? `<section class="sec"><div class="sec-h"><h2>Les institutions</h2><button class="all" data-gf-inst>Tout voir ›</button></div>
+  ${INS.length ? `<section class="sec"><div class="sec-h"><h2>Les institutions</h2><button class="all" data-gf-inst>Tout voir ›</button></div>
     <div class="rail">${INS.slice(0, 12).map((p, i) => `<button class="tile cuis" data-gf-id="${esc(p.id)}" ${gfBg(gfGoodPhoto(p.photo) ? p.photo : gfPhoto([p], i))}><div class="t"><h3>${esc(p.name)}</h3><p>${esc(p.cat || "")}</p></div></button>`).join("")}</div></section>` : ""}
   <section class="sec"><div class="sec-h"><h2>Une envie ?</h2></div>
     <div class="wish"><textarea id="gfWish" rows="2" placeholder="Décris ce dont tu as envie… ex. un resto chaleureux, cuisine réconfortante et gourmande"></textarea><button data-gf-wish>Trouver</button></div>
