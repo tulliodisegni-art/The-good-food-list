@@ -1,9 +1,5 @@
 name: Photos à vérifier (candidates)
-on:
-  workflow_dispatch:
-  push:
-    branches: [claude/project-thread-zzp2lp]
-    paths: [scripts/photo_candidates.mjs, .github/workflows/photos-candidats.yml]
+on: workflow_dispatch
 permissions:
   contents: write
 jobs:
