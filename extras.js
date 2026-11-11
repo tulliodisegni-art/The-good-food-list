@@ -817,10 +817,27 @@ function gfSync() {
     await Acc.ready; await Acc.flush();
     const remote = await Acc.pullAll(), rmap = new Map(remote.map((r) => [r.key, r.data])), pend = new Set(Acc.pending());
     if (Acc.isFirstSync()) { for (const k of GSYNC) { const v = localStorage.getItem("gfl." + k); if (v != null && !rmap.has("ls/" + k)) try { Acc.push("ls/" + k, JSON.parse(v)); } catch (e) {} } await Acc.flush(); }
-    let changed = false;
-    for (const [k, v] of rmap) { const n = k.slice(3); if (!k.startsWith("ls/") || !GSYNC.includes(n) || pend.has(k)) continue; const nv = JSON.stringify(v); if (localStorage.getItem("gfl." + n) !== nv) { localStorage.setItem("gfl." + n, nv); changed = true; } }
+    let changed = false, lists = false;
+    // Adresses ajoutées : fusion adresse par adresse. Avant, la liste du compte remplaçait celle du téléphone,
+    // et un ajout fait juste avant (ou dans l'autre appli : Safari / écran d'accueil) pouvait disparaître.
+    if (rmap.has("ls/custom") || rmap.has("ls/customDel")) {
+      const del = new Set([...store.get("customDel", []), ...(rmap.get("ls/customDel") || [])]);
+      const local = store.get("custom", []), merged = mergeCustom(local, rmap.get("ls/custom") || [], del);
+      const mj = JSON.stringify(merged), dl = [...del].slice(-500);
+      if (JSON.stringify(rmap.get("ls/custom") || []) !== mj) store.set("custom", merged); else localStorage.setItem("gfl.custom", mj);
+      if (JSON.stringify(rmap.get("ls/customDel") || []) !== JSON.stringify(dl)) store.set("customDel", dl); else localStorage.setItem("gfl.customDel", JSON.stringify(dl));
+      if (JSON.stringify(local) !== mj) lists = true;
+    }
+    for (const [k, v] of rmap) {
+      const n = k.slice(3);
+      if (!k.startsWith("ls/") || !GSYNC.includes(n) || n === "custom" || n === "customDel" || pend.has(k)) continue;
+      const nv = JSON.stringify(v);
+      if (localStorage.getItem("gfl." + n) !== nv) { localStorage.setItem("gfl." + n, nv); if (n === "edits") lists = true; else changed = true; }
+    }
     Acc.markSynced();
+    // Les adresses se mettent à jour sans recharger la page : une fiche en cours de remplissage n'est pas perdue.
     if (changed) location.reload();
+    else if (lists) { rebuild(); renderAll(); }
   })().catch(() => {}).finally(() => { gfSyncing = null; });
   return gfSyncing;
 }
