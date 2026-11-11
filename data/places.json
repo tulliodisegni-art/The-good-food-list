@@ -12162,7 +12162,8 @@
   "phone": "01 45 78 40 40",
   "summary": "Un restaurant japonais chaleureux proposant des sushis, sashimis et plats traditionnels soignés. L'ambiance y est intime et conviviale.",
   "resa": "inconnu",
-  "noInsta": 1
+  "noInsta": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-15-japonais-kasumi",
@@ -12185,7 +12186,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Une adresse japonaise raffinée qui met à l'honneur des créations de sushi et des plats faits maison. Le cadre est moderne et épuré."
+  "summary": "Une adresse japonaise raffinée qui met à l'honneur des créations de sushi et des plats faits maison. Le cadre est moderne et épuré.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-15-coreen-ktown",
@@ -12209,7 +12211,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un restaurant coréen authentique où déguster des plats généreux comme le poulet frit coréen et des spécialités marinées. L'ambiance est décontractée et chaleureuse.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-15-cambodgien-le-cambodge-15",
@@ -12233,7 +12236,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-15-indien-rasna",
@@ -12257,7 +12261,8 @@
   "booking": "https://rasnarestaurant.fr/fr/booking",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un restaurant indien chaleureux qui propose des plats faits maison savoureux et épicés avec justesse. L'ambiance y est conviviale et idéale pour un dîner dépaysant."
+  "summary": "Un restaurant indien chaleureux qui propose des plats faits maison savoureux et épicés avec justesse. L'ambiance y est conviviale et idéale pour un dîner dépaysant.",
+  "ohTry": "2026-11-11"
  },
  {
   "id": "paris-15-iranien-shabestan",
