@@ -268,17 +268,22 @@ const CITIES = [
   { name: "Jérusalem", sub: "Israël", color: "var(--c-it)" },
   { name: "Autour de Paris", sub: "Île-de-France", color: "var(--c-fr)" },
 ];
+// Même rangement que l'accueil : villes voisines avec Tel-Aviv et Jérusalem, une seule page « Israël » pour le reste du pays.
+const villeOf = (p) => {
+  const id = typeof gfCityOf === "function" ? gfCityOf(p) : "";
+  return { tlv: "Tel-Aviv", jer: "Jérusalem", ny: "New York", paris: "Autour de Paris" }[id] || (id.startsWith("v:") ? id.slice(2) : p.city);
+};
 function renderVilles() {
   const all = S.places.filter((p) => p.list === "villes");
-  const names = [...CITIES.map((c) => c.name), ...new Set(all.map((p) => p.city).filter((c) => c && !CITIES.some((x) => x.name === c)))];
+  const names = [...CITIES.map((c) => c.name), ...new Set(all.map(villeOf).filter((c) => c && !CITIES.some((x) => x.name === c)))];
   if (!names.includes(S.city)) S.city = names[0];
   $("#cityTabs").innerHTML = names.map((n) => {
     const c = CITIES.find((x) => x.name === n) || { sub: "Ville", color: "var(--c-other)" };
-    const count = all.filter((p) => p.city === n).length;
+    const count = all.filter((p) => villeOf(p) === n).length;
     return `<button class="univ ${n === S.city ? "on" : ""}" data-city="${esc(n)}" aria-pressed="${n === S.city}" style="--uc:${c.color}">
       <span class="u-name">${esc(n)}</span><span class="u-sub">${esc(c.sub)}</span><span class="u-n">${count}</span></button>`;
   }).join("");
-  const items = filtered("villes").filter((p) => p.city === S.city);
+  const items = filtered("villes").filter((p) => villeOf(p) === S.city);
   const el = $("#listVilles");
   if (!items.length) {
     el.innerHTML = `<div class="empty"><div class="empty-plaque"><span>${esc(S.city)}</span></div><h2>Pas encore d'adresses</h2>

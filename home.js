@@ -34,7 +34,9 @@ const GF_CONCEPTS = [
 const gfArr = (n) => (n === 1 ? "1<sup>er</sup>" : `${n}<sup>e</sup>`);
 // Ville d'une adresse. L'IA n'écrit pas toujours le nom pareil (« Tel Aviv », « NYC », « Rishon LeZion »…) :
 // on range les variantes et les villes voisines dans la bonne ville, et toute autre ville a sa propre page.
-const GF_TLV_TOWNS = /Jaffa|Yafo|Rishon|Ramat ?Gan|Herzliya|Holon|Bat ?Yam|Givatayim|Petah|Petach|Bnei ?Brak|Ramat Hasharon|Or Yehuda/i;
+const GF_TLV_TOWNS = /Jaffa|Yafo|Rishon|Ramat ?Gan|Herzliya|Holon|Bat ?Yam|Givatayim|Petah|Petach|Bnei ?Brak|Ramat Hasharon|Or Yehuda|Givat ?Shmuel|Yehud\b|Kiryat Ono/i;
+// Les villes collées à Jérusalem, regroupées dans « Autour de Jérusalem ».
+const GF_JER_TOWNS = /Mevaseret|Ma'?ale Adumim/i;
 const gfCityNorm = (c) => String(c || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 function gfCityOf(p) {
   if (p.list !== "villes") return "paris";
@@ -42,13 +44,16 @@ function gfCityOf(p) {
   if (!c || c === "autour de paris" || /^paris\b|ile de france/.test(c)) return "paris";
   if (/new york|^nyc$|manhattan|brooklyn|queens|bronx|staten/.test(c)) return "ny";
   if (/tel ?aviv|^tlv$/.test(c) || GF_TLV_TOWNS.test(c)) return "tlv";
-  if (/jerusal|yerushala/.test(c)) return "jer";
+  if (/jerusal|yerushala/.test(c) || GF_JER_TOWNS.test(c)) return "jer";
+  // Le reste d'Israël (Haïfa, Ashdod, Eilat…) : une seule page « Israël », rangée par région (champ zone).
+  if (gfCityNorm(p.country) === "israel") return "v:Israël";
   return "v:" + String(p.city).trim();
 }
 // Les quatre villes de base, puis les autres villes où il y a au moins une adresse.
 function gfCities() {
   const extra = [...new Set(S.places.map(gfCityOf).filter((id) => id.startsWith("v:")))].sort((a, b) => a.localeCompare(b, "fr"));
-  return [...GF_CITIES, ...extra.map((id) => ({ id, name: id.slice(2), kick: `À ${id.slice(2)}`, zoneTitle: "Par quartier", other: true }))];
+  const isr = (id) => id === "v:Israël";
+  return [...GF_CITIES, ...extra.map((id) => ({ id, name: id.slice(2), kick: isr(id) ? "En Israël" : `À ${id.slice(2)}`, zoneTitle: isr(id) ? "Par région" : "Par quartier", other: true }))];
 }
 // Villes masquées (celles où on ne compte pas aller) : elles disparaissent de l'accueil et de la recherche,
 // sans rien effacer. On les réaffiche quand on veut depuis « Villes ».
@@ -88,8 +93,12 @@ function gfZone(p) {
     if (GF_TLV_TOWNS.test(`${p.city || ""} ${a}`)) return "Autour de Tel-Aviv";
     return "Centre";
   }
-  if (gfCityOf(p).startsWith("v:")) return String(p.city).trim();
-  if (gfCityOf(p) === "jer") return /Vieille ville|Old City/i.test(a) ? "Vieille ville" : "Centre-ville";
+  if (gfCityOf(p).startsWith("v:")) return String(p.zone || p.city).trim();
+  if (gfCityOf(p) === "jer") {
+    if (GF_JER_TOWNS.test(`${p.city || ""} ${a}`)) return "Autour de Jérusalem";
+    if (/Mahane Yehuda|Machane Yehuda/i.test(a)) return "Mahane Yehuda";
+    return /Vieille ville|Old City/i.test(a) ? "Vieille ville" : "Centre-ville";
+  }
   return "";
 }
 function gfSign(z) {
