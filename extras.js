@@ -261,6 +261,11 @@ function openSettings() {
       <div class="seg">${[["", "Auto"], ["light", "Clair"], ["dark", "Sombre"]].map(([k, l]) => `<button class="${theme === k ? "on" : ""}" data-theme-set="${k}">${l}</button>`).join("")}</div>
     </section>
 
+    <section class="block"><h3>Mes villes</h3>
+      <p class="muted small">Choisis les villes affichées sur l'accueil. Une ville masquée n'est pas effacée.</p>
+      <button class="btn" data-gf-cities-set>Choisir mes villes</button>
+    </section>
+
     <section class="block"><h3>Ma position</h3>
       <p class="muted small">Sert aux distances, aux adresses proches et au tri « Près de moi ». Elle reste sur ce téléphone.</p>
       <button class="btn" data-home="locate">${S.me ? "Mettre à jour ma position" : "Activer ma position"}</button>
@@ -359,6 +364,7 @@ document.addEventListener("click", (e) => {
   const city = t.closest("[data-city-go]");
   if (city) { S.city = city.dataset.cityGo; location.hash = "villes"; renderVilles(); return; }
   if (t.closest("#openSettings")) { openSettings(); return; }
+  if (t.closest("[data-gf-cities-set]") && window.gfCitiesPanel) { gfCitiesPanel(); return; }
   if (t.closest("[data-close-panel]")) { closeSheet(); return; }
   const th = t.closest("[data-theme-set]");
   if (th) { store.set("theme", th.dataset.themeSet); applyTheme(th.dataset.themeSet); openSettings(); return; }

@@ -50,7 +50,27 @@ function gfCities() {
   const extra = [...new Set(S.places.map(gfCityOf).filter((id) => id.startsWith("v:")))].sort((a, b) => a.localeCompare(b, "fr"));
   return [...GF_CITIES, ...extra.map((id) => ({ id, name: id.slice(2), kick: `À ${id.slice(2)}`, zoneTitle: "Par quartier", other: true }))];
 }
-const gfCity = () => gfCities().find((x) => x.id === GF.city) || (GF.city = "paris", GF_CITIES[0]);
+// Villes masquées (celles où on ne compte pas aller) : elles disparaissent de l'accueil et de la recherche,
+// sans rien effacer. On les réaffiche quand on veut depuis « Villes ».
+const gfHidden = () => new Set(store.get("gfHide", []));
+const gfShown = () => { const h = gfHidden(), all = gfCities(), v = all.filter((x) => !h.has(x.id)); return v.length ? v : all.slice(0, 1); };
+const gfVisible = (p) => !gfHidden().has(gfCityOf(p));
+function gfSetHidden(id, hide) {
+  const h = gfHidden();
+  if (hide) h.add(id); else h.delete(id);
+  if (hide && !gfCities().some((x) => !h.has(x.id))) { toast("Garde au moins une ville"); return false; }
+  store.set("gfHide", [...h]);
+  return true;
+}
+const gfCity = () => gfShown().find((x) => x.id === GF.city) || (GF.city = gfShown()[0].id, gfShown()[0]);
+function gfCitiesPanel() {
+  const h = gfHidden();
+  const n = (id) => S.places.filter((p) => gfCityOf(p) === id).length;
+  openPanel(`<h2 class="panel-title">Mes villes</h2>
+    <p class="panel-sub">Masque les villes où tu ne comptes pas aller : elles disparaissent de l'accueil et de la recherche. Rien n'est effacé, tu peux les réafficher quand tu veux.</p>
+    <div class="gf-cityset">${gfCities().map((x) => `<div class="row"><span><b>${esc(x.name)}</b><small>${n(x.id)} adresse${n(x.id) > 1 ? "s" : ""}</small></span>
+      <button class="pill-toggle" data-gf-hide="${esc(x.id)}" aria-pressed="${!h.has(x.id)}">${h.has(x.id) ? "Masquée" : "Affichée"}</button></div>`).join("")}</div>`, "settings");
+}
 const gfIsPrec = (p) => p.list === "precieuses" || !!p.prec || (p.list === "villes" && p.price >= 4);
 function gfZone(p) {
   const a = p.address || "";
@@ -151,7 +171,7 @@ function gfHero() {
     <div class="acts"><button class="ibtn" data-share-app aria-label="Envoyer l'appli"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     <button class="ibtn" data-gf-dark aria-label="Mode sombre"><svg viewBox="0 0 24 24">${gfDark() ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/>' : '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>'}</svg></button>
     <a class="ibtn add" href="#ajouter" aria-label="Ajouter"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></a></div></div>
-    <div class="cities">${gfCities().map((x) => `<button class="city ${x.id === GF.city ? "on" : ""}" data-gf-city="${x.id}">${esc(x.name)}<b>${n(x.id)}</b></button>`).join("")}</div>
+    <div class="cities">${gfShown().map((x) => `<button class="city ${x.id === GF.city ? "on" : ""}" data-gf-city="${x.id}">${esc(x.name)}<b>${n(x.id)}</b></button>`).join("")}<button class="city edit" data-gf-cities aria-label="Choisir les villes affichées">${gfHidden().size ? `+${gfHidden().size} masquée${gfHidden().size > 1 ? "s" : ""}` : "✎ Villes"}</button></div>
     <span class="credit">${esc(GF_CREDIT[GF.prec || c.other ? "nuit" : GF.city] || "")}</span>
     <label class="gsearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="gfQ" type="search" enterkeyhint="search" placeholder="Un resto, une envie, un quartier…" value="${esc(GF.list?.q || "")}"></label>
   </header>`;
@@ -160,7 +180,7 @@ function gfHero() {
 // Autour de moi : les adresses les plus proches, toutes listes confondues (seulement les Précieuses en mode Précieuses).
 function gfNear() {
   if (!S.me) return [];
-  return (GF.prec ? gfPool() : S.places).filter((p) => !p.closed && (!GF.openOnly || openState(p)?.open))
+  return (GF.prec ? gfPool() : S.places).filter((p) => gfVisible(p) && !p.closed && (!GF.openOnly || openState(p)?.open))
     .map((p) => ({ p, m: distM(S.me, p) })).filter((x) => x.m != null).sort((a, b) => a.m - b.m);
 }
 function gfNearSec() {
@@ -238,7 +258,7 @@ function gfListBody() {
   if (L.inst) { items = gfInst(); title = "Les institutions"; flat = true; }
   if (L.q != null) {
     const q = norm(L.q).trim();
-    items = S.places.filter((p) => norm(`${p.name} ${p.cat} ${p.cuisine || ""} ${p.address || ""} ${p.city || ""} ${p.summary || ""}`).includes(q));
+    items = S.places.filter((p) => gfVisible(p) && norm(`${p.name} ${p.cat} ${p.cuisine || ""} ${p.address || ""} ${p.city || ""} ${p.summary || ""}`).includes(q));
     title = q ? `« ${esc(L.q)} »` : "Toutes les adresses";
   }
   const body = flat ? `<div class="cards" style="margin-top:14px">${items.map((p) => gfCard(p)).join("")}</div>` : gfGrouped(items);
@@ -298,6 +318,7 @@ document.addEventListener("click", (e) => {
   let b;
   if ((b = t.closest("[data-gf-id]"))) { openSheet(b.dataset.gfId); return; }
   if ((b = t.closest("[data-gf-city]"))) { GF.city = b.dataset.gfCity; store.set("gfCity", GF.city); gfOpen(null); return; }
+  if (t.closest("[data-gf-cities]")) { gfCitiesPanel(); return; }
   if (t.closest("[data-gf-dark]")) { const th = gfDark() ? "light" : "dark"; store.set("theme", th); applyTheme(th); renderHome(); return; }
   if ((b = t.closest("[data-gf-zone]"))) { gfOpenZone(b.dataset.gfZone); return; }
   if ((b = t.closest("[data-gf-cat]"))) { gfOpen({ cat: b.dataset.gfCat }); return; }
@@ -331,3 +352,14 @@ document.addEventListener("touchend", (e) => {
   const { ks } = gfZkeys(gfPool()); const z = ks[ks.indexOf(GF.list.zone) + (dx < 0 ? 1 : -1)];
   if (z) gfOpenZone(z);
 }, { passive: true });
+
+// Panneau « Mes villes » (hors de l'accueil) : afficher ou masquer une ville.
+document.addEventListener("click", (e) => {
+  const b = e.target.closest && e.target.closest("[data-gf-hide]");
+  if (!b) return;
+  const id = b.dataset.gfHide, hide = b.getAttribute("aria-pressed") === "true";
+  if (!gfSetHidden(id, hide)) return;
+  b.setAttribute("aria-pressed", String(!hide)); b.textContent = hide ? "Masquée" : "Affichée";
+  if (hide && GF.city === id) { GF.city = gfShown()[0].id; store.set("gfCity", GF.city); GF.list = null; }
+  renderHome();
+});

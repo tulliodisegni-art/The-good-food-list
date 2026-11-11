@@ -131,3 +131,8 @@ body.gf-prec .gf .sign { background: linear-gradient(180deg, #1d1a13, #0f0d09); 
 .gf .near-cta b { display: block; font-size: 17px; } .gf .near-cta small { opacity: .85; font-size: 12.5px; }
 .gf .near-cta i { margin-left: auto; font-style: normal; font-size: 26px; opacity: .8; }
 .gf .tag.near { background: var(--accent); color: #fff; }
+.gf .city.edit { padding: 7px 12px; opacity: .85; }
+.gf-cityset .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line, rgba(0,0,0,.08)); }
+.gf-cityset .row span { display: flex; flex-direction: column; }
+.gf-cityset .row small { opacity: .6; font-size: 12px; }
+.gf-cityset .pill-toggle { min-width: 92px; }
