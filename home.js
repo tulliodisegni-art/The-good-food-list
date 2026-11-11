@@ -32,25 +32,49 @@ const GF_CONCEPTS = [
 ];
 
 const gfArr = (n) => (n === 1 ? "1<sup>er</sup>" : `${n}<sup>e</sup>`);
-const gfCityOf = (p) => (p.list === "villes" ? ({ "New York": "ny", "Tel-Aviv": "tlv", "Jérusalem": "jer", "Autour de Paris": "paris" }[p.city] || "other") : "paris");
+// Ville d'une adresse. L'IA n'écrit pas toujours le nom pareil (« Tel Aviv », « NYC », « Rishon LeZion »…) :
+// on range les variantes et les villes voisines dans la bonne ville, et toute autre ville a sa propre page.
+const GF_TLV_TOWNS = /Jaffa|Yafo|Rishon|Ramat ?Gan|Herzliya|Holon|Bat ?Yam|Givatayim|Petah|Petach|Bnei ?Brak|Ramat Hasharon|Or Yehuda/i;
+const gfCityNorm = (c) => String(c || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+function gfCityOf(p) {
+  if (p.list !== "villes") return "paris";
+  const c = gfCityNorm(p.city);
+  if (!c || c === "autour de paris" || /^paris\b|ile de france/.test(c)) return "paris";
+  if (/new york|^nyc$|manhattan|brooklyn|queens|bronx|staten/.test(c)) return "ny";
+  if (/tel ?aviv|^tlv$/.test(c) || GF_TLV_TOWNS.test(c)) return "tlv";
+  if (/jerusal|yerushala/.test(c)) return "jer";
+  return "v:" + String(p.city).trim();
+}
+// Les quatre villes de base, puis les autres villes où il y a au moins une adresse.
+function gfCities() {
+  const extra = [...new Set(S.places.map(gfCityOf).filter((id) => id.startsWith("v:")))].sort((a, b) => a.localeCompare(b, "fr"));
+  return [...GF_CITIES, ...extra.map((id) => ({ id, name: id.slice(2), kick: `À ${id.slice(2)}`, zoneTitle: "Par quartier", other: true }))];
+}
+const gfCity = () => gfCities().find((x) => x.id === GF.city) || (GF.city = "paris", GF_CITIES[0]);
 const gfIsPrec = (p) => p.list === "precieuses" || !!p.prec || (p.list === "villes" && p.price >= 4);
 function gfZone(p) {
   const a = p.address || "";
   if (gfCityOf(p) === "paris") return p.list === "villes" ? "Autour de Paris" : p.arr ? String(p.arr) : "";
-  if (p.city === "New York") {
+  if (gfCityOf(p) === "ny") {
     if (/Brooklyn/i.test(a)) return "Brooklyn";
     if (/Queens|Flushing|Astoria|Long Island City|Jackson Heights/i.test(a)) return "Queens";
     if (/Bronx/i.test(a)) return "Bronx";
     if (/Staten/i.test(a)) return "Staten Island";
     return a && a !== "New York" ? "Manhattan" : "";
   }
-  if (p.city === "Tel-Aviv") { if (/Jaffa|Yafo|HaDolfin/i.test(a)) return "Jaffa"; if (/Ramat Gan/i.test(a)) return "Ramat Gan"; if (/Herzliya/i.test(a)) return "Herzliya"; return "Centre"; }
-  if (p.city === "Jérusalem") return /Vieille ville|Old City/i.test(a) ? "Vieille ville" : "Centre-ville";
+  if (gfCityOf(p) === "tlv") {
+    if (/Jaffa|Yafo|HaDolfin/i.test(a)) return "Jaffa";
+    const t = (`${p.city || ""} ${a}`.match(GF_TLV_TOWNS) || [])[0];
+    if (t && !/Jaffa|Yafo/i.test(t)) return /rishon/i.test(t) ? "Rishon LeZion" : /petah|petach/i.test(t) ? "Petah Tikva" : t.replace(/^\w/, (x) => x.toUpperCase());
+    return "Centre";
+  }
+  if (gfCityOf(p).startsWith("v:")) return String(p.city).trim();
+  if (gfCityOf(p) === "jer") return /Vieille ville|Old City/i.test(a) ? "Vieille ville" : "Centre-ville";
   return "";
 }
 function gfSign(z) {
   const num = /^\d+$/.test(z);
-  const kick = GF.city === "paris" ? (num ? "Arrt" : "Île-de-France") : GF.city === "ny" ? "NYC" : GF.city === "tlv" ? "Tel-Aviv" : "Jérusalem";
+  const kick = GF.city === "paris" ? (num ? "Arrt" : "Île-de-France") : GF.city === "ny" ? "NYC" : GF.city === "tlv" ? "Tel-Aviv" : GF.city === "jer" ? "Jérusalem" : GF.city.slice(2);
   return `<span class="sign ${num ? "" : "txt"}"><span class="k">${kick}</span><span class="n">${num ? gfArr(+z) : esc(z)}</span></span>`;
 }
 // Ordre des cuisines = ordre de la note (Français, Italien, Japonais…).
@@ -119,16 +143,16 @@ function gfGrouped(items) {
 
 const gfDark = () => { const t = store.get("theme", ""); return t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
 function gfHero() {
-  const c = GF_CITIES.find((x) => x.id === GF.city);
-  const img = GF.prec ? "images/cities/nuit.jpg" : `images/cities/${GF.city}.jpg`;
+  const c = gfCity();
+  const img = GF.prec ? "images/cities/nuit.jpg" : `images/cities/${c.other ? "nuit" : GF.city}.jpg`;
   const n = (id) => S.places.filter((p) => gfCityOf(p) === id && (GF.prec ? gfIsPrec(p) : p.list !== "precieuses")).length;
   return `<header class="gf-hero" style="background-image:url('${img}')">
     <div class="gtop"><div class="brand"><small>${GF.prec ? "Les Précieuses" : esc(c.kick)}</small><h1>Cozy Spots</h1></div>
     <div class="acts"><button class="ibtn" data-share-app aria-label="Envoyer l'appli"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     <button class="ibtn" data-gf-dark aria-label="Mode sombre"><svg viewBox="0 0 24 24">${gfDark() ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/>' : '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>'}</svg></button>
     <a class="ibtn add" href="#ajouter" aria-label="Ajouter"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></a></div></div>
-    <div class="cities">${GF_CITIES.map((x) => `<button class="city ${x.id === GF.city ? "on" : ""}" data-gf-city="${x.id}">${esc(x.name)}<b>${n(x.id)}</b></button>`).join("")}</div>
-    <span class="credit">${esc(GF_CREDIT[GF.prec ? "nuit" : GF.city])}</span>
+    <div class="cities">${gfCities().map((x) => `<button class="city ${x.id === GF.city ? "on" : ""}" data-gf-city="${x.id}">${esc(x.name)}<b>${n(x.id)}</b></button>`).join("")}</div>
+    <span class="credit">${esc(GF_CREDIT[GF.prec || c.other ? "nuit" : GF.city] || "")}</span>
     <label class="gsearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="gfQ" type="search" enterkeyhint="search" placeholder="Un resto, une envie, un quartier…" value="${esc(GF.list?.q || "")}"></label>
   </header>`;
 }
@@ -153,7 +177,7 @@ function gfOpenNear() {
 }
 
 function gfHomeBody() {
-  const P = gfPool(), c = GF_CITIES.find((x) => x.id === GF.city);
+  const c = gfCity(), P = gfPool();
   const { Z, ks } = gfZkeys(P);
   const cats = Object.entries(P.reduce((a, p) => { const k = gfCuis(p); if (k) a[k] = (a[k] || 0) + 1; return a; }, {})).sort((a, b) => gfCord(a[0]) - gfCord(b[0]));
   const outs = Object.keys(GF_OUT).map((n) => [n, P.filter((p) => gfOutOf(p) === n).length]).filter((x) => x[1]);

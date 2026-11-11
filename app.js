@@ -14,7 +14,25 @@ const store = {
   },
 };
 // Ce qui suit le compte (sauvegardé en ligne, retrouvé sur un autre téléphone) : adresses ajoutées, notes et coches, préférences.
-const GSYNC = ["custom", "edits", "name", "group", "univ", "gfCity", "pick", "colls"];
+const GSYNC = ["custom", "customDel", "edits", "name", "group", "univ", "gfCity", "pick", "colls"];
+// Adresse retirée de « custom » : on garde son id, pour qu'une synchro ne la fasse pas revenir.
+function forgetCustom(ids) {
+  const del = new Set(store.get("customDel", []));
+  ids.forEach((id) => del.add(id));
+  store.set("customDel", [...del].slice(-500));
+}
+// Fusionne deux versions de la liste « custom » (ce téléphone et le compte) adresse par adresse :
+// une adresse ajoutée d'un côté n'efface jamais celle ajoutée de l'autre ; la version la plus récente gagne.
+function mergeCustom(local, remote, deleted) {
+  const at = (p) => p.updatedAt || p.createdAt || 0;
+  const out = new Map();
+  for (const p of [...(remote || []), ...(local || [])]) {
+    if (!p || !p.id || deleted.has(p.id)) continue;
+    const q = out.get(p.id);
+    if (!q || at(p) > at(q)) out.set(p.id, p);
+  }
+  return [...out.values()].sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+}
 
 // ---------- Outils ----------
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -89,7 +107,7 @@ function rebuild() {
 function setEdit(id, patch) {
   const custom = store.get("custom", []);
   const i = custom.findIndex((p) => p.id === id);
-  if (i >= 0) { custom[i] = { ...custom[i], ...patch }; store.set("custom", custom); }
+  if (i >= 0) { custom[i] = { ...custom[i], ...patch, updatedAt: Date.now() }; store.set("custom", custom); }
   else { const edits = store.get("edits", {}); edits[id] = { ...(edits[id] || {}), ...patch }; store.set("edits", edits); }
   rebuild();
 }
@@ -624,7 +642,7 @@ $("#sheet").addEventListener("click", async (e) => {
       const id = current.id, name = current.name;
       const mine = store.get("custom", []).find((c) => c.id === id);
       // Supprimée pour tous avec la clé de publication ; sinon seulement sur ce téléphone.
-      if (mine && !mine.published) store.set("custom", store.get("custom", []).filter((c) => c.id !== id));
+      if (mine && !mine.published) { store.set("custom", store.get("custom", []).filter((c) => c.id !== id)); forgetCustom([id]); }
       else setEdit(id, { removed: true });
       if (store.get("ghToken", "") && (!mine || mine.published)) publishFix(id, { removed: true });
       rebuild(); closeSheet(); renderAll(); toast(`${name} supprimé`);
@@ -1014,7 +1032,7 @@ function aiPrompt(link, text) {
   return `Tu aides à remplir une fiche dans « Cozy Spots », un carnet personnel d'adresses (restos, bars, sorties).
 Les images sont des captures d'écran d'une publication (Instagram, TikTok, Facebook, site…).${link ? `\nLien de la publication : ${link}` : ""}${text ? `\nTexte de la légende :\n${text}` : ""}
 
-Identifie le lieu présenté.${link && !text ? " S'il n'y a que le lien, ouvre-le ; s'il est illisible (Instagram, TikTok), cherche le compte et la publication sur le web." : ""} Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.
+Identifie le lieu présenté.${link && !text ? " S'il n'y a que le lien, ouvre-le ; s'il est illisible (Instagram, TikTok, Facebook), cherche le compte et la publication sur le web." : ""} Si l'adresse ou la ville n'apparaissent pas, cherche-les sur le web à partir du nom, du compte et des indices visibles. N'invente rien : laisse vide ce que tu ne trouves pas.
 Attention : le compte qui publie est souvent un média ou un influenceur food, pas le lieu lui-même. Le lieu est celui nommé ou tagué dans la légende ou visible sur les images. Ne propose JAMAIS un lieu au hasard ou seulement « ressemblant » : si tu n'as pas d'indice clair (nom, tag, adresse), laisse "name" vide et explique dans "doubt" ce qui manque.
 
 Choix de la liste :
@@ -1030,6 +1048,7 @@ Réponds uniquement avec un objet JSON, sans texte autour :
 "arr" est le numéro d'arrondissement (1 à 20) pour Paris, sinon 0.`;
 }
 
+const isFacebook = (u) => /(^|\.|\/\/)(facebook\.com|fb\.com|fb\.watch|fb\.me)\b/i.test(u || "");
 function aiError(e) {
   const st = e?.status;
   if (st === 401) return "Clé refusée : vérifie la clé de l'IA";
@@ -1144,7 +1163,11 @@ function fillFromAi(r, link) {
 
 $("#aiForm").addEventListener("submit", async (e) => {
   e.preventDefault();
-  const link = $("#linkUrl").value.trim(), text = $("#aiText").value.trim();
+  // Le lien collé peut venir avec du texte autour (partage Facebook, TikTok…) : on garde le lien, le reste va dans la légende.
+  const raw = $("#linkUrl").value.trim(), found = (raw.match(/https?:\/\/[^\s<>"]+/) || [""])[0];
+  const link = found || (/^(www\.|m\.)?[\w-]+\.[a-z]{2,}\//i.test(raw) ? "https://" + raw : "");
+  const around = found ? raw.replace(found, "").trim() : link ? "" : raw;
+  const text = [$("#aiText").value.trim(), around].filter(Boolean).join("\n");
   const status = $("#aiStatus"), go = $("#aiGo");
   if (!aiImages.length && !text && !(link && aiServer())) { toast(link ? "Ajoute une capture, ou garde juste le lien" : "Colle un lien ou ajoute une capture"); return; }
   if (!store.get("aiKey", "") && !aiServer()) { $("#aiKeyBox").open = true; $("#aiKey").focus(); toast("Ajoute d'abord la clé de l'IA"); return; }
@@ -1152,6 +1175,7 @@ $("#aiForm").addEventListener("submit", async (e) => {
   status.hidden = false; status.className = "ai-status"; status.textContent = "Lecture des captures et recherche de l'adresse…";
   try {
     const r = await aiRead(link, text);
+    if (!r.name && isFacebook(link) && !$("#aiText").value.trim() && !aiImages.length) throw new Error("FB");
     if (!r.name) throw new Error(`lieu pas trouvé avec certitude${r.doubt ? ` (${r.doubt})` : ""}. Ajoute une capture où on voit le nom du lieu`);
     fillFromAi(r, link);
     status.className = "ai-status ok";
@@ -1159,14 +1183,18 @@ $("#aiForm").addEventListener("submit", async (e) => {
     aiImages = []; renderThumbs(); $("#linkUrl").value = ""; $("#aiText").value = "";
     setTimeout(() => $("#placeForm").scrollIntoView({ behavior: "smooth" }), 80);
   } catch (err) {
-    status.className = "ai-status err"; status.textContent = aiError(err);
+    status.className = "ai-status err";
+    status.textContent = err?.message === "FB"
+      ? "Facebook ne laisse pas lire ses publications sans compte. Sur Facebook, copie le texte de la publication et colle-le dans « Texte de la légende » (ou ajoute une capture d'écran), puis touche encore « Lire avec l'IA ». Le lien reste en place."
+      : aiError(err);
+    if (err?.message === "FB") { $("#linkUrl").value = link; $("#aiText").focus(); }
   } finally {
     go.disabled = false; go.classList.remove("busy");
   }
 });
 $("#listPending").addEventListener("click", (e) => {
   const del = e.target.closest("[data-del]"), fill = e.target.closest("[data-fill]");
-  if (del) { store.set("custom", store.get("custom", []).filter((p) => p.id !== del.dataset.del)); rebuild(); renderPending(); }
+  if (del) { store.set("custom", store.get("custom", []).filter((p) => p.id !== del.dataset.del)); forgetCustom([del.dataset.del]); rebuild(); renderPending(); }
   if (fill) {
     const p = store.get("custom", []).find((x) => x.id === fill.dataset.fill);
     resetForm(); $("#fSource").value = p.source; $("#linkUrl").value = p.source; $("#fId").value = p.id; $("#fName").focus();
@@ -1206,18 +1234,29 @@ $("#placeForm").addEventListener("submit", (e) => {
     summary: $("#fSummary").value.trim(), mark: "", createdAt: Date.now(),
     price: +$("#fPrice").value || undefined,
   };
-  if (list === "paris" && !p.arr) { toast("Choisis l'arrondissement"); return; }
+  if (list === "paris" && !p.arr) {
+    // Code postal d'Île-de-France hors Paris : l'adresse va dans « Autour de Paris » au lieu d'être bloquée.
+    if (/\b(77|78|91|92|93|94|95)\d{3}\b/.test(address)) { p.list = "villes"; p.city = "Autour de Paris"; p.arr = null; }
+    else {
+      const sel = $("#fArr");
+      sel.classList.add("need"); sel.focus(); sel.scrollIntoView({ behavior: "smooth", block: "center" });
+      toast("Choisis l'arrondissement, puis touche encore « " + $("#fSubmit").textContent + " »");
+      sel.addEventListener("change", () => sel.classList.remove("need"), { once: true });
+      return;
+    }
+  }
   if (aiExtra) { if (aiExtra.phone) p.phone = aiExtra.phone; if (aiExtra.website) p.website = aiExtra.website; if (aiExtra.booking) p.booking = aiExtra.booking; if (aiExtra.instagram) p.instagram = aiExtra.instagram; }
   const custom = store.get("custom", []).filter((x) => x.id !== id);
   const prev = store.get("custom", []).find((x) => x.id === id);
   if (prev && prev.list !== "pending") { p.mark = prev.mark || ""; p.tested = !!prev.tested; p.createdAt = prev.createdAt; }
+  p.updatedAt = Date.now();
   custom.unshift(p);
   // Chaîne : une fiche par adresse, chacune dans son arrondissement.
   const norm = (x) => String(x || "").toLowerCase().replace(/[^a-z0-9]/g, "");
   const extra = (aiExtra?.branches || []).filter((b) => norm(b.address) !== norm(p.address)).map((b, i) => {
     const zip = String(b.address).match(/750(\d\d)/);
     const a2 = b.arr >= 1 && b.arr <= 20 ? +b.arr : zip ? +zip[1] : null;
-    return { ...p, id: `${id}-${i + 2}`, address: b.address, arr: list === "villes" ? null : a2 };
+    return { ...p, id: `${id}-${i + 2}`, address: b.address, arr: p.list === "villes" ? null : a2 };
   }).filter((b) => list !== "paris" || b.arr);
   custom.unshift(...extra);
   store.set("custom", custom);
@@ -1227,7 +1266,9 @@ $("#placeForm").addEventListener("submit", (e) => {
   if (canPublish()) setTimeout(() => { publishPlace(id); extra.forEach((b, i) => setTimeout(() => publishPlace(b.id), 400 * (i + 1))); }, 1200);
   // Nouvelle adresse : on cherche tout seul ce qui manque (numéro, site, Insta, résa, photo…).
   if (!(prev && prev.list !== "pending")) completePlace([id, ...extra.map((b) => b.id)]);
-  location.hash = list; show(list);
+  // On ouvre l'accueil sur la ville de l'adresse : elle y apparaît tout de suite.
+  if (typeof gfCityOf === "function") { GF.city = gfCityOf(p); store.set("gfCity", GF.city); }
+  location.hash = p.list; show(p.list);
   setTimeout(() => openSheet(id), 60);
 });
 
@@ -1290,7 +1331,7 @@ Réponds uniquement avec un objet JSON : {"address": "", "phone": "", "website":
     if (!x.phone) x.noPhone = 1;
     if (!x.instagram && !/instagram\.com/.test(x.source || "")) x.noInsta = 1;
     if (!x.menu && !x.website) x.noMenu = 1;
-    x.aiFill = 1; changed = true;
+    x.aiFill = 1; x.updatedAt = Date.now(); changed = true;
   }
   if (!changed) return;
   store.set("custom", custom);
