@@ -19041,7 +19041,19 @@
   "aiFill": 1,
   "summary": "Une table intimiste et chaleureuse du 9e arrondissement qui met à l'honneur une cuisine de marché créative et des quilles nature. L'ambiance y est conviviale, branchée et décontractée.",
   "lat": 48.882672,
-  "lng": 2.332212
+  "lng": 2.332212,
+  "ohTry": "2026-11-12",
+  "oh": [
+   "",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-prunier",
@@ -19066,7 +19078,19 @@
   "cuisine": "Poisson & fruits de mer",
   "aiFill": 1,
   "summary": "Institution parisienne incontournable de l'avenue Victor Hugo, ce restaurant célèbre le caviar et les produits de la mer dans un décor Art Déco somptueux. L'ambiance y est luxueuse, élégante et feutrée.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-12",
+  "oh": [
+   "12:00-14:00,19:00-22:30",
+   "12:00-14:00,19:00-22:30",
+   "12:00-14:00,19:00-22:30",
+   "12:00-14:00,19:00-22:30",
+   "12:00-14:00,19:00-22:30",
+   "12:00-14:00,19:00-22:30",
+   "12:00-14:00,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-ao-izakaya",
@@ -19095,7 +19119,19 @@
   "commonsTry": 1,
   "photo": "https://www.parisgourmand.com/images/18-restaurants/ao-izakaya-restaurant-f800.jpg",
   "photoSrc": "https://www.parisgourmand.com/restaurant-paris/ao-izakaya.html",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-12",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-siena",
@@ -19119,7 +19155,19 @@
   "aiFill": 1,
   "summary": "Une table italienne élégante et raffinée à deux pas de la Madeleine, idéale pour déguster des pâtes fraîches et des antipasti de qualité dans un décor chic.",
   "lat": 48.871446,
-  "lng": 2.319024
+  "lng": 2.319024,
+  "ohTry": "2026-11-12",
+  "oh": [
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:30",
+   "12:00-14:30,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-aquakyoto",
@@ -19143,7 +19191,8 @@
   "aiFill": 1,
   "summary": "Un restaurant japonais immersif et sophistiqué proposant des créations de sushi et des plats fusion dans une ambiance feutrée et végétale.",
   "lat": 48.871631,
-  "lng": 2.31092
+  "lng": 2.31092,
+  "ohTry": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-lava",
@@ -19167,7 +19216,19 @@
   "phone": "01 43 26 55 55",
   "summary": "Un restaurant auvergnat moderne et chaleureux du 6e arrondissement, parfait pour découvrir des spécialités revisitées et des produits du terroir dans une ambiance conviviale.",
   "lat": 48.84227,
-  "lng": 2.330527
+  "lng": 2.330527,
+  "ohTry": "2026-11-12",
+  "oh": [
+   "",
+   "",
+   "19:30-22:30",
+   "19:30-22:30",
+   "19:30-22:30",
+   "19:30-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-hotel-le-collectionneur",
@@ -19192,7 +19253,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-cepe-et-figue",
@@ -19218,7 +19280,8 @@
   "lng": 2.36133,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-cache",
@@ -19242,7 +19305,19 @@
   "aiFill": 1,
   "summary": "Caché au fond d'une impasse verdoyante du 20e arrondissement, ce restaurant met en valeur les poissons et fruits de mer dans une ambiance chaleureuse et branchée.",
   "lat": 48.857756,
-  "lng": 2.396932
+  "lng": 2.396932,
+  "ohTry": "2026-11-12",
+  "oh": [
+   "",
+   "",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-festif-victoria",
@@ -19267,7 +19342,8 @@
   "lng": 2.293739,
   "resa": "inconnu",
   "ogTry": "2|https://victoria-paris.com|",
-  "photo": "http://victoria-paris.com/wp-content/uploads/2026/04/Thibaud_Georges_Copyright-50-1-scaled.jpg"
+  "photo": "http://victoria-paris.com/wp-content/uploads/2026/04/Thibaud_Georges_Copyright-50-1-scaled.jpg",
+  "ohTry": "2026-11-12"
  },
  {
   "id": "precieuses-0-resto-festif-le-verde",
@@ -29761,7 +29837,8 @@
   "pressTry": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-tel-aviv-emesh",
