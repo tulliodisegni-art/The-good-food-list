@@ -1,0 +1,46 @@
+name: Voix off pour les réels
+
+on:
+  push:
+    branches: [claude/project-thread-gsu0c8]
+    paths: [.github/workflows/reel-voix.yml, reel-voix/lignes.json]
+
+permissions:
+  contents: write
+
+jobs:
+  voix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Générer la voix (Piper, voix française libre)
+        run: |
+          pip install -q piper-tts==1.2.0
+          mkdir -p /tmp/v && cd /tmp/v
+          for V in siwis-medium upmc-medium; do
+            N=${V%-*}; Q=${V#*-}
+            curl -sSL -o fr_FR-$V.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/$N/$Q/fr_FR-$V.onnx"
+            curl -sSL -o fr_FR-$V.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/$N/$Q/fr_FR-$V.onnx.json"
+            curl -sSL -o MODEL_CARD-$N "https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/$N/$Q/MODEL_CARD" || true
+          done
+          ls -la
+          python3 - <<'PY'
+          import json, subprocess, os
+          L = json.load(open(os.environ["GITHUB_WORKSPACE"] + "/reel-voix/lignes.json"))
+          for voix, spk in [("siwis-medium", None), ("upmc-medium", "0"), ("upmc-medium", "1")]:
+              d = f"out/{voix}{'-' + spk if spk else ''}"; os.makedirs(d, exist_ok=True)
+              for k, t in L.items():
+                  cmd = ["piper", "--model", f"fr_FR-{voix}.onnx", "--output_file", f"{d}/{k}.wav", "--length_scale", "0.92", "--sentence_silence", "0.12"]
+                  if spk: cmd += ["--speaker", spk]
+                  subprocess.run(cmd, input=t.encode(), check=True)
+          PY
+          cat MODEL_CARD-siwis | head -30; cat MODEL_CARD-upmc | head -30
+      - name: Garder les fichiers sur la branche
+        run: |
+          rm -rf reel-voix/out && cp -r /tmp/v/out reel-voix/out && cp /tmp/v/MODEL_CARD-* reel-voix/
+          git add reel-voix
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "Voix off pour les réels"
+          git push
