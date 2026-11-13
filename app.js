@@ -1379,7 +1379,8 @@ async function boot() {
 function start() {
   // L'appli s'ouvre toujours sur l'accueil, sauf lien direct vers la carte ou l'ajout.
   const h0 = location.hash.slice(1);
-  if (!["carte", "ajouter", "precieuses", "envies"].includes(h0)) history.replaceState(null, "", location.pathname + location.search);
+  // (on laisse l'adresse intacte au retour de « Continuer avec Google / Apple » : account.js la lit)
+  if (!["carte", "ajouter", "precieuses", "envies"].includes(h0) && !/access_token=|error_description=/.test(h0)) history.replaceState(null, "", location.pathname + location.search);
   // Partagé depuis Instagram (menu Partager ou raccourci iPhone) : ?lien=…&texte=… → lecture par l'IA.
   const qs = new URLSearchParams(location.search);
   const shared = [qs.get("lien"), qs.get("texte"), qs.get("titre")].filter(Boolean).join(" ").trim();
