@@ -19367,7 +19367,8 @@
   "aiFill": 1,
   "summary": "Un restaurant festif et élégant qui propose une cuisine méditerranéenne soignée. L'ambiance y est vibrante et rythmée pour prolonger la soirée.",
   "lat": 48.848647,
-  "lng": 2.380989
+  "lng": 2.380989,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-resto-festif-l-empire-du-8e",
@@ -19391,7 +19392,8 @@
   "aiFill": 1,
   "summary": "Un restaurant festif au cœur du 8e arrondissement proposant une cuisine raffinée dans une ambiance chic et animée. Idéal pour prolonger la soirée en musique.",
   "lat": 48.871085,
-  "lng": 2.308531
+  "lng": 2.308531,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-resto-festif-manko-paris",
@@ -19415,7 +19417,8 @@
   "lng": 2.303279,
   "cuisine": "Péruvien",
   "aiFill": 1,
-  "summary": "Une table péruvienne vibrante orchestrée par Gastón Acurio, où l'on savoure des ceviches d'exception et des cocktails audacieux dans une ambiance festive et élégante."
+  "summary": "Une table péruvienne vibrante orchestrée par Gastón Acurio, où l'on savoure des ceviches d'exception et des cocktails audacieux dans une ambiance festive et élégante.",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-resto-festif-noto-paris",
@@ -19439,7 +19442,8 @@
   "cuisine": "Italien",
   "aiFill": 1,
   "summary": "Une table sicilienne festive située dans la salle Pleyel, idéale pour déguster des plats méditerranéens savoureux tout en profitant d'une ambiance musicale vibrante et élégante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-resto-festif-les-bains",
@@ -19463,7 +19467,8 @@
   "bookingOk": 2,
   "cuisine": "Français",
   "aiFill": 1,
-  "summary": "Lieu mythique du Marais mêlant table gastronomique, bar à cocktails et club branché. On y vient pour savourer une cuisine créative dans une atmosphère artistique et survoltée."
+  "summary": "Lieu mythique du Marais mêlant table gastronomique, bar à cocktails et club branché. On y vient pour savourer une cuisine créative dans une atmosphère artistique et survoltée.",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-resto-festif-gallopin",
@@ -19488,7 +19493,8 @@
   "cuisine": "Français",
   "aiFill": 1,
   "summary": "Une brasserie historique et élégante au cœur de Paris qui propose une cuisine française raffinée dans un décor somptueux Belle Époque, avec une ambiance festive et animée en soirée.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-resto-festif-salvaje",
@@ -19522,7 +19528,8 @@
   "photoSrc": "https://www.sortiraparis.com/hotel-restaurant/restaurant/articles/275623-salvaje-paris-definitivement-ferme",
   "photoManual": 1,
   "closed": 1,
-  "closedSrc": "https://www.sortiraparis.com/hotel-restaurant/restaurant/articles/275623-salvaje-paris-definitivement-ferme"
+  "closedSrc": "https://www.sortiraparis.com/hotel-restaurant/restaurant/articles/275623-salvaje-paris-definitivement-ferme",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-resto-festif-mamamia",
@@ -19547,7 +19554,8 @@
   "cuisine": "Italien",
   "aiFill": 1,
   "phone": "01 47 20 67 79",
-  "summary": "Une table italienne festive et glamour qui propose des plats généreux et des cocktails signatures dans une atmosphère musicale et chaleureuse."
+  "summary": "Une table italienne festive et glamour qui propose des plats généreux et des cocktails signatures dans une atmosphère musicale et chaleureuse.",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-resto-festif-hollywood-savoy",
@@ -19572,7 +19580,8 @@
   "lat": 48.871518,
   "lng": 2.336341,
   "enriched": 5,
-  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72ba08cca1f5f7f67d5_og-hollywood-savoy.jpg"
+  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6ad8a72ba08cca1f5f7f67d5_og-hollywood-savoy.jpg",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-salon-de-the-coco-palais-garnier",
@@ -19599,7 +19608,8 @@
   "commonsTry": 1,
   "photo": "https://restaurant-beaucoco.com/paris-fr/app/app-uploads/sites/4/2024/10/01-Coco-Paris.jpg",
   "photoSrc": "https://restaurant-beaucoco.com/paris-fr/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-salon-de-the-angelina",
@@ -19623,7 +19633,19 @@
   "aiFill": 1,
   "summary": "Institution parisienne incontournable, célèbre pour son chocolat chaud onctueux à l'ancienne et son savoureux Mont-Blanc dans un décor Belle Époque.",
   "resa": "inconnu",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "07:30-19:00",
+   "07:30-19:00",
+   "07:30-19:00",
+   "07:30-19:00",
+   "07:30-19:00",
+   "07:30-19:00",
+   "07:30-19:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-salon-de-the-hotel-de-crillon",
@@ -19649,7 +19671,19 @@
   "bookingOk": 2,
   "institution": true,
   "ogTry": "2|https://www.rosewoodhotels.com/fr/hotel-de-crillon|https://www.rosewoodhotels.com/en/reservations/select-a-destination",
-  "photo": "https://images.rosewoodhotels.com/is/image/rwhg/htel-de-crillon-suite-duc-de-crillon-209-living-by-reto-guntli"
+  "photo": "https://images.rosewoodhotels.com/is/image/rwhg/htel-de-crillon-suite-duc-de-crillon-209-living-by-reto-guntli",
+  "ohTry": "2026-11-13",
+  "oh": [
+   "14:00-18:00",
+   "14:00-18:00",
+   "14:00-18:00",
+   "14:00-18:00",
+   "14:00-18:00",
+   "14:00-18:00",
+   "14:00-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-salon-de-the-ritz-paris",
@@ -19679,7 +19713,19 @@
   "commonsTry": 1,
   "photo": "https://img.oyster.com/production/Europe/France/Ile-de-France/Paris/Ritz%20Paris/Feature%20Image/paris_hotels_ritz_paris_feature_image_3248561505.webp",
   "photoSrc": "https://www.oyster.com/paris/hotels/ritz-paris/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "08:00-18:30",
+   "08:00-18:30",
+   "08:00-18:30",
+   "08:00-18:30",
+   "08:00-18:30",
+   "08:00-18:30",
+   "08:00-18:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-salon-de-the-fattyferia",
@@ -19700,7 +19746,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-salon-de-the-alain-ducasse",
@@ -19722,7 +19769,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-salon-de-the-le-meurice",
@@ -19752,7 +19800,8 @@
   "commonsTry": 1,
   "photo": "https://www.paris-paris.com/hotel/data_le_meurice/images/500x400/le_meurice-1.jpg",
   "photoSrc": "https://www.paris-paris.com/hotel/le_meurice.php",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-salon-de-the-intercontinental-paris-le-grand",
@@ -19775,7 +19824,8 @@
   "summary": "Découvrez le Café de la Paix et ses superbes salons historiques pour un tea time raffiné. L'ambiance y est élégante, feutrée et empreinte du charme parisien du XIXe siècle.",
   "enriched": 5,
   "photo": "https://parislegrand.intercontinental.com/assets/uploads/2023/09/InterContinental-Paris-Le-Grand-Junior-Suite-Balcony-%C2%A9-Eric-Cuvillier-3-370x247.jpeg",
-  "booking": "https://widget.thefork.com/fr/e85c5b5e-4c70-4f97-ae20-8b6e7f3efaf6?step=date"
+  "booking": "https://widget.thefork.com/fr/e85c5b5e-4c70-4f97-ae20-8b6e7f3efaf6?step=date",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-the-peninsula-l-oiseau-blanc",
@@ -19798,7 +19848,8 @@
   "aiFill": 1,
   "phone": "01 58 12 67 30",
   "summary": "Ce restaurant doublement étoilé propose une cuisine française raffinée et aérienne avec vue imprenable sur Paris. L'ambiance est luxueuse et élégante, inspirée par l'aviation.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-shangri-la",
@@ -19827,7 +19878,8 @@
   "commonsTry": 1,
   "photo": "https://parisatlas.com/images/hotels/hotel-shangri-la-paris/shangri-la-paris-entrance-avenue-d-iena-ai-image.png",
   "photoSrc": "https://parisatlas.com/locations/hotel-shangri-la-paris",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-four-seasons-george-v",
@@ -19851,7 +19903,8 @@
   "summary": "Un lieu mythique abritant des tables d'exception couronnées d'étoiles Michelin. L'ambiance y est somptueuse, romantique et empreinte du service légendaire du palace.",
   "resa": "inconnu",
   "ogTry": "2|https://www.fourseasons.com|",
-  "photo": "https://www.fourseasons.com/alt/img-opt/~75.430.0,0000-0,0000-2499,5556-1406,0000/publish/content/dam/fourseasons/images/web/LCP/LCP_007_original.jpg"
+  "photo": "https://www.fourseasons.com/alt/img-opt/~75.430.0,0000-0,0000-2499,5556-1406,0000/publish/content/dam/fourseasons/images/web/LCP/LCP_007_original.jpg",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-le-perchoir-marais",
@@ -19874,7 +19927,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un rooftop branché perché sur les toits du BHV Marais, idéal pour siroter des cocktails originaux face aux toits de Paris. L'ambiance est festive, décontractée et musicale.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-gigi",
@@ -19898,7 +19952,8 @@
   "lat": 48.865672,
   "lng": 2.303279,
   "ogTry": "2|https://gigi-restaurant.com|https://www.sevenrooms.com/experiences/gigiparis",
-  "photo": "https://gigi-restaurant.com/app/app-uploads/2023/10/Gigi-Val-d-isere-banner-1.jpg"
+  "photo": "https://gigi-restaurant.com/app/app-uploads/2023/10/Gigi-Val-d-isere-banner-1.jpg",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-mama-shelter",
@@ -19921,7 +19976,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "summary": "Un rooftop branché et décontracté dans l'est parisien, idéal pour partager des pizzas généreuses et des cocktails entre amis. L'ambiance y est festive, colorée et résolument conviviale.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-le-toit-de-la-girafe",
@@ -19944,7 +20000,8 @@
   "phone": "01 40 62 70 61",
   "summary": "Un rooftop d'exception face à la Tour Eiffel, spécialisé dans les poissons et fruits de mer d'une grande fraîcheur. L'atmosphère est luxueuse, lumineuse et spectaculaire.",
   "lat": 48.862905,
-  "lng": 2.288342
+  "lng": 2.288342,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-madame-reve",
@@ -19967,7 +20024,8 @@
   "booking": "https://www.sevenrooms.com/explore/restaurantmr/reservations/create/search/",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un rooftop suspendu au cœur de Paris offrant une vue panoramique époustouflante sur les monuments de la capitale. On y profite d'une cuisine aux accents méditerranéens dans un décor végétalisé et feutré."
+  "summary": "Un rooftop suspendu au cœur de Paris offrant une vue panoramique époustouflante sur les monuments de la capitale. On y profite d'une cuisine aux accents méditerranéens dans un décor végétalisé et feutré.",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-chez-mila",
@@ -19991,7 +20049,8 @@
   "commonsTry": 1,
   "photo": "https://img.clubia.com/clubia/clubs/cmmysk7l201q2ic04p5gm7rnw/oxguc9hbjqoghoegyfvq.webp",
   "photoSrc": "https://www.clubia.com/france/paris/chez-mila",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-il-volo-bar",
@@ -20018,7 +20077,8 @@
   "commonsTry": 1,
   "photo": "https://www.therooftopguide.com/rooftop-bars-in-paris/Bilder/ivolo-600-1.jpg",
   "photoSrc": "https://www.therooftopguide.com/rooftop-bars-in-paris/ilvolo-bar-rooftop.html",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-10eme-ciel",
@@ -20045,7 +20105,8 @@
   "commonsTry": 1,
   "photo": "https://www.therooftopguide.com/rooftop-bars-in-paris/Bilder/10eme-ciel-600-1.jpg",
   "photoSrc": "https://www.therooftopguide.com/rooftop-bars-in-paris/frame-brasserie-and-rooftop.html",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-too-hotel",
@@ -20068,7 +20129,8 @@
   "aiFill": 1,
   "summary": "Surplombant Paris depuis les hauteurs du 13e arrondissement, le TOO TacTac Skybar offre un panorama grandiose à couper le souffle. On y vient pour siroter des cocktails créations dans une atmosphère festive et ultra-design.",
   "lat": 48.825335,
-  "lng": 2.382428
+  "lng": 2.382428,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-cheval-blanc",
@@ -20091,7 +20153,8 @@
   "aiFill": 1,
   "phone": "01 79 35 50 22",
   "summary": "Profitez d'une vue spectaculaire sur la Seine et les monuments de Paris tout en dégustant une cuisine de brasserie contemporaine raffinée dans une ambiance chic et élégante.",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-villa-m",
@@ -20115,7 +20178,19 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un rooftop verdoyant et lumineux offrant une vue panoramique sur les toits de Paris, idéal pour siroter des cocktails originaux dans une ambiance végétale et détendue."
+  "summary": "Un rooftop verdoyant et lumineux offrant une vue panoramique sur les toits de Paris, idéal pour siroter des cocktails originaux dans une ambiance végétale et détendue.",
+  "ohTry": "2026-11-13",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-bonnie",
@@ -20136,7 +20211,19 @@
   "booking": "https://www.sevenrooms.com/experiences/bonnie",
   "bookingOk": 2,
   "aiFill": 1,
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00",
+   "12:00-14:30,19:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-le-roof",
@@ -20160,7 +20247,8 @@
   "bookingOk": 2,
   "aiFill": 1,
   "phone": "01 80 40 77 70",
-  "summary": "Situé sur le toit de l'Hôtel Madame Rêve, ce rooftop végétalisé offre un panorama d'exception sur l'église Saint-Eustache pour savourer des cocktails signatures dans une atmosphère feutrée et branchée."
+  "summary": "Situé sur le toit de l'Hôtel Madame Rêve, ce rooftop végétalisé offre un panorama d'exception sur l'église Saint-Eustache pour savourer des cocktails signatures dans une atmosphère feutrée et branchée.",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-terraza-mikuna",
@@ -20183,7 +20271,8 @@
   "searched": 1,
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Sur le rooftop du BHV Marais, la Terraza Mikuna propose une cuisine aux accents latino-américains à savourer dans une ambiance festive et estivale avec vue sur Paris."
+  "summary": "Sur le rooftop du BHV Marais, la Terraza Mikuna propose une cuisine aux accents latino-américains à savourer dans une ambiance festive et estivale avec vue sur Paris.",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-rooftop-perruche",
@@ -20206,7 +20295,19 @@
   "phone": "01 40 64 39 40",
   "summary": "Perché sur le toit du Printemps Haussmann, ce rooftop offre une vue imprenable sur tout Paris dans une ambiance chic, lumineuse et végétale, idéale pour savourer des cocktails et une cuisine aux accents du Sud.",
   "lat": 48.874002,
-  "lng": 2.327231
+  "lng": 2.327231,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "12:00-15:00,19:00-02:00",
+   "12:00-15:00,19:00-02:00",
+   "12:00-15:00,19:00-02:00",
+   "12:00-15:00,19:00-02:00",
+   "12:00-15:00,19:00-02:00",
+   "12:00-15:00,19:00-02:00",
+   "12:00-15:00,19:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-cafe-bofinger",
@@ -20230,7 +20331,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "summary": "Véritable institution parisienne, cette brasserie historique au décor 1900 sublime les fruits de mer, les choucroutes et les classiques de la cuisine française dans une ambiance élégante et intemporelle.",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "11:30-15:00,18:30-00:00",
+   "11:30-15:00,18:30-00:00",
+   "11:30-15:00,18:30-00:00",
+   "11:30-15:00,18:30-00:00",
+   "11:30-15:00,18:30-00:00",
+   "11:30-00:00",
+   "11:30-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-cafe-spootnik-bar",
@@ -20256,7 +20369,8 @@
   "commonsTry": 1,
   "photo": "https://beburger.be/wp-content/uploads/2025/07/spoonik-bar-scaled.webp",
   "photoSrc": "https://beburger.be/bars/bars-spootnik-bar-paris/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-cafe-kith",
@@ -20280,7 +20394,19 @@
   "lat": 48.869091,
   "lng": 2.30223,
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "10:00-19:30",
+   "10:00-19:30",
+   "10:00-19:30",
+   "10:00-19:30",
+   "10:00-19:30",
+   "10:00-19:30",
+   "10:00-19:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-cafe-chez-fringe",
@@ -20303,7 +20429,19 @@
   "lat": 48.862736,
   "lng": 2.36476,
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "08:30-17:00",
+   "08:30-17:00",
+   "08:30-17:00",
+   "08:30-17:00",
+   "08:30-17:00",
+   "09:30-18:00",
+   "09:30-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-maison-souquet",
@@ -20326,7 +20464,19 @@
   "booking": "https://www.maisonsouquet.com/fr/reserver-chambre-en-journee/",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Un bar à cocktails somptueux et feutré aux accents 1900, idéal pour savourer des breuvages d'exception imaginés par des mixologues dans une ambiance intime et sulfureuse."
+  "summary": "Un bar à cocktails somptueux et feutré aux accents 1900, idéal pour savourer des breuvages d'exception imaginés par des mixologues dans une ambiance intime et sulfureuse.",
+  "ohTry": "2026-11-13",
+  "oh": [
+   "17:00-01:30",
+   "17:00-01:30",
+   "17:00-01:30",
+   "17:00-01:30",
+   "17:00-01:30",
+   "17:00-01:30",
+   "17:00-01:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-l-entracte",
@@ -20350,7 +20500,8 @@
   "aiFill": 1,
   "summary": "Un bar-restaurant élégant situé à deux pas de l'Opéra, parfait pour boire un verre ou grignoter dans un décor théâtral et raffiné.",
   "lat": 48.871145,
-  "lng": 2.33146
+  "lng": 2.33146,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-yago-pigalle",
@@ -20374,7 +20525,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-cheper-perchoir",
@@ -20398,7 +20550,8 @@
   "photo": "https://leperchoir.fr/wp-content/uploads/2020/07/LePerchoir_site_photo-etablissement_le-perchoir-menilmontant_3-scaled.jpg",
   "phone": "01 76 35 11 80",
   "bookingScan": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-mandarin-oriental",
@@ -20427,7 +20580,8 @@
   "commonsTry": 1,
   "photo": "https://cdn.sortiraparis.com/images/80/108888/1134934-le-gouter-d-hiver-du-mandarin-oriental-par-julien-dugourd-2024-2025.jpg",
   "photoSrc": "https://www.sortiraparis.com/en/where-to-eat-in-paris/hotel/articles/335174-mandarin-oriental-a-former-circus-turned-into-a-palace-on-rue-saint-honore",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-hotel-particulier-montmartre",
@@ -20453,7 +20607,8 @@
   "summary": "Un havre de paix caché dans un écrin de verdure montmartrois, idéal pour savourer des cocktails recherchés dans une atmosphère bohème et chic.",
   "resa": "inconnu",
   "ogTry": 1,
-  "photo": "https://www.hotelparticulier.com/wp-content/uploads/2026/10/HP-intro-img.png"
+  "photo": "https://www.hotelparticulier.com/wp-content/uploads/2026/10/HP-intro-img.png",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-secret-8",
@@ -20482,7 +20637,19 @@
   "commonsTry": 1,
   "photo": "https://media.timeout.com/images/104675567/image.jpg",
   "photoSrc": "https://www.timeout.com/paris/en/bars-and-pubs/secret-8",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "",
+   "",
+   "",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-solera",
@@ -20505,7 +20672,19 @@
   "aiFill": 1,
   "summary": "Un bar à cocktails branché et théâtral où l'on savoure des créations surprenantes servies dans des contenants originaux, le tout dans une ambiance festive et chaleureuse.",
   "lat": 48.851335,
-  "lng": 2.345662
+  "lng": 2.345662,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "18:00-01:00",
+   "18:00-01:00",
+   "18:00-01:00",
+   "18:00-01:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-01:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-mobster-bar",
@@ -20529,7 +20708,19 @@
   "lng": 2.36748,
   "resa": "sans",
   "ogTry": "2|https://mobster.azadestudio.fr|",
-  "photo": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0ae9c3fb-56cb-4533-b531-08740977d01b/id-preview-258ec785--a48a64ca-1458-430f-a96b-a245897d6617.lovable.app-1773056956313.png"
+  "photo": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0ae9c3fb-56cb-4533-b531-08740977d01b/id-preview-258ec785--a48a64ca-1458-430f-a96b-a245897d6617.lovable.app-1773056956313.png",
+  "ohTry": "2026-11-13",
+  "oh": [
+   "",
+   "",
+   "19:00-01:00",
+   "19:00-01:00",
+   "19:00-02:00",
+   "19:00-02:00",
+   "19:00-01:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-les-ambassadeurs",
@@ -20554,7 +20745,19 @@
   "booking": "https://www.rosewoodhotels.com/en/reservations/select-a-destination",
   "bookingOk": 2,
   "ogTry": "2|https://www.rosewoodhotels.com/fr/crillon/dining/bar-les-ambassadeurs|https://www.rosewoodhotels.com/en/reservations/select-a-destination",
-  "pressTry": 1
+  "pressTry": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "15:00-01:00",
+   "15:00-01:00",
+   "15:00-01:00",
+   "15:00-01:00",
+   "15:00-01:00",
+   "15:00-01:00",
+   "15:00-01:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-grouvie",
@@ -20581,7 +20784,8 @@
   "commonsTry": 1,
   "photo": "https://media.timeout.com/images/106088627/image.jpg",
   "photoSrc": "https://www.timeout.fr/paris/bars/grouvie",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-de-l-escadrille",
@@ -20605,7 +20809,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-coco",
@@ -20628,7 +20833,19 @@
   "phone": "01 42 68 55 81",
   "summary": "Situé au coeur de l'Opéra Garnier, le restaurant Coco propose une cuisine élégante et festive dans un décor spectaculaire d'inspiration tropicale et Art déco.",
   "lat": 48.858633,
-  "lng": 2.322606
+  "lng": 2.322606,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-8",
@@ -20654,7 +20871,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "09:00-01:00",
+   "09:00-01:00",
+   "09:00-01:00",
+   "09:00-01:00",
+   "09:00-01:00",
+   "09:00-01:00",
+   "09:00-01:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-hemingway",
@@ -20684,7 +20913,19 @@
   "commonsTry": 1,
   "photo": "https://ywkmnqypyrwytxxflvnz.supabase.co/storage/v1/object/public/places/venues/bar-hemingway/selected/interior_9c579c9e-d01e-46d9-9577-ff4ce274a86b.jpg",
   "photoSrc": "https://www.bestcocktailsguide.com/places-to-drink/cocktail-bar/paris/bar-hemingway",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-botaniste",
@@ -20713,7 +20954,19 @@
   "commonsTry": 1,
   "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/f9/9c/e8/le-bar-botaniste.jpg?w=900&h=500&s=1",
   "photoSrc": "https://www.evengestion.com/en/adresses-recommandees/le-bar-botaniste",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13",
+  "oh": [
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00",
+   "18:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-bar-josephine",
@@ -20740,7 +20993,8 @@
   "commonsTry": 1,
   "photo": "https://cdn.sanity.io/images/wwxezq1v/production/cb3bd3d4f3461c1fa92df01c7992ef70a051725b-1065x1331.jpg",
   "photoSrc": "https://leoff-paris.com/restos-bars/bar-josephine/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-le-gainsbarre",
@@ -20766,7 +21020,8 @@
   "booking": "https://www.maisongainsbourg.fr/billetterie",
   "bookingOk": 2,
   "ogTry": 1,
-  "photo": "https://maisongainsbourg.imgix.net/770cb1a2-2cb1-4d4b-8cc1-9f055a831c15/choux_jeune_horyzontal.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C756%2C8256%2C4323&w=1200&s=d27877f4133d7843b1657cfee340b144"
+  "photo": "https://maisongainsbourg.imgix.net/770cb1a2-2cb1-4d4b-8cc1-9f055a831c15/choux_jeune_horyzontal.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C756%2C8256%2C4323&w=1200&s=d27877f4133d7843b1657cfee340b144",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-maison-revka",
@@ -20789,7 +21044,8 @@
   "phone": "01 40 67 10 00",
   "summary": "Maison Revka propose une délicieuse cuisine aux accents slaves dans un cadre somptueux et feutré. L'ambiance y est élégante, idéale pour savourer un cocktail signature ou une coupe de champagne.",
   "lat": 48.867427,
-  "lng": 2.285735
+  "lng": 2.285735,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-hotel-lancaster",
@@ -20812,7 +21068,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=387347&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "summary": "Le bar de l'Hôtel Lancaster offre un cadre intimiste et feutré, parfait pour déguster des cocktails créatifs dans une atmosphère artistique et luxueuse. Un véritable havre de paix au cœur de Paris."
+  "summary": "Le bar de l'Hôtel Lancaster offre un cadre intimiste et feutré, parfait pour déguster des cocktails créatifs dans une atmosphère artistique et luxueuse. Un véritable havre de paix au cœur de Paris.",
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-la-marta",
@@ -20836,7 +21093,8 @@
   "commonsTry": 1,
   "photo": "https://s3.us-east-1.amazonaws.com/uploads.thevendry.co/24989/1703664694839_Fouquet-s-125.jpg",
   "photoSrc": "https://thevendry.com/venue/231092/le-marta-paris-paris-france",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-13"
  },
  {
   "id": "precieuses-0-boire-un-verre-baronne",
