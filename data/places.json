@@ -22732,7 +22732,8 @@
   "photo": "https://www.3615demesure.com/la-demande/assets/la-demande-diner-background.webp",
   "phone": "07 88 39 56 55",
   "booking": "https://bookings.zenchef.com/results?rid=357966&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-belushi-s-canal",
@@ -22754,7 +22755,8 @@
   "enriched": 5,
   "photo": "https://belushis.com/wp-content/uploads/2023/08/BELUSHIS-White.webp",
   "aiFill": 1,
-  "phone": "01 40 34 34 40"
+  "phone": "01 40 34 34 40",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-ciel-les-maquereaux",
@@ -22777,7 +22779,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-francette",
@@ -22800,7 +22803,8 @@
   "aiFill": 1,
   "website": "https://www.francette.paris",
   "enriched": 5,
-  "photo": "https://cdn.prod.website-files.com/65cfd65e40a11657644709a5/68fb3b828addf2ba51ac3057_banniere%20francette%20tour%20eiffel.jpg"
+  "photo": "https://cdn.prod.website-files.com/65cfd65e40a11657644709a5/68fb3b828addf2ba51ac3057_banniere%20francette%20tour%20eiffel.jpg",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-chalet-des-iles-daumesnil",
@@ -22823,7 +22827,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=351686&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "phone": "01 43 07 00 00"
+  "phone": "01 43 07 00 00",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-autour-de-paris-quai-ouest",
@@ -22871,7 +22876,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-riviera-paris",
@@ -22895,7 +22901,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-nonos",
@@ -22922,7 +22929,8 @@
   "commonsTry": 1,
   "photo": "https://images.rosewoodhotels.com/is/image/rwhg/RWCRI_Nonos_interieurs_Victor%20Bellot%20(4)",
   "photoSrc": "https://www.rosewoodhotels.com/en/hotel-de-crillon/dining/nonos-comestibles-paul-pairet",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-wukong-temple",
@@ -22950,7 +22958,8 @@
   "commonsTry": 1,
   "photo": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIjysIZ57IfDc7UV_QzgBtdYgYstNEehbi1n8MUOdUDW8l6TNoGGo8FtpAquV3Rw_zTJNvV_k3c8wnu1S6hxqhXp57XXwBcj0MKxi-Ol9ifMEUAjMj0VMCskuGH70PsoeDcjee5Q=w900-h600-k-no",
   "photoSrc": "https://restaurant-de-specialites-pekinoises.autour-de-moi.com/f/raviolis-chinois-75002-paris-wukong-temple-8552738/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-la-kave-du-fromager",
@@ -22977,7 +22986,8 @@
   "commonsTry": 1,
   "photo": "https://lh3.googleusercontent.com/places/ANXAkqGH3RfyHv6IP1mdsuUMnF8bwrKy4aDKIsMmPhRLqm_uYY1Tq_siAUYOho4Uqmd3VPMaD0C4eEAha92A1ieuTBP2y5zTWY1GOcU=s1600-w500-h500",
   "photoSrc": "https://kosherwithoutborders.com/paris/la-kave-du-fromager.html",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-autour-de-paris-le-bazar",
@@ -23023,7 +23033,8 @@
   "website": "https://safrane-paris-17.fr",
   "enriched": 5,
   "photo": "https://uniiti.com/images/shops/slides/a4ebb88b16c36dfa84a20783179b375367b02f43.jpeg",
-  "phone": "01 58 62 13 59"
+  "phone": "01 58 62 13 59",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-flavio",
@@ -23047,7 +23058,8 @@
   "phone": "01 45 74 68 11",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "telephone"
+  "resa": "telephone",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-chez-alain-miam-miam",
@@ -23070,7 +23082,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-il-gelato-del-marchese",
@@ -23094,7 +23107,8 @@
   "aiFill": 1,
   "resa": "sans",
   "ogTry": "2|https://www.ilgelatodelmarchese.com/|",
-  "photo": "https://starterlab.xyz/xcn/bos88-14.webp"
+  "photo": "https://starterlab.xyz/xcn/bos88-14.webp",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-cookidiction",
@@ -23117,7 +23131,8 @@
   "phone": "06 25 11 22 36",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-villa-maasai",
@@ -23145,7 +23160,19 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00",
+   "12:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-a-xin",
@@ -23172,7 +23199,8 @@
   "commonsTry": 1,
   "photo": "https://lh3.googleusercontent.com/places/ANXAkqEckGowHZXgKES8GG8D1Bp-Na1dOpKQvfoZ6ph1YHBYfI2m9zxtomPEp38b24gMOz9lBNznfa4Yl8L-nk31gwKNAvUHCPfzhQY=s1600-w640",
   "photoSrc": "https://mapstr.com/place/TzPBCkUJgD",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-darkoum",
@@ -23194,7 +23222,8 @@
   "searched": 1,
   "photo": "https://uniiti.com/images/shops/slides/6e974ab1b84308a3000374b8aabe6ce3f5f93814.jpeg",
   "booking": "https://darkoum-cantine-marocaine.fr/fr/booking",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-udon-jubey",
@@ -23219,7 +23248,19 @@
   "resa": "sans",
   "ogTry": 2,
   "commonsTry": 1,
-  "pressTry": 1
+  "pressTry": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-princess-crepe",
@@ -23242,7 +23283,8 @@
   "phone": "07 66 87 43 10",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-autour-de-paris-sushi-ken",
@@ -23291,7 +23333,8 @@
   "igSearched": 1,
   "instagram": "meilanparis",
   "aiFill": 1,
-  "resa": "telephone"
+  "resa": "telephone",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-home-donuts",
@@ -23318,7 +23361,8 @@
   "commonsTry": 1,
   "photo": "https://lh3.googleusercontent.com/places/ANXAkqESVjJKOO8lXuFIlvU6cvSQJ3kpYbZSatCLGsSMNeuPJBAjwaqR-luOBD1pOBgNJ_HmN4hCbZ7Uaa8vTEP13kIg68bNVisjZTU=s1600-w640",
   "photoSrc": "https://mapstr.com/place/1nDSVyAajG",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-888-night-market",
@@ -23341,7 +23385,8 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/69ead8_a7c165eb3a32480398149bf5a9bd7c3c~mv2.jpg/v1/fill/w_1772,h_1329,al_c/69ead8_a7c165eb3a32480398149bf5a9bd7c3c~mv2.jpg",
   "booking": "https://bookings.zenchef.com/results?rid=365840&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-holy-cookie",
@@ -23364,7 +23409,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-le-cafe-maxime-frederic-chez-louis-vuitton",
@@ -23389,7 +23435,8 @@
   "resa": "inconnu",
   "noPhone": 1,
   "ogTry": "2|https://cafe.restaurants-de-france.fr|",
-  "pressTry": 1
+  "pressTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-jun",
@@ -23415,7 +23462,8 @@
   "commonsTry": 1,
   "photo": "https://lh3.googleusercontent.com/places/AM5lPC8VpzUNZzw5Bvm2qpk3JjbO4GXkrCBDuH4O_DtmT1ony5C9RNn8HEInOmZT5R9W5gN6LBiAK2w6u6H4bH_0Ta7zw2y8O3i1hsU=s1600-w640",
   "photoSrc": "https://mapstr.com/place/CRtNuVwuA9g/jun-paris-restaurant-japonais-asiatique-tapas-bar",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-tanori",
@@ -23438,7 +23486,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-bistrot-podium",
@@ -23460,7 +23509,8 @@
   "enriched": 5,
   "photo": "https://www.bistrot-podium.fr/wp-content/uploads/2024/11/hero-bg-Podium-Paris15-BISTROTS-pas-parisiens-copie-3-2048x1152.webp",
   "phone": "04 12 44 00 08",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-maku",
@@ -23482,7 +23532,8 @@
   "photo": "https://makuparis.fr/wp-content/uploads/2023/07/Fichier-1@3x.png",
   "phone": "07 85 17 33 80",
   "booking": "https://bookings.zenchef.com/results?rid=363710&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-secret-garden",
@@ -23506,7 +23557,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-aux-enfants-gates",
@@ -23531,7 +23583,19 @@
   "cuisine": "Français",
   "aiFill": 1,
   "phone": "01 43 27 76 20",
-  "instagram": "auxenfantsgates"
+  "instagram": "auxenfantsgates",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-lilane",
@@ -23561,7 +23625,8 @@
   "commonsTry": 1,
   "photo": "https://cdn.website.dish.co/media/4e/31/9882637/LILANE-Capture-decran-2026-04-16-162817-png.jpg",
   "photoSrc": "https://lilane-restaurant.eatbu.com/?lang=fr",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-seb-on",
@@ -23584,7 +23649,19 @@
   "instagram": "sebon_restaurant",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "telephone"
+  "resa": "telephone",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "19:30-22:30",
+   "19:30-22:30",
+   "19:30-22:30",
+   "19:30-22:30",
+   "19:30-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-flocon",
@@ -23605,7 +23682,19 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/575fc6_31cfb27b77f7418c8985f436f5877a62~mv2.png",
   "phone": "06 20 70 20 71",
-  "instagram": "restaurantflocon"
+  "instagram": "restaurantflocon",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-el-nopal",
@@ -23629,7 +23718,8 @@
   "aiFill": 1,
   "resa": "sans",
   "ogTry": "2|https://elnopalparis.com/|",
-  "photo": "https://elnopalparis.com/wp-content/uploads/2025/10/taco.png"
+  "photo": "https://elnopalparis.com/wp-content/uploads/2025/10/taco.png",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-machiya",
@@ -23653,7 +23743,19 @@
   "photo": "https://www.machiyabento.fr/img/photos/vitrine.jpg",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "11:30-15:00",
+   "11:30-15:00",
+   "11:30-15:00",
+   "11:30-15:00",
+   "11:30-15:00",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-misu",
@@ -23676,7 +23778,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "01 42 73 14 59",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-yami-yami",
@@ -23703,7 +23817,8 @@
   "commonsTry": 1,
   "photo": "https://lh3.googleusercontent.com/places/ANXAkqFglaO2kq7XJoHk_mB7c4fxHsC9o4kMOShtn65Ram32guT0TFGYno2Hitaori6n7XmwdQSRoZo4_EXhW2nUJACCZ4ZvepbvoBg=s1600-w640",
   "photoSrc": "https://mapstr.com/place/5HzhxpRNpE/yamiyami-paris-restaurant-japonais-asiatique-onigiri-ramen",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-pasta-suta",
@@ -23726,7 +23841,8 @@
   "phone": "06 59 05 68 80",
   "bookingScan": 1,
   "aiFill": 1,
-  "booking": "https://www.thefork.fr"
+  "booking": "https://www.thefork.fr",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-odoumak",
@@ -23750,7 +23866,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-claudine",
@@ -23774,7 +23891,8 @@
   "photo": "https://www.claudine-slowdwich.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout-crop.ca18524d.jpg&w=1080&q=75",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-rehab",
@@ -23801,7 +23919,8 @@
   "commonsTry": 1,
   "photo": "https://privateaser-media.s3.eu-west-1.amazonaws.com/etab_photos/76/750x375/275919.jpg",
   "photoSrc": "https://www.privateaser.com/lieu/76-le-rehab-hotel-normandy",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-le-syndicat",
@@ -23824,7 +23943,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=347818&lang=fr",
   "bookingOk": 2,
   "aiFill": 1,
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-carvan",
@@ -23848,7 +23968,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-silencio-des-pres",
@@ -23874,7 +23995,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-grand-duc",
@@ -23901,7 +24023,8 @@
   "commonsTry": 1,
   "photo": "https://www.parisgourmand.com/images/18-restaurants/grand-duc-restaurant-paris-7503-f800.jpg",
   "photoSrc": "https://www.parisgourmand.com/restaurant-paris/le-grand-duc.html",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-fitzgerald",
@@ -23924,7 +24047,8 @@
   "aiFill": 1,
   "phone": "01 45 51 38 38",
   "ogTry": "2|https://www.fitz-group.fr/fitzgerald-paris|https://www.thefork.fr/restaurant/fitzgerald-r211931",
-  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/658337e9bf17d5c7272c21ed_FITZ_HERO_DT.jpg"
+  "photo": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/658337e9bf17d5c7272c21ed_FITZ_HERO_DT.jpg",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-bisou",
@@ -23947,7 +24071,8 @@
   "instagram": "bar_bisou",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-prescription-cocktail-club",
@@ -23970,7 +24095,8 @@
   "instagram": "experimentalgroup",
   "bookingScan": 1,
   "booking": "https://www.experimentalgroup.com/paris/experimental-marais?namastay=true",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-danico",
@@ -23993,7 +24119,8 @@
   "booking": "https://bookings.zenchef.com/results?rid=347479&lang=fr",
   "bookingOk": 2,
   "ogTry": "2|https://daroco.com/|https://bookings.zenchef.com/results?rid=347479&lang=fr",
-  "photo": "https://daroco.com/wp-content/uploads/2026/08/1W2A0930-scaled.jpg"
+  "photo": "https://daroco.com/wp-content/uploads/2026/08/1W2A0930-scaled.jpg",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-candelaria",
@@ -24017,7 +24144,19 @@
   "instagram": "candelariaparis",
   "aiFill": 1,
   "phone": "01 42 74 41 28",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-moonshiner",
@@ -24040,7 +24179,19 @@
   "instagram": "moonshiner_cocktail_bar",
   "bookingScan": 1,
   "aiFill": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00",
+   "18:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-alleno-paris",
@@ -24065,7 +24216,19 @@
   "instagram": "allenoparis",
   "cuisine": "Français",
   "aiFill": 1,
-  "phone": "01 53 05 70 00"
+  "phone": "01 53 05 70 00",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "12:00-14:30,19:30-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-le-boudoir",
@@ -24092,7 +24255,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-l-espadon-ritz",
@@ -24122,7 +24286,19 @@
   "commonsTry": 1,
   "photo": "https://secretparisien.com/wp-content/uploads/2026/07/1280px-Place_VendC3B4me_-_hC3B4tel_Ritz_28Paris29_28229.jpg",
   "photoSrc": "https://secretparisien.com/en/lieux/espadon/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:30-14:00,19:30-22:00",
+   "12:30-14:00,19:30-22:00",
+   "12:30-14:00,19:30-22:00",
+   "12:30-14:00,19:30-22:00",
+   "12:30-14:00,19:30-22:00",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-la-dame-de-pic",
@@ -24147,7 +24323,19 @@
   "enriched": 5,
   "photo": "https://cdn.prod.website-files.com/6916f4b152577355a6e928e6/6994e43d174a1e4d329587d0_EQUIPE-PIC-VALENCE-JOYEUX-NOEL.webp",
   "booking": "https://bookings.zenchef.com/results?rid=354067&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-lasserre",
@@ -24170,7 +24358,19 @@
   "photo": "https://www.restaurant-lasserre.com/uploads/media/lasserre-gallery/07/17-123f86e2c1e7342aca6b21a49ff0d5b6_f2313.jpg?v=1-0",
   "instagram": "lasserrerestaurant",
   "cuisine": "Français",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-le-clarence",
@@ -24192,7 +24392,19 @@
   "enriched": 5,
   "photo": "https://www.le-clarence.paris/wp-content/uploads/2022/07/clarence-hero-1-min-rs-scaled.jpg",
   "instagram": "leclarenceparis",
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-le-taillevent",
@@ -24216,7 +24428,19 @@
   "bookingScan": 1,
   "booking": "https://widget.thefork.com/4dda0933-a2a2-412e-81a3-6b6d642cdc3a",
   "cuisine": "Français",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   "12:00-14:00,19:30-22:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-chez-fred",
@@ -24239,7 +24463,19 @@
   "instagram": "chezfred1945",
   "booking": "https://bookings.zenchef.com/results?rid=354546&lang=fr",
   "bookingOk": 2,
-  "cuisine": "Français"
+  "cuisine": "Français",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-l-ambroisie",
@@ -32057,7 +32293,8 @@
   "lng": -73.998468,
   "searched": 1,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-new-york-peking-duck-house",
@@ -32109,7 +32346,9 @@
   "lng": -73.996685,
   "searched": 1,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1,
+  "instagram": "joesshanghai"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-chinatown",
@@ -32613,29 +32852,6 @@
   "bookingScan": 1
  },
  {
-  "id": "ig-new-york-hot-dogs-des-veterans-devant-le-met",
-  "list": "villes",
-  "name": "Hot-dogs des vétérans (devant le Met)",
-  "cat": "Street food",
-  "address": "Fifth Ave & E 82nd St, New York, NY 10028",
-  "arr": null,
-  "summary": "Upper East Side. Les « meilleurs hot-dogs » selon la liste : chariot tenu par des vétérans sur la 5e Avenue, devant le Metropolitan Museum. Pas de numéro, pas de menu en ligne.",
-  "source": "Liste Google Maps « Resto NYC »",
-  "price": 1,
-  "priceSrc": "estim",
-  "city": "New York",
-  "resa": "sans",
-  "noPhone": 1,
-  "noMenu": 1,
-  "lat": 40.7788912,
-  "lng": -73.9624252,
-  "ogTry": "2||",
-  "aiFill": 1,
-  "noInsta": 1,
-  "pressTry": 1,
-  "searched": 1
- },
- {
   "id": "ig-new-york-los-mariscos",
   "list": "villes",
   "name": "Los Mariscos",
@@ -32755,7 +32971,7 @@
   "phone": "+1 212-343-1212",
   "website": "https://danicoristorante.com/",
   "menu": "https://danicoristorante.com/",
-  "booking": "https://www.opentable.com/r/da-nico-restaurant-manhattan",
+  "booking": "https://www.opentable.com/restaurant/profile/166810",
   "ogTry": "2|https://danicoristorante.com/|https://www.opentable.com/restaurant/profile/166810",
   "photo": "https://danicoristorante.com/og.jpg",
   "aiFill": 1,
@@ -33935,33 +34151,8 @@
   "pressTry": 1,
   "searched": 1,
   "enriched": 5,
-  "bookingScan": 1
- },
- {
-  "id": "ig-new-york-shake-shack-herald-square",
-  "list": "villes",
-  "name": "Shake Shack – Herald Square",
-  "cat": "Burger",
-  "address": "1333 Broadway, New York, NY 10018",
-  "arr": null,
-  "summary": "Herald Square. Le burger new-yorkais devenu chaîne (ShackBurger, frozen custard). Il y a des dizaines d'autres Shake Shack à New York.",
-  "source": "Liste Google Maps « Resto NYC »",
-  "price": 1,
-  "priceSrc": "estim",
-  "city": "New York",
-  "phone": "+1 646-230-0696",
-  "website": "https://www.shakeshack.com/location/herald-square-ny",
-  "menu": "https://shakeshack.com/",
-  "resa": "sans",
-  "ogTry": "2|https://www.shakeshack.com/location/herald-square-ny|",
-  "aiFill": 1,
-  "instagram": "shakeshack",
-  "pressTry": 1,
-  "lat": 40.751213,
-  "lng": -73.987972,
-  "searched": 1,
-  "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "igSearched": 1
  },
  {
   "id": "ig-new-york-5-napkin-burger-hell-s-kitchen",
@@ -33978,7 +34169,7 @@
   "phone": "+1 212-757-2277",
   "website": "https://www.5napkinburger.com/",
   "menu": "https://5napkinburger.com/menus/",
-  "booking": "https://www.opentable.com/r/5-napkin-burger-hells-kitchen-new-york",
+  "booking": "https://www.opentable.com/restaurant/profile/22765",
   "instagram": "5napkinburger",
   "ogTry": "2|https://www.5napkinburger.com/|https://www.opentable.com/restaurant/profile/22765",
   "photo": "https://resizer.otstatic.com/v4/photos/98610904-1?width=640&height=640",
@@ -34038,7 +34229,9 @@
   "photo": "https://media.timeout.com/images/100448839/image.jpg",
   "lat": 40.728745,
   "lng": -74.002745,
-  "searched": 1
+  "searched": 1,
+  "igSearched": 1,
+  "instagram": "barpitti_official"
  },
  {
   "id": "ig-new-york-tacombi-nolita",
@@ -34503,7 +34696,7 @@
   "menu": "https://www.230-fifth.com/food-menu/",
   "resa": "sans",
   "instagram": "230fifthrooftop",
-  "ogTry": "2|https://www.230-fifth.com/|",
+  "ogTry": "2|https://www.230-fifth.com/|https://www.230-fifth.com/reservations/",
   "aiFill": 1,
   "booking": "https://www.230-fifth.com/reservations/",
   "pressTry": 1,
@@ -34511,7 +34704,8 @@
   "lng": -73.988591,
   "searched": 1,
   "enriched": 5,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "photo": "https://230-fifth.com/wp-content/uploads/2026/11/230-Drink-Menu-ENGLISH-happy-hour-scaled.png"
  },
  {
   "id": "ig-new-york-mr-purple",
@@ -34554,7 +34748,7 @@
   "phone": "+1 212-406-0400",
   "website": "https://www.apothekemixology.com/",
   "menu": "https://www.apothekemixology.com/menus-nyc/",
-  "booking": "https://www.opentable.com/r/apotheke-chinatown-new-york",
+  "booking": "https://www.opentable.com/restaurant/profile/1522123",
   "ogTry": "2|https://www.apothekemixology.com/|https://www.opentable.com/restaurant/profile/1522123",
   "photo": "https://resizer.otstatic.com/v4/photos/97684230-2?width=640&height=640",
   "aiFill": 1,
@@ -34578,7 +34772,7 @@
   "priceSrc": "estim",
   "city": "New York",
   "website": "https://attaboy.us/nyc",
-  "booking": "https://www.opentable.com/r/attaboy-new-york",
+  "booking": "https://www.opentable.com/restaurant/profile/1460605",
   "instagram": "attaboy134",
   "noPhone": 1,
   "noMenu": 1,
