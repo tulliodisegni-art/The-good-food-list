@@ -22686,7 +22686,19 @@
   "phone": "01 41 34 32 86",
   "bookingScan": 1,
   "booking": "https://bookings.zenchef.com/results?rid=347355&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:30",
+   "12:00-16:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-la-nouvelle-seine",
@@ -22850,7 +22862,19 @@
   "website": "https://www.quaiouestrestaurant.com",
   "enriched": 5,
   "photo": "https://ugc.zenchef.com/7/8/1/3/1/1/5/2/6/0/8/8/1747121843_191/107ef05ecad70b91dcf91214492960c7.website.jpg",
-  "phone": "01 46 02 35 54"
+  "phone": "01 46 02 35 54",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:00",
+   "12:00-15:00,19:00-23:30",
+   "12:00-15:00,19:00-23:30",
+   "12:00-16:00,19:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-la-cour-jardin-plaza-athenee",
@@ -23011,7 +23035,19 @@
   "photo": "https://static.wixstatic.com/media/e21ed7_9f960487318b4ceea2d40161d804c864~mv2.jpg/v1/fill/w_238,h_288,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/e21ed7_9f960487318b4ceea2d40161d804c864~mv2.jpg",
   "phone": "01 47 58 00 73",
   "booking": "https://www.restaurantlebazar.com/reservations",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:00",
+   "12:00-14:30,19:30-23:30",
+   "12:00-14:30,19:30-23:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-safrane",
@@ -23309,7 +23345,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-chez-meilan",
@@ -24499,7 +24536,19 @@
   "booking": "https://bookings.zenchef.com/results?rid=354788&lang=fr",
   "bookingOk": 2,
   "cuisine": "Français",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:00,20:00-22:00",
+   "12:00-14:00,20:00-22:00",
+   "12:00-14:00,20:00-22:00",
+   "12:00-14:00,20:00-22:00",
+   "",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-kei",
@@ -24522,7 +24571,19 @@
   "instagram": "restaurantkei",
   "cuisine": "Français",
   "ogTry": "2|https://restaurant-kei.fr|https://www.thefork.fr/restaurant/restaurant-kei-r857881",
-  "photo": "https://cdn.shopify.com/s/files/1/0780/0799/2615/files/map_trad.png?v=1690476742"
+  "photo": "https://cdn.shopify.com/s/files/1/0780/0799/2615/files/map_trad.png?v=1690476742",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "",
+   "12:30-13:30,20:00-21:00",
+   "12:30-13:30,20:00-21:00",
+   "12:30-13:30,20:00-21:00",
+   "12:30-13:30,20:00-21:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-paris-plenitude-cheval-blanc",
@@ -24546,7 +24607,8 @@
   "cuisine": "Français",
   "aiFill": 1,
   "phone": "01 40 28 00 00",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-paris-lucas-carton",
@@ -24571,7 +24633,19 @@
   "igSearched": 1,
   "instagram": "lucascartonparis",
   "cuisine": "Français",
-  "institution": true
+  "institution": true,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   "12:00-14:00,19:00-21:30",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-moishe-s-bakery",
@@ -24596,7 +24670,10 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14",
+  "closed": 1,
+  "closedSrc": "https://www.boweryboogie.com/2023/04/moishes-bakery-on-grand-street-closes-for-good/"
  },
  {
   "id": "ig-new-york-barney-greengrass",
@@ -24620,7 +24697,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 212-724-4707",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "08:30-16:00",
+   "08:30-16:00",
+   "08:30-16:00",
+   "08:30-16:00",
+   "08:30-16:00",
+   "08:30-16:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-zabar-s",
@@ -24645,7 +24734,19 @@
   "booking": "https://www.zabars.com/preserves-and-butters/",
   "bookingOk": 2,
   "aiFill": 1,
-  "phone": "+1 212-787-2000"
+  "phone": "+1 212-787-2000",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "08:00-18:00",
+   "07:30-18:00",
+   "07:30-18:00",
+   "07:30-18:00",
+   "07:30-19:00",
+   "07:30-19:00",
+   "08:00-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-kossar-s",
@@ -24670,7 +24771,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 888-465-6772",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-the-pickle-guys",
@@ -24695,7 +24797,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 212-656-9739",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-kikoo-sushi",
@@ -24717,7 +24820,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "inconnu",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-akimori",
@@ -24743,7 +24847,8 @@
   "aiFill": 1,
   "noPhone": 1,
   "ogTry": 2,
-  "photo": "https://images.squarespace-cdn.com/content/v1/6227e7c8ce356111dc47a21f/014ad445-8ab3-474b-a0e1-0d98d3e38a6d/DSC04274.JPG"
+  "photo": "https://images.squarespace-cdn.com/content/v1/6227e7c8ce356111dc47a21f/014ad445-8ab3-474b-a0e1-0d98d3e38a6d/DSC04274.JPG",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-tempura",
@@ -24770,7 +24875,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-7th-street-burger",
@@ -24794,7 +24900,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "resa": "sans",
-  "noPhone": 1
+  "noPhone": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "11:00-04:00",
+   "11:00-04:00",
+   "11:00-04:00",
+   "11:00-04:00",
+   "11:00-04:00",
+   "11:00-04:00",
+   "11:00-04:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-bis",
@@ -24822,7 +24940,8 @@
   "commonsTry": 1,
   "photo": "https://cdn6.localdatacdn.com/images/9048358/d_bis_photo.jpg?q=6a992df58ed79",
   "photoSrc": "https://www.restaurantji.com/ny/new-york/bis-/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-zinc-bar",
@@ -24848,7 +24967,8 @@
   "resa": "inconnu",
   "ogTry": 2,
   "pressTry": 1,
-  "photo": "https://media.timeout.com/images/100532263/image.jpg"
+  "photo": "https://media.timeout.com/images/100532263/image.jpg",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-tavern-29",
@@ -24872,7 +24992,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 212-685-4229",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-bangia",
@@ -24896,7 +25017,8 @@
   "booking": "https://client.minitable.net/c_reservation?sid=sea7ff9ab5aab7d88639352a68b760804",
   "bookingOk": 2,
   "aiFill": 1,
-  "phone": "+1 212-683-1132"
+  "phone": "+1 212-683-1132",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-sveta",
@@ -24921,7 +25043,8 @@
   "aiFill": 1,
   "phone": "+1 212-620-0920",
   "lat": 40.729671,
-  "lng": -74.004156
+  "lng": -74.004156,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-manhatta",
@@ -24943,7 +25066,8 @@
   "booking": "https://www.opentable.com/r/manhatta-new-york",
   "bookingOk": 2,
   "aiFill": 1,
-  "phone": "+1 212-230-5788"
+  "phone": "+1 212-230-5788",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-twenty-three-grand",
@@ -24966,7 +25090,8 @@
   "enriched": 5,
   "photo": "https://www.twentythreegrand.com/wp-content/uploads/2021/04/veranda-meta-share-1024x538.jpg",
   "aiFill": 1,
-  "phone": "+1 212-966-2323"
+  "phone": "+1 212-966-2323",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-perrine",
@@ -24995,7 +25120,19 @@
   "photo": "https://symphony.cdn.tambourine.com/perrine-restaurant/media/perrinerestaurant-bestluxuryhotelsnewyorkcity-673f985b7c596.jpg",
   "photoSrc": "https://www.perrinenyc.com/",
   "photoManual": 1,
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "07:00-22:30",
+   "07:00-22:30",
+   "07:00-22:30",
+   "07:00-22:30",
+   "07:00-23:00",
+   "07:00-23:00",
+   "07:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-izakaya-nana",
@@ -25018,7 +25155,8 @@
   "booking": "https://www.izakayanana.com/",
   "bookingOk": 2,
   "aiFill": 1,
-  "phone": "+1 718-359-5888"
+  "phone": "+1 718-359-5888",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-lafayette",
@@ -25041,7 +25179,19 @@
   "photo": "https://images.getbento.com/accounts/229072ec86f44588c6e94cd077743323/media/images/61148Lafayette_Scrolling.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=FFFFFF&pad=100",
   "instagram": "lafayette380",
   "aiFill": 1,
-  "phone": "+1 212-533-3000"
+  "phone": "+1 212-533-3000",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "08:00-21:00",
+   "08:00-21:00",
+   "08:00-21:00",
+   "08:00-21:00",
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-21:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-los-tacos-no-1",
@@ -25066,7 +25216,19 @@
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/510cbf777fe58cdd68961f978be1dd35/media/images/48986los-tacos-mobile-sign.jpg",
   "bookingScan": 1,
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "10:00-22:00",
+   "10:00-22:00",
+   "10:00-22:00",
+   "10:00-22:00",
+   "10:00-23:00",
+   "10:00-23:00",
+   "10:00-21:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-lexington-candy-shop",
@@ -25090,7 +25252,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 212-288-0057",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "08:00-16:00",
+   "08:00-16:00",
+   "08:00-16:00",
+   "08:00-16:00",
+   "08:00-16:00",
+   "08:00-16:00",
+   "08:00-16:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-levain-bakery",
@@ -25114,7 +25288,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 917-464-3769",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "08:00-19:00",
+   "08:00-19:00",
+   "08:00-19:00",
+   "08:00-19:00",
+   "08:00-19:00",
+   "08:00-19:00",
+   "08:00-19:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-ess-a-bagel",
@@ -25138,7 +25324,19 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 212-533-1592",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "06:00-17:00",
+   "06:00-17:00",
+   "06:00-17:00",
+   "06:00-17:00",
+   "06:00-17:00",
+   "06:00-17:00",
+   "06:00-17:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-mei-lai-wah",
@@ -25166,7 +25364,19 @@
   "commonsTry": 1,
   "photo": "https://meilaiwahnyc.com/images/mei-lai-wah-bakery-41-mott-street-storefront.jpg",
   "photoSrc": "https://meilaiwahnyc.com/",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "07:30-21:00",
+   "07:30-21:00",
+   "07:30-21:00",
+   "07:30-21:00",
+   "07:30-21:00",
+   "07:30-21:00",
+   "07:30-21:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-prince-street-pizza",
@@ -25193,7 +25403,19 @@
   "resa": "sans",
   "ogTry": 2,
   "pressTry": 1,
-  "photo": "https://princestreetpizza.com/wp-content/uploads/2026/11/psp-personal-prince-popup.webp"
+  "photo": "https://princestreetpizza.com/wp-content/uploads/2026/11/psp-personal-prince-popup.webp",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-05:00",
+   "10:00-05:00",
+   "10:00-04:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-au-cheval",
@@ -25218,7 +25440,19 @@
   "aiFill": 1,
   "phone": "+1 212-256-0020",
   "booking": "https://resy.com/cities/new-york-ny/venues/au-cheval",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-01:00",
+   "11:00-01:00",
+   "11:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-katz-s-delicatessen",
@@ -25242,7 +25476,19 @@
   "booking": "https://katzsdelicatessen.com/group-reservations",
   "bookingOk": 2,
   "aiFill": 1,
-  "phone": "+1 212-254-2246"
+  "phone": "+1 212-254-2246",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "08:00-22:45",
+   "08:00-22:45",
+   "08:00-22:45",
+   "08:00-22:45",
+   "08:00-02:45",
+   "08:00-02:45",
+   "08:00-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "ig-new-york-the-dickens",
@@ -25264,7 +25510,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 646-964-5192",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-ortomare",
@@ -25289,7 +25536,8 @@
   "ogTry": 2,
   "pressTry": 1,
   "commonsTry": 1,
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-kaiten-zushi",
@@ -25313,7 +25561,8 @@
   "booking": "https://resy.com/?extlink=ps-US-Resy-Brand-Conversion-Evergreen&gclsrc=aw.ds&gad_source=1&gad_campaignid=11097352452&gbraid=0AAAAADRRHWPnT1xcV-60vuLDtLfFvL5qO&gclid=CjwKCAjwlaTGBhANEiwAoRgXBYcL2_FpvR1hU2R_H6-lV_dWnl7XZQ43Hg9aEwmWJj3xafqlTooWGRoCDQIQAvD_BwE&date=2025-09-16&seats=2",
   "bookingOk": 2,
   "aiFill": 1,
-  "phone": "+1 212-689-8999"
+  "phone": "+1 212-689-8999",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-lost-in-paradise",
@@ -25335,7 +25584,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 718-433-1499",
-  "resa": "inconnu"
+  "resa": "inconnu",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-deluxe-green-bo",
@@ -25360,7 +25610,8 @@
   "instagram": "deluxegreenbo",
   "aiFill": 1,
   "phone": "+1 212-625-2359",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-shanghai-21",
@@ -25384,7 +25635,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 212-766-0366",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-joe-s-ginger",
@@ -25409,7 +25661,8 @@
   "instagram": "joesgingernyc",
   "aiFill": 1,
   "phone": "+1 212-233-5588",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-mott-street-eatery",
@@ -25436,7 +25689,8 @@
   "commonsTry": 1,
   "photo": "https://cdn.wherevi.com/781-wvphoto-1.jpg",
   "photoSrc": "https://mott-street-eatery.wherevi.com/menu.html",
-  "photoManual": 1
+  "photoManual": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-mimi-cheng-s",
@@ -25460,7 +25714,8 @@
   "bookingScan": 1,
   "aiFill": 1,
   "phone": "+1 212-343-1135",
-  "resa": "sans"
+  "resa": "sans",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-new-york-spicy-moon",
@@ -27095,7 +27350,8 @@
   "noMenu": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "ig-ramat-gan-tre",
@@ -34836,7 +35092,19 @@
   "searched": 1,
   "photo": "https://cdn.sanity.io/images/v3ujbg13/production/69b061cfde8914b5c3d83bb56871b94813725bb5-1200x643.jpg?w=1200&auto=format",
   "booking": "https://www.sevenrooms.com/explore/gloriaparis/reservations/create/search?tracking=gloria-osteria-site",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-23:00",
+   "12:00-14:15,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "bigmamma-pizzeria-popolare",
@@ -34862,7 +35130,19 @@
   "enriched": 5,
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/pizzeria-popolare-r845334",
-  "pressTry": 1
+  "pressTry": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-23:00",
+   "11:45-14:15,18:45-23:00",
+   "11:45-14:30,18:45-23:00",
+   "11:45-14:30,18:45-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "bigmamma-pink-mamma",
@@ -34889,7 +35169,19 @@
   "booking": "https://www.sevenrooms.com/explore/pinkmamma/reservations",
   "bookingOk": 2,
   "searched": 1,
-  "pressTry": 1
+  "pressTry": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-23:00",
+   "11:45-14:15,18:45-23:00",
+   "11:45-14:30,18:45-23:00",
+   "11:45-14:30,18:45-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "bigmamma-libertino",
@@ -34914,7 +35206,19 @@
   "enriched": 5,
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/libertino-r845336",
-  "pressTry": 1
+  "pressTry": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-23:00",
+   "12:00-14:15,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "bigmamma-ober-mamma",
@@ -34939,7 +35243,19 @@
   "enriched": 5,
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/ober-mamma-r845333",
-  "pressTry": 1
+  "pressTry": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-22:45",
+   "12:00-14:15,19:00-23:00",
+   "12:00-14:15,19:00-23:00",
+   "12:00-14:30,19:00-23:00",
+   "12:00-14:30,19:00-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "bigmamma-east-mamma",
@@ -34964,7 +35280,19 @@
   "enriched": 5,
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/east-mamma-r845335",
-  "pressTry": 1
+  "pressTry": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-23:00",
+   "11:45-14:15,18:45-23:00",
+   "11:45-14:30,18:45-23:00",
+   "11:45-14:30,18:45-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "bigmamma-mamma-primi",
@@ -34988,7 +35316,19 @@
   "searched": 1,
   "booking": "https://www.thefork.fr/restaurant/mamma-primi-r845339",
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-22:45",
+   "11:45-14:15,18:45-23:00",
+   "11:45-14:15,18:45-23:00",
+   "11:45-14:30,18:45-23:00",
+   "11:45-14:30,18:45-22:45"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "u-mw75y5krckxf",
@@ -35013,7 +35353,19 @@
   "bookingOk": 2,
   "aiFill": 1,
   "ogTry": 2,
-  "photo": "https://resizer.otstatic.com/v4/photos/95564383-2?width=640&height=640"
+  "photo": "https://resizer.otstatic.com/v4/photos/95564383-2?width=640&height=640",
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-22:00",
+   "12:00-14:30,19:00-22:00",
+   "12:00-14:30,19:00-22:00",
+   "12:00-14:30,19:00-22:00",
+   "12:00-14:30,19:00-22:00",
+   ""
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "u-mw762sjzd6yf",
@@ -35036,7 +35388,8 @@
   "enriched": 5,
   "phone": "01 72 68 50 89",
   "ogTry": "2|https://lademocratierestaurant.com|https://www.thefork.fr/restaurant/la-democratie-r748586",
-  "photo": "https://lademocratierestaurant.com/wp-content/uploads/lademocratie-carte-noel-2026.jpg"
+  "photo": "https://lademocratierestaurant.com/wp-content/uploads/lademocratie-carte-noel-2026.jpg",
+  "ohTry": "2026-11-14"
  },
  {
   "id": "u-mw8wrip8atrx",
@@ -35060,7 +35413,19 @@
   "enriched": 5,
   "searched": 1,
   "photo": "https://static.wixstatic.com/media/2837c4_424f28a9d6da4f5e82c071c607fd52d4~mv2.png/v1/fill/w_738,h_299,al_c/2837c4_424f28a9d6da4f5e82c071c607fd52d4~mv2.png",
-  "bookingScan": 1
+  "bookingScan": 1,
+  "ohTry": "2026-11-14",
+  "oh": [
+   "",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30",
+   "12:00-14:30,19:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-14"
  },
  {
   "id": "u-mw93a0ymmt97",
@@ -35087,7 +35452,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "u-mw93a0ymmt97-2",
@@ -35114,7 +35480,8 @@
   "noPhone": 1,
   "ogTry": 2,
   "pressTry": 1,
-  "commonsTry": 1
+  "commonsTry": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "u-mw9eh3oygqxo",
@@ -35207,7 +35574,8 @@
   "pressTry": 1,
   "lat": 48.868942,
   "lng": 2.360165,
-  "searched": 1
+  "searched": 1,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "u-mw9y051qd04s",
@@ -35235,7 +35603,8 @@
   "enriched": 5,
   "photo": "https://framerusercontent.com/images/LyoCS6ySnr6b0fBpZfiVtpptKk.jpg?width=1000&height=1499",
   "booking": "https://bookings.zenchef.com/results?rid=377296&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "u-mwato9gx9nau",
@@ -35264,7 +35633,8 @@
   "photo": "https://framerusercontent.com/images/yORkZe0hwY7U8iUErKuLZMA2kvw.jpg",
   "phone": "01 53 83 09 41",
   "booking": "https://bookings.zenchef.com/results?rid=387472&lang=fr",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-14"
  },
  {
   "id": "u-mwc0e0bfshk0",
