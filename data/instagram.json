@@ -6507,24 +6507,6 @@
   "resa": "sans"
  },
  {
-  "id": "ig-new-york-hot-dogs-des-veterans-devant-le-met",
-  "list": "villes",
-  "name": "Hot-dogs des vétérans (devant le Met)",
-  "cat": "Street food",
-  "address": "Fifth Ave & E 82nd St, New York, NY 10028",
-  "arr": null,
-  "summary": "Upper East Side. Les « meilleurs hot-dogs » selon la liste : chariot tenu par des vétérans sur la 5e Avenue, devant le Metropolitan Museum. Pas de numéro, pas de menu en ligne.",
-  "source": "Liste Google Maps « Resto NYC »",
-  "price": 1,
-  "priceSrc": "estim",
-  "city": "New York",
-  "resa": "sans",
-  "noPhone": 1,
-  "noMenu": 1,
-  "lat": 40.7788912,
-  "lng": -73.9624252
- },
- {
   "id": "ig-new-york-los-mariscos",
   "list": "villes",
   "name": "Los Mariscos",
@@ -7375,23 +7357,6 @@
   "website": "https://milonindianrestaurant.com/",
   "resa": "inconnu",
   "noMenu": 1
- },
- {
-  "id": "ig-new-york-shake-shack-herald-square",
-  "list": "villes",
-  "name": "Shake Shack – Herald Square",
-  "cat": "Burger",
-  "address": "1333 Broadway, New York, NY 10018",
-  "arr": null,
-  "summary": "Herald Square. Le burger new-yorkais devenu chaîne (ShackBurger, frozen custard). Il y a des dizaines d'autres Shake Shack à New York.",
-  "source": "Liste Google Maps « Resto NYC »",
-  "price": 1,
-  "priceSrc": "estim",
-  "city": "New York",
-  "phone": "+1 646-230-0696",
-  "website": "https://www.shakeshack.com/location/herald-square-ny",
-  "menu": "https://shakeshack.com/",
-  "resa": "sans"
  },
  {
   "id": "ig-new-york-5-napkin-burger-hell-s-kitchen",
