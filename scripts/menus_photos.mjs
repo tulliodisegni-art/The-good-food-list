@@ -105,11 +105,12 @@ function anchors(html, base) {
   return out;
 }
 const CITIES = ["paris", "london", "londres", "dubai", "doha", "riyadh", "abu-dhabi", "new-york", "nyc", "miami", "los-angeles", "las-vegas", "monaco", "monte-carlo", "cannes", "nice", "saint-tropez", "st-tropez", "courchevel", "megeve", "mykonos", "ibiza", "marbella", "madrid", "barcelona", "milan", "milano", "rome", "roma", "geneve", "geneva", "zurich", "bruxelles", "brussels", "amsterdam", "berlin", "lisbon", "lisbonne", "istanbul", "tel-aviv", "jerusalem", "marrakech", "casablanca", "beirut", "mexico", "tokyo", "hong-kong", "singapore", "bangkok", "lyon", "bordeaux", "marseille", "chicago", "boston", "washington", "toronto", "montreal", "sao-paulo", "lima", "bahrain", "kuwait", "cairo", "tunis", "athens", "athenes", "budapest", "prague", "vienna", "vienne", "munich", "frankfurt", "dublin", "edinburgh", "manchester", "brooklyn", "miami-beach", "dallas", "houston", "austin", "san-francisco", "seoul", "shanghai", "beijing", "sydney", "melbourne"];
-const cityOf = (p) => (p.list === "villes" ? norm(p.city || "") : "paris");
+const slug = (s) => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
+const cityOf = (p) => (p.list === "villes" ? slug(p.city) : "paris");
 function otherCity(u, p) {
   const segs = decodeURIComponent(u.pathname + " " + u.hostname).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(/[^a-z]+/).join("-");
   const mine = cityOf(p);
-  return CITIES.some((c) => norm(c) !== mine && !(mine === "telaviv" && c === "tel-aviv") && new RegExp(`(^|-)${c}(-|$)`).test(segs));
+  return CITIES.some((c) => c !== mine && !(mine.startsWith("tel-aviv") && c === "tel-aviv") && !(mine === "new-york" && /^(nyc|brooklyn)$/.test(c)) && new RegExp(`(^|-)${c}(-|$)`).test(segs));
 }
 function rankMenu(a, home, p) {
   if (p && otherCity(a.u, p)) return 0;
@@ -117,7 +118,7 @@ function rankMenu(a, home, p) {
   const same = a.u.hostname.replace(/^www\./, "") === home.hostname.replace(/^www\./, "");
   if (NOT_MENU.test(href.replace(/[?#].*$/, "")) && !/menu|carte/i.test(path.split("/").pop() || "")) return 0;
   if (NOT_MENU.test(a.label) && !MENU_TEXT.test(a.label)) return 0;
-  if (/carte[-_ ]?(cadeau|blanche|fid|des? (lieux|accès))|voir la carte|sur la carte|map/i.test(a.label + " " + path)) return 0;
+  if (/carte[-_ ]?(cadeau|blanche|jaune|noire|fid|des? (lieux|accès))|voir la carte|sur la carte|map|champagne\/\d|produit|product/i.test(a.label + " " + path)) return 0;
   if (same && (a.u.pathname === home.pathname || a.u.pathname === "/") && !a.u.hash) return 0;
   let s = 0;
   if (a.embed) s += 6;
@@ -291,6 +292,7 @@ async function work(p) {
   if (found) { menus[p.id] = { menu: found.menu, how: found.how }; Object.assign(rec, { menu: found.menu, how: found.how, label: found.label || "", score: found.score || null }); }
   else { menus[p.id] = { menu: "", how: "google" }; rec.how = "google"; }
   // Photos : accueil + page menu + page galerie, sur le site du lieu seulement.
+  if (process.env.MENUS_ONLY) { done++; console.log(`${done}/${total} ${p.list} · ${p.name} · menu: ${rec.how}${rec.menu ? " " + rec.menu : ""}`); return; }
   if (home && home.html && home.status < 400 && !grp) {
     const base = new URL(home.url);
     const pages = [home];

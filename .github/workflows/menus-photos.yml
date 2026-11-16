@@ -23,11 +23,12 @@ jobs:
         run: |
           export ONLY=$(jq -r '.only // ""' .github/galerie/run.json)
           export LIMIT=$(jq -r '.limit // 0' .github/galerie/run.json)
+          export MENUS_ONLY=$(jq -r '.menusOnly // ""' .github/galerie/run.json)
           node scripts/menus_photos.mjs
       - name: Déposer sur la branche galerie-candidats
         if: always()
         run: |
-          RUN=$(jq -r '.only // ""' .github/galerie/run.json | tr ',' '-'); RUN=${RUN:-tout}
+          RUN=$(jq -r '.only // ""' .github/galerie/run.json | tr ',' '-'); RUN=${RUN:-tout}; [ "$(jq -r '.menusOnly // ""' .github/galerie/run.json)" = "" ] || RUN="$RUN-menus"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p /tmp/res && cp -r out "/tmp/res/$RUN"
