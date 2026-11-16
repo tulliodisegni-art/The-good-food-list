@@ -27,7 +27,7 @@ jobs:
       - name: Déposer sur la branche galerie-candidats
         if: always()
         run: |
-          RUN=$(jq -r '.only // "tout"' .github/galerie/run.json | tr ',' '-')
+          RUN=$(jq -r '.only // ""' .github/galerie/run.json | tr ',' '-'); RUN=${RUN:-tout}
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p /tmp/res && cp -r out "/tmp/res/$RUN"
