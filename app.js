@@ -1254,6 +1254,7 @@ $("#aiForm").addEventListener("submit", async (e) => {
     if (err?.message === "FB") { $("#linkUrl").value = link; $("#aiText").focus(); }
   } finally {
     go.disabled = false; go.classList.remove("busy");
+    pendingShare(null);
   }
 });
 $("#listPending").addEventListener("click", (e) => {
@@ -1436,16 +1437,30 @@ async function boot() {
   if (!cached.length) start();
   else if (current && !$("#sheet").hidden && S.places.some((p) => p.id === current.id)) openSheet(current.id, true);
 }
+// Partage en attente (lien reçu depuis Instagram, TikTok, Facebook…), valable 3 minutes dans cet onglet.
+function pendingShare(v) {
+  try {
+    if (v === null) { sessionStorage.removeItem("gfl.share"); return; }
+    if (v) { sessionStorage.setItem("gfl.share", JSON.stringify({ v, at: Date.now() })); return; }
+    const p = JSON.parse(sessionStorage.getItem("gfl.share") || "null");
+    return p && Date.now() - p.at < 180000 ? p.v : (sessionStorage.removeItem("gfl.share"), "");
+  } catch { return ""; }
+}
+window.gfShareBusy = () => !!pendingShare() || !!$("#aiGo")?.classList.contains("busy");
 function start() {
   // L'appli s'ouvre toujours sur l'accueil, sauf lien direct vers la carte ou l'ajout.
   const h0 = location.hash.slice(1);
   if (!["carte", "ajouter", "precieuses", "envies"].includes(h0)) history.replaceState(null, "", location.pathname + location.search);
   // Partagé depuis Instagram (menu Partager ou raccourci iPhone) : ?lien=…&texte=… → lecture par l'IA.
   const qs = new URLSearchParams(location.search);
-  const shared = [qs.get("lien"), qs.get("texte"), qs.get("titre")].filter(Boolean).join(" ").trim();
+  let shared = [qs.get("lien"), qs.get("texte"), qs.get("titre")].filter(Boolean).join(" ").trim();
+  // Le lien partagé est aussi gardé dans l'onglet : si la page se recharge juste après l'ouverture
+  // (synchro du compte au premier lancement), on le reprend au lieu de le perdre.
+  if (shared) pendingShare(shared);
+  else if (!qs.toString()) shared = pendingShare() || "";
   if (collFromLink(qs)) { /* collection reçue par lien */ }
   else if (shared) {
-    history.replaceState(null, "", location.pathname);
+    history.replaceState(null, "", location.pathname + "#ajouter");
     const url = (shared.match(/https?:\/\/\S+/) || [""])[0];
     const rest = shared.replace(url, "").trim();
     location.hash = "ajouter"; show("ajouter");

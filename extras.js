@@ -856,8 +856,10 @@ function gfSync() {
     }
     Acc.markSynced();
     // Les adresses se mettent à jour sans recharger la page : une fiche en cours de remplissage n'est pas perdue.
-    if (changed) location.reload();
-    else if (lists) { rebuild(); renderAll(); }
+    // Pas de rechargement pendant la lecture d'un lien partagé : il serait perdu (bug du « premier partage »).
+    // Les réglages reçus sont déjà enregistrés et servent à l'ouverture suivante.
+    if (changed && !(window.gfShareBusy && window.gfShareBusy())) location.reload();
+    else if (lists || changed) { rebuild(); renderAll(); }
   })().catch(() => {}).finally(() => { gfSyncing = null; });
   return gfSyncing;
 }
