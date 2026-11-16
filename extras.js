@@ -15,39 +15,53 @@ applyTheme(store.get("theme", ""));
 const FRESH = 20 * 60 * 1000;
 { const last = store.get("me", null); if (last && Date.now() - last.t < FRESH) S.me = last; }
 let locating = null, watching = null, geoDenied = false;
-// Une seule demande d'autorisation par ouverture de l'appli : après le premier « Autoriser », on suit la position
-// en continu (watchPosition) au lieu de la redemander à chaque bouton.
+// Position autorisée une fois → on s'en souvient (geoOk) : ensuite on la suit en continu (watchPosition)
+// dès l'ouverture de la carte, sans attendre un bouton, et on ne la redemande jamais pendant que l'appli est ouverte.
+const geoOk = () => !!store.get("geoOk", 0);
+const savePos = (pos) => {
+  S.me = { lat: pos.coords.latitude, lng: pos.coords.longitude, t: Date.now() };
+  store.set("me", S.me); store.set("geoOk", 1);
+  if (typeof showMe === "function") showMe();
+  return S.me;
+};
 function startWatch() {
-  if (watching != null || !navigator.geolocation) return;
-  watching = navigator.geolocation.watchPosition((pos) => {
-    S.me = { lat: pos.coords.latitude, lng: pos.coords.longitude, t: Date.now() };
-    store.set("me", S.me);
-  }, () => {}, { enableHighAccuracy: true, maximumAge: 30000 });
+  if (watching != null || geoDenied || !navigator.geolocation) return;
+  watching = navigator.geolocation.watchPosition(savePos, (err) => {
+    if (err.code === 1) { geoDenied = true; store.set("geoOk", 0); navigator.geolocation.clearWatch(watching); watching = null; }
+  }, { enableHighAccuracy: true, maximumAge: 30000 });
 }
 function locateMe(force) {
   const last = store.get("me", null);
-  if (!force && last && Date.now() - last.t < FRESH) { S.me = last; return Promise.resolve(last); }
+  if (!force && last && Date.now() - last.t < FRESH) { S.me = last; if (geoOk()) startWatch(); return Promise.resolve(last); }
   // Position déjà suivie : pas de nouvelle demande.
   if (watching != null && S.me && Date.now() - S.me.t < 600000) return Promise.resolve(S.me);
-  if (geoDenied) { toast("Position refusée : autorise-la dans les réglages du téléphone"); return Promise.reject(new Error("refusé")); }
+  if (geoDenied) { toast("Position refusée : Réglages › Safari › Position › Autoriser"); return Promise.reject(new Error("refusé")); }
   if (locating) return locating;
   locating = new Promise((resolve, reject) => {
     if (!navigator.geolocation) { reject(new Error("indisponible")); return; }
-    navigator.geolocation.getCurrentPosition((pos) => {
-      S.me = { lat: pos.coords.latitude, lng: pos.coords.longitude, t: Date.now() };
-      store.set("me", S.me); store.set("geoOk", 1); startWatch(); resolve(S.me);
-    }, (err) => {
-      if (err.code === 1) geoDenied = true;
-      toast("Position indisponible : autorise-la dans les réglages du téléphone"); reject(err);
+    navigator.geolocation.getCurrentPosition((pos) => { resolve(savePos(pos)); startWatch(); }, (err) => {
+      if (err.code === 1) { geoDenied = true; store.set("geoOk", 0); }
+      toast("Position indisponible : Réglages › Safari › Position › Autoriser"); reject(err);
     }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 60000 });
   }).finally(() => { locating = null; });
   return locating;
 }
+// Carte ouverte : si la position a déjà été autorisée une fois, on se localise tout seul.
+// La dernière position connue s'affiche tout de suite, en attendant la nouvelle.
+let mapCentered = false;
+function autoLocateOnMap() {
+  if (!geoOk() || geoDenied) return;
+  if (!S.me) { const last = store.get("me", null); if (last) S.me = last; }
+  if (typeof showMe === "function") showMe();
+  const center = (me) => { if (!mapCentered && typeof map !== "undefined" && map && me) { mapCentered = true; map.setView([me.lat, me.lng], 15); } };
+  if (watching != null && S.me && Date.now() - S.me.t < 120000) { center(S.me); return; }
+  locateMe(true).then(center).catch(() => {});
+}
 // Si la position est déjà autorisée, on la suit sans rien demander.
 navigator.permissions?.query({ name: "geolocation" }).then((st) => {
-  if (st.state === "granted") { startWatch(); locateMe(true).then(() => renderAll()).catch(() => {}); }
-  if (st.state === "denied") geoDenied = true;
-  st.onchange = () => { geoDenied = st.state === "denied"; if (st.state === "granted") startWatch(); };
+  if (st.state === "granted") { store.set("geoOk", 1); startWatch(); locateMe(true).then(() => renderAll()).catch(() => {}); }
+  if (st.state === "denied") { geoDenied = true; store.set("geoOk", 0); }
+  st.onchange = () => { geoDenied = st.state === "denied"; if (st.state === "granted") { store.set("geoOk", 1); startWatch(); } };
 }).catch(() => {});
 
 // ---------- Partager ----------
