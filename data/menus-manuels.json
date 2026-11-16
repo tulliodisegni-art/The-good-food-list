@@ -1,0 +1,42 @@
+{
+ "precieuses-0-soiree-le-bristol": {
+  "menu": "https://www.oetkerhotels.com/fr/hotels/le-bristol-paris/menu-du-bar",
+  "how": "manuel"
+ },
+ "precieuses-0-resto-hotel-le-collectionneur": {
+  "menu": "https://www.hotelducollectionneur.com/experience/restaurant",
+  "how": "manuel"
+ },
+ "ig-paris-ristorante-national": {
+  "menu": "https://www.hotelnational.paris/en/page/restaurant-bar-paris-marais.21544.html",
+  "how": "manuel"
+ },
+ "precieuses-0-resto-au-pied-de-cochon": {
+  "menu": "https://www.pieddecochon.com/menus-carte",
+  "how": "manuel"
+ },
+ "precieuses-0-resto-fouquet-s": {
+  "menu": "https://www.fouquets-paris.com/collection-fouquet-s/paris/restaurants-et-bars/brasserie-fouquet-s-paris/menu",
+  "how": "manuel"
+ },
+ "precieuses-0-resto-beefbar": {
+  "menu": "https://beefbar.com/menus-paris",
+  "how": "manuel"
+ },
+ "precieuses-0-resto-la-fontaine-de-mars": {
+  "menu": "https://www.fontaine-de-mars.com/wp-content/uploads/2026/07/MENU-ANGLAIS-FDM-AVRIL-2026.pdf",
+  "how": "manuel"
+ },
+ "precieuses-0-resto-le-relais-plaza": {
+  "menu": "https://www.dorchestercollection.com/fr/paris/hotel-plaza-athenee/restaurants-bars/le-relais-plaza",
+  "how": "manuel"
+ },
+ "paris-1-francais-pied-de-cochon": {
+  "menu": "https://www.pieddecochon.com/menus-carte",
+  "how": "manuel"
+ },
+ "paris-8-francais-beefbar": {
+  "menu": "https://beefbar.com/menus-paris",
+  "how": "manuel"
+ }
+}

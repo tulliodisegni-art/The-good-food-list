@@ -85,6 +85,20 @@ def main():
         for key, val in prev.items():
             if val and not p.get(key):
                 p[key] = val
+    # Vrais liens des menus, relevés sur le site de chaque lieu et vérifiés (scripts/menus_photos.mjs) :
+    # page « Carte / Menu » ou PDF du site ; sinon le menu affiché par Google.
+    menus_file = DATA / "menus.json"
+    if menus_file.exists():
+        menus = json.loads(menus_file.read_text(encoding="utf-8"))
+        for p in places:
+            m = menus.get(p["id"])
+            if not m:
+                continue
+            if m.get("menu"):
+                p["menu"], p["menuSrc"] = m["menu"], "site"
+            else:
+                p.pop("menu", None)
+                p["menuSrc"] = "google"
     # Corrections publiées depuis l'appli (classement, infos) : elles priment sur les notes.
     fixes = DATA / "modifs.json"
     if fixes.exists():
