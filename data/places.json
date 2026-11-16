@@ -29962,7 +29962,8 @@
   "photo": "https://imageproxy.wolt.com/assets/6930053aaa9ccb024feeccba",
   "photoSrc": "https://wolt.com/en/isr/jerusalem/restaurant/bisrabak-jerusalem",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-alena",
@@ -29990,7 +29991,8 @@
   "photo": "https://renderings.laboetie.io/media/IxV9zb8hm4VscSdD6joxK/w1920",
   "photoSrc": "https://taamtaam.com/restaurants/rishonlezion/alena",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-chikos",
@@ -30018,7 +30020,8 @@
   "photo": "https://imageproxy.wolt.com/assets/69970258017a1a25739f0eb4",
   "photoSrc": "https://wolt.com/en/isr/rishon-lezion-hashfela-area/restaurant/chikos-rl",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-petah-tikva-la-carne",
@@ -30044,7 +30047,8 @@
   "photo": "https://la-carne.co.il/wp-content/uploads/2025/07/section-02.webp",
   "photoSrc": "https://la-carne.co.il/",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-pane-bakery",
@@ -30072,7 +30076,8 @@
   "photo": "https://imageproxy.wolt.com/assets/6972283b31c080cd8a6f2f3b",
   "photoSrc": "https://wolt.com/en/isr/rishon-lezion-hashfela-area/restaurant/pane-bakery-rs",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-sin-city-burger",
@@ -30100,7 +30105,8 @@
   "photo": "https://imageproxy.wolt.com/assets/6732075080eb896202a8a3ae",
   "photoSrc": "https://wolt.com/en/isr/rishon-lezion-hashfela-area/restaurant/sin-city-burger-rishon-lezion",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-nes-ziona-hamishkan",
@@ -30128,7 +30134,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://www.hamishkan.co.il/menu/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-jerusalem-segev-batayelet",
@@ -30152,7 +30159,8 @@
   "pressTry": 1,
   "igSearched": 1,
   "instagram": "segev.batayelet",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-jerusalem-meat-time",
@@ -30180,7 +30188,8 @@
   "photo": "https://itin-dev.wanderlogstatic.com/freeImageSmall/X6f7jpWr3Lmgmhk6BO07AgVMQxqOuUYj",
   "photoSrc": "https://wanderlog.com/place/details/14759990/%D7%9E%D7%99%D7%98-%D7%98%D7%99%D7%99%D7%9D-meat-time-%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-hod-hasharon-saporito",
@@ -30210,7 +30219,8 @@
   "photo": "https://imageproxy.wolt.com/assets/682b3196e44164d2e49c6fb4",
   "photoSrc": "https://wolt.com/en/isr/hasharon/restaurant/saporito-hod-hasharon",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-ramat-gan-shawarma-hasultan",
@@ -30235,7 +30245,8 @@
   "resa": "sans",
   "pressTry": 1,
   "igSearched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-ramat-gan-tzaharaim",
@@ -30258,7 +30269,8 @@
   "searched": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-nes-ziona-kitchen-brasserie",
@@ -30288,7 +30300,8 @@
   "photo": "https://imageproxy.wolt.com/assets/6771164492572573a3273086",
   "photoSrc": "https://wolt.com/en/isr/rishon-lezion-hashfela-area/restaurant/kitchen-by-greg-ness-ziona",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-hod-hasharon-chop-chop",
@@ -30318,7 +30331,8 @@
   "photo": "https://imageproxy.wolt.com/assets/67331ca97bab6c09ab92f85a",
   "photoSrc": "https://wolt.com/en/isr/hasharon/restaurant/amana-pita-chef-hh",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-yehud-doner-grill-express",
@@ -30344,7 +30358,8 @@
   "pressTry": 1,
   "igSearched": 1,
   "instagram": "doner.grill",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-pop-roll",
@@ -30367,7 +30382,8 @@
   "searched": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-pizza-shalachmecha",
@@ -30392,7 +30408,8 @@
   "searched": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-mifgash-hasteak",
@@ -30418,7 +30435,8 @@
   "resa": "telephone",
   "pressTry": 1,
   "igSearched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-lod-pickup-burger",
@@ -30448,7 +30466,8 @@
   "photo": "https://cdn.top-rated.online/places/ChIJHUWCTxHLAhURXR3hI5B3y3g/1d57f48743d5470177046a724d99c5e378b792ada629811d47f34294f457dd6d.webp",
   "photoSrc": "https://www.top-rated.online/cities/Lod/place/p/10625840/Pick+Up+Burger",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-nes-ziona-autentica",
@@ -30473,7 +30492,8 @@
   "searched": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-petah-tikva-shipudei-chen",
@@ -30501,7 +30521,8 @@
   "photo": "https://imageproxy.wolt.com/assets/67332fba8e594205e10116a3",
   "photoSrc": "https://wolt.com/en/isr/petah-tikva/restaurant/shipudei-chen",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-lod-jerusalem-lod",
@@ -30528,7 +30549,8 @@
   "searched": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-bnei-brak-parmesan",
@@ -30556,7 +30578,8 @@
   "photo": "https://lrnzvqkolukyiuxffldm.supabase.co/storage/v1/object/public/deus-place-media/places/935ac126-2a2a-51fb-8fb7-63c15d6114a5/gallery/c17e8a855b1def9a031a279244630f5a6516749f70928bbdf73a1b60d8db911d.jpg",
   "photoSrc": "https://allplatforms.app/p/parmesan-bnei-brak/",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-holon-hadudka",
@@ -30581,7 +30604,8 @@
   "searched": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-nes-ziona-tokopaya",
@@ -30611,7 +30635,8 @@
   "bookingScan": 1,
   "resa": "inconnu",
   "menu": "https://tokopaya.co.il/menu/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-ramla-burgers-bar-ramla",
@@ -30640,7 +30665,8 @@
   "photo": "https://burgersbar.co.il/wp-content/uploads/2026/03/KARELA-6-3.jpg",
   "bookingScan": 1,
   "resa": "sans",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-jerusalem-pizza-pizini",
@@ -30665,7 +30691,8 @@
   "searched": 1,
   "resa": "sans",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-petah-tikva-sabich-concept",
@@ -30694,7 +30721,8 @@
   "photo": "https://imageproxy.wolt.com/assets/67331ce924e6e85f44324886",
   "photoSrc": "https://wolt.com/en/isr/petah-tikva/restaurant/sabich-concept",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-salon-yevani-rishon",
@@ -30719,7 +30747,8 @@
   "searched": 1,
   "resa": "telephone",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-umino-sushi",
@@ -30747,7 +30776,8 @@
   "photo": "https://uminosushi.co.il/assets/img/og-image-v2.jpg",
   "photoSrc": "https://uminosushi.co.il/",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-sorrento",
@@ -30770,7 +30800,8 @@
   "resa": "inconnu",
   "pressTry": 1,
   "igSearched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-nes-ziona-italianos-pizza",
@@ -30800,7 +30831,8 @@
   "photo": "https://cdn.foodbox.co.il/wp-content/uploads/sites/77/2022/06/14064348/%D7%90%D7%99%D7%98%D7%9C%D7%99%D7%A0%D7%95%D7%A1-%D7%A9%D7%99%D7%AA%D7%95%D7%A3.png",
   "photoSrc": "https://www.italianospizza.co.il/branch/%D7%A0%D7%A1-%D7%A6%D7%99%D7%95%D7%A0%D7%94/",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-beer-yaakov-mao-sushi",
@@ -30827,7 +30859,8 @@
   "searched": 1,
   "resa": "sans",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-herzliya-shifra-jamil",
@@ -30855,7 +30888,8 @@
   "photo": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/547133",
   "photoSrc": "https://www.jpost.com/food-recipes/article-753522",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-jerusalem-ayesha",
@@ -30878,7 +30912,8 @@
   "searched": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-campania",
@@ -30906,7 +30941,8 @@
   "photo": "https://img.eatoutmap.com/venues/3163461/80cc658f5a0d77cb.jpg",
   "photoSrc": "https://eatoutmap.com/en/israel/rishon-letsiyyon/campania",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-pita-picnic",
@@ -30929,7 +30965,8 @@
   "searched": 1,
   "resa": "inconnu",
   "pressTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-petah-tikva-rotisserie-chicken-club",
@@ -30957,7 +30994,8 @@
   "photo": "https://imageproxy.wolt.com/assets/67320818cc36c632963391a6",
   "photoSrc": "https://wolt.com/en/isr/petah-tikva/restaurant/rotisserie-chicken-club-petah-tikva",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-petah-tikva-arais-mahane-yehuda-petah-tikva",
@@ -30985,7 +31023,8 @@
   "photo": "https://imageproxy.wolt.com/assets/673208bf9c9a8161a751e1cb",
   "photoSrc": "https://wolt.com/en/isr/jerusalem/restaurant/arais-mahane-yehuda-jerusalem",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-rishon-lezion-habeer-the-well",
@@ -31010,7 +31049,8 @@
   "lat": 31.964203,
   "lng": 34.805307,
   "searched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-pasador",
@@ -31039,7 +31079,8 @@
   "photo": "https://www.passador.co.il/wp-content/uploads/2024/10/KARELA-09225.jpg",
   "bookingScan": 1,
   "menu": "https://www.passador.co.il/wp-content/uploads/2026/11/Passador_Menu_Alc_14x33-7.pdf",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-bat-yam-salami",
@@ -31064,7 +31105,8 @@
   "lat": 32.006006,
   "lng": 34.739684,
   "searched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-kiryat-ono-jethro",
@@ -31088,7 +31130,8 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "jethro_i",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-petah-tikva-memphis",
@@ -31114,7 +31157,8 @@
   "photo": "https://cdn.foodbox.co.il/wp-content/uploads/sites/41/2020/02/18112345/%D7%A4%D7%AA%D7%97-%D7%AA%D7%A7%D7%95%D7%95%D7%94.jpg",
   "photoSrc": "https://www.memphis.co.il/branch/%D7%A4%D7%AA%D7%97-%D7%AA%D7%A7%D7%95%D7%95%D7%94/",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-jerusalem-nevel-david-brasserie",
@@ -31137,7 +31181,8 @@
   "resa": "inconnu",
   "pressTry": 1,
   "searched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-orby",
@@ -31163,7 +31208,8 @@
   "photo": "https://itin-dev.wanderlogstatic.com/freeImageSmall/BIkM2WqCkN7ML4EmmIm4bSi2LE6Tghgf",
   "photoSrc": "https://wanderlog.com/place/details/8505109/cafe-orby",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-cafe-shneor",
@@ -31193,7 +31239,8 @@
   "booking": "https://www.shneor-cafe.com/book-a-table",
   "bookingOk": 2,
   "menu": "https://www.shneor-cafe.com/_files/ugd/fc293c_7b87ffd5c2044064b134e9ec3bb2a619.pdf",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-hamaniya",
@@ -31223,7 +31270,8 @@
   "photo": "https://static.wixstatic.com/media/4179b2_08510bf50a82408fa4f4a59933d0590c~mv2.jpg/v1/fill/w_2048,h_1572,al_c,q_90/271899875_3060642007598192_9179896771181773975_n.jpg",
   "photoSrc": "https://www.drinktlv.co.il/a/cafe/cafe-hamaniya",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-cafe-yom-tov",
@@ -31250,7 +31298,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-kirsh",
@@ -31278,7 +31327,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://kirshcafe239.wixsite.com/kirshcafe/menu",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-cafe-cucu",
@@ -31309,7 +31359,8 @@
   "photoSrc": "https://cafecucu.co.il/drinks/",
   "photoManual": 1,
   "menu": "https://cafecucu.co.il/food/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-cafe-puaa",
@@ -31337,7 +31388,8 @@
   "photo": "https://beneficial-cat-81e317eb01.media.strapiapp.com/unnamed_2026_07_16_T194846_635_a989a03d57.jpg",
   "photoSrc": "https://www.culinarywonderland.com/guides/places/cafe-puaa",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-vicky-cristina",
@@ -31365,7 +31417,8 @@
   "photoManual": 1,
   "igSearched": 1,
   "instagram": "vickycristinatlv",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-romano",
@@ -31390,7 +31443,8 @@
   "noMenu": 1,
   "searched": 1,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-port-said",
@@ -31418,7 +31472,8 @@
   "photo": "https://res.cloudinary.com/ontopo/image/upload/f_auto,q_auto,c_crop,x_0,y_429,w_1818,h_673/v1778572163/assets/62389697d6d6c31cd4cb583c/62389697d6d6c31cd4cb583c/2.jpg",
   "photoSrc": "https://ontopo.com/en/il/page/12622147",
   "photoManual": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-santa-katarina",
@@ -31445,7 +31500,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-habasta",
@@ -31470,7 +31526,8 @@
   "pressTry": 1,
   "searched": 1,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-pereh",
@@ -31497,7 +31554,8 @@
   "lng": 34.770034,
   "searched": 1,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-cafe-europa",
@@ -31524,7 +31582,8 @@
   "lng": 34.770247,
   "searched": 1,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-helena",
@@ -31553,7 +31612,8 @@
   "bookingOk": 2,
   "igSearched": 1,
   "instagram": "helena1telaviv",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-bar-51",
