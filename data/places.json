@@ -33327,7 +33327,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://www.popina.co.il/menus-1",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-cafe-popular",
@@ -33355,7 +33356,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://cafepopular.co.il/%d7%aa%d7%a4%d7%a8%d7%99%d7%98/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-bucke-ahad-ha-am",
@@ -33383,7 +33385,8 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/8c96e6_3e0241dcf2994f32b04dc9efdd2c700d~mv2.jpg/v1/fill/w_1920,h_710,fp_0.49_0.78,q_90,enc_avif,quality_auto/8c96e6_3e0241dcf2994f32b04dc9efdd2c700d~mv2.jpg",
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-bucke-yehuda-hamaccabi",
@@ -33411,7 +33414,8 @@
   "enriched": 5,
   "photo": "https://static.wixstatic.com/media/8c96e6_3e0241dcf2994f32b04dc9efdd2c700d~mv2.jpg/v1/fill/w_1920,h_710,fp_0.49_0.78,q_90,enc_avif,quality_auto/8c96e6_3e0241dcf2994f32b04dc9efdd2c700d~mv2.jpg",
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-cafe-xoho",
@@ -33439,7 +33443,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://ef123ad8-a8e4-4b18-9e97-5bdffc50c544.filesusr.com/ugd/10fbea_0c37aecee59f4b4e9f93603ccadfe5b5.pdf",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-rustico-rothschild",
@@ -33467,7 +33472,8 @@
   "enriched": 5,
   "photo": "https://www.rustico.co.il/'https://www.rustico.co.il/wp-content/uploads/2025/02/TINT_Rustico-002.jpg'",
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-rustico-basel",
@@ -33495,7 +33501,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://www.rustico.co.il/wp-content/uploads/2025/06/RUS_MENU_BAZEL_ENG.pdf",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-ab-cd",
@@ -33522,7 +33529,8 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "abcd",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-azura",
@@ -33549,7 +33557,8 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "azura_tlv",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-kab-kem",
@@ -33576,7 +33585,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-north-abraxas",
@@ -33603,7 +33613,8 @@
   "lng": 34.782387,
   "searched": 1,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-moon-pinsker",
@@ -33630,7 +33641,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-moon-bograshov",
@@ -33657,7 +33669,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-ca-phe-hanoi",
@@ -33682,7 +33695,8 @@
   "lat": 32.081382,
   "lng": 34.779914,
   "searched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-thai-house",
@@ -33710,7 +33724,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://www.thai-house.co.il/menus/%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a2%d7%a8%d7%91/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-suzana",
@@ -33740,7 +33755,8 @@
   "booking": "https://www.suzanatlv.co.il/book-online",
   "bookingOk": 2,
   "menu": "https://www.suzanatlv.co.il/menu",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-whiskey-bar-museum",
@@ -33769,7 +33785,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://www.whiskeybm.co.il/menu",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-sarona-market",
@@ -33796,7 +33813,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-claro",
@@ -33825,7 +33843,8 @@
   "photo": "https://static.wixstatic.com/media/3a3fc8_0c730ae8451741048eb0f242bd1c4890f000.jpg/v1/fill/w_160,h_90,al_c,q_80,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/3a3fc8_0c730ae8451741048eb0f242bd1c4890f000.jpg",
   "bookingScan": 1,
   "menu": "https://www.clarotlv.com/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-itzik-hagadol",
@@ -33852,7 +33871,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "searched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-tel-aviv-beit-kandinof",
@@ -33880,7 +33900,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://kandinof.co.il/menus/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-cote-flatiron",
@@ -33908,7 +33929,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-23:30",
+   "17:00-23:30",
+   "17:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-baekjeong-black",
@@ -33934,7 +33967,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-jongro-bbq",
@@ -33959,7 +33993,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-yeah-shanghai-deluxe",
@@ -33986,7 +34021,8 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-peking-duck-house",
@@ -34012,7 +34048,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-joe-s-shanghai",
@@ -34041,7 +34089,19 @@
   "bookingScan": 1,
   "igSearched": 1,
   "instagram": "joesshanghai",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-21:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-chinatown",
@@ -34068,7 +34128,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-21:00",
+   "11:00-21:00",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-chelsea",
@@ -34095,7 +34167,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-21:00",
+   "11:00-21:00",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-east-village",
@@ -34123,7 +34207,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-21:00",
+   "11:00-21:00",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-financial-district",
@@ -34151,7 +34247,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-lenox-hill",
@@ -34179,7 +34287,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-midtown-45th-st",
@@ -34207,7 +34327,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-midtown-west",
@@ -34234,7 +34366,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-seaport",
@@ -34261,7 +34405,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-upper-east-side",
@@ -34288,7 +34444,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-upper-west-side",
@@ -34315,7 +34483,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-columbia",
@@ -34342,7 +34522,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-downtown-brooklyn",
@@ -34369,7 +34561,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-greenpoint",
@@ -34396,7 +34600,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30",
+   "11:00-20:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-williamsburg",
@@ -34423,7 +34639,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-flushing",
@@ -34451,7 +34679,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-long-island-city-court-square",
@@ -34479,7 +34719,10 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "closed": 1,
+  "closedSrc": "https://www.xianfoods.com/"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-long-island-city-hunters-point",
@@ -34507,7 +34750,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30",
+   "11:00-21:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-xi-an-famous-foods-woodside",
@@ -34535,7 +34790,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "10:00-20:00",
+   "10:00-20:00",
+   "10:00-20:00",
+   "10:00-20:00",
+   "10:00-20:00",
+   "10:00-20:00",
+   "10:00-20:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-chelsea-market",
@@ -34562,7 +34829,19 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://www.chelseamarket.com/directory-food-and-beverage",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "07:00-21:00",
+   "07:00-21:00",
+   "07:00-21:00",
+   "07:00-21:00",
+   "07:00-21:00",
+   "07:00-21:00",
+   "07:00-21:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-los-mariscos",
@@ -34589,7 +34868,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-five-leaves",
@@ -34617,7 +34908,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-schmackary-s-theater-district",
@@ -34643,7 +34946,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-01:00",
+   "08:00-01:00",
+   "08:00-01:00",
+   "08:00-01:00",
+   "08:00-03:00",
+   "08:00-03:00",
+   "08:00-01:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-schmackary-s-union-square",
@@ -34669,7 +34984,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-da-nico",
@@ -34696,7 +35012,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-23:30",
+   "11:30-23:30",
+   "11:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-il-cortile",
@@ -34724,7 +35052,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "13:00-22:00",
+   "13:00-22:00",
+   "13:00-22:00",
+   "13:00-22:00",
+   "13:00-23:00",
+   "13:00-23:00",
+   "13:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-lombardi-s",
@@ -34752,7 +35092,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-joe-s-pizza-greenwich-village-l-original",
@@ -34778,7 +35130,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-05:00",
+   "10:00-05:00",
+   "10:00-04:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-joe-s-pizza-east-14th-st",
@@ -34804,7 +35168,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-05:00",
+   "10:00-05:00",
+   "10:00-04:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-joe-s-pizza-times-square",
@@ -34830,7 +35206,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-04:00",
+   "10:00-05:00",
+   "10:00-05:00",
+   "10:00-04:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-joe-s-pizza-fulton-st",
@@ -34856,7 +35244,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "10:30-23:00",
+   "10:30-23:00",
+   "10:30-23:00",
+   "10:30-23:00",
+   "10:30-01:00",
+   "10:30-01:00",
+   "10:30-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-joe-s-pizza-williamsburg",
@@ -34882,7 +35282,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "10:30-04:00",
+   "10:30-04:00",
+   "10:30-04:00",
+   "10:30-04:00",
+   "10:30-05:00",
+   "10:30-05:00",
+   "10:30-04:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-smorgasburg-prospect-park",
@@ -34907,7 +35319,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-smorgasburg-williamsburg",
@@ -34934,7 +35347,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-smorgasburg-world-trade-center",
