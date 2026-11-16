@@ -1,0 +1,558 @@
+{
+ "precieuses-0-soiree-le-marta": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-komma": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-le-bristol": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-l-arc": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-pachamama": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-le-mirage": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-le-raspoutine": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-l-aventure": {
+  "menu": "https://www.laventurehotel.com/fr/restaurant/menu",
+  "how": "page-faible"
+ },
+ "precieuses-0-soiree-matignon": {
+  "menu": "https://www.matignon-paris.com/restaurant/menu",
+  "how": "page-faible"
+ },
+ "precieuses-0-soiree-le-gate": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-l-alma": {
+  "menu": "https://www.cafe-de-l-alma.com/wp-content/uploads/2026/11/CARTE-FOOD-ALMA-FRANCAIS-2.11.2026.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-daroco": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-miss-ko": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-coya": {
+  "menu": "https://coyarestaurant.com/london/en/food",
+  "how": "page-pdfs"
+ },
+ "precieuses-0-resto-shana-shabour": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-shabour": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-teppanyaki": {
+  "menu": "https://www.taigasu-teppanyaki.fr/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-au-pied-de-cochon": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-spoon": {
+  "menu": "https://www.spoonrestaurants.com/la-carte/",
+  "how": "page-pdfs"
+ },
+ "precieuses-0-resto-la-fontaine-de-mars": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-l-escargot-montorgueil": {
+  "menu": "https://www.escargotmontorgueil.com/menus/2026-09-exterieur/menu-fr.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-fouquet-s": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-le-procope": {
+  "menu": "https://www.procope.com/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-le-train-bleu": {
+  "menu": "https://www.le-train-bleu.com/media/original/5bab5445e563e/carte-automne-2026.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-dominicos": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-brasserie-lipp": {
+  "menu": "https://www.brasserielipp.fr/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-brasserie-floderer": {
+  "menu": "https://static1.squarespace.com/static/5a8d5efde9bfdf59a2d4adc9/t/6ac7609cb1f5ad659df92059/1791451292157/Floderer_Menu+Principal+De%CC%81jeuner.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-andia": {
+  "menu": "https://api.hapidam.com/share/e316ea90-f28b-4b30-bb80-9aedb10fd2e5/andia-menu-fr",
+  "how": "deja-bon"
+ },
+ "precieuses-0-resto-la-coupole": {
+  "menu": "https://www.lacoupole-paris.com/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-beefbar": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-shinko": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-laperouse": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-ephemera-group": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-sinner-paris": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-le-buf-sur-le-toit": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-la-table-de-colette": {
+  "menu": "https://latabledecolette.fr/fr/menu/nos-7-propositions",
+  "how": "page"
+ },
+ "precieuses-0-resto-mumbay": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-le-relais-plaza": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-the-peninsula": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-le-murat": {
+  "menu": "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2026/08/MURAT-Carte-Menu-FR-UK-Juillet-2.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-marlotti": {
+  "menu": "https://www.lemarlottiparis.fr/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-inavoue": {
+  "menu": "https://inavoue.com/menu",
+  "how": "deja-bon"
+ },
+ "precieuses-0-resto-mistinguett": {
+  "menu": "https://www.mistinguett.paris/menu",
+  "how": "page-faible"
+ },
+ "precieuses-0-resto-akira-back": {
+  "menu": "https://www.akirabackparis.com/fr/carte",
+  "how": "deja-bon"
+ },
+ "precieuses-0-resto-la-reverie": {
+  "menu": "https://lareverie-paris.com/plats-salades-pizzas/",
+  "how": "deja-bon"
+ },
+ "precieuses-0-resto-maxim-s": {
+  "menu": "https://restaurant-maxims.com/menus/",
+  "how": "page-faible"
+ },
+ "precieuses-0-resto-vesper": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-dragon-cyril-lignac": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-la-scene-theleme": {
+  "menu": "https://www.lascenetheleme.fr/carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-chakaiseki-akiyoshi": {
+  "menu": "https://chakaiseki-akiyoshi.fr/menu/",
+  "how": "deja-bon"
+ },
+ "precieuses-0-resto-terra": {
+  "menu": "https://www.terraparis.fr/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-marie-akaneya": {
+  "menu": "https://akaneyajapan.com/wp-content/uploads/2026/03/FR_ES_MenuAkaneya.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-sphere": {
+  "menu": "https://restaurantsphere.com/notre-menu/",
+  "how": "page-faible"
+ },
+ "precieuses-0-resto-rh-paris": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-onyx": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-shiro": {
+  "menu": "https://restaurantshiro.fr/notre-menu/",
+  "how": "deja-bon"
+ },
+ "precieuses-0-resto-dans-le-noir": {
+  "menu": "https://paris.danslenoir.com/fr_FR/formules-menus-restaurant-dans-le-noir-paris",
+  "how": "page"
+ },
+ "precieuses-0-resto-mun-paris": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-dame": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-prunier": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-aquakyoto": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-hotel-le-collectionneur": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-siena": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-ao-izakaya": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-cache": {
+  "menu": "https://www.cache-paris.com/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-cepe-et-figue": {
+  "menu": "https://www.cepeetfigue.fr/la-carte/",
+  "how": "page-faible"
+ },
+ "precieuses-0-resto-festif-l-empire-du-8e": {
+  "menu": "https://www.lempiredu8eme.com/cartes",
+  "how": "page"
+ },
+ "precieuses-0-resto-festif-le-verde": {
+  "menu": "https://verde-paris.fr/wp-content/uploads/2026/10/EN-2026_Verde-PARIS-FINAL_SEPT.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-festif-manko-paris": {
+  "menu": "https://hapi.mmcreation.com/hapidam/df3984cc-f749-437a-9275-f086988f0b73/Menu%20food%2023%3A03%3A2026%20WEB.pdf.pdf?size=",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-festif-noto-paris": {
+  "menu": "https://noto-paris.com/wp-content/uploads/2026/02/FOOD-NOTO-19-02-WEB.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-festif-victoria": {
+  "menu": "http://victoria-paris.com/wp-content/uploads/2026/09/FR.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-festif-gallopin": {
+  "menu": "https://gallopin.com/wp-content/uploads/sites/5/2026/01/Carte-GALLOPIN-20-janvier-2026_.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-festif-les-bains": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-festif-mamamia": {
+  "menu": "https://mamamia-paris.com/restaurant-history",
+  "how": "deja-bon"
+ },
+ "precieuses-0-salon-de-the-coco-palais-garnier": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-salon-de-the-ritz-paris": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-salon-de-the-le-meurice": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-festif-hollywood-savoy": {
+  "menu": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/69d515d496bf49d8a3842845_Terrasse%20HS.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-salon-de-the-hotel-de-crillon": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-salon-de-the-alain-ducasse": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-the-peninsula-l-oiseau-blanc": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-shangri-la": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-gigi": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-salon-de-the-intercontinental-paris-le-grand": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-four-seasons-george-v": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-le-toit-de-la-girafe": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-il-volo-bar": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-cheval-blanc": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-madame-reve": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-too-hotel": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-villa-m": {
+  "menu": "https://assets.website-files.com/611ac90a014c10a367bda85d/6410ae579a2c4227c3393211_140323VillaM_CarteFood_DINER_A3_web.pdf",
+  "how": "deja-bon"
+ },
+ "precieuses-0-rooftop-perruche": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-bonnie": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-le-roof": {
+  "menu": "https://madamereve.com/restaurants/roof/",
+  "how": "deja-bon"
+ },
+ "precieuses-0-cafe-bofinger": {
+  "menu": "https://www.bofingerparis.com/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-boire-un-verre-yago-pigalle": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-maison-souquet": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-grouvie": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-secret-8": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-l-entracte": {
+  "menu": "https://entracte-opera.fr/fr/services",
+  "how": "page"
+ },
+ "precieuses-0-boire-un-verre-mandarin-oriental": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-les-ambassadeurs": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-bar-8": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-hotel-particulier-montmartre": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-bar-hemingway": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-bar-josephine": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-bar-botaniste": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-la-marta": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-hotel-lancaster": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-coco": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-brunch-le-royal-monceau": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-maison-revka": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-baronne": {
+  "menu": "https://baronne-restaurant.com/menus/",
+  "how": "page-faible"
+ },
+ "precieuses-0-boire-un-verre-solera": {
+  "menu": "https://soleraparis.com/notre-carte/",
+  "how": "page"
+ },
+ "ig-paris-ristorante-national": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-l-emil-chateau-voltaire": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-brunch-ferrandi": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-too-tac-tac": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-riviera-paris": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-nonos": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-chalet-des-iles": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-la-cour-jardin-plaza-athenee": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-le-cafe-maxime-frederic-chez-louis-vuitton": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-lilane": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-aux-enfants-gates": {
+  "menu": "https://www.auxenfantsgates.fr/index.php/ct-menu-item-5",
+  "how": "page-faible"
+ },
+ "ig-paris-la-nouvelle-seine": {
+  "menu": "https://lanouvelleseine.com/menu/",
+  "how": "page"
+ },
+ "ig-paris-francette": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-l-espadon-ritz": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-le-boudoir": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-lasserre": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-alleno-paris": {
+  "menu": "https://www.yannick-alleno.com/les-fetes-au-pavillon-ledoyen",
+  "how": "page"
+ },
+ "ig-paris-la-dame-de-pic": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-le-clarence": {
+  "menu": "https://www.le-clarence.paris/wp-content/uploads/2026/03/site_Le_Clarence_Carte_Mars26_FR.pdf",
+  "how": "pdf"
+ },
+ "ig-paris-chez-fred": {
+  "menu": "https://static1.squarespace.com/static/5d7f68a3f676224bc8cb3b65/t/6af1a99acdb14a4283a27778/1794222490599/Menu+Chez+Fred+%288%29.pdf",
+  "how": "pdf"
+ },
+ "ig-paris-kei": {
+  "menu": "https://restaurant-kei.fr/pages/degustations-et-menus",
+  "how": "page-faible"
+ },
+ "ig-paris-plenitude-cheval-blanc": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-le-taillevent": {
+  "menu": "https://www.letaillevent.com/carte-menus/",
+  "how": "page-pdfs"
+ },
+ "ig-paris-l-ambroisie": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-lucas-carton": {
+  "menu": "https://cdn.prod.website-files.com/6a990ad2279b8e2b3ad1e7a3/6af204c838dcbf15cd3cb8fe_Lucas%20Carton%20-%20menu%20-%20Novembre%20-%20FR_2026.pdf",
+  "how": "pdf"
+ }
+}
