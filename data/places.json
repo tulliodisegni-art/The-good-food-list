@@ -35375,7 +35375,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-black-tap-soho",
@@ -35402,7 +35403,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-black-tap-35th-st",
@@ -35430,7 +35432,8 @@
   "enriched": 5,
   "booking": "https://www.opentable.com/r/black-tap-35th-street-new-york",
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-hometown-bar-b-que",
@@ -35457,7 +35460,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-thai-diner",
@@ -35485,7 +35489,8 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16"
  },
  {
   "id": "ig-new-york-buvette",
@@ -35514,7 +35519,19 @@
   "enriched": 5,
   "booking": "https://www.sevenrooms.com/explore/buvettelondon/reservations/create/search/",
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-00:00",
+   "08:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-citizens-of-chelsea",
@@ -35542,7 +35559,19 @@
   "enriched": 5,
   "booking": "https://citizenallday.com/bookings",
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "07:30-16:00",
+   "07:30-16:00",
+   "07:30-16:00",
+   "07:30-16:00",
+   "07:30-16:00",
+   "07:30-16:00",
+   "07:30-16:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-p-j-clarke-s-on-the-hudson",
@@ -35569,7 +35598,10 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "closed": 1,
+  "closedSrc": "https://pjclarkes.com/"
  },
  {
   "id": "ig-new-york-p-j-clarke-s-third-avenue-l-original",
@@ -35596,7 +35628,19 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://pjclarkes.com/menu/third-avenue/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-00:00",
+   "11:30-00:00",
+   "11:30-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-p-j-clarke-s-lincoln-square",
@@ -35623,7 +35667,19 @@
   "enriched": 5,
   "bookingScan": 1,
   "menu": "https://pjclarkes.com/menu/third-avenue/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-sadelle-s",
@@ -35651,7 +35707,19 @@
   "enriched": 5,
   "photo": "https://cdn.sanity.io/images/gb1p0gbj/production/aa88f2ca987e4ecd2a5b7c8c2d9a1d960a189b0c-370x167.png?w=750&q=100&fit=clip&auto=format",
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-15:00",
+   "08:00-15:00",
+   "08:00-15:00",
+   "08:00-15:00",
+   "08:00-15:00",
+   "08:00-15:00",
+   "08:00-15:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-sunday-in-brooklyn",
@@ -35679,7 +35747,19 @@
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/0f4fdd657ea0df34045635c5299520d0/media/images/76490Glossy_Chocolate_Pancake_Close-Up.png?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "09:00-16:00,17:30-22:00",
+   "09:00-16:00,17:30-22:00",
+   "09:00-16:00,17:30-22:00",
+   "09:00-16:00,17:30-22:00",
+   "09:00-16:00,17:30-22:30",
+   "09:00-16:00,17:30-22:30",
+   "09:00-16:00,17:30-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-russ-daughters-la-boutique-houston-st",
@@ -35706,7 +35786,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-18:00",
+   "08:00-18:00",
+   "",
+   "08:00-18:00",
+   "08:00-18:00",
+   "08:00-18:00",
+   "08:00-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-russ-daughters-le-cafe-orchard-st",
@@ -35734,7 +35826,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-15:30",
+   "08:00-15:30",
+   "",
+   "",
+   "08:00-15:30",
+   "08:00-15:30",
+   "08:00-15:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-russ-daughters-34th-street",
@@ -35760,7 +35864,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-18:00",
+   "08:00-18:00",
+   "08:00-18:00",
+   "08:00-18:00",
+   "08:00-18:00",
+   "08:00-18:00",
+   "08:00-18:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-russ-daughters-brooklyn-navy-yard",
@@ -35787,7 +35903,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "08:00-15:00",
+   "08:00-15:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-harriet-s-rooftop-1-hotel-brooklyn-bridge",
@@ -35815,7 +35943,19 @@
   "menuSrc": "google",
   "bookingScan": 1,
   "booking": "https://www.sevenrooms.com/reservations/harrietsbrooklynbridge",
-  "bookingOk": 2
+  "bookingOk": 2,
+  "ohTry": "2026-11-16",
+  "oh": [
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-01:00",
+   "11:00-01:00",
+   "11:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-westlight-the-william-vale",
@@ -35841,7 +35981,19 @@
   "enriched": 5,
   "bookingOk": 2,
   "menu": "https://www.westlightnyc.com/menus/",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "16:00-00:00",
+   "16:00-00:00",
+   "16:00-00:00",
+   "16:00-00:00",
+   "16:00-01:00",
+   "14:00-01:00",
+   "14:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-sea-thai-brooklyn",
@@ -35868,7 +36020,10 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "closed": 1,
+  "closedSrc": "https://ny.eater.com/2023/10/2/23898863/sea-thai-williamsburg-closed"
  },
  {
   "id": "ig-new-york-cafe-mogador-williamsburg",
@@ -35894,7 +36049,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "09:00-22:30",
+   "09:00-22:30",
+   "09:00-22:30",
+   "09:00-22:30",
+   "09:00-23:30",
+   "09:00-23:30",
+   "09:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-cafe-mogador-east-village",
@@ -35921,7 +36088,19 @@
   "enriched": 5,
   "booking": "https://resy.com/cities/ny/cafe-mogador-williamsburg?date=2023-01-11&gclid=CjwKCAiA2fmdBhBpEiwA4CcHzebvAWNsWM83JqBWBbPEQmkzisCkfFwwgSsEyQI8B8E6GAgw7TTE9BoCHaoQAvD_BwE&gclsrc=aw.ds&seats=2&utm_%3Futm_Paid&utm_campaign=Evergreen&utm_medium=Search",
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "09:00-23:00",
+   "09:00-23:00",
+   "09:00-23:00",
+   "09:00-23:00",
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-little-ruby-s-east-village",
@@ -35949,7 +36128,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-little-ruby-s-soho",
@@ -35977,7 +36168,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:30",
+   "08:00-23:30",
+   "08:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-little-ruby-s-murray-hill",
@@ -36004,7 +36207,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-little-ruby-s-west-village",
@@ -36032,7 +36247,19 @@
   "enriched": 5,
   "booking": "https://www.opentable.com/r/little-rubys-dallas?ref=1068",
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-16",
+  "oh": [
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-22:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-16"
  },
  {
   "id": "ig-new-york-little-ruby-s-williamsburg",
