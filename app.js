@@ -356,6 +356,67 @@ function linkFor(p) {
   };
 }
 
+// ---------- Photos de la fiche (galerie à faire défiler) ----------
+// data/photos.json : { id: [adresses des photos prises sur le site du lieu, vérifiées à l'œil] }, chargé à part
+// pour ne pas alourdir la liste.
+let GAL = {};
+function loadGallery() {
+  return fetch("data/photos.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).then((g) => {
+    GAL = g || {};
+    if (current && !$("#sheet").hidden && (GAL[current.id] || []).length) openSheet(current.id, true);
+  }).catch(() => {});
+}
+function photosOf(p) {
+  const seen = new Set(), out = [];
+  for (const u of [p.photo, ...(GAL[p.id] || [])]) if (u && !seen.has(u)) { seen.add(u); out.push(u); }
+  return out;
+}
+function heroHtml(p, plaque) {
+  const ph = photosOf(p);
+  const mono = `<span class="mono" aria-hidden="true">${esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase())}</span>`;
+  if (!ph.length) return `<div class="hero" style="--hc:${catVar(p.cat)}">${mono}${plaque}</div>`;
+  return `<div class="hero photo gal" style="--hc:${catVar(p.cat)}">
+      <div class="gal-track" data-gal>${ph.map((u, i) => `<div class="gal-slide"><img src="${esc(u)}" alt="" ${i ? 'loading="lazy"' : ""} referrerpolicy="no-referrer" decoding="async" onerror="galDrop(this)"></div>`).join("")}</div>
+      ${ph.length > 1 ? `<div class="gal-dots" aria-hidden="true">${ph.map((_, i) => `<i class="${i ? "" : "on"}"></i>`).join("")}</div><span class="gal-count"><b>1</b>/${ph.length}</span>` : ""}
+      ${plaque}
+    </div>`;
+}
+// Photo qui ne s'affiche plus (lien mort) : retirée de la galerie ; plus aucune : l'en-tête coloré revient.
+window.galDrop = (img) => {
+  const hero = img.closest(".hero"), slide = img.closest(".gal-slide");
+  if (!hero || !slide) return;
+  slide.remove();
+  const n = hero.querySelectorAll(".gal-slide").length;
+  if (!n) { hero.classList.remove("photo", "gal"); hero.querySelector(".gal-track")?.remove(); hero.querySelector(".gal-dots")?.remove(); hero.querySelector(".gal-count")?.remove(); return; }
+  const dots = hero.querySelector(".gal-dots");
+  if (dots) { if (n < 2) { dots.remove(); hero.querySelector(".gal-count")?.remove(); } else { dots.lastElementChild?.remove(); galSync(hero.querySelector(".gal-track")); } }
+};
+function galSync(track) {
+  const hero = track.closest(".hero"), i = Math.round(track.scrollLeft / Math.max(1, track.clientWidth));
+  hero.querySelectorAll(".gal-dots i").forEach((d, k) => d.classList.toggle("on", k === i));
+  const c = hero.querySelector(".gal-count");
+  if (c) c.innerHTML = `<b>${i + 1}</b>/${hero.querySelectorAll(".gal-slide").length}`;
+}
+document.addEventListener("scroll", (e) => { if (e.target.matches?.("[data-gal]")) galSync(e.target); }, true);
+
+// ---------- Liens vers l'extérieur (menu, réservation, itinéraires…) ----------
+// Sur iPhone, depuis l'écran d'accueil, un lien « nouvel onglet » touché plusieurs fois pouvait ouvrir une page blanche.
+// On ouvre chaque lien nous-mêmes, une seule fois par toucher, dans une fenêtre neuve.
+let lastExt = { u: "", t: 0 };
+document.addEventListener("click", (e) => {
+  const a = e.target.closest && e.target.closest('a[target="_blank"]');
+  if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+  const u = a.href;
+  if (!/^https?:/i.test(u)) return;
+  e.preventDefault();
+  const now = Date.now();
+  if (u === lastExt.u && now - lastExt.t < 1500) return; // double toucher : déjà en train de s'ouvrir
+  lastExt = { u, t: now };
+  let w = null;
+  try { w = window.open(u, "_blank"); } catch { w = null; }
+  if (w) { try { w.opener = null; } catch { /* autre site */ } } else location.href = u;
+}, true);
+
 let current = null;
 function openSheet(id, keepScroll) {
   const p = S.places.find((x) => x.id === id);
@@ -373,10 +434,7 @@ function openSheet(id, keepScroll) {
     <div class="sheet-top"><span class="grab"></span>
       <button class="top-btn share-btn" data-share aria-label="Partager">${icon("share")}</button>
       <button class="close" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
-    <div class="hero ${p.photo ? "photo" : ""}" style="--hc:${catVar(p.cat)}">
-      ${p.photo ? `<img src="${esc(p.photo)}" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.classList.remove('photo');this.remove()">` : `<span class="mono" aria-hidden="true">${esc(p.name.replace(/^(le|la|les|l'|the)\s*/i, "").charAt(0).toUpperCase())}</span>`}
-      ${plaque}
-    </div>
+    ${heroHtml(p, plaque)}
     <div class="sheet-body">
       <div>
         <h2 id="sheetName">${esc(p.name)}</h2>
@@ -457,7 +515,7 @@ function openSheet(id, keepScroll) {
           : p.resa === "telephone" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : par téléphone uniquement" : "Par téléphone uniquement", p.phone ? L.call : "")
           : p.resa === "inconnu" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : appelle pour réserver" : "Pas de réservation en ligne", p.phone ? L.call : "")
           : infoRow("book", "Réservation", "", "")}
-        ${infoRow("menu", "Menu", p.menu ? "Voir le menu" : p.noMenu ? "Pas de menu en ligne" : "", p.menu)}
+        ${infoRow("menu", "Menu", p.menuSrc === "google" ? "Voir le menu sur Google" : p.menu ? (/\.pdf($|\?)/i.test(p.menu) ? "Voir le menu (PDF)" : "Voir le menu") : p.noMenu ? "Pas de menu en ligne : voir sur Google" : "Chercher le menu sur Google", L.menu)}
         ${infoRow("insta", "Instagram", igHandle(p) ? "@" + igHandle(p) : p.noInsta ? "Pas de compte Instagram" : "", igHandle(p) ? L.insta : "")}
         ${p.source && p.source !== L.insta ? infoRow("insta", "Publication", "Voir la publication", p.source) : ""}
         ${infoRow("web", "Site web", p.website ? p.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") : "", p.website)}
@@ -1361,6 +1419,7 @@ async function freshBase() {
   } catch { return null; }
 }
 async function boot() {
+  loadGallery();
   const cached = store.get("baseCache", []);
   if (cached.length) {
     S.base = cached; mergeShared(store.get("sharedCache", []));
