@@ -1,0 +1,39 @@
+name: Menus et photos (à vérifier)
+# Lit le site de chaque lieu : vrai lien du menu + photos du lieu et des plats.
+# Lancé en modifiant .github/galerie/run.json (ou à la main). Résultat : branche « galerie-candidats ».
+on:
+  workflow_dispatch:
+  push:
+    paths: [".github/galerie/run.json"]
+permissions:
+  contents: write
+jobs:
+  lire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: sudo apt-get install -y -qq imagemagick fonts-dejavu-core >/dev/null
+      - name: Lire les sites
+        timeout-minutes: 320
+        run: |
+          export ONLY=$(jq -r '.only // ""' .github/galerie/run.json)
+          export LIMIT=$(jq -r '.limit // 0' .github/galerie/run.json)
+          node scripts/menus_photos.mjs
+      - name: Déposer sur la branche galerie-candidats
+        if: always()
+        run: |
+          RUN=$(jq -r '.only // "tout"' .github/galerie/run.json | tr ',' '-')
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/res && cp -r out "/tmp/res/$RUN"
+          git fetch origin galerie-candidats && git checkout -f galerie-candidats || git checkout --orphan galerie-candidats
+          git rm -rfq --cached . >/dev/null 2>&1 || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name "$RUN" -exec rm -rf {} + 2>/dev/null || true
+          git checkout -f FETCH_HEAD -- . 2>/dev/null || true
+          rm -rf "$RUN" && cp -r "/tmp/res/$RUN" "$RUN"
+          git add -A "$RUN"
+          git commit -qm "Menus et photos : $RUN" || true
+          git push origin HEAD:galerie-candidats
