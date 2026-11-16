@@ -249,7 +249,10 @@ const ham = (a, b) => { let d = 0; for (let i = 0; i < a.length; i++) if (a[i] !
 
 /* ---------------- lieux ---------------- */
 const siteOf = (p) => p.website || (/^https?:/.test(p.menu || "") && !/google\.|instagram|facebook|\.pdf/i.test(p.menu) ? new URL(p.menu).origin + "/" : "");
-const todo = places.filter((p) => !p.closed && (!ONLY.length || ONLY.includes(p.list)));
+// SEARCH=1 : fiches encore sans galerie seulement, photos cherchées sur le web (guides, presse, réservation).
+const SEARCH = !!process.env.SEARCH;
+const GAL = SEARCH ? JSON.parse(await readFile(new URL("../data/photos.json", import.meta.url), "utf8").catch(() => "{}")) : {};
+const todo = places.filter((p) => !p.closed && !p.removed && (!ONLY.length || ONLY.includes(p.list)) && !(SEARCH && (GAL[p.id] || []).length >= 2));
 // Sites partagés par plusieurs lieux différents (groupes) : pas de menu ni de photos depuis l'accueil commun.
 const byHost = {};
 for (const p of places) { const s = siteOf(p); if (!s) continue; try { const u = new URL(s); const k = u.hostname.replace(/^www\./, ""); (byHost[k] ||= new Set()).add(norm(p.name).slice(0, 8)); } catch {} }
@@ -261,6 +264,7 @@ let done = 0;
 const queue = LIMIT ? todo.slice(0, LIMIT) : [...todo];
 const total = queue.length;
 async function work(p) {
+  if (SEARCH) return workSearch(p);
   const site = siteOf(p);
   const rec = { id: p.id, name: p.name, list: p.list, city: p.city || "", old: p.menu || "", site };
   report.push(rec);
@@ -309,6 +313,87 @@ async function work(p) {
       cands.push(im);
     }
     if (p.photo && !seen.has(key(p.photo))) cands.unshift({ u: p.photo, how: "actuelle" });
+    const kept = await keep(p, cands);
+    if (kept.length) photos[p.id] = kept.map(({ u, w, h, file, how }) => ({ u, w, h, file, how }));
+    rec.photos = kept.length;
+  }
+  done++;
+  console.log(`${done}/${total} ${p.list} · ${p.name} · menu: ${rec.how}${rec.menu ? " " + rec.menu : ""} · photos: ${rec.photos || 0}`);
+}
+
+/* ---------------- recherche web (SEARCH=1) ---------------- */
+const SKIP_SITE = /google\.|instagram\.|facebook\.|tiktok\.|youtube\.|pinterest\.|twitter\.|x\.com|linkedin\.|bing\.|duckduckgo|wikipedia|apple\.com|waze|mappy|restaurants-de-france|novacircle|bottin|118000|pagesjaunes|israel\.com|ontopo|yelp\.|foursquare|booking\.com|airbnb|reddit|quora|amazon\./i;
+let lastSearch = 0;
+async function searchLinks(q) {
+  const wait = async () => { while (Date.now() - lastSearch < 3500) await sleep(300 + Math.random() * 500); lastSearch = Date.now(); };
+  await wait();
+  const d = await fetchPage(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(q)}`);
+  let links = d.html ? [...d.html.matchAll(/class="result__a"[^>]*href="([^"]+)"/g)].map((m) => { const u = decode(m[1]); const r = u.match(/uddg=([^&]+)/); return r ? decodeURIComponent(r[1]) : u; }) : [];
+  if (!links.length) {
+    await wait();
+    const b = await fetchPage(`https://www.bing.com/search?q=${encodeURIComponent(q)}&setlang=fr`);
+    links = b.html ? [...b.html.matchAll(/<li class="b_algo"[\s\S]*?<a[^>]+href="(https?:[^"]+)"/g)].map((m) => decode(m[1])) : [];
+  }
+  return [...new Set(links.filter((u) => /^https?:/.test(u) && !SKIP_SITE.test(u)))].slice(0, 10);
+}
+// La page parle-t-elle de CE lieu ? Nom dans le titre / h1 / adresse de la page, et pas une liste « top 20 ».
+function aboutPlace(pg, p) {
+  const nn = norm(p.name);
+  if (nn.length < 3) return false;
+  const title = (pg.html.match(/<title[^>]*>([^<]*)/i) || [])[1] || "";
+  const og = (pg.html.match(/<meta[^>]+property=["']og:title["'][^>]*content=["']([^"']+)/i) || [])[1] || "";
+  const h1 = ((pg.html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || "").replace(/<[^>]+>/g, " ");
+  const head = norm(decode(`${title} ${og} ${h1}`));
+  const u = new URL(pg.url);
+  const path = norm(decodeURIComponent(u.pathname + " " + u.hostname));
+  if (!(head.includes(nn) || path.includes(nn))) return false;
+  if (/\b(top|meilleurs?|best|\d{1,2} (restaurants|adresses|spots|places|bars))\b/i.test(decode(title + " " + og)) && !path.includes(nn)) return false;
+  if (otherCity(u, p)) return false;
+  return true;
+}
+async function searchPhotos(p) {
+  const name = p.name.replace(/\(.*?\)/g, "").trim();
+  const where = p.list === "villes" ? p.city || "" : "Paris";
+  const street = (p.address || "").replace(/,?\s*\d{5}.*$/, "").replace(/^\d+\s*(bis|ter)?,?\s*/i, "");
+  const links = await searchLinks(`${name} ${where} ${street}`.replace(/\s+/g, " ").trim());
+  const site = siteOf(p);
+  if (site) { try { const h = new URL(site); if (!shared(h)) links.unshift(h.href); } catch {} }
+  const cands = [], seen = new Set(), pagesUsed = [];
+  for (const u of [...new Set(links)].slice(0, 9)) {
+    if (pagesUsed.length >= 4) break;
+    const pg = await page(u);
+    if (!pg.html || !pg.status || pg.status >= 400) continue;
+    let own = false; try { own = !!site && new URL(pg.url).hostname.replace(/^www\./, "") === new URL(site).hostname.replace(/^www\./, ""); } catch {}
+    if (!own && !aboutPlace(pg, p)) continue;
+    pagesUsed.push(pg.url);
+    const host = new URL(pg.url).hostname.replace(/^www\./, "");
+    const ims = images(pg.html, new URL(pg.url));
+    const pick = own ? ims : [...ims.filter((x) => x.how === "og"), ...ims.filter((x) => x.how !== "og").slice(0, 6)];
+    for (const im of pick) {
+      const k = key(im.u);
+      if (seen.has(k)) continue; seen.add(k);
+      if (BAD_IMG.test(decodeURIComponent(im.u).replace(/^https?:\/\/[^/]+/, ""))) continue;
+      if (im.how !== "og" && !IMG_EXT.test(im.u)) continue;
+      if (/gstatic|gravatar|wp-includes|ytimg|maps\.|googleapis\.com\/maps|static\.?map|avatar|author|profile/i.test(im.u)) continue;
+      cands.push({ ...im, how: host });
+    }
+  }
+  return { cands, pagesUsed, nLinks: links.length };
+}
+async function workSearch(p) {
+  const rec = { id: p.id, name: p.name, list: p.list, city: p.city || "" };
+  report.push(rec);
+  const { cands, pagesUsed, nLinks } = await searchPhotos(p);
+  if (p.photo) cands.unshift({ u: p.photo, how: "actuelle" });
+  for (const g of GAL[p.id] || []) cands.unshift({ u: g, how: "galerie" });
+  const kept = await keep(p, cands);
+  if (kept.length) photos[p.id] = kept.map(({ u, w, h, file, how }) => ({ u, w, h, file, how }));
+  Object.assign(rec, { photos: kept.length, pages: pagesUsed, links: nLinks });
+  done++;
+  console.log(`${done}/${total} ${p.list} · ${p.name} · ${nLinks} résultats · pages: ${pagesUsed.length} · photos: ${kept.length}`);
+}
+
+async function keep(p, cands) {
     const kept = [];
     for (const im of cands.slice(0, 30)) {
       if (kept.length >= 8) break;
@@ -326,13 +411,9 @@ async function work(p) {
       execFileSync("cp", [info.thumb, file]);
       kept.push({ u: url, w, h, dhash: info.dhash, file, how: im.how });
     }
-    if (kept.length) photos[p.id] = kept.map(({ u, w, h, file, how }) => ({ u, w, h, file, how }));
-    rec.photos = kept.length;
-  }
-  done++;
-  console.log(`${done}/${total} ${p.list} · ${p.name} · menu: ${rec.how}${rec.menu ? " " + rec.menu : ""} · photos: ${rec.photos || 0}`);
+    return kept;
 }
-await Promise.all(Array.from({ length: 8 }, async () => {
+await Promise.all(Array.from({ length: SEARCH ? 4 : 8 }, async () => {
   while (queue.length) {
     const p = queue.shift();
     let timer;
@@ -360,7 +441,7 @@ for (let i = 0, s = 0; i < ids.length; i += 12, s++) {
     const p = places.find((x) => x.id === id);
     const tiles = photos[id].map((ph, n) => { const f = `/tmp/t-${id}-${n}.jpg`; execFileSync("convert", [ph.file, "-resize", "240x180", "-gravity", "NorthWest", "-fill", "yellow", "-undercolor", "#000a", "-pointsize", "22", "-annotate", "+4+2", String(n), f]); return f; });
     const lab = `/tmp/l-${id}.png`;
-    execFileSync("convert", ["-size", "300x180", "xc:white", "-font", font, "-pointsize", "17", "-fill", "black", "-annotate", "+8+30", `${p.name}`.slice(0, 26), "-pointsize", "13", "-annotate", "+8+56", `${p.list} ${p.city || p.arr || ""} ${p.cat || ""}`.slice(0, 36), "-annotate", "+8+78", id.slice(0, 40), lab]);
+    execFileSync("convert", ["-size", "300x180", "xc:white", "-font", font, "-pointsize", "17", "-fill", "black", "-annotate", "+8+30", `${p.name}`.slice(0, 26), "-pointsize", "13", "-annotate", "+8+56", `${p.list} ${p.city || p.arr || ""} ${p.cat || ""}`.slice(0, 36), "-annotate", "+8+78", id.slice(0, 40), "-pointsize", "11", "-annotate", "+8+100", [...new Set(photos[id].map((x) => x.how))].join(" ").slice(0, 44), "-annotate", "+8+118", [...new Set(photos[id].map((x) => x.how))].join(" ").slice(44, 88), lab]);
     const row = `/tmp/r-${id}.jpg`;
     execFileSync("convert", [lab, ...tiles, "+append", "-background", "white", row]);
     rows.push(row);
