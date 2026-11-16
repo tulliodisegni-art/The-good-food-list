@@ -25,7 +25,7 @@ async function get(url, ms = 15000, accept) {
     return r;
   } catch { return null; } finally { clearTimeout(t); }
 }
-async function page(url) {
+async function fetchPage(url) {
   const r = await get(url, 15000, "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8");
   if (!r) return { status: 0, url };
   const type = r.headers.get("content-type") || "";
@@ -34,6 +34,44 @@ async function page(url) {
   let html = "";
   try { html = (await r.text()).slice(0, 1500000); } catch {}
   return { status: r.status, url: r.url, html };
+}
+// Sites faits en JavaScript ou protégés contre les robots : on ouvre la page dans un vrai navigateur (Chromium).
+let browser = null, browserTried = false;
+async function getBrowser() {
+  if (browserTried) return browser;
+  browserTried = true;
+  try { const { chromium } = await import("playwright"); browser = await chromium.launch(); } catch (e) { console.log("navigateur indisponible", e.message); }
+  return browser;
+}
+let rendering = 0;
+async function renderPage(url) {
+  const b = await getBrowser();
+  if (!b) return null;
+  while (rendering >= 4) await sleep(200);
+  rendering++;
+  const ctx = await b.newContext({ userAgent: UA, locale: "fr-FR", viewport: { width: 390, height: 844 }, isMobile: true });
+  const pg = await ctx.newPage();
+  try {
+    const res = await pg.goto(url, { waitUntil: "domcontentloaded", timeout: 25000 });
+    await pg.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
+    // Fait défiler pour charger les images « paresseuses ».
+    await pg.evaluate(async () => { for (let y = 0; y < 6; y++) { window.scrollBy(0, window.innerHeight); await new Promise((r) => setTimeout(r, 350)); } }).catch(() => {});
+    // Ouvre le menu « burger » s'il existe : les liens de navigation y sont parfois ajoutés seulement à l'ouverture.
+    await pg.evaluate(() => { const b = document.querySelector('[aria-label*="menu" i], .hamburger, .burger, .menu-toggle, button[class*="burger" i], button[class*="menu" i]'); if (b) b.click(); }).catch(() => {});
+    await sleep(600);
+    const html = await pg.content();
+    return { status: res ? res.status() : 200, url: pg.url(), html, rendered: true };
+  } catch { return null; } finally { await ctx.close().catch(() => {}); rendering--; }
+}
+const thin = (pg) => !pg.html || text(pg.html).length < 600 || (pg.html.match(/<a\b/gi) || []).length < 6;
+async function page(url) {
+  const pg = await fetchPage(url);
+  if (pg.pdf || pg.image) return pg;
+  if (!pg.status || [401, 403, 406, 429, 503].includes(pg.status) || (pg.status < 400 && thin(pg))) {
+    const r = await renderPage(url);
+    if (r && r.status < 400 && r.html) return r;
+  }
+  return pg;
 }
 
 /* ---------------- menu ---------------- */
@@ -66,7 +104,15 @@ function anchors(html, base) {
   }
   return out;
 }
-function rankMenu(a, home) {
+const CITIES = ["paris", "london", "londres", "dubai", "doha", "riyadh", "abu-dhabi", "new-york", "nyc", "miami", "los-angeles", "las-vegas", "monaco", "monte-carlo", "cannes", "nice", "saint-tropez", "st-tropez", "courchevel", "megeve", "mykonos", "ibiza", "marbella", "madrid", "barcelona", "milan", "milano", "rome", "roma", "geneve", "geneva", "zurich", "bruxelles", "brussels", "amsterdam", "berlin", "lisbon", "lisbonne", "istanbul", "tel-aviv", "jerusalem", "marrakech", "casablanca", "beirut", "mexico", "tokyo", "hong-kong", "singapore", "bangkok", "lyon", "bordeaux", "marseille", "chicago", "boston", "washington", "toronto", "montreal", "sao-paulo", "lima", "bahrain", "kuwait", "cairo", "tunis", "athens", "athenes", "budapest", "prague", "vienna", "vienne", "munich", "frankfurt", "dublin", "edinburgh", "manchester", "brooklyn", "miami-beach", "dallas", "houston", "austin", "san-francisco", "seoul", "shanghai", "beijing", "sydney", "melbourne"];
+const cityOf = (p) => (p.list === "villes" ? norm(p.city || "") : "paris");
+function otherCity(u, p) {
+  const segs = decodeURIComponent(u.pathname + " " + u.hostname).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(/[^a-z]+/).join("-");
+  const mine = cityOf(p);
+  return CITIES.some((c) => norm(c) !== mine && !(mine === "telaviv" && c === "tel-aviv") && new RegExp(`(^|-)${c}(-|$)`).test(segs));
+}
+function rankMenu(a, home, p) {
+  if (p && otherCity(a.u, p)) return 0;
   const href = a.u.href, path = decodeURIComponent(a.u.pathname + a.u.search).toLowerCase();
   const same = a.u.hostname.replace(/^www\./, "") === home.hostname.replace(/^www\./, "");
   if (NOT_MENU.test(href.replace(/[?#].*$/, "")) && !/menu|carte/i.test(path.split("/").pop() || "")) return 0;
@@ -88,7 +134,7 @@ async function findMenu(p, home) {
   const base = new URL(home.url);
   const cands = new Map();
   for (const a of anchors(home.html, base)) {
-    const s = rankMenu(a, base);
+    const s = rankMenu(a, base, p);
     if (s >= 4) { const k = a.u.href.replace(/#.*$/, (h) => (a.u.pathname === base.pathname ? h : "")); if (!cands.has(k) || cands.get(k).s < s) cands.set(k, { ...a, s }); }
   }
   // Page unique (one-page) avec une section « menu » et des prix : on pointe sur la section.
@@ -232,11 +278,16 @@ async function work(p) {
   let found = null;
   if (oldDeep) {
     const pg = await page(p.menu);
-    const okOld = pg.status && pg.status < 400 && (pg.pdf || pg.image || (() => { const b = new URL(pg.url); return b.pathname !== "/" || b.hash || menuScore(pg.html).ok; })());
+    const okOld = pg.status && pg.status < 400 && (pg.pdf || pg.image || (() => { const b = new URL(pg.url); return (b.pathname !== "/" || b.hash) && (MENU_WORD.test(decodeURIComponent(b.pathname + " " + p.menu).toLowerCase().replace(/[_/.]/g, "-")) || menuScore(pg.html).ok); })());
     if (okOld) found = { menu: p.menu, how: "deja-bon", status: pg.status, score: pg.html ? menuScore(pg.html) : null };
     else rec.oldBroken = pg.status || "injoignable";
   }
   if (!found && home && home.status && home.status < 400 && home.html && !grp) found = await findMenu(p, home);
+  // Rien trouvé dans la page brute : on la rouvre dans le navigateur (liens ajoutés par JavaScript).
+  if (!found && u0 && !grp && !(home && home.rendered)) {
+    const r = await renderPage(home && home.url || u0.href);
+    if (r && r.status < 400 && r.html) { home = r; rec.rendered = 1; found = await findMenu(p, r); }
+  }
   if (found) { menus[p.id] = { menu: found.menu, how: found.how }; Object.assign(rec, { menu: found.menu, how: found.how, label: found.label || "", score: found.score || null }); }
   else { menus[p.id] = { menu: "", how: "google" }; rec.how = "google"; }
   // Photos : accueil + page menu + page galerie, sur le site du lieu seulement.
@@ -267,7 +318,7 @@ async function work(p) {
       const { w, h } = info;
       if (Math.min(w, h) < 380 || w < 560 || w / h > 2.8 || w / h < 0.5) continue;
       if (info.flat > 0.75) continue; // fond uni (affiche, texte, logo sur fond)
-      if (kept.some((k) => ham(k.dhash, info.dhash) <= 8)) continue;
+      if (kept.some((k) => ham(k.dhash, info.dhash) <= 12)) continue;
       const n = kept.length;
       const file = `out/thumbs/${p.id}-${n}.jpg`;
       execFileSync("cp", [info.thumb, file]);
@@ -293,6 +344,7 @@ async function save() {
   await writeFile("out/report.json", JSON.stringify(report, null, 1));
 }
 await save();
+if (browser) await browser.close().catch(() => {});
 
 // Planches de vérification : une ligne par lieu (nom + vignettes numérotées), 12 lieux par planche.
 const ids = Object.keys(photos);
