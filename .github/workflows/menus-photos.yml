@@ -29,10 +29,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p /tmp/res && cp -r out "/tmp/res/$RUN"
-          git fetch origin galerie-candidats && git checkout -f galerie-candidats || git checkout --orphan galerie-candidats
-          git rm -rfq --cached . >/dev/null 2>&1 || true
-          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name "$RUN" -exec rm -rf {} + 2>/dev/null || true
-          git checkout -f FETCH_HEAD -- . 2>/dev/null || true
+          if git fetch origin galerie-candidats; then git checkout -qf -B galerie-candidats FETCH_HEAD; else git checkout -q --orphan galerie-candidats; git rm -rfq . ; fi
+          git clean -fdq
           rm -rf "$RUN" && cp -r "/tmp/res/$RUN" "$RUN"
           git add -A "$RUN"
           git commit -qm "Menus et photos : $RUN" || true
