@@ -888,9 +888,9 @@
   "how": "deja-bon",
   "label": "",
   "score": {
-   "prices": 47,
-   "dishes": 3,
-   "ok": true
+   "prices": 0,
+   "dishes": 0,
+   "ok": false
   }
  },
  {
@@ -918,8 +918,8 @@
   "how": "deja-bon",
   "label": "",
   "score": {
-   "prices": 45,
-   "dishes": 1,
+   "prices": 120,
+   "dishes": 2,
    "ok": true
   }
  },
@@ -2604,7 +2604,7 @@
   "site": "https://amazonia-paris.fr",
   "homeStatus": 200,
   "oldBroken": 403,
-  "menu": "https://cdn.qr-code-generator.com/account18288132/59356668_1.pdf?Expires=1794883979&Signature=yO4mZ0P7y3q9b796cGcRnlOASqFD8Q4qr-X9wDJaJMJN5r1TzxzeK2w0Ts-Zl-u18f6x8C~zx3inAf1MzAOjSCbbtgsU-mHl9I9tHrrumFkk-k94T6PP2bnbS58fGETiPaKpsKCJLpci~5jiV1dfyjtAzPCboFnPl1-Pjzilvg0JyR-C6yZxk8c2hQ3UzeWXcERW5OdEJJ3KZHSEl1Z~hMT1qp5tlUbjdA5snmY-yJ8aSHxbkb2ejlKJka9FgLAc9OsDvscBkL5YWnacvgLuIVnI62L2rTWijuJ2c9flLj78GGrVxG1hR8eM2DcRK9h87jbFcQLFLOgf-lG7yaO9hw__&Key-Pair-Id=KPNI74OVB7CJI",
+  "menu": "https://cdn.qr-code-generator.com/account18288132/59356668_1.pdf?Expires=1794885363&Signature=fRVgw87VpdQ-US9ar27oq9o98IltGATDBkNfLVIat721WlrlVWbuoR7WMtkrB4dUWdmyLCyTpzRBF9n2JV7fBprf48eXDfFrnj8R0vH3aWRlQm2LEF2H8dUnZV7Xc1U0GBqmkrDSTYcI2upkfttEbSbZgA~-GgTkANqnQF8Ssgy5xSAXgD6PXl5s29ObrfxSK-9iC4J8hq9AS-6J-kRdRRdphOLTeBrW7Rzx5sx~vrD~z8o40OfHr2SKNCXDJar~uodRyTxqTIgZaL9a~Fpf2SIBkjho7iJPqAD7f067EMbifuOeuqYb7P~hyXbrPNBWb7Ozd-dDGfzx09v4FuuhIA__&Key-Pair-Id=KPNI74OVB7CJI",
   "how": "pdf",
   "label": "DÉCOUVRIR LA CARTE",
   "score": null
@@ -2816,7 +2816,7 @@
   "old": "",
   "site": "http://www.bieneleve.fr",
   "homeStatus": 200,
-  "menu": "https://bien-eleve.s3.eu-central-1.amazonaws.com/mlkpi6hai01stnzg3vyeu4pn9p7z?response-content-disposition=inline%3B%20filename%3D%2220261009__Carte_Food_EXT%20FR%20%25281%2529.pdf%22%3B%20filename%2A%3DUTF-8%27%2720261009__Carte_Food_EXT%2520FR%2520%25281%2529.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAJLM7ZONSWM7EIQ%2F20261116%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20261116T025255Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a73e015d87d02babbb513031046166950a2b2b990f639fb6c51bab8f446dac34",
+  "menu": "https://bien-eleve.s3.eu-central-1.amazonaws.com/mlkpi6hai01stnzg3vyeu4pn9p7z?response-content-disposition=inline%3B%20filename%3D%2220261009__Carte_Food_EXT%20FR%20%25281%2529.pdf%22%3B%20filename%2A%3DUTF-8%27%2720261009__Carte_Food_EXT%2520FR%2520%25281%2529.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAJLM7ZONSWM7EIQ%2F20261116%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20261116T031606Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5c1ef34264372110ef3ecc0559ef41f008df34197d6d6d109da394aefd7ca546",
   "how": "pdf",
   "label": "La carte",
   "score": null
@@ -3212,8 +3212,15 @@
   "city": "",
   "old": "https://www.google.fr/search?q=Le+Vert+Sauvage&ie=UTF-8&oe=UTF-8&hl=fr-fr&client=safari#wptab=si:AMnBZoH38CTEwZfcj3eqMl0XqMcnv7dGKJIm-roh1TpfLHzCeJa4C5QNoyUV6Z_y7I-KrlNR8wLwK6F62mMzWnSfKl5QbLi3_fmDnQ11gfKmyMbJ3h--dlTPnJ91mFs9HFPdKkPLh1pDmVxf2wqXqUsfP9FggbQ5OQ%3D%3D",
   "site": "https://le-vert-sauvage.wheree.com",
-  "homeStatus": 403,
-  "how": "google"
+  "homeStatus": 200,
+  "menu": "https://le-vert-sauvage.wheree.com/menu",
+  "how": "page-faible",
+  "label": "Menu",
+  "score": {
+   "prices": 0,
+   "dishes": 7,
+   "ok": false
+  }
  },
  {
   "id": "paris-9-poisson-fruits-de-mer-mersea",
@@ -10126,7 +10133,15 @@
   "old": "",
   "site": "https://wukong-temple.wheree.com",
   "homeStatus": 403,
-  "how": "google"
+  "rendered": 1,
+  "menu": "https://wukong-temple.wheree.com/menu",
+  "how": "page-faible",
+  "label": "Menu",
+  "score": {
+   "prices": 0,
+   "dishes": 5,
+   "ok": false
+  }
  },
  {
   "id": "ig-paris-la-kave-du-fromager",
@@ -10923,7 +10938,15 @@
   "old": "",
   "site": "https://tempura-nyc.wheree.com",
   "homeStatus": 403,
-  "how": "google"
+  "rendered": 1,
+  "menu": "https://tempura-nyc.wheree.com/menu",
+  "how": "page-faible",
+  "label": "Menu",
+  "score": {
+   "prices": 0,
+   "dishes": 5,
+   "ok": false
+  }
  },
  {
   "id": "ig-new-york-7th-street-burger",
@@ -11130,11 +11153,11 @@
   "site": "https://levainbakery.com",
   "homeStatus": 200,
   "rendered": 1,
-  "menu": "https://levainbakery.com/?_abr=1&_su_rec=ODyjNZ_WPLn8gTqxfB9vhacAQMVNNNjKbD66oipKSNjGWAHdccCZroV58XYk_BvcLaj9O8UsCsk2Culcm6dMrxQTw4NhFuO0VtzE_DoCdeOsXGtMcyF_KqKc__PqHY4hat_PVKmD9Lgm3cMWeScb5GPcPmN1N2DY-DLB8k0IVjPFvzBWxYzlEgdqrvfgBfiU7RDt5Mbx7g3OczcusKyQaJWXFJOhkdNUvmKRaaf06pDKhqeym8Twx2k0vlzOUH8Kc2zVTGgW3OmsXTW7JX2Kmk0Ila6ZRknkwBJ5ejS6k0qTC3gco0_EYtMq04GgYvuIXVRr_HOCNSDG8b6mw4H_&_su_rec_id=8381ab00-5d4a-4ab2-a42e-b92351760524-1794798171",
+  "menu": "https://levainbakery.com/?_abr=1&_su_rec=7ltewnhdrIA7RlJvdaN-qVAXScWkxLtUAP15WzqzY8IlVWG-lPvdBrlj6EvGXSX4jKOgwGB0UnIEwOCaC5liHuUS3heocqUfdWSWfzvx832qdnfsOBoqtpBM-qy8zpX_GYpSiCeni2sPWEsX_JOEDUorC3WmtPKc0k75eWl5DX3ZRqJeOSRPe2xaBNU5fgnTuG24zl55OZIHFjMg1885LiuQninyadI_ivJkRRSvYmHC-J4dVFiNutbzTgm-5QGQnfI1nFRmThDJa67u_fdC4sUlZzUrkP6lYRyDnRbAJLbSxOqaDfd_GVnWn-C7SWamZClTu-YQkK4olmx3nec3cxmp&_su_rec_id=cf742320-ae49-44fa-adff-eefebb369d56-1794799579",
   "how": "accueil-avec-prix",
   "label": "",
   "score": {
-   "prices": 11,
+   "prices": 10,
    "dishes": 2,
    "ok": true
   }
@@ -11231,8 +11254,15 @@
   "city": "New York",
   "old": "",
   "site": "https://ortomare-ristorante-pizzeria.wheree.com",
-  "homeStatus": 403,
-  "how": "google"
+  "homeStatus": 200,
+  "menu": "https://ortomare-ristorante-pizzeria.wheree.com/menu",
+  "how": "page-faible",
+  "label": "Menu",
+  "score": {
+   "prices": 0,
+   "dishes": 12,
+   "ok": false
+  }
  },
  {
   "id": "ig-new-york-kaiten-zushi",
@@ -11566,7 +11596,7 @@
   "how": "page",
   "label": "Menu",
   "score": {
-   "prices": 72,
+   "prices": 47,
    "dishes": 2,
    "ok": true
   }
@@ -12105,8 +12135,7 @@
   "city": "Jérusalem",
   "old": "",
   "site": "https://zuta.wheree.com",
-  "homeStatus": 403,
-  "rendered": 1,
+  "homeStatus": 200,
   "menu": "https://zuta.wheree.com/menu",
   "how": "page-faible",
   "label": "Menu",
@@ -13255,15 +13284,8 @@
   "city": "Tel Aviv",
   "old": "",
   "site": "http://www.cafecucu.co.il/",
-  "homeStatus": 200,
-  "menu": "https://cafecucu.co.il/food/",
-  "how": "page-faible",
-  "label": "Food",
-  "score": {
-   "prices": 0,
-   "dishes": 0,
-   "ok": false
-  }
+  "homeStatus": 0,
+  "how": "google"
  },
  {
   "id": "ig-tel-aviv-cafe-puaa",
@@ -15158,14 +15180,9 @@
   "old": "https://order.toasttab.com/online/russanddaughters",
   "site": "https://www.russanddaughters.com/",
   "homeStatus": 200,
-  "menu": "https://order.toasttab.com/online/russanddaughters",
-  "how": "deja-bon",
-  "label": "",
-  "score": {
-   "prices": 127,
-   "dishes": 7,
-   "ok": true
-  }
+  "oldBroken": 403,
+  "rendered": 1,
+  "how": "google"
  },
  {
   "id": "ig-new-york-russ-daughters-le-cafe-orchard-st",
@@ -15175,14 +15192,9 @@
   "old": "https://order.toasttab.com/online/russanddaughters",
   "site": "https://www.russanddaughters.com/",
   "homeStatus": 200,
-  "menu": "https://order.toasttab.com/online/russanddaughters",
-  "how": "deja-bon",
-  "label": "",
-  "score": {
-   "prices": 127,
-   "dishes": 7,
-   "ok": true
-  }
+  "oldBroken": 403,
+  "rendered": 1,
+  "how": "google"
  },
  {
   "id": "ig-new-york-russ-daughters-34th-street",
@@ -15204,14 +15216,9 @@
   "old": "https://order.toasttab.com/online/russanddaughters",
   "site": "https://www.russanddaughters.com/",
   "homeStatus": 200,
-  "menu": "https://order.toasttab.com/online/russanddaughters",
-  "how": "deja-bon",
-  "label": "",
-  "score": {
-   "prices": 127,
-   "dishes": 7,
-   "ok": true
-  }
+  "oldBroken": 403,
+  "rendered": 1,
+  "how": "google"
  },
  {
   "id": "ig-new-york-harriet-s-rooftop-1-hotel-brooklyn-bridge",

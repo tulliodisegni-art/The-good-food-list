@@ -11,13 +11,17 @@
   "menu": "https://maslow-restaurants.com/etablissement/maslow/#menu",
   "how": "deja-bon"
  },
- "paris-1-italien-liberto": {
-  "menu": "",
-  "how": "google"
- },
  "paris-1-francais-pied-de-cochon": {
   "menu": "https://www.pieddecochon.com/menus-carte/",
   "how": "deja-bon"
+ },
+ "paris-1-italien-tzantza": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-1-italien-liberto": {
+  "menu": "",
+  "how": "google"
  },
  "paris-1-francais-les-artizans": {
   "menu": "https://www.lesartizans.fr/fr-fr/pages/menu-les-artizans",
@@ -31,47 +35,15 @@
   "menu": "",
   "how": "google"
  },
- "paris-1-francais-le-roch-restaurant": {
-  "menu": "",
-  "how": "google"
- },
  "paris-1-francais-elisworth": {
   "menu": "http://www.ellsworthparis.com/french-dinner",
-  "how": "deja-bon"
- },
- "paris-1-italien-presto-fresco": {
-  "menu": "https://presto-menu.anastudio.co/",
-  "how": "page"
- },
- "paris-1-japonais-pink-koi": {
-  "menu": "",
-  "how": "google"
- },
- "paris-1-italien-tzantza": {
-  "menu": "",
-  "how": "google"
- },
- "paris-1-japonais-nodaiwa": {
-  "menu": "https://www.nodaiwa.com/menus-carte/",
-  "how": "page"
- },
- "paris-1-japonais-sushi-way": {
-  "menu": "http://sushiway.fr/la-carte/",
   "how": "deja-bon"
  },
  "paris-1-japonais-restaurant-zen": {
   "menu": "https://www.zenrestaurantparis.fr/menu/",
   "how": "page"
  },
- "paris-1-coreen-dongne-chicken": {
-  "menu": "",
-  "how": "google"
- },
- "paris-1-japonais-foujita": {
-  "menu": "https://foujita.onataste.fr/menu/",
-  "how": "page-faible"
- },
- "paris-1-coreen-fondue-du-dragon": {
+ "paris-1-japonais-pink-koi": {
   "menu": "",
   "how": "google"
  },
@@ -79,23 +51,27 @@
   "menu": "https://www.takara-paris.com/notre-carte-en-fran%C3%A7ais/",
   "how": "deja-bon"
  },
- "paris-1-chinois-ravioli-nord-est": {
-  "menu": "",
-  "how": "google"
+ "paris-1-japonais-sushi-way": {
+  "menu": "http://sushiway.fr/la-carte/",
+  "how": "deja-bon"
  },
- "paris-1-chinois-bobun-chatelet": {
-  "menu": "",
-  "how": "google"
- },
- "paris-1-indonesien-djakarta-bali": {
-  "menu": "https://djakarta-bali.com/la-carte-restaurant-indonesien-djakarta-bali/",
+ "paris-1-japonais-nodaiwa": {
+  "menu": "https://www.nodaiwa.com/menus-carte/",
   "how": "page"
  },
- "paris-1-cafe-le-tiki-rose": {
+ "paris-1-francais-le-roch-restaurant": {
   "menu": "",
   "how": "google"
  },
- "paris-1-brunch-immersion-vendome": {
+ "paris-1-coreen-dongne-chicken": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-1-italien-presto-fresco": {
+  "menu": "https://presto-menu.anastudio.co/",
+  "how": "page"
+ },
+ "paris-1-chinois-ravioli-nord-est": {
   "menu": "",
   "how": "google"
  },
@@ -103,19 +79,43 @@
   "menu": "",
   "how": "google"
  },
- "paris-1-cafe-cafe-kitsune": {
-  "menu": "https://www.maisonkitsune.com/mk/wp-content/uploads/2021/12/ck_palaisroyal_menu_digital_no-price_a4.pdf",
-  "how": "deja-bon"
- },
  "paris-1-japonais-enyaa": {
   "menu": "",
   "how": "google"
+ },
+ "paris-1-indonesien-djakarta-bali": {
+  "menu": "https://djakarta-bali.com/la-carte-restaurant-indonesien-djakarta-bali/",
+  "how": "page"
+ },
+ "paris-1-japonais-foujita": {
+  "menu": "https://foujita.onataste.fr/menu/",
+  "how": "page-faible"
+ },
+ "paris-1-cafe-le-tiki-rose": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-1-chinois-bobun-chatelet": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-1-coreen-fondue-du-dragon": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-1-brunch-immersion-vendome": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-1-cafe-cafe-kitsune": {
+  "menu": "https://www.maisonkitsune.com/mk/wp-content/uploads/2021/12/ck_palaisroyal_menu_digital_no-price_a4.pdf",
+  "how": "deja-bon"
  },
  "paris-1-cafe-cafe-laperouse": {
   "menu": "https://cafelaperouse-concorde.com/wp-content/uploads/2026/11/CARTE-FOOD-HIVER-26-27-2.pdf",
   "how": "pdf"
  },
- "paris-1-cafe-aki": {
+ "paris-1-coreen-jjan": {
   "menu": "",
   "how": "google"
  },
@@ -135,11 +135,7 @@
   "menu": "https://www.oneandonerestaurants.com/menus-carte/",
   "how": "deja-bon"
  },
- "paris-1-coreen-jjan": {
-  "menu": "",
-  "how": "google"
- },
- "paris-1-cafe-musset": {
+ "paris-1-cafe-aki": {
   "menu": "",
   "how": "google"
  },
@@ -147,21 +143,25 @@
   "menu": "https://nouvellegardegroupe.com/brasserie-dubillot/menus/",
   "how": "deja-bon"
  },
- "paris-2-francais-la-grappe": {
-  "menu": "https://lagrappeparis.com/la-carte",
-  "how": "page"
+ "paris-1-cafe-musset": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-1-japonais-japanos-ramen-bar": {
+  "menu": "",
+  "how": "google"
  },
  "paris-2-francais-astair": {
   "menu": "https://www.astair.paris/menu/",
   "how": "page"
  },
+ "paris-2-francais-la-grappe": {
+  "menu": "https://lagrappeparis.com/la-carte",
+  "how": "page"
+ },
  "paris-2-francais-circonstances": {
   "menu": "https://www.circonstances.fr/images/qrcode_menu2021.jpg",
   "how": "image"
- },
- "paris-1-brunch-baguett-s-cafe": {
-  "menu": "",
-  "how": "google"
  },
  "paris-2-italien-pizz-aria": {
   "menu": "",
@@ -171,17 +171,13 @@
   "menu": "",
   "how": "google"
  },
- "paris-1-japonais-japanos-ramen-bar": {
-  "menu": "",
-  "how": "google"
+ "paris-2-italien-dalmata": {
+  "menu": "https://www.gruppodalmata.com/menu",
+  "how": "page"
  },
  "paris-2-italien-pupetta": {
   "menu": "",
   "how": "google"
- },
- "paris-2-italien-dalmata": {
-  "menu": "https://www.gruppodalmata.com/menu",
-  "how": "page"
  },
  "paris-2-francais-montecito": {
   "menu": "http://montecitoparis.com/wp-content/uploads/2026/10/Carte_Montecito_FR_EN-1.pdf",
@@ -211,7 +207,19 @@
   "menu": "https://www.manhattns.com/sites/default/files/2022-12/30.11.22-Manhattn%27s%20Menu_Paris_Print_Release%20HR.pdf",
   "how": "deja-bon"
  },
+ "paris-2-francais-the-hoxton": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-2-japonais-gyoza-bar": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-2-francais-itacoa": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-2-americain-cali-sisters": {
   "menu": "",
   "how": "google"
  },
@@ -219,15 +227,7 @@
   "menu": "https://www.cafe-marly.com/restaurant/menu",
   "how": "page-faible"
  },
- "paris-2-americain-cali-sisters": {
-  "menu": "",
-  "how": "google"
- },
- "paris-2-francais-the-hoxton": {
-  "menu": "",
-  "how": "google"
- },
- "paris-2-francais-itacoa": {
+ "paris-2-italien-maker": {
   "menu": "",
   "how": "google"
  },
@@ -251,57 +251,57 @@
   "menu": "https://cheztoye.fr/fr/services",
   "how": "deja-bon"
  },
- "paris-2-italien-focaccia-club": {
-  "menu": "",
-  "how": "google"
- },
- "paris-2-japonais-isshin-ramen": {
-  "menu": "",
-  "how": "google"
- },
  "paris-2-chinois-sweetraviolis": {
   "menu": "https://montmartre.sweetraviolis.com/menu",
   "how": "deja-bon"
+ },
+ "paris-1-brunch-baguett-s-cafe": {
+  "menu": "",
+  "how": "google"
  },
  "paris-2-coreen-hang-a-ri": {
   "menu": "",
   "how": "google"
  },
- "paris-2-italien-maker": {
-  "menu": "",
-  "how": "google"
- },
- "paris-2-thailandais-brique-machine": {
-  "menu": "",
-  "how": "google"
- },
- "paris-2-japonais-devant-vous": {
-  "menu": "https://devant-vous.onataste.fr/menu/",
-  "how": "page-faible"
+ "paris-2-chinois-mr-zhao": {
+  "menu": "https://www.zhaogroupe.com/menu-mr-zhao_carte/",
+  "how": "deja-bon"
  },
  "paris-2-coreen-sam-chic": {
   "menu": "https://samchic.fr/menu-samchic.pdf",
   "how": "pdf"
  },
- "paris-2-argentin-asado": {
-  "menu": "https://www.asadoparis.com/menu",
-  "how": "deja-bon"
+ "paris-2-thailandais-brique-machine": {
+  "menu": "",
+  "how": "google"
  },
- "paris-2-chinois-mr-zhao": {
-  "menu": "https://www.zhaogroupe.com/menu-mr-zhao_carte/",
+ "paris-2-chinois-supermian": {
+  "menu": "https://www.supermian.fr/menu",
   "how": "deja-bon"
  },
  "paris-2-libanais-noura": {
   "menu": "https://www.noura.com/menu-marceau/",
   "how": "page-faible"
  },
+ "paris-2-italien-focaccia-club": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-2-argentin-asado": {
+  "menu": "https://www.asadoparis.com/menu",
+  "how": "deja-bon"
+ },
+ "paris-2-japonais-devant-vous": {
+  "menu": "https://devant-vous.onataste.fr/menu/",
+  "how": "page-faible"
+ },
  "paris-1-coreen-go-oun": {
   "menu": "http://resto-gooun.com/entree",
   "how": "page"
  },
- "paris-2-chinois-supermian": {
-  "menu": "https://www.supermian.fr/menu",
-  "how": "deja-bon"
+ "paris-2-japonais-isshin-ramen": {
+  "menu": "",
+  "how": "google"
  },
  "paris-2-fusion-sweetea-s": {
   "menu": "https://cdn.website.dish.co/media/93/f3/2487040/Sweeteas-MENU-POISSONNIERE-optimise.pdf",
@@ -319,27 +319,15 @@
   "menu": "https://flipdish.blob.core.windows.net/pub/Menu%20CONTRASTES%20SUMMER%20VF.pdf",
   "how": "deja-bon"
  },
- "paris-2-corse-alma": {
-  "menu": "",
-  "how": "google"
+ "paris-2-thailandais-bomba": {
+  "menu": "https://bombaparis.com/le-menu/",
+  "how": "deja-bon"
  },
  "paris-3-francais-benedict": {
   "menu": "http://benedict-paris.com/pdf/benedict-MENU-FRANCAIS.pdf",
   "how": "pdf"
  },
- "paris-2-thailandais-bomba": {
-  "menu": "https://bombaparis.com/le-menu/",
-  "how": "deja-bon"
- },
- "paris-3-francais-supernova": {
-  "menu": "https://s3.eu-west-1.amazonaws.com/userdocs.zenchef.com/353645/ilovepdf_merged+(6).pdf",
-  "how": "deja-bon"
- },
- "paris-2-fusion-uma-nota": {
-  "menu": "https://uma-nota.com/fr/menus/",
-  "how": "deja-bon"
- },
- "paris-2-vegan-mopa": {
+ "paris-2-corse-alma": {
   "menu": "",
   "how": "google"
  },
@@ -347,7 +335,23 @@
   "menu": "",
   "how": "google"
  },
+ "paris-3-francais-supernova": {
+  "menu": "https://s3.eu-west-1.amazonaws.com/userdocs.zenchef.com/353645/ilovepdf_merged+(6).pdf",
+  "how": "deja-bon"
+ },
+ "paris-2-vegan-mopa": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-2-vegan-mama-nissa": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-2-fusion-uma-nota": {
+  "menu": "https://uma-nota.com/fr/menus/",
+  "how": "deja-bon"
+ },
+ "paris-3-italien-addomme": {
   "menu": "",
   "how": "google"
  },
@@ -355,7 +359,11 @@
   "menu": "https://www.season-paris.com/menu/",
   "how": "deja-bon"
  },
- "paris-3-italien-addomme": {
+ "paris-3-italien-all-antico-vinaio": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-3-japonais-ogata": {
   "menu": "",
   "how": "google"
  },
@@ -363,39 +371,35 @@
   "menu": "https://lebanquet.paris/wp-content/uploads/2025/11/ENVIE-MENU-NOUVEL-AN-2025.pdf",
   "how": "pdf"
  },
- "paris-3-italien-all-antico-vinaio": {
-  "menu": "",
-  "how": "google"
- },
  "paris-3-chinois-dimdimsum": {
   "menu": "https://dimdimsum.fr/menu",
   "how": "deja-bon"
  },
- "paris-3-coreen-doma": {
-  "menu": "https://restaurant-doma.fr/fr/services",
-  "how": "deja-bon"
- },
- "paris-3-burger-paris-new-york": {
-  "menu": "https://www.pnyburger.com/menu",
+ "paris-3-italien-big-love": {
+  "menu": "https://menu.bigmammagroup.com/biglove/?service=all",
   "how": "deja-bon"
  },
  "paris-3-americain-808-mac-and-cheese": {
   "menu": "",
   "how": "google"
  },
- "paris-2-brunch-oubruncher": {
-  "menu": "",
-  "how": "google"
+ "paris-3-burger-paris-new-york": {
+  "menu": "https://www.pnyburger.com/menu",
+  "how": "deja-bon"
+ },
+ "paris-3-coreen-doma": {
+  "menu": "https://restaurant-doma.fr/fr/services",
+  "how": "deja-bon"
  },
  "paris-3-oriental-qasti-shawarma": {
   "menu": "https://qastishawarmagrill.fr/#menuAnchor",
   "how": "section"
  },
- "paris-3-italien-big-love": {
-  "menu": "https://menu.bigmammagroup.com/biglove/?service=all",
-  "how": "deja-bon"
+ "paris-3-japonais-onii-san": {
+  "menu": "https://www.onii-san.fr/menu-1",
+  "how": "page-faible"
  },
- "paris-3-fusion-sweetea-s": {
+ "paris-2-brunch-oubruncher": {
   "menu": "",
   "how": "google"
  },
@@ -403,11 +407,11 @@
   "menu": "https://www.mao-corp.com/menu",
   "how": "deja-bon"
  },
- "paris-3-oriental-mabrouk": {
-  "menu": "https://userdocs.zenchef.com/352916/MABROUK-Menu-WINTER-2022.pdf",
-  "how": "deja-bon"
- },
  "paris-3-brunch-santa-lyna": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-3-fusion-sweetea-s": {
   "menu": "",
   "how": "google"
  },
@@ -415,43 +419,7 @@
   "menu": "https://www.lecafedesmusees.fr/menus-carte/",
   "how": "deja-bon"
  },
- "paris-3-japonais-onii-san": {
-  "menu": "https://www.onii-san.fr/menu-1",
-  "how": "page-faible"
- },
  "paris-3-polonais-matka": {
-  "menu": "",
-  "how": "google"
- },
- "paris-2-cafe-etienne-marcel": {
-  "menu": "https://assets.website-files.com/609cf971915f79b7c4ccf930/6419804a2e82326db5b19799_2023_03_EM_Resto.pdf",
-  "how": "deja-bon"
- },
- "paris-3-japonais-ogata": {
-  "menu": "",
-  "how": "google"
- },
- "paris-3-cafe-cafe-creme": {
-  "menu": "",
-  "how": "google"
- },
- "paris-4-francais-cheper": {
-  "menu": "",
-  "how": "google"
- },
- "paris-4-francais-la-baguette-du-relais": {
-  "menu": "",
-  "how": "google"
- },
- "paris-4-francais-jolie": {
-  "menu": "https://menu.joli-restaurant.fr/fr",
-  "how": "page"
- },
- "paris-4-francais-fabula": {
-  "menu": "https://menu.fabula.paris/fr",
-  "how": "deja-bon"
- },
- "paris-3-patisserie-la-maison-du-mochi": {
   "menu": "",
   "how": "google"
  },
@@ -459,31 +427,75 @@
   "menu": "",
   "how": "google"
  },
- "paris-4-francais-bonnie": {
+ "paris-3-cafe-cafe-creme": {
   "menu": "",
   "how": "google"
  },
- "paris-4-tapas-la-mangerie": {
-  "menu": "https://la-mangerie.com/la-carte/",
+ "paris-3-oriental-mabrouk": {
+  "menu": "https://userdocs.zenchef.com/352916/MABROUK-Menu-WINTER-2022.pdf",
+  "how": "deja-bon"
+ },
+ "paris-4-francais-cheper": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-4-francais-fabula": {
+  "menu": "https://menu.fabula.paris/fr",
+  "how": "deja-bon"
+ },
+ "paris-4-francais-jolie": {
+  "menu": "https://menu.joli-restaurant.fr/fr",
   "how": "page"
  },
- "paris-4-taiwanais-baobar": {
-  "menu": "https://baobar-restaurant-chinois.localoria.com/full-menu",
-  "how": "page-faible"
+ "paris-4-francais-la-baguette-du-relais": {
+  "menu": "",
+  "how": "google"
  },
- "paris-4-cafe-le-saint-regis": {
-  "menu": "https://assets.website-files.com/609eb4bf3ffc602ca621850e/63b2a0e31504f9accf115ccb_2023_01_St%20Regis_Resto_nuit.pdf",
-  "how": "deja-bon"
+ "paris-3-patisserie-la-maison-du-mochi": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-4-francais-bonnie": {
+  "menu": "",
+  "how": "google"
  },
  "paris-4-francais-le-paradis": {
   "menu": "https://menuonline.fr/leparadis/carte-restaurant",
   "how": "deja-bon"
  },
+ "paris-2-cafe-etienne-marcel": {
+  "menu": "https://assets.website-files.com/609cf971915f79b7c4ccf930/6419804a2e82326db5b19799_2023_03_EM_Resto.pdf",
+  "how": "deja-bon"
+ },
+ "paris-4-taiwanais-baobar": {
+  "menu": "https://baobar-restaurant-chinois.localoria.com/full-menu",
+  "how": "page-faible"
+ },
+ "paris-4-tapas-la-mangerie": {
+  "menu": "https://la-mangerie.com/la-carte/",
+  "how": "page"
+ },
+ "paris-4-cafe-le-saint-regis": {
+  "menu": "https://assets.website-files.com/609eb4bf3ffc602ca621850e/63b2a0e31504f9accf115ccb_2023_01_St%20Regis_Resto_nuit.pdf",
+  "how": "deja-bon"
+ },
+ "paris-4-americain-janet-by-homer": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-4-cacher-tekes": {
   "menu": "",
   "how": "google"
  },
- "paris-5-francais-pee-bee": {
+ "paris-4-cafe-la-favorite": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-4-italien-little-babel": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-5-italien-pepe-pizza": {
   "menu": "",
   "how": "google"
  },
@@ -491,21 +503,9 @@
   "menu": "https://kuma-marais.onataste.fr/menu/",
   "how": "page-faible"
  },
- "paris-5-italien-pepe-pizza": {
-  "menu": "",
-  "how": "google"
- },
- "paris-5-francais-bibie": {
-  "menu": "",
-  "how": "google"
- },
- "paris-4-italien-pupetta-marais": {
-  "menu": "",
-  "how": "google"
- },
- "paris-5-italien-respiro": {
-  "menu": "",
-  "how": "google"
+ "paris-5-corse-u-mulinu": {
+  "menu": "https://umulinu.fr/carte/",
+  "how": "page"
  },
  "paris-5-japonais-mimi-ramen": {
   "menu": "",
@@ -515,23 +515,23 @@
   "menu": "",
   "how": "google"
  },
- "paris-5-italien-pepita": {
+ "paris-5-italien-arrivederci": {
   "menu": "",
   "how": "google"
  },
- "paris-5-corse-u-mulinu": {
-  "menu": "https://umulinu.fr/carte/",
-  "how": "page"
+ "paris-5-burger-shiso-burger": {
+  "menu": "https://www.shisoburger.fr/notre-menu/",
+  "how": "deja-bon"
  },
- "paris-4-italien-little-babel": {
+ "paris-5-italien-respiro": {
   "menu": "",
   "how": "google"
  },
- "paris-4-americain-janet-by-homer": {
+ "paris-5-francais-bibie": {
   "menu": "",
   "how": "google"
  },
- "paris-2-japonais-zuzuttomo": {
+ "paris-6-francais-laperouse": {
   "menu": "",
   "how": "google"
  },
@@ -539,23 +539,31 @@
   "menu": "https://assets.website-files.com/609d874da707322cdfc72a47/641b1353cf0a4af948951c9e_2023_03%20Hibou%20Resto%20NUIT%20FR.pdf",
   "how": "deja-bon"
  },
- "paris-5-burger-shiso-burger": {
-  "menu": "https://www.shisoburger.fr/notre-menu/",
-  "how": "deja-bon"
- },
- "paris-6-francais-laperouse": {
-  "menu": "",
-  "how": "google"
- },
  "paris-6-francais-shiro": {
   "menu": "https://restaurantshiro.fr/notre-menu/",
   "how": "deja-bon"
+ },
+ "paris-5-francais-pee-bee": {
+  "menu": "",
+  "how": "google"
  },
  "paris-6-francais-brasserie-des-pres": {
   "menu": "https://lanouvellegarde.com/wp-content/uploads/bdp_boissons.pdf",
   "how": "pdf"
  },
- "paris-5-italien-arrivederci": {
+ "paris-2-japonais-zuzuttomo": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-6-italien-vita": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-4-italien-pupetta-marais": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-5-italien-pepita": {
   "menu": "",
   "how": "google"
  },
@@ -566,10 +574,6 @@
  "paris-6-japonais-ippudo-paris": {
   "menu": "https://www.ippudo.fr/menu/",
   "how": "deja-bon"
- },
- "paris-4-cafe-la-favorite": {
-  "menu": "",
-  "how": "google"
  },
  "paris-6-italien-anima": {
   "menu": "https://www.anima.paris/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjEwNTQiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D",
@@ -583,10 +587,6 @@
   "menu": "",
   "how": "google"
  },
- "paris-6-francais-le-sixieme": {
-  "menu": "",
-  "how": "google"
- },
  "paris-6-coreen-joayo": {
   "menu": "https://joayo-luxembourg.fr/fr/services",
   "how": "deja-bon"
@@ -595,45 +595,45 @@
   "menu": "http://desiroadrestaurant.com/carte",
   "how": "deja-bon"
  },
- "paris-6-chinois-yoom": {
-  "menu": "https://yoom.fr/notre-carte/",
-  "how": "deja-bon"
+ "paris-6-japonais-blueberry": {
+  "menu": "",
+  "how": "google"
  },
  "paris-6-brunch-tipana": {
   "menu": "https://cdn.flowcode.com/prodassets/MENU_TIPANA_1222.pdf?ts=1671038522916687958",
   "how": "deja-bon"
  },
- "paris-6-coreen-kokodak": {
-  "menu": "https://kokodak.onataste.fr/menu/",
-  "how": "page-faible"
- },
- "paris-5-burger-smash-burger": {
-  "menu": "https://smashsmash.com/menu",
-  "how": "page"
- },
- "paris-7-italien-solum": {
-  "menu": "https://solum.paris/wp-content/uploads/2024/05/CARTE_MENU_SOLUM-web-mai24.pdf",
-  "how": "pdf"
+ "paris-6-francais-le-sixieme": {
+  "menu": "",
+  "how": "google"
  },
  "paris-6-fusion-metou": {
   "menu": "",
   "how": "google"
  },
+ "paris-7-italien-solum": {
+  "menu": "https://solum.paris/wp-content/uploads/2024/05/CARTE_MENU_SOLUM-web-mai24.pdf",
+  "how": "pdf"
+ },
+ "paris-5-burger-smash-burger": {
+  "menu": "https://smashsmash.com/menu",
+  "how": "page"
+ },
  "paris-7-japonais-iode-sushi": {
   "menu": "https://www.iodesushi.com/en/menus/",
   "how": "deja-bon"
  },
+ "paris-6-chinois-yoom": {
+  "menu": "https://yoom.fr/notre-carte/",
+  "how": "deja-bon"
+ },
+ "paris-6-italien-cassaro-s": {
+  "menu": "https://www.cassaros.fr/restaurant/dinner-menu",
+  "how": "page-faible"
+ },
  "paris-6-japonais-o-kome": {
   "menu": "https://o-kome-onigiri.com/2360/carte/0",
   "how": "deja-bon"
- },
- "paris-6-italien-vita": {
-  "menu": "",
-  "how": "google"
- },
- "paris-6-japonais-blueberry": {
-  "menu": "",
-  "how": "google"
  },
  "paris-7-cafe-cuppa-cafe": {
   "menu": "",
@@ -647,9 +647,9 @@
   "menu": "",
   "how": "google"
  },
- "paris-6-italien-cassaro-s": {
-  "menu": "https://www.cassaros.fr/restaurant/dinner-menu",
-  "how": "page-faible"
+ "paris-7-indien-new-jawad-new-balal": {
+  "menu": "https://v2cdn0.centralappstatic.com/file/a19ee38c09e94912804e82f04779e726.pdf",
+  "how": "deja-bon"
  },
  "paris-8-francais-mamamia": {
   "menu": "https://mamamia-paris.com/portfolio-category/food",
@@ -659,35 +659,31 @@
   "menu": "https://restaurantsphere.com/notre-menu/",
   "how": "page-faible"
  },
- "paris-7-indien-new-jawad-new-balal": {
-  "menu": "https://v2cdn0.centralappstatic.com/file/a19ee38c09e94912804e82f04779e726.pdf",
-  "how": "deja-bon"
+ "paris-7-brunch-kozy": {
+  "menu": "",
+  "how": "google"
  },
- "paris-7-japonais-vesper": {
-  "menu": "https://www.fitz-group.fr/camondo/menus",
-  "how": "page"
+ "paris-6-coreen-kokodak": {
+  "menu": "https://kokodak.onataste.fr/menu/",
+  "how": "page-faible"
  },
  "paris-8-italien-giulia": {
   "menu": "https://www.giulia-paris.com/_files/ugd/e991cf_d0f30a7cacf649fd84f2fa8b367daf3c.pdf",
   "how": "pdf"
  },
- "paris-7-brunch-kozy": {
-  "menu": "",
-  "how": "google"
+ "paris-7-japonais-vesper": {
+  "menu": "https://www.fitz-group.fr/camondo/menus",
+  "how": "page"
  },
  "paris-8-francais-le-chat-blanc": {
   "menu": "",
   "how": "google"
  },
- "paris-8-francais-le-piaf": {
-  "menu": "",
-  "how": "google"
+ "paris-6-cafe-patrol": {
+  "menu": "https://patrol-paris.com/food",
+  "how": "deja-bon"
  },
  "paris-8-japonais-l-abysse": {
-  "menu": "",
-  "how": "google"
- },
- "paris-8-italien-maitre-pierre": {
   "menu": "",
   "how": "google"
  },
@@ -695,19 +691,15 @@
   "menu": "https://www.akirabackparis.com/fr/carte",
   "how": "deja-bon"
  },
+ "paris-8-italien-maitre-pierre": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-8-japonais-doki-doki": {
   "menu": "https://dokidoki-handroll.com/wp-content/uploads/2026/03/CARTE-DOKI-DOKI.pdf",
   "how": "pdf"
  },
- "paris-6-cafe-patrol": {
-  "menu": "https://patrol-paris.com/food",
-  "how": "deja-bon"
- },
  "paris-8-francais-beefbar": {
-  "menu": "",
-  "how": "google"
- },
- "paris-8-japonais-yatai-ramen": {
   "menu": "",
   "how": "google"
  },
@@ -715,21 +707,29 @@
   "menu": "https://komatsubaki.fr/pages/menu",
   "how": "page-faible"
  },
- "paris-8-japonais-weito": {
-  "menu": "",
-  "how": "google"
- },
  "paris-8-coreen-hite": {
   "menu": "",
   "how": "google"
  },
- "paris-8-cacher-le-kavod": {
-  "menu": "https://www.kavod.fr/",
-  "how": "accueil-avec-prix"
+ "paris-8-japonais-kokuban": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-8-japonais-weito": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-8-japonais-yatai-ramen": {
+  "menu": "",
+  "how": "google"
  },
  "paris-8-libanais-paillettes": {
   "menu": "https://www.paillettes-paris.com/fr/carte-restaurant-israelien-libanais-paris",
   "how": "deja-bon"
+ },
+ "paris-8-cacher-le-kavod": {
+  "menu": "https://www.kavod.fr/",
+  "how": "accueil-avec-prix"
  },
  "paris-8-japonais-shinko": {
   "menu": "",
@@ -739,13 +739,13 @@
   "menu": "https://www.mahatmaparis.com/menu",
   "how": "deja-bon"
  },
+ "paris-8-francais-le-piaf": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-8-tapas-sergent-garcia": {
   "menu": "https://www.sergent-garcia.com/menus",
   "how": "page"
- },
- "paris-8-oriental-gala": {
-  "menu": "",
-  "how": "google"
  },
  "paris-8-grec-kalamata": {
   "menu": "https://www.kalamata-restaurant.com/menu",
@@ -755,65 +755,61 @@
   "menu": "https://www.lhotse.fr/menus-carte/",
   "how": "deja-bon"
  },
- "paris-8-japonais-kokuban": {
+ "paris-8-oriental-gala": {
   "menu": "",
   "how": "google"
- },
- "paris-8-japonais-enni-udon": {
-  "menu": "",
-  "how": "google"
- },
- "paris-8-fusion-bensai-thai-japanese-fusion": {
-  "menu": "https://www.bensai.fr/wp-content/uploads/2024/12/menu-bensai-fr.pdf",
-  "how": "pdf"
  },
  "paris-8-italien-noto": {
   "menu": "https://noto-paris.com/wp-content/uploads/2026/02/FOOD-NOTO-19-02-WEB.pdf",
   "how": "pdf"
  },
- "paris-8-cafe-cafe-fino": {
-  "menu": "https://cafefino.fr/#menu",
-  "how": "section"
+ "paris-8-fusion-bensai-thai-japanese-fusion": {
+  "menu": "https://www.bensai.fr/wp-content/uploads/2024/12/menu-bensai-fr.pdf",
+  "how": "pdf"
  },
- "paris-9-francais-mon-paris": {
-  "menu": "https://www.mon-paris.fr/la-carte/",
-  "how": "deja-bon"
+ "paris-8-japonais-enni-udon": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-8-tapas-amazonia": {
+  "menu": "https://cdn.qr-code-generator.com/account18288132/59356668_1.pdf?Expires=1794885363&Signature=fRVgw87VpdQ-US9ar27oq9o98IltGATDBkNfLVIat721WlrlVWbuoR7WMtkrB4dUWdmyLCyTpzRBF9n2JV7fBprf48eXDfFrnj8R0vH3aWRlQm2LEF2H8dUnZV7Xc1U0GBqmkrDSTYcI2upkfttEbSbZgA~-GgTkANqnQF8Ssgy5xSAXgD6PXl5s29ObrfxSK-9iC4J8hq9AS-6J-kRdRRdphOLTeBrW7Rzx5sx~vrD~z8o40OfHr2SKNCXDJar~uodRyTxqTIgZaL9a~Fpf2SIBkjho7iJPqAD7f067EMbifuOeuqYb7P~hyXbrPNBWb7Ozd-dDGfzx09v4FuuhIA__&Key-Pair-Id=KPNI74OVB7CJI",
+  "how": "pdf"
  },
  "paris-8-thailandais-mun": {
   "menu": "",
   "how": "google"
  },
- "paris-9-francais-lorette-les-garcons": {
-  "menu": "https://lorettebistrot.com/wp-content/uploads/2026/11/Carte-des-vins.pdf",
-  "how": "pdf"
+ "paris-8-cafe-cafe-fino": {
+  "menu": "https://cafefino.fr/#menu",
+  "how": "section"
  },
- "paris-8-grec-anna": {
-  "menu": "https://restaurant-anna.com/wp-content/uploads/2022/11/FOOD-ANNA-FR.pdf",
+ "paris-9-francais-piou-piou": {
+  "menu": "https://piou-piou.fr/menu-1/",
+  "how": "page-faible"
+ },
+ "paris-9-francais-mon-paris": {
+  "menu": "https://www.mon-paris.fr/la-carte/",
   "how": "deja-bon"
  },
  "paris-9-francais-le-roi-du-pot-au-feu": {
   "menu": "",
   "how": "google"
  },
- "paris-9-francais-piou-piou": {
-  "menu": "https://piou-piou.fr/menu-1/",
-  "how": "page-faible"
+ "paris-9-francais-bien-eleve": {
+  "menu": "https://bien-eleve.s3.eu-central-1.amazonaws.com/mlkpi6hai01stnzg3vyeu4pn9p7z?response-content-disposition=inline%3B%20filename%3D%2220261009__Carte_Food_EXT%20FR%20%25281%2529.pdf%22%3B%20filename%2A%3DUTF-8%27%2720261009__Carte_Food_EXT%2520FR%2520%25281%2529.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAJLM7ZONSWM7EIQ%2F20261116%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20261116T031606Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5c1ef34264372110ef3ecc0559ef41f008df34197d6d6d109da394aefd7ca546",
+  "how": "pdf"
  },
  "paris-9-francais-petit-bon": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-9-francais-le-rouge-a-levres": {
   "menu": "",
   "how": "google"
  },
  "paris-8-brunch-prince-de-galles": {
   "menu": "https://www.19-20paris.fr/menus",
   "how": "page-pdfs"
- },
- "paris-9-francais-bien-eleve": {
-  "menu": "https://bien-eleve.s3.eu-central-1.amazonaws.com/mlkpi6hai01stnzg3vyeu4pn9p7z?response-content-disposition=inline%3B%20filename%3D%2220261009__Carte_Food_EXT%20FR%20%25281%2529.pdf%22%3B%20filename%2A%3DUTF-8%27%2720261009__Carte_Food_EXT%2520FR%2520%25281%2529.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJAJLM7ZONSWM7EIQ%2F20261116%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20261116T025255Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a73e015d87d02babbb513031046166950a2b2b990f639fb6c51bab8f446dac34",
-  "how": "pdf"
- },
- "paris-9-francais-le-rouge-a-levres": {
-  "menu": "",
-  "how": "google"
  },
  "paris-9-burger-cot-cot": {
   "menu": "",
@@ -823,29 +819,33 @@
   "menu": "",
   "how": "google"
  },
+ "paris-8-grec-anna": {
+  "menu": "https://restaurant-anna.com/wp-content/uploads/2022/11/FOOD-ANNA-FR.pdf",
+  "how": "deja-bon"
+ },
+ "paris-9-francais-lorette-les-garcons": {
+  "menu": "https://lorettebistrot.com/wp-content/uploads/2026/11/Carte-des-vins.pdf",
+  "how": "pdf"
+ },
  "paris-9-francais-rivages": {
   "menu": "https://www.restaurantrivages.com/menu/",
   "how": "page-faible"
  },
- "paris-8-tapas-amazonia": {
-  "menu": "https://cdn.qr-code-generator.com/account18288132/59356668_1.pdf?Expires=1794883979&Signature=yO4mZ0P7y3q9b796cGcRnlOASqFD8Q4qr-X9wDJaJMJN5r1TzxzeK2w0Ts-Zl-u18f6x8C~zx3inAf1MzAOjSCbbtgsU-mHl9I9tHrrumFkk-k94T6PP2bnbS58fGETiPaKpsKCJLpci~5jiV1dfyjtAzPCboFnPl1-Pjzilvg0JyR-C6yZxk8c2hQ3UzeWXcERW5OdEJJ3KZHSEl1Z~hMT1qp5tlUbjdA5snmY-yJ8aSHxbkb2ejlKJka9FgLAc9OsDvscBkL5YWnacvgLuIVnI62L2rTWijuJ2c9flLj78GGrVxG1hR8eM2DcRK9h87jbFcQLFLOgf-lG7yaO9hw__&Key-Pair-Id=KPNI74OVB7CJI",
-  "how": "pdf"
+ "paris-9-italien-pepe-ronchon": {
+  "menu": "",
+  "how": "google"
  },
  "paris-9-japonais-okito": {
   "menu": "https://birhakeim.okito.fr/menu",
   "how": "deja-bon"
  },
- "paris-9-japonais-kokuban": {
-  "menu": "",
-  "how": "google"
- },
  "paris-9-francais-perlouse": {
   "menu": "",
   "how": "google"
  },
- "paris-9-italien-pepe-ronchon": {
-  "menu": "",
-  "how": "google"
+ "paris-9-japonais-naruto-ramen": {
+  "menu": "https://www.narutoramen.fr/menu-francais",
+  "how": "deja-bon"
  },
  "paris-9-japonais-kome-kome": {
   "menu": "https://komekome.fr/#menu",
@@ -859,21 +859,21 @@
   "menu": "",
   "how": "google"
  },
- "paris-9-japonais-kibo-noki": {
-  "menu": "",
-  "how": "google"
- },
  "paris-9-francais-le-shack": {
   "menu": "",
   "how": "google"
  },
- "paris-9-japonais-naruto-ramen": {
-  "menu": "https://www.narutoramen.fr/menu-francais",
-  "how": "deja-bon"
+ "paris-9-japonais-kokuban": {
+  "menu": "",
+  "how": "google"
  },
- "paris-9-japonais-abri-soba": {
-  "menu": "https://abri-soba.onataste.fr/menu/",
-  "how": "page-faible"
+ "paris-9-chinois-ravioli-nord-est": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-9-japonais-kibo-noki": {
+  "menu": "",
+  "how": "google"
  },
  "paris-9-japonais-shinjuku": {
   "menu": "",
@@ -883,59 +883,47 @@
   "menu": "https://manigua.paris/wp-content/uploads/2025/03/menu_manigua_01.jpg",
   "how": "image"
  },
- "paris-9-japonais-face-noodles": {
-  "menu": "https://face-noodles-hand-made.onataste.fr/menu/",
-  "how": "page-faible"
- },
- "paris-9-coreen-joayo-haussmann": {
-  "menu": "",
-  "how": "google"
- },
- "paris-9-chinois-ravioli-nord-est": {
-  "menu": "",
-  "how": "google"
- },
- "paris-9-argentin-paris-boca": {
-  "menu": "https://v2cdn0.centralappstatic.com/file/846c902485d44139ab5a2959226c18b1.pdf",
+ "paris-9-coreen-budji": {
+  "menu": "https://www.budji-food.com/notre-carte-2",
   "how": "deja-bon"
- },
- "paris-9-indien-the-crossing": {
-  "menu": "https://crossingindianbistro.com/wp-content/uploads/2025/12/Crossing-A-la-carte-menu.pdf",
-  "how": "pdf-via-page"
- },
- "paris-9-colombien-mi-ranchito-paisa": {
-  "menu": "https://miranchitopaisa.com/fr/services",
-  "how": "page"
  },
  "paris-9-coreen-jjan": {
   "menu": "",
   "how": "google"
  },
- "paris-9-chinois-long-chao-shou": {
-  "menu": "https://long-chao-shou-zong-dian-ravioli-du-sichuan.onataste.fr/menu/",
-  "how": "page-faible"
+ "paris-9-indien-the-crossing": {
+  "menu": "https://crossingindianbistro.com/wp-content/uploads/2025/12/Crossing-A-la-carte-menu.pdf",
+  "how": "pdf-via-page"
  },
- "paris-9-coreen-budji": {
-  "menu": "https://www.budji-food.com/notre-carte-2",
+ "paris-9-argentin-paris-boca": {
+  "menu": "https://v2cdn0.centralappstatic.com/file/846c902485d44139ab5a2959226c18b1.pdf",
   "how": "deja-bon"
  },
- "paris-9-tapas-villa-mikuna": {
+ "paris-9-coreen-joayo-haussmann": {
   "menu": "",
   "how": "google"
  },
- "paris-9-poisson-fruits-de-mer-mersea": {
-  "menu": "https://www.merseaparis.com/menu-beaupassage/",
+ "paris-9-colombien-mi-ranchito-paisa": {
+  "menu": "https://miranchitopaisa.com/fr/services",
   "how": "page"
  },
  "paris-9-chinois-yoom": {
   "menu": "https://yoom.fr/notre-carte/",
   "how": "deja-bon"
  },
- "paris-9-cafe-braun-notes-coffee": {
+ "paris-9-libanais-liza": {
   "menu": "",
   "how": "google"
  },
- "paris-9-tapas-la-bouche-bleue": {
+ "paris-9-japonais-abri-soba": {
+  "menu": "https://abri-soba.onataste.fr/menu/",
+  "how": "page-faible"
+ },
+ "paris-9-japonais-face-noodles": {
+  "menu": "https://face-noodles-hand-made.onataste.fr/menu/",
+  "how": "page-faible"
+ },
+ "paris-9-tapas-villa-mikuna": {
   "menu": "",
   "how": "google"
  },
@@ -943,41 +931,53 @@
   "menu": "",
   "how": "google"
  },
- "paris-9-libanais-liza": {
+ "paris-9-cafe-braun-notes-coffee": {
   "menu": "",
   "how": "google"
+ },
+ "paris-9-tapas-mamacita": {
+  "menu": "https://groupe-bucher.fr/menu-mamacita/",
+  "how": "deja-bon"
+ },
+ "paris-9-poisson-fruits-de-mer-mersea": {
+  "menu": "https://www.merseaparis.com/menu-beaupassage/",
+  "how": "page"
  },
  "paris-9-cafe-cafe-de-la-paix": {
   "menu": "https://www.cafedelapaix.fr/assets/uploads/2023/03/Carte-Cafe-printemps-2023.pdf",
   "how": "deja-bon"
  },
+ "paris-9-tapas-la-bouche-bleue": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-9-bar-a-cocktails-moloko": {
   "menu": "https://molokoparis.com/eat",
-  "how": "deja-bon"
- },
- "paris-9-tapas-mamacita": {
-  "menu": "https://groupe-bucher.fr/menu-mamacita/",
   "how": "deja-bon"
  },
  "paris-10-francais-terminus-nord": {
   "menu": "https://www.terminusnord.com/menus-carte/",
   "how": "deja-bon"
  },
+ "paris-9-poisson-fruits-de-mer-pere-fish": {
+  "menu": "https://www.pereetfish.com/menu",
+  "how": "page-faible"
+ },
  "paris-10-francais-c-est-dante": {
   "menu": "https://www.danterestaurant.info/menus-carte/",
   "how": "deja-bon"
  },
- "paris-10-francais-vertueux": {
-  "menu": "https://restaurantvertueux.com/notre-menu",
-  "how": "page"
+ "paris-9-brunch-kozy-kanope": {
+  "menu": "",
+  "how": "google"
  },
  "paris-10-francais-joseph-et-raymond": {
   "menu": "",
   "how": "google"
  },
- "paris-9-brunch-kozy-kanope": {
-  "menu": "",
-  "how": "google"
+ "paris-10-francais-vertueux": {
+  "menu": "https://restaurantvertueux.com/notre-menu",
+  "how": "page"
  },
  "paris-9-bar-a-cocktails-les-commeres": {
   "menu": "",
@@ -991,13 +991,13 @@
   "menu": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account13689296/34087824_1.pdf?0.3900653535000467",
   "how": "deja-bon"
  },
- "paris-9-cafe-book-nook": {
-  "menu": "",
-  "how": "google"
- },
  "paris-10-italien-mamaioa": {
   "menu": "https://mamaioa.fr/fr/services",
   "how": "page"
+ },
+ "paris-9-cafe-book-nook": {
+  "menu": "",
+  "how": "google"
  },
  "paris-10-americain-baba-zulu": {
   "menu": "https://weloob.com/sweet-potato-taco-bowl-recipe-flavor-packed-weeknight-dinner/",
@@ -1007,28 +1007,28 @@
   "menu": "",
   "how": "google"
  },
+ "paris-9-tapas-le-vert-sauvage": {
+  "menu": "https://le-vert-sauvage.wheree.com/menu",
+  "how": "page-faible"
+ },
  "paris-10-burger-blossom-burgers-beers": {
   "menu": "https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/16_marketica2_tablet_view_offcanvas_menu.png",
   "how": "image"
- },
- "paris-9-poisson-fruits-de-mer-pere-fish": {
-  "menu": "https://www.pereetfish.com/menu",
-  "how": "page-faible"
- },
- "paris-10-japonais-noori": {
-  "menu": "https://www.noorifamily.com/notre-menu",
-  "how": "page-faible"
  },
  "paris-10-francais-le-candide": {
   "menu": "",
   "how": "google"
  },
+ "paris-10-japonais-noori": {
+  "menu": "https://www.noorifamily.com/notre-menu",
+  "how": "page-faible"
+ },
+ "paris-9-chinois-long-chao-shou": {
+  "menu": "https://long-chao-shou-zong-dian-ravioli-du-sichuan.onataste.fr/menu/",
+  "how": "page-faible"
+ },
  "paris-10-japonais-hara-kiri-ramen": {
   "menu": "http://www.harakiriramen.fr/plats",
-  "how": "deja-bon"
- },
- "paris-10-chinois-bolobolo": {
-  "menu": "https://v2cdn1.centralappstatic.com/file/e29a9446d08e4b11bfda5b0bde11e76a.pdf",
   "how": "deja-bon"
  },
  "paris-10-japonais-espace-japon": {
@@ -1039,41 +1039,41 @@
   "menu": "",
   "how": "google"
  },
- "paris-10-coreen-hite-family": {
-  "menu": "https://hitefamily.com/menu",
-  "how": "deja-bon"
- },
  "paris-10-grec-kali-greek-food": {
   "menu": "https://www.kaligreekfood.fr/_files/ugd/d7c73f_e2638d2cc79d4929ab1b32b81c22e57f.pdf",
   "how": "deja-bon"
  },
- "paris-10-francais-casimir": {
-  "menu": "",
-  "how": "google"
+ "paris-10-coreen-hite-family": {
+  "menu": "https://hitefamily.com/menu",
+  "how": "deja-bon"
+ },
+ "paris-10-chinois-la-taverne-de-zhao": {
+  "menu": "https://www.zhaogroupe.com/la-taverne-de-zhao_opera/",
+  "how": "deja-bon"
  },
  "paris-10-oriental-levantine": {
   "menu": "https://www.levantine.paris/carte",
   "how": "page"
  },
- "paris-10-chinois-la-taverne-de-zhao": {
-  "menu": "https://www.zhaogroupe.com/la-taverne-de-zhao_opera/",
+ "paris-10-chinois-bolobolo": {
+  "menu": "https://v2cdn1.centralappstatic.com/file/e29a9446d08e4b11bfda5b0bde11e76a.pdf",
   "how": "deja-bon"
  },
  "paris-10-oriental-mister-do-san": {
   "menu": "https://mister-do-san.site.bykomdab.com/fr/menu",
   "how": "page"
  },
- "paris-10-oriental-not-a-kebab": {
-  "menu": "https://luks-kebab.fr/wp-content/uploads/2025/11/MENU-LUKS-SANS-PRIX-OCTOBRE-25.pdf",
-  "how": "pdf"
- },
  "paris-10-cacher-vendredi-soir": {
   "menu": "https://www.vendredi-soir.paris/menus-carte/",
   "how": "page"
  },
- "paris-10-japonais-john-weng": {
+ "paris-10-francais-casimir": {
   "menu": "",
   "how": "google"
+ },
+ "paris-10-oriental-not-a-kebab": {
+  "menu": "https://luks-kebab.fr/wp-content/uploads/2025/11/MENU-LUKS-SANS-PRIX-OCTOBRE-25.pdf",
+  "how": "pdf"
  },
  "paris-10-fusion-siseng": {
   "menu": "https://siseng.paris/menu/",
@@ -1083,33 +1083,33 @@
   "menu": "",
   "how": "google"
  },
+ "paris-10-japonais-john-weng": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-10-burger-o-b-u": {
   "menu": "https://obu-organisation-des-burgers-unis.menujoys.com/menu",
   "how": "page"
- },
- "paris-9-tapas-le-vert-sauvage": {
-  "menu": "",
-  "how": "google"
  },
  "paris-10-cafe-le-cafe-bistrot": {
   "menu": "",
   "how": "google"
  },
- "paris-10-vegan-ora": {
-  "menu": "",
-  "how": "google"
+ "paris-10-cambodgien-le-petit-cambodge": {
+  "menu": "https://lepetitcambodge.fr/wp-content/themes/dist/pdf/LPC-VELLEFAUX-030622.pdf",
+  "how": "deja-bon"
  },
- "paris-10-mexicain-nomas-tacos": {
-  "menu": "https://drive.google.com/file/d/1E2M2woIs6tj9DGvKqNAQKiln4cmaydpu/view",
-  "how": "page-liseuse"
+ "paris-10-brunch-parenthese": {
+  "menu": "https://www.parenthesebrunch.com/menu",
+  "how": "deja-bon"
  },
  "paris-10-cafe-residence-kann": {
   "menu": "https://residencekann.wordpress.com/",
   "how": "accueil-avec-prix"
  },
- "paris-10-brunch-parenthese": {
-  "menu": "https://www.parenthesebrunch.com/menu",
-  "how": "deja-bon"
+ "paris-10-africain-new-soul-food": {
+  "menu": "",
+  "how": "google"
  },
  "paris-11-francais-blue-rooster": {
   "menu": "",
@@ -1123,10 +1123,6 @@
   "menu": "",
   "how": "google"
  },
- "paris-10-africain-new-soul-food": {
-  "menu": "",
-  "how": "google"
- },
  "paris-11-francais-brasserie-martin": {
   "menu": "https://nouvellegardegroupe.com/brasserie-martin/menus/",
   "how": "deja-bon"
@@ -1135,17 +1131,21 @@
   "menu": "https://www.diggityparis.com/menus-carte/",
   "how": "deja-bon"
  },
- "paris-11-francais-maison-breguet": {
-  "menu": "https://menu-maison-breguet.webflow.io/menu/diner",
-  "how": "page"
+ "paris-10-cafe-immersion": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-11-francais-chez-francois": {
+  "menu": "https://www.alloj.com/fr/restaurant-cacher/chez-francois/carte.html",
+  "how": "deja-bon"
  },
  "paris-11-francais-dadou": {
   "menu": "https://www.dadourestaurant.com/menu",
   "how": "page-faible"
  },
- "paris-11-francais-chez-francois": {
-  "menu": "https://www.alloj.com/fr/restaurant-cacher/chez-francois/carte.html",
-  "how": "deja-bon"
+ "paris-11-italien-giorgio": {
+  "menu": "https://giorgio.site.bykomdab.com/fr/menu",
+  "how": "page"
  },
  "paris-11-italien-pupetta-beaumarchais": {
   "menu": "",
@@ -1155,23 +1155,23 @@
   "menu": "https://www.gruppomimo.com/food",
   "how": "deja-bon"
  },
- "paris-11-italien-giorgio": {
-  "menu": "https://giorgio.site.bykomdab.com/fr/menu",
-  "how": "page"
+ "paris-10-mexicain-nomas-tacos": {
+  "menu": "https://drive.google.com/file/d/1E2M2woIs6tj9DGvKqNAQKiln4cmaydpu/view",
+  "how": "page-liseuse"
+ },
+ "paris-11-francais-mamie-bidoche": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-10-vegan-ora": {
+  "menu": "",
+  "how": "google"
  },
  "paris-11-italien-origini": {
   "menu": "https://originiresto.com/menu/",
   "how": "page"
  },
- "paris-10-cafe-immersion": {
-  "menu": "",
-  "how": "google"
- },
- "paris-10-cambodgien-le-petit-cambodge": {
-  "menu": "https://lepetitcambodge.fr/wp-content/themes/dist/pdf/LPC-VELLEFAUX-030622.pdf",
-  "how": "deja-bon"
- },
- "paris-11-francais-mamie-bidoche": {
+ "paris-11-burger-31-street-burgers": {
   "menu": "",
   "how": "google"
  },
@@ -1187,7 +1187,7 @@
   "menu": "https://echoppedeparis.fr/carte.html",
   "how": "page-faible"
  },
- "paris-11-burger-31-street-burgers": {
+ "paris-11-espagnol-rainbao": {
   "menu": "",
   "how": "google"
  },
@@ -1195,29 +1195,29 @@
   "menu": "",
   "how": "google"
  },
- "paris-11-burger-gomu": {
+ "paris-11-francais-maison-breguet": {
+  "menu": "https://menu-maison-breguet.webflow.io/menu/diner",
+  "how": "page"
+ },
+ "paris-10-indonesien-djawa": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-11-americain-brother-sister": {
+  "menu": "https://brothersister.fr/menu",
+  "how": "deja-bon"
+ },
+ "paris-11-japonais-sushi-rainbow": {
+  "menu": "https://sushirainbow.fr/menu",
+  "how": "deja-bon"
+ },
+ "paris-11-burger-cut": {
   "menu": "",
   "how": "google"
  },
  "paris-11-burger-crispy-soul": {
   "menu": "",
   "how": "google"
- },
- "paris-11-espagnol-rainbao": {
-  "menu": "",
-  "how": "google"
- },
- "paris-11-burger-cut": {
-  "menu": "",
-  "how": "google"
- },
- "paris-11-japonais-sushi-rainbow": {
-  "menu": "https://sushirainbow.fr/menu",
-  "how": "deja-bon"
- },
- "paris-11-japonais-yoruparis": {
-  "menu": "https://edesignparis.fr/menu-restaurant/",
-  "how": "page"
  },
  "paris-11-japonais-aoba": {
   "menu": "",
@@ -1227,25 +1227,25 @@
   "menu": "",
   "how": "google"
  },
- "paris-11-americain-brother-sister": {
-  "menu": "https://brothersister.fr/menu",
-  "how": "deja-bon"
+ "paris-11-burger-gomu": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-11-japonais-yoruparis": {
+  "menu": "https://edesignparis.fr/menu-restaurant/",
+  "how": "page"
  },
  "paris-11-chinois-mala-boom": {
   "menu": "https://static1.squarespace.com/static/62600ddb33c86a7e2d9910f4/t/6a09c5919b0d09551dbd1823/1779025297528/Mala+Boom+Menu.pdf",
   "how": "pdf"
  },
- "paris-11-japonais-superbao": {
-  "menu": "https://www.superbao.fr/menu",
-  "how": "page-faible"
- },
  "paris-11-oriental-chakchouka": {
   "menu": "",
   "how": "google"
  },
- "paris-10-indonesien-djawa": {
-  "menu": "",
-  "how": "google"
+ "paris-11-japonais-superbao": {
+  "menu": "https://www.superbao.fr/menu",
+  "how": "page-faible"
  },
  "paris-11-chinois-bao-express": {
   "menu": "",
@@ -1267,25 +1267,29 @@
   "menu": "",
   "how": "google"
  },
- "paris-11-philippin-bobi": {
-  "menu": "https://www.bobiparis.com/#menu",
-  "how": "section"
+ "paris-11-fusion-savane-mousson": {
+  "menu": "https://cdn.prod.website-files.com/67f4fc09ecc405626e114dd0/696673703295f48a5762f249_Menu%20Paris%2011.pdf",
+  "how": "pdf"
  },
  "paris-11-fusion-laia": {
   "menu": "",
   "how": "google"
  },
- "paris-11-burger-break-moment": {
-  "menu": "https://menu.tillersystems.com/16486/break-moment-11-eme/menu/25260",
-  "how": "deja-bon"
+ "paris-11-philippin-bobi": {
+  "menu": "https://www.bobiparis.com/#menu",
+  "how": "section"
  },
- "paris-11-israelien-soumsoum": {
+ "paris-11-brunch-clint": {
   "menu": "",
   "how": "google"
  },
  "paris-11-brunch-kafkaf": {
   "menu": "https://thehungryfamily.com/wp-content/uploads/2023/01/20221027_Kafkaf_Menu.pdf",
   "how": "deja-bon"
+ },
+ "paris-11-israelien-soumsoum": {
+  "menu": "",
+  "how": "google"
  },
  "paris-11-brunch-l-atelier-saisonnier": {
   "menu": "https://lateliersaisonnier.com/top-meilleur-brunch-paris",
@@ -1295,19 +1299,11 @@
   "menu": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account17161036/35948524_1.pdf?0.8737910237315161",
   "how": "deja-bon"
  },
- "paris-11-fusion-savane-mousson": {
-  "menu": "https://cdn.prod.website-files.com/67f4fc09ecc405626e114dd0/696673703295f48a5762f249_Menu%20Paris%2011.pdf",
-  "how": "pdf"
- },
- "paris-11-brunch-clint": {
-  "menu": "",
-  "how": "google"
+ "paris-11-burger-break-moment": {
+  "menu": "https://menu.tillersystems.com/16486/break-moment-11-eme/menu/25260",
+  "how": "deja-bon"
  },
  "paris-11-cafe-joa": {
-  "menu": "",
-  "how": "google"
- },
- "paris-11-chinois-hibao": {
   "menu": "",
   "how": "google"
  },
@@ -1315,13 +1311,13 @@
   "menu": "https://static.restovisio.com/files/menus/16a1e0ab6034aeb1de1c77e153493b7161a9cef78271e.pdf",
   "how": "deja-bon"
  },
- "paris-11-cafe-on-partage": {
+ "paris-11-chinois-hibao": {
   "menu": "",
   "how": "google"
  },
- "paris-11-cafe-cafe-mareva": {
-  "menu": "https://www.cafemareva.com/menu",
-  "how": "deja-bon"
+ "paris-11-cafe-on-partage": {
+  "menu": "",
+  "how": "google"
  },
  "paris-11-cafe-cafe-du-temple": {
   "menu": "https://cafedutemple.fr/menu",
@@ -1331,41 +1327,45 @@
   "menu": "https://lareverie-paris.com/plats-salades-pizzas/",
   "how": "deja-bon"
  },
- "paris-11-cafe-cafe-mericourt": {
-  "menu": "",
-  "how": "google"
+ "paris-11-oriental-nour": {
+  "menu": "https://www.nour-comptoir.com/carte",
+  "how": "page"
  },
  "paris-11-bar-a-cocktails-le-perchoir-menilmontant": {
   "menu": "",
   "how": "google"
  },
+ "paris-11-bar-a-cocktails-carre-voltaire": {
+  "menu": "https://lecarrevoltaire.tastycloud.menu/e1997324ad78c1a709f8775212ecb441b0fbdeed04b4f2714a4cd139dc62fef0/categories",
+  "how": "deja-bon"
+ },
  "paris-12-francais-marvely": {
   "menu": "https://marvely.fr/wp-content/uploads/2026/04/Carte-Marvely-2026-A4-site-internet.pdf",
   "how": "pdf"
  },
- "paris-11-oriental-nour": {
-  "menu": "https://www.nour-comptoir.com/carte",
-  "how": "page"
- },
- "paris-11-cafe-pompom-coffice": {
-  "menu": "",
-  "how": "google"
- },
- "paris-12-burger-liberty-s-burger": {
-  "menu": "https://www.libertysburger.com/wp-content/uploads/2023/02/CARTE-EXTERIEURE-2023.pdf",
+ "paris-11-cafe-cafe-mareva": {
+  "menu": "https://www.cafemareva.com/menu",
   "how": "deja-bon"
  },
- "paris-12-americain-mama-jackson": {
+ "paris-10-francais-neni": {
   "menu": "",
   "how": "google"
  },
- "paris-10-francais-neni": {
+ "paris-11-cafe-cafe-mericourt": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-12-americain-mama-jackson": {
   "menu": "",
   "how": "google"
  },
  "paris-12-chinois-mr-zhao-x-ground-control": {
   "menu": "https://www.zhaogroupe.com/menu-mr-zhao_carte/",
   "how": "deja-bon"
+ },
+ "paris-11-cafe-pompom-coffice": {
+  "menu": "",
+  "how": "google"
  },
  "paris-12-cacher-berbeche": {
   "menu": "https://www.berbecheparis.com/collections/traiteur-cacher",
@@ -1375,83 +1375,67 @@
   "menu": "https://www.tripadvisor.fr/Restaurant_Review-g187147-d8873382-Reviews-Les_Piaules-Paris_Ile_de_France.html",
   "how": "deja-bon"
  },
+ "paris-11-japonais-sushi-first": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-12-burger-liberty-s-burger": {
+  "menu": "https://www.libertysburger.com/wp-content/uploads/2023/02/CARTE-EXTERIEURE-2023.pdf",
+  "how": "deja-bon"
+ },
  "paris-12-japonais-towa": {
   "menu": "",
   "how": "google"
- },
- "paris-13-francais-l-envol": {
-  "menu": "",
-  "how": "google"
- },
- "paris-13-francais-off-paris-seine": {
-  "menu": "https://www.offparisseine.com/brunch",
-  "how": "page-pdfs"
- },
- "paris-13-italien-la-felicita": {
-  "menu": "https://www.lafelicita.fr/wp-content/uploads/2023/02/2022-12-05-MENU-SITE-FELICITA.pdf",
-  "how": "deja-bon"
- },
- "paris-13-italien-scalini": {
-  "menu": "https://scalini.fr/menu",
-  "how": "deja-bon"
  },
  "paris-12-italien-the-godfather-paris": {
   "menu": "http://places.singleplatform.com/the-godfather-5/menu",
   "how": "deja-bon"
  },
+ "paris-13-francais-off-paris-seine": {
+  "menu": "https://www.offparisseine.com/brunch",
+  "how": "page-pdfs"
+ },
+ "paris-13-francais-l-envol": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-13-japonais-21-dumpling": {
   "menu": "",
   "how": "google"
- },
- "paris-12-japonais-jinchan-shokudo": {
-  "menu": "",
-  "how": "google"
- },
- "paris-13-chinois-tao-tao": {
-  "menu": "https://chezly75013.fr/menu",
-  "how": "deja-bon"
  },
  "paris-13-burger-smatch-burger": {
   "menu": "",
   "how": "google"
  },
- "paris-13-coreen-jmt": {
-  "menu": "https://www.restaurantjmt.fr/menus-carte/",
-  "how": "page"
+ "paris-13-italien-scalini": {
+  "menu": "https://scalini.fr/menu",
+  "how": "deja-bon"
+ },
+ "paris-12-japonais-jinchan-shokudo": {
+  "menu": "",
+  "how": "google"
  },
  "paris-13-coreen-yukga": {
   "menu": "https://yukga.fr/menu-accueil",
   "how": "page-faible"
  },
- "paris-13-vietnamien-pho-13": {
-  "menu": "http://pho13.com/menu/menu-soupes",
+ "paris-13-chinois-tao-tao": {
+  "menu": "https://chezly75013.fr/menu",
   "how": "deja-bon"
  },
- "paris-12-cacher-tikounolam": {
-  "menu": "https://tikounolam.fr/menu/",
-  "how": "deja-bon"
- },
- "paris-14-francais-les-fondus-de-la-raclette": {
-  "menu": "https://lesfondusdelaraclette.fr/menu/",
-  "how": "deja-bon"
- },
- "paris-11-bar-a-cocktails-carre-voltaire": {
-  "menu": "https://lecarrevoltaire.tastycloud.menu/e1997324ad78c1a709f8775212ecb441b0fbdeed04b4f2714a4cd139dc62fef0/categories",
-  "how": "deja-bon"
+ "paris-13-coreen-jmt": {
+  "menu": "https://www.restaurantjmt.fr/menus-carte/",
+  "how": "page"
  },
  "paris-12-bar-a-cocktails-hostaria-urbana": {
   "menu": "",
   "how": "google"
  },
- "paris-14-francais-mr-beef": {
-  "menu": "",
-  "how": "google"
- },
- "paris-14-francais-maison-edgard": {
-  "menu": "https://maison-edgar.fr/restaurant/",
+ "paris-13-italien-la-felicita": {
+  "menu": "https://www.lafelicita.fr/wp-content/uploads/2023/02/2022-12-05-MENU-SITE-FELICITA.pdf",
   "how": "deja-bon"
  },
- "paris-14-italien-the-village-terrazza": {
+ "paris-14-francais-mr-beef": {
   "menu": "",
   "how": "google"
  },
@@ -1459,7 +1443,23 @@
   "menu": "",
   "how": "google"
  },
- "paris-14-americain-broadway-cafe": {
+ "paris-14-francais-le-dalea": {
+  "menu": "https://dalea.fr/fr/services",
+  "how": "deja-bon"
+ },
+ "paris-14-francais-maison-edgard": {
+  "menu": "https://maison-edgar.fr/restaurant/",
+  "how": "deja-bon"
+ },
+ "paris-14-francais-les-fondus-de-la-raclette": {
+  "menu": "https://lesfondusdelaraclette.fr/menu/",
+  "how": "deja-bon"
+ },
+ "paris-14-italien-the-village-terrazza": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-14-francais-le-bouquet-alesia": {
   "menu": "",
   "how": "google"
  },
@@ -1467,25 +1467,17 @@
   "menu": "",
   "how": "google"
  },
- "paris-14-francais-le-dalea": {
-  "menu": "https://dalea.fr/fr/services",
+ "paris-13-vietnamien-pho-13": {
+  "menu": "http://pho13.com/menu/menu-soupes",
   "how": "deja-bon"
+ },
+ "paris-14-americain-broadway-cafe": {
+  "menu": "",
+  "how": "google"
  },
  "paris-14-japonais-ayako-teppanyaki": {
   "menu": "https://www.ayakoteppanyaki.fr/menus-carte/",
   "how": "page"
- },
- "paris-14-francais-le-bouquet-alesia": {
-  "menu": "",
-  "how": "google"
- },
- "paris-14-americain-mosugo": {
-  "menu": "https://mosugo.com/menus/",
-  "how": "deja-bon"
- },
- "paris-15-francais-harper-s": {
-  "menu": "https://www.harpers-restaurant.com/menu",
-  "how": "deja-bon"
  },
  "paris-14-thailandais-basilic-thai": {
   "menu": "https://basilicthaiparis.fr/",
@@ -1495,17 +1487,25 @@
   "menu": "https://www.restaurant-assanabel.com/wp-content/uploads/2023/02/Menu1et2-merged.pdf",
   "how": "deja-bon"
  },
- "paris-12-francais-jango": {
-  "menu": "",
-  "how": "google"
+ "paris-15-francais-harper-s": {
+  "menu": "https://www.harpers-restaurant.com/menu",
+  "how": "deja-bon"
+ },
+ "paris-14-bar-a-cocktails-skybar": {
+  "menu": "https://www.skybarparis.com/media/data/menus/documents/pdf_file-3-food-1787748334.pdf",
+  "how": "pdf"
+ },
+ "paris-14-americain-mosugo": {
+  "menu": "https://mosugo.com/menus/",
+  "how": "deja-bon"
  },
  "paris-15-italien-da-attilio": {
   "menu": "",
   "how": "google"
  },
- "paris-14-bar-a-cocktails-skybar": {
-  "menu": "https://www.skybarparis.com/media/data/menus/documents/pdf_file-3-food-1787748334.pdf",
-  "how": "pdf"
+ "paris-12-cacher-tikounolam": {
+  "menu": "https://tikounolam.fr/menu/",
+  "how": "deja-bon"
  },
  "paris-15-italien-gruppomimo": {
   "menu": "https://www.gruppomimo.com/food",
@@ -1515,9 +1515,9 @@
   "menu": "https://pizzeria.restaurants-de-france.fr/",
   "how": "accueil-avec-prix"
  },
- "paris-11-japonais-sushi-first": {
-  "menu": "",
-  "how": "google"
+ "paris-14-japonais-sushi-pacha": {
+  "menu": "https://sushipacha.fr/",
+  "how": "accueil-avec-prix"
  },
  "paris-15-burger-burger-bendo": {
   "menu": "",
@@ -1527,19 +1527,23 @@
   "menu": "https://www.bcbg-gourmet.fr/menu/",
   "how": "deja-bon"
  },
- "paris-14-japonais-sushi-pacha": {
-  "menu": "https://sushipacha.fr/",
-  "how": "accueil-avec-prix"
+ "paris-15-francais-melt": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-12-francais-jango": {
+  "menu": "",
+  "how": "google"
  },
  "paris-15-italien-guillaume-grasso": {
   "menu": "https://www.guillaume-grasso.com/wp-content/uploads/2026/11/Carte_Guillaume_Grasso_FR_EN_complete.pdf",
   "how": "pdf"
  },
- "paris-15-francais-melt": {
-  "menu": "",
-  "how": "google"
+ "paris-15-japonais-okirama": {
+  "menu": "https://www.okirama.fr/carte.php",
+  "how": "deja-bon"
  },
- "paris-15-burger-crispy-soul": {
+ "paris-15-burger-gomu": {
   "menu": "",
   "how": "google"
  },
@@ -1547,73 +1551,73 @@
   "menu": "https://birhakeim.okito.fr/reservation/new",
   "how": "deja-bon"
  },
- "paris-15-japonais-okirama": {
-  "menu": "https://www.okirama.fr/carte.php",
-  "how": "deja-bon"
- },
  "paris-15-japonais-kasumi": {
   "menu": "https://kasumi-restaurant.com/menu",
   "how": "page"
  },
- "paris-15-italien-gioco": {
-  "menu": "https://www.gioco.fr/menus",
-  "how": "page"
+ "paris-15-burger-crispy-soul": {
+  "menu": "",
+  "how": "google"
  },
  "paris-15-cambodgien-le-cambodge-15": {
   "menu": "",
   "how": "google"
  },
- "paris-15-japonais-kumo": {
-  "menu": "https://www.kumo-restaurant.com/menus",
+ "paris-15-japonais-chakaiseki-akiyoshi": {
+  "menu": "https://chakaiseki-akiyoshi.fr/menu/",
   "how": "deja-bon"
  },
  "paris-15-iranien-shabestan": {
   "menu": "https://cdn.prod.website-files.com/69f1cac49733d8cb094161d1/6a22c792fd1328f67a49c102_e640edc491fc7221df9916f321caca25_COCKTAILS_FR.pdf",
   "how": "pdf"
  },
- "paris-15-japonais-chakaiseki-akiyoshi": {
-  "menu": "https://chakaiseki-akiyoshi.fr/menu/",
+ "paris-15-japonais-kumo": {
+  "menu": "https://www.kumo-restaurant.com/menus",
   "how": "deja-bon"
  },
  "paris-15-bar-a-cocktails-villa-m": {
   "menu": "https://assets.website-files.com/611ac90a014c10a367bda85d/6410ae579a2c4227c3393211_140323VillaM_CarteFood_DINER_A3_web.pdf",
   "how": "deja-bon"
  },
- "paris-15-burger-gomu": {
-  "menu": "",
-  "how": "google"
+ "paris-15-indien-rasna": {
+  "menu": "https://rasnarestaurant.fr/fr/services",
+  "how": "deja-bon"
  },
  "paris-16-francais-le-sheffer": {
   "menu": "",
   "how": "google"
  },
- "paris-16-francais-brasserie-victor-hugo": {
-  "menu": "https://brasserievictorhugo-paris.com/wp-content/uploads/2026/03/Carte-BRUNCH-BVH-janvier-2026-1.pdf",
-  "how": "pdf"
+ "paris-15-italien-gioco": {
+  "menu": "https://www.gioco.fr/menus",
+  "how": "page"
  },
- "paris-15-indien-rasna": {
-  "menu": "https://rasnarestaurant.fr/fr/services",
+ "paris-15-italien-fratelli-castellano": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-16-francais-les-2-stations": {
+  "menu": "https://www.lesdeuxstations.com/menus-carte/",
   "how": "deja-bon"
  },
  "paris-15-vegan-polichinelles": {
   "menu": "https://madridotramirada.es/estacion-de-autobuses-de-ciudad-real/",
   "how": "accueil-avec-prix"
  },
- "paris-15-italien-fratelli-castellano": {
-  "menu": "",
-  "how": "google"
+ "paris-16-francais-brasserie-victor-hugo": {
+  "menu": "https://brasserievictorhugo-paris.com/wp-content/uploads/2026/03/Carte-BRUNCH-BVH-janvier-2026-1.pdf",
+  "how": "pdf"
  },
  "paris-16-francais-andia": {
   "menu": "https://api.hapidam.com/share/e316ea90-f28b-4b30-bb80-9aedb10fd2e5/andia-menu-fr",
   "how": "deja-bon"
  },
- "paris-16-francais-les-2-stations": {
-  "menu": "https://www.lesdeuxstations.com/menus-carte/",
-  "how": "deja-bon"
+ "paris-16-francais-le-murat": {
+  "menu": "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2026/08/MURAT-Carte-Menu-FR-UK-Juillet-2.pdf",
+  "how": "pdf"
  },
- "paris-15-coreen-ktown": {
-  "menu": "",
-  "how": "google"
+ "paris-16-francais-les-marches": {
+  "menu": "https://www.lesmarches-restaurant.com/Carte_les_Marches_Fr.pdf",
+  "how": "pdf"
  },
  "paris-16-francais-brasserie-auteuil": {
   "menu": "https://www.auteuil-brasserie.com/menus-carte/",
@@ -1623,21 +1627,13 @@
   "menu": "https://www.sirwinston.fr/menus-carte/",
   "how": "deja-bon"
  },
- "paris-16-francais-le-murat": {
-  "menu": "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2026/08/MURAT-Carte-Menu-FR-UK-Juillet-2.pdf",
-  "how": "pdf"
- },
  "paris-16-francais-margaux": {
   "menu": "",
   "how": "google"
  },
- "paris-16-francais-les-marches": {
-  "menu": "https://www.lesmarches-restaurant.com/Carte_les_Marches_Fr.pdf",
-  "how": "pdf"
- },
- "paris-16-italien-ozio": {
-  "menu": "https://www.ozioparis.com/wp-content/uploads/2023/03/MENU-OZIO-FR-MARS-2023.pdf",
-  "how": "deja-bon"
+ "paris-15-coreen-ktown": {
+  "menu": "",
+  "how": "google"
  },
  "paris-16-burger-sma-ma-mash": {
   "menu": "https://www.123cacher.fr/restaurant/sma_ma_mash/carte.htm",
@@ -1647,35 +1643,11 @@
   "menu": "",
   "how": "google"
  },
- "paris-16-francais-le-petit-victor-hugo": {
-  "menu": "",
-  "how": "google"
- },
- "paris-16-italien-dino": {
-  "menu": "https://static.restovisio.com/files/menus/808c55c589797d2aa7f678f2c8324d83642be5b2eccda.pdf",
+ "paris-16-italien-ozio": {
+  "menu": "https://www.ozioparis.com/wp-content/uploads/2023/03/MENU-OZIO-FR-MARS-2023.pdf",
   "how": "deja-bon"
  },
- "paris-16-francais-le-touring": {
-  "menu": "",
-  "how": "google"
- },
- "paris-16-italien-chez-ma-poule": {
-  "menu": "",
-  "how": "google"
- },
- "paris-16-italien-rebellato": {
-  "menu": "",
-  "how": "google"
- },
- "paris-16-francais-monsieur-bleu": {
-  "menu": "",
-  "how": "google"
- },
- "paris-16-italien-ragazzi": {
-  "menu": "https://ragazzi-group.fr/la-carte-de-paris/",
-  "how": "page-faible"
- },
- "paris-13-vietnamien-hoi-an": {
+ "paris-16-francais-le-petit-victor-hugo": {
   "menu": "",
   "how": "google"
  },
@@ -1687,13 +1659,41 @@
   "menu": "",
   "how": "google"
  },
- "paris-16-japonais-unagi": {
-  "menu": "https://s3.eu-west-1.amazonaws.com/userdocs.zenchef.com/359843/CARTE+SOIR+v2+16062023.pdf",
+ "paris-16-italien-dino": {
+  "menu": "https://static.restovisio.com/files/menus/808c55c589797d2aa7f678f2c8324d83642be5b2eccda.pdf",
   "how": "deja-bon"
+ },
+ "paris-16-italien-chez-ma-poule": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-16-francais-le-touring": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-16-italien-ragazzi": {
+  "menu": "https://ragazzi-group.fr/la-carte-de-paris/",
+  "how": "page-faible"
+ },
+ "paris-13-vietnamien-hoi-an": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-16-francais-monsieur-bleu": {
+  "menu": "",
+  "how": "google"
  },
  "paris-16-japonais-sushi-marche": {
   "menu": "http://sushimarche.fr/en/sushi-marche/menus-et-a-la-carte.html",
   "how": "deja-bon"
+ },
+ "paris-16-japonais-unagi": {
+  "menu": "https://s3.eu-west-1.amazonaws.com/userdocs.zenchef.com/359843/CARTE+SOIR+v2+16062023.pdf",
+  "how": "deja-bon"
+ },
+ "paris-16-italien-bambini": {
+  "menu": "",
+  "how": "google"
  },
  "paris-16-vietnamien-sourire-du-vietnam": {
   "menu": "https://www.pho16paris.fr/menu/",
@@ -1703,41 +1703,45 @@
   "menu": "https://www.konvives.fr/_files/ugd/b9a46d_0e27173e014a497590a50cf23aeda223.pdf",
   "how": "deja-bon"
  },
- "paris-16-italien-sorella": {
-  "menu": "https://www.restaurantsorella.paris/carte",
-  "how": "deja-bon"
- },
- "paris-16-italien-bambini": {
-  "menu": "",
-  "how": "google"
- },
  "paris-16-francais-les-jardins-du-presbourg": {
   "menu": "https://www.lesjardinsdupresbourg.com/restaurant/menu",
   "how": "page-faible"
+ },
+ "paris-16-italien-rebellato": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-16-italien-sorella": {
+  "menu": "https://www.restaurantsorella.paris/carte",
+  "how": "deja-bon"
  },
  "paris-17-francais-gaston": {
   "menu": "https://www.gastondesbatignolles.fr/menus/",
   "how": "page"
  },
- "paris-16-japonais-dream-sushi": {
-  "menu": "https://dreamsushi75116.fr/menu/",
+ "paris-17-italien-nono-nino-paris": {
+  "menu": "https://nonnonino.fr/menus-2/",
   "how": "page"
- },
- "paris-17-italien-roco": {
-  "menu": "https://www.rocoparis.fr/menus-carte/",
-  "how": "deja-bon"
- },
- "paris-17-italien-sonata": {
-  "menu": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account13689296/33672279_1.pdf?0.8142425467715755",
-  "how": "deja-bon"
  },
  "paris-17-francais-le-buf-volant": {
   "menu": "http://www.leboeufvolant.fr/menu.pdf",
   "how": "deja-bon"
  },
- "paris-17-italien-nono-nino-paris": {
-  "menu": "https://nonnonino.fr/menus-2/",
+ "paris-16-japonais-dream-sushi": {
+  "menu": "https://dreamsushi75116.fr/menu/",
   "how": "page"
+ },
+ "paris-17-italien-sonata": {
+  "menu": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account13689296/33672279_1.pdf?0.8142425467715755",
+  "how": "deja-bon"
+ },
+ "paris-17-italien-roco": {
+  "menu": "https://www.rocoparis.fr/menus-carte/",
+  "how": "deja-bon"
+ },
+ "paris-16-japonais-hanami": {
+  "menu": "",
+  "how": "google"
  },
  "paris-17-japonais-okito": {
   "menu": "https://ternes.okito.fr/fr/menu",
@@ -1747,10 +1751,6 @@
   "menu": "https://www.alloj.com/fr/restaurant-cacher/iossa-81-paris-17eme/carte.html",
   "how": "deja-bon"
  },
- "paris-16-russe-maison-russe": {
-  "menu": "",
-  "how": "google"
- },
  "paris-17-coreen-busan-park": {
   "menu": "https://busanpark.fr/menu",
   "how": "deja-bon"
@@ -1759,28 +1759,28 @@
   "menu": "https://www.mezzencore.fr/_files/ugd/0aa51d_f8166311c3cf4b86b8c9abb44aae50f6.pdf",
   "how": "deja-bon"
  },
- "paris-16-japonais-hanami": {
-  "menu": "",
-  "how": "google"
- },
- "paris-17-japonais-just-ramen": {
-  "menu": "https://hoba.paris/les-menus/",
-  "how": "deja-bon"
- },
  "paris-17-israelien-vicky": {
   "menu": "https://www.restaurantvicky.com/collections/boissons-chaudes",
   "how": "page"
  },
- "paris-17-italien-gustino-pizza": {
-  "menu": "https://www.gustinopizza.com/carte",
+ "paris-17-japonais-just-ramen": {
+  "menu": "https://hoba.paris/les-menus/",
   "how": "deja-bon"
  },
  "paris-17-japonais-bloom-sushi": {
   "menu": "https://bloomsushi.fr/menu-landing-page-2-liens-au-choix/",
   "how": "page-pdfs"
  },
+ "paris-16-russe-maison-russe": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-17-oriental-figuig": {
   "menu": "https://www.aufiguig.fr/menu",
+  "how": "deja-bon"
+ },
+ "paris-17-italien-gustino-pizza": {
+  "menu": "https://www.gustinopizza.com/carte",
   "how": "deja-bon"
  },
  "paris-17-brunch-solis": {
@@ -1799,7 +1799,7 @@
   "menu": "",
   "how": "google"
  },
- "paris-17-oriental-sonia": {
+ "paris-16-italien-cavalieri": {
   "menu": "",
   "how": "google"
  },
@@ -1811,31 +1811,27 @@
   "menu": "",
   "how": "google"
  },
- "paris-18-francais-tonton-de-la-butte": {
-  "menu": "https://www.tontondelabutte.fr/menus-carte/",
-  "how": "deja-bon"
+ "paris-18-francais-amone": {
+  "menu": "https://restaurants-amone.com/food-truck-france/",
+  "how": "page-faible"
  },
  "paris-18-francais-edmond": {
   "menu": "",
   "how": "google"
  },
- "paris-18-francais-amone": {
-  "menu": "https://restaurants-amone.com/food-truck-france/",
-  "how": "page-faible"
- },
- "paris-16-italien-cavalieri": {
-  "menu": "",
-  "how": "google"
- },
- "paris-17-fusion-yansai": {
-  "menu": "https://yansai.fr/fr/menu",
-  "how": "page-faible"
+ "paris-18-francais-tonton-de-la-butte": {
+  "menu": "https://www.tontondelabutte.fr/menus-carte/",
+  "how": "deja-bon"
  },
  "paris-18-francais-le-vrai-paris": {
   "menu": "http://levraiparis-bistrot.com/wp-content/uploads/2026/10/Menu-Soir-Octobre.pdf",
   "how": "pdf"
  },
- "paris-18-italien-bobby": {
+ "paris-17-fusion-yansai": {
+  "menu": "https://yansai.fr/fr/menu",
+  "how": "page-faible"
+ },
+ "paris-17-oriental-sonia": {
   "menu": "",
   "how": "google"
  },
@@ -1843,7 +1839,7 @@
   "menu": "https://www.junglii.fr/carte",
   "how": "deja-bon"
  },
- "paris-18-italien-constantia": {
+ "paris-18-italien-bobby": {
   "menu": "",
   "how": "google"
  },
@@ -1851,23 +1847,11 @@
   "menu": "https://gemuseparis.fr/nos-menus",
   "how": "deja-bon"
  },
+ "paris-18-italien-constantia": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-18-mexicain-aca-pigalle": {
-  "menu": "",
-  "how": "google"
- },
- "paris-18-japonais-haha": {
-  "menu": "",
-  "how": "google"
- },
- "paris-18-israelien-riv-k": {
-  "menu": "",
-  "how": "google"
- },
- "paris-18-vegan-la-cantine-de-sam": {
-  "menu": "https://lacantinedesam-paris18.site.bykomdab.com/fr/menu",
-  "how": "page"
- },
- "paris-17-fusion-tigermilk": {
   "menu": "",
   "how": "google"
  },
@@ -1876,6 +1860,22 @@
   "how": "deja-bon"
  },
  "paris-18-libanais-le-grand-phenicien": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-18-japonais-haha": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-17-fusion-tigermilk": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-18-vegan-la-cantine-de-sam": {
+  "menu": "https://lacantinedesam-paris18.site.bykomdab.com/fr/menu",
+  "how": "page"
+ },
+ "paris-18-israelien-riv-k": {
   "menu": "",
   "how": "google"
  },
@@ -1895,14 +1895,6 @@
   "menu": "",
   "how": "google"
  },
- "paris-19-francais-xiii": {
-  "menu": "",
-  "how": "google"
- },
- "paris-18-vegan-sweet-rawmance": {
-  "menu": "",
-  "how": "google"
- },
  "paris-19-oriental-basis": {
   "menu": "https://cdn.shopify.com/s/files/1/1019/4108/4495/files/MENU_BASIS_RVB_NUMERIQUE-avec_compression.pdf?v=1779803820",
   "how": "pdf"
@@ -1911,19 +1903,19 @@
   "menu": "http://artisan-libanais.com/menu",
   "how": "deja-bon"
  },
- "paris-18-cafe-b-j": {
-  "menu": "",
-  "how": "google"
- },
- "paris-19-africain-a-box": {
-  "menu": "",
-  "how": "google"
- },
  "paris-18-brunch-boulom": {
   "menu": "",
   "how": "google"
  },
- "paris-20-italien-peppe-pizzeria": {
+ "paris-19-francais-xiii": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-18-cafe-b-j": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-20-francais-la-parisienne": {
   "menu": "",
   "how": "google"
  },
@@ -1931,13 +1923,21 @@
   "menu": "",
   "how": "google"
  },
+ "paris-20-italien-peppe-pizzeria": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-19-africain-a-box": {
+  "menu": "",
+  "how": "google"
+ },
+ "paris-18-vegan-sweet-rawmance": {
+  "menu": "",
+  "how": "google"
+ },
  "paris-20-burger-avec-amour-burger": {
   "menu": "https://avec-amour-burger.com/",
   "how": "accueil-avec-prix"
- },
- "paris-20-burger-austin-boys-burger": {
-  "menu": "http://jewboyburgers.com/menu/",
-  "how": "deja-bon"
  },
  "paris-20-thailandais-yummy-thai": {
   "menu": "",
@@ -1947,11 +1947,15 @@
   "menu": "",
   "how": "google"
  },
+ "paris-20-burger-austin-boys-burger": {
+  "menu": "http://jewboyburgers.com/menu/",
+  "how": "deja-bon"
+ },
  "paris-20-francais-kheops": {
   "menu": "",
   "how": "google"
  },
- "paris-19-thailandais-chez-sommay": {
+ "paris-20-japonais-boken": {
   "menu": "",
   "how": "google"
  },
@@ -1959,11 +1963,7 @@
   "menu": "",
   "how": "google"
  },
- "paris-20-francais-la-parisienne": {
-  "menu": "",
-  "how": "google"
- },
- "paris-20-japonais-boken": {
+ "precieuses-0-activite-urban-jump": {
   "menu": "",
   "how": "google"
  },
@@ -1975,15 +1975,19 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-activite-gate-vr": {
-  "menu": "https://thegatevr.io/#sidewidgetarea",
-  "how": "section"
+ "paris-19-thailandais-chez-sommay": {
+  "menu": "",
+  "how": "google"
  },
  "precieuses-0-activite-pixel-game": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-activite-urban-jump": {
+ "precieuses-0-activite-gate-vr": {
+  "menu": "https://thegatevr.io/#sidewidgetarea",
+  "how": "section"
+ },
+ "precieuses-0-activite-flyview": {
   "menu": "",
   "how": "google"
  },
@@ -1994,10 +1998,6 @@
  "precieuses-0-activite-fun-booker": {
   "menu": "https://www.funbooker.com/fr/category/diner-croisiere",
   "how": "page"
- },
- "precieuses-0-activite-fury-room": {
-  "menu": "",
-  "how": "google"
  },
  "precieuses-0-activite-atelier-parfums-personnalises": {
   "menu": "",
@@ -2011,11 +2011,11 @@
   "menu": "",
   "how": "google"
  },
- "paris-20-americain-juicy-pop": {
+ "precieuses-0-activite-disneyland": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-activite-flyview": {
+ "precieuses-0-activite-fury-room": {
   "menu": "",
   "how": "google"
  },
@@ -2027,7 +2027,7 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-activite-disneyland": {
+ "paris-20-americain-juicy-pop": {
   "menu": "",
   "how": "google"
  },
@@ -2047,19 +2047,11 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-activite-aviasim": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-activite-personnalisation-de-sneakers": {
-  "menu": "",
-  "how": "google"
- },
  "precieuses-0-activite-objectif-horlogerie": {
   "menu": "https://www.objectifhorlogerie.com/",
   "how": "accueil-avec-prix"
  },
- "precieuses-0-activite-the-jury-experience-diamants-mensonges-et-un-mort": {
+ "precieuses-0-activite-personnalisation-de-sneakers": {
   "menu": "",
   "how": "google"
  },
@@ -2067,7 +2059,15 @@
   "menu": "",
   "how": "google"
  },
+ "precieuses-0-activite-the-jury-experience-diamants-mensonges-et-un-mort": {
+  "menu": "",
+  "how": "google"
+ },
  "precieuses-0-activite-eclipso": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-activite-aviasim": {
   "menu": "",
   "how": "google"
  },
@@ -2083,23 +2083,7 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-activite-les-origines-de-paris": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-activite-paint-me-up": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-activite-wecandoo": {
-  "menu": "https://wecandoo.fr/ateliers/teambuilding-food",
-  "how": "page"
- },
- "precieuses-0-stand-up-panam-cafe": {
-  "menu": "https://menu.panameartcafe.com/menu",
-  "how": "page"
- },
- "precieuses-0-activite-science-experience": {
+ "precieuses-0-activite-one-hour-escape-game": {
   "menu": "",
   "how": "google"
  },
@@ -2107,39 +2091,23 @@
   "menu": "",
   "how": "google"
  },
+ "precieuses-0-activite-paint-me-up": {
+  "menu": "",
+  "how": "google"
+ },
  "precieuses-0-activite-paradox-museum": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-soiree-l-arc": {
+ "precieuses-0-stand-up-panam-cafe": {
+  "menu": "https://menu.panameartcafe.com/menu",
+  "how": "page"
+ },
+ "precieuses-0-stand-up-jamel-comedy-club": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-soiree-deflower": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-activite-my-flower-class": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-soiree-mama-shelter": {
-  "menu": "https://mamashelter.com/paris-east/#menu",
-  "how": "section"
- },
- "precieuses-0-soiree-le-marta": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-stand-up-le-fridge": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-soiree-komma": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-activite-one-hour-escape-game": {
+ "precieuses-0-activite-science-experience": {
   "menu": "",
   "how": "google"
  },
@@ -2147,11 +2115,43 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-stand-up-jamel-comedy-club": {
+ "precieuses-0-soiree-deflower": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-activite-les-origines-de-paris": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-l-arc": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-le-marta": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-activite-my-flower-class": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-komma": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-activite-wecandoo": {
+  "menu": "https://wecandoo.fr/ateliers/teambuilding-food",
+  "how": "page"
+ },
+ "precieuses-0-soiree-le-raspoutine": {
   "menu": "",
   "how": "google"
  },
  "precieuses-0-soiree-boum-boum": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-stand-up-le-fridge": {
   "menu": "",
   "how": "google"
  },
@@ -2163,31 +2163,19 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-soiree-chez-mila": {
-  "menu": "",
-  "how": "google"
+ "precieuses-0-soiree-mama-shelter": {
+  "menu": "https://mamashelter.com/paris-east/#menu",
+  "how": "section"
  },
  "precieuses-0-soiree-le-bristol": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-soiree-mamacita": {
-  "menu": "https://groupe-bucher.fr/menu-mamacita/",
-  "how": "deja-bon"
+ "precieuses-0-soiree-chez-mila": {
+  "menu": "",
+  "how": "google"
  },
  "precieuses-0-soiree-medellin": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-soiree-le-raspoutine": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-soiree-l-alma": {
-  "menu": "https://www.cafe-de-l-alma.com/wp-content/uploads/2026/11/CARTE-FOOD-ALMA-FRANCAIS-2.11.2026.pdf",
-  "how": "pdf"
- },
- "precieuses-0-soiree-le-mirage": {
   "menu": "",
   "how": "google"
  },
@@ -2195,7 +2183,19 @@
   "menu": "https://www.matignon-paris.com/restaurant/menu",
   "how": "page-faible"
  },
- "precieuses-0-soiree-le-kiwi": {
+ "precieuses-0-soiree-l-alma": {
+  "menu": "https://www.cafe-de-l-alma.com/wp-content/uploads/2026/11/CARTE-FOOD-ALMA-FRANCAIS-2.11.2026.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-soiree-le-gate": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-soiree-l-aventure": {
+  "menu": "https://www.laventurehotel.com/fr/restaurant/menu",
+  "how": "page-faible"
+ },
+ "precieuses-0-resto-schwartz-s-deli": {
   "menu": "",
   "how": "google"
  },
@@ -2207,11 +2207,11 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-schwartz-s-deli": {
-  "menu": "",
-  "how": "google"
+ "precieuses-0-soiree-mamacita": {
+  "menu": "https://groupe-bucher.fr/menu-mamacita/",
+  "how": "deja-bon"
  },
- "precieuses-0-resto-l-as-du-fallafel": {
+ "precieuses-0-soiree-le-mirage": {
   "menu": "",
   "how": "google"
  },
@@ -2219,7 +2219,7 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-shana-shabour": {
+ "precieuses-0-resto-coya": {
   "menu": "",
   "how": "google"
  },
@@ -2231,7 +2231,7 @@
   "menu": "https://www.bouillon-chartier.com/la-carte/",
   "how": "page"
  },
- "precieuses-0-soiree-le-son-des-guitares": {
+ "precieuses-0-resto-shana-shabour": {
   "menu": "",
   "how": "google"
  },
@@ -2239,7 +2239,7 @@
   "menu": "https://www.miss-ko.com/food",
   "how": "page-faible"
  },
- "precieuses-0-resto-restaurant-marocain": {
+ "precieuses-0-soiree-le-kiwi": {
   "menu": "",
   "how": "google"
  },
@@ -2247,16 +2247,16 @@
   "menu": "",
   "how": "google"
  },
+ "precieuses-0-resto-restaurant-marocain": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-shabour": {
+  "menu": "",
+  "how": "google"
+ },
  "precieuses-0-resto-la-table-de-colette": {
   "menu": "https://latabledecolette.fr/fr/menu/nos-7-propositions",
-  "how": "page"
- },
- "precieuses-0-resto-kodawari-tsukiji": {
-  "menu": "https://www.kodawari-ramen.com/la-carte/",
-  "how": "page"
- },
- "precieuses-0-resto-le-comptoir-paris": {
-  "menu": "https://www.lecomptoirparis.fr/menus-carte/",
   "how": "page"
  },
  "precieuses-0-resto-verre-chez-moi": {
@@ -2271,83 +2271,79 @@
   "menu": "https://www.miznonparis.com/menus-1",
   "how": "page"
  },
- "precieuses-0-resto-spoon": {
-  "menu": "https://www.spoonrestaurants.com/la-carte/",
-  "how": "page-pdfs"
- },
- "precieuses-0-resto-kodawari-ramen": {
+ "precieuses-0-resto-kodawari-tsukiji": {
   "menu": "https://www.kodawari-ramen.com/la-carte/",
   "how": "page"
  },
- "precieuses-0-resto-hakata-choten": {
-  "menu": "http://www.hakata-choten.com/menu/",
-  "how": "page-faible"
+ "precieuses-0-resto-le-comptoir-paris": {
+  "menu": "https://www.lecomptoirparis.fr/menus-carte/",
+  "how": "page"
+ },
+ "precieuses-0-resto-spoon": {
+  "menu": "https://www.spoonrestaurants.com/la-carte/",
+  "how": "page-pdfs"
  },
  "precieuses-0-resto-au-pied-de-cochon": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-le-train-bleu": {
-  "menu": "https://www.le-train-bleu.com/media/original/5bab5445e563e/carte-automne-2026.pdf",
-  "how": "pdf"
+ "precieuses-0-resto-l-as-du-fallafel": {
+  "menu": "",
+  "how": "google"
  },
  "precieuses-0-resto-l-escargot-montorgueil": {
   "menu": "https://www.escargotmontorgueil.com/menus/2026-09-exterieur/menu-fr.pdf",
   "how": "pdf"
  },
+ "precieuses-0-resto-la-fontaine-de-mars": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-hakata-choten": {
+  "menu": "http://www.hakata-choten.com/menu/",
+  "how": "page-faible"
+ },
+ "precieuses-0-resto-le-train-bleu": {
+  "menu": "https://www.le-train-bleu.com/media/original/5bab5445e563e/carte-automne-2026.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-le-petit-bouillon-pharamond": {
+  "menu": "https://www.petitbouillonpharamond.com/la-carte-du-bouillon-1",
+  "how": "page"
+ },
  "precieuses-0-resto-le-procope": {
   "menu": "https://www.procope.com/menus-carte/",
   "how": "page"
  },
- "precieuses-0-resto-brasserie-lipp": {
-  "menu": "https://www.brasserielipp.fr/menus-carte/",
-  "how": "page"
+ "precieuses-0-resto-dominicos": {
+  "menu": "",
+  "how": "google"
  },
- "precieuses-0-resto-le-petit-bouillon-pharamond": {
-  "menu": "https://www.petitbouillonpharamond.com/la-carte-du-bouillon-1",
+ "precieuses-0-resto-kodawari-ramen": {
+  "menu": "https://www.kodawari-ramen.com/la-carte/",
   "how": "page"
  },
  "precieuses-0-resto-brasserie-floderer": {
   "menu": "https://static1.squarespace.com/static/5a8d5efde9bfdf59a2d4adc9/t/6ac7609cb1f5ad659df92059/1791451292157/Floderer_Menu+Principal+De%CC%81jeuner.pdf",
   "how": "pdf"
  },
- "precieuses-0-soiree-l-aventure": {
-  "menu": "https://www.laventurehotel.com/fr/restaurant/menu",
-  "how": "page-faible"
- },
- "precieuses-0-resto-dominicos": {
-  "menu": "",
-  "how": "google"
+ "precieuses-0-resto-brasserie-lipp": {
+  "menu": "https://www.brasserielipp.fr/menus-carte/",
+  "how": "page"
  },
  "precieuses-0-resto-la-coupole": {
   "menu": "https://www.lacoupole-paris.com/menus-carte/",
   "how": "page"
  },
- "precieuses-0-resto-peppe-pizzeria-napoletana": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-resto-shabour": {
-  "menu": "",
-  "how": "google"
- },
  "precieuses-0-resto-andia": {
   "menu": "https://api.hapidam.com/share/e316ea90-f28b-4b30-bb80-9aedb10fd2e5/andia-menu-fr",
   "how": "deja-bon"
  },
- "precieuses-0-soiree-le-gate": {
+ "precieuses-0-resto-peppe-pizzeria-napoletana": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-coya": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-resto-la-fontaine-de-mars": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-resto-fouquet-s": {
+ "precieuses-0-soiree-le-son-des-guitares": {
   "menu": "",
   "how": "google"
  },
@@ -2355,13 +2351,17 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-tout-le-monde-en-parle": {
+ "precieuses-0-resto-fouquet-s": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-le-buf-sur-le-toit": {
-  "menu": "",
-  "how": "google"
+ "precieuses-0-resto-la-reverie": {
+  "menu": "https://lareverie-paris.com/plats-salades-pizzas/",
+  "how": "deja-bon"
+ },
+ "precieuses-0-resto-inavoue": {
+  "menu": "https://inavoue.com/menu",
+  "how": "deja-bon"
  },
  "precieuses-0-resto-bumbu": {
   "menu": "https://www.lebumbuparis.fr/menus-carte/",
@@ -2371,19 +2371,19 @@
   "menu": "https://www.lemarlottiparis.fr/menus-carte/",
   "how": "page"
  },
- "precieuses-0-resto-la-reverie": {
-  "menu": "https://lareverie-paris.com/plats-salades-pizzas/",
-  "how": "deja-bon"
+ "precieuses-0-resto-le-murat": {
+  "menu": "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2026/08/MURAT-Carte-Menu-FR-UK-Juillet-2.pdf",
+  "how": "pdf"
  },
  "precieuses-0-resto-mumbay": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-le-murat": {
-  "menu": "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2026/08/MURAT-Carte-Menu-FR-UK-Juillet-2.pdf",
-  "how": "pdf"
+ "precieuses-0-resto-beefbar": {
+  "menu": "",
+  "how": "google"
  },
- "precieuses-0-resto-la-maison-rose": {
+ "precieuses-0-resto-ephemera-group": {
   "menu": "",
   "how": "google"
  },
@@ -2391,19 +2391,27 @@
   "menu": "https://www.akirabackparis.com/fr/carte",
   "how": "deja-bon"
  },
- "precieuses-0-resto-shinko": {
-  "menu": "",
-  "how": "google"
- },
  "precieuses-0-resto-mistinguett": {
   "menu": "https://www.mistinguett.paris/menu",
   "how": "page-faible"
  },
- "precieuses-0-resto-inavoue": {
-  "menu": "https://inavoue.com/menu",
-  "how": "deja-bon"
+ "precieuses-0-resto-le-buf-sur-le-toit": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-sinner-paris": {
+  "menu": "",
+  "how": "google"
  },
  "precieuses-0-resto-moommam": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-shinko": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-resto-tout-le-monde-en-parle": {
   "menu": "",
   "how": "google"
  },
@@ -2415,15 +2423,7 @@
   "menu": "https://www.lascenetheleme.fr/carte/",
   "how": "page"
  },
- "precieuses-0-resto-beefbar": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-resto-the-peninsula": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-resto-sinner-paris": {
+ "precieuses-0-resto-la-maison-rose": {
   "menu": "",
   "how": "google"
  },
@@ -2431,13 +2431,13 @@
   "menu": "https://www.terraparis.fr/menus-carte/",
   "how": "page"
  },
- "precieuses-0-resto-ephemera-group": {
-  "menu": "",
-  "how": "google"
- },
  "precieuses-0-resto-marie-akaneya": {
   "menu": "https://akaneyajapan.com/wp-content/uploads/2026/03/FR_ES_MenuAkaneya.pdf",
   "how": "pdf"
+ },
+ "precieuses-0-resto-the-peninsula": {
+  "menu": "",
+  "how": "google"
  },
  "precieuses-0-resto-chakaiseki-akiyoshi": {
   "menu": "https://chakaiseki-akiyoshi.fr/menu/",
@@ -2463,19 +2463,19 @@
   "menu": "https://dame-resto.fr/fr/pdf/menu_dame_20261026104812.pdf",
   "how": "pdf"
  },
+ "precieuses-0-resto-dragon-cyril-lignac": {
+  "menu": "",
+  "how": "google"
+ },
  "precieuses-0-resto-pedzouille-lagrange": {
   "menu": "https://www.pedzouille.fr/les-menus",
   "how": "page-faible"
- },
- "precieuses-0-resto-racines": {
-  "menu": "",
-  "how": "google"
  },
  "precieuses-0-resto-vesper": {
   "menu": "https://www.fitz-group.fr/camondo/menus",
   "how": "page"
  },
- "precieuses-0-resto-onyx": {
+ "precieuses-0-resto-racines": {
   "menu": "",
   "how": "google"
  },
@@ -2487,7 +2487,7 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-dragon-cyril-lignac": {
+ "precieuses-0-resto-onyx": {
   "menu": "",
   "how": "google"
  },
@@ -2495,9 +2495,17 @@
   "menu": "https://www.cache-paris.com/menus-carte/",
   "how": "page"
  },
+ "precieuses-0-resto-le-relais-plaza": {
+  "menu": "",
+  "how": "google"
+ },
  "precieuses-0-resto-siena": {
   "menu": "",
   "how": "google"
+ },
+ "precieuses-0-resto-festif-l-empire-du-8e": {
+  "menu": "https://www.lempiredu8eme.com/cartes",
+  "how": "page"
  },
  "precieuses-0-resto-cepe-et-figue": {
   "menu": "https://www.cepeetfigue.fr/la-carte/",
@@ -2507,23 +2515,23 @@
   "menu": "https://verde-paris.fr/wp-content/uploads/2026/10/EN-2026_Verde-PARIS-FINAL_SEPT.pdf",
   "how": "pdf"
  },
- "precieuses-0-resto-festif-l-empire-du-8e": {
-  "menu": "https://www.lempiredu8eme.com/cartes",
-  "how": "page"
+ "precieuses-0-resto-festif-victoria": {
+  "menu": "http://victoria-paris.com/wp-content/uploads/2026/09/FR.pdf",
+  "how": "pdf"
  },
  "precieuses-0-resto-festif-manko-paris": {
   "menu": "https://hapi.mmcreation.com/hapidam/df3984cc-f749-437a-9275-f086988f0b73/Menu%20food%2023%3A03%3A2026%20WEB.pdf.pdf?size=",
-  "how": "pdf"
- },
- "precieuses-0-resto-festif-victoria": {
-  "menu": "http://victoria-paris.com/wp-content/uploads/2026/09/FR.pdf",
   "how": "pdf"
  },
  "precieuses-0-resto-festif-gallopin": {
   "menu": "https://gallopin.com/wp-content/uploads/sites/5/2026/01/Carte-GALLOPIN-20-janvier-2026_.pdf",
   "how": "pdf"
  },
- "precieuses-0-resto-prunier": {
+ "precieuses-0-resto-festif-mamamia": {
+  "menu": "https://mamamia-paris.com/portfolio-category/food",
+  "how": "page-faible"
+ },
+ "precieuses-0-salon-de-the-coco-palais-garnier": {
   "menu": "",
   "how": "google"
  },
@@ -2531,19 +2539,11 @@
   "menu": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/69d515d496bf49d8a3842845_Terrasse%20HS.pdf",
   "how": "pdf"
  },
- "precieuses-0-salon-de-the-coco-palais-garnier": {
-  "menu": "",
-  "how": "google"
- },
  "precieuses-0-salon-de-the-angelina": {
   "menu": "https://www.angelina-paris.fr/",
   "how": "accueil-avec-prix"
  },
- "precieuses-0-resto-festif-mamamia": {
-  "menu": "https://mamamia-paris.com/portfolio-category/food",
-  "how": "page-faible"
- },
- "precieuses-0-resto-le-relais-plaza": {
+ "precieuses-0-resto-prunier": {
   "menu": "",
   "how": "google"
  },
@@ -2551,23 +2551,7 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-resto-festif-noto-paris": {
-  "menu": "https://noto-paris.com/wp-content/uploads/2026/02/FOOD-NOTO-19-02-WEB.pdf",
-  "how": "pdf"
- },
- "precieuses-0-salon-de-the-ritz-paris": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-salon-de-the-hotel-de-crillon": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-resto-ao-izakaya": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-salon-de-the-intercontinental-paris-le-grand": {
+ "precieuses-0-resto-mun-paris": {
   "menu": "",
   "how": "google"
  },
@@ -2575,11 +2559,23 @@
   "menu": "",
   "how": "google"
  },
+ "precieuses-0-resto-festif-noto-paris": {
+  "menu": "https://noto-paris.com/wp-content/uploads/2026/02/FOOD-NOTO-19-02-WEB.pdf",
+  "how": "pdf"
+ },
+ "precieuses-0-resto-ao-izakaya": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-salon-de-the-ritz-paris": {
+  "menu": "",
+  "how": "google"
+ },
  "precieuses-0-resto-aquakyoto": {
   "menu": "https://aquakyoto.fr/fr/menus/a-la-carte-2/",
   "how": "page"
  },
- "precieuses-0-rooftop-four-seasons-george-v": {
+ "precieuses-0-salon-de-the-intercontinental-paris-le-grand": {
   "menu": "",
   "how": "google"
  },
@@ -2587,11 +2583,15 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-rooftop-mama-shelter": {
-  "menu": "https://mamashelter.com/paris-east/#menu",
-  "how": "section"
+ "precieuses-0-rooftop-four-seasons-george-v": {
+  "menu": "",
+  "how": "google"
  },
- "precieuses-0-rooftop-madame-reve": {
+ "precieuses-0-salon-de-the-alain-ducasse": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-the-peninsula-l-oiseau-blanc": {
   "menu": "",
   "how": "google"
  },
@@ -2607,7 +2607,11 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-salon-de-the-le-meurice": {
+ "precieuses-0-rooftop-madame-reve": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-shangri-la": {
   "menu": "",
   "how": "google"
  },
@@ -2619,10 +2623,6 @@
   "menu": "https://assets.website-files.com/611ac90a014c10a367bda85d/6410ae579a2c4227c3393211_140323VillaM_CarteFood_DINER_A3_web.pdf",
   "how": "deja-bon"
  },
- "precieuses-0-rooftop-the-peninsula-l-oiseau-blanc": {
-  "menu": "",
-  "how": "google"
- },
  "precieuses-0-rooftop-le-roof": {
   "menu": "",
   "how": "google"
@@ -2631,15 +2631,7 @@
   "menu": "https://mikunaparis.com/menu-terraza",
   "how": "page"
  },
- "precieuses-0-rooftop-shangri-la": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-resto-mun-paris": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-cafe-spootnik-bar": {
+ "precieuses-0-salon-de-the-le-meurice": {
   "menu": "",
   "how": "google"
  },
@@ -2647,7 +2639,11 @@
   "menu": "https://www.bofingerparis.com/menus-carte/",
   "how": "page"
  },
- "precieuses-0-salon-de-the-alain-ducasse": {
+ "precieuses-0-cafe-spootnik-bar": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-rooftop-gigi": {
   "menu": "",
   "how": "google"
  },
@@ -2655,15 +2651,19 @@
   "menu": "https://www.fringecoffeeparis.com/fringemenu.pdf",
   "how": "pdf"
  },
- "precieuses-0-rooftop-too-hotel": {
+ "precieuses-0-rooftop-le-toit-de-la-girafe": {
   "menu": "",
   "how": "google"
+ },
+ "precieuses-0-rooftop-mama-shelter": {
+  "menu": "https://mamashelter.com/paris-east/#menu",
+  "how": "section"
  },
  "precieuses-0-boire-un-verre-yago-pigalle": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-boire-un-verre-cheper-perchoir": {
+ "precieuses-0-rooftop-too-hotel": {
   "menu": "",
   "how": "google"
  },
@@ -2671,11 +2671,11 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-boire-un-verre-l-entracte": {
-  "menu": "https://entracte-opera.fr/fr/services",
-  "how": "page"
+ "precieuses-0-boire-un-verre-cheper-perchoir": {
+  "menu": "",
+  "how": "google"
  },
- "precieuses-0-rooftop-perruche": {
+ "precieuses-0-salon-de-the-hotel-de-crillon": {
   "menu": "",
   "how": "google"
  },
@@ -2683,13 +2683,13 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-rooftop-le-toit-de-la-girafe": {
-  "menu": "",
-  "how": "google"
- },
  "precieuses-0-boire-un-verre-solera": {
   "menu": "https://soleraparis.com/notre-carte/",
   "how": "page"
+ },
+ "precieuses-0-rooftop-perruche": {
+  "menu": "",
+  "how": "google"
  },
  "precieuses-0-boire-un-verre-grouvie": {
   "menu": "",
@@ -2699,6 +2699,10 @@
   "menu": "",
   "how": "google"
  },
+ "precieuses-0-cafe-kith": {
+  "menu": "https://kith.com/",
+  "how": "accueil-avec-prix"
+ },
  "precieuses-0-boire-un-verre-maison-souquet": {
   "menu": "",
   "how": "google"
@@ -2707,11 +2711,7 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-boire-un-verre-mobster-bar": {
-  "menu": "https://mobster.azadestudio.fr/",
-  "how": "accueil-avec-prix"
- },
- "precieuses-0-rooftop-gigi": {
+ "precieuses-0-boire-un-verre-secret-8": {
   "menu": "",
   "how": "google"
  },
@@ -2719,25 +2719,25 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-cafe-kith": {
-  "menu": "https://kith.com/",
+ "precieuses-0-boire-un-verre-les-ambassadeurs": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-hotel-particulier-montmartre": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-boire-un-verre-mobster-bar": {
+  "menu": "https://mobster.azadestudio.fr/",
   "how": "accueil-avec-prix"
- },
- "precieuses-0-boire-un-verre-bar-botaniste": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-boire-un-verre-coco": {
-  "menu": "",
-  "how": "google"
  },
  "precieuses-0-boire-un-verre-la-marta": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-boire-un-verre-secret-8": {
-  "menu": "",
-  "how": "google"
+ "precieuses-0-boire-un-verre-baronne": {
+  "menu": "https://baronne-restaurant.com/menus/",
+  "how": "page-faible"
  },
  "precieuses-0-a-tester-yum-tcha-bubble-tea": {
   "menu": "",
@@ -2747,19 +2747,19 @@
   "menu": "https://violettaetalfredo.fr/menu-semaine/",
   "how": "page"
  },
- "precieuses-0-boire-un-verre-baronne": {
-  "menu": "https://baronne-restaurant.com/menus/",
-  "how": "page-faible"
+ "precieuses-0-boire-un-verre-bar-botaniste": {
+  "menu": "",
+  "how": "google"
  },
  "precieuses-0-brunch-404-brunch-oriental": {
   "menu": "https://www.brunch.fr/collections/brunch-a-volonte/",
   "how": "page-faible"
  },
- "precieuses-0-boire-un-verre-les-ambassadeurs": {
+ "precieuses-0-boire-un-verre-bar-hemingway": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-boire-un-verre-maison-revka": {
+ "precieuses-0-boire-un-verre-le-gainsbarre": {
   "menu": "",
   "how": "google"
  },
@@ -2771,9 +2771,9 @@
   "menu": "",
   "how": "google"
  },
- "precieuses-0-boire-un-verre-hotel-particulier-montmartre": {
-  "menu": "",
-  "how": "google"
+ "precieuses-0-boire-un-verre-l-entracte": {
+  "menu": "https://entracte-opera.fr/fr/services",
+  "how": "page"
  },
  "ig-paris-best-bread-boba": {
   "menu": "",
@@ -2783,11 +2783,15 @@
   "menu": "https://www.patateparis.com/#carte",
   "how": "section"
  },
- "precieuses-0-boire-un-verre-bar-hemingway": {
+ "precieuses-0-boire-un-verre-coco": {
   "menu": "",
   "how": "google"
  },
  "ig-paris-bistrot-au-bon-coin": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-brunch-ferrandi": {
   "menu": "",
   "how": "google"
  },
@@ -2799,17 +2803,13 @@
   "menu": "https://cdn.website.dish.co/media/7b/a2/10232396/Entree-Street-Food.pdf",
   "how": "pdf"
  },
- "precieuses-0-brunch-bande-de-cheffes": {
+ "precieuses-0-boire-un-verre-hotel-lancaster": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-boire-un-verre-le-gainsbarre": {
+ "ig-paris-pozzetto": {
   "menu": "",
   "how": "google"
- },
- "ig-paris-la-tropicale": {
-  "menu": "https://latropicaleglacier.com/brunch/",
-  "how": "page-faible"
  },
  "ig-paris-ristorante-national": {
   "menu": "",
@@ -2819,39 +2819,47 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-berthillon": {
-  "menu": "https://berthillonparis.com/",
-  "how": "accueil-avec-prix"
+ "ig-paris-la-tropicale": {
+  "menu": "https://latropicaleglacier.com/brunch/",
+  "how": "page-faible"
  },
  "ig-paris-la-fontaine-gaillon": {
   "menu": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6a229bfb183f8f2e187a757d_Brunch%20FR.pdf",
   "how": "pdf"
  },
- "precieuses-0-brunch-le-royal-monceau": {
-  "menu": "",
-  "how": "google"
+ "ig-paris-berthillon": {
+  "menu": "https://berthillonparis.com/",
+  "how": "accueil-avec-prix"
  },
  "ig-paris-wax": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-pozzetto": {
+ "precieuses-0-brunch-bande-de-cheffes": {
   "menu": "",
   "how": "google"
  },
- "precieuses-0-brunch-ferrandi": {
-  "menu": "",
-  "how": "google"
- },
- "precieuses-0-boire-un-verre-hotel-lancaster": {
-  "menu": "",
-  "how": "google"
+ "ig-paris-le-cochon-a-l-oreille": {
+  "menu": "https://www.lecochonaloreille.com/accueil/menu",
+  "how": "page"
  },
  "ig-paris-andy-wahloo": {
   "menu": "https://1c04ec65-4aff-4c87-b966-90f99c426749.filesusr.com/ugd/d940f2_6e39e66c844d4b2093478a4f021e3310.pdf",
   "how": "pdf"
  },
+ "precieuses-0-boire-un-verre-maison-revka": {
+  "menu": "",
+  "how": "google"
+ },
+ "precieuses-0-brunch-le-royal-monceau": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-paris-arnaud-nicolas": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-mishmish": {
   "menu": "",
   "how": "google"
  },
@@ -2863,15 +2871,11 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-le-cochon-a-l-oreille": {
-  "menu": "https://www.lecochonaloreille.com/accueil/menu",
-  "how": "page"
+ "ig-paris-bambino": {
+  "menu": "https://bambinoparis.com/",
+  "how": "accueil-avec-prix"
  },
  "ig-paris-le-petit-bal-perdu": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-mishmish": {
   "menu": "",
   "how": "google"
  },
@@ -2883,17 +2887,17 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-le-discobar": {
+ "ig-paris-frequence": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-red-noodle": {
   "menu": "",
   "how": "google"
  },
  "ig-paris-berkeley-garden": {
   "menu": "https://berkeley-garden-paris.com/fr/services",
   "how": "page"
- },
- "ig-paris-red-noodle": {
-  "menu": "",
-  "how": "google"
  },
  "ig-paris-starving-club": {
   "menu": "https://starvingclub.fr/lunch-box/",
@@ -2902,10 +2906,6 @@
  "ig-paris-gatsby": {
   "menu": "https://legatsby.fr/carte/",
   "how": "page-faible"
- },
- "ig-paris-bambino": {
-  "menu": "https://bambinoparis.com/",
-  "how": "accueil-avec-prix"
  },
  "ig-paris-miamor": {
   "menu": "https://www.privateaser.com/lieu/11777-UTOPIA",
@@ -2919,17 +2919,17 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-frequence": {
-  "menu": "",
-  "how": "google"
+ "ig-paris-sissi": {
+  "menu": "https://www.sissi-republique.fr/menus",
+  "how": "page-faible"
  },
  "ig-paris-besame-mucho": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-scilicet": {
-  "menu": "https://scilicet.fr/la-carte/",
-  "how": "page"
+ "ig-paris-le-discobar": {
+  "menu": "",
+  "how": "google"
  },
  "ig-paris-le-153": {
   "menu": "https://www.le153.com/menu",
@@ -2939,13 +2939,13 @@
   "menu": "",
   "how": "google"
  },
+ "ig-paris-scilicet": {
+  "menu": "https://scilicet.fr/la-carte/",
+  "how": "page"
+ },
  "ig-paris-chope-moi": {
   "menu": "https://chope-moi.fr/__l5e/assets-v1/05a396a1-c467-4bc2-a491-16f3229512ef/carte-food.pdf",
   "how": "pdf"
- },
- "ig-paris-sissi": {
-  "menu": "https://www.sissi-republique.fr/menus",
-  "how": "page-faible"
  },
  "ig-paris-too-tac-tac": {
   "menu": "",
@@ -2955,19 +2955,15 @@
   "menu": "https://ika-restaurant-curry-japonais-paris-10.onataste.fr/menu/",
   "how": "page-faible"
  },
- "ig-paris-chez-franck": {
+ "ig-paris-bar-demory": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-le-soixante-douze": {
-  "menu": "https://www.lesoixantedouze.com/carte.html",
-  "how": "page-faible"
+ "ig-paris-petit-bain": {
+  "menu": "",
+  "how": "google"
  },
- "ig-paris-motsuya": {
-  "menu": "https://motsuya.onataste.fr/menu/",
-  "how": "page"
- },
- "ig-paris-le-pavillon-des-canaux": {
+ "ig-paris-doron": {
   "menu": "",
   "how": "google"
  },
@@ -2979,15 +2975,19 @@
   "menu": "https://lanouvelleseine.com/menu/",
   "how": "page"
  },
- "ig-paris-bar-demory": {
-  "menu": "",
-  "how": "google"
+ "ig-paris-motsuya": {
+  "menu": "https://motsuya.onataste.fr/menu/",
+  "how": "page"
+ },
+ "ig-paris-le-soixante-douze": {
+  "menu": "https://www.lesoixantedouze.com/carte.html",
+  "how": "page-faible"
  },
  "ig-paris-ciel-les-maquereaux": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-chalet-des-iles": {
+ "ig-paris-le-pavillon-des-canaux": {
   "menu": "",
   "how": "google"
  },
@@ -2999,7 +2999,7 @@
   "menu": "https://belushis.com/menus",
   "how": "page-faible"
  },
- "ig-paris-la-demesure": {
+ "ig-paris-chez-franck": {
   "menu": "",
   "how": "google"
  },
@@ -3011,7 +3011,7 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-petit-bain": {
+ "ig-paris-chalet-des-iles": {
   "menu": "",
   "how": "google"
  },
@@ -3019,15 +3019,15 @@
   "menu": "",
   "how": "google"
  },
+ "ig-paris-notre-dame-music-bar": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-paris-woo-jung": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-safrane": {
-  "menu": "https://safrane-paris-17.fr/fr/services",
-  "how": "page"
- },
- "ig-paris-chalet-des-iles-daumesnil": {
+ "ig-paris-la-demesure": {
   "menu": "",
   "how": "google"
  },
@@ -3039,11 +3039,11 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-doron": {
-  "menu": "",
-  "how": "google"
+ "ig-paris-safrane": {
+  "menu": "https://safrane-paris-17.fr/fr/services",
+  "how": "page"
  },
- "ig-paris-wukong-temple": {
+ "ig-paris-il-gelato-del-marchese": {
   "menu": "",
   "how": "google"
  },
@@ -3051,27 +3051,7 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-notre-dame-music-bar": {
-  "menu": "",
-  "how": "google"
- },
  "ig-paris-darkoum": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-il-gelato-del-marchese": {
-  "menu": "",
-  "how": "google"
- },
- "ig-autour-de-paris-sushi-ken": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-villa-maasai": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-home-donuts": {
   "menu": "",
   "how": "google"
  },
@@ -3079,7 +3059,27 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-udon-jubey": {
+ "ig-paris-chalet-des-iles-daumesnil": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-autour-de-paris-sushi-ken": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-autour-de-paris-le-bazar": {
+  "menu": "https://www.restaurantlebazar.com/carte-1",
+  "how": "page-faible"
+ },
+ "ig-paris-home-donuts": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-la-cour-jardin-plaza-athenee": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-villa-maasai": {
   "menu": "",
   "how": "google"
  },
@@ -3095,6 +3095,18 @@
   "menu": "",
   "how": "google"
  },
+ "ig-paris-udon-jubey": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-wukong-temple": {
+  "menu": "https://wukong-temple.wheree.com/menu",
+  "how": "page-faible"
+ },
+ "ig-paris-secret-garden": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-paris-bistrot-podium": {
   "menu": "https://www.bistrot-podium.fr/la-carte/",
   "how": "page-faible"
@@ -3102,22 +3114,6 @@
  "ig-paris-maku": {
   "menu": "https://makuparis.fr/wp-content/uploads/2025/09/MAKU_MENU_Sept-2025-FOOD-1.pdf",
   "how": "pdf"
- },
- "ig-paris-secret-garden": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-la-cour-jardin-plaza-athenee": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-chez-meilan": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-aux-enfants-gates": {
-  "menu": "https://www.auxenfantsgates.fr/index.php/ct-menu-item-5",
-  "how": "page-faible"
  },
  "ig-paris-flavio": {
   "menu": "https://flavio.menu-world.com/menu",
@@ -3127,7 +3123,19 @@
   "menu": "",
   "how": "google"
  },
+ "ig-paris-chez-meilan": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-paris-lilane": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-seb-on": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-yami-yami": {
   "menu": "",
   "how": "google"
  },
@@ -3135,15 +3143,15 @@
   "menu": "https://www.misu-paris.com/menus",
   "how": "page"
  },
- "ig-paris-yami-yami": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-888-night-market": {
-  "menu": "",
-  "how": "google"
- },
  "ig-paris-odoumak": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-aux-enfants-gates": {
+  "menu": "https://www.auxenfantsgates.fr/index.php/ct-menu-item-5",
+  "how": "page-faible"
+ },
+ "ig-paris-rehab": {
   "menu": "",
   "how": "google"
  },
@@ -3151,21 +3159,13 @@
   "menu": "https://pastasuta.fr/wp-content/uploads/2025/08/Menu-2025-.pdf",
   "how": "pdf"
  },
- "ig-paris-rehab": {
+ "ig-paris-carvan": {
   "menu": "",
   "how": "google"
  },
  "ig-paris-machiya": {
   "menu": "https://machiyabento.com/menu",
   "how": "page"
- },
- "ig-paris-carvan": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-flocon": {
-  "menu": "",
-  "how": "google"
  },
  "ig-paris-grand-duc": {
   "menu": "",
@@ -3175,23 +3175,23 @@
   "menu": "https://cdn.prod.website-files.com/657ebf942cf08a351e21c1b1/6a10746d57834bbb607bd35f_Fitzgerald%20BRUNCH%2021_05_26.pdf",
   "how": "pdf"
  },
+ "ig-paris-888-night-market": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-paris-princess-crepe": {
   "menu": "https://princess-crepe.onataste.fr/menu/",
   "how": "page"
- },
- "ig-paris-seb-on": {
-  "menu": "",
-  "how": "google"
  },
  "ig-paris-prescription-cocktail-club": {
   "menu": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/6ad5e6ab67f0703957f4ac7f_DRINKS%20MENU%20PRESCRIPTION%20OCT%202026%20EN%20WEB.pdf",
   "how": "pdf"
  },
- "ig-paris-danico": {
+ "ig-paris-silencio-des-pres": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-silencio-des-pres": {
+ "ig-paris-danico": {
   "menu": "",
   "how": "google"
  },
@@ -3199,9 +3199,53 @@
   "menu": "https://www.yannick-alleno.com/les-fetes-au-pavillon-ledoyen",
   "how": "page"
  },
+ "ig-paris-flocon": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-l-espadon-ritz": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-bisou": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-paris-claudine": {
   "menu": "",
   "how": "google"
+ },
+ "ig-paris-candelaria": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-le-clarence": {
+  "menu": "https://www.le-clarence.paris/wp-content/uploads/2026/03/site_Le_Clarence_Carte_Mars26_FR.pdf",
+  "how": "pdf"
+ },
+ "ig-paris-chez-fred": {
+  "menu": "https://static1.squarespace.com/static/5d7f68a3f676224bc8cb3b65/t/6af1a99acdb14a4283a27778/1794222490599/Menu+Chez+Fred+%288%29.pdf",
+  "how": "pdf"
+ },
+ "ig-paris-lasserre": {
+  "menu": "https://www.restaurant-lasserre.com/fr/notre-carte",
+  "how": "page"
+ },
+ "ig-paris-kei": {
+  "menu": "https://restaurant-kei.fr/pages/degustations-et-menus",
+  "how": "page-faible"
+ },
+ "ig-paris-plenitude-cheval-blanc": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-paris-le-taillevent": {
+  "menu": "https://www.letaillevent.com/carte-menus/",
+  "how": "page-pdfs"
+ },
+ "ig-new-york-barney-greengrass": {
+  "menu": "https://cdn.shopify.com/s/files/1/0703/7337/files/4_2026_BGR_Menu.pdf",
+  "how": "pdf"
  },
  "ig-paris-le-syndicat": {
   "menu": "",
@@ -3211,65 +3255,21 @@
   "menu": "https://moonshinerbar.fr/menu/",
   "how": "page-liseuse"
  },
- "ig-paris-lasserre": {
-  "menu": "https://www.restaurant-lasserre.com/fr/notre-carte",
+ "ig-new-york-zabar-s": {
+  "menu": "https://www.zabars.com/housewares_food_prep_tools/",
   "how": "page"
- },
- "ig-paris-le-clarence": {
-  "menu": "https://www.le-clarence.paris/wp-content/uploads/2026/03/site_Le_Clarence_Carte_Mars26_FR.pdf",
-  "how": "pdf"
- },
- "ig-paris-candelaria": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-chez-fred": {
-  "menu": "https://static1.squarespace.com/static/5d7f68a3f676224bc8cb3b65/t/6af1a99acdb14a4283a27778/1794222490599/Menu+Chez+Fred+%288%29.pdf",
-  "how": "pdf"
  },
  "ig-paris-le-boudoir": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-le-taillevent": {
-  "menu": "https://www.letaillevent.com/carte-menus/",
-  "how": "page-pdfs"
- },
- "ig-paris-plenitude-cheval-blanc": {
-  "menu": "",
-  "how": "google"
- },
- "ig-paris-kei": {
-  "menu": "https://restaurant-kei.fr/pages/degustations-et-menus",
-  "how": "page-faible"
- },
- "ig-new-york-barney-greengrass": {
-  "menu": "https://cdn.shopify.com/s/files/1/0703/7337/files/4_2026_BGR_Menu.pdf",
-  "how": "pdf"
- },
- "ig-autour-de-paris-le-bazar": {
-  "menu": "https://www.restaurantlebazar.com/carte-1",
-  "how": "page-faible"
- },
- "ig-paris-l-espadon-ritz": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-zabar-s": {
-  "menu": "https://www.zabars.com/housewares_food_prep_tools/",
-  "how": "page"
- },
  "ig-paris-l-ambroisie": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-bisou": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-kikoo-sushi": {
-  "menu": "https://kikoosushi.com/menu/",
-  "how": "page"
+ "ig-paris-lucas-carton": {
+  "menu": "https://cdn.prod.website-files.com/6a990ad2279b8e2b3ad1e7a3/6af204c838dcbf15cd3cb8fe_Lucas%20Carton%20-%20menu%20-%20Novembre%20-%20FR_2026.pdf",
+  "how": "pdf"
  },
  "ig-new-york-7th-street-burger": {
   "menu": "https://7thstreetburger.com/menu",
@@ -3279,11 +3279,11 @@
   "menu": "",
   "how": "google"
  },
- "ig-paris-lucas-carton": {
-  "menu": "https://cdn.prod.website-files.com/6a990ad2279b8e2b3ad1e7a3/6af204c838dcbf15cd3cb8fe_Lucas%20Carton%20-%20menu%20-%20Novembre%20-%20FR_2026.pdf",
-  "how": "pdf"
+ "ig-new-york-akimori": {
+  "menu": "https://www.akimorinyc.com/menu",
+  "how": "page-faible"
  },
- "ig-paris-la-dame-de-pic": {
+ "ig-new-york-zinc-bar": {
   "menu": "",
   "how": "google"
  },
@@ -3303,13 +3303,17 @@
   "menu": "https://www.twentythreegrand.com/menus/dinner-2",
   "how": "page"
  },
- "ig-new-york-perrine": {
-  "menu": "https://www.perrinenyc.com/perrine-new-york-menu",
-  "how": "page-faible"
+ "ig-paris-la-dame-de-pic": {
+  "menu": "",
+  "how": "google"
  },
  "ig-new-york-kossar-s": {
   "menu": "",
   "how": "google"
+ },
+ "ig-new-york-lafayette": {
+  "menu": "https://www.lafayetteny.com/menus/",
+  "how": "page"
  },
  "ig-new-york-izakaya-nana": {
   "menu": "https://www.izakayanana.com/menu",
@@ -3317,10 +3321,6 @@
  },
  "ig-new-york-los-tacos-no-1": {
   "menu": "https://www.lostacos1.com/menus/",
-  "how": "page"
- },
- "ig-new-york-lafayette": {
-  "menu": "https://www.lafayetteny.com/menus/",
   "how": "page"
  },
  "ig-new-york-tavern-29": {
@@ -3335,13 +3335,13 @@
   "menu": "",
   "how": "google"
  },
+ "ig-new-york-perrine": {
+  "menu": "https://www.perrinenyc.com/perrine-new-york-menu",
+  "how": "page-faible"
+ },
  "ig-new-york-prince-street-pizza": {
   "menu": "https://princestreetpizzamenu.com/",
   "how": "accueil-avec-prix"
- },
- "ig-new-york-zinc-bar": {
-  "menu": "",
-  "how": "google"
  },
  "ig-new-york-katz-s-delicatessen": {
   "menu": "https://katzsdelicatessen.com/hanukkah-dinner-package.html",
@@ -3351,31 +3351,23 @@
   "menu": "https://www.thedickensnyc.com/menus/",
   "how": "page"
  },
- "ig-new-york-au-cheval": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-levain-bakery": {
-  "menu": "https://levainbakery.com/?_abr=1&_su_rec=ODyjNZ_WPLn8gTqxfB9vhacAQMVNNNjKbD66oipKSNjGWAHdccCZroV58XYk_BvcLaj9O8UsCsk2Culcm6dMrxQTw4NhFuO0VtzE_DoCdeOsXGtMcyF_KqKc__PqHY4hat_PVKmD9Lgm3cMWeScb5GPcPmN1N2DY-DLB8k0IVjPFvzBWxYzlEgdqrvfgBfiU7RDt5Mbx7g3OczcusKyQaJWXFJOhkdNUvmKRaaf06pDKhqeym8Twx2k0vlzOUH8Kc2zVTGgW3OmsXTW7JX2Kmk0Ila6ZRknkwBJ5ejS6k0qTC3gco0_EYtMq04GgYvuIXVRr_HOCNSDG8b6mw4H_&_su_rec_id=8381ab00-5d4a-4ab2-a42e-b92351760524-1794798171",
-  "how": "accueil-avec-prix"
- },
- "ig-new-york-lost-in-paradise": {
-  "menu": "https://www.lostinparadiserooftop.com/menus/",
+ "ig-new-york-kikoo-sushi": {
+  "menu": "https://kikoosushi.com/menu/",
   "how": "page"
- },
- "ig-new-york-tempura": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-akimori": {
-  "menu": "https://www.akimorinyc.com/menu",
-  "how": "page-faible"
  },
  "ig-new-york-lexington-candy-shop": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-mott-street-eatery": {
+ "ig-new-york-lost-in-paradise": {
+  "menu": "https://www.lostinparadiserooftop.com/menus/",
+  "how": "page"
+ },
+ "ig-new-york-the-pickle-guys": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-new-york-au-cheval": {
   "menu": "",
   "how": "google"
  },
@@ -3383,25 +3375,33 @@
   "menu": "https://www.joesginger.com/menus",
   "how": "page"
  },
+ "ig-new-york-mott-street-eatery": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-new-york-deluxe-green-bo": {
   "menu": "",
   "how": "google"
+ },
+ "ig-new-york-levain-bakery": {
+  "menu": "https://levainbakery.com/?_abr=1&_su_rec=7ltewnhdrIA7RlJvdaN-qVAXScWkxLtUAP15WzqzY8IlVWG-lPvdBrlj6EvGXSX4jKOgwGB0UnIEwOCaC5liHuUS3heocqUfdWSWfzvx832qdnfsOBoqtpBM-qy8zpX_GYpSiCeni2sPWEsX_JOEDUorC3WmtPKc0k75eWl5DX3ZRqJeOSRPe2xaBNU5fgnTuG24zl55OZIHFjMg1885LiuQninyadI_ivJkRRSvYmHC-J4dVFiNutbzTgm-5QGQnfI1nFRmThDJa67u_fdC4sUlZzUrkP6lYRyDnRbAJLbSxOqaDfd_GVnWn-C7SWamZClTu-YQkK4olmx3nec3cxmp&_su_rec_id=cf742320-ae49-44fa-adff-eefebb369d56-1794799579",
+  "how": "accueil-avec-prix"
+ },
+ "ig-new-york-ortomare": {
+  "menu": "https://ortomare-ristorante-pizzeria.wheree.com/menu",
+  "how": "page-faible"
  },
  "ig-new-york-cantina-rooftop": {
   "menu": "https://cantinarooftop.com/menu",
   "how": "page"
  },
- "ig-new-york-shanghai-21": {
-  "menu": "",
-  "how": "google"
- },
  "ig-new-york-la-barca-cantina": {
   "menu": "https://www.circleline.com/about/menu",
   "how": "page-faible"
  },
- "ig-new-york-the-pickle-guys": {
-  "menu": "",
-  "how": "google"
+ "ig-new-york-tempura": {
+  "menu": "https://tempura-nyc.wheree.com/menu",
+  "how": "page-faible"
  },
  "ig-new-york-phayul": {
   "menu": "https://phayul.localoria.com/full-menu",
@@ -3419,11 +3419,15 @@
   "menu": "",
   "how": "google"
  },
- "ig-new-york-mimi-cheng-s": {
+ "ig-paris-el-nopal": {
   "menu": "",
   "how": "google"
  },
- "ig-paris-el-nopal": {
+ "ig-new-york-shanghai-21": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-new-york-duzan": {
   "menu": "",
   "how": "google"
  },
@@ -3431,11 +3435,15 @@
   "menu": "https://shalomjapannyc.com/menus/",
   "how": "page-liseuse"
  },
- "ig-new-york-the-mulberry-bar": {
+ "ig-new-york-kyuramen": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-fellini-coffee": {
+ "ig-new-york-gilligan-s": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-new-york-kura-revolving-sushi": {
   "menu": "",
   "how": "google"
  },
@@ -3443,17 +3451,9 @@
   "menu": "https://www.opheliany.com/menus/",
   "how": "page"
  },
- "ig-new-york-kura-revolving-sushi": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-elsie-rooftop": {
-  "menu": "https://elsierooftop.com/menus/",
-  "how": "page-faible"
- },
- "ig-new-york-kyuramen": {
-  "menu": "",
-  "how": "google"
+ "ig-new-york-malka": {
+  "menu": "https://www.malka-usa.com/menu",
+  "how": "page"
  },
  "ig-new-york-tabernacle-steakhouse": {
   "menu": "https://www.tabernaclesteakhouse.com/menus/",
@@ -3463,15 +3463,15 @@
   "menu": "",
   "how": "google"
  },
- "ig-new-york-malka": {
-  "menu": "https://www.malka-usa.com/menu",
-  "how": "page"
+ "ig-new-york-mimi-cheng-s": {
+  "menu": "",
+  "how": "google"
  },
  "ig-new-york-sip-and-sizzle": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-kaiten-zushi": {
+ "ig-new-york-fellini-coffee": {
   "menu": "",
   "how": "google"
  },
@@ -3479,11 +3479,11 @@
   "menu": "https://okiboru.com/sandy-springs-okiboru-locations",
   "how": "page"
  },
- "ig-new-york-gilligan-s": {
-  "menu": "",
-  "how": "google"
+ "ig-new-york-elsie-rooftop": {
+  "menu": "https://elsierooftop.com/menus/",
+  "how": "page-faible"
  },
- "ig-new-york-ortomare": {
+ "ig-new-york-the-mulberry-bar": {
   "menu": "",
   "how": "google"
  },
@@ -3491,17 +3491,17 @@
   "menu": "https://www.caffearonne.com/caffe-aronne-menu",
   "how": "page"
  },
- "ig-new-york-pop-up-bagels": {
-  "menu": "https://www.popupbagels.com/menu",
-  "how": "page-faible"
+ "ig-new-york-bhi-thursdays": {
+  "menu": "https://www.bhithursdays.com/menu",
+  "how": "page"
  },
  "ig-new-york-burgers-bar": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-bhi-thursdays": {
-  "menu": "https://www.bhithursdays.com/menu",
-  "how": "page"
+ "ig-new-york-pop-up-bagels": {
+  "menu": "https://www.popupbagels.com/menu",
+  "how": "page-faible"
  },
  "ig-new-york-ricotta-coffee": {
   "menu": "",
@@ -3527,21 +3527,21 @@
   "menu": "https://static1.squarespace.com/static/5c65f1f5d7819e615a024198/t/67c669d1aa781639cd915a72/1741056483540/Current_Brunch_02-27-25.pdf",
   "how": "pdf"
  },
- "ig-new-york-sentir": {
-  "menu": "https://ops.cityrootsnyc.com/menu/sentir",
-  "how": "page"
+ "ig-new-york-sushi-tokyo": {
+  "menu": "",
+  "how": "google"
  },
- "ig-new-york-tsumo": {
-  "menu": "https://www.tsumony.com/menu",
-  "how": "page-faible"
+ "ig-new-york-kaiten-zushi": {
+  "menu": "",
+  "how": "google"
  },
  "ig-tel-aviv-imersion": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-sushi-tokyo": {
-  "menu": "",
-  "how": "google"
+ "ig-tel-aviv-le-rendez-vous": {
+  "menu": "https://rendezvous-nevetsedek.co.il/fr/menu",
+  "how": "page"
  },
  "ig-tel-aviv-asi-ve-adnan": {
   "menu": "",
@@ -3563,13 +3563,13 @@
   "menu": "https://www.daryatlv.com/menu",
   "how": "page-faible"
  },
- "ig-tel-aviv-florentina": {
-  "menu": "https://florentina.co.il/#scroll-section3",
-  "how": "section"
+ "ig-new-york-sauteed": {
+  "menu": "https://sauteed.wheree.com/menu",
+  "how": "page-faible"
  },
- "ig-tel-aviv-le-rendez-vous": {
-  "menu": "https://rendezvous-nevetsedek.co.il/fr/menu",
-  "how": "page"
+ "ig-new-york-tsumo": {
+  "menu": "https://www.tsumony.com/menu",
+  "how": "page-faible"
  },
  "ig-tel-aviv-otoro": {
   "menu": "",
@@ -3587,25 +3587,25 @@
   "menu": "",
   "how": "google"
  },
- "ig-new-york-sauteed": {
-  "menu": "https://sauteed.wheree.com/menu",
-  "how": "page-faible"
+ "ig-tel-aviv-katzir": {
+  "menu": "",
+  "how": "google"
  },
  "ig-tel-aviv-poupee": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-dvora": {
-  "menu": "https://dvoratlv.com/food-menu---he",
-  "how": "page-faible"
- },
- "ig-tel-aviv-katzir": {
-  "menu": "",
-  "how": "google"
+ "ig-tel-aviv-florentina": {
+  "menu": "https://florentina.co.il/#scroll-section3",
+  "how": "section"
  },
  "ig-tel-aviv-salon-yevani": {
   "menu": "https://www.salonyevani.co.il/menu",
   "how": "page-pdfs"
+ },
+ "ig-new-york-sentir": {
+  "menu": "https://ops.cityrootsnyc.com/menu/sentir",
+  "how": "page"
  },
  "ig-jerusalem-andalucia": {
   "menu": "",
@@ -3619,9 +3619,9 @@
   "menu": "",
   "how": "google"
  },
- "ig-new-york-duzan": {
-  "menu": "",
-  "how": "google"
+ "ig-jerusalem-anthony-s-pizza": {
+  "menu": "https://anthonys.co.il/menu/",
+  "how": "page-pdfs"
  },
  "ig-jerusalem-mimonis": {
   "menu": "",
@@ -3731,13 +3731,13 @@
   "menu": "",
   "how": "google"
  },
- "ig-jerusalem-anthony-s-pizza": {
-  "menu": "https://anthonys.co.il/menu/",
-  "how": "page-pdfs"
+ "ig-tel-aviv-dvora": {
+  "menu": "https://dvoratlv.com/food-menu---he",
+  "how": "page-faible"
  },
- "ig-new-york-wall-street-grill": {
-  "menu": "",
-  "how": "google"
+ "ig-tel-aviv-burger-station-dizengoff": {
+  "menu": "https://burgerstation.co.il/menu",
+  "how": "page"
  },
  "ig-jerusalem-mordechai-1987-jerusalem": {
   "menu": "",
@@ -3883,9 +3883,9 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-burger-station-dizengoff": {
-  "menu": "https://burgerstation.co.il/menu",
-  "how": "page"
+ "ig-new-york-maison-valero": {
+  "menu": "",
+  "how": "google"
  },
  "ig-jerusalem-segev-batayelet": {
   "menu": "",
@@ -4019,9 +4019,9 @@
   "menu": "",
   "how": "google"
  },
- "ig-jerusalem-seoul-house": {
-  "menu": "",
-  "how": "google"
+ "ig-jerusalem-zuta": {
+  "menu": "https://zuta.wheree.com/menu",
+  "how": "page-faible"
  },
  "ig-bat-yam-salami": {
   "menu": "",
@@ -4047,25 +4047,25 @@
   "menu": "https://www.shneor-cafe.com/_files/ugd/fc293c_7b87ffd5c2044064b134e9ec3bb2a619.pdf",
   "how": "pdf"
  },
+ "ig-new-york-wall-street-grill": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-tel-aviv-pasador": {
   "menu": "https://www.passador.co.il/wp-content/uploads/2026/11/Passador_Menu_Alc_14x33-7.pdf",
   "how": "pdf"
  },
- "ig-ramat-gan-tre": {
+ "ig-tel-aviv-kirsh": {
+  "menu": "https://kirshcafe239.wixsite.com/kirshcafe/menu",
+  "how": "page"
+ },
+ "ig-jerusalem-seoul-house": {
   "menu": "",
   "how": "google"
  },
  "ig-nes-ziona-tokopaya": {
   "menu": "https://tokopaya.co.il/menu/",
   "how": "page"
- },
- "ig-tel-aviv-kirsh": {
-  "menu": "https://kirshcafe239.wixsite.com/kirshcafe/menu",
-  "how": "page"
- },
- "ig-tel-aviv-cafe-cucu": {
-  "menu": "https://cafecucu.co.il/food/",
-  "how": "page-faible"
  },
  "ig-tel-aviv-vicky-cristina": {
   "menu": "",
@@ -4079,7 +4079,7 @@
   "menu": "",
   "how": "google"
  },
- "ig-ramla-burgers-bar-ramla": {
+ "ig-tel-aviv-hamaniya": {
   "menu": "",
   "how": "google"
  },
@@ -4099,21 +4099,21 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-hamaniya": {
-  "menu": "",
-  "how": "google"
- },
  "ig-tel-aviv-bar-51": {
   "menu": "https://c9320f20-38e4-49cd-8eeb-9bd0738518d1.filesusr.com/ugd/98e741_55669c4c780343c8b1f3a3b024daae1c.pdf",
   "how": "pdf"
  },
- "ig-tel-aviv-radler": {
-  "menu": "https://xezvrj11oj.qal.spinupwp.site/wp-content/uploads/2024/07/menu-heb.pdf",
-  "how": "pdf"
+ "ig-ramat-gan-tre": {
+  "menu": "",
+  "how": "google"
  },
  "ig-tel-aviv-la-shuk": {
   "menu": "https://cdn.getmood.io/warehouse/dynamic/469791.pdf",
   "how": "pdf-via-page"
+ },
+ "ig-tel-aviv-radler": {
+  "menu": "https://xezvrj11oj.qal.spinupwp.site/wp-content/uploads/2024/07/menu-heb.pdf",
+  "how": "pdf"
  },
  "ig-tel-aviv-mirage": {
   "menu": "",
@@ -4123,13 +4123,13 @@
   "menu": "https://izzys-smokehouse.wheree.com/menu",
   "how": "page-faible"
  },
+ "ig-ramla-burgers-bar-ramla": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-tel-aviv-ouzeria": {
   "menu": "https://www.ouzeria.co.il/menu/food",
   "how": "page-pdfs"
- },
- "ig-new-york-maison-valero": {
-  "menu": "",
-  "how": "google"
  },
  "ig-tel-aviv-cafe-noir": {
   "menu": "https://www.cafenoir.co.il/menu/food",
@@ -4143,23 +4143,15 @@
   "menu": "https://kaparamio.com/menu.html",
   "how": "page"
  },
+ "ig-tel-aviv-cafe-yom-tov": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-tel-aviv-kalamata": {
   "menu": "https://www.kalamata.co.il/menus/menu",
   "how": "page-faible"
  },
- "ig-jerusalem-zuta": {
-  "menu": "https://zuta.wheree.com/menu",
-  "how": "page-faible"
- },
  "ig-tel-aviv-mirage-jazz-kissa": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-santa-katarina": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-cafe-yom-tov": {
   "menu": "",
   "how": "google"
  },
@@ -4167,9 +4159,17 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-m25": {
-  "menu": "https://m25meat.co.il/shook_menu/",
-  "how": "page"
+ "ig-tel-aviv-santa-katarina": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-teder-fm": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-emesh": {
+  "menu": "https://emeshtlv.co.il/menu",
+  "how": "page-faible"
  },
  "ig-tel-aviv-uganda": {
   "menu": "",
@@ -4179,43 +4179,43 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-teder-fm": {
-  "menu": "",
-  "how": "google"
+ "ig-tel-aviv-cicchetti": {
+  "menu": "https://www.cicchettitlv.com/_files/ugd/53284d_854615af7e714fa996b851290a3542b2.pdf",
+  "how": "pdf"
  },
  "ig-tel-aviv-bellboy": {
   "menu": "https://bellboygroup.com/wp-content/uploads/2026/09/Bellboy-TLV-Food-Menu-July-2026.pdf",
   "how": "pdf"
  },
- "ig-tel-aviv-cicchetti": {
-  "menu": "https://www.cicchettitlv.com/_files/ugd/53284d_854615af7e714fa996b851290a3542b2.pdf",
-  "how": "pdf"
+ "ig-tel-aviv-milgo-milbar": {
+  "menu": "https://milgomilbar.co.il/menu-english/dinner-menu/",
+  "how": "page-faible"
  },
- "ig-tel-aviv-gazzetta": {
-  "menu": "",
-  "how": "google"
+ "ig-tel-aviv-m25": {
+  "menu": "https://m25meat.co.il/shook_menu/",
+  "how": "page"
  },
  "ig-tel-aviv-george-john": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-milgo-milbar": {
-  "menu": "https://milgomilbar.co.il/menu-english/dinner-menu/",
-  "how": "page-faible"
- },
- "ig-tel-aviv-emesh": {
-  "menu": "https://emeshtlv.co.il/menu",
-  "how": "page-faible"
- },
  "ig-tel-aviv-mashya": {
   "menu": "https://www.mashya.co.il/our-menu-2/",
   "how": "page-faible"
+ },
+ "ig-tel-aviv-gazzetta": {
+  "menu": "",
+  "how": "google"
  },
  "ig-tel-aviv-shila": {
   "menu": "https://www.shila-rest.co.il/menu/%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%99%d7%99%d7%a0%d7%95%d7%aa/",
   "how": "page-faible"
  },
- "ig-tel-aviv-naifa": {
+ "ig-tel-aviv-selas": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-cafe-cucu": {
   "menu": "",
   "how": "google"
  },
@@ -4223,15 +4223,15 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-the-norman-library-bar": {
+ "ig-tel-aviv-cafe-puaa": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-selas": {
+ "ig-tel-aviv-naifa": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-haiku-skybar": {
+ "ig-tel-aviv-speakeasy": {
   "menu": "",
   "how": "google"
  },
@@ -4239,7 +4239,7 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-jasmino": {
+ "ig-tel-aviv-haiku-skybar": {
   "menu": "",
   "how": "google"
  },
@@ -4247,31 +4247,15 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-yashka-dizengoff-105": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-cafe-puaa": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-yashka-devora-hanevi-a-121": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-yashka-tagore-30": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-yashka-gisin-15": {
-  "menu": "",
-  "how": "google"
- },
  "ig-tel-aviv-ocd": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-yashka-yehuda-hamaccabi-62": {
+ "ig-tel-aviv-eatmeat": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-the-norman-library-bar": {
   "menu": "",
   "how": "google"
  },
@@ -4279,7 +4263,11 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-yashka-hasukka-14": {
+ "ig-tel-aviv-yashka-dizengoff-105": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-yashka-gisin-15": {
   "menu": "",
   "how": "google"
  },
@@ -4287,9 +4275,21 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-yashka-weizmann-205": {
+ "ig-tel-aviv-yashka-tagore-30": {
   "menu": "",
   "how": "google"
+ },
+ "ig-tel-aviv-jasmino": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-yashka-derech-sheba-14": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-prozdor": {
+  "menu": "https://www.prozdor.co.il/#menu",
+  "how": "section"
  },
  "ig-tel-aviv-pizza-har-sinai": {
   "menu": "",
@@ -4299,49 +4299,45 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-prozdor": {
-  "menu": "https://www.prozdor.co.il/#menu",
-  "how": "section"
+ "ig-tel-aviv-yashka-devora-hanevi-a-121": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-yashka-yehuda-hamaccabi-62": {
+  "menu": "",
+  "how": "google"
  },
  "ig-tel-aviv-yashka-sasha-argov-23": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-yashka-derech-sheba-14": {
+ "ig-tel-aviv-yashka-hasukka-14": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-vitrina-ibn-gabirol": {
+ "ig-tel-aviv-vitrina-lilienblum": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-eatmeat": {
+ "ig-tel-aviv-yashka-weizmann-205": {
   "menu": "",
   "how": "google"
- },
- "ig-tel-aviv-delicatessen-meir-yaari-19": {
-  "menu": "https://www.delitlv.co.il/deli-food.html",
-  "how": "page"
  },
  "ig-tel-aviv-haachim": {
   "menu": "https://www.haachim.co.il/%D7%AA%D7%A4%D7%A8%D7%99%D7%98%D7%99%D7%9D",
   "how": "page"
  },
- "ig-tel-aviv-delicatessen-yehuda-halevi-79": {
-  "menu": "https://www.delitlv.co.il/deli-food.html",
-  "how": "page"
+ "ig-tel-aviv-vitrina-ibn-gabirol": {
+  "menu": "",
+  "how": "google"
  },
  "ig-tel-aviv-tyo": {
   "menu": "https://tyo.co.il/sake-menu/",
   "how": "page-liseuse"
  },
- "ig-tel-aviv-delicatessen-ibn-gabirol-70": {
+ "ig-tel-aviv-delicatessen-yehuda-halevi-79": {
   "menu": "https://www.delitlv.co.il/deli-food.html",
   "how": "page"
- },
- "ig-tel-aviv-speakeasy": {
-  "menu": "",
-  "how": "google"
  },
  "ig-tel-aviv-popina": {
   "menu": "https://www.popina.co.il/menus-1",
@@ -4351,21 +4347,25 @@
   "menu": "https://cafepopular.co.il/%d7%aa%d7%a4%d7%a8%d7%99%d7%98/",
   "how": "page-pdfs"
  },
- "ig-tel-aviv-vitrina-lilienblum": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-cafe-xoho": {
-  "menu": "https://ef123ad8-a8e4-4b18-9e97-5bdffc50c544.filesusr.com/ugd/10fbea_0c37aecee59f4b4e9f93603ccadfe5b5.pdf",
-  "how": "pdf"
- },
- "ig-tel-aviv-bucke-ahad-ha-am": {
+ "ig-tel-aviv-montefiore": {
   "menu": "",
   "how": "google"
  },
  "ig-tel-aviv-delicatessen-oppenheimer-9": {
   "menu": "https://www.delitlv.co.il/deli-food.html",
   "how": "page"
+ },
+ "ig-tel-aviv-cafe-xoho": {
+  "menu": "https://ef123ad8-a8e4-4b18-9e97-5bdffc50c544.filesusr.com/ugd/10fbea_0c37aecee59f4b4e9f93603ccadfe5b5.pdf",
+  "how": "pdf"
+ },
+ "ig-tel-aviv-bucke-yehuda-hamaccabi": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-rustico-basel": {
+  "menu": "https://www.rustico.co.il/wp-content/uploads/2025/06/RUS_MENU_BAZEL_ENG.pdf",
+  "how": "pdf"
  },
  "ig-tel-aviv-ab-cd": {
   "menu": "",
@@ -4375,23 +4375,27 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-rustico-basel": {
-  "menu": "https://www.rustico.co.il/wp-content/uploads/2025/06/RUS_MENU_BAZEL_ENG.pdf",
-  "how": "pdf"
+ "ig-tel-aviv-delicatessen-ibn-gabirol-70": {
+  "menu": "https://www.delitlv.co.il/deli-food.html",
+  "how": "page"
  },
  "ig-tel-aviv-north-abraxas": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-delicatessen-derech-ben-zvi-84": {
-  "menu": "https://www.delitlv.co.il/deli-food.html",
-  "how": "page"
+ "ig-tel-aviv-rustico-rothschild": {
+  "menu": "",
+  "how": "google"
  },
- "ig-tel-aviv-bucke-yehuda-hamaccabi": {
+ "ig-tel-aviv-bucke-ahad-ha-am": {
   "menu": "",
   "how": "google"
  },
  "ig-tel-aviv-ca-phe-hanoi": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-tel-aviv-aria": {
   "menu": "",
   "how": "google"
  },
@@ -4403,35 +4407,27 @@
   "menu": "https://www.suzanatlv.co.il/menu",
   "how": "page-faible"
  },
- "ig-tel-aviv-whiskey-bar-museum": {
-  "menu": "https://www.whiskeybm.co.il/menu",
-  "how": "page-pdfs"
+ "ig-tel-aviv-delicatessen-meir-yaari-19": {
+  "menu": "https://www.delitlv.co.il/deli-food.html",
+  "how": "page"
  },
- "ig-tel-aviv-moon-pinsker": {
-  "menu": "",
-  "how": "google"
+ "ig-tel-aviv-delicatessen-derech-ben-zvi-84": {
+  "menu": "https://www.delitlv.co.il/deli-food.html",
+  "how": "page"
  },
  "ig-tel-aviv-claro": {
   "menu": "https://www.clarotlv.com/",
   "how": "accueil-avec-prix"
  },
- "ig-tel-aviv-moon-bograshov": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-rustico-rothschild": {
-  "menu": "",
-  "how": "google"
+ "ig-tel-aviv-whiskey-bar-museum": {
+  "menu": "https://www.whiskeybm.co.il/menu",
+  "how": "page-pdfs"
  },
  "ig-new-york-cote-flatiron": {
   "menu": "https://www.cotekoreansteakhouse.com/menu-undercote",
   "how": "page-pdfs"
  },
- "ig-tel-aviv-sarona-market": {
-  "menu": "",
-  "how": "google"
- },
- "ig-tel-aviv-montefiore": {
+ "ig-tel-aviv-moon-pinsker": {
   "menu": "",
   "how": "google"
  },
@@ -4439,13 +4435,17 @@
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-aria": {
+ "ig-tel-aviv-moon-bograshov": {
   "menu": "",
   "how": "google"
  },
  "ig-new-york-jongro-bbq": {
   "menu": "https://www.jongrobbqny.com/dinner-menu",
   "how": "page-faible"
+ },
+ "ig-tel-aviv-itzik-hagadol": {
+  "menu": "",
+  "how": "google"
  },
  "ig-new-york-xi-an-famous-foods-chinatown": {
   "menu": "https://www.xianfoods.com/menu",
@@ -4503,6 +4503,10 @@
   "menu": "https://www.xianfoods.com/menu",
   "how": "deja-bon"
  },
+ "ig-new-york-peking-duck-house": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-new-york-xi-an-famous-foods-flushing": {
   "menu": "https://www.xianfoods.com/menu",
   "how": "deja-bon"
@@ -4527,15 +4531,11 @@
   "menu": "https://www.losmariscos1.com/menu/",
   "how": "deja-bon"
  },
- "ig-tel-aviv-itzik-hagadol": {
+ "ig-tel-aviv-sarona-market": {
   "menu": "",
   "how": "google"
  },
- "ig-tel-aviv-cantina": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-peking-duck-house": {
+ "ig-new-york-yeah-shanghai-deluxe": {
   "menu": "",
   "how": "google"
  },
@@ -4551,15 +4551,15 @@
   "menu": "https://www.firstpizza.com/all-day-menu",
   "how": "page-faible"
  },
+ "ig-new-york-five-leaves": {
+  "menu": "https://fiveleavesny.com/dinner",
+  "how": "page"
+ },
  "ig-tel-aviv-beit-kandinof": {
   "menu": "https://kandinof.co.il/menus/",
   "how": "page-pdfs"
  },
- "ig-new-york-yeah-shanghai-deluxe": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-joe-s-pizza-times-square": {
+ "ig-new-york-joe-s-pizza-east-14th-st": {
   "menu": "",
   "how": "google"
  },
@@ -4567,29 +4567,25 @@
   "menu": "https://www.joesshanghainyc.com/menu",
   "how": "deja-bon"
  },
- "ig-new-york-schmackary-s-union-square": {
+ "ig-tel-aviv-cantina": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-joe-s-pizza-williamsburg": {
+ "ig-new-york-joe-s-pizza-fulton-st": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-joe-s-pizza-east-14th-st": {
+ "ig-new-york-joe-s-pizza-times-square": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-smorgasburg-williamsburg": {
+ "ig-new-york-joe-s-pizza-greenwich-village-l-original": {
   "menu": "",
   "how": "google"
  },
  "ig-new-york-black-tap-soho": {
   "menu": "https://blacktap.com/restaurant-menu/soho/",
   "how": "deja-bon"
- },
- "ig-new-york-five-leaves": {
-  "menu": "https://fiveleavesny.com/dinner",
-  "how": "page"
  },
  "ig-new-york-black-tap-35th-st": {
   "menu": "https://blacktap.com/restaurant-menu/herald-square-menu/",
@@ -4603,11 +4599,7 @@
   "menu": "https://www.thaidiner.com/home-1",
   "how": "page"
  },
- "ig-new-york-schmackary-s-theater-district": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-smorgasburg-world-trade-center": {
+ "ig-new-york-schmackary-s-union-square": {
   "menu": "",
   "how": "google"
  },
@@ -4615,11 +4607,19 @@
   "menu": "",
   "how": "google"
  },
+ "ig-new-york-smorgasburg-world-trade-center": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-new-york-smorgasburg-williamsburg": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-new-york-buvette": {
   "menu": "http://places.singleplatform.com/buvette/menu",
   "how": "deja-bon"
  },
- "ig-new-york-joe-s-pizza-greenwich-village-l-original": {
+ "ig-new-york-joe-s-pizza-williamsburg": {
   "menu": "",
   "how": "google"
  },
@@ -4627,19 +4627,11 @@
   "menu": "https://www.sundayinbrooklyn.com/menus/",
   "how": "deja-bon"
  },
- "ig-new-york-p-j-clarke-s-third-avenue-l-original": {
-  "menu": "https://pjclarkes.com/menu/third-avenue/",
-  "how": "page"
- },
- "ig-new-york-joe-s-pizza-fulton-st": {
+ "ig-new-york-sadelle-s": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-citizens-of-chelsea": {
-  "menu": "https://order.online/store/~222158/",
-  "how": "deja-bon"
- },
- "ig-new-york-sadelle-s": {
+ "ig-new-york-schmackary-s-theater-district": {
   "menu": "",
   "how": "google"
  },
@@ -4647,13 +4639,21 @@
   "menu": "https://pjclarkes.com/menu/third-avenue/",
   "how": "page"
  },
+ "ig-new-york-citizens-of-chelsea": {
+  "menu": "https://order.online/store/~222158/",
+  "how": "deja-bon"
+ },
+ "ig-new-york-p-j-clarke-s-third-avenue-l-original": {
+  "menu": "https://pjclarkes.com/menu/third-avenue/",
+  "how": "page"
+ },
  "ig-new-york-westlight-the-william-vale": {
   "menu": "https://www.westlightnyc.com/menus/",
   "how": "page"
  },
- "ig-new-york-p-j-clarke-s-on-the-hudson": {
-  "menu": "http://pjclarkes.com/menu/on-the-hudson/",
-  "how": "deja-bon"
+ "ig-tel-aviv-kab-kem": {
+  "menu": "",
+  "how": "google"
  },
  "ig-new-york-cafe-mogador-williamsburg": {
   "menu": "",
@@ -4683,15 +4683,15 @@
   "menu": "https://www.rubyscafe.com/east-village-menu/",
   "how": "deja-bon"
  },
+ "ig-new-york-russ-daughters-34th-street": {
+  "menu": "",
+  "how": "google"
+ },
  "ig-new-york-russ-daughters-la-boutique-houston-st": {
-  "menu": "https://order.toasttab.com/online/russanddaughters",
-  "how": "deja-bon"
+  "menu": "",
+  "how": "google"
  },
  "ig-new-york-russ-daughters-le-cafe-orchard-st": {
-  "menu": "https://order.toasttab.com/online/russanddaughters",
-  "how": "deja-bon"
- },
- "ig-new-york-roberta-s-domino-park": {
   "menu": "",
   "how": "google"
  },
@@ -4699,7 +4699,15 @@
   "menu": "https://www.ellensstardustdiner.com/menu",
   "how": "deja-bon"
  },
- "ig-new-york-harriet-s-rooftop-1-hotel-brooklyn-bridge": {
+ "ig-new-york-roberta-s-domino-park": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-new-york-russ-daughters-brooklyn-navy-yard": {
+  "menu": "",
+  "how": "google"
+ },
+ "ig-new-york-roberta-s-madison-square-garden": {
   "menu": "",
   "how": "google"
  },
@@ -4711,17 +4719,9 @@
   "menu": "https://ariawinebar.com/menu",
   "how": "deja-bon"
  },
- "ig-tel-aviv-kab-kem": {
+ "ig-new-york-roberta-s-bushwick-l-original": {
   "menu": "",
   "how": "google"
- },
- "ig-new-york-russ-daughters-34th-street": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-don-giovanni-chelsea": {
-  "menu": "https://dongiovanni-ny.com/#menu",
-  "how": "section"
  },
  "ig-new-york-5-napkin-burger-hell-s-kitchen": {
   "menu": "https://5napkinburger.com/menus/",
@@ -4747,10 +4747,6 @@
   "menu": "https://www.tacombi.com/menu",
   "how": "deja-bon"
  },
- "ig-new-york-don-giovanni-times-square": {
-  "menu": "https://dongiovanni-ny.com/#menu",
-  "how": "section"
- },
  "ig-new-york-tacombi-financial-district": {
   "menu": "https://www.tacombi.com/menu",
   "how": "deja-bon"
@@ -4759,15 +4755,15 @@
   "menu": "https://www.tacombi.com/menu",
   "how": "deja-bon"
  },
+ "ig-new-york-don-giovanni-chelsea": {
+  "menu": "https://dongiovanni-ny.com/#menu",
+  "how": "section"
+ },
  "ig-new-york-tacombi-upper-east-side": {
   "menu": "https://www.tacombi.com/menu",
   "how": "deja-bon"
  },
  "ig-new-york-tacombi-upper-west-side": {
-  "menu": "https://www.tacombi.com/menu",
-  "how": "deja-bon"
- },
- "ig-new-york-tacombi-williamsburg": {
   "menu": "https://www.tacombi.com/menu",
   "how": "deja-bon"
  },
@@ -4779,13 +4775,17 @@
   "menu": "https://www.tacombi.com/menu",
   "how": "deja-bon"
  },
- "ig-new-york-tacombi-long-island-city": {
+ "ig-new-york-don-giovanni-times-square": {
+  "menu": "https://dongiovanni-ny.com/#menu",
+  "how": "section"
+ },
+ "ig-new-york-tacombi-williamsburg": {
   "menu": "https://www.tacombi.com/menu",
   "how": "deja-bon"
  },
- "ig-new-york-sao-mai": {
-  "menu": "https://saomainyc.com/menu.html",
-  "how": "page"
+ "ig-new-york-tacombi-long-island-city": {
+  "menu": "https://www.tacombi.com/menu",
+  "how": "deja-bon"
  },
  "ig-new-york-the-smith-nomad": {
   "menu": "",
@@ -4799,13 +4799,13 @@
   "menu": "",
   "how": "google"
  },
+ "ig-new-york-sao-mai": {
+  "menu": "https://saomainyc.com/menu.html",
+  "how": "page"
+ },
  "ig-new-york-the-smith-midtown": {
   "menu": "",
   "how": "google"
- },
- "ig-new-york-230-fifth-rooftop-bar": {
-  "menu": "https://www.230-fifth.com/food-menu/",
-  "how": "deja-bon"
  },
  "ig-new-york-mr-purple": {
   "menu": "https://www.mrpurplenyc.com/menus/",
@@ -4815,19 +4815,11 @@
   "menu": "https://www.apothekemixology.com/menus-nyc/",
   "how": "deja-bon"
  },
- "ig-new-york-roberta-s-bushwick-l-original": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-roberta-s-madison-square-garden": {
-  "menu": "",
-  "how": "google"
- },
- "ig-new-york-sea-thai-brooklyn": {
-  "menu": "https://www.seausathai.com/menu",
+ "ig-new-york-230-fifth-rooftop-bar": {
+  "menu": "https://www.230-fifth.com/food-menu/",
   "how": "deja-bon"
  },
- "ig-new-york-attaboy": {
+ "ig-new-york-harriet-s-rooftop-1-hotel-brooklyn-bridge": {
   "menu": "",
   "how": "google"
  },
@@ -4835,28 +4827,32 @@
   "menu": "",
   "how": "google"
  },
+ "ig-new-york-attaboy": {
+  "menu": "",
+  "how": "google"
+ },
  "bigmamma-pink-mamma": {
   "menu": "https://www.bigmammagroup.com/italian-restaurants/delivery",
   "how": "accueil-avec-prix"
  },
- "ig-new-york-russ-daughters-brooklyn-navy-yard": {
-  "menu": "https://order.toasttab.com/online/russanddaughters",
-  "how": "deja-bon"
+ "ig-new-york-the-back-room": {
+  "menu": "",
+  "how": "google"
  },
  "bigmamma-ober-mamma": {
   "menu": "",
   "how": "google"
  },
+ "ig-new-york-sea-thai-brooklyn": {
+  "menu": "https://www.seausathai.com/menu",
+  "how": "deja-bon"
+ },
  "bigmamma-mamma-primi": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-jg-melon": {
-  "menu": "https://jgmelon-nyc.com/menu",
-  "how": "deja-bon"
- },
- "u-mw75y5krckxf": {
-  "menu": "https://www.shoei-paris.fr/carte/",
+ "bigmamma-gloria-osteria": {
+  "menu": "https://menu.bigmammagroup.com/gloriaparis?service=all&categorie=antipasti",
   "how": "page"
  },
  "bigmamma-pizzeria-popolare": {
@@ -4867,17 +4863,21 @@
   "menu": "https://www.muku-paris.fr/menu",
   "how": "page"
  },
- "bigmamma-east-mamma": {
-  "menu": "https://menu.bigmammagroup.com/east?service=all&categorie=menu-dolce-vita",
+ "u-mw75y5krckxf": {
+  "menu": "https://www.shoei-paris.fr/carte/",
   "how": "page"
  },
- "bigmamma-gloria-osteria": {
-  "menu": "https://menu.bigmammagroup.com/gloriaparis?service=all&categorie=antipasti",
+ "ig-new-york-corner-bistro": {
+  "menu": "http://www.cornerbistrony.com/east-village-menu/",
   "how": "page"
  },
- "ig-new-york-the-back-room": {
+ "u-mw93a0ymmt97-2": {
   "menu": "",
   "how": "google"
+ },
+ "bigmamma-libertino": {
+  "menu": "https://menu.bigmammagroup.com/libertino?service=all&categorie=antipasti",
+  "how": "page"
  },
  "u-mw9g63wf7peu": {
   "menu": "",
@@ -4891,37 +4891,37 @@
   "menu": "https://kasumi-restaurant.com/menu",
   "how": "page"
  },
- "u-mw93a0ymmt97": {
-  "menu": "",
-  "how": "google"
+ "bigmamma-east-mamma": {
+  "menu": "https://menu.bigmammagroup.com/east?service=all&categorie=menu-dolce-vita",
+  "how": "page"
  },
  "u-mwc0e0bfshk0": {
   "menu": "",
   "how": "google"
  },
- "u-mwato9gx9nau": {
-  "menu": "https://sushiclub-haussmann.fr/",
-  "how": "accueil-avec-prix"
- },
- "u-mw762sjzd6yf": {
-  "menu": "https://menuonline.fr/lademocratie/cartes",
-  "how": "page-faible"
- },
- "u-mw93a0ymmt97-2": {
+ "u-mw93a0ymmt97": {
   "menu": "",
   "how": "google"
  },
- "ig-new-york-corner-bistro": {
-  "menu": "http://www.cornerbistrony.com/east-village-menu/",
-  "how": "page"
+ "ig-new-york-p-j-clarke-s-on-the-hudson": {
+  "menu": "http://pjclarkes.com/menu/on-the-hudson/",
+  "how": "deja-bon"
+ },
+ "u-mwato9gx9nau": {
+  "menu": "https://sushiclub-haussmann.fr/",
+  "how": "accueil-avec-prix"
  },
  "u-mw9eh3oygqxo": {
   "menu": "",
   "how": "google"
  },
- "bigmamma-libertino": {
-  "menu": "https://menu.bigmammagroup.com/libertino?service=all&categorie=antipasti",
-  "how": "page"
+ "ig-new-york-jg-melon": {
+  "menu": "https://jgmelon-nyc.com/menu",
+  "how": "deja-bon"
+ },
+ "u-mw762sjzd6yf": {
+  "menu": "https://menuonline.fr/lademocratie/cartes",
+  "how": "page-faible"
  },
  "u-mw9ekjd4z01m": {
   "menu": "",
