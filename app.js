@@ -848,7 +848,7 @@ function initMap() {
     return loadMapLibs().then(() => { if (!map) initMap(); }, () => { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; });
   }
   setMapTop(); requestAnimationFrame(setMapTop); setTimeout(setMapTop, 300);
-  if (map) { setTimeout(() => map.invalidateSize(), 50); if (!geoDone && !$("#view-carte").classList.contains("warm")) { geoDone = true; geocodeMissing(); } return; }
+  if (map) { setTimeout(() => map.invalidateSize(), 50); if (typeof autoLocateOnMap === "function") autoLocateOnMap(); if (!geoDone && !$("#view-carte").classList.contains("warm")) { geoDone = true; geocodeMissing(); } return; }
   if (!window.L) { $("#geoStatus").hidden = false; $("#geoStatus").textContent = "Carte indisponible hors connexion"; return; }
   map = L.map("map", { zoomControl: false, attributionControl: true }).setView([48.8606, 2.3425], 13);
   // Fond de carte clair et lisible, même en mode sombre. S'il ne charge pas
@@ -888,6 +888,7 @@ function initMap() {
     if (r) r.onclick = () => { map.closePopup(); showRoute(r.dataset.route); };
   });
   if (typeof showMe === "function") showMe();
+  if (typeof autoLocateOnMap === "function") autoLocateOnMap();
   initTraficLayer();
   fillMapCats();
   refreshMarkers();
