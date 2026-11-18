@@ -7,7 +7,7 @@ name: Appli mobile (versions de test)
 
 on:
   push:
-    branches: [app-mobile-capacitor]
+    branches: [app-mobile-capacitor, conformite-stores]
   workflow_dispatch:
 
 concurrency:

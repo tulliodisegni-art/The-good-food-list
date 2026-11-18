@@ -541,6 +541,7 @@ function openSheet(id, keepScroll) {
         : `<button class="btn primary wide" data-publish>Publier pour tous</button>`) : ""}
       <div class="row-actions remove-row">${custom ? `<button class="btn" data-edit>Modifier</button>` : ""}
         <button class="btn danger" data-remove>${store.get("ghToken", "") ? "Supprimer de la liste" : custom ? "Supprimer" : "Masquer sur ce téléphone"}</button></div>
+      ${window.Moderation && !custom ? `<p class="sheet-report muted small">Une erreur ou un contenu choquant ? ${window.Moderation.reportBtn("adresse", p.id, p.name, p.fromFriend || "", !!p.fromFriend)}</p>` : ""}
     </div>`;
   sheet.hidden = false; $("#backdrop").hidden = false;
   sheet.scrollTop = keepScroll ? prevScroll : 0;
@@ -1125,6 +1126,20 @@ function aiError(e) {
 
 // Sans clé sur le téléphone, la lecture passe par la fonction « ia » de Supabase, qui garde la clé côté serveur.
 const aiServer = () => !store.get("aiKey", "") && typeof AVIS !== "undefined" && AVIS.url;
+// Accord avant le premier envoi à l'IA (App Store 5.1.2, RGPD) : rien ne part sans lui. Révocable dans Réglages › Aide et confidentialité.
+function aiConsent() {
+  if (store.get("aiOk", false)) return true;
+  const ok = confirm(`Lecture par l'IA
+
+Pour remplir la fiche, Cozy Spots envoie tes captures d'écran, le lien et le texte à un service d'intelligence artificielle (Google Gemini ou Anthropic Claude), qui lit le nom et l'adresse du lieu. Cozy Spots ne garde pas tes captures.
+
+Avec la version gratuite de Gemini, Google peut se servir de ces contenus pour améliorer ses services : n'envoie pas de captures avec des informations personnelles.
+
+Tu acceptes ? Tu pourras retirer ton accord dans les Réglages.`);
+  store.set("aiOk", ok);
+  if (!ok) toast("D'accord : rien n'est envoyé. Tu peux remplir la fiche à la main.");
+  return ok;
+}
 async function aiAsk(prompt, images = [], web = true, extra = {}) {
   const r = await fetch(`${AVIS.url}/functions/v1/ia`, { method: "POST", headers: { ...sbHead(), "content-type": "application/json" }, body: JSON.stringify({ prompt, images, web, ...extra }) });
   const out = await r.json().catch(() => ({}));
@@ -1235,6 +1250,7 @@ $("#aiForm").addEventListener("submit", async (e) => {
   const status = $("#aiStatus"), go = $("#aiGo");
   if (!aiImages.length && !text && !(link && aiServer())) { toast(link ? "Ajoute une capture, ou garde juste le lien" : "Colle un lien ou ajoute une capture"); return; }
   if (!store.get("aiKey", "") && !aiServer()) { $("#aiKeyBox").open = true; $("#aiKey").focus(); toast("Ajoute d'abord la clé de l'IA"); return; }
+  if (!aiConsent()) return;
   go.disabled = true; go.classList.add("busy");
   status.hidden = false; status.className = "ai-status"; status.textContent = "Lecture des captures et recherche de l'adresse…";
   try {
@@ -1349,7 +1365,7 @@ const imgOk = (u) => new Promise((ok) => {
   i.src = u;
 });
 async function completePlace(ids) {
-  if (!aiServer()) return;
+  if (!aiServer() || !store.get("aiOk", false)) return; // jamais sans l'accord de la personne
   const all = () => store.get("custom", []);
   const p = all().find((x) => x.id === ids[0]);
   if (!p) return;

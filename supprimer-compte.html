@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supprimer mon compte · Cozy Spots</title>
+<meta name="description" content="Supprimer son compte Cozy Spots et toutes ses données.">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="legal.css">
+</head>
+<body>
+<main>
+<header class="top"><img src="icons/icon-192.png" alt=""><a href="./">Cozy Spots</a></header>
+<h1>Supprimer mon compte</h1>
+<p>Cette page permet de supprimer votre compte Cozy Spots, édité par Tullio Disegni (Officina Disegni), sans passer par l'application.</p>
+
+<h2>Ce qui est supprimé</h2>
+<ul>
+<li>Votre compte (e-mail, mot de passe, pseudo).</li>
+<li>Vos adresses ajoutées, notes, commentaires, envies, collections et photos.</li>
+<li>Vos abonnés, abonnements, signalements, blocages et appareils enregistrés pour les notifications.</li>
+</ul>
+<p>La suppression est immédiate et définitive. Le compte étant commun aux applis Repz, Mijonote et Jobello, leurs données sont supprimées aussi. Les avis publiés sous un prénom ne sont pas reliés au compte : demandez leur retrait par e-mail.</p>
+
+<h2>Le faire dans l'application</h2>
+<p>Réglages › Mon compte › <b>Supprimer mon compte</b>.</p>
+
+<h2>Le faire ici</h2>
+<div class="card">
+<form id="del">
+  <label>E-mail du compte<input type="email" id="mail" autocomplete="username" required></label>
+  <label>Mot de passe<input type="password" id="pass" autocomplete="current-password" required></label>
+  <label class="check"><input type="checkbox" id="sure" required> Je comprends que la suppression est définitive.</label>
+  <button class="danger" type="submit" id="go">Supprimer mon compte</button>
+  <div class="msg" id="msg" role="status"></div>
+</form>
+</div>
+
+<h2>Mot de passe oublié ou autre demande</h2>
+<p>Écrivez à <a href="mailto:contact@officinadisegni.fr?subject=Suppression%20de%20mon%20compte%20Cozy%20Spots">contact@officinadisegni.fr</a> depuis l'adresse de votre compte. Nous le supprimons sous 30 jours au plus et vous le confirmons par e-mail.</p>
+
+<footer><a href="./">Cozy Spots</a><a href="confidentialite.html">Confidentialité</a><a href="cgu.html">Conditions d'utilisation</a><a href="mentions-legales.html">Mentions légales</a></footer>
+</main>
+<script src="vendor/supabase.js"></script>
+<script>
+(function () {
+  // Même projet de comptes que l'application (clé publique, les droits sont contrôlés par Supabase).
+  const sb = window.supabase.createClient("https://vvxkkqcmjrwytagbxdfg.supabase.co", "sb_publishable_A-kJQIoJXxdXmjHF8iM40g_RP6myhMo",
+    { auth: { persistSession: false } });
+  const $ = (id) => document.getElementById(id), msg = $("msg");
+  const say = (t, ok) => { msg.textContent = t; msg.className = "msg " + (ok ? "ok" : "err"); };
+  $("del").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!$("sure").checked) return;
+    $("go").disabled = true; say("Vérification…", true);
+    try {
+      const { data, error } = await sb.auth.signInWithPassword({ email: $("mail").value.trim(), password: $("pass").value });
+      if (error || !data.user) throw new Error(/invalid/i.test((error && error.message) || "") ? "E-mail ou mot de passe incorrect." : "Connexion impossible, réessayez.");
+      const uid = data.user.id, st = sb.storage.from("fichiers");
+      say("Suppression des photos…", true);
+      const { data: dirs } = await st.list(uid, { limit: 1000 });
+      for (const d of dirs || []) {
+        for (;;) {
+          const { data: files, error: le } = await st.list(uid + "/" + d.name, { limit: 1000 });
+          if (le || !files || !files.length) break;
+          const { error: re } = await st.remove(files.map((f) => uid + "/" + d.name + "/" + f.name));
+          if (re) break;
+        }
+      }
+      say("Suppression du compte…", true);
+      const { error: de } = await sb.rpc("delete_my_account");
+      if (de) throw new Error("La suppression a échoué. Écrivez-nous à contact@officinadisegni.fr.");
+      await sb.auth.signOut({ scope: "local" }).catch(() => {});
+      $("del").reset(); say("Votre compte et toutes ses données ont été supprimés.", true);
+    } catch (x) { say(x.message || "Erreur, réessayez."); $("go").disabled = false; }
+  });
+})();
+</script>
+</body>
+</html>

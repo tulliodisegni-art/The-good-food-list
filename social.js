@@ -42,7 +42,7 @@
     const custom = new Set(store.get("custom", []).map((p) => p.id)), ed = store.get("edits", {});
     for (const p of places) { const e = ed[p.id] || {}; p.mine = custom.has(p.id) || !!e.tested || !!e.rating || !!e.want; p.friends = []; }
     for (const r of SO.rows) {
-      if (r.owner === meId() || !r.data) continue;
+      if (r.owner === meId() || !r.data || (window.Moderation && window.Moderation.isHidden("adresse", r.id))) continue;
       let p = by.get(r.id);
       if (!p && r.data.place && r.data.place.name) { p = { ...r.data.place, id: r.id, fromFriend: r.owner, tested: false, rating: 0, want: false, mine: false, friends: [] }; places.push(p); by.set(r.id, p); }
       if (p) p.friends.push({ uid: r.owner, tested: !!r.data.tested, rating: r.data.rating || 0, added: !!r.data.place });
@@ -146,7 +146,7 @@
       ? `<button class="btn ghost small" data-share-toggle="${h(p.id)}">${p.hidden ? "🔒 Masquée pour mes abonnés · la montrer" : "👥 Mes abonnés la voient · la masquer"}</button>` : "";
     if (!fr.length && !mineLine && !p.fromFriend) return "";
     const lines = fr.map((f) => `<li><b>${h(nameOf(f.uid))}</b> ${f.added ? "l'a ajoutée" : ""}${f.tested ? (f.added ? " · " : "") + "a testé" : ""}${f.rating ? ` · ${"★".repeat(f.rating)}` : ""}</li>`).join("");
-    return `<div class="friends-box">${p.fromFriend ? `<p class="muted small">Adresse de <b>${h(nameOf(p.fromFriend))}</b>.</p>` : ""}${lines ? `<ul>${lines}</ul>` : ""}${mineLine}</div>`;
+    return `<div class="friends-box">${p.fromFriend ? `<p class="muted small">Adresse de <b>${h(nameOf(p.fromFriend))}</b>.${window.Moderation && p.fromFriend !== SO.ownerId ? window.Moderation.blockBtn(p.fromFriend, nameOf(p.fromFriend)) : ""}</p>` : ""}${lines ? `<ul>${lines}</ul>` : ""}${mineLine}</div>`;
   }
   function settingsHtml() {
     const me = SO.me, req = requests(), ids = accepted();
@@ -158,12 +158,12 @@
       ${me ? `<p class="muted small">Ton pseudo : <b>@${h(me.handle)}</b>. Ceux qui te suivent voient les adresses que tu as ajoutées et celles que tu as testées, avec ta note. Tes commentaires et tes envies restent privés.</p>
         <div class="row-actions"><button class="btn primary" data-social-link="${h(link)}">Envoyer mon profil</button><button class="btn ghost" data-social-rename>Changer de pseudo</button></div>`
       : `<p class="muted small">Choisis un pseudo pour que tes amis puissent te suivre.</p><div class="row-actions"><button class="btn primary" data-social-rename>Choisir mon pseudo</button></div>`}
-      ${req.length ? `<h4>Demandes reçues</h4><ul class="social-list">${req.map((f) => `<li><span>${h(nameOf(f.follower))}</span><span><button class="btn primary small" data-social-ok="${f.follower}">Accepter</button> <button class="btn ghost small" data-social-no="${f.follower}">Refuser</button></span></li>`).join("")}</ul>` : ""}
+      ${req.length ? `<h4>Demandes reçues</h4><ul class="social-list">${req.map((f) => `<li><span>${h(nameOf(f.follower))}</span><span><button class="btn primary small" data-social-ok="${f.follower}">Accepter</button> <button class="btn ghost small" data-social-no="${f.follower}">Refuser</button>${window.Moderation ? window.Moderation.blockBtn(f.follower, nameOf(f.follower)) : ""}</span></li>`).join("")}</ul>` : ""}
       <h4>Je suis</h4>
       <div class="row-actions"><input id="socialFollow" placeholder="Pseudo d'un ami (ex. karim)" autocapitalize="off" autocomplete="off" style="flex:1;min-width:0"><button class="btn" data-social-follow>Suivre</button></div>
-      <ul class="social-list">${ids.map((u) => `<li><span>${h(nameOf(u))}</span>${u === SO.ownerId ? `<span class="muted small">liste de base</span>` : `<button class="btn ghost small" data-social-unfollow="${u}">Ne plus suivre</button>`}</li>`).join("")}
+      <ul class="social-list">${ids.map((u) => `<li><span>${h(nameOf(u))}</span>${u === SO.ownerId ? `<span class="muted small">liste de base</span>` : `<span><button class="btn ghost small" data-social-unfollow="${u}">Ne plus suivre</button>${window.Moderation ? window.Moderation.blockBtn(u, nameOf(u)) : ""}</span>`}</li>`).join("")}
         ${pend.map((f) => `<li><span>${h(nameOf(f.followee))}</span><span class="muted small">demande envoyée · <button class="linkish" data-social-unfollow="${f.followee}">annuler</button></span></li>`).join("")}</ul>
-      ${followers.length ? `<h4>Me suivent</h4><ul class="social-list">${followers.map((f) => `<li><span>${h(nameOf(f.follower))}</span><span>${SO.follows.some((g) => g.follower === meId() && g.followee === f.follower) ? "" : `<button class="btn small" data-social-followback="${f.follower}">Suivre aussi</button> `}<button class="btn ghost small" data-social-remove="${f.follower}">Retirer</button></span></li>`).join("")}</ul>` : ""}
+      ${followers.length ? `<h4>Me suivent</h4><ul class="social-list">${followers.map((f) => `<li><span>${h(nameOf(f.follower))}</span><span>${SO.follows.some((g) => g.follower === meId() && g.followee === f.follower) ? "" : `<button class="btn small" data-social-followback="${f.follower}">Suivre aussi</button> `}<button class="btn ghost small" data-social-remove="${f.follower}">Retirer</button>${window.Moderation ? window.Moderation.blockBtn(f.follower, nameOf(f.follower)) : ""}</span></li>`).join("")}</ul>` : ""}
     </section>`;
   }
 
@@ -204,7 +204,7 @@
 
   /* ---------- démarrage ---------- */
   fromCache();
-  window.Social = { decorate, match, mapMatch, publish, renderBars, sheetHtml, settingsHtml, state: SO };
+  window.Social = { reload: () => load().then(refresh).catch(() => {}), decorate, match, mapMatch, publish, renderBars, sheetHtml, settingsHtml, state: SO };
   (async () => {
     await Acc.ready;
     try { await load(); } catch (e) { return; }

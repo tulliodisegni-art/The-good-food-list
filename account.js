@@ -66,6 +66,7 @@
 .ac-card button{font:inherit;font-weight:800;padding:14px;border-radius:14px;border:0;background:linear-gradient(135deg,#F2CB66,#E9B949 50%,#B98A2C);color:#0A1330;cursor:pointer}
 .ac-card button.ghost{background:none;border:1.5px solid #E2E0D8;font-weight:700}
 .ac-card button.link{background:none;border:0;padding:4px;font-weight:600;font-size:.85rem;color:#5C6584;text-decoration:underline}
+.ac-card p.legal{font-size:.76rem;margin-top:4px} .ac-card p.legal a{color:inherit}
 .ac-card .err{min-height:1.2em;font-size:.88rem;text-align:center;color:#C8352B} .ac-card .err.ok{color:#1E9C80}`;
   const st = document.createElement("style"); st.textContent = css; (document.head || document.documentElement).appendChild(st);
 
@@ -77,7 +78,8 @@
         <label>E-mail<input id="ac-mail" type="email" autocomplete="username" inputmode="email" autocapitalize="off"></label>
         <label>Mot de passe<input id="ac-pass" type="password" autocomplete="current-password"></label>
         <div class="err" id="ac-err" role="alert"></div>
-        <button id="ac-in">Se connecter</button><button class="ghost" id="ac-up">Créer mon compte</button><button class="link" id="ac-fg">Mot de passe oublié</button></div>`;
+        <button id="ac-in">Se connecter</button><button class="ghost" id="ac-up">Créer mon compte</button><button class="link" id="ac-fg">Mot de passe oublié</button>
+        <p class="legal">En créant un compte, tu acceptes les <a href="${esc(C.link)}cgu.html" target="_blank" rel="noopener">conditions d'utilisation</a> (aucun contenu choquant ou haineux n'est toléré) et la <a href="${esc(C.link)}confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a>.</p></div>`;
       document.body.appendChild(d);
       const $ = (s) => d.querySelector(s), err = $("#ac-err");
       const say = (t, ok) => { err.textContent = t; err.className = "err" + (ok ? " ok" : ""); };
