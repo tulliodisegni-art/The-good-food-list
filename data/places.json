@@ -36855,7 +36855,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-empire-state-building",
@@ -36882,7 +36894,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-financial-district",
@@ -36909,7 +36933,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-flatiron",
@@ -36936,7 +36972,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-upper-east-side",
@@ -36963,7 +37011,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-upper-west-side",
@@ -36990,7 +37050,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-fort-greene",
@@ -37017,7 +37089,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-williamsburg",
@@ -37044,7 +37128,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-forest-hills",
@@ -37071,7 +37167,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-long-island-city",
@@ -37098,7 +37206,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-sao-mai",
@@ -37125,7 +37245,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-corner-bistro",
@@ -37152,7 +37284,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:30-04:00",
+   "11:30-04:00",
+   "11:30-04:00",
+   "11:30-04:00",
+   "11:30-04:00",
+   "11:30-04:00",
+   "11:30-04:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-the-smith-nomad",
@@ -37179,7 +37323,19 @@
   "enriched": 5,
   "booking": "https://thesmithrestaurant.com/locations/",
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-01:00",
+   "09:00-01:00",
+   "09:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-the-smith-east-village",
@@ -37206,7 +37362,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-01:00",
+   "09:00-01:00",
+   "09:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-the-smith-lincoln-square",
@@ -37233,7 +37401,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-00:00",
+   "09:00-01:00",
+   "09:00-01:00",
+   "09:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-the-smith-midtown",
@@ -37260,7 +37440,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "07:30-23:00",
+   "07:30-23:00",
+   "07:30-23:00",
+   "07:30-23:00",
+   "07:30-00:00",
+   "09:00-00:00",
+   "09:00-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-230-fifth-rooftop-bar",
@@ -37289,7 +37481,19 @@
   "enriched": 5,
   "bookingOk": 2,
   "photo": "https://230-fifth.com/wp-content/uploads/2026/11/230-Drink-Menu-ENGLISH-happy-hour-scaled.png",
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "14:00-02:00",
+   "14:00-02:00",
+   "14:00-02:00",
+   "14:00-02:00",
+   "14:00-04:00",
+   "10:00-04:00",
+   "10:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-mr-purple",
@@ -37316,7 +37520,19 @@
   "enriched": 5,
   "booking": "https://www.sevenrooms.com/reservations/mrpurplenyc",
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "16:00-00:00",
+   "16:00-00:00",
+   "16:00-00:00",
+   "16:00-01:00",
+   "16:00-02:00",
+   "14:00-02:00",
+   "14:00-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-apotheke",
@@ -37343,7 +37559,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "17:00-02:00",
+   "17:00-02:00",
+   "17:00-02:00",
+   "17:00-02:00",
+   "17:00-03:00",
+   "17:00-03:00",
+   "17:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-attaboy",
@@ -37370,7 +37598,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "18:00-04:00",
+   "18:00-04:00",
+   "18:00-04:00",
+   "18:00-04:00",
+   "18:00-04:00",
+   "18:00-04:00",
+   "18:00-04:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-the-back-room",
@@ -37398,7 +37638,19 @@
   "enriched": 5,
   "booking": "https://www.backroomnyc.com/reservations",
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "",
+   "",
+   "19:00-02:00",
+   "19:00-02:00",
+   "19:00-04:00",
+   "19:00-04:00",
+   "19:00-02:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "bigmamma-gloria-osteria",
@@ -37852,7 +38104,8 @@
   "photo": "https://lastcrumb.com/social-preview",
   "bookingScan": 1,
   "noPhone": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18"
  },
  {
   "id": "u-mw9ekjd4z01m",
@@ -37877,7 +38130,19 @@
   "enriched": 5,
   "photo": "https://www.hersheyland.com/content/dam/hersheyland/en-us/life-style/home/2026-holiday-updates/hersheyland-homepage-hero.jpg",
   "bookingScan": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "09:00-21:00",
+   "09:00-21:00",
+   "09:00-21:00",
+   "09:00-21:00",
+   "09:00-22:00",
+   "09:00-22:00",
+   "09:00-21:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "u-mw9g63wf7peu",
@@ -37900,7 +38165,8 @@
   "ogTry": 2,
   "pressTry": 1,
   "commonsTry": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18"
  },
  {
   "id": "u-mw9x8q9c2mv6",
@@ -38012,6 +38278,7 @@
   "lat": 31.963899,
   "lng": 34.800995,
   "searched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18"
  }
 ]
