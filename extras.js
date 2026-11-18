@@ -309,6 +309,8 @@ function openSettings() {
       <a class="btn" href="#ajouter" data-close-panel>Ouvrir Ajouter</a>
     </section>
 
+    ${window.Moderation ? window.Moderation.helpHtml() : ""}
+
     ${isOwner() ? "" : `<button class="btn ghost small" data-owner-code style="opacity:.6;border:0">Propriétaire ?</button>`}
     <p class="muted small credits">Cartes © OpenStreetMap, Protomaps, CARTO. Infos complétées depuis les sites des restaurants, OpenStreetMap et Google.</p>`, "settings");
 }
@@ -530,6 +532,7 @@ async function loadAvis() {
   try {
     const cfg = await (await fetch("data/config.json", { cache: "no-cache" })).json();
     Object.assign(AVIS, cfg.avis || {});
+    window.GF_AFFIL = cfg.affiliation || {};
     if (!AVIS.url || !AVIS.key) return;
     const r = await fetch(`${AVIS.url}/rest/v1/avis?select=*&order=created_at.desc&limit=2000`, { headers: avisHead() });
     if (!r.ok) throw new Error(r.status);
@@ -539,7 +542,7 @@ async function loadAvis() {
   renderAll();
   if (current && !$("#sheet").hidden) openSheet(current.id, true);
 }
-const avisFor = (id) => AVIS.list.filter((a) => a.place_id === id);
+const avisFor = (id) => AVIS.list.filter((a) => a.place_id === id && !(window.Moderation && a.id && window.Moderation.isHidden("avis", a.id)));
 const ago = (d) => {
   const j = Math.floor((Date.now() - new Date(d)) / 864e5);
   return j < 1 ? "aujourd'hui" : j < 2 ? "hier" : j < 30 ? `il y a ${j} jours` : new Date(d).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" });
@@ -551,7 +554,7 @@ function avisBlock(p) {
   return `<section class="block avis">
     <div class="block-head"><h3>Avis des amis</h3>${list.length ? `<span class="rating-label"><span class="avis-stars">★</span> ${avg.toFixed(1).replace(".", ",")} · ${list.length} avis</span>` : ""}</div>
     ${list.length ? `<ul class="avis-list">${list.map((a) => `<li><div class="avis-top"><b>${esc(a.author)}</b>
-      <span class="avis-stars">${"★".repeat(a.rating || 0)}<i>${"★".repeat(5 - (a.rating || 0))}</i></span><span class="muted small">${ago(a.created_at)}</span></div>
+      <span class="avis-stars">${"★".repeat(a.rating || 0)}<i>${"★".repeat(5 - (a.rating || 0))}</i></span><span class="muted small">${ago(a.created_at)}</span>${window.Moderation && a.id ? window.Moderation.reportBtn("avis", a.id, `Avis de ${a.author} sur ${p.name}`, "", true) : ""}</div>
       ${a.comment ? `<p>${esc(a.comment)}</p>` : ""}</li>`).join("")}</ul>` : `<p class="muted small">Personne n'a encore donné son avis. Sois le premier !</p>`}
     <button class="btn wide" data-avis-open>Donner mon avis</button>
     <form class="edit-info avis-form" id="avisForm" hidden>

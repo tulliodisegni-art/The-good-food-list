@@ -26,6 +26,22 @@ Expo vaudra le coup plus tard si Apple refuse malgré tout, ou si l'appli a beso
 
 Mettre à jour les applis après une modification du site : `npm run sync`. Refaire les icônes : `npm run icones`.
 
+## Conformité App Store, Google Play et RGPD (19/11/2026)
+
+| Exigence | Où |
+|---|---|
+| Fonctions natives (règle 4.2) | Notifications, partage, position, bouton retour (`native.js`) |
+| Signaler et bloquer (règle 1.2) | « Signaler » sur les fiches, les avis et les adresses d'amis ; « Bloquer » dans Mes amis (`moderation.js`, `supabase/moderation.sql`, `supabase/projet-good-food.sql`). Chaque signalement t'envoie une notification. |
+| Contact visible | Réglages › Aide et confidentialité : contact@officinadisegni.fr |
+| Accord avant l'IA (règle 5.1.2, RGPD) | Demandé avant le premier envoi, révocable dans les Réglages (`aiConsent` dans `app.js`) |
+| Suppression du compte | Dans l'appli, et sur le site : `supprimer-compte.html` (à donner à Google Play) |
+| Kasher / halal (RGPD, art. 9) | Le filtre n'est ni enregistré ni synchronisé : rien à faire |
+| RLS Supabase | Activé sur toutes les tables des deux projets |
+| iOS | `ITSAppUsesNonExemptEncryption` à false, `PrivacyInfo.xcprivacy` |
+| Documents | `confidentialite.html`, `cgu.html`, `mentions-legales.html`, liés depuis l'appli et l'écran de connexion |
+
+URL à donner aux stores une fois `main` publié : https://tulliodisegni-art.github.io/The-good-food-list/confidentialite.html et …/supprimer-compte.html
+
 ## À faire toi-même (comptes, clés, signature)
 
 1. ~~**Nom**~~ : fait le 10/11/2026, l'appli s'appelle **Cozy Spots** (« Good Food » entrait en conflit avec BBC Good Food et The Good Food List existait déjà). Libre sur l'App Store France et US à cette date. L'identifiant `fr.officinadisegni.goodfood` est invisible pour les utilisateurs : on le garde.

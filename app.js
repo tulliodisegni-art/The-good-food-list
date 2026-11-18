@@ -335,7 +335,10 @@ const igHandle = (p) => {
 function linkFor(p) {
   const place = p.address || `${p.name}, ${p.city || "Paris"}`;
   const q = (extra) => `https://www.google.com/search?q=${enc(`${p.name} ${p.address || p.city || "Paris"} ${extra}`)}`;
-  // Fiche Google Maps du lieu : elle a les boutons Appeler et Réserver une table.
+  // Réservation TheFork : passe par le lien d'affiliation s'il est réglé dans data/config.json ("affiliation": {"thefork": "https://…{url}"}).
+// Sans réglage, le lien reste tel quel. Le modèle est fourni par le réseau d'affiliation (Kwanko ou Plebicom).
+const bookUrl = (u) => { const t = (window.GF_AFFIL || {}).thefork; return t && /^https:\/\/([\w-]+\.)?thefork\.[a-z.]+\//i.test(u || "") ? t.replace("{url}", encodeURIComponent(u)) : u; };
+// Fiche Google Maps du lieu : elle a les boutons Appeler et Réserver une table.
   const mapsPage = p.gmaps || `https://www.google.com/maps/search/?api=1&query=${enc(`${p.name}, ${place}`)}${p.gid ? `&query_place_id=${enc(p.gid)}` : ""}`;
   return {
     menu: p.menu || q("menu"),
@@ -455,7 +458,7 @@ function openSheet(id, keepScroll) {
         ${p.phone ? `<a class="q" href="${esc(L.call)}">${icon("phone")}<span>Appeler</span></a>`
           : p.noPhone ? `<span class="q off">${icon("phone")}<span>Appeler</span><i>pas de numéro</i></span>`
           : `<button class="q missing" data-need="phone">${icon("phone")}<span>Appeler</span><i>+ numéro</i></button>`}
-        ${p.booking ? `<a class="q" href="${esc(p.booking)}" target="_blank" rel="noopener">${icon("book")}<span>Réserver</span></a>`
+        ${p.booking ? `<a class="q" href="${esc(bookUrl(p.booking))}" target="_blank" rel="noopener">${icon("book")}<span>Réserver</span></a>`
           : p.resa === "sans" ? `<span class="q off">${icon("book")}<span>Sans résa</span><i>premier arrivé</i></span>`
           : (p.resa === "telephone" || p.resa === "inconnu") && p.phone ? `<a class="q" href="${esc(L.call)}">${icon("book")}<span>Réserver</span><i>par tél.</i></a>`
           : `<button class="q missing" data-need="booking">${icon("book")}<span>Réserver</span><i>+ lien</i></button>`}
@@ -510,7 +513,7 @@ function openSheet(id, keepScroll) {
         <div class="block-head"><h3>Infos</h3><button class="link-btn" data-editinfo>${icon("pencil")}Compléter</button></div>
         ${infoRow("phone", "Téléphone", p.phone || (p.noPhone ? "Pas de numéro trouvé" : ""), p.phone ? L.call : "")}
         ${ohRow(p)}
-        ${p.booking ? infoRow("book", "Réservation", "Réserver en ligne", p.booking)
+        ${p.booking ? infoRow("book", "Réservation", "Réserver en ligne", bookUrl(p.booking))
           : p.resa === "sans" ? infoRow("book", "Réservation", "Ne prend pas de réservation (premier arrivé, premier servi)", "")
           : p.resa === "telephone" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : par téléphone uniquement" : "Par téléphone uniquement", p.phone ? L.call : "")
           : p.resa === "inconnu" ? infoRow("book", "Réservation", p.phone ? "Pas de résa en ligne : appelle pour réserver" : "Pas de réservation en ligne", p.phone ? L.call : "")
@@ -541,6 +544,7 @@ function openSheet(id, keepScroll) {
         : `<button class="btn primary wide" data-publish>Publier pour tous</button>`) : ""}
       <div class="row-actions remove-row">${custom ? `<button class="btn" data-edit>Modifier</button>` : ""}
         <button class="btn danger" data-remove>${store.get("ghToken", "") ? "Supprimer de la liste" : custom ? "Supprimer" : "Masquer sur ce téléphone"}</button></div>
+      ${window.Moderation && !custom ? `<p class="sheet-report muted small">Une erreur ou un contenu choquant ? ${window.Moderation.reportBtn("adresse", p.id, p.name, p.fromFriend || "", !!p.fromFriend)}</p>` : ""}
     </div>`;
   sheet.hidden = false; $("#backdrop").hidden = false;
   sheet.scrollTop = keepScroll ? prevScroll : 0;
@@ -1125,6 +1129,20 @@ function aiError(e) {
 
 // Sans clé sur le téléphone, la lecture passe par la fonction « ia » de Supabase, qui garde la clé côté serveur.
 const aiServer = () => !store.get("aiKey", "") && typeof AVIS !== "undefined" && AVIS.url;
+// Accord avant le premier envoi à l'IA (App Store 5.1.2, RGPD) : rien ne part sans lui. Révocable dans Réglages › Aide et confidentialité.
+function aiConsent() {
+  if (store.get("aiOk", false)) return true;
+  const ok = confirm(`Lecture par l'IA
+
+Pour remplir la fiche, Cozy Spots envoie tes captures d'écran, le lien et le texte à un service d'intelligence artificielle (Google Gemini ou Anthropic Claude), qui lit le nom et l'adresse du lieu. Cozy Spots ne garde pas tes captures.
+
+Avec la version gratuite de Gemini, Google peut se servir de ces contenus pour améliorer ses services : n'envoie pas de captures avec des informations personnelles.
+
+Tu acceptes ? Tu pourras retirer ton accord dans les Réglages.`);
+  store.set("aiOk", ok);
+  if (!ok) toast("D'accord : rien n'est envoyé. Tu peux remplir la fiche à la main.");
+  return ok;
+}
 async function aiAsk(prompt, images = [], web = true, extra = {}) {
   const r = await fetch(`${AVIS.url}/functions/v1/ia`, { method: "POST", headers: { ...sbHead(), "content-type": "application/json" }, body: JSON.stringify({ prompt, images, web, ...extra }) });
   const out = await r.json().catch(() => ({}));
@@ -1235,6 +1253,7 @@ $("#aiForm").addEventListener("submit", async (e) => {
   const status = $("#aiStatus"), go = $("#aiGo");
   if (!aiImages.length && !text && !(link && aiServer())) { toast(link ? "Ajoute une capture, ou garde juste le lien" : "Colle un lien ou ajoute une capture"); return; }
   if (!store.get("aiKey", "") && !aiServer()) { $("#aiKeyBox").open = true; $("#aiKey").focus(); toast("Ajoute d'abord la clé de l'IA"); return; }
+  if (!aiConsent()) return;
   go.disabled = true; go.classList.add("busy");
   status.hidden = false; status.className = "ai-status"; status.textContent = "Lecture des captures et recherche de l'adresse…";
   try {
@@ -1349,7 +1368,7 @@ const imgOk = (u) => new Promise((ok) => {
   i.src = u;
 });
 async function completePlace(ids) {
-  if (!aiServer()) return;
+  if (!aiServer() || !store.get("aiOk", false)) return; // jamais sans l'accord de la personne
   const all = () => store.get("custom", []);
   const p = all().find((x) => x.id === ids[0]);
   if (!p) return;
