@@ -31,7 +31,7 @@ Mettre à jour les applis après une modification du site : `npm run sync`. Refa
 | Exigence | Où |
 |---|---|
 | Fonctions natives (règle 4.2) | Notifications, partage, position, bouton retour (`native.js`) |
-| Signaler et bloquer (règle 1.2) | « Signaler » sur les fiches, les avis et les adresses d'amis ; « Bloquer » dans Mes amis (`moderation.js`, `supabase/moderation.sql`). Chaque signalement t'envoie une notification. |
+| Signaler et bloquer (règle 1.2) | « Signaler » sur les fiches, les avis et les adresses d'amis ; « Bloquer » dans Mes amis (`moderation.js`, `supabase/moderation.sql`, `supabase/projet-good-food.sql`). Chaque signalement t'envoie une notification. |
 | Contact visible | Réglages › Aide et confidentialité : contact@officinadisegni.fr |
 | Accord avant l'IA (règle 5.1.2, RGPD) | Demandé avant le premier envoi, révocable dans les Réglages (`aiConsent` dans `app.js`) |
 | Suppression du compte | Dans l'appli, et sur le site : `supprimer-compte.html` (à donner à Google Play) |
