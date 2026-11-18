@@ -532,6 +532,7 @@ async function loadAvis() {
   try {
     const cfg = await (await fetch("data/config.json", { cache: "no-cache" })).json();
     Object.assign(AVIS, cfg.avis || {});
+    window.GF_AFFIL = cfg.affiliation || {};
     if (!AVIS.url || !AVIS.key) return;
     const r = await fetch(`${AVIS.url}/rest/v1/avis?select=*&order=created_at.desc&limit=2000`, { headers: avisHead() });
     if (!r.ok) throw new Error(r.status);
