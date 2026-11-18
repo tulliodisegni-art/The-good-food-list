@@ -36288,7 +36288,19 @@
   "enriched": 5,
   "booking": "https://www.opentable.com/r/little-rubys-dallas?ref=1068",
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00",
+   "08:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-roberta-s-domino-park",
@@ -36315,7 +36327,19 @@
   "enriched": 5,
   "booking": "https://www.opentable.com/r/robertas-culver-city-2",
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-22:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-roberta-s-bushwick-l-original",
@@ -36342,7 +36366,19 @@
   "enriched": 5,
   "booking": "https://www.opentable.com/r/robertas-culver-city-2",
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-roberta-s-madison-square-garden",
@@ -36369,7 +36405,8 @@
   "enriched": 5,
   "booking": "https://www.opentable.com/r/robertas-culver-city-2",
   "bookingOk": 2,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18"
  },
  {
   "id": "ig-new-york-ellen-s-stardust-diner",
@@ -36396,7 +36433,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "07:30-00:00",
+   "07:30-00:00",
+   "07:30-00:00",
+   "07:30-00:00",
+   "07:30-00:00",
+   "07:30-00:00",
+   "07:30-00:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-jg-melon",
@@ -36423,7 +36472,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:30-03:00",
+   "11:30-03:00",
+   "11:30-03:00",
+   "11:30-03:00",
+   "11:30-04:00",
+   "11:30-04:00",
+   "11:30-03:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-aria-wine-bar-west-village",
@@ -36450,7 +36511,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-00:00",
+   "17:00-00:00",
+   "17:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-aria-wine-bar-hell-s-kitchen",
@@ -36478,7 +36551,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingScan": 1,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-23:00",
+   "17:00-00:00",
+   "17:00-00:00",
+   "17:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-don-giovanni-chelsea",
@@ -36505,7 +36590,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-don-giovanni-times-square",
@@ -36532,7 +36629,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-22:30",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-22:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-milon",
@@ -36558,7 +36667,19 @@
   "enriched": 5,
   "bookingScan": 1,
   "igSearched": 1,
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "12:00-23:30",
+   "12:00-23:30",
+   "12:00-23:30",
+   "12:00-23:30",
+   "12:00-00:00",
+   "12:00-00:00",
+   "12:00-23:30"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-5-napkin-burger-hell-s-kitchen",
@@ -36584,7 +36705,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-22:00",
+   "11:30-23:00",
+   "11:30-23:00",
+   "11:30-22:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-5-napkin-burger-upper-west-side",
@@ -36614,7 +36747,10 @@
   "enriched": 5,
   "photo": "https://images.getbento.com/accounts/47f1cb52587bad0f5447bd03679d84a0/media/images/920925Napkin-103.jpg?w=5400&fit=max&auto=compress,format&cs=origin",
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "closed": 1,
+  "closedSrc": "https://www.5napkinburger.com/"
  },
  {
   "id": "ig-new-york-bar-pitti",
@@ -36641,7 +36777,19 @@
   "searched": 1,
   "igSearched": 1,
   "instagram": "barpitti_official",
-  "menuSrc": "google"
+  "menuSrc": "google",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:00",
+   "12:00-23:30",
+   "12:00-23:30",
+   "12:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-nolita",
@@ -36668,7 +36816,19 @@
   "searched": 1,
   "enriched": 5,
   "bookingOk": 2,
-  "menuSrc": "site"
+  "menuSrc": "site",
+  "ohTry": "2026-11-18",
+  "oh": [
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-23:00",
+   "11:00-00:00",
+   "11:00-00:00",
+   "11:00-23:00"
+  ],
+  "ohSrc": "web",
+  "ohAt": "2026-11-18"
  },
  {
   "id": "ig-new-york-tacombi-bleecker",
