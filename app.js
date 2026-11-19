@@ -332,12 +332,12 @@ const igHandle = (p) => {
   const h = String(p.instagram || "").trim().replace(/^https?:\/\/(www\.)?instagram\.com\//i, "").replace(/^@/, "").split(/[/?#]/)[0];
   return /^[A-Za-z0-9._]{2,30}$/.test(h) ? h : "";
 };
+// Réservation TheFork : passe par le lien d'affiliation s'il est réglé dans data/config.json ("affiliation": {"thefork": "https://…{url}"}).
+// Sans réglage, le lien reste tel quel. Le modèle est fourni par le réseau d'affiliation (Kwanko ou Plebicom).
+const bookUrl = (u) => { const t = (window.GF_AFFIL || {}).thefork; return t && /^https:\/\/([\w-]+\.)?thefork\.[a-z.]+\//i.test(u || "") ? t.replace("{url}", encodeURIComponent(u)) : u; };
 function linkFor(p) {
   const place = p.address || `${p.name}, ${p.city || "Paris"}`;
   const q = (extra) => `https://www.google.com/search?q=${enc(`${p.name} ${p.address || p.city || "Paris"} ${extra}`)}`;
-  // Réservation TheFork : passe par le lien d'affiliation s'il est réglé dans data/config.json ("affiliation": {"thefork": "https://…{url}"}).
-// Sans réglage, le lien reste tel quel. Le modèle est fourni par le réseau d'affiliation (Kwanko ou Plebicom).
-const bookUrl = (u) => { const t = (window.GF_AFFIL || {}).thefork; return t && /^https:\/\/([\w-]+\.)?thefork\.[a-z.]+\//i.test(u || "") ? t.replace("{url}", encodeURIComponent(u)) : u; };
 // Fiche Google Maps du lieu : elle a les boutons Appeler et Réserver une table.
   const mapsPage = p.gmaps || `https://www.google.com/maps/search/?api=1&query=${enc(`${p.name}, ${place}`)}${p.gid ? `&query_place_id=${enc(p.gid)}` : ""}`;
   return {
