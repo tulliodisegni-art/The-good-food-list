@@ -95,6 +95,11 @@ jobs:
             rm -f pmtiles pmtiles.tgz
           fi
           ls -la tiles
+      - name: Vérifier que toutes les fiches s'ouvrent (sinon on ne met pas en ligne)
+        run: |
+          npm install --no-save --prefix /tmp/pw playwright@1.48.2 > /dev/null
+          npx --prefix /tmp/pw playwright install --with-deps chromium > /dev/null
+          PW=/tmp/pw/node_modules/playwright node scripts/check_fiches.cjs
       - name: Ne pas publier les projets de l'appli iPhone / Android sur le site
         run: rm -rf android ios assets www node_modules package.json package-lock.json capacitor.config.json
       - uses: actions/configure-pages@v5
