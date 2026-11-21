@@ -555,7 +555,7 @@ function avisBlock(p) {
     <div class="block-head"><h3>Avis des amis</h3>${list.length ? `<span class="rating-label"><span class="avis-stars">★</span> ${avg.toFixed(1).replace(".", ",")} · ${list.length} avis</span>` : ""}</div>
     ${list.length ? `<ul class="avis-list">${list.map((a) => `<li><div class="avis-top"><b>${esc(a.author)}</b>
       <span class="avis-stars">${"★".repeat(a.rating || 0)}<i>${"★".repeat(5 - (a.rating || 0))}</i></span><span class="muted small">${ago(a.created_at)}</span>${window.Moderation && a.id ? window.Moderation.reportBtn("avis", a.id, `Avis de ${a.author} sur ${p.name}`, "", true) : ""}</div>
-      ${a.comment ? `<p>${esc(a.comment)}</p>` : ""}</li>`).join("")}</ul>` : `<p class="muted small">Personne n'a encore donné son avis. Sois le premier !</p>`}
+      ${a.comment ? `<p>${esc(a.comment)}</p>` : ""}</li>`).join("")}</ul>` : `<p class="muted small">Personne n'a encore donné son avis</p>`}
     <button class="btn wide" data-avis-open>Donner mon avis</button>
     <form class="edit-info avis-form" id="avisForm" hidden>
       <label for="avisName">Ton prénom</label><input id="avisName" maxlength="40" value="${esc(store.get("name", ""))}" placeholder="Ex. Léa" required>
@@ -666,7 +666,7 @@ const ROUTERS = {
   bike: ["https://routing.openstreetmap.de/routed-bike/route/v1/bike/"],
 };
 const MODES = [
-  ["car", "Voiture", "🚗"], ["transit", "Transports", "🚇"], ["foot", "À pied", "🚶"], ["bike", "Vélo", "🚲"],
+  ["car", "Voiture", '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>'], ["transit", "Transports", '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/><path d="m8 19-2 3"/><path d="m18 22-2-3"/><path d="M8 15h.01"/><path d="M16 15h.01"/></svg>'], ["foot", "À pied", '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="13" cy="4" r="2"/><path d="m9 20 3-6 3 3v4"/><path d="m6 12 3-4 4 1 3 3"/><path d="M12 14 10 9"/></svg>'], ["bike", "Vélo", '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>'],
 ];
 async function osrm(mode, a, b) {
   for (const base of ROUTERS[mode]) {

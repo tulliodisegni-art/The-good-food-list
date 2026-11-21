@@ -299,7 +299,7 @@ function renderPending() {
   const pend = store.get("custom", []).filter((p) => p.list === "pending");
   $("#listPending").innerHTML = pend.length ? `<div class="subhead">À compléter (${pend.length})</div><div class="rows">${pend.map((p) => `
     <div class="row pend"><span class="row-name" style="font-weight:600;font-size:13.5px">${esc(p.source)}</span>
-      <span class="row-side"><button class="btn" data-fill="${esc(p.id)}" style="padding:6px 10px">Remplir</button><button class="btn danger" data-del="${esc(p.id)}" style="padding:6px 10px" aria-label="Supprimer">✕</button></span>
+      <span class="row-side"><button class="btn" data-fill="${esc(p.id)}" style="padding:6px 10px">Remplir</button><button class="btn danger" data-del="${esc(p.id)}" style="padding:6px 10px" aria-label="Supprimer"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></span>
       <span class="row-meta">Gardé le ${new Date(p.createdAt).toLocaleDateString("fr-FR")}</span></div>`).join("")}</div>` : "";
 }
 
@@ -475,7 +475,7 @@ function openSheet(id, keepScroll) {
           <span class="tb-text"><strong>${p.tested ? "Déjà testé" : "Pas encore testé"}</strong>
           <small>${p.tested ? "Touche pour annuler" : "Touche quand tu y es allé"}</small></span>
         </button>
-        <button class="want-btn ${p.want ? "on" : ""}" data-want aria-pressed="${!!p.want}">${HEART}<span>${p.want ? "Envie !" : "Envie"}</span></button>
+        <button class="want-btn ${p.want ? "on" : ""}" data-want aria-pressed="${!!p.want}">${HEART}<span>${p.want ? "Envie notée" : "Envie"}</span></button>
       </div>
       ${collLine(p)}
       ${closedBanner(p)}
@@ -1077,7 +1077,7 @@ async function addImages(files) {
   renderThumbs();
 }
 function renderThumbs() {
-  $("#aiThumbs").innerHTML = aiImages.map((src, i) => `<span class="thumb"><img src="${src}" alt=""><button type="button" data-rm="${i}" aria-label="Retirer">✕</button></span>`).join("");
+  $("#aiThumbs").innerHTML = aiImages.map((src, i) => `<span class="thumb"><img src="${src}" alt=""><button type="button" data-rm="${i}" aria-label="Retirer"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></span>`).join("");
   $("#aiDrop").classList.toggle("has", aiImages.length > 0);
 }
 $("#aiFiles").addEventListener("change", (e) => { addImages(e.target.files); e.target.value = ""; });

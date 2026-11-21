@@ -143,7 +143,7 @@
   function sheetHtml(p) {
     const fr = (p.friends || []).filter((f) => f.tested || f.rating || f.added);
     const mineLine = !p.fromFriend && (p.tested || p.rating || store.get("custom", []).some((c) => c.id === p.id))
-      ? `<button class="btn ghost small" data-share-toggle="${h(p.id)}">${p.hidden ? "🔒 Masquée pour mes abonnés · la montrer" : "👥 Mes abonnés la voient · la masquer"}</button>` : "";
+      ? `<button class="btn ghost small" data-share-toggle="${h(p.id)}">${p.hidden ? '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Masquée pour mes abonnés · la montrer' : '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Mes abonnés la voient · la masquer'}</button>` : "";
     if (!fr.length && !mineLine && !p.fromFriend) return "";
     const lines = fr.map((f) => `<li><b>${h(nameOf(f.uid))}</b> ${f.added ? "l'a ajoutée" : ""}${f.tested ? (f.added ? " · " : "") + "a testé" : ""}${f.rating ? ` · ${"★".repeat(f.rating)}` : ""}</li>`).join("");
     return `<div class="friends-box">${p.fromFriend ? `<p class="muted small">Adresse de <b>${h(nameOf(p.fromFriend))}</b>.${window.Moderation && p.fromFriend !== SO.ownerId ? window.Moderation.blockBtn(p.fromFriend, nameOf(p.fromFriend)) : ""}</p>` : ""}${lines ? `<ul>${lines}</ul>` : ""}${mineLine}</div>`;

@@ -165,14 +165,14 @@ function gfTownTag(p) {
   if (!/^Autour de (Tel-Aviv|Jérusalem)$/.test(gfZone(p))) return "";
   let t = String(p.city || "").trim();
   if (!t || /tel ?aviv|j[ée]rusal/i.test(t)) t = (String(p.address || "").match(GF_TLV_TOWNS) || String(p.address || "").match(GF_JER_TOWNS) || [""])[0];
-  return t ? `<div class="town">📍 ${esc(t)}</div>` : "";
+  return t ? `<div class="town"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12s-8-7-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> ${esc(t)}</div>` : "";
 }
 function gfCard(p, why, m) {
   const addr = p.address ? " · " + esc(String(p.address).replace(/,?\s*750\d\d Paris$/, "")) : "";
   return `<button class="pcard${p.closed ? " gone" : ""}" data-gf-id="${esc(p.id)}"><div class="ph" ${gfBg(gfGoodPhoto(p.photo) ? p.photo : "")}>${gfGoodPhoto(p.photo) ? "" : esc((p.name || "?")[0])}</div>
     <div style="min-width:0"><b>${esc(p.name)}</b><small>${esc(gfCuis(p) || p.cat || "")}${addr}</small>${gfTownTag(p)}
     <div class="tags">${m != null ? `<span class="tag near">${fmtDist(m)} · ${walkMin(m)} min à pied</span>` : ""}${ohTag(p)}${p.price ? `<span class="tag">${"€".repeat(p.price)}</span>` : ""}${p.tested ? '<span class="tag ok">Testé</span>' : ""}${p.kasher ? '<span class="tag k">Kasher</span>' : ""}${p.halal ? '<span class="tag h">Halal</span>' : ""}</div>
-    ${why && why.length ? `<div class="why">✓ ${esc(why.join(" · "))}</div>` : ""}</div>${p.want ? '<span class="heart">♥</span>' : ""}</button>`;
+    ${why && why.length ? `<div class="why"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> ${esc(why.join(" · "))}</div>` : ""}</div>${p.want ? '<span class="heart" aria-label="Envie">' + HEART + '</span>' : ""}</button>`;
 }
 function gfGrouped(items) {
   const g = {};
@@ -191,7 +191,7 @@ function gfHero() {
     <div class="acts"><button class="ibtn" data-share-app aria-label="Envoyer l'appli"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     <button class="ibtn" data-gf-dark aria-label="Mode sombre"><svg viewBox="0 0 24 24">${gfDark() ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/>' : '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>'}</svg></button>
     <a class="ibtn add" href="#ajouter" aria-label="Ajouter"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></a></div></div>
-    <div class="cities">${gfShown().map((x) => `<button class="city ${x.id === GF.city ? "on" : ""}" data-gf-city="${x.id}">${esc(x.name)}<b>${n(x.id)}</b></button>`).join("")}<button class="city edit" data-gf-cities aria-label="Choisir les villes affichées">${gfHidden().size ? `+${gfHidden().size} masquée${gfHidden().size > 1 ? "s" : ""}` : "✎ Villes"}</button></div>
+    <div class="cities">${gfShown().map((x) => `<button class="city ${x.id === GF.city ? "on" : ""}" data-gf-city="${x.id}">${esc(x.name)}<b>${n(x.id)}</b></button>`).join("")}<button class="city edit" data-gf-cities aria-label="Choisir les villes affichées">${gfHidden().size ? `+${gfHidden().size} masquée${gfHidden().size > 1 ? "s" : ""}` : '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg> Villes'}</button></div>
     <span class="credit">${esc(GF_CREDIT[GF.prec || c.other ? "nuit" : GF.city] || "")}</span>
     <label class="gsearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="gfQ" type="search" enterkeyhint="search" placeholder="Un resto, une envie, un quartier…" value="${esc(GF.list?.q || "")}"></label>
   </header>`;
@@ -205,7 +205,7 @@ function gfNear() {
 }
 function gfNearSec() {
   const N = gfNear().filter((x) => x.m < 1500).slice(0, 8);
-  if (!S.me) return `<section class="sec"><button class="near-cta" data-gf-near><span class="pin">◎</span><span><b>Autour de moi</b><small>Localise-toi pour voir les bonnes adresses à côté</small></span><i>›</i></button></section>`;
+  if (!S.me) return `<section class="sec"><button class="near-cta" data-gf-near><span class="pin"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h3"/><path d="M19 12h3"/><path d="M12 2v3"/><path d="M12 19v3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/></svg></span><span><b>Autour de moi</b><small>Localise-toi pour voir les bonnes adresses à côté</small></span><i>›</i></button></section>`;
   return `<section class="sec"><div class="sec-h"><h2>Autour de moi</h2><button class="all" data-gf-near>${N.length ? "Tout voir ›" : "Actualiser ›"}</button></div>
     ${N.length ? `<div class="cards">${N.slice(0, 4).map((x) => gfCard(x.p, null, x.m)).join("")}</div>` : `<p class="none" style="margin:0">Rien à moins de 1,5 km. Touche « Actualiser » pour voir les plus proches.</p>`}</section>`;
 }
@@ -270,7 +270,7 @@ function gfListBody() {
     let from = 0;
     const out = bands.map(([t, max]) => { const g = N.filter((x) => x.m >= from && x.m < max); from = max; return g.length ? `<div class="subhead" style="--sc:var(--accent)"><h3>${t}</h3><i></i><span>${g.length}</span></div><div class="cards">${g.slice(0, 40).map((x) => gfCard(x.p, null, x.m)).join("")}</div>` : ""; }).join("");
     const far = !N.some((x) => x.m < 4000);
-    return head("Autour de moi", `<div class="near-acts"><button class="btn" data-gf-near>◎ Actualiser</button><button class="btn oh-toggle ${GF.openOnly ? "on" : ""}" data-gf-open aria-pressed="${!!GF.openOnly}"><i></i>Ouvert maintenant</button></div>${GF.openOnly ? `<p class="oh-note">Seulement les adresses dont on connaît les horaires.</p>` : ""}`)
+    return head("Autour de moi", `<div class="near-acts"><button class="btn" data-gf-near><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h3"/><path d="M19 12h3"/><path d="M12 2v3"/><path d="M12 19v3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/></svg> Actualiser</button><button class="btn oh-toggle ${GF.openOnly ? "on" : ""}" data-gf-open aria-pressed="${!!GF.openOnly}"><i></i>Ouvert maintenant</button></div>${GF.openOnly ? `<p class="oh-note">Seulement les adresses dont on connaît les horaires.</p>` : ""}`)
       + (out || "") + (GF.openOnly && !N.length ? `<p class="none">Aucune adresse ouverte connue autour de toi pour l'instant.</p>` : far ? `<p class="none">Rien à moins de 4 km. Voici les plus proches :</p><div class="cards">${N.slice(0, 10).map((x) => gfCard(x.p, null, x.m)).join("")}</div>` : "");
   }
   if (L.want) return listsBody(L, head);
