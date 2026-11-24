@@ -75,6 +75,33 @@ if (!SKIP_CHECK) {
       if (++n % 200 === 0) console.log(`vérifiées ${n}/${urls.size}, cassées ${Object.keys(broken).length}`);
     }
   }));
+  // Deuxième passe, comme sur l'iPhone : chaque photo affichée dans une balise <img> d'une page d'un autre site,
+  // par le moteur de Safari (WebKit). Certains sites refusent l'affichage chez les autres (anti « hotlink »)
+  // alors que l'adresse s'ouvre très bien seule.
+  const { createServer } = await import("node:http");
+  const { webkit, devices } = await import("playwright");
+  const srv = createServer((req, res) => {
+    const list = JSON.parse(decodeURIComponent(new URL(req.url, "http://x").searchParams.get("u") || "[]"));
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
+    res.end(`<!doctype html><body>${list.map((u, i) => `<img id="i${i}" src="${u.replace(/"/g, "&quot;")}" referrerpolicy="no-referrer">`).join("")}</body>`);
+  }).listen(8765);
+  const wk = await webkit.launch();
+  const ctx = await wk.newContext({ ...devices["iPhone 13"], locale: "fr-FR" });
+  const good = [...urls.keys()].filter((u) => !broken[u]);
+  let lent = 0;
+  for (let i = 0; i < good.length; i += 30) {
+    const batch = good.slice(i, i + 30);
+    const pg = await ctx.newPage();
+    try {
+      await pg.goto(`http://127.0.0.1:8765/?u=${encodeURIComponent(JSON.stringify(batch))}`, { timeout: 15000 });
+      await pg.waitForFunction(() => [...document.images].every((im) => im.complete), null, { timeout: 45000 }).catch(() => {});
+      const st = await pg.$$eval("img", (els) => els.map((im) => (im.complete ? (im.naturalWidth > 1 ? "ok" : "ko") : "lent")));
+      st.forEach((x, k) => { if (x === "ko") broken[batch[k]] = { ids: urls.get(batch[k]), err: "ne s'affiche pas dans Safari (img)" }; else if (x === "lent") lent++; });
+    } catch (e) { console.log("lot", i, e.message.slice(0, 80)); } finally { await pg.close().catch(() => {}); }
+    if ((i / 30) % 20 === 0) console.log(`Safari : ${i}/${good.length}, cassées ${Object.keys(broken).length}`);
+  }
+  await closeQuiet(wk); srv.close();
+  console.log(`Safari : ${lent} photos trop lentes (gardées)`);
   await writeFile("out/cassees.json", JSON.stringify(broken, null, 1));
   console.log(`photos vérifiées : ${urls.size}, cassées : ${Object.keys(broken).length}`);
 }
