@@ -17,6 +17,13 @@ const DESK = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 await mkdir("out/thumbs", { recursive: true });
 await mkdir("out/debug", { recursive: true });
+// Journal lisible sur la branche de résultats + arrêt de sécurité (le dépôt des résultats a lieu quand même).
+import { appendFileSync, writeFileSync } from "node:fs";
+const log0 = console.log;
+console.log = (...a) => { log0(...a); try { appendFileSync("out/journal.txt", a.join(" ") + "\n"); } catch {} };
+const MAX_MIN = +process.env.MAX_MIN || 200;
+setTimeout(() => { console.log(`arrêt de sécurité après ${MAX_MIN} min`); try { writeFileSync("out/gmaps.json", JSON.stringify(found, null, 1)); } catch {} process.exit(0); }, MAX_MIN * 60000).unref();
+const closeQuiet = (x) => Promise.race([x?.close().catch(() => {}), sleep(5000)]);
 
 let browser = null;
 async function getBrowser() {
@@ -49,7 +56,7 @@ async function browserImg(url) {
     let size = 0;
     try { size = (await res.body()).byteLength; } catch {}
     return { status: res.status(), type, size, browser: true };
-  } catch (e) { return { status: 0, err: e.message.slice(0, 80), browser: true }; } finally { await ctx.close().catch(() => {}); }
+  } catch (e) { return { status: 0, err: e.message.slice(0, 80), browser: true }; } finally { await closeQuiet(ctx); }
 }
 
 const live = places.filter((p) => !p.closed && !p.removed);
@@ -93,6 +100,7 @@ const big = (u) => u.replace(/=w\d+-h\d+[^/?#]*$/, "=w1200-h900-k-no").replace(/
 const photoless = (p) => ![p.photo, ...(GAL[p.id] || [])].some((u) => u && !broken[u]);
 let todo = live.filter(photoless);
 if (LIMIT) todo = todo.slice(0, LIMIT);
+console.log(`début Google Maps`);
 console.log(`fiches sans aucune photo qui marche : ${todo.length}`);
 
 async function gmaps(p, k) {
@@ -138,7 +146,7 @@ async function gmaps(p, k) {
     }
     rec.photos = [...imgs].slice(0, 8);
     if (k < 6) await pg.screenshot({ path: `out/debug/${k}-${p.id.slice(0, 40)}.png` }).catch(() => {});
-  } catch (e) { rec.err = e.message.slice(0, 120); } finally { await ctx.close().catch(() => {}); }
+  } catch (e) { rec.err = e.message.slice(0, 120); } finally { await closeQuiet(ctx); }
   return rec;
 }
 
@@ -160,7 +168,8 @@ await Promise.all(Array.from({ length: 3 }, async () => {
   }
 }));
 await writeFile("out/gmaps.json", JSON.stringify(found, null, 1));
-if (browser) await browser.close().catch(() => {});
+console.log("vignettes…");
+await closeQuiet(browser);
 
 /* ---------------- vignettes + planches ---------------- */
 const photos = {};
@@ -199,4 +208,5 @@ for (let i = 0, s = 0; i < ids.length; i += 10, s++) {
   }
   execFileSync("convert", [...rows, "-background", "white", "-gravity", "North", "-splice", "0x4", "-append", "-quality", "72", `out/sheets/planche-${String(s).padStart(3, "0")}.jpg`]);
 }
+setTimeout(() => process.exit(0), 100);
 console.log(`Google Maps : ${found.filter((r) => r.ok).length} lieux reconnus sur ${found.length}, ${ids.length} avec photos`);
