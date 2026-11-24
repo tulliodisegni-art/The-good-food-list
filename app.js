@@ -254,7 +254,7 @@ function renderNote() {
 function openNote() {
   renderNote();
   const v = $("#noteView");
-  v.hidden = false; v.scrollTop = 0;
+  v.hidden = false; v.scrollTop = 0; noteOn = -1; noteSpy();
   document.documentElement.classList.add("note-open");
 }
 function closeNote() {
@@ -270,9 +270,23 @@ $("#noteView").addEventListener("click", (e) => {
   if (a) {
     const v = $("#noteView"), sec = $(`#note-arr-${a.dataset.noteArr}`);
     v.scrollTo({ top: sec.getBoundingClientRect().top - v.getBoundingClientRect().top + v.scrollTop - $("#noteArrs").getBoundingClientRect().bottom + 6, behavior: "smooth" });
-    const rail = $("#noteArrs"); rail.scrollLeft = a.offsetLeft - (rail.clientWidth - a.offsetWidth) / 2;
   }
 });
+// En défilant, l'arrondissement affiché s'allume dans la rangée du haut.
+let noteOn = -1;
+function noteSpy() {
+  const v = $("#noteView"), rail = $("#noteArrs");
+  if (v.hidden) return;
+  const y = rail.getBoundingClientRect().bottom + 40;
+  let i = 0;
+  $$(".note-arr", v).forEach((sec, k) => { if (sec.getBoundingClientRect().top <= y) i = k; });
+  if (i === noteOn) return;
+  noteOn = i;
+  $$("button", rail).forEach((b, k) => b.classList.toggle("on", k === i));
+  const a = rail.children[i];
+  if (a) rail.scrollLeft = a.offsetLeft - (rail.clientWidth - a.offsetWidth) / 2;
+}
+$("#noteView").addEventListener("scroll", () => requestAnimationFrame(noteSpy), { passive: true });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("#noteView").hidden && $("#sheet").hidden) closeNote(); });
 
 // Les Précieuses sont rangées en quatre univers, puis par catégorie.
