@@ -38316,7 +38316,9 @@
   "ohAt": "2026-11-23",
   "searched": 1,
   "enriched": 5,
-  "bookingScan": 1
+  "bookingScan": 1,
+  "aiFill": 1,
+  "noPhone": 1
  },
  {
   "id": "u-mws3399rahus",
