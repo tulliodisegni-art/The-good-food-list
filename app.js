@@ -1567,5 +1567,10 @@ setTimeout(() => loadMapLibs().then(() => {
 
 // (Pas de service worker dans l'appli iPhone / Android : les fichiers sont déjà dans l'appli.)
 if ("serviceWorker" in navigator && !window.GF_NATIVE) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").then((r) => r.update()).catch(() => {}));
+  // Nouvelle version en ligne : dès qu'elle est installée, on recharge une fois pour l'afficher tout de suite.
+  if (navigator.serviceWorker.controller) {
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloaded) { reloaded = true; location.reload(); } });
+  }
 }
