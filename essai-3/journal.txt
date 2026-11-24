@@ -1,0 +1,20 @@
+début Google Maps
+fiches sans aucune photo qui marche : 8
+→ Fondue du dragon
+→ Le Tiki Rose
+→ Café Kitsuné
+1/8 Fondue du dragon → « 小龙人火锅 Fondue dragon » ? km nom ok · 8 photos ✗
+2/8 Le Tiki Rose → « Le Tiki Rose » 0.014 km nom ok · 8 photos ✓
+→ Strogoff
+→ Pizz'aria
+3/8 Café Kitsuné → « Café Kitsuné Palais Royal » 0.008 km nom ok · 8 photos ✓
+→ Rivolta
+4/8 Strogoff → « Strogoff » ? km nom ok · 8 photos ✗
+5/8 Pizz'aria → « Pizz'Aria Paris » 0.003 km nom ok · 8 photos ✗
+→ Pupetta
+→ Frenchie To Go
+6/8 Rivolta → « RIVOLTA! Poissonnière » ? km nom ok · 8 photos ✗
+7/8 Pupetta → « Casa Verde » ? km nom ≠ · 8 photos ✗
+8/8 Frenchie To Go → « Frenchie » 0.023 km nom ok · 8 photos ✓
+vignettes…
+Google Maps : 3 lieux reconnus sur 8, 3 avec photos
