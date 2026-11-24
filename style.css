@@ -923,11 +923,16 @@ html.note-open, html.note-open body { overflow: hidden; }
 .note-arrs button.on { background: var(--gold); border-color: var(--gold); color: #fff; transform: scale(1.08); }
 .note-arrs sup { font-size: .6em; }
 .note-body { max-width: 640px; margin: 0 auto; padding: 0 16px; }
-.note-arr h3 { margin: 30px 0 4px; font: 400 34px/1.15 var(--display); color: var(--plaque); }
+.note-arr h3 {
+  margin: 36px 0 4px; padding: 12px 18px; border-radius: 12px; border: 3px solid var(--plaque-rim);
+  font: 400 30px/1.1 var(--display); white-space: nowrap; color: var(--plaque-ink) !important; background: var(--plaque);
+  box-shadow: 0 0 0 3px var(--plaque) inset;
+}
 .note-arr h3 sup { font-size: .55em; }
 .note-arr h4 {
-  margin: 20px 0 2px; font-size: 16px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
-  color: var(--sc, var(--muted));
+  display: inline-block; margin: 24px 0 6px; padding: 6px 14px; border-radius: 10px;
+  font-size: 21px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  color: #fff; background: var(--sc, var(--muted));
 }
 .note-arr ul { list-style: none; margin: 0; padding: 0; }
 .note-line {
@@ -936,7 +941,8 @@ html.note-open, html.note-open body { overflow: hidden; }
 }
 .note-line:active { background: var(--surface-2); }
 .nl-name { font-weight: 700; font-size: 21px; line-height: 1.25; }
-.nl-ok { color: var(--ok); font-weight: 800; }
+.note-line { position: relative; padding-right: 44px !important; }
+.nl-ok { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); color: var(--ok); font-weight: 800; font-size: 24px; }
 .nl-addr { color: var(--muted); font-size: 17px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .note-arr h3 { color: var(--plaque-rim); } }
 :root[data-theme="dark"] .note-arr h3 { color: var(--plaque-rim); }

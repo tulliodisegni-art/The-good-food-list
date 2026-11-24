@@ -246,7 +246,7 @@ function renderNote() {
     return `<section class="note-arr" id="note-arr-${i}"><h3>${label(z)}</h3>
       ${byCat.map(([cat, ps]) => `<h4 style="--sc:${catVar(cat)}">${esc(cat)}</h4>
         <ul>${ps.map((p) => `<li><button type="button" class="note-line ${p.tested ? "is-done" : ""}" data-note-id="${esc(p.id)}">
-          <span class="nl-name">${esc(p.name)}${p.tested ? ' <span class="nl-ok" aria-label="déjà testé">✓</span>' : ""}</span>
+          <span class="nl-name">${esc(p.name)}</span>${p.tested ? '<span class="nl-ok" aria-label="déjà testé">✓</span>' : ""}
           <span class="nl-addr">${esc(p.list === "villes" && p.city ? p.city : street(p.address)) || "Adresse à compléter"}</span></button></li>`).join("")}</ul>`).join("")}
     </section>`;
   }).join("");
