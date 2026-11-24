@@ -148,7 +148,10 @@ let done = 0;
 await Promise.all(Array.from({ length: 3 }, async () => {
   while (queue.length) {
     const [p, k] = queue.shift();
-    const rec = await gmaps(p, k);
+    console.log(`→ ${p.name}`);
+    let timer;
+    const rec = await Promise.race([gmaps(p, k), new Promise((r) => { timer = setTimeout(() => r({ id: p.id, name: p.name, err: "trop long" }), 100000); })]);
+    clearTimeout(timer);
     // Le bon lieu : même endroit (moins de 250 m), ou même nom à moins de 3 km (ou sans position connue).
     rec.ok = !rec.closed && (rec.photos || []).length > 0 && ((rec.km != null && rec.km < 0.25) || (rec.match && (rec.km == null || rec.km < 3)));
     found.push(rec);
@@ -167,7 +170,7 @@ for (const rec of found.filter((r) => r.ok)) {
     if (kept.length >= 5) break;
     const tmp = `/tmp/g-${rec.id}-${kept.length}`;
     try {
-      execFileSync("curl", ["-sL", "-m", "20", "-A", UA, "-o", tmp, u]);
+      execFileSync("curl", ["-sL", "-m", "20", "--max-filesize", "15000000", "-A", UA, "-o", tmp, u]);
       const [w, h] = execFileSync("identify", ["-format", "%w %h", `${tmp}[0]`], { timeout: 15000 }).toString().split(" ").map(Number);
       if (Math.min(w, h) < 300) continue;
       const file = `out/thumbs/${rec.id}-${kept.length}.jpg`;
