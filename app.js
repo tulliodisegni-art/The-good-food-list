@@ -226,6 +226,53 @@ function renderArrStrip() {
   if (on) on.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
 }
 
+// « Tout voir » : toutes les adresses de Paris à la suite, rangées comme dans la note d'origine
+// (arrondissement par arrondissement, puis par type de cuisine, dans l'ordre de la note).
+function renderNote() {
+  // Même liste que l'accueil Paris (avec « Autour de Paris »), sinon la liste Paris seule.
+  const all = typeof gfPool === "function" ? gfPool() : S.places.filter((p) => p.list === "paris");
+  const zoneOf = (p) => (typeof gfZone === "function" ? gfZone(p) : p.arr ? String(p.arr) : "") || "Autres";
+  const rank = (z) => (/^\d+$/.test(z) ? +z : z === "Autour de Paris" ? 50 : 99);
+  const cord = (c) => (typeof gfCord === "function" ? gfCord(c) : 0);
+  const groups = groupBy(all, zoneOf);
+  const keys = [...groups.keys()].sort((a, b) => rank(a) - rank(b));
+  const label = (z) => (/^\d+$/.test(z) ? `${arrHtml(+z)} arrondissement` : z === "Autres" ? "Sans arrondissement" : esc(z));
+  $("#noteCount").textContent = `${all.length} adresses · ${all.filter((p) => p.tested).length} déjà testées`;
+  $("#noteArrs").innerHTML = keys.map((z, i) => `<button type="button" data-note-arr="${i}">${/^\d+$/.test(z) ? arrHtml(+z) : z === "Autour de Paris" ? "Autour" : "Autres"}</button>`).join("");
+  $("#noteList").innerHTML = keys.map((z, i) => {
+    const byCat = [...groupBy(groups.get(z), (p) => p.cat || "Sans type").entries()].sort((a, b) => cord(a[0]) - cord(b[0]));
+    return `<section class="note-arr" id="note-arr-${i}"><h3>${label(z)}</h3>
+      ${byCat.map(([cat, ps]) => `<h4 style="--sc:${catVar(cat)}">${esc(cat)}</h4>
+        <ul>${ps.map((p) => `<li><button type="button" class="note-line ${p.tested ? "is-done" : ""}" data-note-id="${esc(p.id)}">
+          <span class="nl-name">${esc(p.name)}${p.tested ? ' <span class="nl-ok" aria-label="déjà testé">✓</span>' : ""}</span>
+          <span class="nl-addr">${esc(p.list === "villes" && p.city ? p.city : street(p.address)) || "Adresse à compléter"}</span></button></li>`).join("")}</ul>`).join("")}
+    </section>`;
+  }).join("");
+}
+function openNote() {
+  renderNote();
+  const v = $("#noteView");
+  v.hidden = false; v.scrollTop = 0;
+  document.documentElement.classList.add("note-open");
+}
+function closeNote() {
+  $("#noteView").hidden = true;
+  document.documentElement.classList.remove("note-open");
+}
+document.addEventListener("click", (e) => { if (e.target.closest && e.target.closest("[data-note-open]")) openNote(); });
+$("#noteClose").addEventListener("click", closeNote);
+$("#noteView").addEventListener("click", (e) => {
+  const line = e.target.closest("[data-note-id]");
+  if (line) return openSheet(line.dataset.noteId);
+  const a = e.target.closest("[data-note-arr]");
+  if (a) {
+    const v = $("#noteView"), sec = $(`#note-arr-${a.dataset.noteArr}`);
+    v.scrollTo({ top: sec.getBoundingClientRect().top - v.getBoundingClientRect().top + v.scrollTop - $("#noteArrs").getBoundingClientRect().bottom + 6, behavior: "smooth" });
+    const rail = $("#noteArrs"); rail.scrollLeft = a.offsetLeft - (rail.clientWidth - a.offsetWidth) / 2;
+  }
+});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("#noteView").hidden && $("#sheet").hidden) closeNote(); });
+
 // Les Précieuses sont rangées en quatre univers, puis par catégorie.
 const UNIVERSES = [
   { id: "table", name: "À table", sub: "Restaurants et brunchs", color: "var(--c-fr)", cats: ["Resto", "Resto festif", "Brunch"],

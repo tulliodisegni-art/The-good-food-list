@@ -890,3 +890,52 @@ button.q { border: 0; cursor: pointer; font: inherit; font-size: 12px; font-weig
 .rt-note .linkish { background: none; border: 0; padding: 0; color: var(--accent, inherit); text-decoration: underline; font: inherit; font-weight: 600; cursor: pointer; }
 /* Champ à remplir avant d'enregistrer (ex. arrondissement) */
 select.need, input.need { outline: 2px solid #C8352B; outline-offset: 2px; }
+
+/* « Tout voir » : la liste complète façon note, à faire défiler */
+html.note-open, html.note-open body { overflow: hidden; }
+.note-view {
+  position: fixed; inset: 0; z-index: 35; background: var(--bg); overflow-y: auto;
+  -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
+  padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+}
+.note-top {
+  position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 10px;
+  padding: calc(10px + env(safe-area-inset-top, 0px)) 16px 8px; background: var(--bg);
+}
+.note-top h2 { margin: 0; font: 400 24px/1.1 var(--display); }
+.note-n { color: var(--muted); font-size: 12px; }
+.note-close {
+  flex: none; width: 38px; height: 38px; border-radius: 50%; border: 0; cursor: pointer;
+  background: var(--surface-2); display: grid; place-items: center;
+}
+.note-close svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.note-arrs {
+  position: sticky; top: calc(56px + env(safe-area-inset-top, 0px)); z-index: 2;
+  display: flex; gap: 6px; overflow-x: auto; padding: 4px 16px 10px; background: var(--bg);
+  border-bottom: 1px solid var(--line); scrollbar-width: none;
+}
+.note-arrs::-webkit-scrollbar { display: none; }
+.note-arrs button {
+  flex: none; min-width: 38px; height: 30px; padding: 0 8px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--plaque-rim); background: var(--plaque); color: var(--plaque-ink);
+  font: 400 15px/1 var(--display);
+}
+.note-arrs sup { font-size: .6em; }
+.note-body { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+.note-arr h3 { margin: 26px 0 4px; font: 400 26px/1.15 var(--display); color: var(--plaque); }
+.note-arr h3 sup { font-size: .55em; }
+.note-arr h4 {
+  margin: 14px 0 2px; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--sc, var(--muted));
+}
+.note-arr ul { list-style: none; margin: 0; padding: 0; }
+.note-line {
+  display: flex; align-items: baseline; gap: 8px; width: 100%; text-align: left; cursor: pointer;
+  background: none; border: 0; border-bottom: 1px solid var(--line); padding: 9px 0;
+}
+.note-line:active { background: var(--surface-2); }
+.nl-name { font-weight: 700; flex: none; max-width: 60%; }
+.nl-ok { color: var(--ok); font-weight: 800; }
+.nl-addr { color: var(--muted); font-size: 13px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-left: auto; text-align: right; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .note-arr h3 { color: var(--plaque-rim); } }
+:root[data-theme="dark"] .note-arr h3 { color: var(--plaque-rim); }

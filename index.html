@@ -211,6 +211,12 @@
   </a>
 </nav>
 
+<div class="note-view" id="noteView" hidden role="dialog" aria-modal="true" aria-labelledby="noteTitle">
+  <div class="note-top"><button class="note-close" id="noteClose" type="button" aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div><h2 id="noteTitle">Toute la liste</h2><span class="note-n" id="noteCount"></span></div></div>
+  <div class="note-arrs" id="noteArrs" aria-label="Aller à l'arrondissement"></div>
+  <div class="note-body" id="noteList"></div>
+</div>
 <div class="sheet-backdrop" id="backdrop" hidden></div>
 <article class="sheet" id="sheet" hidden aria-modal="true" role="dialog" aria-labelledby="sheetName"></article>
 <div class="toast" id="toast" hidden></div>
