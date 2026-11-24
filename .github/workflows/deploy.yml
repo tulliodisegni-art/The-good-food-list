@@ -108,3 +108,10 @@ jobs:
           path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+        # GitHub ne trouve parfois pas encore le paquet juste envoyé (« No artifacts named github-pages ») :
+        # on attend un peu et on réessaie une fois, au lieu de laisser l'appli sur l'ancienne version.
+        continue-on-error: true
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 45
+      - if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
