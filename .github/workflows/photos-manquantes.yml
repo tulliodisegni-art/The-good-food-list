@@ -1,0 +1,41 @@
+name: Photos manquantes et cassées (à vérifier)
+# Vérifie toutes les photos en place, puis cherche sur la fiche Google Maps publique celles des lieux sans photo.
+# Lancé en modifiant .github/galerie/manquantes.json (ou à la main). Résultat : branche « photos-manquantes ».
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore: [main]
+    paths: [".github/galerie/manquantes.json", "scripts/photos_manquantes.mjs"]
+permissions:
+  contents: write
+jobs:
+  chercher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: sudo apt-get install -y -qq imagemagick fonts-dejavu-core >/dev/null
+      - name: Navigateur
+        run: npm install --no-save --no-audit --no-fund playwright >/dev/null && npx playwright install --with-deps chromium >/dev/null
+      - name: Vérifier et chercher
+        timeout-minutes: 220
+        run: |
+          export LIMIT=$(jq -r '.limit // 0' .github/galerie/manquantes.json)
+          export MAX_MIN=$(jq -r ".maxMin // 200" .github/galerie/manquantes.json)
+          export SKIP_CHECK=$(jq -r '.skipCheck // ""' .github/galerie/manquantes.json)
+          node scripts/photos_manquantes.mjs
+      - name: Déposer sur la branche photos-manquantes
+        if: always()
+        run: |
+          RUN=$(jq -r '.essai // "1"' .github/galerie/manquantes.json)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/res && cp -r out "/tmp/res/essai-$RUN"
+          if git fetch origin photos-manquantes; then git checkout -qf -B photos-manquantes FETCH_HEAD; else git checkout -q --orphan photos-manquantes; git rm -rfq . ; fi
+          git clean -fdq
+          rm -rf "essai-$RUN" && cp -r "/tmp/res/essai-$RUN" "essai-$RUN"
+          git add -A "essai-$RUN"
+          git commit -qm "Photos manquantes : essai $RUN" || true
+          git push origin HEAD:photos-manquantes

@@ -83,6 +83,10 @@ def main():
         prev = old.get(p["id"], {})
         # Garde les infos enrichies à la main ou par le géocodage.
         for key, val in prev.items():
+            if key == "photo" and prev.get("photoSrc") == "galerie":
+                continue  # recalculée plus bas depuis data/photos.json
+            if key == "photoSrc" and val == "galerie":
+                continue
             if val and not p.get(key):
                 p[key] = val
     # Vrais liens des menus, relevés sur le site de chaque lieu et vérifiés (scripts/menus_photos.mjs) :
@@ -109,6 +113,19 @@ def main():
                     p.pop(key, None)
                 else:
                     p[key] = val
+    # Vignette de la liste : sans photo principale, on prend la première de la galerie (relue à l'œil).
+    # Photos mortes : data/photos-cassees.json (relevées par scripts/photos_manquantes.mjs), jamais affichées.
+    gal_file, dead_file = DATA / "photos.json", DATA / "photos-cassees.json"
+    gal = json.loads(gal_file.read_text(encoding="utf-8")) if gal_file.exists() else {}
+    dead = set(json.loads(dead_file.read_text(encoding="utf-8"))) if dead_file.exists() else set()
+    for p in places:
+        if p.get("photo") in dead:
+            p.pop("photo", None)
+            p.pop("photoSrc", None)
+        if not p.get("photo"):
+            first = next((u for u in gal.get(p["id"], []) if u not in dead), None)
+            if first:
+                p["photo"], p["photoSrc"] = first, "galerie"
     places = [p for p in places if not p.get("removed")]
     out.write_text(json.dumps(places, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(places)} lieux -> {out}", file=sys.stderr)
