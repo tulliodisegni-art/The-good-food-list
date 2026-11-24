@@ -94,9 +94,11 @@ function rebuild() {
   S.places = [...S.base, ...custom].map((p) => ({ ...p, ...(edits[p.id] || {}) }));
   S.removed = S.places.filter((p) => p.removed);
   S.places = S.places.filter((p) => !p.removed);
+  const owner = !!(window.Gate && window.Gate.isOwner()) || (typeof isOwner === "function" && isOwner());
   for (const p of S.places) {
     // Dans les notes, ✅ et ✔️ veulent dire « déjà testé ».
-    if (p.tested === undefined) p.tested = TESTED.has(p.mark);
+    // Ces coches viennent de la note du propriétaire : elles ne comptent que sur son téléphone.
+    if (p.tested === undefined) p.tested = TESTED.has(p.mark) && owner;
     if (TESTED.has(p.mark)) p.mark = "";
     const g = p.address && S.geo[p.address];
     if (!p.lat && g) { p.lat = g[0]; p.lng = g[1]; }
@@ -585,7 +587,7 @@ function openSheet(id, keepScroll) {
 
       ${nearbyHtml(p)}
 
-      ${p.mark ? `<p class="note">Marque de ta note d'origine : ${esc(p.mark)}</p>` : ""}
+      ${p.mark && window.Gate && window.Gate.isOwner() ? `<p class="note">Marque de ta note d'origine : ${esc(p.mark)}</p>` : ""}
       ${custom && p.list !== "pending" && canPublish() ? (p.published
         ? `<p class="note">Publiée pour tous, elle apparaît chez chacun dans quelques minutes.</p>`
         : `<button class="btn primary wide" data-publish>Publier pour tous</button>`) : ""}
