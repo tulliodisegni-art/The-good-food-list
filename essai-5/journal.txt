@@ -1,0 +1,173 @@
+vérifiées 200/4613, cassées 0
+vérifiées 400/4613, cassées 5
+vérifiées 600/4613, cassées 5
+vérifiées 800/4613, cassées 11
+vérifiées 1000/4613, cassées 11
+vérifiées 1200/4613, cassées 11
+vérifiées 1400/4613, cassées 11
+vérifiées 1600/4613, cassées 11
+vérifiées 1800/4613, cassées 11
+vérifiées 2000/4613, cassées 14
+vérifiées 2200/4613, cassées 14
+vérifiées 2400/4613, cassées 17
+vérifiées 2600/4613, cassées 24
+vérifiées 2800/4613, cassées 25
+vérifiées 3000/4613, cassées 25
+vérifiées 3200/4613, cassées 26
+vérifiées 3400/4613, cassées 26
+vérifiées 3600/4613, cassées 26
+vérifiées 3800/4613, cassées 34
+vérifiées 4000/4613, cassées 34
+vérifiées 4200/4613, cassées 34
+vérifiées 4400/4613, cassées 34
+vérifiées 4600/4613, cassées 34
+Safari : 0/4579, cassées 34
+Safari : 600/4579, cassées 35
+Safari : 1200/4579, cassées 41
+Safari : 1800/4579, cassées 52
+lot 2310 page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "http://127.0.0
+Safari : 2400/4579, cassées 60
+Safari : 3000/4579, cassées 70
+Safari : 3600/4579, cassées 70
+lot 4140 page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "http://127.0.0
+Safari : 4200/4579, cassées 70
+Safari : 0 photos trop lentes (gardées)
+photos vérifiées : 4613, cassées : 70
+début Google Maps
+fiches sans aucune photo qui marche : 65
+→ Pupetta
+→ Frenchie To Go
+→ Oubruncher
+1/65 Pupetta → « Casa Verde » 0.007 km nom ≠ · 8 photos  FERMÉ ✓
+2/65 Frenchie To Go → « Frenchie » 0.023 km nom ok · 8 photos  ✓
+→ Le Wok Saint-Germain
+→ Burger Père & Fils
+3/65 Le Wok Saint-Germain → « Le Wok Saint Germain » 0.002 km nom ok · 8 photos  ✓
+→ Giorgio
+4/65 Burger Père & Fils → « 53 Rue de Grenelle » 0.011 km nom ≠ · 0 photos  ✗
+→ Seizemetrescarrés
+5/65 Oubruncher → « ? » 1.34 km nom ≠ · 0 photos  ✗
+→ Pompom Coffice
+6/65 Giorgio → « Dalmata » 0.01 km nom ≠ · 8 photos  FERMÉ ✓
+→ Jango
+7/65 Seizemetrescarrés → « 54 Rue Basfroi » 0.003 km nom ≠ · 0 photos  ✗
+→ Les Piaules rooftop
+8/65 Jango → « Parigini Bistro » 0.006 km nom ≠ · 8 photos  ✓
+9/65 Pompom Coffice → « Pompom Coffee » 0.003 km nom ok · 0 photos  ✗
+→ 21 Dumpling
+→ Le Sheffer
+10/65 Les Piaules rooftop → « The People Paris Nation » 0.171 km nom ≠ · 8 photos  ✓
+→ Le Murat
+11/65 21 Dumpling → « Boulangerie M'Seddi Moulins des Prés » 0.008 km nom ≠ · 8 photos  ✓
+→ Sourire du Vietnam
+12/65 Le Murat → « Le Murat » 0.01 km nom ok · 8 photos  ✓
+13/65 Le Sheffer → « Le Scheffer » 0.013 km nom ≠ · 0 photos  ✗
+→ Rdv
+→ La cantine de Sam
+14/65 Sourire du Vietnam → « Sourire du Vietnam » 0.008 km nom ok · 7 photos  ✓
+→ The Mad Hatter Atelier
+15/65 La cantine de Sam → « La Cantine de Sam » 0.005 km nom ok · 8 photos  ✓
+16/65 Rdv → « SAX Paris, LXR Hotels & Resorts » 0.005 km nom ≠ · 8 photos  ✓
+→ Atelier parfums personnalisés
+→ Wecandoo
+17/65 The Mad Hatter Atelier → « Mad Atelier » ? km nom ok · 0 photos  FERMÉ ✗
+→ Atelier poterie
+18/65 Atelier parfums personnalisés → « L'Atelier Parfum » ? km nom ok · 8 photos  ✓
+→ Personnalisation de sneakers
+19/65 Atelier poterie → « Clay Atelier Paris » ? km nom ok · 8 photos  ✓
+→ The Jury Experience : Diamants, mensonges et un mort
+20/65 Personnalisation de sneakers → « Sneakers & Chill » ? km nom ok · 8 photos  ✓
+→ My Flower Class
+21/65 The Jury Experience : Diamants, mensonges et un mort → « Le Monument Aux Morts De Paul Landowski » ? km nom ≠ · 8 photos  ✗
+→ Komma
+22/65 My Flower Class → « Les filles d'à côté - fleuriste - Paris » 0.415 km nom ≠ · 8 photos  ✗
+→ Le Kiwi
+23/65 Komma → « Komma » ? km nom ok · 0 photos  ✗
+→ Bouillon Chartier
+24/65 Le Kiwi → « Kiwi Saint-Tropez | Paris Passy » ? km nom ok · 8 photos  ✓
+→ Verre chez moi
+25/65 Bouillon Chartier → « Bouillon Chartier Grands Boulevards » 0.001 km nom ok · 8 photos  ✓
+→ Dominicos
+26/65 Verre chez moi → « RESTAURANT Verre Chez Moi » ? km nom ok · 8 photos  ✓
+→ Le Murat
+27/65 Wecandoo → « ? » 2.61 km nom ≠ · 0 photos  ✗
+→ Mumbay
+28/65 Dominicos → « Domenico’s » ? km nom ≠ · 8 photos  ✗
+→ RH Paris
+29/65 Le Murat → « Le Murat » 0.01 km nom ok · 8 photos  ✓
+→ Dame
+30/65 RH Paris → « RH Paris | La Galerie sur les Champs-Élysées » 2.354 km nom ok · 8 photos  ✓
+→ Gallopin
+31/65 Dame → « DAME » 0.978 km nom ok · 8 photos  ✓
+→ Fattyferia
+32/65 Gallopin → « Gallopin » 0.006 km nom ok · 8 photos  ✓
+→ Alain Ducasse
+33/65 Fattyferia → « FÉRIA CAFÉ » ? km nom ok · 8 photos  ✓
+→ Shangri-La
+34/65 Mumbay → « ? » ? km nom ≠ · 0 photos  ✗
+→ Bar 8
+35/65 Alain Ducasse → « Le Chocolat Alain Ducasse, Manufacture à Paris » ? km nom ok · 8 photos  ✓
+→ Villa Maasai
+36/65 Shangri-La → « Shangri-La Paris » 0.021 km nom ok · 6 photos  ✓
+→ Mimi Cheng's
+37/65 Bar 8 → « Buddha-Bar Paris » 0.031 km nom ≠ · 8 photos  ✓
+→ Balade en canoë à Crécy-la-Chapelle
+38/65 Villa Maasai → « Le Maasaï Lounge » 4.314 km nom ok · 8 photos  ✗
+→ Tre
+39/65 Mimi Cheng's → « Jin Mei Dumpling » 0.848 km nom ≠ · 8 photos  FERMÉ ✗
+→ Yayin BeHatser (Wine Garden)
+40/65 Balade en canoë à Crécy-la-Chapelle → « LOC'ADVENTURE » 1.125 km nom ≠ · 8 photos  ✗
+→ Meatbal
+41/65 Tre → « Bialik Mall » 0.133 km nom ≠ · 8 photos  ✓
+→ Ahavat HaYam
+42/65 Yayin BeHatser (Wine Garden) → « Fifty and one » 0.443 km nom ≠ · 8 photos  ✗
+→ B33
+43/65 Ahavat HaYam → « Ahavat Hayam » 21.978 km nom ok · 8 photos  ✗
+44/65 Meatbal → « מִטְבָל גבעת שמואל » ? km nom ≠ · 0 photos  ✗
+→ Okiyama
+→ Hummus Or Yehuda
+45/65 B33 → « מרכז קניות בת ימון » 0.351 km nom ≠ · 8 photos  ✗
+→ Niko
+46/65 Okiyama → « אוקיאמה ירושלים Okayama sushi kosher Jerusalem » 0.399 km nom ≠ · 4 photos  ✗
+47/65 Hummus Or Yehuda → « חומוס אור יהודה » 0.302 km nom ≠ · 6 photos  ✗
+→ Lev HaBasarim
+→ Hamburger Habibi (Ramla)
+48/65 Niko → « boxing club Rosh Haayin » ? km nom ≠ · 3 photos  ✗
+→ Café Lahav
+49/65 Hamburger Habibi (Ramla) → « חביבי המבורגר גדרה - HBB Burger » 16.864 km nom ≠ · 6 photos  ✗
+50/65 Lev HaBasarim → « Moshe Levi 25 » 5.662 km nom ≠ · 0 photos  ✗
+→ HaPardes
+→ Joseph (Charcoal Bar)
+51/65 Café Lahav → « קפה להב » 0.377 km nom ≠ · 8 photos  ✗
+→ Luchana
+52/65 HaPardes → « Pri Megadim St 1 » 0.525 km nom ≠ · 0 photos  ✗
+→ Samuel
+53/65 Joseph (Charcoal Bar) → « Rishon LeZion » 4.993 km nom ≠ · 8 photos  ✗
+→ Segev BaTayelet
+54/65 Luchana → « Mevasseret Tsion » ? km nom ≠ · 8 photos  ✗
+→ Shawarma HaSultan
+55/65 Samuel → « HaTnufa 12 » 0.507 km nom ≠ · 0 photos  ✗
+→ Tzaharaim
+56/65 Segev BaTayelet → « Tayelet Haas Promenade » ? km nom ≠ · 8 photos  ✗
+→ Pizza Shalachmecha
+57/65 Shawarma HaSultan → « שווארמה הסולטן רמת גן » 0.539 km nom ≠ · 5 photos  ✗
+→ Sorrento
+58/65 Tzaharaim → « בורסת היהלומים » ? km nom ≠ · 8 photos  ✗
+→ Jethro
+59/65 Pizza Shalachmecha → « Pizza Hut » 4.455 km nom ok · 4 photos  ✗
+→ Mirage
+60/65 Sorrento → « Sorento » ? km nom ≠ · 8 photos  ✗
+→ Mirage Jazz Kissa
+61/65 Jethro → « collège académique Ono » ? km nom ≠ · 8 photos  FERMÉ ✗
+→ Pizza Har Sinai
+62/65 Mirage → « Mirage » ? km nom ok · 8 photos  ✓
+63/65 Mirage Jazz Kissa → « Mirage » ? km nom ok · 8 photos  ✓
+→ AB-CD
+64/65 Pizza Har Sinai → « פיצה הר סיני » 0.469 km nom ≠ · 8 photos  ✗
+65/65 AB-CD → « abcd » 0.751 km nom ok · 1 photos  FERMÉ ✓
+vignettes…
+Google Maps : 29 lieux reconnus sur 65, 29 avec photos

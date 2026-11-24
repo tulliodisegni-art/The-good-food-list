@@ -1,0 +1,519 @@
+{
+ "https://www.circonstances.fr/images/fourchette.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.circonstances.fr/images/intro15w.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.circonstances.fr/images/sallenew.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.circonstances.fr/images/lampe.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.circonstances.fr/images/sofa.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://lewoksaintgermain.com/wp-content/uploads/2020/11/FOND-POPUP-EMPORTE.png": {
+  "ids": [
+   "paris-5-thailandais-le-wok-saint-germain",
+   "paris-5-thailandais-le-wok-saint-germain"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://lewoksaintgermain.com/wp-content/uploads/2020/09/slider-wok-saint-germain-restaurant-thai-paris.jpg": {
+  "ids": [
+   "paris-5-thailandais-le-wok-saint-germain"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://lewoksaintgermain.com/wp-content/uploads/2020/09/wok-saint-germain-paris-restaurant-thai-quartier-latin-1024x683.jpg": {
+  "ids": [
+   "paris-5-thailandais-le-wok-saint-germain"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://lewoksaintgermain.com/wp-content/uploads/2020/09/wok-saint-germain-restaurant-thai-paris-1024x683.jpg": {
+  "ids": [
+   "paris-5-thailandais-le-wok-saint-germain"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://lewoksaintgermain.com/wp-content/uploads/2020/09/wok-saint-germain-paris-restaurant-asiatique-hallal-1024x683.jpg": {
+  "ids": [
+   "paris-5-thailandais-le-wok-saint-germain"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://lewoksaintgermain.com/wp-content/uploads/2020/09/wok-saint-germain-paris-restaurant-hallal-1024x683.jpg": {
+  "ids": [
+   "paris-5-thailandais-le-wok-saint-germain"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://mamacita.paris/wp-content/uploads/sites/4/2023/06/97a7a726d92d31319481a9dd93bc698e-scaled-1.jpeg": {
+  "ids": [
+   "paris-9-tapas-mamacita",
+   "precieuses-0-soiree-mamacita"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://mamaci",
+  "browser": true
+ },
+ "https://groupe-bucher.fr/wp-content/uploads/qr-river-cafe-menu-online-150x150.jpg": {
+  "ids": [
+   "paris-9-tapas-mamacita",
+   "precieuses-0-soiree-mamacita"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://groupe",
+  "browser": true
+ },
+ "https://mamacita.paris/wp-content/uploads/sites/4/2023/06/DSC01804-1.jpg": {
+  "ids": [
+   "paris-9-tapas-mamacita",
+   "precieuses-0-soiree-mamacita"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://mamaci",
+  "browser": true
+ },
+ "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2023/06/DSC08214-2.png": {
+  "ids": [
+   "paris-16-francais-le-murat",
+   "precieuses-0-resto-le-murat"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://restau",
+  "browser": true
+ },
+ "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2025/12/DSC05667-copie-2.jpg": {
+  "ids": [
+   "paris-16-francais-le-murat",
+   "precieuses-0-resto-le-murat"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://restau",
+  "browser": true
+ },
+ "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2025/12/DSC06072-2-2.jpg": {
+  "ids": [
+   "paris-16-francais-le-murat",
+   "paris-16-francais-le-murat",
+   "precieuses-0-resto-le-murat",
+   "precieuses-0-resto-le-murat"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://restau",
+  "browser": true
+ },
+ "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2023/06/Le_Murat_032021_Simon-53.jpg": {
+  "ids": [
+   "paris-16-francais-le-murat",
+   "precieuses-0-resto-le-murat"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://restau",
+  "browser": true
+ },
+ "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2023/06/8412-BD.jpg": {
+  "ids": [
+   "paris-16-francais-le-murat",
+   "precieuses-0-resto-le-murat"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://restau",
+  "browser": true
+ },
+ "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2023/06/Le_Murat_032021_Simon-35.jpg": {
+  "ids": [
+   "paris-16-francais-le-murat",
+   "precieuses-0-resto-le-murat"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://restau",
+  "browser": true
+ },
+ "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2023/06/Le_Murat_032021_Simon-31.jpg": {
+  "ids": [
+   "paris-16-francais-le-murat",
+   "precieuses-0-resto-le-murat"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://restau",
+  "browser": true
+ },
+ "https://restaurant-lemurat.com/wp-content/uploads/sites/3/2023/06/Le_Murat_032021_Simon-62.jpg": {
+  "ids": [
+   "paris-16-francais-le-murat",
+   "precieuses-0-resto-le-murat"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://restau",
+  "browser": true
+ },
+ "https://prunier.com/img/cms/prunier-accueil-saumons.png": {
+  "ids": [
+   "precieuses-0-resto-prunier"
+  ],
+  "status": 404,
+  "type": "image/png; charset=utf-8",
+  "size": 0
+ },
+ "https://dame-resto.fr/img/accueil_16x9.avif": {
+  "ids": [
+   "precieuses-0-resto-dame"
+  ],
+  "status": 0,
+  "err": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://dame-resto.",
+  "browser": true
+ },
+ "https://parisatlas.com/images/hotels/hotel-shangri-la-paris/shangri-la-paris-entrance-avenue-d-iena-ai-image.png": {
+  "ids": [
+   "precieuses-0-rooftop-shangri-la",
+   "precieuses-0-rooftop-shangri-la"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 3492,
+  "browser": true
+ },
+ "https://www.3615demesure.com/la-demande/assets/la-demande-diner-background.webp": {
+  "ids": [
+   "ig-paris-la-demesure"
+  ],
+  "status": 200,
+  "type": "",
+  "size": 157900,
+  "browser": true
+ },
+ "https://gallopin.com/wp-content/uploads/sites/5/2023/06/DSC08214-1.png": {
+  "ids": [
+   "precieuses-0-resto-festif-gallopin"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://gallop",
+  "browser": true
+ },
+ "https://gallopin.com/wp-content/uploads/sites/5/2023/06/DSC08219-2.png": {
+  "ids": [
+   "precieuses-0-resto-festif-gallopin",
+   "precieuses-0-resto-festif-gallopin"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://gallop",
+  "browser": true
+ },
+ "https://gallopin.com/wp-content/uploads/sites/5/2024/06/Skiss-Gallopin-83-scaled.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-gallopin"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://gallop",
+  "browser": true
+ },
+ "https://gallopin.com/wp-content/uploads/sites/5/2023/06/gallopin4.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-gallopin"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://gallop",
+  "browser": true
+ },
+ "https://gallopin.com/wp-content/uploads/sites/5/2024/06/DSC05557.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-gallopin"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://gallop",
+  "browser": true
+ },
+ "https://gallopin.com/wp-content/uploads/sites/5/2024/06/Skiss-Gallopin-99-scaled.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-gallopin"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://gallop",
+  "browser": true
+ },
+ "https://gallopin.com/wp-content/uploads/sites/5/2024/06/Post-Ambiance-15-mai-scaled.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-gallopin"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://gallop",
+  "browser": true
+ },
+ "https://gallopin.com/wp-content/uploads/sites/5/2023/06/gallopin2.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-gallopin"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://gallop",
+  "browser": true
+ },
+ "https://firebasestorage.googleapis.com/v0/b/cdn.we-eats.com/o/restaurants%2Fq3PfKQwxZp78Fr4dLvXY%2FwebsiteImages%2FrestoImages%2F167ddf7f-0ea3-4aba-9e60-6700c784ca22?alt=media&token=adb6025c-07f3-450b-8f37-e7775173c5ce": {
+  "ids": [
+   "paris-3-fusion-sweetea-s",
+   "paris-3-fusion-sweetea-s"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2FoBrY4h3Uru8ChUNKhz2A%2Fimages%2FheaderImage%2FheaderImage.jpeg?generation=1707468949093373&alt=media": {
+  "ids": [
+   "paris-9-japonais-kibo-noki"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://cdn.prod.website-files.com/6716c60b52eebb357f7ac0fb/6716c60b52eebb357f7ac19a_Ramen%2520traditionnel%2520(1)-p-1080.png": {
+  "ids": [
+   "paris-9-japonais-naruto-ramen"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2FH0igQ4fOwhlXTk7gYHmE%2Fimages%2FheaderImage%2FheaderImage.jpeg?generation=1707671942831561&alt=media": {
+  "ids": [
+   "paris-10-oriental-mister-do-san",
+   "paris-10-oriental-mister-do-san"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2FH0igQ4fOwhlXTk7gYHmE%2Fmenus%2FH0igQ4fOwhlXTk7gYHmE-2520341-menu%2Fitems%2F1434625117-%7C-H0igQ4fOwhlXTk7gYHmE-2520341-menu.jpeg?generation=1707671623812721&alt=media": {
+  "ids": [
+   "paris-10-oriental-mister-do-san"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2FH0igQ4fOwhlXTk7gYHmE%2Fmenus%2FH0igQ4fOwhlXTk7gYHmE-2520341-menu%2Fitems%2F1434625129-%7C-H0igQ4fOwhlXTk7gYHmE-2520341-menu.jpeg?generation=1707671449229936&alt=media": {
+  "ids": [
+   "paris-10-oriental-mister-do-san"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2FH0igQ4fOwhlXTk7gYHmE%2Fmenus%2FH0igQ4fOwhlXTk7gYHmE-2520341-menu%2Fitems%2F1434625118-%7C-H0igQ4fOwhlXTk7gYHmE-2520341-menu.jpeg?generation=1707671635375791&alt=media": {
+  "ids": [
+   "paris-10-oriental-mister-do-san"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2FafwF1rKcNMIypAhnxcKK%2Fimages%2FheaderImage%2FheaderImage.jpeg?generation=1731065788555429&alt=media": {
+  "ids": [
+   "paris-11-italien-giorgio",
+   "paris-11-italien-giorgio"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://cdn.prod.website-files.com/67befba6949ce22a5643fc33/67befba6949ce22a5643fff6_OFF%25202024%2520OK%2520BD-68-p-1080.avif": {
+  "ids": [
+   "paris-13-francais-off-paris-seine"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://cdn.prod.website-files.com/67befba6949ce22a5643fc33/67befba6949ce22a5643fff7_OFF%25202024%2520OK%2520BD-32-p-1080.avif": {
+  "ids": [
+   "paris-13-francais-off-paris-seine"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://cdn.prod.website-files.com/67befba6949ce22a5643fc33/67befba6949ce22a5643fff8_OFF%25202024%2520OK%2520BD-69-p-1080.avif": {
+  "ids": [
+   "paris-13-francais-off-paris-seine"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://firebasestorage.googleapis.com/v0/b/we-eats-88888.appspot.com/o/restaurants%2FGwJ0fnKKCFrYqr0YheEg%2FwebsiteImages%2FrestoImages%2Fa2fcc575-2e0d-4d02-999f-5db861c442b1?alt=media&token=fee5aae1-cf2b-4ba9-8184-7e3b9bb4bb51": {
+  "ids": [
+   "paris-16-japonais-dream-sushi",
+   "paris-16-japonais-dream-sushi"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://firebasestorage.googleapis.com/v0/b/cdn.we-eats.com/o/restaurants%2FGwJ0fnKKCFrYqr0YheEg%2FhCQg8aYTRGJ9NnuF2TOv.jpeg?alt=media&token=d307405a-36a4-4745-ae0b-51439bb53946": {
+  "ids": [
+   "paris-16-japonais-dream-sushi"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://firebasestorage.googleapis.com/v0/b/cdn.we-eats.com/o/restaurants%2FGwJ0fnKKCFrYqr0YheEg%2FkumhW8BkupflG74vGrKv.jpeg?alt=media&token=c1a9ed9c-6ca8-405d-9d42-ecced700eadd": {
+  "ids": [
+   "paris-16-japonais-dream-sushi"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://firebasestorage.googleapis.com/v0/b/cdn.we-eats.com/o/restaurants%2FGwJ0fnKKCFrYqr0YheEg%2F0LES07lgcewqWaG4Kuav.jpeg?alt=media&token=658de7cd-352d-4bc8-8af2-ffaf812ca036": {
+  "ids": [
+   "paris-16-japonais-dream-sushi"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://firebasestorage.googleapis.com/v0/b/cdn.we-eats.com/o/restaurants%2FGwJ0fnKKCFrYqr0YheEg%2FQMqn8D52mn5JoBoEKnt2.jpeg?alt=media&token=8654e72b-a3d5-41d5-b57b-47ae3c415943": {
+  "ids": [
+   "paris-16-japonais-dream-sushi"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://firebasestorage.googleapis.com/v0/b/cdn.we-eats.com/o/restaurants%2FGwJ0fnKKCFrYqr0YheEg%2FmydpbAiyLA43qdtVDOXa.jpeg?alt=media&token=39b991ef-40c0-4713-9d5e-2de25f121877": {
+  "ids": [
+   "paris-16-japonais-dream-sushi"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://firebasestorage.googleapis.com/v0/b/we-eats-88888.appspot.com/o/restaurants%2FjvxvaenRvdAyn7zFC8P1%2FwebsiteImages%2FrestoImages%2Fae5194f1-e322-4029-b87c-4424edb55dc3?alt=media&token=b8555039-5f09-4900-ba08-64f77da62e03": {
+  "ids": [
+   "paris-16-vietnamien-sourire-du-vietnam",
+   "paris-16-vietnamien-sourire-du-vietnam"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://storage.googleapis.com/download/storage/v1/b/ubar-firebase-prod.appspot.com/o/bars%2F7lHyRYpnNZjw0z6RuIMI%2Fimages%2FheaderImage%2FheaderImage.jpeg?generation=1675017759584187&alt=media": {
+  "ids": [
+   "paris-18-vegan-la-cantine-de-sam"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://www.bouillon-chartier.com/chartier_medias/2023/11/bouillon-chartier-home-grandsboulevards.jpg": {
+  "ids": [
+   "precieuses-0-resto-bouillon-chartier",
+   "precieuses-0-resto-bouillon-chartier"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://www.bouillon-chartier.com/chartier_medias/2022/12/restaurant-bouillon-chartier-grandsboulevards-44-1024x683.jpg": {
+  "ids": [
+   "precieuses-0-resto-bouillon-chartier"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://www.bouillon-chartier.com/chartier_medias/2022/12/restaurant-bouillon-chartier-grandsboulevards-61-1024x683.jpg": {
+  "ids": [
+   "precieuses-0-resto-bouillon-chartier"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://www.bouillon-chartier.com/chartier_medias/2023/11/bouillon-chartier-plats-convivial.jpg": {
+  "ids": [
+   "precieuses-0-resto-bouillon-chartier"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://www.bouillon-chartier.com/chartier_medias/2023/03/bouillon-cognac-thumb.jpg": {
+  "ids": [
+   "precieuses-0-resto-bouillon-chartier"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://www.bouillon-chartier.com/chartier_medias/2023/11/bouillon-chartier-histoire-03.jpg": {
+  "ids": [
+   "precieuses-0-resto-bouillon-chartier"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://www.bouillon-chartier.com/chartier_medias/2023/11/bouillon-chartier-histoire-02.jpg": {
+  "ids": [
+   "precieuses-0-resto-bouillon-chartier"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://ephemera-assets.b-cdn.net/68c0428ab40b9d84bc1fbcad/6a340839dfe1c9c1cbd3de82_6a33bb5c2e98d3cc45c6ccfe_PHOTO%2520VALVERT%2520(1).webp": {
+  "ids": [
+   "precieuses-0-resto-ephemera-group"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://ephemera-assets.b-cdn.net/68c0428ab40b9d84bc1fbcad/6984596f150f6c97cd900907_69831ee4e62576f2dc23df85_SALLE%2520-%2520LAGON%2520-%2520paysage%2520(1)%2520off.webp": {
+  "ids": [
+   "precieuses-0-resto-ephemera-group"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://ephemera-assets.b-cdn.net/68c0428ab40b9d84bc1fbcad/692f1c583d5c669a62b69e3a_6908dff2af58a0222728573b_SALLE%25201.webp": {
+  "ids": [
+   "precieuses-0-resto-ephemera-group"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://maisongainsbourg.imgix.net/770cb1a2-2cb1-4d4b-8cc1-9f055a831c15/choux_jeune_horyzontal.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C756%2C8256%2C4323&w=1200&s=d27877f4133d7843b1657cfee340b144": {
+  "ids": [
+   "precieuses-0-boire-un-verre-le-gainsbarre"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://maisongainsbourg.imgix.net/569ff1f2-ddcb-4c09-8a2d-d74cec2e9608/bourely_14762._MG_0017.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C4480%2C6720&w=1000&s=f61dc84eacd7bcda5835387086446271": {
+  "ids": [
+   "precieuses-0-boire-un-verre-le-gainsbarre"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://maisongainsbourg.imgix.net/166ab0e7-7d9e-49a1-88d4-c8c6b80beca2/37_RockFolk_Gainsbarre2_Alexis_Raimbault_web_BD.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C2219%2C3329&w=1000&s=858a6ec1174b6006154408c47850d81b": {
+  "ids": [
+   "precieuses-0-boire-un-verre-le-gainsbarre"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://maisongainsbourg.imgix.net/166ab0e7-7d9e-49a1-88d4-c8c6b80beca2/32_Gainsbarre3_Alexis_Raimbault_web_BD.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C2226%2C3338&w=1000&s=2bcb1126ee9ab42b289fc30b1a084fcd": {
+  "ids": [
+   "precieuses-0-boire-un-verre-le-gainsbarre"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://maisongainsbourg.imgix.net/d70b9058-c647-4b48-8585-67dc07b345e1/_MG_6907_WEB_BD.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C1556%2C2333&w=1000&s=7db94daf5fd34bd34f78fff07f838d0f": {
+  "ids": [
+   "precieuses-0-boire-un-verre-le-gainsbarre"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://maisongainsbourg.imgix.net/c5c44a09-5a63-4392-b8ab-7e2904b8131f/_MG_6204_WEB_BD.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C1405%2C2107&w=1000&s=602def74d7472a9305ff327fc55c4d65": {
+  "ids": [
+   "precieuses-0-boire-un-verre-le-gainsbarre"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ },
+ "https://maisongainsbourg.imgix.net/9e27b6e3-fb2d-4ac2-a28d-11db4951aa0d/_MG_6713_WEB_BD.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C1286%2C1928&w=1000&s=af1108a0b5c427fcbd666d3d1f20c7dd": {
+  "ids": [
+   "precieuses-0-boire-un-verre-le-gainsbarre"
+  ],
+  "err": "ne s'affiche pas dans Safari (img)"
+ }
+}
