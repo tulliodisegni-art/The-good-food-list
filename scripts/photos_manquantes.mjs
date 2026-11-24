@@ -122,7 +122,8 @@ async function gmaps(p, k) {
       await pg.locator("a.hfpxzc").first().click().catch(() => {});
       await pg.waitForSelector("h1.DUwDvf", { timeout: 12000 }).catch(() => {});
     }
-    await sleep(2500);
+    await pg.waitForURL(/!3d-?\d/, { timeout: 8000 }).catch(() => {});
+    await sleep(2000);
     rec.title = (await pg.locator("h1.DUwDvf").first().textContent({ timeout: 3000 }).catch(() => "")) || "";
     rec.addr = ((await pg.locator('button[data-item-id="address"]').first().getAttribute("aria-label", { timeout: 2000 }).catch(() => "")) || "").replace(/^Adresse:\s*/i, "");
     const m = pg.url().match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/) || pg.url().match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
@@ -161,9 +162,9 @@ await Promise.all(Array.from({ length: 3 }, async () => {
     const rec = await Promise.race([gmaps(p, k), new Promise((r) => { timer = setTimeout(() => r({ id: p.id, name: p.name, err: "trop long" }), 100000); })]);
     clearTimeout(timer);
     // Le bon lieu : même endroit (moins de 250 m), ou même nom à moins de 3 km (ou sans position connue).
-    rec.ok = !rec.closed && (rec.photos || []).length > 0 && ((rec.km != null && rec.km < 0.25) || (rec.match && (rec.km == null || rec.km < 3)));
+    rec.ok = (rec.photos || []).length > 0 && ((rec.km != null && rec.km < 0.25) || (rec.match && (rec.km == null || rec.km < 3)));
     found.push(rec);
-    console.log(`${++done}/${todo.length} ${p.name} → « ${rec.title || "?"} » ${rec.km ?? "?"} km ${rec.match ? "nom ok" : "nom ≠"} · ${(rec.photos || []).length} photos ${rec.ok ? "✓" : "✗"}${rec.err ? " " + rec.err : ""}`);
+    console.log(`${++done}/${todo.length} ${p.name} → « ${rec.title || "?"} » ${rec.km ?? "?"} km ${rec.match ? "nom ok" : "nom ≠"} · ${(rec.photos || []).length} photos ${rec.closed ? " FERMÉ" : ""} ${rec.ok ? "✓" : "✗"}${rec.err ? " " + rec.err : ""}`);
     await sleep(1500);
   }
 }));
@@ -201,7 +202,7 @@ for (let i = 0, s = 0; i < ids.length; i += 10, s++) {
     execFileSync("convert", ["-size", "330x180", "xc:white", "-font", "DejaVu-Sans", "-pointsize", "17", "-fill", "black", "-annotate", "+8+28", p.name.slice(0, 28),
       "-pointsize", "12", "-annotate", "+8+50", `${p.list} ${p.city || p.arr || ""} ${p.cat || ""}`.slice(0, 44),
       "-annotate", "+8+70", (p.address || "").slice(0, 46), "-fill", "#06c", "-annotate", "+8+96", `Maps : ${rec.title}`.slice(0, 46),
-      "-annotate", "+8+116", (rec.addr || "").slice(0, 46), "-annotate", "+8+136", `${rec.km ?? "?"} km · ${rec.match ? "même nom" : "nom différent"}`, "-fill", "#888", "-annotate", "+8+160", id.slice(0, 46), lab]);
+      "-annotate", "+8+116", (rec.addr || "").slice(0, 46), "-annotate", "+8+136", `${rec.km ?? "?"} km · ${rec.match ? "même nom" : "nom différent"}${rec.closed ? " · FERMÉ" : ""}`, "-fill", "#888", "-annotate", "+8+160", id.slice(0, 46), lab]);
     const row = `/tmp/r-${id}.jpg`;
     execFileSync("convert", [lab, ...tiles, "+append", "-background", "white", row]);
     rows.push(row);
