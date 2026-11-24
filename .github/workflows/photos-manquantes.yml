@@ -4,6 +4,7 @@ name: Photos manquantes et cassées (à vérifier)
 on:
   workflow_dispatch:
   push:
+    branches-ignore: [main]
     paths: [".github/galerie/manquantes.json", "scripts/photos_manquantes.mjs"]
 permissions:
   contents: write
