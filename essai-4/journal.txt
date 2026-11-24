@@ -1,0 +1,385 @@
+vérifiées 200/4166, cassées 1
+vérifiées 400/4166, cassées 12
+vérifiées 600/4166, cassées 13
+vérifiées 800/4166, cassées 25
+vérifiées 1000/4166, cassées 29
+vérifiées 1200/4166, cassées 34
+vérifiées 1400/4166, cassées 37
+vérifiées 1600/4166, cassées 41
+vérifiées 1800/4166, cassées 47
+vérifiées 2000/4166, cassées 50
+vérifiées 2200/4166, cassées 53
+vérifiées 2400/4166, cassées 63
+vérifiées 2600/4166, cassées 71
+vérifiées 2800/4166, cassées 77
+vérifiées 3000/4166, cassées 83
+vérifiées 3200/4166, cassées 84
+vérifiées 3400/4166, cassées 92
+vérifiées 3600/4166, cassées 93
+vérifiées 3800/4166, cassées 99
+vérifiées 4000/4166, cassées 101
+photos vérifiées : 4166, cassées : 105
+début Google Maps
+fiches sans aucune photo qui marche : 180
+→ Fondue du dragon
+→ Le Tiki Rose
+→ Café Kitsuné
+1/180 Le Tiki Rose → « Le Tiki Rose » 0.014 km nom ok · 8 photos  ✓
+2/180 Café Kitsuné → « Café Kitsuné Palais Royal » 0.008 km nom ok · 8 photos  ✓
+3/180 Fondue du dragon → « 小龙人火锅 Fondue dragon » 0.001 km nom ok · 8 photos  FERMÉ ✓
+→ Strogoff
+→ Circonstances
+→ Pizz'aria
+4/180 Strogoff → « Strogoff » 0.002 km nom ok · 8 photos  FERMÉ ✓
+5/180 Circonstances → « Circonstances » 0 km nom ok · 8 photos  ✓
+6/180 Pizz'aria → « Pizz'Aria Paris » 0.003 km nom ok · 8 photos  FERMÉ ✓
+→ Rivolta
+→ Pupetta
+→ Frenchie To Go
+7/180 Rivolta → « RIVOLTA! Poissonnière » 0.002 km nom ok · 8 photos  FERMÉ ✓
+8/180 Pupetta → « Casa Verde » 0.007 km nom ≠ · 8 photos  FERMÉ ✓
+9/180 Frenchie To Go → « Frenchie » 0.023 km nom ok · 8 photos  ✓
+→ Bomba
+→ Noura
+→ Sweetea's
+10/180 Bomba → « BOMBA » 0.131 km nom ok · 8 photos  FERMÉ ✓
+11/180 Noura → « Noura Opéra » 0.004 km nom ok · 8 photos  ✓
+12/180 Sweetea's → « Sweetea's » 0.006 km nom ok · 8 photos  FERMÉ ✓
+→ Oubruncher
+→ Café Jeanne du palace
+→ Étienne Marcel
+13/180 Oubruncher → « Honoré - Restaurant » 0.49 km nom ≠ · 8 photos  ✗
+14/180 Café Jeanne du palace → « Café Jeanne » 0.034 km nom ok · 8 photos  ✓
+→ La Baguette du Relais
+→ Little Babel
+15/180 Étienne Marcel → « 34 Rue Étienne Marcel » 0.01 km nom ok · 0 photos  ✗
+→ Mimi-Ramen
+16/180 La Baguette du Relais → « La Baguette du Relais » 0.004 km nom ok · 8 photos  ✓
+17/180 Little Babel → « Pizzeria Little Babel » 0.008 km nom ok · 8 photos  ✓
+→ Le Sixième
+→ Tipana
+18/180 Mimi-Ramen → « Mimi Ramen » 0.003 km nom ok · 8 photos  ✓
+→ Burger Père & Fils
+19/180 Le Sixième → « Sixième Restaurant / Il Sesto » 0.007 km nom ok · 8 photos  FERMÉ ✓
+20/180 Tipana → « Tipana » 0.004 km nom ok · 8 photos  ✓
+→ New Jawad - New Balal
+→ Beefbar
+21/180 Burger Père & Fils → « 53 Rue de Grenelle » 0.011 km nom ≠ · 0 photos  ✗
+→ Weito
+22/180 New Jawad - New Balal → « New Jawad Eiffel Tower » 0.009 km nom ok · 8 photos  ✓
+23/180 Beefbar → « Beefbar » 0.01 km nom ok · 8 photos  ✓
+→ Amazonia
+→ Petit Bon
+24/180 Weito → « WEITO WT Restaurant » 0.01 km nom ok · 8 photos  FERMÉ ✓
+→ Cot cot
+25/180 Amazonia → « Amazonia-Restaurant Paris » 0.011 km nom ok · 8 photos  ✓
+26/180 Petit Bon → « P'tit bon » ? km nom ok · 8 photos  FERMÉ ✓
+→ Neko Ramen
+→ Phood
+27/180 Cot cot → « Cot Cot » 0.004 km nom ok · 8 photos  FERMÉ ✓
+→ Joseph et Raymond
+28/180 Neko Ramen → « Neko Ramen » 0.012 km nom ok · 7 photos  ✓
+29/180 Phood → « Phood Cadet » 0.01 km nom ok · 8 photos  FERMÉ ✓
+→ Baba Zulu
+→ Espace Japon
+30/180 Joseph et Raymond → « Joseph & Raymond » 0.005 km nom ok · 8 photos  FERMÉ ✓
+→ In Séoul Paris
+31/180 Baba Zulu → « Baba Zulu » 0.014 km nom ok · 8 photos  ✓
+32/180 Espace Japon → « Espace Japon » 0.008 km nom ok · 8 photos  ✓
+→ Blue Rooster
+→ Pupetta Beaumarchais
+33/180 In Séoul Paris → « In Seoul » 0.004 km nom ok · 7 photos  ✓
+→ Brother Sister
+34/180 Blue Rooster → « Blue Rooster Paris » 0.001 km nom ok · 8 photos  ✓
+→ 31 Street Burgers
+35/180 Pupetta Beaumarchais → « Pupetta Beaumarchais » 0.005 km nom ok · 8 photos  FERMÉ ✓
+→ Seizemetrescarrés
+36/180 Brother Sister → « BROTHER SISTER Brunch Lunch Dinner » 0.007 km nom ok · 8 photos  ✓
+→ Wakam
+37/180 31 Street Burgers → « 31 Street » 0.009 km nom ok · 8 photos  FERMÉ ✓
+→ Sushi First
+38/180 Seizemetrescarrés → « 54 Rue Basfroi » 0.003 km nom ≠ · 0 photos  ✗
+39/180 Wakam → « Wakam-Burger » 0.009 km nom ok · 8 photos  ✓
+→ Yoruparis
+→ Aoba
+40/180 Sushi First → « SUSHIFIRST » 0.001 km nom ok · 8 photos  FERMÉ ✓
+→ Pompom Coffice
+41/180 Yoruparis → « Yoru Paris 夜 » 0.009 km nom ok · 8 photos  ✓
+42/180 Aoba → « aoba - Onigiri🍙 Dango🍡 Daifuku🫘 Thés🍵 » 0.003 km nom ok · 8 photos  ✓
+→ Jango
+→ Mama Jackson
+43/180 Jango → « Parigini Bistro » 0.006 km nom ≠ · 8 photos  ✓
+44/180 Pompom Coffice → « Pompom Coffee » 0.003 km nom ok · 0 photos  ✗
+45/180 Mama Jackson → « Mama Jackson » 0.004 km nom ok · 8 photos  ✓
+→ Liberty's Burger
+→ Jinchan Shokudo
+→ Mr Zhao x Ground Control
+46/180 Liberty's Burger → « Liberty's Burger » 0.003 km nom ok · 8 photos  FERMÉ ✓
+47/180 Jinchan Shokudo → « Jinchan Shokudo » 0.009 km nom ok · 8 photos  ✓
+48/180 Mr Zhao x Ground Control → « Ground Control » 0.015 km nom ok · 8 photos  ✓
+→ Les Piaules rooftop
+→ 21 Dumpling
+→ Papi aux fourneaux
+49/180 Les Piaules rooftop → « The People Paris Nation » 0.171 km nom ≠ · 8 photos  ✓
+50/180 21 Dumpling → « Boulangerie M'Seddi Moulins des Prés » 0.008 km nom ≠ · 8 photos  ✓
+→ Broadway Café
+51/180 Papi aux fourneaux → « Papy aux Fourneaux I La table d'hôtes I Montparnasse » 0.009 km nom ok · 8 photos  ✓
+→ La Cabane
+→ Basilic Thaï
+52/180 Broadway Café → « Broadway Caffe » 0.001 km nom ok · 8 photos  FERMÉ ✓
+53/180 La Cabane → « La Cabane » 0.03 km nom ok · 8 photos  FERMÉ ✓
+→ SkyBar
+54/180 Basilic Thaï → « Basilic Thaï - Restaurant Paris 14 » 0.011 km nom ok · 8 photos  ✓
+→ Fratelli Castellano
+→ Da Attilio
+55/180 SkyBar → « Skybar Paris » 0.09 km nom ok · 8 photos  ✓
+56/180 Fratelli Castellano → « Fratelli Castellano » 0.006 km nom ok · 8 photos  ✓
+→ 15ème Art Pizzeria
+57/180 Da Attilio → « Da Attilio » 0.004 km nom ok · 8 photos  FERMÉ ✓
+→ Burger Bendo
+→ Gomu
+58/180 15ème Art Pizzeria → « 15eme Art Pizzeria » 0.004 km nom ok · 8 photos  ✓
+→ Le Sheffer
+59/180 Burger Bendo → « Bendo Burger » 0.006 km nom ok · 8 photos  FERMÉ ✓
+60/180 Gomu → « GOMU Paris 15 » 0.013 km nom ok · 8 photos  ✓
+→ Andia
+→ Maison Russe
+61/180 Andia → « ANDIA » 0.006 km nom ok · 8 photos  ✓
+62/180 Maison Russe → « Maison Revka » 0.001 km nom ok · 8 photos  ✓
+→ Rdv
+63/180 Le Sheffer → « Le Scheffer » 0.013 km nom ≠ · 0 photos  ✗
+→ Haha
+→ B&J
+64/180 Rdv → « SAX Paris, LXR Hotels & Resorts » 0.005 km nom ≠ · 8 photos  ✓
+65/180 Haha → « Haha » 0.007 km nom ok · 8 photos  FERMÉ ✓
+→ A'Box
+→ Small Cantine
+66/180 B&J → « B&J » 0.006 km nom ≠ · 8 photos  ✓
+→ Yummy Thaï
+67/180 A'Box → « Africa in a box » 0.006 km nom ok · 8 photos  FERMÉ ✓
+68/180 Small Cantine → « Small Cantine » 0.004 km nom ok · 8 photos  ✓
+→ Sushi Thaï
+→ The Mad Hatter Atelier
+69/180 Yummy Thaï → « Yummy Thaï » 0.01 km nom ok · 8 photos  FERMÉ ✓
+→ Atelier parfums personnalisés
+70/180 Sushi Thaï → « Sushi Thai (Paris 20) » 0.001 km nom ok · 8 photos  ✓
+71/180 The Mad Hatter Atelier → « Mad Atelier » ? km nom ok · 0 photos  FERMÉ ✗
+→ Wecandoo
+→ Atelier poterie
+72/180 Atelier parfums personnalisés → « L'Atelier Parfum » ? km nom ok · 8 photos  ✓
+→ Personnalisation de sneakers
+73/180 Wecandoo → « Wecandoo » 5.219 km nom ok · 8 photos  ✗
+→ The Jury Experience : Diamants, mensonges et un mort
+74/180 Atelier poterie → « Clay Atelier Paris » ? km nom ok · 8 photos  ✓
+→ My Flower Class
+75/180 Personnalisation de sneakers → « Sneakers & Chill » ? km nom ok · 8 photos  ✓
+→ Jamel Comedy Club
+76/180 The Jury Experience : Diamants, mensonges et un mort → « Le Monument Aux Morts De Paul Landowski » ? km nom ≠ · 8 photos  ✗
+77/180 My Flower Class → « Les filles d'à côté - fleuriste - Paris » 0.415 km nom ≠ · 8 photos  ✗
+→ Komma
+→ Gypsy Motel
+78/180 Jamel Comedy Club → « Jamel Comedy Club » 0.006 km nom ok · 8 photos  ✓
+→ Le Kiwi
+79/180 Komma → « Komma » ? km nom ok · 0 photos  ✗
+80/180 Gypsy Motel → « GYPSI MOTEL » ? km nom ok · 8 photos  FERMÉ ✓
+→ Shana (Shabour)
+→ Tout le monde en parle
+81/180 Le Kiwi → « Kiwi Saint-Tropez | Paris Passy » ? km nom ok · 8 photos  ✓
+→ Verre chez moi
+82/180 Shana (Shabour) → « Shana » 0.031 km nom ok · 8 photos  ✓
+→ Fouquet's
+83/180 Tout le monde en parle → « Tout Le Monde En Parle - restaurant festif anniversaire paris 15 montparnasse club » 0.021 km nom ok · 8 photos  ✓
+→ Dominicos
+84/180 Verre chez moi → « RESTAURANT Verre Chez Moi » ? km nom ok · 8 photos  ✓
+→ Andia
+85/180 Fouquet's → « Brasserie Fouquet's Paris » 0.004 km nom ok · 8 photos  ✓
+→ Beefbar
+86/180 Dominicos → « Domenico’s » ? km nom ≠ · 8 photos  ✗
+→ Mumbay
+87/180 Andia → « ANDIA » 0.006 km nom ok · 8 photos  ✓
+→ RH Paris
+88/180 Beefbar → « Beefbar » 0.01 km nom ok · 8 photos  ✓
+→ Dame
+89/180 RH Paris → « RH Paris | La Galerie sur les Champs-Élysées » 2.354 km nom ok · 8 photos  ✓
+→ Le Verde
+90/180 Dame → « DAME » 0.978 km nom ok · 8 photos  ✓
+→ Fattyferia
+91/180 Le Verde → « Luz Verde » 4.746 km nom ok · 8 photos  ✗
+→ Alain Ducasse
+92/180 Fattyferia → « FÉRIA CAFÉ » ? km nom ok · 8 photos  ✓
+→ Yago Pigalle
+93/180 Mumbay → « ? » ? km nom ≠ · 0 photos  ✗
+→ Bar 8
+94/180 Alain Ducasse → « Le Chocolat Alain Ducasse, Manufacture à Paris » ? km nom ok · 8 photos  ✓
+→ L'Infini Café
+95/180 Yago Pigalle → « Yagō » 0.005 km nom ok · 8 photos  FERMÉ ✓
+→ Le Cochon à l'Oreille
+96/180 Bar 8 → « Leclaireur » 0.003 km nom ≠ · 8 photos  ✓
+→ Bistrot Au Bon Coin
+97/180 L'Infini Café → « L'INFINI 无限车轮饼 » 0.002 km nom ok · 8 photos  ✓
+→ Le Pavillon des Canaux
+98/180 Le Cochon à l'Oreille → « Le Cochon à l’Oreille » 0.005 km nom ok · 8 photos  ✓
+→ Belushi's Canal
+99/180 Bistrot Au Bon Coin → « Au Bon Coin » 0.002 km nom ok · 8 photos  ✓
+→ Ciel ! Les Maquereaux
+100/180 Le Pavillon des Canaux → « Le Pavillon des Canaux » 0.004 km nom ok · 8 photos  ✓
+→ La Cour Jardin – Plaza Athénée
+101/180 Belushi's Canal → « Belushi's Paris (Canal) » 0.289 km nom ok · 8 photos  ✓
+→ Riviera Paris
+102/180 Ciel ! Les Maquereaux → « Les Maquereaux Rive Droite » 0.247 km nom ok · 8 photos  ✓
+→ Villa Maasai
+103/180 La Cour Jardin – Plaza Athénée → « La Cour Jardin » 0.025 km nom ok · 8 photos  ✓
+→ Udon Jubey
+104/180 Riviera Paris → « Riviera Paris » 0.02 km nom ok · 7 photos  FERMÉ ✓
+→ Sushi Ken
+105/180 Villa Maasai → « Le Maasaï Lounge » 4.314 km nom ok · 8 photos  ✗
+→ Odoumak
+106/180 Udon Jubey → « Udon Jubey » 0.002 km nom ok · 8 photos  ✓
+→ Carvan
+107/180 Sushi Ken → « Sushiken » 0.003 km nom ok · 8 photos  FERMÉ ✓
+→ Silencio des Prés
+108/180 Odoumak → « 오두막-小木屋韩餐烤串/Odoumak Restaurant Coréen » 0.01 km nom ok · 8 photos  ✓
+→ Le Boudoir
+109/180 Carvan → « CRAVAN Paris 16e » 0.003 km nom ≠ · 8 photos  ✓
+→ Twenty Three Grand
+110/180 Silencio des Prés → « Silencio des Prés » 0.003 km nom ok · 8 photos  FERMÉ ✓
+→ Deluxe Green Bo
+111/180 Le Boudoir → « Le Boudoir » 0.007 km nom ok · 8 photos  FERMÉ ✓
+→ Mimi Cheng's
+112/180 Twenty Three Grand → « Twenty Three Grand » 0.021 km nom ok · 8 photos  ✓
+→ Sip and Sizzle
+113/180 Deluxe Green Bo → « Deluxe Green Bo » 0.002 km nom ok · 8 photos  ✓
+→ Rosie's Pizza
+114/180 Mimi Cheng's → « Jin Mei Dumpling » 0.848 km nom ≠ · 8 photos  FERMÉ ✗
+→ ImerSion
+115/180 Sip and Sizzle → « Sip & Sizzle » 0.004 km nom ok · 6 photos  ✓
+→ Poupée
+116/180 Rosie's Pizza → « Rosie's Kosher Pizza » 0.009 km nom ok · 8 photos  ✓
+→ Mimonis
+117/180 ImerSion → « imerSion - The First immersive restaurant in Israel » 0.171 km nom ok · 7 photos  ✓
+→ Balade en canoë à Crécy-la-Chapelle
+118/180 Poupée → « Poupée » ? km nom ok · 8 photos  ✓
+→ Tre
+119/180 Mimonis → « Mimonis » 0.119 km nom ok · 8 photos  FERMÉ ✓
+→ Ricco Tortilla
+120/180 Balade en canoë à Crécy-la-Chapelle → « LOC'ADVENTURE » 1.125 km nom ≠ · 8 photos  ✗
+→ Yayin BeHatser (Wine Garden)
+121/180 Tre → « Bialik Mall » 0.133 km nom ≠ · 8 photos  ✓
+→ Meatbal
+122/180 Ricco Tortilla → « Ricco » 0.342 km nom ok · 8 photos  ✓
+→ Ahavat HaYam
+123/180 Yayin BeHatser (Wine Garden) → « Fifty and one » 0.443 km nom ≠ · 8 photos  ✗
+→ B33
+124/180 Ahavat HaYam → « Ahavat Hayam » 21.978 km nom ok · 8 photos  ✗
+→ Okiyama
+125/180 Meatbal → « מִטְבָל גבעת שמואל » ? km nom ≠ · 0 photos  ✗
+126/180 B33 → « מרכז קניות בת ימון » 0.351 km nom ≠ · 8 photos  ✗
+→ Hummus Or Yehuda
+→ Niko
+127/180 Okiyama → « אוקיאמה ירושלים Okayama sushi kosher Jerusalem » 0.399 km nom ≠ · 4 photos  ✗
+128/180 Hummus Or Yehuda → « חומוס אור יהודה » 0.302 km nom ≠ · 6 photos  ✗
+→ Jacob's
+129/180 Niko → « Majdal Yaba » ? km nom ≠ · 8 photos  ✗
+→ Lev HaBasarim
+→ Burger Market
+130/180 Jacob's → « Jacob’s » ? km nom ok · 6 photos  ✓
+→ Racheli Vernier
+131/180 Burger Market → « Burger Market » ? km nom ok · 8 photos  ✓
+132/180 Lev HaBasarim → « Moshe Levi 25 » 5.662 km nom ≠ · 0 photos  ✗
+→ Hamburger Habibi (Ramla)
+→ Baga Burger
+133/180 Racheli Vernier → « Racheli ver nir » ? km nom ok · 8 photos  ✓
+→ Café Lahav
+134/180 Hamburger Habibi (Ramla) → « חביבי המבורגר גדרה - HBB Burger » 16.864 km nom ≠ · 6 photos  ✗
+135/180 Baga Burger → « Baga burger - באגה בורגר » ? km nom ok · 5 photos  ✓
+→ Crèmerie de l'Éclair
+→ HaPardes
+136/180 Café Lahav → « קפה להב » 0.377 km nom ≠ · 8 photos  ✗
+→ Joseph (Charcoal Bar)
+137/180 HaPardes → « Pri Megadim St 1 » 0.525 km nom ≠ · 0 photos  ✗
+→ Plov Tandir Samsa
+138/180 Crèmerie de l'Éclair → « Cremerie De L'eclair » 0.077 km nom ok · 8 photos  ✓
+→ Pizza Giuseppe
+139/180 Plov Tandir Samsa → « Plov Tandur Samsa » 0.082 km nom ok · 2 photos  ✓
+140/180 Joseph (Charcoal Bar) → « Rishon LeZion » 4.993 km nom ≠ · 8 photos  ✗
+→ Halas
+141/180 Pizza Giuseppe → « Giuseppe Pizza » 0.164 km nom ok · 8 photos  ✓
+→ Joseph Burger Bar
+→ Pizza Kezo
+142/180 Halas → « Halas Schnitzel » 0.15 km nom ok · 3 photos  ✓
+143/180 Joseph Burger Bar → « Josef Burger & Bar » ? km nom ok · 8 photos  ✓
+→ Armon Yerushalayim
+→ Luchana
+144/180 Pizza Kezo → « Kezo Pizza - פיצה קזו » 0.138 km nom ok · 8 photos  ✓
+→ Samuel
+145/180 Armon Yerushalayim → « מסעדת ארמון ירושלים » 0.221 km nom ≠ · 8 photos  ✓
+→ Arais Mahane Yehuda
+146/180 Luchana → « Mevasseret Tsion » ? km nom ≠ · 8 photos  ✗
+147/180 Samuel → « HaTnufa 12 » 0.507 km nom ≠ · 0 photos  ✗
+→ Segev BaTayelet
+→ Shawarma HaSultan
+148/180 Arais Mahane Yehuda → « Arais Machane Yehuda » ? km nom ok · 8 photos  ✓
+→ Tzaharaim
+149/180 Segev BaTayelet → « Tayelet Haas Promenade » ? km nom ≠ · 8 photos  ✗
+150/180 Shawarma HaSultan → « שווארמה הסולטן רמת גן » 0.539 km nom ≠ · 5 photos  ✗
+→ Doner Grill Express
+→ Pop & Roll
+151/180 Tzaharaim → « בורסת היהלומים » ? km nom ≠ · 8 photos  ✗
+→ Pizza Shalachmecha
+152/180 Pop & Roll → « Pop N Roll » ? km nom ok · 5 photos  ✓
+153/180 Doner Grill Express → « דונר/שווארמה טורקית ועל האש » 0.074 km nom ≠ · 7 photos  ✓
+→ Autentica
+→ Jerusalem (Lod)
+154/180 Pizza Shalachmecha → « Pizza Hut » 4.455 km nom ok · 4 photos  ✗
+→ HaDudka
+155/180 Autentica → « Pizzeria Autentica » ? km nom ok · 8 photos  ✓
+156/180 Jerusalem (Lod) → « Jerusalem Restaurant » 0.033 km nom ok · 8 photos  ✓
+→ Pizza Pizini
+→ Sorrento
+157/180 HaDudka → « הדודקא גריל בשרים בד"ץ בית יוסף » 0.084 km nom ≠ · 2 photos  ✓
+→ Mao Sushi
+158/180 Pizza Pizini → « פיצה פיצ׳יני בוטיק » 0.105 km nom ≠ · 8 photos  ✓
+159/180 Sorrento → « Sorento » ? km nom ≠ · 8 photos  ✗
+→ Ayesha
+→ HaBeer - The Well
+160/180 Mao Sushi → « מאו סושי | באר יעקב » 0.199 km nom ≠ · 5 photos  ✓
+→ Salami
+161/180 Ayesha → « Ayesha » ? km nom ok · 8 photos  ✓
+162/180 HaBeer - The Well → « The Well » 0.052 km nom ok · 8 photos  ✓
+→ Jethro
+→ Nevel David Brasserie
+163/180 Salami → « Salami סאלמי » 0.164 km nom ok · 2 photos  ✓
+→ Café Cucu
+164/180 Jethro → « collège académique Ono » ? km nom ≠ · 8 photos  ✗
+165/180 Nevel David Brasserie → « NEVEL DAVID Brasserie » ? km nom ok · 8 photos  ✓
+→ Mirage
+→ Mirage Jazz Kissa
+166/180 Café Cucu → « Café CUCU » 2.007 km nom ok · 8 photos  ✓
+→ Speakeasy
+167/180 Mirage Jazz Kissa → « Mirage » ? km nom ok · 8 photos  ✓
+168/180 Mirage → « Mirage » ? km nom ok · 8 photos  ✓
+→ Uganda
+→ Pizza Har Sinai
+169/180 Speakeasy → « Speakeasy » ? km nom ok · 8 photos  ✓
+→ Rustico (Rothschild)
+170/180 Uganda → « Uganda Bar » ? km nom ok · 8 photos  ✓
+171/180 Pizza Har Sinai → « פיצה הר סיני » 0.469 km nom ≠ · 8 photos  ✗
+→ AB-CD
+→ Yeah Shanghai Deluxe
+172/180 Rustico (Rothschild) → « Rustico Rothschild » 0.373 km nom ok · 8 photos  ✓
+→ Kodawari Yokochō
+173/180 AB-CD → « abcd » 0.751 km nom ok · 1 photos  FERMÉ ✓
+→ Kodawari Yokochō
+174/180 Yeah Shanghai Deluxe → « Yeah Shanghai Deluxe » 0.006 km nom ok · 8 photos  ✓
+→ Sunday Morning Cinnamon Rolls
+175/180 Kodawari Yokochō → « Kodawari Ramen (Yokochō) » 0.002 km nom ok · 8 photos  ✓
+→ La Petite Rose des Sables
+176/180 Kodawari Yokochō → « Kodawari Ramen (Yokochō) » 0.163 km nom ok · 8 photos  ✓
+→ הבאר - The Well
+177/180 Sunday Morning Cinnamon Rolls → « Sunday Morning » ? km nom ok · 8 photos  ✓
+→ Proost Madeleines
+178/180 La Petite Rose des Sables → « La Petite Rose des Sables » 0.003 km nom ok · 8 photos  ✓
+179/180 הבאר - The Well → « The Well » 0.359 km nom ok · 8 photos  ✓
+180/180 Proost Madeleines → « Proost Rivoli - Coffee Shop et Bar à madeleines » 0.003 km nom ok · 8 photos  ✓
+vignettes…
+Google Maps : 142 lieux reconnus sur 180, 142 avec photos

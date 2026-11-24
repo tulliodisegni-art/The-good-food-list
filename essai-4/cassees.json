@@ -1,0 +1,899 @@
+{
+ "https://enyaa-paris.com/img_fr/head01.jpg": {
+  "ids": [
+   "paris-1-japonais-enyaa"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 144299
+ },
+ "https://www.circonstances.fr/images/fourchette.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.circonstances.fr/images/intro15w.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.circonstances.fr/images/lampe.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.circonstances.fr/images/sofa.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.circonstances.fr/images/sallenew.jpg": {
+  "ids": [
+   "paris-2-francais-circonstances"
+  ],
+  "status": 503,
+  "type": "text/html",
+  "size": 192992,
+  "browser": true
+ },
+ "https://www.noura.com/wp-content/uploads/2023/07/NOURA6375-copie-2-1-1-e1690279339604.jpg": {
+  "ids": [
+   "paris-2-libanais-noura"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 906
+ },
+ "https://www.noura.com/wp-content/uploads/2023/07/pageaccueilnoura-3.png": {
+  "ids": [
+   "paris-2-libanais-noura"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 906
+ },
+ "https://l.cdn-fileserver.com/bping.php?cc=US&lper=100&wshp=0&vgd_cdv=O3746&vgd_wlstp=0&lf=6&requrl=https%3A%2F%2Fbombaparis.com&ssld=%7B%22QQNN%22%3A%22Pb%22%2C%22QQN75%22%3A%22Gm5O7mz%22%2C%22QQ8E%22%3A%22%22%2C%22QQQN%22%3A%22%2FK%22%2C%22QQl8E%22%3A%22%22%7D&vgd_tsce=L1397&vgd_oreqf=one&vgd_oresf=one&cid=8CUI1F766&hvsid=00001793278022392003461032962242&sc=VA&wsip=170762342&vgd_l2type=dmola&vgd_setup=c21&prid=8PR11258V&vi=1793278022962609753&vgd_asn=8075&vgd_rpth=%2Fola&gdpr=0&mspa=1&r=1793278022393&vgd_cage=28&crid=228450093&ugd=0&vgd_len=559&vgd_end=1": {
+  "ids": [
+   "paris-2-thailandais-bomba"
+  ],
+  "status": 200,
+  "type": "image/gif",
+  "size": 43,
+  "browser": true
+ },
+ "https://www.noura.com/wp-content/uploads/2021/09/HOME2_V2_12.jpg": {
+  "ids": [
+   "paris-2-libanais-noura"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 906
+ },
+ "https://www.noura.com/wp-content/uploads/2022/06/Noura_brasserie.jpg": {
+  "ids": [
+   "paris-2-libanais-noura"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 906
+ },
+ "https://www.kubaba.fr/image-restaurant.jpg": {
+  "ids": [
+   "paris-2-israelien-dalia"
+  ],
+  "status": 0,
+  "err": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.kubaba.fr/image-restaurant.",
+  "browser": true
+ },
+ "https://la-mangerie.com/wp-content/uploads/2021/04/home-slider-1.jpg": {
+  "ids": [
+   "paris-4-tapas-la-mangerie"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 81,
+  "browser": true
+ },
+ "https://media-cdn.tripadvisor.com/media/photo-m/1280/22/e3/dc/85/brunch.jpg": {
+  "ids": [
+   "paris-6-brunch-tipana"
+  ],
+  "status": 404,
+  "type": "text/plain; charset=utf-8",
+  "size": 9
+ },
+ "https://media-cdn.tripadvisor.com/media/photo-o/0d/fa/62/c4/thalis.jpg": {
+  "ids": [
+   "paris-6-indien-desi-road"
+  ],
+  "status": 404,
+  "type": "text/plain; charset=utf-8",
+  "size": 9
+ },
+ "https://paris.beefbar.com/wp-content/uploads/sites/8/2020/07/giraudi.beef-bar.2019.10-42.low-resolution.jpg": {
+  "ids": [
+   "paris-8-francais-beefbar",
+   "precieuses-0-resto-beefbar"
+  ],
+  "status": 500,
+  "type": "text/html; charset=iso-8859-1",
+  "size": 662,
+  "browser": true
+ },
+ "https://www.sergent-garcia.com/quality_auto/157553_8e0dabce15f64efb89ddeab88f69f8b9~mv2.png": {
+  "ids": [
+   "paris-8-tapas-sergent-garcia"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 2048
+ },
+ "https://static.wixstatic.com/media/e991cf_4c1a86d0b2ba4afd863b3f1e2deaecb5~mv2.png": {
+  "ids": [
+   "paris-8-grec-kalamata"
+  ],
+  "status": 403,
+  "type": "text/plain",
+  "size": 9,
+  "browser": true
+ },
+ "https://amazonia-paris.fr/wp-content/uploads/slider/cache/9529e517e37f5fb32a14fb8a8235026a/slide_2-1-2_11zon_11zon.webp": {
+  "ids": [
+   "paris-8-tapas-amazonia"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 4217
+ },
+ "https://amazonia-paris.fr/wp-content/uploads/2024/12/gal_2_11zon.webp": {
+  "ids": [
+   "paris-8-tapas-amazonia"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 4217
+ },
+ "https://amazonia-paris.fr/wp-content/uploads/2024/12/gal_3_11zon.webp": {
+  "ids": [
+   "paris-8-tapas-amazonia"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 4217
+ },
+ "https://amazonia-paris.fr/wp-content/uploads/2024/12/gal_1_11zon.webp": {
+  "ids": [
+   "paris-8-tapas-amazonia"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 4217
+ },
+ "https://amazonia-paris.fr/wp-content/uploads/2024/12/gal_5_11zon.webp": {
+  "ids": [
+   "paris-8-tapas-amazonia"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 4217
+ },
+ "https://amazonia-paris.fr/wp-content/uploads/slider/cache/6f42391110b7ca2556d43eaa008240d2/slide_1-2-1_11zon.webp": {
+  "ids": [
+   "paris-8-tapas-amazonia",
+   "paris-8-tapas-amazonia"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 4217
+ },
+ "https://amazonia-paris.fr/wp-content/uploads/2024/12/gal_4_11zon.webp": {
+  "ids": [
+   "paris-8-tapas-amazonia"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 4217
+ },
+ "https://www.mon-paris.fr/wp-content/uploads/2016/02/Mon_Paris_facebookv3.jpg": {
+  "ids": [
+   "paris-9-francais-mon-paris"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 146
+ },
+ "https://attika.qodeinteractive.com/wp-content/uploads/2019/04/open_graph.jpg": {
+  "ids": [
+   "paris-8-francais-mamamia",
+   "precieuses-0-resto-festif-mamamia"
+  ],
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 0,
+  "browser": true
+ },
+ "http://www.bieneleve.fr/presentation.jpg": {
+  "ids": [
+   "paris-9-francais-bien-eleve"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 4836
+ },
+ "https://restaurantvertueux.com/assets/images/vertueux-restaurant-paris-plat_Mai25_ninacoriton-22.jpg": {
+  "ids": [
+   "paris-10-francais-vertueux"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 63335
+ },
+ "https://www.espacejapon.com/wp-content/uploads/2026/11/banniere-nwl-8.png": {
+  "ids": [
+   "paris-10-japonais-espace-japon"
+  ],
+  "status": 404,
+  "type": "text/html; charset=iso-8859-1",
+  "size": 306
+ },
+ "https://weloob.com/assets/media/easy-heart-shaped-pancakes-for-valentines-day.jpg": {
+  "ids": [
+   "paris-10-americain-baba-zulu"
+  ],
+  "status": 200,
+  "type": "text/html; charset=UTF-8",
+  "size": 57292,
+  "browser": true
+ },
+ "https://lepetitcambodge.fr/wp-content/themes/dist/img/facebook.png": {
+  "ids": [
+   "paris-10-cambodgien-le-petit-cambodge"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 10233
+ },
+ "https://www.marcel.fr/images/minibluff_220x112.png": {
+  "ids": [
+   "paris-2-cafe-etienne-marcel"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.ma",
+  "browser": true
+ },
+ "https://ugc.zenchef.com/3/5/3/6/7/4/1/5/0/3/4/8/8/1579022542_329/27de75e8fb2c342c87d179716a27f9c7.website.jpg": {
+  "ids": [
+   "paris-11-francais-diggity"
+  ],
+  "status": 404,
+  "type": "application/json",
+  "size": 26
+ },
+ "http://edesignparis.fr/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBranding.d29b3478.png&w=128&q=75": {
+  "ids": [
+   "paris-11-japonais-yoruparis"
+  ],
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 199278,
+  "browser": true
+ },
+ "https://cafedutemple.fr/images/img1_temple.jpg": {
+  "ids": [
+   "paris-11-cafe-cafe-du-temple"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 3234
+ },
+ "https://lesfondusdelaraclette.fr/wp-content/uploads/2025/07/FDR_MACARON_BLEU_RVB-1-13x12.png": {
+  "ids": [
+   "paris-14-francais-les-fondus-de-la-raclette"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 717,
+  "browser": true
+ },
+ "https://eyelle-ionos-1-cache.s3.eu-central-3.ionoscloud.com/cache/basilicthaiparis_fr/catalog/c8-48x48.jpg?v=1759935213": {
+  "ids": [
+   "paris-14-thailandais-basilic-thai"
+  ],
+  "status": 403,
+  "type": "application/xml",
+  "size": 274,
+  "browser": true
+ },
+ "https://www.skybarparis.com/themes/zims/frontend/menu-soulign.png": {
+  "ids": [
+   "paris-14-bar-a-cocktails-skybar"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 950,
+  "browser": true
+ },
+ "https://lucky.gives/wp-content/themes/blankslate/img/sharescrean.png": {
+  "ids": [
+   "paris-15-coreen-ktown"
+  ],
+  "status": 0,
+  "err": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://lucky.gives/wp-content/themes/b",
+  "browser": true
+ },
+ "https://lor.paris/icon.svg": {
+  "ids": [
+   "paris-16-francais-le-touring"
+  ],
+  "status": 200,
+  "type": "image/svg+xml",
+  "size": 200,
+  "browser": true
+ },
+ "https://maison.com/images/blank.png": {
+  "ids": [
+   "paris-16-russe-maison-russe"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 137,
+  "browser": true
+ },
+ "https://www.nekoramen.fr/wp-content/uploads/2020/05/nekocover-600x338.jpg": {
+  "ids": [
+   "paris-9-japonais-neko-ramen"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.ne",
+  "browser": true
+ },
+ "https://www.nekoramen.fr/wp-content/uploads/2020/05/nekocover-1024x576.jpg": {
+  "ids": [
+   "paris-9-japonais-neko-ramen"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.ne",
+  "browser": true
+ },
+ "https://bloomsushi.fr/wp-content/plugins/revslider/sr6/assets/assets/dummy.png": {
+  "ids": [
+   "paris-17-japonais-bloom-sushi"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 68,
+  "browser": true
+ },
+ "https://gemuseparis.fr/wp-content/uploads/2026/01/Eurostar-9x12.jpg": {
+  "ids": [
+   "paris-18-oriental-gemuse"
+  ],
+  "status": 200,
+  "type": "image/jpeg",
+  "size": 767,
+  "browser": true
+ },
+ "https://res.cloudinary.com/teepublic/image/private/s--YWqeFj3h--/t_Preview/b_rgb:c62b29,c_lpad,f_jpg,h_630,q_90,w_1200/v1744337506/production/designs/74165272_0.jpg": {
+  "ids": [
+   "paris-18-vegan-sweet-rawmance"
+  ],
+  "status": 404,
+  "type": "application/octet-stream",
+  "size": 0
+ },
+ "https://www.boulom.net/quality_auto/b40850_c7cb28c14c0d424783b5376fd18e27fa~mv2.png": {
+  "ids": [
+   "paris-18-brunch-boulom"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 2049
+ },
+ "https://restaurants-amone.com/wp-content/themes/cinnamon-restaurant/images/dividers/stripes.png": {
+  "ids": [
+   "paris-18-francais-amone"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 1028706
+ },
+ "https://marrakechdurire.com/wp-content/plugins/revslider/public/assets/assets/dummy.png": {
+  "ids": [
+   "precieuses-0-stand-up-marrakech-du-rire"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 68,
+  "browser": true
+ },
+ "https://www.one-hour.fr/static/media/OHpresse27.jpg": {
+  "ids": [
+   "precieuses-0-activite-one-hour-escape-game"
+  ],
+  "status": 200,
+  "type": "text/html",
+  "size": 34843,
+  "browser": true
+ },
+ "https://lefridgecomedy.com/media.media_url": {
+  "ids": [
+   "precieuses-0-stand-up-le-fridge"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 130434
+ },
+ "https://raspoutine.com/uploads/2022/08/JCR_8796.jpg": {
+  "ids": [
+   "precieuses-0-soiree-le-raspoutine"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://lamaisonrose-montmartre.com/wp-content/themes/maisonRose3.3/polylang/en_US.png": {
+  "ids": [
+   "precieuses-0-resto-la-maison-rose"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 204,
+  "browser": true
+ },
+ "https://www.pedzouille.fr/quality_auto/9a2fc6_d6fc3584aa1f4062b2bf22dba7487e56~mv2.png": {
+  "ids": [
+   "precieuses-0-resto-pedzouille-lagrange"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 2049
+ },
+ "https://dame-resto.fr/img/accueil_16x9.avif": {
+  "ids": [
+   "precieuses-0-resto-dame"
+  ],
+  "status": 0,
+  "err": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://dame-resto.",
+  "browser": true
+ },
+ "https://verde-paris.fr/wp-content/uploads/2026/10/NL-20260207-206-61798-032-1025x1536.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-le-verde"
+  ],
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 46270,
+  "browser": true
+ },
+ "https://verde-paris.fr/wp-content/uploads/2026/08/verde-lifestyle-7.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-le-verde"
+  ],
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 46270,
+  "browser": true
+ },
+ "https://www.lempiredu8eme.com/quality_auto/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png": {
+  "ids": [
+   "precieuses-0-resto-festif-l-empire-du-8e"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 2049
+ },
+ "https://verde-paris.fr/wp-content/uploads/2026/10/grilled-octopus-2-1025x1536.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-le-verde"
+  ],
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 46270,
+  "browser": true
+ },
+ "https://verde-paris.fr/wp-content/uploads/2026/10/mediterranean-restaurant-nyc.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-le-verde",
+   "precieuses-0-resto-festif-le-verde"
+  ],
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 46270,
+  "browser": true
+ },
+ "https://verde-paris.fr/wp-content/uploads/2026/10/verde-nyc-slider-home5-scaled.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-le-verde"
+  ],
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 46270,
+  "browser": true
+ },
+ "https://verde-paris.fr/wp-content/uploads/2026/06/NL-20260404-215-65192-001-1025x1536.jpg": {
+  "ids": [
+   "precieuses-0-resto-festif-le-verde"
+  ],
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 46270,
+  "browser": true
+ },
+ "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc5la2xVs6DGrHNskvtdnKzzzJENYWQjHxooafyidoPuSatEtUlnXuOMcnO83VUzdvbdtWaLogDaVP6CiWZxdjrIOs7ZOnpabWDmUGAGlG8T467egJwlEcFl4AWuibyNCmLYKS6_KBDZVPzNWudScTaALY08vO031M-z23HcShPgcP3MUW3Jh-LGo4ZoKQ=w1280": {
+  "ids": [
+   "ig-paris-le-cochon-a-l-oreille"
+  ],
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 2342,
+  "browser": true
+ },
+ "https://bandedecheffes.org/wp-content/plugins/revslider/public/assets/assets/dummy.png": {
+  "ids": [
+   "precieuses-0-brunch-bande-de-cheffes"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 68,
+  "browser": true
+ },
+ "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72sJ6bEJQdBPOq4sly-ajorGXeewmBjivbA4pX6GisbgL1AtM14Q2K2d6OHhLrl6XYsMr99oJaRttFtNe7YK0NBLX9SOP4XBWQmqjHbW3ItSIANHOmbfr68z02QVwo3aBLZ4icQGicjdX0dFsqvzHmCLORPzrXntI3tgog-5jsdaaLklPNcdQd_TNK2fnFOl1By9hrBGgzyvwfkxo0IMNchI2-PIu3xdvzNyIHp8VEM=w1280": {
+  "ids": [
+   "ig-paris-le-cochon-a-l-oreille"
+  ],
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 2386,
+  "browser": true
+ },
+ "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeBL-u9DwHcZ8FQbDrf7rkq4ZWnTBH1A2_j9FzXdsa9wKjiBsPRTjZbilGYiLXdymE-LrqaoB03UI_lrc6fuTqeU9ikMU9yIG1XjrVYOl9rKNVakGXlTc02Uk8f4eCttZH7eVPDLJ0gVDN0jWhWmVqADMGcnJmgiHbV9m7_Rf6uROGhm21qHlW4l1TnAVQ=w1280": {
+  "ids": [
+   "ig-paris-le-cochon-a-l-oreille"
+  ],
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 2342,
+  "browser": true
+ },
+ "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdj5E11bWshbZOU7hf19AVBX6vIr1xdGcXhxiDRw9A6gAPMtQoUuKTGaMNvi_cp3cbrdacKriBR2UPkJIHHlXFbtJxm3P4qNWfksr6VYldRqBetKf82HzD-bx3Y2FXlxVTQriVJe1e98jnz7cAkrHjK9LRIWH4xSIl0BxePd2lp44YQknk9Bjw04yr8=w1280": {
+  "ids": [
+   "ig-paris-le-cochon-a-l-oreille"
+  ],
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 2339,
+  "browser": true
+ },
+ "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcFVTo5bty1FwhOLkQ2dyptrvajXCYFU-pv7SJq5_L6J5KYBHoVnRrRrLOuJ8i5GsUxVE10ALCbtkQMB7zue9AwIPgpZjZe6t4sKwDhn9gsDsROdtf0k8ner4L76wMbx6-J2qjz-0FvuCqGe1oz4osmHGpSRdpzetb6Cij0WYMCppFnGECwp5lJxPzDTwY=w1280": {
+  "ids": [
+   "ig-paris-le-cochon-a-l-oreille"
+  ],
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 2342,
+  "browser": true
+ },
+ "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeQdeahcMfniIrKM9gH3PY2BIcDyI_m4s7pI8KVOVN1ZBhMEezlnqqbwC3nFPGjMkqebmvxTUujwKH5D5Izh7gdbi33Agfczqb6h2KJgH9bycV8Cqo4fc3dCfdIjZG8J7UnRGzuqrRdUNd_ae-7Dob-a1dgFNXIfZ9SybXSgm3gvAw9Hru5pbxiY-qD5N6muQHUDQ9swJsHQxNPu4ZwK7xX3ijw2wYb9nGZlgzEsUM=w1280": {
+  "ids": [
+   "ig-paris-le-cochon-a-l-oreille"
+  ],
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 2386,
+  "browser": true
+ },
+ "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQePc_CUPwuK2SOr7myoIdeNw_rkWT-Q-AU4C3Hdjafp_09PxVurB7MlYTn9NhzKvLK_SP-G1Js6IQdhsJU8TBA3zu6ktYhfH6PbdU9Sx1XfUHeZpquzGO4H_CwerxSYcwJ6VEvBW8U6TFNg7KtK682UKlzJKLviQMD8ih5lrA3PPG02D3AcsgkGknWKpmggYRTSqNwtylhQy3ETkQ6_2GRJ0QbJrPa2oNFEU-Yi=w1280": {
+  "ids": [
+   "ig-paris-le-cochon-a-l-oreille"
+  ],
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 2383,
+  "browser": true
+ },
+ "https://www.lepetitbalperdu.com/Themes/v1/img/instagram-lepetitbalperdu-bistrot.png": {
+  "ids": [
+   "ig-paris-le-petit-bal-perdu"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 621,
+  "browser": true
+ },
+ "https://static.wixstatic.com/media/ad9ccd_7a097d6d29e1482e934d9799a3da859d~mv2.png/v1/fill/w_83,h_63,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ad9ccd_7a097d6d29e1482e934d9799a3da859d~mv2.png": {
+  "ids": [
+   "ig-paris-andy-wahloo"
+  ],
+  "status": 200,
+  "type": "image/avif",
+  "size": 1216,
+  "browser": true
+ },
+ "https://i0.wp.com/starvingclub.fr/wp-content/uploads/2025/03/Paris-15-Vignette-2.jpg?resize=48%2C27&ssl=1": {
+  "ids": [
+   "ig-paris-starving-club"
+  ],
+  "status": 200,
+  "type": "image/webp",
+  "size": 742,
+  "browser": true
+ },
+ "https://www.le153.com/quality_auto/11062b_55e4be1e75564866b6c28290f9a9d271~mv2.png": {
+  "ids": [
+   "ig-paris-le-153"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 2048
+ },
+ "https://chope-moi.fr/images/Design-sans-titre-48.png": {
+  "ids": [
+   "ig-paris-chope-moi"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 5636
+ },
+ "https://chalet-des-iles.com/wp-content/uploads/2024/02/CDI_Acces_CDI_M_9.svg": {
+  "ids": [
+   "ig-paris-chalet-des-iles",
+   "ig-paris-chalet-des-iles-daumesnil"
+  ],
+  "status": 200,
+  "type": "image/svg+xml",
+  "size": 976,
+  "browser": true
+ },
+ "https://www.pavillondescanaux.com/wp-content/uploads/elementor/thumbs/PAVILLON_DES_CANAUX_DETAIL_VERRIERE_11-scaled-rc6qezwnqesr7y73qbcg3a8ll414zzvv97pdwutylk.jpg": {
+  "ids": [
+   "ig-paris-le-pavillon-des-canaux"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 2048
+ },
+ "https://belushis.com/wp-content/uploads/2023/08/BELUSHIS-White.webp": {
+  "ids": [
+   "ig-paris-belushi-s-canal"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://static.wixstatic.com/media/e21ed7_9f960487318b4ceea2d40161d804c864~mv2.jpg/v1/fill/w_238,h_288,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/e21ed7_9f960487318b4ceea2d40161d804c864~mv2.jpg": {
+  "ids": [
+   "ig-autour-de-paris-le-bazar"
+  ],
+  "status": 200,
+  "type": "image/avif",
+  "size": 563,
+  "browser": true
+ },
+ "https://www.3615demesure.com/la-demande/assets/la-demande-diner-background.webp": {
+  "ids": [
+   "ig-paris-la-demesure"
+  ],
+  "status": 200,
+  "type": "",
+  "size": 157900,
+  "browser": true
+ },
+ "https://www.sebonrestaurant.com/quality_auto/11062b_a84995cc8b024f4ea398f5744a56bc27~mv2.png": {
+  "ids": [
+   "ig-paris-seb-on"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 2049
+ },
+ "https://www.machiyabento.fr/img/photos/vitrine.jpg": {
+  "ids": [
+   "ig-paris-machiya"
+  ],
+  "status": 0,
+  "err": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.machiyabento.fr/img/photos/",
+  "browser": true
+ },
+ "https://www.twentythreegrand.com/wp-content/uploads/2021/04/veranda-meta-share-1024x538.jpg": {
+  "ids": [
+   "ig-new-york-twenty-three-grand"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 1446
+ },
+ "http://www.deluxe-green-bo.com/media/4420/1.jpg?width=320&height=320": {
+  "ids": [
+   "ig-new-york-deluxe-green-bo"
+  ],
+  "status": 400,
+  "type": "",
+  "size": 0,
+  "browser": true
+ },
+ "https://mimichengs.com/cdn/shop/t/21/assets/social.jpg?v=3354": {
+  "ids": [
+   "ig-new-york-mimi-cheng-s"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 2770
+ },
+ "https://sushitokyo.com/wp-content/plugins/revslider/public/assets/assets/dummy.png": {
+  "ids": [
+   "ig-new-york-sushi-tokyo"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 68,
+  "browser": true
+ },
+ "https://brooklyncoffeeshops.com/shop-photos/j5745vz15xed9t5vvdf17tff1s87zx5f/0.webp": {
+  "ids": [
+   "ig-new-york-ricotta-coffee"
+  ],
+  "status": 402,
+  "type": "text/html; charset=utf-8",
+  "size": 1592,
+  "browser": true
+ },
+ "https://brooklyncoffeeshops.com/shop-photos/j5745vz15xed9t5vvdf17tff1s87zx5f/1.webp": {
+  "ids": [
+   "ig-new-york-ricotta-coffee"
+  ],
+  "status": 402,
+  "type": "text/html; charset=utf-8",
+  "size": 1592,
+  "browser": true
+ },
+ "https://brooklyncoffeeshops.com/shop-photos/j5745vz15xed9t5vvdf17tff1s87zx5f/3.webp": {
+  "ids": [
+   "ig-new-york-ricotta-coffee"
+  ],
+  "status": 402,
+  "type": "text/html; charset=utf-8",
+  "size": 1592,
+  "browser": true
+ },
+ "https://brooklyncoffeeshops.com/shop-photos/j5745vz15xed9t5vvdf17tff1s87zx5f/2.webp": {
+  "ids": [
+   "ig-new-york-ricotta-coffee"
+  ],
+  "status": 402,
+  "type": "text/html; charset=utf-8",
+  "size": 1592,
+  "browser": true
+ },
+ "https://www.daryatlv.com/_files/ugd/...jpg": {
+  "ids": [
+   "ig-tel-aviv-darya"
+  ],
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 2047
+ },
+ "https://i0.wp.com/qumrantlv.com/wp-content/uploads/2023/09/&#1493;&#1463;&#1497;&#1463;&#1468;&#1506;&#1463;&#1513;&#1474;-&#1500;&#1464;&#1492;&#1462;&#1501;-&#1502;&#1460;&#1513;&#1456;&#1473;&#1514;&#1462;&#1468;&#1492;-&#1493;&#1463;&#1497;&#1465;&#1468;&#1488;&#1499;&#1456;&#1500;&#1493;&#1468;-&#1493;&#1463;&#1497;&#1460;&#1468;&#1513;&#1456;&#1473;&#1514;&#1468;&#1493;&#1468;.png?w=3780&ssl=1": {
+  "ids": [
+   "ig-tel-aviv-qumran"
+  ],
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "size": 65
+ },
+ "https://www.spottedbylocals.com/wp-content/uploads/2024/10/The-Prince-1024x682.jpg.webp": {
+  "ids": [
+   "ig-tel-aviv-the-prince"
+  ],
+  "status": 403,
+  "type": "text/html; charset=utf-8",
+  "size": 0,
+  "browser": true
+ },
+ "https://milgomilbar.co.il/wp-content/uploads/2022/03/face-icon.png": {
+  "ids": [
+   "ig-tel-aviv-milgo-milbar"
+  ],
+  "status": 200,
+  "type": "image/png",
+  "size": 384,
+  "browser": true
+ },
+ "https://ariatelaviv.co.il/wp-content/uploads/2024/03/d0323c88fede788af063c176dbdd6ade.jpg": {
+  "ids": [
+   "ig-tel-aviv-aria"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 1251
+ },
+ "https://ariatelaviv.co.il/wp-content/uploads/2024/03/fd7f77da5c26cf71ba89325e6fc16bc0-1.jpg": {
+  "ids": [
+   "ig-tel-aviv-aria"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 1251
+ },
+ "https://ariatelaviv.co.il/wp-content/uploads/2024/03/2f06d482dd2465202b8aec1754f26591.jpg": {
+  "ids": [
+   "ig-tel-aviv-aria"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 1251
+ },
+ "https://ariatelaviv.co.il/wp-content/uploads/2024/03/fb9259ed820d3a368b4b795bd2ba8076.jpg": {
+  "ids": [
+   "ig-tel-aviv-aria"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 1251
+ },
+ "https://www.rustico.co.il/'https://www.rustico.co.il/wp-content/uploads/2025/02/TINT_Rustico-002.jpg'": {
+  "ids": [
+   "ig-tel-aviv-rustico-rothschild"
+  ],
+  "status": 404,
+  "type": "text/html",
+  "size": 146
+ },
+ "https://static.wixstatic.com/media/3a3fc8_0c730ae8451741048eb0f242bd1c4890f000.jpg/v1/fill/w_160,h_90,al_c,q_80,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/3a3fc8_0c730ae8451741048eb0f242bd1c4890f000.jpg": {
+  "ids": [
+   "ig-tel-aviv-claro"
+  ],
+  "status": 200,
+  "type": "image/avif",
+  "size": 1205,
+  "browser": true
+ },
+ "https://www.hersheyland.com/content/dam/hersheyland/en-us/life-style/home/2026-holiday-updates/hersheyland-homepage-hero.jpg": {
+  "ids": [
+   "u-mw9ekjd4z01m"
+  ],
+  "status": 404,
+  "type": "text/html;charset=utf-8",
+  "size": 90442
+ },
+ "https://cafecucu.co.il/wp-content/uploads/2021/03/79782378_481492929390772_1433025480511979520_o.jpg": {
+  "ids": [
+   "ig-tel-aviv-cafe-cucu",
+   "ig-tel-aviv-cafe-cucu"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://cafecu",
+  "browser": true
+ },
+ "https://cafecucu.co.il/wp-content/uploads/2021/02/Cucu-0307_websize-1024x684.jpg": {
+  "ids": [
+   "ig-tel-aviv-cafe-cucu"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://cafecu",
+  "browser": true
+ },
+ "https://cafecucu.co.il/wp-content/uploads/2024/12/Cucu-Cafe-Ala-Bar-26.03.202437330-682x1024.jpg": {
+  "ids": [
+   "ig-tel-aviv-cafe-cucu"
+  ],
+  "status": 0,
+  "err": "page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://cafecu",
+  "browser": true
+ }
+}
