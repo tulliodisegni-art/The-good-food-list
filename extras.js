@@ -14,7 +14,7 @@ applyTheme(store.get("theme", ""));
 // ---------- Position ----------
 const FRESH = 20 * 60 * 1000;
 { const last = store.get("me", null); if (last && Date.now() - last.t < FRESH) S.me = last; }
-let locating = null, watching = null, geoDenied = false;
+let locating = null, watching = null, geoDenied = false, geoGranted = false;
 // Position autorisée une fois → on s'en souvient (geoOk) : ensuite on la suit en continu (watchPosition)
 // dès l'ouverture de la carte, sans attendre un bouton, et on ne la redemande jamais pendant que l'appli est ouverte.
 const geoOk = () => !!store.get("geoOk", 0);
@@ -32,7 +32,7 @@ function startWatch() {
 }
 function locateMe(force) {
   const last = store.get("me", null);
-  if (!force && last && Date.now() - last.t < FRESH) { S.me = last; if (geoOk()) startWatch(); return Promise.resolve(last); }
+  if (!force && last && Date.now() - last.t < FRESH) { S.me = last; if (geoGranted) startWatch(); return Promise.resolve(last); }
   // Position déjà suivie : pas de nouvelle demande.
   if (watching != null && S.me && Date.now() - S.me.t < 600000) return Promise.resolve(S.me);
   if (geoDenied) { toast("Position refusée : Réglages › Safari › Position › Autoriser"); return Promise.reject(new Error("refusé")); }
@@ -55,13 +55,17 @@ function autoLocateOnMap() {
   if (typeof showMe === "function") showMe();
   const center = (me) => { if (!mapCentered && typeof map !== "undefined" && map && me) { mapCentered = true; map.setView([me.lat, me.lng], 15); } };
   if (watching != null && S.me && Date.now() - S.me.t < 120000) { center(S.me); return; }
+  // Sur iPhone, l'appli posée sur l'écran d'accueil redemande l'autorisation à chaque demande :
+  // sans autorisation permanente, on garde la dernière position connue (le bouton « me localiser » la met à jour).
+  if (!geoGranted) { if (S.me) center(S.me); return; }
   locateMe(true).then(center).catch(() => {});
 }
 // Si la position est déjà autorisée, on la suit sans rien demander.
 navigator.permissions?.query({ name: "geolocation" }).then((st) => {
+  geoGranted = st.state === "granted";
   if (st.state === "granted") { store.set("geoOk", 1); startWatch(); locateMe(true).then(() => renderAll()).catch(() => {}); }
   if (st.state === "denied") { geoDenied = true; store.set("geoOk", 0); }
-  st.onchange = () => { geoDenied = st.state === "denied"; if (st.state === "granted") { store.set("geoOk", 1); startWatch(); } };
+  st.onchange = () => { geoDenied = st.state === "denied"; geoGranted = st.state === "granted"; if (st.state === "granted") { store.set("geoOk", 1); startWatch(); } };
 }).catch(() => {});
 
 // ---------- Partager ----------

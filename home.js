@@ -185,7 +185,7 @@ const gfDark = () => { const t = store.get("theme", ""); return t ? t === "dark"
 function gfHero() {
   const c = gfCity();
   const img = GF.prec ? "images/cities/nuit.jpg" : `images/cities/${c.other ? "nuit" : GF.city}.jpg`;
-  const n = (id) => S.places.filter((p) => gfCityOf(p) === id && (GF.prec ? gfIsPrec(p) : p.list !== "precieuses")).length;
+  const n = (id) => S.places.filter((p) => gfCityOf(p) === id && (GF.prec ? gfIsPrec(p) : p.list !== "precieuses" && p.list !== "sorties")).length;
   return `<header class="gf-hero" style="background-image:url('${img}')">
     <div class="gtop"><div class="brand"><small>${GF.prec ? "Les Précieuses" : esc(c.kick)}</small><h1>Cozy Spots</h1></div>
     <div class="acts"><button class="ibtn" data-share-app aria-label="Envoyer l'appli"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
@@ -211,7 +211,8 @@ function gfNearSec() {
 }
 function gfOpenNear() {
   const go = () => gfOpen({ near: 1 });
-  if (S.me && Date.now() - S.me.t < 5 * 60000) return go();
+  // Position récente (ou suivie en continu) : pas de nouvelle demande à iOS.
+  if (S.me && Date.now() - S.me.t < 30 * 60000) return go();
   toast("Je te localise…");
   locateMe(true).then(go).catch(() => {});
 }
