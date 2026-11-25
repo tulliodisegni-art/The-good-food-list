@@ -14,7 +14,7 @@ const store = {
   },
 };
 // Ce qui suit le compte (sauvegardé en ligne, retrouvé sur un autre téléphone) : adresses ajoutées, notes et coches, préférences.
-const GSYNC = ["custom", "customDel", "edits", "name", "group", "univ", "gfCity", "gfHide", "pick", "colls"];
+const GSYNC = ["custom", "customDel", "edits", "name", "group", "univ", "gfCity", "gfHide", "pick", "colls", "handles"];
 // Adresse retirée de « custom » : on garde son id, pour qu'une synchro ne la fasse pas revenir.
 function forgetCustom(ids) {
   const del = new Set(store.get("customDel", []));
