@@ -16,11 +16,15 @@
   /* ---------- chargement ---------- */
   async function load() {
     await Acc.ready; const me = meId(); if (!me) return;
-    const [{ data: mine }, { data: fol }] = await Promise.all([
+    const [{ data: mine, error: eMe }, { data: fol, error: eFol }] = await Promise.all([
       sb.from("gf_profiles").select("*").eq("user_id", me).maybeSingle(),
       sb.from("gf_follows").select("*").or(`follower.eq.${me},followee.eq.${me}`),
     ]);
+    // réseau lent ou session pas encore rafraîchie : on garde ce qu'on connaît, surtout pas « pas de pseudo »
+    if (eMe || eFol) throw eMe || eFol;
     SO.me = mine || null; SO.follows = fol || [];
+    SO.meChecked = true;
+    if (SO.me) rememberHandle(SO.me.handle);
     const ids = new Set(SO.follows.flatMap((f) => [f.follower, f.followee]));
     const { data: profs } = await sb.from("gf_profiles").select("user_id,handle,name,is_owner").or(`is_owner.eq.true${ids.size ? `,user_id.in.(${[...ids].join(",")})` : ""}`);
     SO.profiles = new Map((profs || []).map((p) => [p.user_id, p])); if (SO.me) SO.profiles.set(me, SO.me);
@@ -33,6 +37,10 @@
   function fromCache() {
     try { const c = JSON.parse(localStorage.getItem("gfl.socialCache") || "null"); if (!c) return; SO.follows = c.follows || []; SO.profiles = new Map((c.profiles || []).map((p) => [p.user_id, p])); SO.rows = c.rows || []; SO.ownerId = c.ownerId; SO.me = c.me; } catch (e) {}
   }
+  /* pseudo retenu sur l'appareil (Safari et appli sur l'écran d'accueil ont chacun leur stockage, d'où aussi le compte) */
+  const HKEY = () => "gfl.handle." + (meId() || "x");
+  function rememberHandle(hd) { try { if (hd) localStorage.setItem(HKEY(), hd); localStorage.removeItem("gfl.handleSkip." + (meId() || "x")); } catch (e) {} if (hd) try { const m = store.get("handles", {}) || {}; if (m[meId()] !== hd) store.set("handles", { ...m, [meId()]: hd }); } catch (e) {} }
+  function knownHandle() { let v = ""; try { v = localStorage.getItem(HKEY()) || ""; } catch (e) {} if (!v) try { v = (store.get("handles", {}) || {})[meId()] || ""; } catch (e) {} if (!v && SO.me && SO.me.user_id === meId()) v = SO.me.handle; return v; }
 
   /* ---------- ajout des adresses des gens suivis à la liste ---------- */
   function decorate(places) {
@@ -89,6 +97,7 @@
     const handle = toHandle(raw); if (!handleOk(handle)) throw new Error("Pseudo : 3 à 20 lettres, chiffres, points ou _.");
     const r = SO.me ? await sb.from("gf_profiles").update({ handle, name: name || SO.me.name }).eq("user_id", meId()) : await sb.from("gf_profiles").insert({ handle, name: name || null });
     if (r.error) throw new Error(/duplicate|unique/i.test(r.error.message) ? "Ce pseudo est déjà pris." : "Impossible d'enregistrer le pseudo.");
+    rememberHandle(handle);
     await load(); publish(); refresh();
   }
   async function follow(raw) {
@@ -207,12 +216,21 @@
   window.Social = { reload: () => load().then(refresh).catch(() => {}), decorate, match, mapMatch, publish, renderBars, sheetHtml, settingsHtml, state: SO };
   (async () => {
     await Acc.ready;
-    try { await load(); } catch (e) { return; }
-    // première fois : choisir son pseudo
-    if (!SO.me) {
-      const sug = toHandle(store.get("name", "") || (Acc.user.email || "").split("@")[0]).slice(0, 20);
-      const v = prompt("Choisis ton pseudo pour que tes amis puissent te suivre (lettres, chiffres, points)", handleOk(sug) ? sug : "");
-      if (v) try { await setHandle(v); } catch (x) { toast(x.message); }
+    if (SO.me && SO.me.user_id && SO.me.user_id !== meId()) SO.me = null; // cache d'un autre compte
+    let ok = false;
+    for (let i = 0; i < 3 && !ok; i++) { try { await load(); ok = true; } catch (e) { await new Promise((r) => setTimeout(r, 1500 * (i + 1))); } }
+    if (!ok) { refresh(); return; }
+    // première fois seulement : choisir son pseudo (jamais si on en connaît déjà un, jamais redemandé après « Annuler »)
+    if (!SO.me && SO.meChecked) {
+      const known = knownHandle();
+      const skipKey = "gfl.handleSkip." + meId();
+      if (known) { try { await setHandle(known); } catch (x) { /* pris entre-temps : on le changera dans Réglages */ } }
+      else if (!localStorage.getItem(skipKey)) {
+        const sug = toHandle(store.get("name", "") || (Acc.user.email || "").split("@")[0]).slice(0, 20);
+        const v = prompt("Choisis ton pseudo pour que tes amis puissent te suivre (lettres, chiffres, points)", handleOk(sug) ? sug : "");
+        if (v) try { await setHandle(v); } catch (x) { toast(x.message + " Tu pourras le choisir dans Réglages › Mes amis."); }
+        try { localStorage.setItem(skipKey, "1"); } catch (e) {}
+      }
     }
     // lien de profil reçu : ?suivre=pseudo
     const q = new URLSearchParams(location.search).get("suivre");
