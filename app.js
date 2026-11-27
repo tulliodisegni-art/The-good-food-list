@@ -948,6 +948,9 @@ function initMap() {
   setTimeout(() => map.invalidateSize(), 300);
   cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 42, disableClusteringAtZoom: 16 });
   map.addLayer(cluster);
+  map.on("zoomend moveend", scheduleLabels);
+  cluster.on("animationend", scheduleLabels);
+  map.on("layeradd", scheduleLabels); // points qui apparaissent en faisant glisser la carte
   map.on("popupopen", (e) => {
     const b = e.popup.getElement().querySelector("[data-open]");
     if (b) b.onclick = () => openSheet(b.dataset.open);
@@ -989,7 +992,8 @@ function fillMapCats() {
 }
 
 function markerFor(p) {
-  const icon = L.divIcon({ className: "", html: `<div class="pin ${p.tested ? "done" : ""} ${p.mark ? "star" : ""}" style="--pc:${catVar(p.cat)}"></div>`, iconSize: [20, 20], iconAnchor: [10, 10], popupAnchor: [0, -10] });
+  // Le nom du lieu est écrit à côté du point ; il n'apparaît qu'une fois la carte assez zoomée (voir layoutLabels).
+  const icon = L.divIcon({ className: "pin-wrap", html: `<div class="pin ${p.tested ? "done" : ""} ${p.mark ? "star" : ""}" style="--pc:${catVar(p.cat)}"></div><span class="pin-lbl">${esc(p.name)}</span>`, iconSize: [20, 20], iconAnchor: [10, 10], popupAnchor: [0, -10] });
   const m = L.marker([p.lat, p.lng], { icon, title: p.name });
   m.bindPopup(`<div class="pop-name">${esc(p.name)}</div><div class="pop-meta">${esc(p.cat)}${p.arr ? " · " + arrLabel(p.arr) : ""} ${p.tested ? "· testé" : ""} ${esc(p.mark || "")}</div><div class="pop-actions"><button class="pop-btn" data-open="${esc(p.id)}">Voir la fiche</button><button class="pop-btn alt" data-route="${esc(p.id)}">Itinéraire</button></div>`);
   return m;
@@ -1012,6 +1016,50 @@ function refreshMarkers() {
     const m = markerFor(p); markers.set(p.id, m); ms.push(m);
   }
   cluster.addLayers(ms);
+  scheduleLabels();
+}
+
+// Noms des lieux à côté des points : à partir du zoom LABEL_ZOOM, et sans qu'ils se chevauchent
+// (en cas de collision, on garde d'abord les coups de cœur et les lieux testés, puis les plus au centre).
+const LABEL_ZOOM = 15;
+let labelTimer = 0;
+function scheduleLabels() { clearTimeout(labelTimer); labelTimer = setTimeout(layoutLabels, 350); } // après les animations des groupes de points
+function layoutLabels() {
+  if (!map) return;
+  const box = map.getContainer();
+  const on = map.getZoom() >= LABEL_ZOOM;
+  box.classList.toggle("show-labels", on);
+  if (!on) return;
+  const view = box.getBoundingClientRect();
+  const cx = view.left + view.width / 2, cy = view.top + view.height / 2;
+  const items = [];
+  for (const el of box.querySelectorAll(".pin-wrap")) {
+    const lbl = el.querySelector(".pin-lbl");
+    if (!lbl) continue;
+    lbl.classList.remove("ok", "left");
+    const pin = el.getBoundingClientRect();
+    if (pin.right < view.left || pin.left > view.right || pin.bottom < view.top || pin.top > view.bottom) continue;
+    const pinEl = el.querySelector(".pin");
+    const rank = (pinEl.classList.contains("star") ? 0 : pinEl.classList.contains("done") ? 1 : 2) * 1e7 + Math.hypot(pin.left - cx, pin.top - cy);
+    items.push({ lbl, pin, w: lbl.offsetWidth, h: lbl.offsetHeight, rank });
+  }
+  items.sort((a, b) => a.rank - b.rank);
+  // Les points et les groupes de points ne doivent pas être cachés par un nom.
+  const taken = items.map((i) => ({ l: i.pin.left, t: i.pin.top, r: i.pin.right, b: i.pin.bottom }));
+  for (const c of box.querySelectorAll(".marker-cluster")) { const r = c.getBoundingClientRect(); taken.push({ l: r.left, t: r.top, r: r.right, b: r.bottom }); }
+  const hit = (r) => taken.some((o) => r.l < o.r && r.r > o.l && r.t < o.b && r.b > o.t);
+  for (const it of items) {
+    const midY = (it.pin.top + it.pin.bottom) / 2;
+    const t = midY - it.h / 2, b = midY + it.h / 2;
+    const right = { l: it.pin.right + 3, t, r: it.pin.right + 3 + it.w, b };
+    const left = { l: it.pin.left - 3 - it.w, t, r: it.pin.left - 3, b };
+    // On ignore son propre point dans le test.
+    const own = taken.findIndex((o) => o.l === it.pin.left && o.t === it.pin.top);
+    const saved = own >= 0 ? taken.splice(own, 1)[0] : null;
+    if (!hit(right) && right.r <= view.right) { taken.push(right); it.lbl.classList.add("ok"); }
+    else if (!hit(left) && left.l >= view.left) { taken.push(left); it.lbl.classList.add("ok", "left"); }
+    if (saved) taken.push(saved);
+  }
 }
 
 $("#mapLists").addEventListener("click", (e) => {
